@@ -1,0 +1,665 @@
+{
+ "actualizado": "2026-10-27",
+ "modelos": [
+  {
+   "m": "Adidas",
+   "mod": "Adizero EVO SL",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "Lightstrike Pro (PEBA)",
+   "pl": "Sin placa",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 169999,
+     "fecha": "27/10/2026",
+     "antes": 249999,
+     "cuotas": "6 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-evo-sl-hombre/ADKJ1364.html"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "fecha": "27/10/2026",
+     "cuotas": "Hasta 12 cuotas en bancos seleccionados",
+     "nota": "Hombre",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-evo-sl-de-hombre-6jh6206-000/p"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 249999,
+     "fecha": "27/10/2026",
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KI6931.html"
+    }
+   ],
+   "colores": [
+    [
+     "Gris",
+     "#9AA0A6"
+    ],
+    [
+     "Aurora Black / Shock Pink / Lucid Tangerine",
+     "#2B2B33"
+    ],
+    [
+     "Maroon / Gold Metallic / Core Black",
+     "#6E1F2A"
+    ]
+   ],
+   "peso": 224,
+   "drop": 6.5,
+   "talon": 38.5,
+   "ante": 32,
+   "ar": true,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Liviano a medio",
+    "distancia": "Series, 10K a media maratón"
+   },
+   "evitar": "Rodajes de recuperación, pie ancho o quien necesita estabilidad.",
+   "fuente": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adizero-evo-sl/"
+   ],
+   "id": 1
+  },
+  {
+   "m": "Nike",
+   "mod": "Pegasus",
+   "ver": "42",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "Air Zoom de largo completo + ReactX",
+   "pl": "Sin placa",
+   "tiendas": [
+    {
+     "tienda": "Duke Sport",
+     "precio": 264200,
+     "fecha": "27/10/2026",
+     "desde": true,
+     "cuotas": "3 y 6 cuotas sin interés (promo del sitio)",
+     "url": "https://www.dukesport.com.ar/running/nike/pegasus1/pegasus-42/"
+    }
+   ],
+   "colores": [],
+   "peso": 300,
+   "drop": 10,
+   "talon": 37,
+   "ante": 27,
+   "ar": true,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje cómodo",
+    "peso": "Medio",
+    "distancia": "Rodajes diarios y fondos medios"
+   },
+   "evitar": "Quien busca una zapatilla liviana para series.",
+   "fuente": [
+    "Carreras de Montaña",
+    "https://carrerasdemontana.com/2026/03/04/nike-pegasus-42-mayayo/"
+   ],
+   "id": 2
+  },
+  {
+   "m": "Nike",
+   "mod": "Pegasus Plus",
+   "ver": "2",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "ZoomX",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 3
+  },
+  {
+   "m": "Nike",
+   "mod": "Vomero",
+   "ver": "18",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "esp": "ZoomX + ReactX",
+   "pl": "Sin placa",
+   "tiendas": [
+    {
+     "tienda": "Duke Sport",
+     "precio": 273780,
+     "fecha": "27/10/2026",
+     "cuotas": "3 y 6 cuotas sin interés (promo del sitio)",
+     "url": "https://www.dukesport.com.ar/productos/nike-vomero-18-1y47g/"
+    }
+   ],
+   "colores": [],
+   "peso": 325,
+   "drop": 10,
+   "talon": 46,
+   "ante": 36,
+   "ar": true,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y recuperación"
+   },
+   "evitar": "Quien busca sensación de suelo o ritmos rápidos.",
+   "fuente": [
+    "Carreras de Montaña",
+    "https://carrerasdemontana.com/2025/03/13/nike-vomero-18-review-mayayo/"
+   ],
+   "id": 4
+  },
+  {
+   "m": "Nike",
+   "mod": "Vomero Plus",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "esp": "ZoomX",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 5
+  },
+  {
+   "m": "Nike",
+   "mod": "Structure",
+   "ver": "26",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 6
+  },
+  {
+   "m": "Nike",
+   "mod": "Winflo",
+   "ver": "12",
+   "tipo": "Neutra",
+   "uso": "Iniciación",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 7
+  },
+  {
+   "m": "Nike",
+   "mod": "Invincible",
+   "ver": "3",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "esp": "ZoomX",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 8
+  },
+  {
+   "m": "Nike",
+   "mod": "Zoom Fly",
+   "ver": "6",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "ZoomX",
+   "pl": "Carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 9
+  },
+  {
+   "m": "Nike",
+   "mod": "Vaporfly",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "esp": "ZoomX",
+   "pl": "Carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 10
+  },
+  {
+   "m": "Adidas",
+   "mod": "Adizero SL",
+   "ver": "2",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 11
+  },
+  {
+   "m": "Adidas",
+   "mod": "Adizero Boston",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "Lightstrike Pro",
+   "pl": "Varillas",
+   "tiendas": [],
+   "colores": [],
+   "id": 12
+  },
+  {
+   "m": "Adidas",
+   "mod": "Supernova Rise",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 13
+  },
+  {
+   "m": "Adidas",
+   "mod": "Adizero Adios Pro",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "esp": "Lightstrike Pro",
+   "pl": "Varillas de carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 14
+  },
+  {
+   "m": "Adidas",
+   "mod": "Duramo SL",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Iniciación",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 15
+  },
+  {
+   "m": "Asics",
+   "mod": "Novablast",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "FF Blast Max",
+   "pl": "Sin placa",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 189999,
+     "fecha": "27/10/2026",
+     "antes": 319999,
+     "cuotas": "6 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-para-hombre/AS1011B974500.html"
+    }
+   ],
+   "colores": [
+    [
+     "Azul",
+     "#2F5DA8"
+    ]
+   ],
+   "peso": 247,
+   "drop": 8,
+   "talon": 38,
+   "ante": 30,
+   "ar": true,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Ritmos medios y lentos",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes diarios"
+   },
+   "evitar": "Pronadores marcados sin plantilla.",
+   "fuente": [
+    "Foro Atletismo",
+    "https://www.foroatletismo.com/zapatillas/asics-novablast-5/"
+   ],
+   "id": 16
+  },
+  {
+   "m": "Asics",
+   "mod": "Gel-Nimbus",
+   "ver": "27",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "esp": "FF Blast+ Eco + PureGEL",
+   "pl": "Sin placa",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 189999,
+     "fecha": "27/10/2026",
+     "antes": 319999,
+     "cuotas": "6 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-nimbus-27-para-hombre/AS1011B958400.html"
+    },
+    {
+     "tienda": "Run & Bike",
+     "precio": 239669,
+     "fecha": "27/10/2026",
+     "antes": 289999,
+     "cuotas": "Hasta 12 cuotas con Mercado Pago (promo del sitio)",
+     "nota": "Mujer",
+     "url": "https://www.runandbike.com.ar/zapatillas-asics-gel-nimbus-27-1012b753-401.html"
+    }
+   ],
+   "colores": [
+    [
+     "Aqua",
+     "#3FB8B0"
+    ],
+    [
+     "Celeste",
+     "#8EC5E8"
+    ]
+   ],
+   "peso": 305,
+   "drop": 8,
+   "talon": 43,
+   "ante": null,
+   "ar": true,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto (desde 66 kg)",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Quien busca una zapatilla rápida o liviana.",
+   "fuente": [
+    "Road Running Review",
+    "https://www.roadrunningreview.com/es/ASICS-Gel-Nimbus-27/REVIEW--101383.html"
+   ],
+   "id": 17
+  },
+  {
+   "m": "Asics",
+   "mod": "Gel-Kayano",
+   "ver": "32",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje largo",
+   "esp": "FF Blast Plus + PureGEL",
+   "pl": "Sin placa",
+   "tiendas": [
+    {
+     "tienda": "Dash Deportes",
+     "precio": 223999,
+     "fecha": "27/10/2026",
+     "antes": 319999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.dashdeportes.com.ar/zapatillas-asics-gel-kayano-32-running-hombre-0612746/p"
+    },
+    {
+     "tienda": "Vanguard Deportes",
+     "precio": 299000,
+     "fecha": "27/10/2026",
+     "cuotas": "3 cuotas sin interés · 5% off por transferencia",
+     "url": "https://vanguarddeportes.com.ar/productos/zapatilla-asics-running-gel-kayano-32-hombre-azul-negro/"
+    }
+   ],
+   "colores": [
+    [
+     "Azul / Negro",
+     "#23324F"
+    ]
+   ],
+   "peso": 300,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "ar": true,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos"
+   },
+   "evitar": "Pisada neutra que busca una zapatilla ágil.",
+   "fuente": [
+    "Carreras de Montaña",
+    "https://carrerasdemontana.com/2025/05/21/asics-gel-kayano-32-zapatillas-running-estabilidad-40mm-talon/"
+   ],
+   "id": 18
+  },
+  {
+   "m": "Asics",
+   "mod": "GT-2000",
+   "ver": "",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 19
+  },
+  {
+   "m": "Asics",
+   "mod": "Gel-Cumulus",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 20
+  },
+  {
+   "m": "Asics",
+   "mod": "Superblast",
+   "ver": "3",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "FF Turbo+",
+   "pl": "",
+   "tiendas": [],
+   "colores": [],
+   "id": 21
+  },
+  {
+   "m": "Asics",
+   "mod": "Magic Speed",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "esp": "",
+   "pl": "Carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 22
+  },
+  {
+   "m": "Asics",
+   "mod": "Metaspeed Sky / Edge",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "esp": "FF Turbo+",
+   "pl": "Carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 23
+  },
+  {
+   "m": "New Balance",
+   "mod": "Fresh Foam X 1080",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "esp": "Fresh Foam X",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 24
+  },
+  {
+   "m": "New Balance",
+   "mod": "Fresh Foam X 880",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "Fresh Foam X",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 25
+  },
+  {
+   "m": "New Balance",
+   "mod": "FuelCell Rebel",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "FuelCell",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 26
+  },
+  {
+   "m": "New Balance",
+   "mod": "FuelCell SC Elite",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "esp": "FuelCell",
+   "pl": "Carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 27
+  },
+  {
+   "m": "Saucony",
+   "mod": "Ride",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 28
+  },
+  {
+   "m": "Saucony",
+   "mod": "Guide",
+   "ver": "",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 29
+  },
+  {
+   "m": "Saucony",
+   "mod": "Endorphin Speed",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "PWRRUN PB",
+   "pl": "Nylon",
+   "tiendas": [],
+   "colores": [],
+   "id": 30
+  },
+  {
+   "m": "Saucony",
+   "mod": "Endorphin Pro",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "esp": "PWRRUN PB",
+   "pl": "Carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 31
+  },
+  {
+   "m": "Puma",
+   "mod": "Velocity Nitro",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "Nitro",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 32
+  },
+  {
+   "m": "Puma",
+   "mod": "Deviate Nitro",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "esp": "Nitro",
+   "pl": "Carbono",
+   "tiendas": [],
+   "colores": [],
+   "id": 33
+  },
+  {
+   "m": "Puma",
+   "mod": "MagMax Nitro",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "esp": "Nitro",
+   "pl": "Sin placa",
+   "tiendas": [],
+   "colores": [],
+   "id": 34
+  },
+  {
+   "m": "Mizuno",
+   "mod": "Wave Rider",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Placa Wave",
+   "tiendas": [],
+   "colores": [],
+   "id": 35
+  },
+  {
+   "m": "Mizuno",
+   "mod": "Wave Inspire",
+   "ver": "",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "esp": "",
+   "pl": "Placa Wave",
+   "tiendas": [],
+   "colores": [],
+   "id": 36
+  },
+  {
+   "m": "Topper",
+   "mod": "Línea running",
+   "ver": "",
+   "tipo": "",
+   "uso": "Iniciación",
+   "esp": "",
+   "pl": "",
+   "tiendas": [],
+   "colores": [],
+   "id": 37
+  }
+ ]
+}

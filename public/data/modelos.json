@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-27",
+ "actualizado": "27/10/2026",
  "modelos": [
   {
    "m": "Adidas",
@@ -66,7 +66,9 @@
     "Correr una Maratón",
     "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adizero-evo-sl/"
    ],
-   "id": 1
+   "id": 1,
+   "slug": "adidas-adizero-evo-sl",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -82,7 +84,7 @@
      "precio": 264200,
      "fecha": "27/10/2026",
      "desde": true,
-     "cuotas": "3 y 6 cuotas sin interés (promo del sitio)",
+     "cuotas": "3 y 6 cuotas sin interés",
      "url": "https://www.dukesport.com.ar/running/nike/pegasus1/pegasus-42/"
     }
    ],
@@ -103,7 +105,9 @@
     "Carreras de Montaña",
     "https://carrerasdemontana.com/2026/03/04/nike-pegasus-42-mayayo/"
    ],
-   "id": 2
+   "id": 2,
+   "slug": "nike-pegasus-42",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -115,7 +119,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 3
+   "id": 3,
+   "slug": "nike-pegasus-plus-2",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -130,7 +136,7 @@
      "tienda": "Duke Sport",
      "precio": 273780,
      "fecha": "27/10/2026",
-     "cuotas": "3 y 6 cuotas sin interés (promo del sitio)",
+     "cuotas": "3 y 6 cuotas sin interés",
      "url": "https://www.dukesport.com.ar/productos/nike-vomero-18-1y47g/"
     }
    ],
@@ -151,7 +157,9 @@
     "Carreras de Montaña",
     "https://carrerasdemontana.com/2025/03/13/nike-vomero-18-review-mayayo/"
    ],
-   "id": 4
+   "id": 4,
+   "slug": "nike-vomero-18",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -163,7 +171,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 5
+   "id": 5,
+   "slug": "nike-vomero-plus",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -175,7 +185,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 6
+   "id": 6,
+   "slug": "nike-structure-26",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -187,7 +199,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 7
+   "id": 7,
+   "slug": "nike-winflo-12",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -199,7 +213,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 8
+   "id": 8,
+   "slug": "nike-invincible-3",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -211,7 +227,9 @@
    "pl": "Carbono",
    "tiendas": [],
    "colores": [],
-   "id": 9
+   "id": 9,
+   "slug": "nike-zoom-fly-6",
+   "fotos": []
   },
   {
    "m": "Nike",
@@ -223,7 +241,9 @@
    "pl": "Carbono",
    "tiendas": [],
    "colores": [],
-   "id": 10
+   "id": 10,
+   "slug": "nike-vaporfly",
+   "fotos": []
   },
   {
    "m": "Adidas",
@@ -235,7 +255,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 11
+   "id": 11,
+   "slug": "adidas-adizero-sl-2",
+   "fotos": []
   },
   {
    "m": "Adidas",
@@ -247,7 +269,9 @@
    "pl": "Varillas",
    "tiendas": [],
    "colores": [],
-   "id": 12
+   "id": 12,
+   "slug": "adidas-adizero-boston",
+   "fotos": []
   },
   {
    "m": "Adidas",
@@ -259,7 +283,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 13
+   "id": 13,
+   "slug": "adidas-supernova-rise",
+   "fotos": []
   },
   {
    "m": "Adidas",
@@ -271,7 +297,9 @@
    "pl": "Varillas de carbono",
    "tiendas": [],
    "colores": [],
-   "id": 14
+   "id": 14,
+   "slug": "adidas-adizero-adios-pro",
+   "fotos": []
   },
   {
    "m": "Adidas",
@@ -283,7 +311,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 15
+   "id": 15,
+   "slug": "adidas-duramo-sl",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -326,7 +356,9 @@
     "Foro Atletismo",
     "https://www.foroatletismo.com/zapatillas/asics-novablast-5/"
    ],
-   "id": 16
+   "id": 16,
+   "slug": "asics-novablast-5",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -351,7 +383,7 @@
      "precio": 239669,
      "fecha": "27/10/2026",
      "antes": 289999,
-     "cuotas": "Hasta 12 cuotas con Mercado Pago (promo del sitio)",
+     "cuotas": "Hasta 12 cuotas con Mercado Pago",
      "nota": "Mujer",
      "url": "https://www.runandbike.com.ar/zapatillas-asics-gel-nimbus-27-1012b753-401.html"
     }
@@ -382,7 +414,9 @@
     "Road Running Review",
     "https://www.roadrunningreview.com/es/ASICS-Gel-Nimbus-27/REVIEW--101383.html"
    ],
-   "id": 17
+   "id": 17,
+   "slug": "asics-gel-nimbus-27",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -405,7 +439,7 @@
      "tienda": "Vanguard Deportes",
      "precio": 299000,
      "fecha": "27/10/2026",
-     "cuotas": "3 cuotas sin interés · 5% off por transferencia",
+     "cuotas": "3 cuotas sin interés · 5% off con transferencia",
      "url": "https://vanguarddeportes.com.ar/productos/zapatilla-asics-running-gel-kayano-32-hombre-azul-negro/"
     }
    ],
@@ -431,7 +465,9 @@
     "Carreras de Montaña",
     "https://carrerasdemontana.com/2025/05/21/asics-gel-kayano-32-zapatillas-running-estabilidad-40mm-talon/"
    ],
-   "id": 18
+   "id": 18,
+   "slug": "asics-gel-kayano-32",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -443,7 +479,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 19
+   "id": 19,
+   "slug": "asics-gt-2000",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -455,7 +493,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 20
+   "id": 20,
+   "slug": "asics-gel-cumulus",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -467,7 +507,9 @@
    "pl": "",
    "tiendas": [],
    "colores": [],
-   "id": 21
+   "id": 21,
+   "slug": "asics-superblast-3",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -479,7 +521,9 @@
    "pl": "Carbono",
    "tiendas": [],
    "colores": [],
-   "id": 22
+   "id": 22,
+   "slug": "asics-magic-speed-5",
+   "fotos": []
   },
   {
    "m": "Asics",
@@ -491,7 +535,9 @@
    "pl": "Carbono",
    "tiendas": [],
    "colores": [],
-   "id": 23
+   "id": 23,
+   "slug": "asics-metaspeed-sky-edge",
+   "fotos": []
   },
   {
    "m": "New Balance",
@@ -503,7 +549,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 24
+   "id": 24,
+   "slug": "new-balance-fresh-foam-x-1080",
+   "fotos": []
   },
   {
    "m": "New Balance",
@@ -515,7 +563,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 25
+   "id": 25,
+   "slug": "new-balance-fresh-foam-x-880",
+   "fotos": []
   },
   {
    "m": "New Balance",
@@ -527,7 +577,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 26
+   "id": 26,
+   "slug": "new-balance-fuelcell-rebel",
+   "fotos": []
   },
   {
    "m": "New Balance",
@@ -539,7 +591,9 @@
    "pl": "Carbono",
    "tiendas": [],
    "colores": [],
-   "id": 27
+   "id": 27,
+   "slug": "new-balance-fuelcell-sc-elite",
+   "fotos": []
   },
   {
    "m": "Saucony",
@@ -551,7 +605,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 28
+   "id": 28,
+   "slug": "saucony-ride",
+   "fotos": []
   },
   {
    "m": "Saucony",
@@ -563,7 +619,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 29
+   "id": 29,
+   "slug": "saucony-guide",
+   "fotos": []
   },
   {
    "m": "Saucony",
@@ -575,7 +633,9 @@
    "pl": "Nylon",
    "tiendas": [],
    "colores": [],
-   "id": 30
+   "id": 30,
+   "slug": "saucony-endorphin-speed",
+   "fotos": []
   },
   {
    "m": "Saucony",
@@ -587,7 +647,9 @@
    "pl": "Carbono",
    "tiendas": [],
    "colores": [],
-   "id": 31
+   "id": 31,
+   "slug": "saucony-endorphin-pro",
+   "fotos": []
   },
   {
    "m": "Puma",
@@ -599,7 +661,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 32
+   "id": 32,
+   "slug": "puma-velocity-nitro",
+   "fotos": []
   },
   {
    "m": "Puma",
@@ -611,7 +675,9 @@
    "pl": "Carbono",
    "tiendas": [],
    "colores": [],
-   "id": 33
+   "id": 33,
+   "slug": "puma-deviate-nitro",
+   "fotos": []
   },
   {
    "m": "Puma",
@@ -623,7 +689,9 @@
    "pl": "Sin placa",
    "tiendas": [],
    "colores": [],
-   "id": 34
+   "id": 34,
+   "slug": "puma-magmax-nitro",
+   "fotos": []
   },
   {
    "m": "Mizuno",
@@ -635,7 +703,9 @@
    "pl": "Placa Wave",
    "tiendas": [],
    "colores": [],
-   "id": 35
+   "id": 35,
+   "slug": "mizuno-wave-rider",
+   "fotos": []
   },
   {
    "m": "Mizuno",
@@ -647,7 +717,9 @@
    "pl": "Placa Wave",
    "tiendas": [],
    "colores": [],
-   "id": 36
+   "id": 36,
+   "slug": "mizuno-wave-inspire",
+   "fotos": []
   },
   {
    "m": "Topper",
@@ -659,7 +731,9 @@
    "pl": "",
    "tiendas": [],
    "colores": [],
-   "id": 37
+   "id": 37,
+   "slug": "topper-linea-running",
+   "fotos": []
   }
  ]
 }

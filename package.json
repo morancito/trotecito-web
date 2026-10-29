@@ -1,12 +1,13 @@
 {
-  "name": "rodaje-web",
+  "name": "zapada-web",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/fotos.mjs && vite",
+    "fotos": "node scripts/fotos.mjs",
     "validar": "node scripts/validar-datos.mjs",
-    "build": "node scripts/validar-datos.mjs && vite build",
+    "build": "node scripts/fotos.mjs && node scripts/validar-datos.mjs && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

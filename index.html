@@ -3,91 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Rodaje · Zapatillas de running en Argentina</title>
-<meta name="description" content="Compará zapatillas de running que se consiguen en Argentina: ficha técnica, para qué corredor sirve cada una y precios por tienda de menor a mayor.">
-<meta property="og:title" content="Rodaje · Zapatillas de running en Argentina">
-<meta property="og:description" content="Elegí por cómo corrés. Comprá donde está más barata.">
+<title>Zapada</title>
+<meta name="description" content="Compará las zapatillas de running que se consiguen en Argentina y comprá donde están más baratas.">
+<meta property="og:title" content="Zapada · Zapas de running en Argentina">
+<meta property="og:description" content="¿Qué zapa te va? Compará modelos y precios de todas las tiendas.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0C131E">
+<meta name="theme-color" content="#FFC700">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Shrikhand&family=JetBrains+Mono:wght@500&display=swap">
 </head>
 <body>
+<!--BODY-->
 <div class="top"><div class="wrap">
-  <a class="logo" href="#">Roda<em>je</em></a>
-  <nav class="main"><a href="#aprender">Aprendé</a><a href="#catalogo">Catálogo</a></nav>
-  <input type="search" id="q" placeholder="Buscar modelo, marca o espuma" aria-label="Buscar">
-  <button class="fbtn" id="fbtn" aria-controls="filters" aria-expanded="false">Filtros</button>
+  <a class="logo" href="#"><i aria-hidden="true"></i>Zapada</a>
+  <nav class="nav"><a href="#catalogo">Zapas</a><a href="#aprender">Aprendé</a></nav>
 </div></div>
 
-<div id="viewHome">
-  <header class="hero"><div class="wrap">
+<div id="home">
+  <section class="hero"><div class="wrap hero-in">
     <div>
-      <div class="eyebrow">Zapatillas de running · Argentina</div>
-      <h1>Elegí por cómo <span>corrés.</span></h1>
-      <p class="lede">Entendé qué es el drop, la pisada y la amortiguación, encontrá la zapatilla que te sirve y comprala donde está más barata.</p>
-      <div class="ctas"><a class="btn primary" href="#catalogo">Ver catálogo</a><a class="btn" href="#aprender">Aprender en 3D</a></div>
-      <div class="stats" id="stats"></div>
+      <p class="kicker">Zapatillas de running · Argentina</p>
+      <h1 class="cond">¿Qué zapa<br>te <em>va?</em></h1>
+      <p class="lede">Compará los modelos que se consiguen acá y comprá donde están más baratos.</p>
+      <div class="ctas"><a class="btn fuerte" href="#catalogo">Ver zapas</a><a class="btn" href="#aprender">Aprendé en 3D</a></div>
     </div>
-    <div class="stage" id="heroStage"><div class="lbls"></div>
-      <div class="stagecap"><span>Modelo genérico · arrastrá para girar</span></div></div>
-  </div></header>
+    <div class="hero-art"><div class="sol" aria-hidden="true"></div><div class="stage" id="heroStage"><div class="lbls"></div></div></div>
+  </div></section>
 
-  <section class="lab" id="aprender"><div class="wrap">
-    <div class="sechead"><div><div class="eyebrow">Carriles · para quien recién empieza</div><h2>Qué es cada cosa</h2></div>
-      <p>Cinco conceptos que aparecen en todas las fichas. Mové los controles y mirá qué cambia en la zapatilla.</p></div>
-    <div class="lanes" role="tablist" id="lanes"></div>
-    <div class="labgrid">
-      <div class="labstage"><div class="stage" id="labStage"><div class="lbls"></div>
-        <div class="stagecap"><span id="labcap">Modelo genérico</span><div class="views" id="labViews"></div></div></div></div>
-      <div class="labtext" id="labtext" role="tabpanel"></div>
+  <div class="ticker"><div class="tk-track" id="ticker"></div></div>
+
+  <section class="blk" id="aprender"><div class="wrap">
+    <div class="head"><h2 class="sec cond">Aprendé <span>en 3D</span></h2>
+      <div class="tabs" role="tablist" id="lanes"></div></div>
+    <div class="lab-grid">
+      <div class="lab-stage"><div class="stage" id="labStage"><div class="lbls"></div></div><div class="views" id="labViews"></div></div>
+      <div class="lab-text" id="labtext" role="tabpanel"></div>
     </div>
   </div></section>
 
-  <div class="wrap layout" id="catalogo">
-    <aside class="filters" id="filters" aria-label="Filtros">
-      <div class="drawerhead"><b>Filtros</b><button id="fclose">Listo</button></div>
-      <div class="fgroup"><h3>Pisada</h3><div class="opts" id="fPisada"></div>
-        <p class="hint">¿No sabés cuál es la tuya? <a href="#aprender" data-lane="pisada">Miralo en 3D</a>.</p></div>
-      <div class="fgroup"><h3>Uso</h3><div class="opts" id="fUso"></div></div>
-      <div class="fgroup"><h3>Marca</h3><div class="opts" id="fMarca"></div></div>
-      <div class="fgroup"><h3>Datos</h3><div class="opts">
-        <label class="opt"><input type="checkbox" id="fPrecio"> Con precio relevado</label>
-        <label class="opt"><input type="checkbox" id="fFicha"> Ficha completa</label></div></div>
-      <button class="reset" id="reset">Limpiar filtros</button>
-    </aside>
-    <main>
-      <div class="toolbar"><div><h2>Catálogo</h2><p id="count"></p></div>
-        <select id="sort" aria-label="Ordenar">
-          <option value="data">Más completas primero</option><option value="pasc">Precio: menor a mayor</option>
-          <option value="pdesc">Precio: mayor a menor</option><option value="peso">Más livianas</option><option value="stack">Más amortiguadas</option><option value="az">Marca A–Z</option>
-        </select></div>
-      <div class="grid" id="grid"></div>
-      <div class="empty" id="empty" hidden>No hay modelos con esos filtros. Probá sacar alguno.</div>
-    </main>
-  </div>
+  <section class="blk" id="catalogo"><div class="wrap">
+    <div class="head"><h2 class="sec cond">Las <span>zapas</span></h2>
+      <input type="search" class="buscar" id="q" placeholder="Buscá un modelo o marca" aria-label="Buscar"></div>
+    <div class="filtros" id="filtros"></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No hay zapas con esos filtros.</p>
+  </div></section>
 </div>
 
-<div id="viewDetail" class="wrap" hidden></div>
-<div id="viewCompare" class="wrap" hidden></div>
+<div id="detalle" class="wrap det" hidden></div>
+<div id="comparar" class="wrap det" hidden></div>
 
-<footer class="wrap">
-  <h4>De dónde salen los datos</h4>
-  <ul>
-    <li>Ficha técnica: fichas de marca y medios especializados (Foro Atletismo, Carreras de Montaña, Correr una Maratón, Road Running Review). Tomamos solo datos medibles y enlazamos la review completa con crédito.</li>
-    <li>Precios: relevados a mano en tiendas argentinas el 27/10/2026. Pueden haber cambiado; confirmá en la tienda antes de comprar.</li>
-    <li>Modelos 3D: zapatilla genérica diseñada por Rodaje, dibujada a escala con la altura de talón y antepié de cada ficha. No reproduce el diseño de ninguna marca.</li>
-    <li>“Pendiente” indica que el dato todavía no se cargó desde una fuente confiable.</li>
-  </ul>
-</footer>
+<footer><div class="wrap">
+  <div class="foot-logo">Zapada</div>
+  <p>Hecho en Argentina, para los que corren.</p>
+</div></footer>
 
 <div class="tray" id="tray" hidden><div class="wrap">
-  <span id="traytxt"></span>
+  <b id="traytxt"></b>
   <span><button class="clear" id="trayclear">Limpiar</button> <button id="traygo">Comparar</button></span>
 </div></div>
-<div class="scrim" id="scrim" hidden></div>
+<!--/BODY-->
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>

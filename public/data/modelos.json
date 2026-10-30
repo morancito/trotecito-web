@@ -1,5 +1,5 @@
 {
- "actualizado": "27/10/2026",
+ "actualizado": "30/10/2026",
  "modelos": [
   {
    "m": "Adidas",
@@ -11,29 +11,30 @@
    "pl": "Sin placa",
    "tiendas": [
     {
-     "tienda": "Dexter",
-     "precio": 169999,
-     "fecha": "27/10/2026",
-     "antes": 249999,
-     "cuotas": "6 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-evo-sl-hombre/ADKJ1364.html"
-    },
-    {
-     "tienda": "Sporting",
-     "precio": 249999,
-     "fecha": "27/10/2026",
-     "cuotas": "Hasta 12 cuotas en bancos seleccionados",
-     "nota": "Hombre",
-     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-evo-sl-de-hombre-6jh6206-000/p"
-    },
-    {
      "tienda": "adidas.com.ar",
      "precio": 249999,
      "fecha": "27/10/2026",
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KI6931.html"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-evo-sl-hombre/ADKJ1364.html",
+     "fecha": "30/10/2026",
+     "antes": 249999,
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 224999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-evo-sl-de-hombre-6ki9874-000/p",
+     "fecha": "30/10/2026",
+     "antes": 249999,
+     "nota": "Hombre"
     }
    ],
    "colores": [
@@ -68,7 +69,12 @@
    ],
    "id": 1,
    "slug": "adidas-adizero-evo-sl",
-   "fotos": []
+   "fotos": [
+    "fotos/adidas-adizero-evo-sl/1.webp",
+    "fotos/adidas-adizero-evo-sl/2.webp",
+    "fotos/adidas-adizero-evo-sl/3.webp",
+    "fotos/adidas-adizero-evo-sl/4.webp"
+   ]
   },
   {
    "m": "Nike",
@@ -86,6 +92,22 @@
      "desde": true,
      "cuotas": "3 y 6 cuotas sin interés",
      "url": "https://www.dukesport.com.ar/running/nike/pegasus1/pegasus-42/"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 309999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-zoom-pegasus-42-hombre/NIIB1873-001.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 185999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.nike.com.ar/nike-pegasus-42-ib1881-602/p",
+     "fecha": "30/10/2026",
+     "antes": 309999
     }
    ],
    "colores": [],
@@ -107,21 +129,49 @@
    ],
    "id": 2,
    "slug": "nike-pegasus-42",
-   "fotos": []
+   "fotos": [
+    "fotos/nike-pegasus-42/1.webp",
+    "fotos/nike-pegasus-42/2.webp",
+    "fotos/nike-pegasus-42/3.webp",
+    "fotos/nike-pegasus-42/4.webp"
+   ]
   },
   {
    "m": "Nike",
    "mod": "Pegasus Plus",
-   "ver": "2",
+   "ver": "",
    "tipo": "Neutra",
    "uso": "Ritmo",
    "esp": "ZoomX",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Nike",
+     "precio": 215999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.nike.com.ar/nike-pegasus-plus-fq7262-402/p",
+     "fecha": "30/10/2026",
+     "antes": 359999
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 359999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-pegasus-plus-de-mujer-fq7261002-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer"
+    }
+   ],
    "colores": [],
    "id": 3,
-   "slug": "nike-pegasus-plus-2",
-   "fotos": []
+   "slug": "nike-pegasus-plus",
+   "fotos": [
+    "fotos/nike-pegasus-plus/1.webp",
+    "fotos/nike-pegasus-plus/2.webp",
+    "fotos/nike-pegasus-plus/3.webp",
+    "fotos/nike-pegasus-plus/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Nike",
@@ -138,6 +188,29 @@
      "fecha": "27/10/2026",
      "cuotas": "3 y 6 cuotas sin interés",
      "url": "https://www.dukesport.com.ar/productos/nike-vomero-18-1y47g/"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 329999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-vomero-18-hombre/NIHM6803-404.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 329999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.nike.com.ar/nike-vomero-18-hm6804-005/p",
+     "fecha": "30/10/2026"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 329999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-vomero-18-de-mujer-hm6804004-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer"
     }
    ],
    "colores": [],
@@ -159,7 +232,12 @@
    ],
    "id": 4,
    "slug": "nike-vomero-18",
-   "fotos": []
+   "fotos": [
+    "fotos/nike-vomero-18/1.webp",
+    "fotos/nike-vomero-18/2.webp",
+    "fotos/nike-vomero-18/3.webp",
+    "fotos/nike-vomero-18/4.webp"
+   ]
   },
   {
    "m": "Nike",
@@ -169,11 +247,42 @@
    "uso": "Rodaje largo",
    "esp": "ZoomX",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 379999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-vomero-plus-hombre/NIHV8150-009.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 227999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.nike.com.ar/nike-vomero-plus-hv8154-012/p",
+     "fecha": "30/10/2026",
+     "antes": 379999
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 379999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-vomero-plus-de-mujer-hv8154002-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer"
+    }
+   ],
    "colores": [],
    "id": 5,
    "slug": "nike-vomero-plus",
-   "fotos": []
+   "fotos": [
+    "fotos/nike-vomero-plus/1.webp",
+    "fotos/nike-vomero-plus/2.webp",
+    "fotos/nike-vomero-plus/3.webp",
+    "fotos/nike-vomero-plus/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Nike",
@@ -183,25 +292,56 @@
    "uso": "Rodaje diario",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-structure-26-hombre/NIHJ1102-002.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 6,
    "slug": "nike-structure-26",
-   "fotos": []
+   "fotos": [
+    "fotos/nike-structure-26/1.webp",
+    "fotos/nike-structure-26/2.webp",
+    "fotos/nike-structure-26/3.webp",
+    "fotos/nike-structure-26/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Nike",
    "mod": "Winflo",
-   "ver": "12",
+   "ver": "10",
    "tipo": "Neutra",
    "uso": "Iniciación",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 79999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo-10-hombre/NIDV4022-003.html",
+     "fecha": "30/10/2026",
+     "antes": 199999,
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 7,
-   "slug": "nike-winflo-12",
-   "fotos": []
+   "slug": "nike-winflo-10",
+   "fotos": [
+    "fotos/nike-winflo-10/1.webp",
+    "fotos/nike-winflo-10/2.webp",
+    "fotos/nike-winflo-10/3.webp",
+    "fotos/nike-winflo-10/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Nike",
@@ -211,39 +351,87 @@
    "uso": "Rodaje largo",
    "esp": "ZoomX",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 114999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-invincible-3-mujer/NIHJ6655-900.html",
+     "fecha": "30/10/2026",
+     "antes": 389999,
+     "nota": "Mujer"
+    }
+   ],
    "colores": [],
    "id": 8,
    "slug": "nike-invincible-3",
-   "fotos": []
+   "fotos": [
+    "fotos/nike-invincible-3/1.webp",
+    "fotos/nike-invincible-3/2.webp",
+    "fotos/nike-invincible-3/3.webp",
+    "fotos/nike-invincible-3/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Nike",
    "mod": "Zoom Fly",
-   "ver": "6",
+   "ver": "5",
    "tipo": "Neutra",
    "uso": "Ritmo",
    "esp": "ZoomX",
    "pl": "Carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 99999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-zoom-fly-5-mujer/NIDM8974-100.html",
+     "fecha": "30/10/2026",
+     "antes": 339999,
+     "nota": "Mujer"
+    }
+   ],
    "colores": [],
    "id": 9,
-   "slug": "nike-zoom-fly-6",
-   "fotos": []
+   "slug": "nike-zoom-fly-5",
+   "fotos": [
+    "fotos/nike-zoom-fly-5/1.webp",
+    "fotos/nike-zoom-fly-5/2.webp",
+    "fotos/nike-zoom-fly-5/3.webp",
+    "fotos/nike-zoom-fly-5/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Nike",
    "mod": "Vaporfly",
-   "ver": "",
+   "ver": "3",
    "tipo": "Neutra",
    "uso": "Competencia",
    "esp": "ZoomX",
    "pl": "Carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-vaporfly-3-hombre/NIDV4129-700.html",
+     "fecha": "30/10/2026",
+     "antes": 499999,
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 10,
-   "slug": "nike-vaporfly",
-   "fotos": []
+   "slug": "nike-vaporfly-3",
+   "fotos": [
+    "fotos/nike-vaporfly-3/1.webp",
+    "fotos/nike-vaporfly-3/2.webp",
+    "fotos/nike-vaporfly-3/3.webp",
+    "fotos/nike-vaporfly-3/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Adidas",
@@ -253,67 +441,186 @@
    "uso": "Ritmo",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 189999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-sl2-hombre/ADJQ3127.html",
+     "fecha": "30/10/2026",
+     "antes": 219999,
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 158899,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-sl2-de-mujer-6jq3124-000/p",
+     "fecha": "30/10/2026",
+     "antes": 219999,
+     "nota": "Mujer"
+    }
+   ],
    "colores": [],
    "id": 11,
    "slug": "adidas-adizero-sl-2",
-   "fotos": []
+   "fotos": [
+    "fotos/adidas-adizero-sl-2/1.webp",
+    "fotos/adidas-adizero-sl-2/2.webp",
+    "fotos/adidas-adizero-sl-2/3.webp",
+    "fotos/adidas-adizero-sl-2/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Adidas",
    "mod": "Adizero Boston",
-   "ver": "",
+   "ver": "13",
    "tipo": "Neutra",
    "uso": "Ritmo",
    "esp": "Lightstrike Pro",
    "pl": "Varillas",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-boston-13-hombre/ADKH8859.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-boston-13-de-hombre-6kh8859-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 12,
-   "slug": "adidas-adizero-boston",
-   "fotos": []
+   "slug": "adidas-adizero-boston-13",
+   "fotos": [
+    "fotos/adidas-adizero-boston-13/1.webp",
+    "fotos/adidas-adizero-boston-13/2.webp",
+    "fotos/adidas-adizero-boston-13/3.webp",
+    "fotos/adidas-adizero-boston-13/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Adidas",
    "mod": "Supernova Rise",
-   "ver": "",
+   "ver": "3",
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADJP8689.html",
+     "fecha": "30/10/2026",
+     "antes": 249999,
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6jq8502-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 13,
-   "slug": "adidas-supernova-rise",
-   "fotos": []
+   "slug": "adidas-supernova-rise-3",
+   "fotos": [
+    "fotos/adidas-supernova-rise-3/1.webp",
+    "fotos/adidas-supernova-rise-3/2.webp",
+    "fotos/adidas-supernova-rise-3/3.webp",
+    "fotos/adidas-supernova-rise-3/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Adidas",
    "mod": "Adizero Adios Pro",
-   "ver": "",
+   "ver": "5",
    "tipo": "Neutra",
    "uso": "Competencia",
    "esp": "Lightstrike Pro",
    "pl": "Varillas de carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 479999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-hombre/ADKJ7040.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 479999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-adios-pro-5-de-hombre-6ki8294-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 14,
-   "slug": "adidas-adizero-adios-pro",
-   "fotos": []
+   "slug": "adidas-adizero-adios-pro-5",
+   "fotos": [
+    "fotos/adidas-adizero-adios-pro-5/1.webp",
+    "fotos/adidas-adizero-adios-pro-5/2.webp",
+    "fotos/adidas-adizero-adios-pro-5/3.webp",
+    "fotos/adidas-adizero-adios-pro-5/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Adidas",
    "mod": "Duramo SL",
-   "ver": "",
+   "ver": "2",
    "tipo": "Neutra",
    "uso": "Iniciación",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 129999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-duramo-sl2-hombre/ADIH8218.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 90999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl2-de-hombre-6jq0606-000/p",
+     "fecha": "30/10/2026",
+     "antes": 129999,
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 15,
-   "slug": "adidas-duramo-sl",
-   "fotos": []
+   "slug": "adidas-duramo-sl-2",
+   "fotos": [
+    "fotos/adidas-duramo-sl-2/1.webp",
+    "fotos/adidas-duramo-sl-2/2.webp",
+    "fotos/adidas-duramo-sl-2/3.webp",
+    "fotos/adidas-duramo-sl-2/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Asics",
@@ -326,12 +633,20 @@
    "tiendas": [
     {
      "tienda": "Dexter",
-     "precio": 189999,
-     "fecha": "27/10/2026",
+     "precio": 94999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-para-hombre/AS1011B974500.html",
+     "fecha": "30/10/2026",
      "antes": 319999,
-     "cuotas": "6 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-para-hombre/AS1011B974500.html"
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Asics",
+     "precio": 319900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1012b765-402-zapatilla-asics-novablast-5-w-1/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer"
     }
    ],
    "colores": [
@@ -358,7 +673,12 @@
    ],
    "id": 16,
    "slug": "asics-novablast-5",
-   "fotos": []
+   "fotos": [
+    "fotos/asics-novablast-5/1.webp",
+    "fotos/asics-novablast-5/2.webp",
+    "fotos/asics-novablast-5/3.webp",
+    "fotos/asics-novablast-5/4.webp"
+   ]
   },
   {
    "m": "Asics",
@@ -370,15 +690,6 @@
    "pl": "Sin placa",
    "tiendas": [
     {
-     "tienda": "Dexter",
-     "precio": 189999,
-     "fecha": "27/10/2026",
-     "antes": 319999,
-     "cuotas": "6 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-nimbus-27-para-hombre/AS1011B958400.html"
-    },
-    {
      "tienda": "Run & Bike",
      "precio": 239669,
      "fecha": "27/10/2026",
@@ -386,6 +697,15 @@
      "cuotas": "Hasta 12 cuotas con Mercado Pago",
      "nota": "Mujer",
      "url": "https://www.runandbike.com.ar/zapatillas-asics-gel-nimbus-27-1012b753-401.html"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 94999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-nimbus-27-para-hombre/AS1011B958400.html",
+     "fecha": "30/10/2026",
+     "antes": 319999,
+     "nota": "Hombre"
     }
    ],
    "colores": [
@@ -416,7 +736,12 @@
    ],
    "id": 17,
    "slug": "asics-gel-nimbus-27",
-   "fotos": []
+   "fotos": [
+    "fotos/asics-gel-nimbus-27/1.webp",
+    "fotos/asics-gel-nimbus-27/2.webp",
+    "fotos/asics-gel-nimbus-27/3.webp",
+    "fotos/asics-gel-nimbus-27/4.webp"
+   ]
   },
   {
    "m": "Asics",
@@ -441,6 +766,32 @@
      "fecha": "27/10/2026",
      "cuotas": "3 cuotas sin interés · 5% off con transferencia",
      "url": "https://vanguarddeportes.com.ar/productos/zapatilla-asics-running-gel-kayano-32-hombre-azul-negro/"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 189999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-kayano-32-hombre/AS1011C052101.html",
+     "fecha": "30/10/2026",
+     "antes": 319999,
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Asics",
+     "precio": 319900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1011c052-101-zapatilla-asics-gel-kayano-32-m-1/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 224999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-asics-gel-kayano-32-unisex-1012b838003-000/p",
+     "fecha": "30/10/2026",
+     "antes": 319900,
+     "nota": "Unisex"
     }
    ],
    "colores": [
@@ -467,133 +818,290 @@
    ],
    "id": 18,
    "slug": "asics-gel-kayano-32",
-   "fotos": []
+   "fotos": [
+    "fotos/asics-gel-kayano-32/1.webp",
+    "fotos/asics-gel-kayano-32/2.webp",
+    "fotos/asics-gel-kayano-32/3.webp",
+    "fotos/asics-gel-kayano-32/4.webp"
+   ]
   },
   {
    "m": "Asics",
    "mod": "GT-2000",
-   "ver": "",
+   "ver": "14",
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 209999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gt-2000-14-hombre-malla/AS1011C056400.html",
+     "fecha": "30/10/2026",
+     "antes": 279999,
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Asics",
+     "precio": 279900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1011c056-400-zapatilla-asics-gt-2000-14-m-1/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 19,
-   "slug": "asics-gt-2000",
-   "fotos": []
+   "slug": "asics-gt-2000-14",
+   "fotos": [
+    "fotos/asics-gt-2000-14/1.webp",
+    "fotos/asics-gt-2000-14/2.webp",
+    "fotos/asics-gt-2000-14/3.webp",
+    "fotos/asics-gt-2000-14/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Asics",
    "mod": "Gel-Cumulus",
-   "ver": "",
+   "ver": "27",
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-cumulus-27-hombre-malla/AS1011B960004.html",
+     "fecha": "30/10/2026",
+     "antes": 299999,
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Asics",
+     "precio": 299900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1011b960-500-zapatilla-asics-gel-cumulus-27-m-1/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 20,
-   "slug": "asics-gel-cumulus",
-   "fotos": []
+   "slug": "asics-gel-cumulus-27",
+   "fotos": [
+    "fotos/asics-gel-cumulus-27/1.webp",
+    "fotos/asics-gel-cumulus-27/2.webp",
+    "fotos/asics-gel-cumulus-27/3.webp",
+    "fotos/asics-gel-cumulus-27/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Asics",
    "mod": "Superblast",
-   "ver": "3",
+   "ver": "2",
    "tipo": "Neutra",
    "uso": "Ritmo",
    "esp": "FF Turbo+",
    "pl": "",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 329999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-superblast-2/AS1013A142401.html",
+     "fecha": "30/10/2026",
+     "antes": 449999
+    }
+   ],
    "colores": [],
    "id": 21,
-   "slug": "asics-superblast-3",
-   "fotos": []
+   "slug": "asics-superblast-2",
+   "fotos": [
+    "fotos/asics-superblast-2/1.webp",
+    "fotos/asics-superblast-2/2.webp",
+    "fotos/asics-superblast-2/3.webp",
+    "fotos/asics-superblast-2/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Asics",
    "mod": "Magic Speed",
-   "ver": "5",
+   "ver": "4",
    "tipo": "Neutra",
    "uso": "Competencia",
    "esp": "",
    "pl": "Carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Asics",
+     "precio": 379900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1012b676-600-zapatilla-asics-magic-speed-4-w/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer"
+    }
+   ],
    "colores": [],
    "id": 22,
-   "slug": "asics-magic-speed-5",
-   "fotos": []
+   "slug": "asics-magic-speed-4",
+   "fotos": [
+    "fotos/asics-magic-speed-4/1.webp",
+    "fotos/asics-magic-speed-4/2.webp",
+    "fotos/asics-magic-speed-4/3.webp",
+    "fotos/asics-magic-speed-4/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Asics",
-   "mod": "Metaspeed Sky / Edge",
+   "mod": "Metaspeed Sky+",
    "ver": "",
    "tipo": "Neutra",
    "uso": "Competencia",
    "esp": "FF Turbo+",
    "pl": "Carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Asics",
+     "precio": 399900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1013a115-301-zapatilla-asics-metaspeed-sky-m-1/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 23,
-   "slug": "asics-metaspeed-sky-edge",
-   "fotos": []
+   "slug": "asics-metaspeed-sky",
+   "fotos": [
+    "fotos/asics-metaspeed-sky/1.webp",
+    "fotos/asics-metaspeed-sky/2.webp",
+    "fotos/asics-metaspeed-sky/3.webp",
+    "fotos/asics-metaspeed-sky/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "New Balance",
    "mod": "Fresh Foam X 1080",
-   "ver": "",
+   "ver": "v14",
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "esp": "Fresh Foam X",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "New Balance",
+     "precio": 249999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000217.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 24,
-   "slug": "new-balance-fresh-foam-x-1080",
-   "fotos": []
+   "slug": "new-balance-fresh-foam-x-1080-v14",
+   "fotos": [
+    "fotos/new-balance-fresh-foam-x-1080-v14/1.webp",
+    "fotos/new-balance-fresh-foam-x-1080-v14/2.webp",
+    "fotos/new-balance-fresh-foam-x-1080-v14/3.webp",
+    "fotos/new-balance-fresh-foam-x-1080-v14/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "New Balance",
    "mod": "Fresh Foam X 880",
-   "ver": "",
+   "ver": "v15",
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "esp": "Fresh Foam X",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "New Balance",
+     "precio": 199999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000485.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 25,
-   "slug": "new-balance-fresh-foam-x-880",
-   "fotos": []
+   "slug": "new-balance-fresh-foam-x-880-v15",
+   "fotos": [
+    "fotos/new-balance-fresh-foam-x-880-v15/1.webp",
+    "fotos/new-balance-fresh-foam-x-880-v15/2.webp",
+    "fotos/new-balance-fresh-foam-x-880-v15/3.webp",
+    "fotos/new-balance-fresh-foam-x-880-v15/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "New Balance",
    "mod": "FuelCell Rebel",
-   "ver": "",
+   "ver": "v5",
    "tipo": "Neutra",
    "uso": "Ritmo",
    "esp": "FuelCell",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "New Balance",
+     "precio": 209999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000323.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 26,
-   "slug": "new-balance-fuelcell-rebel",
-   "fotos": []
+   "slug": "new-balance-fuelcell-rebel-v5",
+   "fotos": [
+    "fotos/new-balance-fuelcell-rebel-v5/1.webp",
+    "fotos/new-balance-fuelcell-rebel-v5/2.webp",
+    "fotos/new-balance-fuelcell-rebel-v5/3.webp",
+    "fotos/new-balance-fuelcell-rebel-v5/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "New Balance",
    "mod": "FuelCell SC Elite",
-   "ver": "",
+   "ver": "v5",
    "tipo": "Neutra",
    "uso": "Competencia",
    "esp": "FuelCell",
    "pl": "Carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "New Balance",
+     "precio": 359999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000320090010.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 27,
-   "slug": "new-balance-fuelcell-sc-elite",
-   "fotos": []
+   "slug": "new-balance-fuelcell-sc-elite-v5",
+   "fotos": [
+    "fotos/new-balance-fuelcell-sc-elite-v5/1.webp",
+    "fotos/new-balance-fuelcell-sc-elite-v5/2.webp",
+    "fotos/new-balance-fuelcell-sc-elite-v5/3.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Saucony",
@@ -612,86 +1120,202 @@
   {
    "m": "Saucony",
    "mod": "Guide",
-   "ver": "",
+   "ver": "18",
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 179999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 130729,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-18-de-hombre-s20998099-000/p",
+     "fecha": "30/10/2026",
+     "antes": 180899,
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 29,
-   "slug": "saucony-guide",
-   "fotos": []
+   "slug": "saucony-guide-18",
+   "fotos": [
+    "fotos/saucony-guide-18/1.webp",
+    "fotos/saucony-guide-18/2.webp",
+    "fotos/saucony-guide-18/3.webp",
+    "fotos/saucony-guide-18/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Saucony",
    "mod": "Endorphin Speed",
-   "ver": "",
+   "ver": "4",
    "tipo": "Neutra",
    "uso": "Ritmo",
    "esp": "PWRRUN PB",
    "pl": "Nylon",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 249999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-saucony-endorphin-speed-4-hombre/SAS20940-100.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 30,
-   "slug": "saucony-endorphin-speed",
-   "fotos": []
+   "slug": "saucony-endorphin-speed-4",
+   "fotos": [
+    "fotos/saucony-endorphin-speed-4/1.webp",
+    "fotos/saucony-endorphin-speed-4/2.webp",
+    "fotos/saucony-endorphin-speed-4/3.webp",
+    "fotos/saucony-endorphin-speed-4/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Saucony",
    "mod": "Endorphin Pro",
-   "ver": "",
+   "ver": "5",
    "tipo": "Neutra",
    "uso": "Competencia",
    "esp": "PWRRUN PB",
    "pl": "Carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-pro-5-de-hombre-s21064130-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 31,
-   "slug": "saucony-endorphin-pro",
-   "fotos": []
+   "slug": "saucony-endorphin-pro-5",
+   "fotos": [
+    "fotos/saucony-endorphin-pro-5/1.webp",
+    "fotos/saucony-endorphin-pro-5/2.webp",
+    "fotos/saucony-endorphin-pro-5/3.webp",
+    "fotos/saucony-endorphin-pro-5/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Puma",
    "mod": "Velocity Nitro",
-   "ver": "",
+   "ver": "4",
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "esp": "Nitro",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 159999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-puma-velocity-nitro-4-running-hombre/PU311140-10.html",
+     "fecha": "30/10/2026",
+     "antes": 199999,
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 32,
-   "slug": "puma-velocity-nitro",
-   "fotos": []
+   "slug": "puma-velocity-nitro-4",
+   "fotos": [
+    "fotos/puma-velocity-nitro-4/1.webp",
+    "fotos/puma-velocity-nitro-4/2.webp",
+    "fotos/puma-velocity-nitro-4/3.webp",
+    "fotos/puma-velocity-nitro-4/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Puma",
    "mod": "Deviate Nitro",
-   "ver": "",
+   "ver": "4",
    "tipo": "Neutra",
    "uso": "Ritmo",
    "esp": "Nitro",
    "pl": "Carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 269999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-puma-deviate-nitro-4-pwrplate-hombre/PU312123-01.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 269999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-puma-deviate-nitro™-4-de-hombre-31212319-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 33,
-   "slug": "puma-deviate-nitro",
-   "fotos": []
+   "slug": "puma-deviate-nitro-4",
+   "fotos": [
+    "fotos/puma-deviate-nitro-4/1.webp",
+    "fotos/puma-deviate-nitro-4/2.webp",
+    "fotos/puma-deviate-nitro-4/3.webp",
+    "fotos/puma-deviate-nitro-4/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Puma",
    "mod": "MagMax Nitro",
-   "ver": "",
+   "ver": "2",
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "esp": "Nitro",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-puma-magmax-nitro-2-hombre/PU312125-01.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-puma-magmax-nitro-2-de-hombre-31212524-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "id": 34,
-   "slug": "puma-magmax-nitro",
-   "fotos": []
+   "slug": "puma-magmax-nitro-2",
+   "fotos": [
+    "fotos/puma-magmax-nitro-2/1.webp",
+    "fotos/puma-magmax-nitro-2/2.webp",
+    "fotos/puma-magmax-nitro-2/3.webp",
+    "fotos/puma-magmax-nitro-2/4.webp"
+   ],
+   "ar": true
   },
   {
    "m": "Mizuno",
@@ -723,17 +1347,31 @@
   },
   {
    "m": "Topper",
-   "mod": "Línea running",
+   "mod": "Fast 2.0",
    "ver": "",
    "tipo": "",
    "uso": "Iniciación",
    "esp": "",
    "pl": "",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 84999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-topper-fast-2-0-unisex-225860-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Unisex"
+    }
+   ],
    "colores": [],
    "id": 37,
-   "slug": "topper-linea-running",
-   "fotos": []
+   "slug": "topper-fast-2-0",
+   "fotos": [
+    "fotos/topper-fast-2-0/1.webp",
+    "fotos/topper-fast-2-0/2.webp",
+    "fotos/topper-fast-2-0/3.webp"
+   ],
+   "ar": true
   }
  ]
 }

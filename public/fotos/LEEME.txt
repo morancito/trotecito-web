@@ -1,44 +1,43 @@
 Fotos de Trotecito
 
-Creá una carpeta con el nombre exacto del modelo y poné adentro las fotos (1.jpg, 2.jpg...).
+Creá una carpeta con el nombre exacto del modelo y poné adentro las fotos (1.webp, 2.webp...).
 La primera foto es la que se ve en el catálogo. Formatos: jpg, png, webp o avif.
-Tamaño recomendado: 1600 px de ancho, fondo blanco o transparente.
 
 Nombres de carpeta:
   adidas-adizero-evo-sl
   nike-pegasus-42
-  nike-pegasus-plus-2
+  nike-pegasus-plus
   nike-vomero-18
   nike-vomero-plus
   nike-structure-26
-  nike-winflo-12
+  nike-winflo-10
   nike-invincible-3
-  nike-zoom-fly-6
-  nike-vaporfly
+  nike-zoom-fly-5
+  nike-vaporfly-3
   adidas-adizero-sl-2
-  adidas-adizero-boston
-  adidas-supernova-rise
-  adidas-adizero-adios-pro
-  adidas-duramo-sl
+  adidas-adizero-boston-13
+  adidas-supernova-rise-3
+  adidas-adizero-adios-pro-5
+  adidas-duramo-sl-2
   asics-novablast-5
   asics-gel-nimbus-27
   asics-gel-kayano-32
-  asics-gt-2000
-  asics-gel-cumulus
-  asics-superblast-3
-  asics-magic-speed-5
-  asics-metaspeed-sky-edge
-  new-balance-fresh-foam-x-1080
-  new-balance-fresh-foam-x-880
-  new-balance-fuelcell-rebel
-  new-balance-fuelcell-sc-elite
+  asics-gt-2000-14
+  asics-gel-cumulus-27
+  asics-superblast-2
+  asics-magic-speed-4
+  asics-metaspeed-sky
+  new-balance-fresh-foam-x-1080-v14
+  new-balance-fresh-foam-x-880-v15
+  new-balance-fuelcell-rebel-v5
+  new-balance-fuelcell-sc-elite-v5
   saucony-ride
-  saucony-guide
-  saucony-endorphin-speed
-  saucony-endorphin-pro
-  puma-velocity-nitro
-  puma-deviate-nitro
-  puma-magmax-nitro
+  saucony-guide-18
+  saucony-endorphin-speed-4
+  saucony-endorphin-pro-5
+  puma-velocity-nitro-4
+  puma-deviate-nitro-4
+  puma-magmax-nitro-2
   mizuno-wave-rider
   mizuno-wave-inspire
-  topper-linea-running
+  topper-fast-2-0

@@ -2,7 +2,7 @@ import "@fontsource-variable/archivo/wdth.css";
 import "@fontsource/kanit/900-italic.css";
 import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
-import { Viewer, perfil, topY } from "./shoe3d.js";
+import { Viewer, perfil, topY, RM } from "./shoe3d.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
@@ -32,7 +32,6 @@ function silueta(d) {
 }
 
 /* ---------- hero y cinta ---------- */
-Viewer($("#heroStage"), { H: 38, F: 28, dims: false, view: 0.6 });
 const baratas = DATA.filter(d => d.min).sort((a, b) => a.min - b.min);
 const items = baratas.map(d => `<a href="#m-${d.id}"><b>${esc(nombre(d).toUpperCase())}</b>${fmt(d.min)} <span>en ${esc(d.tiendas[0].tienda)}</span></a><i></i>`).join("");
 $("#ticker").innerHTML = `<div class="tk-run">${items}</div><div class="tk-run" aria-hidden="true">${items}</div>`;
@@ -124,6 +123,42 @@ document.addEventListener("click", e => {
 });
 $("#trayclear").onclick = () => { st.cmp = []; render(); route(); };
 $("#traygo").onclick = () => { location.hash = "comparar"; };
+
+/* ---------- buscador del dorsal ---------- */
+const FINDER = {
+  uso: [["Arrancar", "Iniciación"], ["Todos los días", "Rodaje diario"], ["Fondos largos", "Rodaje largo"], ["Ir rápido", "Ritmo"], ["Competir", "Competencia"]],
+  pis: [["Neutra", "Neutra"], ["Pronador", "Estabilidad"], ["No sé", ""]],
+  orden: [["Precio", "precio"], ["Liviandad", "peso"], ["Amortiguación", "stack"]],
+};
+const fsel = { uso: "", pis: "", orden: "" };
+document.querySelectorAll(".dh-ops").forEach(box => {
+  const k = box.dataset.k;
+  box.innerHTML = FINDER[k].map(([t, v]) => `<button type="button" data-v="${v}" aria-pressed="false">${t}</button>`).join("");
+  box.onclick = e => { const b = e.target.closest("button"); if (!b) return;
+    fsel[k] = b.getAttribute("aria-pressed") === "true" ? "" : b.dataset.v;
+    box.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b && fsel[k] === b.dataset.v));
+    contar(); };
+});
+let numActual = DATA.length, numAnim;
+function contar() {
+  const n = DATA.filter(d => (!fsel.uso || d.uso === fsel.uso) && (!fsel.pis || d.tipo === fsel.pis)).length;
+  $("#fNumL").innerHTML = n === 1 ? "zapa<br>te va" : "zapas<br>te van";
+  cancelAnimationFrame(numAnim);
+  const desde = numActual, t0 = performance.now(), dur = RM ? 0 : 450;
+  const paso = t => { const k = dur ? Math.min(1, (t - t0) / dur) : 1; numActual = Math.round(desde + (n - desde) * (1 - Math.pow(1 - k, 3)));
+    $("#fNum").textContent = String(numActual).padStart(2, "0"); if (k < 1) numAnim = requestAnimationFrame(paso); };
+  numAnim = requestAnimationFrame(paso);
+  $("#finder").classList.remove("pop"); void $("#finder").offsetWidth; $("#finder").classList.add("pop");
+}
+$("#finder").onsubmit = e => {
+  e.preventDefault();
+  st.uso.clear(); if (fsel.uso) st.uso.add(fsel.uso);
+  document.querySelectorAll(".chip[data-uso]").forEach(b => b.setAttribute("aria-pressed", st.uso.has(b.dataset.uso)));
+  st.pis = fsel.pis; document.querySelectorAll("#fPis button").forEach(x => x.setAttribute("aria-pressed", x.dataset.p === st.pis));
+  st.orden = fsel.orden || "precio"; $("#fOrden").value = st.orden;
+  render();
+  if (location.hash === "#catalogo") document.getElementById("catalogo").scrollIntoView(); else location.hash = "catalogo";
+};
 
 /* ---------- ficha ---------- */
 let visor = null;

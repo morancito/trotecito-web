@@ -84,7 +84,8 @@ for (const m of cat.modelos) {
         t.precio = r.precio; t.fecha = hoyAR;
         if (r.antes) t.antes = r.antes; else delete t.antes;
         if (r.cuotas) t.cuotas = `${r.cuotas} cuotas sin interés`;
-        const serie = ((hist.series[m.slug] ??= {})[t.tienda] ??= []);
+        const clave = t.tienda + (t.nota === "Mujer" ? " · Mujer" : "");   // hombre y mujer llevan historial separado
+        const serie = ((hist.series[m.slug] ??= {})[clave] ??= []);
         const ult = serie[serie.length - 1];
         if (ult && ult[0] === hoyISO) ult[1] = r.precio; else serie.push([hoyISO, r.precio]);
         console.log(`✓ ${m.slug} · ${t.tienda}: $${r.precio.toLocaleString("es-AR")}`);

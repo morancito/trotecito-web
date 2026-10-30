@@ -4,6 +4,7 @@ import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
 import { Viewer, perfil, topY, RM } from "./shoe3d.js";
 import { grafico, montarGrafico, variacion } from "./precios.js";
+import { PREGUNTAS, recomendar } from "./recomendador.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
@@ -14,11 +15,25 @@ const [CAT, HIST] = await Promise.all(["modelos", "historial"].map(n => fetch(BA
 // Un precio que el robot no pudo actualizar en más de 7 días deja de mostrarse.
 const aMs = f => { const [d, mo, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, mo - 1, d) : 0; };
 const vigenteHasta = f => aMs(CAT.actualizado) - aMs(f) <= 7 * 864e5;
-const DATA = CAT.modelos.map(d => {
-  const tiendas = (d.tiendas || []).filter(t => !t.sinStock && vigenteHasta(t.fecha)).sort((a, b) => a.precio - b.precio);
-  const hist = HIST.series?.[d.slug] || {};
-  return { ...d, fotos: d.fotos || [], tiendas, min: tiendas[0]?.precio ?? null, hist, var: variacion(hist) };
-});
+const DATA = CAT.modelos.map(d => ({ ...d, fotos: d.fotos || [], todas: (d.tiendas || []).filter(t => !t.sinStock && vigenteHasta(t.fecha)).sort((a, b) => a.precio - b.precio) }));
+/* talles: hombre, mujer o todos. Cambia qué precios se ven en todo el sitio. */
+const guardado = k => { try { return localStorage.getItem(k); } catch { return null; } };
+const guardar = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
+let GEN = ["Hombre", "Mujer"].includes(guardado("trotecito-gen")) ? guardado("trotecito-gen") : "";
+const claveSerie = t => t.tienda + (t.nota === "Mujer" ? " · Mujer" : "");
+const paraGen = (t, g = GEN) => !g || !t.nota || t.nota === "Unisex" || t.nota === g;
+function aplicarGenero() {
+  for (const d of DATA) {
+    d.tiendas = d.todas.filter(t => paraGen(t));
+    d.min = d.tiendas[0]?.precio ?? null;
+    const todo = HIST.series?.[d.slug] || {}, claves = new Set(d.tiendas.map(claveSerie));
+    d.hist = Object.fromEntries(Object.entries(todo).filter(([k]) => claves.has(k)));
+    d.var = variacion(d.hist);
+    const otro = GEN && d.todas.filter(t => !paraGen(t))[0];
+    d.otro = otro ? { gen: otro.nota, precio: otro.precio } : null;
+  }
+}
+aplicarGenero();
 const USOS = ["Iniciación", "Rodaje diario", "Rodaje largo", "Ritmo", "Competencia"];
 const UCLS = { "Iniciación": "u-ini", "Rodaje diario": "u-diario", "Rodaje largo": "u-largo", "Ritmo": "u-ritmo", "Competencia": "u-comp" };
 const MARCAS = [...new Set(DATA.map(d => d.m))].sort((a, b) => a.localeCompare(b));
@@ -112,6 +127,7 @@ const milK = n => n >= 1e6 ? "$" + (n / 1e6).toLocaleString("es-AR", { maximumFr
 
 $("#terreno").innerHTML = TERRENOS.map(([t, s]) => `<button data-t="${t}" aria-pressed="${t === st.terreno}"><b class="cond">${t}</b><span>${s}</span><i>${DATA.filter(d => terr(d) === t).length}</i></button>`).join("");
 $("#terreno").onclick = e => { const b = e.target.closest("button"); if (b) setTerreno(b.dataset.t); };
+function setGen(g) { GEN = g; guardar("trotecito-gen", g || null); aplicarGenero(); pintarOfertas(); render(); }
 function setTerreno(t) { st.terreno = t; document.querySelectorAll("#terreno button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === t)); render(); }
 
 const grupo = (t, html, extra = "") => `<fieldset class="fg"${extra}><legend>${t}</legend>${html}</fieldset>`;
@@ -119,6 +135,7 @@ const opc = (k, v, t, tipo = "checkbox", cls = "") => `<label class="op ${cls}">
 $("#fpanel").innerHTML = `
   <div class="fp-head"><b class="cond">Filtros</b><button type="button" class="fp-x" id="fpCerrar" aria-label="Cerrar filtros">✕</button></div>
   <div class="fp-body">
+  ${grupo("Talles", [["", "Todos"], ["Hombre", "Hombre"], ["Mujer", "Mujer"]].map(([v, t]) => opc("gen", v, t, "radio")).join(""))}
   ${grupo("Precio", `<div class="rango"><div class="rango-v"><b id="pMinV"></b><span>a</span><b id="pMaxV"></b></div>
     <div class="rango-s"><div class="rango-f" id="pFill"></div>
       <input type="range" id="pMin" min="${P_MIN}" max="${P_MAX}" step="${PASO}" value="${P_MIN}" aria-label="Precio mínimo">
@@ -139,6 +156,7 @@ fp.addEventListener("change", e => {
   const i = e.target, k = i.name; if (!k) return;
   if (k === "uso" || k === "am") st[k][i.checked ? "add" : "delete"](i.value);
   else if (k === "marca") st.marcas[i.checked ? "add" : "delete"](i.value);
+  else if (k === "gen") { setGen(i.value); return; }
   else if (k === "pis") st.pis = i.value;
   else if (k === "kg") st.kg = +i.value;
   else if (k === "desc" || k === "placa") st[k] = i.checked;
@@ -166,7 +184,7 @@ $("#q").oninput = e => { st.q = e.target.value.trim().toLowerCase(); render(); }
 function pintarPanel() {
   fp.querySelectorAll("input[name]").forEach(i => {
     const k = i.name, v = i.value;
-    i.checked = k === "uso" || k === "am" ? st[k].has(v) : k === "marca" ? st.marcas.has(v) : k === "pis" ? st.pis === v : k === "kg" ? st.kg === +v : k === "desc" || k === "placa" ? st[k] : false;
+    i.checked = k === "gen" ? GEN === v : k === "uso" || k === "am" ? st[k].has(v) : k === "marca" ? st.marcas.has(v) : k === "pis" ? st.pis === v : k === "kg" ? st.kg === +v : k === "desc" || k === "placa" ? st[k] : false;
   });
   fp.querySelectorAll(".atajos-p button").forEach(b => b.setAttribute("aria-pressed", st.pmin === Math.max(P_MIN, +b.dataset.pa) && st.pmax === (+b.dataset.pb || P_MAX)));
   pintarRango();
@@ -180,13 +198,14 @@ const pasa = (d, sin) => (st.q ? `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}`.
 function contarOpciones() {
   fp.querySelectorAll("em[data-n]").forEach(em => {
     const [k, v] = em.dataset.n.split("|");
-    const f = { uso: d => d.uso === v, am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || KG(d) >= +v, desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
+    const f = { gen: d => d.todas.some(t => paraGen(t, v)), uso: d => d.uso === v, am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || KG(d) >= +v, desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
     const n = DATA.filter(d => pasa(d, k) && f(d)).length;
     em.textContent = n; em.closest(".op").classList.toggle("cero", n === 0);
   });
 }
 function chipsActivos() {
   const c = [];
+  if (GEN) c.push(["gen", "Talles de " + GEN.toLowerCase()]);
   if (st.pmin > P_MIN || st.pmax < P_MAX) c.push(["precio", `${milK(st.pmin)} a ${st.pmax >= P_MAX ? "más" : milK(st.pmax)}`]);
   st.uso.forEach(u => c.push(["uso:" + u, u]));
   if (st.pis) c.push(["pis", st.pis === "Estabilidad" ? "Pronador" : "Neutra"]);
@@ -198,10 +217,14 @@ function chipsActivos() {
 }
 $("#activos").onclick = e => { const b = e.target.closest("button[data-x]"); if (!b) return; const [k, v] = b.dataset.x.split(":");
   if (k === "precio") { st.pmin = P_MIN; st.pmax = P_MAX; } else if (k === "uso" || k === "am") st[k].delete(v); else if (k === "marca") st.marcas.delete(v);
-  else if (k === "pis") st.pis = ""; else if (k === "kg") st.kg = 0; else st[k] = false;
+  else if (k === "pis") st.pis = ""; else if (k === "kg") st.kg = 0; else if (k === "gen") { setGen(""); return; } else st[k] = false;
   if (k === "todo") Object.assign(st, VACIO());
   render(); };
 
+function precioTarjeta(d) {
+  if (d.min) { const n = d.tiendas[0].nota; return `<span class="bib-p"><small>${!GEN && (n === "Hombre" || n === "Mujer") ? n.toLowerCase() + " · " : ""}desde</small>${fmt(d.min)}</span>`; }
+  return d.otro ? `<span class="pronto">Solo talles de ${d.otro.gen.toLowerCase()}</span>` : `<span class="pronto">Pronto</span>`;
+}
 function tarjeta(d) {
   const on = st.cmp.includes(d.id), dc = desc(d);
   const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
@@ -209,7 +232,7 @@ function tarjeta(d) {
     <div class="bib-band"><span>${esc(d.m)}</span><span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
     <div class="bib-img">${img}${dc >= 0.05 ? `<span class="off">−${Math.round(dc * 100)}%</span>` : ""}</div>
     <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>${d.corredor ? `<p class="bib-perfil">${d.tipo === "Estabilidad" ? "Pronador" : "Neutra"} · ${esc(kgCorto(d))}</p>` : ""}
-      <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${d.min ? `<span class="bib-p"><small>desde</small>${fmt(d.min)}</span>` : `<span class="pronto">Pronto</span>`}</div></div>
+      <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${precioTarjeta(d)}</div></div>
     <button class="cmp" aria-pressed="${on}" aria-label="Comparar ${esc(nombre(d))}" data-c="${d.id}">${on ? "✓" : "+"}</button></a>`;
 }
 function lista() {
@@ -253,11 +276,14 @@ $("#atajos").onclick = e => { const b = e.target.closest("button"); if (!b) retu
   if (a.uso) a.uso.forEach(u => st.uso.add(u)); if (a.pis) st.pis = a.pis; if (a.pmax) st.pmax = a.pmax;
   st.terreno = a.terreno || "Asfalto"; setTerreno(st.terreno); irCatalogo(); };
 $("#hbusca").onsubmit = e => { e.preventDefault(); const v = $("#hq").value.trim(); st.q = v.toLowerCase(); $("#q").value = v; render(); irCatalogo(); };
+function pintarOfertas() {
 const ofertas = DATA.filter(d => desc(d) >= 0.1 && d.fotos.length).sort((a, b) => desc(b) - desc(a)).slice(0, 4);
 $("#ofertas").innerHTML = ofertas.length ? `<div class="of-h"><span class="kicker">Ofertas de hoy</span><a href="#catalogo" id="ofTodas">Ver todas →</a></div>
   ${ofertas.map(d => `<a class="of" href="#m-${d.id}"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><span class="of-n"><small>${esc(d.m)}</small><b>${esc(nombre(d))}</b><s>${fmt(d.tiendas[0].antes)}</s></span>
     <span class="of-p"><em>−${Math.round(desc(d) * 100)}%</em><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("")}` : "";
 $("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); });
+}
+pintarOfertas();
 
 /* ---------- ficha ---------- */
 let visor = null;
@@ -282,7 +308,11 @@ function ficha(d) {
     ${best ? `<div class="buy"><span class="kicker">Mejor precio</span><b class="buy-p">${fmt(best.precio)}</b>
       <span class="buy-s">en ${esc(best.tienda)}${best.cuotas && !/consultar/i.test(best.cuotas) ? " · " + esc(best.cuotas) : ""}</span>
       <a class="btn" href="${esc(best.url)}" target="_blank" rel="noopener">Comprar en ${esc(best.tienda)} ↗</a>
-      ${ahorro > 0 ? `<p class="ahorro">Ahorrás ${fmt(ahorro)} contra la más cara.</p>` : ""}</div>` : `<div class="buy"><b class="buy-p cond" style="font-size:48px">Precio pronto</b></div>`}
+      ${ahorro > 0 ? `<p class="ahorro">Ahorrás ${fmt(ahorro)} contra la más cara.</p>` : ""}</div>` : d.otro
+      ? `<div class="buy"><span class="kicker">Talles de ${GEN.toLowerCase()}</span><b class="buy-p cond" style="font-size:40px">No conseguimos</b><span class="buy-s">Solo la encontramos en talles de ${d.otro.gen.toLowerCase()}, desde ${fmt(d.otro.precio)}.</span><button class="btn" type="button" data-gen="">Ver todos los talles</button></div>`
+      : `<div class="buy"><b class="buy-p cond" style="font-size:48px">Precio pronto</b></div>`}
+    ${best && d.otro ? `<p class="otro-gen">También en talles de ${d.otro.gen.toLowerCase()} desde ${fmt(d.otro.precio)} · <button type="button" data-gen="">ver todos</button></p>` : ""}
+    ${best && GEN && !d.otro ? `<p class="otro-gen">Mostrando precios de talles de ${GEN.toLowerCase()}.</p>` : ""}
     ${resto.length ? `<ul class="tiendas">${resto.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><span class="t-n">${esc(s.tienda)} ↗</span><span class="t-c">${esc(s.nota || "")}</span><span class="t-p">${fmt(s.precio)}</span></a></li>`).join("")}</ul>` : ""}
     ${grafico(d.hist) ? `<div class="bloque" id="histBox"><h2 class="cond">Cómo varió el precio</h2>${grafico(d.hist)}</div>` : ""}
     ${c ? `<div class="bloque"><h2 class="cond">¿Para quién?</h2><dl class="para">
@@ -345,12 +375,73 @@ function comparar() {
     <tbody>${filas}</tbody></table></div>`;
 }
 
+/* ---------- recomendador ---------- */
+const RESP_K = "trotecito-perfil";
+let resp = (() => { try { return JSON.parse(guardado(RESP_K)) || {}; } catch { return {}; } })();
+let paso = 0;
+const opsDe = q => q.k === "uso" && resp.terreno === "Trail" ? q.trail : q.ops;
+function recoPregunta() {
+  const q = PREGUNTAS[paso], total = PREGUNTAS.length;
+  return `<a class="back" href="#">← Volver al inicio</a>
+  <div class="rq"><div class="rq-top"><span class="kicker">Tu zapa · ${paso + 1} de ${total}</span><div class="rq-bar"><i style="width:${(paso + 1) / total * 100}%"></i></div></div>
+    <h1 class="cond">${q.t}</h1>
+    <div class="rq-ops">${opsDe(q).map(([v, t]) => `<button type="button" data-v="${esc(v)}" aria-pressed="${String(resp[q.k]) === String(v)}">${t}</button>`).join("")}</div>
+    ${paso > 0 ? `<button type="button" class="rq-atras" data-atras>← Pregunta anterior</button>` : ""}</div>`;
+}
+function porque(lista, cls) { return lista.length ? `<ul class="rr-${cls}">${lista.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""; }
+function recoResultado() {
+  const { picks, sinPresupuesto } = recomendar(DATA, resp);
+  const q = k => PREGUNTAS.find(x => x.k === k), txt = k => (opsDe(q(k)).find(([v]) => String(v) === String(resp[k])) || [])[1] || "";
+  const perfilTxt = [resp.gen === "Mujer" ? "Talles de mujer" : "Talles de hombre", txt("uso"), txt("ritmo"), txt("kg"), resp.pis === "nose" ? "Pisada: no sé" : "Pisada " + txt("pis").split(":")[0].toLowerCase(), txt("tope")].filter(Boolean);
+  const card = (p, i) => { const d = p.d, t = p.t;
+    return `<article class="rr ${i === 0 ? "top" : ""}">
+      <div class="rr-et"><b>${esc(p.etiqueta)}</b><span>${esc(p.sub)}</span></div>
+      <a class="rr-img" href="#m-${d.id}">${d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}">` : silueta(d)}</a>
+      <div class="rr-body"><p class="kicker">${esc(d.m)}</p><h2 class="cond"><a href="#m-${d.id}">${esc(nombre(d))}</a></h2>
+        <div class="rr-p"><b>${fmt(t.precio)}</b><span>en ${esc(t.tienda)}${t.antes > t.precio ? ` · antes ${fmt(t.antes)}` : ""}</span></div>
+        <h3>Por qué te la recomendamos</h3>${porque(p.pros.slice(0, 4), "pro")}
+        ${p.contras.length ? `<h3>Tené en cuenta</h3>${porque(p.contras.slice(0, 2), "con")}` : ""}
+        <div class="rr-acc"><a class="btn fuerte" href="${esc(t.url)}" target="_blank" rel="noopener">Ver en ${esc(t.tienda)} ↗</a><a class="btn" href="#m-${d.id}">Ficha completa</a></div></div></article>`; };
+  return `<a class="back" href="#">← Volver al inicio</a>
+  <div class="rr-head"><h1 class="cond">Tus <em>${picks.length}</em> zapas</h1>
+    <p class="rr-perfil">${perfilTxt.map(esc).join(" · ")} · <button type="button" data-rehacer>Cambiar respuestas</button></p>
+    ${sinPresupuesto ? `<p class="rr-aviso">Con ese presupuesto encontramos pocas opciones para tu perfil, así que sumamos algunas que se pasan.</p>` : ""}
+    ${resp.pis === "nose" ? `<p class="rr-aviso">¿No sabés cómo pisás? Mirá la suela de tus zapas viejas: si se gastan más del lado de adentro, probablemente pronás. Ante la duda, empezá por una neutra.</p>` : ""}</div>
+  ${picks.length ? `<div class="rr-grid">${picks.map(card).join("")}</div>
+  <div class="rr-pie"><button class="btn" type="button" data-cmp3>Comparar las ${picks.length}</button><a class="btn" href="#catalogo" data-vertodas>Ver todas las que te sirven</a></div>
+  <p class="rr-nota">Las elegimos cruzando tus respuestas con la ficha de cada zapa y el precio de hoy. Ninguna tienda paga por aparecer acá.</p>`
+  : `<p class="empty">No encontramos zapas con precio para ese perfil. Probá con otro presupuesto o con otro tipo de terreno.</p>`}`;
+}
+function pintarReco() {
+  const listo = PREGUNTAS.every(q => resp[q.k] !== undefined);
+  $("#reco").innerHTML = listo && paso >= PREGUNTAS.length ? recoResultado() : recoPregunta();
+  window.scrollTo(0, 0);
+}
+$("#reco").addEventListener("click", e => {
+  const op = e.target.closest(".rq-ops button");
+  if (op) { const q = PREGUNTAS[paso]; resp[q.k] = /^\d+$/.test(op.dataset.v) ? +op.dataset.v : op.dataset.v;
+    if (q.k === "terreno" && resp.terreno === "Trail" && !q.trail && !PREGUNTAS[2].trail.some(([v]) => v === resp.uso)) delete resp.uso;
+    if (q.k === "terreno" && resp.uso && !opsDe(PREGUNTAS[2]).some(([v]) => v === resp.uso)) delete resp.uso;
+    paso++; if (paso >= PREGUNTAS.length) { guardar(RESP_K, JSON.stringify(resp)); if (resp.gen !== GEN) { GEN = resp.gen; guardar("trotecito-gen", GEN); aplicarGenero(); pintarOfertas(); } }
+    pintarReco(); return; }
+  if (e.target.closest("[data-atras]")) { paso = Math.max(0, paso - 1); pintarReco(); return; }
+  if (e.target.closest("[data-rehacer]")) { paso = 0; pintarReco(); return; }
+  if (e.target.closest("[data-cmp3]")) { st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); location.hash = "comparar"; return; }
+  if (e.target.closest("[data-vertodas]")) { e.preventDefault(); Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
+    st.uso.add(resp.uso); if (resp.pis === "Pronadora") st.pis = "Estabilidad"; else if (resp.pis === "Neutra" || resp.pis === "Supinadora") st.pis = "Neutra";
+    st.kg = resp.kg >= 90 ? 91 : resp.kg >= 75 ? 89 : 0; if (resp.tope) st.pmax = Math.min(P_MAX, resp.tope);
+    st.terreno = resp.terreno; location.hash = "catalogo"; setTerreno(resp.terreno); }
+});
+document.addEventListener("click", e => { const b = e.target.closest("[data-gen]"); if (!b) return; setGen(b.dataset.gen); route(); });
+
 /* ---------- rutas ---------- */
 function route() {
   const h = location.hash.slice(1), m = h.match(/^m-(\d+)$/), d = m && DATA.find(x => x.id === +m[1]);
   if (visor) { visor.destroy(); visor = null; }
-  $("#home").hidden = !!(d || h === "comparar"); $("#detalle").hidden = !d; $("#comparar").hidden = h !== "comparar";
+  const reco = h === "tu-zapa";
+  $("#home").hidden = !!(d || h === "comparar" || reco); $("#detalle").hidden = !d; $("#comparar").hidden = h !== "comparar"; $("#reco").hidden = !reco;
   if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${nombre(d)} · Trotecito`; window.scrollTo(0, 0); }
+  else if (reco) { paso = PREGUNTAS.every(q => resp[q.k] !== undefined) ? PREGUNTAS.length : 0; pintarReco(); document.title = "Tu zapa · Trotecito"; }
   else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Trotecito"; window.scrollTo(0, 0); }
   else { document.title = "Trotecito"; render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
   bandeja();

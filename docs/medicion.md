@@ -8,8 +8,8 @@ del recomendador y los clics que llegan a las tiendas.
 - Tus propias visitas no cuentan: al entrar al panel, ese navegador queda excluido.
 - Los robots (navegadores automatizados) tampoco cuentan.
 
-Los eventos se guardan en **Supabase** (base de datos gratis). GitHub Pages solo sirve
-páginas y no puede guardar nada, por eso hace falta.
+Los eventos se guardan en **Supabase** (base de datos gratis), porque el hosting solo sirve
+páginas y no puede guardar nada.
 
 ## 1. Crear el proyecto (5 minutos)
 
@@ -61,7 +61,7 @@ Hacé push. Desde ese momento el sitio empieza a medir.
 
 ## 3. Usar el panel
 
-Entrá a `https://morancito.github.io/trotecito-web/admin.html` con el email y la contraseña
+Entrá a `/admin.html` en el dominio del sitio con el email y la contraseña
 del paso 1.3. Podés ver 7, 30 o 90 días y bajar todos los eventos en CSV.
 
 ## Qué se mide

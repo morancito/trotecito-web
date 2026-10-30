@@ -1,0 +1,38 @@
+name: Actualizar precios
+
+# Todos los días a las 06:17 de Argentina (09:17 UTC) el robot lee los precios de las tiendas,
+# suma un punto al historial y guarda los cambios en el repo. Cloudflare ve el cambio en main
+# y publica el sitio solo. También se puede correr a mano desde la pestaña Actions.
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: precios
+  cancel-in-progress: false
+
+jobs:
+  precios:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Leer precios de las tiendas
+        run: node scripts/actualizar-precios.mjs
+
+      - name: Revisar los datos antes de guardar
+        run: node scripts/validar-datos.mjs
+
+      - name: Guardar precios en el repo
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          git diff --cached --quiet || (git commit -m "Precios del $(TZ=America/Argentina/Buenos_Aires date +%d/%m/%Y)" && git push)

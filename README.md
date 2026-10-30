@@ -27,82 +27,18 @@ npm run build      # valida el catálogo y genera la carpeta dist/
 npm run preview    # sirve dist/ como en producción
 ```
 
-## Probarlo gratis en GitHub Pages
+## Dónde está publicado
 
-El repo ya trae el workflow `.github/workflows/deploy.yml`, que compila y publica solo.
-
-1. Creá un repo **público** en GitHub llamado `trotecito-web` (en cuentas gratis, Pages funciona solo con repos públicos).
-2. Subí el proyecto:
-   ```bash
-   git init && git add . && git commit -m "Trotecito v0.3"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/trotecito-web.git
-   git push -u origin main
-   ```
-3. En el repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-4. Andá a la pestaña **Actions**. Si el primer intento falló porque Pages todavía no estaba activado, entrá al workflow y tocá **Run workflow**.
-5. En uno o dos minutos queda online en `https://TU_USUARIO.github.io/trotecito-web/`.
-
-Cada `git push` a main vuelve a publicar. Si cambiás el nombre del repo, la ruta se ajusta sola.
-
-## Publicarlo en Cloudflare Pages (gratis)
-
-1. Creá un repositorio en GitHub y subí esta carpeta:
-   ```bash
-   git init && git add . && git commit -m "Trotecito v0.3"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/trotecito-web.git
-   git push -u origin main
-   ```
-2. En dash.cloudflare.com: **Workers & Pages → Create → Pages → Connect to Git** y elegí el repo.
-3. Configuración del build:
-   - Framework preset: `Vite`
-   - Build command: `npm run build`
-   - Build output directory: `dist`
-   - Variable de entorno: `NODE_VERSION` = `20`
-4. Deploy. Te da una URL `trotecito-web.pages.dev` con HTTPS.
-
-Desde ahí, **cada `git push` a main publica solo**. Cada rama o pull request genera una URL de vista previa para probar sin tocar producción.
-
-Si el catálogo tiene un error (precio vacío, link sin https, id repetido), el build falla y producción queda como estaba.
-
-## Dominio propio
-
-1. Registrá `tudominio.com.ar` en nic.ar (necesitás CUIT o CUIL y clave fiscal nivel 2).
-2. En Cloudflare Pages: **Custom domains → Set up a domain**.
-3. En NIC Argentina, delegá el dominio a los DNS que te indica Cloudflare. Tarda de minutos a unas horas.
-
-## Fotos de los modelos
-
-1. Pedile a cada marca su material de prensa: las fotos de producto en alta calidad, idealmente con fondo blanco o transparente.
-2. Dentro de `public/fotos/`, creá una carpeta con el nombre exacto del modelo. La lista completa de nombres está en `public/fotos/LEEME.txt` (por ejemplo `asics-novablast-5`).
-3. Poné las fotos adentro con nombres `1.jpg`, `2.jpg`, etc. La primera es la que aparece en el catálogo.
-4. Hacé push. El build encuentra las fotos y las suma solo; no tenés que tocar `modelos.json`.
-
-Si una carpeta tiene un nombre mal escrito, el build te avisa cuál es.
-Para que la página cargue rápido, usá fotos de unos 1600 px de ancho en formato `.webp` o `.jpg`.
-
-### Bajar las fotos automáticamente
-
-En tu compu, con el repo clonado:
-
-```bash
-git pull
-npm install
-npm run bajar-fotos
-git add public/fotos && git commit -m "Fotos de modelos" && git push
-```
-
-El script entra a las páginas de las tiendas cargadas en `modelos.json` y baja hasta 4 fotos de producto por modelo. Solo completa los modelos que todavía no tienen fotos. Para volver a bajar uno: `npm run bajar-fotos -- nike-vomero-18`.
-Para usar fotos del kit de prensa de una marca, poné sus links en `scripts/fotos-urls.json`, por ejemplo `{ "nike-vomero-18": ["https://..."] }`.
+El sitio está en **Cloudflare** (Workers con archivos estáticos), conectado a este repo privado:
+cada cambio en `main` se compila con `npm run build` y se publica solo. La configuración está en `wrangler.jsonc`.
 
 ## Seguimiento de precios
 
 Todos los días a las 06:17 (hora de Argentina) GitHub Actions corre `scripts/actualizar-precios.mjs`:
 lee el precio de cada tienda cargada en `modelos.json`, lo actualiza, suma un punto a `public/data/historial.json`,
-guarda el cambio en el repo y vuelve a publicar la web. El historial guarda los últimos 7 meses; la ficha muestra 6.
+guarda el cambio en el repo y Cloudflare vuelve a publicar la web sola. El historial guarda los últimos 7 meses; la ficha muestra 6.
 
-Para correrlo a mano: pestaña **Actions → Publicar en GitHub Pages → Run workflow**.
+Para correrlo a mano: pestaña **Actions → Actualizar precios → Run workflow**. El resultado de cada pasada queda en `public/data/robot.json` y se ve en el panel.
 Si una tienda no responde, se conserva el último precio y ese día no suma punto (queda en el log).
 
 ## Actualizar precios a mano

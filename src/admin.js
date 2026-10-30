@@ -84,7 +84,16 @@ function calcular() {
   const E = eventos, ses = new Set(E.map(e => e.sesion)), vis = new Set(E.map(e => e.datos?.vis).filter(Boolean));
   const clics = E.filter(e => e.tipo === "tienda_clic"), sesClic = new Set(clics.map(e => e.sesion));
   const fichas = E.filter(e => e.tipo === "vista" && e.datos?.pag === "ficha");
-  const recoIni = sesionesCon("reco_inicio"), recoFin = sesionesCon("reco_fin"), recoClic = sesionesCon("tienda_clic", e => e.datos?.origen === "recomendador");
+  const recoIni = sesionesCon("reco_inicio"), recoFin = sesionesCon("reco_fin");
+  /* conversión del recomendador: después de ver sus zapas, el mismo visitante hizo clic a la tienda de una de las
+     recomendadas, desde cualquier parte del sitio (resultado, ficha o comparador), en esa visita o en otra */
+  const recos = E.filter(e => e.tipo === "reco_fin" && e.datos?.picks?.length);
+  const clicsPorVis = new Map(); for (const c of clics) { const v = c.datos?.vis; if (v) (clicsPorVis.get(v) || clicsPorVis.set(v, []).get(v)).push(c); }
+  const recoClic = new Set(), recoClicOrigen = [];
+  for (const r of recos) {
+    const c = (clicsPorVis.get(r.datos.vis) || []).find(c => c.ts >= r.ts && r.datos.picks.includes(c.datos?.slug));
+    if (c && !recoClic.has(r.sesion)) { recoClic.add(r.sesion); recoClicOrigen.push(c); }
+  }
   /* por día */
   const dias = []; for (let i = rango - 1; i >= 0; i--) dias.push(diaDe(Date.now() - i * 864e5));
   const primerDia = new Map(); for (const e of E) if (!primerDia.has(e.sesion)) primerDia.set(e.sesion, diaDe(e.ts));
@@ -93,7 +102,7 @@ function calcular() {
   for (const e of clics) { const d = diaDe(e.ts); if (d in clicDia) clicDia[d]++; }
   /* embudo del recomendador */
   const pasos = PREGUNTAS.map((q, i) => [`${i + 1}. ${q.t.replace(/^¿|\?$/g, "")}`, sesionesCon("reco_paso", e => e.datos?.n === i + 1).size]);
-  const embudoReco = [["Entraron al recomendador", recoIni.size], ...pasos, ["Vieron sus 3 zapas", recoFin.size], ["Fueron a una tienda", recoClic.size]];
+  const embudoReco = [["Entraron al recomendador", recoIni.size], ...pasos, ["Vieron sus 3 zapas", recoFin.size], ["Fueron a la tienda de una recomendada", recoClic.size]];
   const recoFicha = sesionesCon("reco_ficha").size;
   /* embudo general */
   const vieronZapas = new Set(E.filter(e => e.tipo === "vista" && /catalogo|ficha|tu-zapa|comparar/.test(e.datos?.pag || "")).map(e => e.sesion));
@@ -112,7 +121,7 @@ function calcular() {
   const porQ = new Map(); for (const e of busq) { const q = (e.datos?.q || "").trim(); const x = porQ.get(q) || { n: 0, res: e.datos?.n ?? 0 }; x.n++; x.res = e.datos?.n ?? x.res; porQ.set(q, x); }
   const busquedas = [...porQ].sort((a, b) => b[1].n - a[1].n);
   return {
-    recoFicha, ses, vis, clics, sesClic, fichas, recoIni, recoFin, recoClic, dias, sesDia, clicDia, embudo, embudoReco, perfiles, recomendadas, origen, disp, nuevos, visitas, busquedas,
+    recoClicOrigen: cuenta(recoClicOrigen, e => ({ ficha: "Desde la ficha", recomendador: "Desde el resultado", comparar: "Desde el comparador" })[e.datos?.origen] || "Desde otro lado"), recoFicha, ses, vis, clics, sesClic, fichas, recoIni, recoFin, recoClic, dias, sesDia, clicDia, embudo, embudoReco, perfiles, recomendadas, origen, disp, nuevos, visitas, busquedas,
     topFichas: cuenta(fichas, e => e.datos?.slug), clicZapa: cuenta(clics, e => e.datos?.slug), clicTienda: cuenta(clics, e => e.datos?.tienda),
     clicOrigen: cuenta(clics, e => ({ ficha: "Ficha", recomendador: "Recomendador", comparar: "Comparador", otro: "Otro" })[e.datos?.origen] || "Otro"),
     filtros: cuenta(E.filter(e => e.tipo === "filtro"), e => `${({ gen: "Talles", uso: "Uso", pis: "Pisada", kg: "Peso", am: "Amortiguación", marca: "Marca", desc: "Con descuento", placa: "Con placa", precio: "Precio" })[e.datos?.k] || e.datos?.k}: ${e.datos?.k === "kg" ? ({ 74: "menos de 75", 89: "75 a 90", 91: "más de 90", 0: "no filtrar" })[e.datos?.v] || e.datos?.v : e.datos?.k === "desc" || e.datos?.k === "placa" ? "sí" : e.datos?.k === "precio" && /^\d+-\d+$/.test(e.datos?.v) ? e.datos.v.split("-").map(x => "$" + Math.round(x / 1000) + " mil").join(" a ") : e.datos?.v || "todos"}`),
@@ -190,12 +199,13 @@ create policy "solo el admin lee" on public.eventos
     ${kpi("Fichas vistas", n0(c.fichas.length), c.ses.size ? `${(c.fichas.length / c.ses.size).toFixed(1)} por visita` : "")}
     ${kpi("Clics a tiendas", n0(c.clics.length), `${pct(c.sesClic.size, c.ses.size)} de las visitas`)}
     ${kpi("Recomendador", pct(c.recoFin.size, c.recoIni.size), `terminaron ${n0(c.recoFin.size)} de ${n0(c.recoIni.size)}`)}
-    ${kpi("Del recomendador a la tienda", pct(c.recoClic.size, c.recoFin.size), `${n0(c.recoClic.size)} visitas`)}
+    ${kpi("Del recomendador a la tienda", pct(c.recoClic.size, c.recoFin.size), `${n0(c.recoClic.size)} fueron a la tienda de una recomendada`)}
   </div>
   ${bloque("Visitas y clics por día", serieDiaria(c), "Una visita es cada vez que alguien abre el sitio. Pasá el mouse para ver cada día.")}
   <div class="ad-2">
     ${bloque("Embudo general", embudo(c.embudo), "De todas las visitas, cuántas llegan a una tienda.")}
-    ${bloque("Embudo del recomendador", embudo(c.embudoReco), `Dónde se van los que empiezan las preguntas. Además, ${n0(c.recoFicha)} visitas abrieron la ficha de una zapa recomendada.`)}
+    ${bloque("Embudo del recomendador", embudo(c.embudoReco) + `<h3>Cómo llegaron a la tienda</h3>` + barras(c.recoClicOrigen, { vacio: "Todavía nadie fue a la tienda de una recomendada." }),
+      `Dónde se van los que empiezan las preguntas. El último paso cuenta el clic a la tienda de una de sus zapas recomendadas desde cualquier parte del sitio, aunque vuelva otro día. ${n0(c.recoFicha)} visitas abrieron la ficha de una recomendada.`)}
   </div>
   <div class="ad-2">
     ${bloque("Zapas más vistas", barras(c.topFichas, { fmtL: s => `<a href="./#m-${MOD[s]?.id}" target="_blank" rel="noopener">${esc(nombre(s))}</a>` }))}

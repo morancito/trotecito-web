@@ -747,11 +747,12 @@
     },
     {
      "tienda": "Sporting",
-     "precio": 249999,
+     "precio": 174999,
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6jq8502-000/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "antes": 249999
     },
     {
      "tienda": "Dexter",
@@ -2658,7 +2659,7 @@
     {
      "tienda": "Dexter",
      "precio": 39999,
-     "cuotas": "Consultar en la tienda",
+     "cuotas": "6 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-kinvara-14-mujer/SAS10823-25.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",

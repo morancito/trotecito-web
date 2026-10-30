@@ -28,7 +28,9 @@ const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
 const pad = n => String(n).padStart(3, "0");
 const nombre = d => d.mod + (d.ver ? " " + d.ver : "");
 const pisada = d => d.tipo === "Estabilidad" ? "Pronadora" : d.tipo === "Neutra" ? "Neutra" : "";
-const conPlaca = d => !!d.pl && /carbono|nylon|varilla/i.test(d.pl);
+const conPlaca = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
+const placa = d => d.pl && d.pl !== "Sin placa" ? d.pl : "";
+const terr = d => d.terreno || "Asfalto";
 const src = s => /^https?:/.test(s) ? s : BASE + s;
 const silCache = {};
 function silueta(d) {
@@ -88,7 +90,14 @@ $("#lanes").onclick = e => { const b = e.target.closest(".tab"); if (b) abrirLan
 abrirLane("drop");
 
 /* ---------- catálogo ---------- */
-const st = { q: "", pis: "", uso: new Set(), marca: "", precio: false, orden: "precio", cmp: [] };
+const st = { q: "", terreno: "Asfalto", pis: "", uso: new Set(), marca: "", precio: false, orden: "precio", cmp: [] };
+const TERRENOS = [["Asfalto", "Calle, pista y cinta"], ["Trail", "Senderos y montaña"]];
+$("#terreno").innerHTML = TERRENOS.map(([t, s]) => `<button data-t="${t}" aria-pressed="${t === st.terreno}"><b class="cond">${t}</b><span>${s}</span><i>${DATA.filter(d => terr(d) === t).length}</i></button>`).join("");
+$("#terreno").onclick = e => { const b = e.target.closest("button"); if (b) setTerreno(b.dataset.t); };
+function setTerreno(t) { st.terreno = t; document.querySelectorAll("#terreno button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === t));
+  st.uso.forEach(u => { if (!DATA.some(d => terr(d) === t && d.uso === u)) st.uso.delete(u); });
+  document.querySelectorAll(".chip[data-uso]").forEach(b => { b.hidden = !DATA.some(d => terr(d) === t && d.uso === b.dataset.uso); b.setAttribute("aria-pressed", st.uso.has(b.dataset.uso)); });
+  render(); }
 $("#filtros").innerHTML = `
   <div class="seg" id="fPis"><button data-p="" aria-pressed="true">Todas</button><button data-p="Neutra" aria-pressed="false">Neutras</button><button data-p="Estabilidad" aria-pressed="false">Pronador</button></div>
   ${USOS.map(u => `<button class="chip ${UCLS[u]}" data-uso="${u}" aria-pressed="false">${u}</button>`).join("")}
@@ -104,14 +113,14 @@ function tarjeta(d) {
   const on = st.cmp.includes(d.id);
   const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
   return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="#m-${d.id}">
-    <div class="bib-band"><span>${esc(d.m)}</span><span>N° ${pad(d.id)}</span></div>
+    <div class="bib-band"><span>${esc(d.m)}</span><span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
     <div class="bib-img">${img}</div>
     <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>
       <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${d.min ? `<span class="bib-p"><small>desde</small>${fmt(d.min)}</span>` : `<span class="pronto">Pronto</span>`}</div></div>
     <button class="cmp" aria-pressed="${on}" aria-label="Comparar ${esc(nombre(d))}" data-c="${d.id}">${on ? "✓" : "+"}</button></a>`;
 }
 function lista() {
-  const l = DATA.filter(d => (!st.q || `${d.m} ${d.mod} ${d.ver} ${d.esp}`.toLowerCase().includes(st.q)) && (!st.pis || d.tipo === st.pis)
+  const l = DATA.filter(d => (st.q ? `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}`.toLowerCase().includes(st.q) : terr(d) === st.terreno) && (!st.pis || d.tipo === st.pis)
     && (!st.uso.size || st.uso.has(d.uso)) && (!st.marca || d.m === st.marca));
   const X = 1e12, o = st.orden;
   return l.sort(o === "peso" ? (a, b) => (a.peso ?? X) - (b.peso ?? X) : o === "stack" ? (a, b) => (b.talon ?? -1) - (a.talon ?? -1)
@@ -131,11 +140,12 @@ $("#traygo").onclick = () => { location.hash = "comparar"; };
 
 /* ---------- buscador del dorsal ---------- */
 const FINDER = {
+  terreno: [["Calle", "Asfalto"], ["Montaña", "Trail"]],
   uso: [["Arrancar", "Iniciación"], ["Todos los días", "Rodaje diario"], ["Fondos largos", "Rodaje largo"], ["Ir rápido", "Ritmo"], ["Competir", "Competencia"]],
   pis: [["Neutra", "Neutra"], ["Pronador", "Estabilidad"], ["No sé", ""]],
   orden: [["Precio", "precio"], ["Liviandad", "peso"], ["Amortiguación", "stack"]],
 };
-const fsel = { uso: "", pis: "", orden: "" };
+const fsel = { terreno: "", uso: "", pis: "", orden: "" };
 document.querySelectorAll(".dh-ops").forEach(box => {
   const k = box.dataset.k;
   box.innerHTML = FINDER[k].map(([t, v]) => `<button type="button" data-v="${v}" aria-pressed="false">${t}</button>`).join("");
@@ -144,9 +154,11 @@ document.querySelectorAll(".dh-ops").forEach(box => {
     box.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b && fsel[k] === b.dataset.v));
     contar(); };
 });
-let numActual = DATA.length, numAnim;
+const fFilt = () => DATA.filter(d => terr(d) === (fsel.terreno || "Asfalto") && (!fsel.uso || d.uso === fsel.uso) && (!fsel.pis || d.tipo === fsel.pis));
+let numActual = fFilt().length, numAnim;
+$("#fNum").textContent = String(numActual).padStart(2, "0");
 function contar() {
-  const n = DATA.filter(d => (!fsel.uso || d.uso === fsel.uso) && (!fsel.pis || d.tipo === fsel.pis)).length;
+  const n = fFilt().length;
   $("#fNumL").innerHTML = n === 1 ? "zapa<br>te va" : "zapas<br>te van";
   cancelAnimationFrame(numAnim);
   const desde = numActual, t0 = performance.now(), dur = RM ? 0 : 450;
@@ -157,11 +169,10 @@ function contar() {
 }
 $("#finder").onsubmit = e => {
   e.preventDefault();
-  st.uso.clear(); if (fsel.uso) st.uso.add(fsel.uso);
-  document.querySelectorAll(".chip[data-uso]").forEach(b => b.setAttribute("aria-pressed", st.uso.has(b.dataset.uso)));
+  st.uso.clear(); if (fsel.uso) st.uso.add(fsel.uso); st.q = ""; $("#q").value = "";
   st.pis = fsel.pis; document.querySelectorAll("#fPis button").forEach(x => x.setAttribute("aria-pressed", x.dataset.p === st.pis));
   st.orden = fsel.orden || "precio"; $("#fOrden").value = st.orden;
-  render();
+  setTerreno(fsel.terreno || "Asfalto");
   if (location.hash === "#catalogo") document.getElementById("catalogo").scrollIntoView(); else location.hash = "catalogo";
 };
 
@@ -177,14 +188,14 @@ function media(d) {
 function ficha(d) {
   const t = d.tiendas, best = t[0], resto = t.slice(1), ahorro = t.length > 1 ? t[t.length - 1].precio - best.precio : 0;
   const datos = [["Peso", d.peso && `${d.peso} g`], ["Drop", d.drop != null && `${d.drop} mm`], ["Talón", d.talon && `${d.talon} mm`], ["Antepié", d.ante && `${d.ante} mm`],
-    ["Espuma", d.esp, 1], ["Placa", conPlaca(d) && d.pl, 1]].filter(x => x[1]);
+    ["Espuma", d.esp, 1], ["Placa", placa(d), 1], ["Terreno", terr(d), 1]].filter(x => x[1]);
   const c = d.corredor;
   return `<a class="back" href="#catalogo">← Todas las zapas</a>
   <div class="det-grid"><div class="media">${media(d)}</div>
   <div class="info">
     <p class="kicker">${esc(d.m)} · N° ${pad(d.id)}</p>
     <h1 class="cond">${esc(nombre(d))}</h1>
-    <div class="tags"><span class="tag uso ${UCLS[d.uso] || ""}">${esc(d.uso)}</span>${pisada(d) ? `<span class="tag">${pisada(d)}</span>` : ""}${conPlaca(d) ? `<span class="tag">Con placa</span>` : ""}</div>
+    <div class="tags">${terr(d) === "Trail" ? `<span class="tag trail">Trail</span>` : ""}<span class="tag uso ${UCLS[d.uso] || ""}">${esc(d.uso)}</span>${pisada(d) ? `<span class="tag">${pisada(d)}</span>` : ""}${conPlaca(d) ? `<span class="tag">Con placa</span>` : ""}</div>
     ${best ? `<div class="buy"><span class="kicker">Mejor precio</span><b class="buy-p">${fmt(best.precio)}</b>
       <span class="buy-s">en ${esc(best.tienda)}${best.cuotas && !/consultar/i.test(best.cuotas) ? " · " + esc(best.cuotas) : ""}</span>
       <a class="btn" href="${esc(best.url)}" target="_blank" rel="noopener">Comprar en ${esc(best.tienda)} ↗</a>
@@ -233,9 +244,9 @@ function comparar() {
     ["Mejor precio", d => d.min ? `<span class="${d.min === minP ? "win" : ""}">${fmt(d.min)}</span>` : ""],
     ["Tienda", d => d.tiendas[0] ? esc(d.tiendas[0].tienda) : ""],
     ["Peso", d => d.peso ? `<span class="${d.peso === minW ? "win" : ""}">${d.peso} g</span>` : ""],
-    ["Pisada", d => pisada(d)], ["Uso", d => esc(d.uso)], ["Drop", d => d.drop != null ? d.drop + " mm" : ""],
+    ["Terreno", d => ds.some(x => terr(x) !== terr(d)) ? terr(d) : ""], ["Pisada", d => pisada(d)], ["Uso", d => esc(d.uso)], ["Drop", d => d.drop != null ? d.drop + " mm" : ""],
     ["Talón", d => d.talon ? d.talon + " mm" : ""], ["Antepié", d => d.ante ? d.ante + " mm" : ""],
-    ["Espuma", d => esc(d.esp)], ["Placa", d => conPlaca(d) ? esc(d.pl) : ""], ["Ritmo", d => d.corredor ? esc(d.corredor.ritmo) : ""],
+    ["Espuma", d => esc(d.esp)], ["Placa", d => esc(placa(d))], ["Ritmo", d => d.corredor ? esc(d.corredor.ritmo) : ""],
   ].filter(([, f]) => ds.some(d => f(d)));
   return `<a class="back" href="#catalogo">← Todas las zapas</a><h1 class="cmp-h cond">Cara a cara</h1>${perfiles(ds)}
     <div class="tblwrap"><table class="cmpt"><thead><tr><th></th>${ds.map((d, i) => `<th><a href="#m-${d.id}" style="border-bottom:4px solid ${CC[i]}">${esc(nombre(d))}</a></th>`).join("")}</tr></thead>
@@ -253,4 +264,5 @@ function route() {
   bandeja();
 }
 addEventListener("hashchange", route);
+setTerreno("Asfalto");
 route();

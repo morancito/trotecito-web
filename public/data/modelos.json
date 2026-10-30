@@ -74,7 +74,8 @@
     "fotos/adidas-adizero-evo-sl/2.webp",
     "fotos/adidas-adizero-evo-sl/3.webp",
     "fotos/adidas-adizero-evo-sl/4.webp"
-   ]
+   ],
+   "terreno": "Asfalto"
   },
   {
    "m": "Nike",
@@ -134,7 +135,8 @@
     "fotos/nike-pegasus-42/2.webp",
     "fotos/nike-pegasus-42/3.webp",
     "fotos/nike-pegasus-42/4.webp"
-   ]
+   ],
+   "terreno": "Asfalto"
   },
   {
    "m": "Nike",
@@ -171,7 +173,23 @@
     "fotos/nike-pegasus-plus/3.webp",
     "fotos/nike-pegasus-plus/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 244,
+   "drop": 10,
+   "talon": 34,
+   "ante": 24,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Pisada pronadora o si buscás mucha amortiguación para fondos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-pegasus-plus"
+   ]
   },
   {
    "m": "Nike",
@@ -237,7 +255,8 @@
     "fotos/nike-vomero-18/2.webp",
     "fotos/nike-vomero-18/3.webp",
     "fotos/nike-vomero-18/4.webp"
-   ]
+   ],
+   "terreno": "Asfalto"
   },
   {
    "m": "Nike",
@@ -282,7 +301,23 @@
     "fotos/nike-vomero-plus/3.webp",
     "fotos/nike-vomero-plus/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 285,
+   "drop": 10,
+   "talon": 45,
+   "ante": 35,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Si te gusta sentir el piso o corrés series cortas.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-vomero-plus"
+   ]
   },
   {
    "m": "Nike",
@@ -290,7 +325,7 @@
    "ver": "26",
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
-   "esp": "",
+   "esp": "ReactX",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -311,7 +346,23 @@
     "fotos/nike-structure-26/3.webp",
     "fotos/nike-structure-26/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 298,
+   "drop": 10,
+   "talon": 38,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pisada neutra que busca algo liviano y rápido.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-structure-26"
+   ]
   },
   {
    "m": "Nike",
@@ -319,7 +370,7 @@
    "ver": "10",
    "tipo": "Neutra",
    "uso": "Iniciación",
-   "esp": "",
+   "esp": "Cushlon",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -341,7 +392,23 @@
     "fotos/nike-winflo-10/3.webp",
     "fotos/nike-winflo-10/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 280,
+   "drop": 10,
+   "talon": 33,
+   "ante": 23,
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Fondos largos o si ya corrés rápido.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-winflo-10"
+   ]
   },
   {
    "m": "Nike",
@@ -371,7 +438,23 @@
     "fotos/nike-invincible-3/3.webp",
     "fotos/nike-invincible-3/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 284,
+   "drop": 9,
+   "talon": 40,
+   "ante": 31,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Series o si te cuesta la estabilidad en zapas muy blandas.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-zoom-x-invincible-run-flyknit-3"
+   ]
   },
   {
    "m": "Nike",
@@ -379,7 +462,7 @@
    "ver": "5",
    "tipo": "Neutra",
    "uso": "Ritmo",
-   "esp": "ZoomX",
+   "esp": "ZoomX + SR-02",
    "pl": "Carbono",
    "tiendas": [
     {
@@ -401,7 +484,19 @@
     "fotos/nike-zoom-fly-5/3.webp",
     "fotos/nike-zoom-fly-5/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 273,
+   "drop": 8,
+   "talon": 39,
+   "ante": 31,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Rodajes lentos de recuperación o si recién empezás."
   },
   {
    "m": "Nike",
@@ -431,7 +526,23 @@
     "fotos/nike-vaporfly-3/3.webp",
     "fotos/nike-vaporfly-3/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 184,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio a alto",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Uso diario: la espuma dura menos y es cara para entrenar.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-zoom-x-vaporfly-next-3"
+   ]
   },
   {
    "m": "Adidas",
@@ -439,7 +550,7 @@
    "ver": "2",
    "tipo": "Neutra",
    "uso": "Ritmo",
-   "esp": "",
+   "esp": "Lightstrike + Lightstrike Pro",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -470,7 +581,23 @@
     "fotos/adidas-adizero-sl-2/3.webp",
     "fotos/adidas-adizero-sl-2/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 238,
+   "drop": 9,
+   "talon": 35,
+   "ante": 26,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Pronadores o fondos muy largos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/adidas-adizero-sl2"
+   ]
   },
   {
    "m": "Adidas",
@@ -478,8 +605,8 @@
    "ver": "13",
    "tipo": "Neutra",
    "uso": "Ritmo",
-   "esp": "Lightstrike Pro",
-   "pl": "Varillas",
+   "esp": "Lightstrike Pro + Lightstrike 2.0",
+   "pl": "Varillas de fibra de vidrio",
    "tiendas": [
     {
      "tienda": "Dexter",
@@ -507,7 +634,23 @@
     "fotos/adidas-adizero-boston-13/3.webp",
     "fotos/adidas-adizero-boston-13/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 255,
+   "drop": 6,
+   "talon": 36,
+   "ante": 30,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Si recién empezás o buscás una zapa blanda.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/adidas-adizero-boston-13"
+   ]
   },
   {
    "m": "Adidas",
@@ -515,7 +658,7 @@
    "ver": "3",
    "tipo": "Neutra",
    "uso": "Rodaje diario",
-   "esp": "",
+   "esp": "Dreamstrike+",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -545,7 +688,23 @@
     "fotos/adidas-supernova-rise-3/3.webp",
     "fotos/adidas-supernova-rise-3/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 264,
+   "drop": 8,
+   "talon": 36,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Series rápidas o competencia.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/adidas-supernova-rise-3"
+   ]
   },
   {
    "m": "Adidas",
@@ -582,7 +741,23 @@
     "fotos/adidas-adizero-adios-pro-5/3.webp",
     "fotos/adidas-adizero-adios-pro-5/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 177,
+   "drop": 4,
+   "talon": 39,
+   "ante": 35,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Rodajes diarios o ritmos lentos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/adidas-adizero-adios-pro-5"
+   ]
   },
   {
    "m": "Adidas",
@@ -590,7 +765,7 @@
    "ver": "2",
    "tipo": "Neutra",
    "uso": "Iniciación",
-   "esp": "",
+   "esp": "Lightmotion",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -620,7 +795,19 @@
     "fotos/adidas-duramo-sl-2/3.webp",
     "fotos/adidas-duramo-sl-2/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 291,
+   "drop": 9,
+   "talon": 33,
+   "ante": 24,
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Fondos largos o ritmos exigentes."
   },
   {
    "m": "Asics",
@@ -678,7 +865,8 @@
     "fotos/asics-novablast-5/2.webp",
     "fotos/asics-novablast-5/3.webp",
     "fotos/asics-novablast-5/4.webp"
-   ]
+   ],
+   "terreno": "Asfalto"
   },
   {
    "m": "Asics",
@@ -720,7 +908,7 @@
    "peso": 305,
    "drop": 8,
    "talon": 43,
-   "ante": null,
+   "ante": 36,
    "ar": true,
    "corredor": {
     "nivel": "Todos los niveles",
@@ -740,7 +928,8 @@
     "fotos/asics-gel-nimbus-27/2.webp",
     "fotos/asics-gel-nimbus-27/3.webp",
     "fotos/asics-gel-nimbus-27/4.webp"
-   ]
+   ],
+   "terreno": "Asfalto"
   },
   {
    "m": "Asics",
@@ -822,7 +1011,8 @@
     "fotos/asics-gel-kayano-32/2.webp",
     "fotos/asics-gel-kayano-32/3.webp",
     "fotos/asics-gel-kayano-32/4.webp"
-   ]
+   ],
+   "terreno": "Asfalto"
   },
   {
    "m": "Asics",
@@ -830,7 +1020,7 @@
    "ver": "14",
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
-   "esp": "",
+   "esp": "FF Blast+ + PureGEL",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -860,7 +1050,23 @@
     "fotos/asics-gt-2000-14/3.webp",
     "fotos/asics-gt-2000-14/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 266,
+   "drop": 8,
+   "talon": 36.5,
+   "ante": 28.5,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pisada neutra o si buscás velocidad.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-gt-2000-14"
+   ]
   },
   {
    "m": "Asics",
@@ -868,7 +1074,7 @@
    "ver": "27",
    "tipo": "Neutra",
    "uso": "Rodaje diario",
-   "esp": "",
+   "esp": "FF Blast+ + PureGEL",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -898,7 +1104,23 @@
     "fotos/asics-gel-cumulus-27/3.webp",
     "fotos/asics-gel-cumulus-27/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 265,
+   "drop": 8,
+   "talon": 38.5,
+   "ante": 30.5,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pronadores marcados o series rápidas.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-gel-cumulus-27"
+   ]
   },
   {
    "m": "Asics",
@@ -906,8 +1128,8 @@
    "ver": "2",
    "tipo": "Neutra",
    "uso": "Ritmo",
-   "esp": "FF Turbo+",
-   "pl": "",
+   "esp": "FF Turbo+ + FF Blast+",
+   "pl": "Sin placa",
    "tiendas": [
     {
      "tienda": "Dexter",
@@ -927,7 +1149,23 @@
     "fotos/asics-superblast-2/3.webp",
     "fotos/asics-superblast-2/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 250,
+   "drop": 8,
+   "talon": 45,
+   "ante": 37,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio a alto",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Pronadores o si querés sentir el piso.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-superblast-2"
+   ]
   },
   {
    "m": "Asics",
@@ -935,7 +1173,7 @@
    "ver": "4",
    "tipo": "Neutra",
    "uso": "Competencia",
-   "esp": "",
+   "esp": "FF Turbo+ + FF Blast+",
    "pl": "Carbono",
    "tiendas": [
     {
@@ -956,11 +1194,27 @@
     "fotos/asics-magic-speed-4/3.webp",
     "fotos/asics-magic-speed-4/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 242,
+   "drop": 8,
+   "talon": 43.5,
+   "ante": 35.5,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio a alto",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Rodajes lentos o si recién arrancás.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-magic-speed-4"
+   ]
   },
   {
    "m": "Asics",
-   "mod": "Metaspeed Sky+",
+   "mod": "Metaspeed Sky",
    "ver": "",
    "tipo": "Neutra",
    "uso": "Competencia",
@@ -985,7 +1239,23 @@
     "fotos/asics-metaspeed-sky/3.webp",
     "fotos/asics-metaspeed-sky/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 205,
+   "drop": 5,
+   "talon": 39,
+   "ante": 34,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Entrenamiento diario o ritmos lentos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-metaspeed-sky-plus"
+   ]
   },
   {
    "m": "New Balance",
@@ -1014,7 +1284,23 @@
     "fotos/new-balance-fresh-foam-x-1080-v14/3.webp",
     "fotos/new-balance-fresh-foam-x-1080-v14/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 298,
+   "drop": 6,
+   "talon": 38,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Series o pisada pronadora marcada.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/new-balance-fresh-foam-x-1080-v14"
+   ]
   },
   {
    "m": "New Balance",
@@ -1043,7 +1329,23 @@
     "fotos/new-balance-fresh-foam-x-880-v15/3.webp",
     "fotos/new-balance-fresh-foam-x-880-v15/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 281,
+   "drop": 6,
+   "talon": 40.5,
+   "ante": 34.5,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio a alto",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Si buscás una zapa liviana para ritmos rápidos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15"
+   ]
   },
   {
    "m": "New Balance",
@@ -1072,7 +1374,23 @@
     "fotos/new-balance-fuelcell-rebel-v5/3.webp",
     "fotos/new-balance-fuelcell-rebel-v5/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 225,
+   "drop": 6,
+   "talon": 35,
+   "ante": 29,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Pronadores o corredores pesados en fondos largos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/new-balance-fuel-cell-rebel-v-5"
+   ]
   },
   {
    "m": "New Balance",
@@ -1080,7 +1398,7 @@
    "ver": "v5",
    "tipo": "Neutra",
    "uso": "Competencia",
-   "esp": "FuelCell",
+   "esp": "FuelCell (PEBA)",
    "pl": "Carbono",
    "tiendas": [
     {
@@ -1100,21 +1418,23 @@
     "fotos/new-balance-fuelcell-sc-elite-v5/2.webp",
     "fotos/new-balance-fuelcell-sc-elite-v5/3.webp"
    ],
-   "ar": true
-  },
-  {
-   "m": "Saucony",
-   "mod": "Ride",
-   "ver": "",
-   "tipo": "Neutra",
-   "uso": "Rodaje diario",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [],
-   "colores": [],
-   "id": 28,
-   "slug": "saucony-ride",
-   "fotos": []
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 213,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio a alto",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Entrenamiento diario o ritmos lentos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5"
+   ]
   },
   {
    "m": "Saucony",
@@ -1122,7 +1442,7 @@
    "ver": "18",
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
-   "esp": "",
+   "esp": "PWRRUN",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -1152,7 +1472,23 @@
     "fotos/saucony-guide-18/3.webp",
     "fotos/saucony-guide-18/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 272,
+   "drop": 6,
+   "talon": 35,
+   "ante": 29,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pisada neutra que busca velocidad.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-guide-18"
+   ]
   },
   {
    "m": "Saucony",
@@ -1181,7 +1517,23 @@
     "fotos/saucony-endorphin-speed-4/3.webp",
     "fotos/saucony-endorphin-speed-4/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 235,
+   "drop": 8,
+   "talon": 38,
+   "ante": 30,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Si recién empezás o tenés pisada pronadora.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-endorphin-speed-4"
+   ]
   },
   {
    "m": "Saucony",
@@ -1189,7 +1541,7 @@
    "ver": "5",
    "tipo": "Neutra",
    "uso": "Competencia",
-   "esp": "PWRRUN PB",
+   "esp": "PWRRUN HG + PWRRUN PB",
    "pl": "Carbono",
    "tiendas": [
     {
@@ -1210,7 +1562,23 @@
     "fotos/saucony-endorphin-pro-5/3.webp",
     "fotos/saucony-endorphin-pro-5/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 206,
+   "drop": 8,
+   "talon": 39.5,
+   "ante": 31.5,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Rodajes diarios o ritmos lentos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-endorphin-pro-5"
+   ]
   },
   {
    "m": "Puma",
@@ -1240,7 +1608,23 @@
     "fotos/puma-velocity-nitro-4/3.webp",
     "fotos/puma-velocity-nitro-4/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 245,
+   "drop": 10,
+   "talon": 36,
+   "ante": 26,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Fondos muy largos si sos pesado o pronador.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/puma-velocity-nitro-4"
+   ]
   },
   {
    "m": "Puma",
@@ -1248,7 +1632,7 @@
    "ver": "4",
    "tipo": "Neutra",
    "uso": "Ritmo",
-   "esp": "Nitro",
+   "esp": "Nitro Elite",
    "pl": "Carbono",
    "tiendas": [
     {
@@ -1277,7 +1661,23 @@
     "fotos/puma-deviate-nitro-4/3.webp",
     "fotos/puma-deviate-nitro-4/4.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 245,
+   "drop": 8,
+   "talon": 38,
+   "ante": 30,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Si recién arrancás o corrés siempre suave.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/puma-deviate-nitro-4"
+   ]
   },
   {
    "m": "Puma",
@@ -1314,44 +1714,32 @@
     "fotos/puma-magmax-nitro-2/3.webp",
     "fotos/puma-magmax-nitro-2/4.webp"
    ],
-   "ar": true
-  },
-  {
-   "m": "Mizuno",
-   "mod": "Wave Rider",
-   "ver": "",
-   "tipo": "Neutra",
-   "uso": "Rodaje diario",
-   "esp": "",
-   "pl": "Placa Wave",
-   "tiendas": [],
-   "colores": [],
-   "id": 35,
-   "slug": "mizuno-wave-rider",
-   "fotos": []
-  },
-  {
-   "m": "Mizuno",
-   "mod": "Wave Inspire",
-   "ver": "",
-   "tipo": "Estabilidad",
-   "uso": "Rodaje diario",
-   "esp": "",
-   "pl": "Placa Wave",
-   "tiendas": [],
-   "colores": [],
-   "id": 36,
-   "slug": "mizuno-wave-inspire",
-   "fotos": []
+   "ar": true,
+   "terreno": "Asfalto",
+   "peso": 275,
+   "drop": 8,
+   "talon": 46,
+   "ante": 38,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Series cortas o si te gusta sentir el piso.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/puma-mag-max-nitro-2"
+   ]
   },
   {
    "m": "Topper",
-   "mod": "Fast 2.0",
-   "ver": "",
-   "tipo": "",
+   "mod": "Fast",
+   "ver": "2.0",
+   "tipo": "Neutra",
    "uso": "Iniciación",
-   "esp": "",
-   "pl": "",
+   "esp": "T-Cushion (EVA)",
+   "pl": "Sin placa",
    "tiendas": [
     {
      "tienda": "Sporting",
@@ -1360,6 +1748,15 @@
      "url": "https://www.sporting.com.ar/zapatillas-topper-fast-2-0-unisex-225860-000/p",
      "fecha": "30/10/2026",
      "nota": "Unisex"
+    },
+    {
+     "tienda": "Topper",
+     "precio": 84999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.topper.com.ar/zapatillas-fast-2-0-025860/p",
+     "fecha": "30/10/2026",
+     "antes": 86900,
+     "nota": "Hombre"
     }
    ],
    "colores": [],
@@ -1370,7 +1767,1685 @@
     "fotos/topper-fast-2-0/2.webp",
     "fotos/topper-fast-2-0/3.webp"
    ],
-   "ar": true
+   "ar": true,
+   "terreno": "Asfalto",
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Fondos largos o ritmos rápidos."
+  },
+  {
+   "id": 38,
+   "slug": "on-cloudmonster-3",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 339999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-on-cloudmonster-3-hombre/ON3MG10054-859.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "On",
+   "mod": "Cloudmonster",
+   "ver": "3",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Asfalto",
+   "pl": "Speedboard (TPU)",
+   "esp": "Helion + CloudTec",
+   "peso": 295,
+   "drop": 6,
+   "talon": 40,
+   "ante": 34,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Si querés una zapa blanda: la pisada es firme.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/on-cloudmonster-3"
+   ],
+   "fotos": [
+    "fotos/on-cloudmonster-3/1.webp",
+    "fotos/on-cloudmonster-3/2.webp",
+    "fotos/on-cloudmonster-3/3.webp",
+    "fotos/on-cloudmonster-3/4.webp"
+   ]
+  },
+  {
+   "id": 39,
+   "slug": "on-cloudsurfer-next",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 269999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-on-cloudsurfer-next-hombre/ON3ME30022-906.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "On",
+   "mod": "Cloudsurfer Next",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Iniciación",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Helion + CloudTec",
+   "peso": 266,
+   "drop": 6,
+   "talon": 37,
+   "ante": 31,
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Ritmos rápidos o fondos de más de 20K.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/on-cloudsurfer-next"
+   ],
+   "fotos": [
+    "fotos/on-cloudsurfer-next/1.webp",
+    "fotos/on-cloudsurfer-next/2.webp",
+    "fotos/on-cloudsurfer-next/3.webp",
+    "fotos/on-cloudsurfer-next/4.webp"
+   ]
+  },
+  {
+   "id": 40,
+   "slug": "on-cloudrunner-3",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-on-cloudrunner-3-hombre/ON3MG10071-043.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "On",
+   "mod": "Cloudrunner",
+   "ver": "3",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Helion + CloudTec",
+   "peso": 295,
+   "drop": 8,
+   "talon": 37,
+   "ante": 29,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pisada neutra que busca algo ágil.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/on-cloudrunner-3"
+   ],
+   "fotos": [
+    "fotos/on-cloudrunner-3/1.webp",
+    "fotos/on-cloudrunner-3/2.webp",
+    "fotos/on-cloudrunner-3/3.webp",
+    "fotos/on-cloudrunner-3/4.webp"
+   ]
+  },
+  {
+   "id": 41,
+   "slug": "on-cloudflyer-5",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 309999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-on-cloudflyer-5-hombre/ON3ME30010-299.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "On",
+   "mod": "Cloudflyer",
+   "ver": "5",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Helion de doble densidad",
+   "peso": 320,
+   "drop": 10,
+   "talon": 31,
+   "ante": 21,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Liviano a medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Si buscás mucha amortiguación o una zapa liviana.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/on-cloudflyer-5"
+   ],
+   "fotos": [
+    "fotos/on-cloudflyer-5/1.webp",
+    "fotos/on-cloudflyer-5/2.webp",
+    "fotos/on-cloudflyer-5/3.webp",
+    "fotos/on-cloudflyer-5/4.webp"
+   ]
+  },
+  {
+   "id": 42,
+   "slug": "on-cloudboom-max",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 409999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-on-cloudboom-max-hombre/ON3MF30310-438.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "On",
+   "mod": "Cloudboom Max",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Asfalto",
+   "pl": "Speedboard (TPU)",
+   "esp": "Helion HF",
+   "peso": 296,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Si recién arrancás o corrés siempre muy lento.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/on-cloudboom-max"
+   ],
+   "fotos": [
+    "fotos/on-cloudboom-max/1.webp",
+    "fotos/on-cloudboom-max/2.webp",
+    "fotos/on-cloudboom-max/3.webp",
+    "fotos/on-cloudboom-max/4.webp"
+   ]
+  },
+  {
+   "id": 43,
+   "slug": "brooks-ghost-15",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 59999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-brooks-ghost-15-hombre/BRCRNMLIV0028AZNGVE.html",
+     "fecha": "30/10/2026",
+     "antes": 199999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Brooks",
+   "mod": "Ghost",
+   "ver": "15",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "DNA Loft v2",
+   "peso": 286,
+   "drop": 12,
+   "talon": 35,
+   "ante": 23,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Si corrés apoyando el antepié: el drop es alto.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/brooks-ghost-15"
+   ],
+   "fotos": [
+    "fotos/brooks-ghost-15/1.webp",
+    "fotos/brooks-ghost-15/2.webp",
+    "fotos/brooks-ghost-15/3.webp",
+    "fotos/brooks-ghost-15/4.webp"
+   ]
+  },
+  {
+   "id": 44,
+   "slug": "brooks-glycerin-20",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 69999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-brooks-glycerin-20-mujer/BRCRNFLIV0007BLCE.html",
+     "fecha": "30/10/2026",
+     "antes": 224999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Brooks",
+   "mod": "Glycerin",
+   "ver": "20",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "DNA Loft v3",
+   "peso": 286,
+   "drop": 10,
+   "talon": 34,
+   "ante": 24,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Series o si buscás una zapa liviana.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/brooks-glycerin-20"
+   ],
+   "fotos": [
+    "fotos/brooks-glycerin-20/1.webp",
+    "fotos/brooks-glycerin-20/2.webp",
+    "fotos/brooks-glycerin-20/3.webp",
+    "fotos/brooks-glycerin-20/4.webp"
+   ]
+  },
+  {
+   "id": 45,
+   "slug": "brooks-adrenaline-gts-23",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 59999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-brooks-adrenaline-gts-23-mujer/BRCRNFLIV0014NGRSLM.html",
+     "fecha": "30/10/2026",
+     "antes": 199999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Brooks",
+   "mod": "Adrenaline GTS",
+   "ver": "23",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "DNA Loft v2 + GuideRails",
+   "peso": 294,
+   "drop": 12,
+   "talon": 36,
+   "ante": 24,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pisada neutra o si buscás velocidad.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/brooks-adrenaline-gts-23"
+   ],
+   "fotos": [
+    "fotos/brooks-adrenaline-gts-23/1.webp",
+    "fotos/brooks-adrenaline-gts-23/2.webp",
+    "fotos/brooks-adrenaline-gts-23/3.webp",
+    "fotos/brooks-adrenaline-gts-23/4.webp"
+   ]
+  },
+  {
+   "id": 46,
+   "slug": "brooks-launch-10",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 54999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-brooks-launch-10-mujer/BRBRCRNFLIV0018GRSA.html",
+     "fecha": "30/10/2026",
+     "antes": 174999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Brooks",
+   "mod": "Launch",
+   "ver": "10",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "BioMoGo DNA",
+   "peso": 232,
+   "drop": 10,
+   "talon": 34,
+   "ante": 24,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Fondos largos si sos pesado.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/brooks-launch-10"
+   ],
+   "fotos": [
+    "fotos/brooks-launch-10/1.webp",
+    "fotos/brooks-launch-10/2.webp",
+    "fotos/brooks-launch-10/3.webp",
+    "fotos/brooks-launch-10/4.webp"
+   ]
+  },
+  {
+   "id": 47,
+   "slug": "brooks-hyperion",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 59999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-brooks-hyperion-mujer/BRCRNFLIV0016RSLMNG.html",
+     "fecha": "30/10/2026",
+     "antes": 199999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Brooks",
+   "mod": "Hyperion",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "DNA Flash",
+   "peso": 215,
+   "drop": 8,
+   "talon": 22,
+   "ante": 14,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Liviano a medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Rodajes largos o si buscás amortiguación.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/brooks-hyperion"
+   ],
+   "fotos": [
+    "fotos/brooks-hyperion/1.webp",
+    "fotos/brooks-hyperion/2.webp",
+    "fotos/brooks-hyperion/3.webp",
+    "fotos/brooks-hyperion/4.webp"
+   ]
+  },
+  {
+   "id": 48,
+   "slug": "under-armour-velociti-3",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 54999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-velociti-3-para-hombre/UA3026117-400.html",
+     "fecha": "30/10/2026",
+     "antes": 179999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Under Armour",
+   "mod": "Velociti",
+   "ver": "3",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "UA Flow",
+   "peso": 249,
+   "drop": 8,
+   "talon": 30,
+   "ante": 22,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Liviano a medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Fondos largos si buscás mucha amortiguación.",
+   "fotos": [
+    "fotos/under-armour-velociti-3/1.webp",
+    "fotos/under-armour-velociti-3/2.webp",
+    "fotos/under-armour-velociti-3/3.webp",
+    "fotos/under-armour-velociti-3/4.webp"
+   ]
+  },
+  {
+   "id": 49,
+   "slug": "under-armour-infinite-pro",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 54999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-infinite-pro-hombre/UA3027190-101.html",
+     "fecha": "30/10/2026",
+     "antes": 189999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Under Armour",
+   "mod": "Infinite Pro",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "HOVR+ + Charged",
+   "peso": 306,
+   "drop": 8,
+   "talon": 31,
+   "ante": 23,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Liviano a medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Si buscás una zapa liviana o rápida.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/under-armour-infinite-pro"
+   ],
+   "fotos": [
+    "fotos/under-armour-infinite-pro/1.webp",
+    "fotos/under-armour-infinite-pro/2.webp",
+    "fotos/under-armour-infinite-pro/3.webp",
+    "fotos/under-armour-infinite-pro/4.webp"
+   ]
+  },
+  {
+   "id": 50,
+   "slug": "under-armour-infinite-elite",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 64999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-infinite-elite-mujer/UA3027199-004.html",
+     "fecha": "30/10/2026",
+     "antes": 219999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Under Armour",
+   "mod": "Infinite Elite",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "HOVR+",
+   "peso": 329,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Series o si te importa el peso.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/under-armour-infinite-elite"
+   ],
+   "fotos": [
+    "fotos/under-armour-infinite-elite/1.webp",
+    "fotos/under-armour-infinite-elite/2.webp",
+    "fotos/under-armour-infinite-elite/3.webp",
+    "fotos/under-armour-infinite-elite/4.webp"
+   ]
+  },
+  {
+   "id": 51,
+   "slug": "saucony-triumph-22",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-saucony-triumph-22-hombre/SAS20964-135.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Saucony",
+   "mod": "Triumph",
+   "ver": "22",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "PWRRUN PB",
+   "peso": 286,
+   "drop": 10,
+   "talon": 37,
+   "ante": 27,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Series cortas o pisada pronadora marcada.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-triumph-22"
+   ],
+   "fotos": [
+    "fotos/saucony-triumph-22/1.webp",
+    "fotos/saucony-triumph-22/2.webp",
+    "fotos/saucony-triumph-22/3.webp",
+    "fotos/saucony-triumph-22/4.webp"
+   ]
+  },
+  {
+   "id": 52,
+   "slug": "saucony-kinvara-14",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 39999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.dexter.com.ar/zapatillas-running-saucony-kinvara-14-hombre/SAS20823-115.html",
+     "fecha": "30/10/2026",
+     "antes": 133899,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Saucony",
+   "mod": "Kinvara",
+   "ver": "14",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "PWRRUN",
+   "peso": 194,
+   "drop": 4,
+   "talon": 31,
+   "ante": 27,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Liviano a medio",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "Fondos largos o si talonás fuerte.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-kinvara-14"
+   ],
+   "fotos": [
+    "fotos/saucony-kinvara-14/1.webp",
+    "fotos/saucony-kinvara-14/2.webp",
+    "fotos/saucony-kinvara-14/3.webp",
+    "fotos/saucony-kinvara-14/4.webp"
+   ]
+  },
+  {
+   "id": 53,
+   "slug": "saucony-endorphin-elite-2",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 399999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-saucony-endorphin-elite-2/SAS30994-135.html",
+     "fecha": "30/10/2026",
+     "nota": "Unisex"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Saucony",
+   "mod": "Endorphin Elite",
+   "ver": "2",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "terreno": "Asfalto",
+   "pl": "Carbono",
+   "esp": "PWRRUN HG",
+   "peso": 199,
+   "drop": 8,
+   "talon": 39.5,
+   "ante": 31.5,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Entrenamiento diario o ritmos lentos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-endorphin-elite-2"
+   ],
+   "fotos": [
+    "fotos/saucony-endorphin-elite-2/1.webp",
+    "fotos/saucony-endorphin-elite-2/2.webp",
+    "fotos/saucony-endorphin-elite-2/3.webp",
+    "fotos/saucony-endorphin-elite-2/4.webp"
+   ]
+  },
+  {
+   "id": 54,
+   "slug": "asics-gt-1000-14",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 179999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gt-1000-14-mujer-malla/AS1012B859001.html",
+     "fecha": "30/10/2026",
+     "antes": 249999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Asics",
+   "mod": "GT-1000",
+   "ver": "14",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "FF Blast + PureGEL",
+   "peso": 265,
+   "drop": 8,
+   "talon": 34.5,
+   "ante": 26.5,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pisada neutra o fondos de más de 25K.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-gt-1000-14"
+   ],
+   "fotos": [
+    "fotos/asics-gt-1000-14/1.webp",
+    "fotos/asics-gt-1000-14/2.webp",
+    "fotos/asics-gt-1000-14/3.webp",
+    "fotos/asics-gt-1000-14/4.webp"
+   ]
+  },
+  {
+   "id": 55,
+   "slug": "asics-gel-excite-11",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-excite-11-mujer/AS1012B861700.html",
+     "fecha": "30/10/2026",
+     "antes": 209999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Asics",
+   "mod": "Gel-Excite",
+   "ver": "11",
+   "tipo": "Neutra",
+   "uso": "Iniciación",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Amplifoam+ + Gel",
+   "peso": 286,
+   "drop": 11,
+   "talon": 38,
+   "ante": 27,
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Ritmos rápidos o fondos largos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-gel-excite-11"
+   ],
+   "fotos": [
+    "fotos/asics-gel-excite-11/1.webp",
+    "fotos/asics-gel-excite-11/2.webp",
+    "fotos/asics-gel-excite-11/3.webp",
+    "fotos/asics-gel-excite-11/4.webp"
+   ]
+  },
+  {
+   "id": 56,
+   "slug": "asics-dynablast-5",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 209999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-dynablast-5-hombre/AS1011B983401.html",
+     "fecha": "30/10/2026",
+     "antes": 279999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Asics",
+   "mod": "Dynablast",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "FF Blast+",
+   "peso": 260,
+   "drop": 8,
+   "talon": 39,
+   "ante": 31,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pronadores marcados.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-dynablast-5"
+   ],
+   "fotos": [
+    "fotos/asics-dynablast-5/1.webp",
+    "fotos/asics-dynablast-5/2.webp",
+    "fotos/asics-dynablast-5/3.webp",
+    "fotos/asics-dynablast-5/4.webp"
+   ]
+  },
+  {
+   "id": 57,
+   "slug": "nike-pegasus-premium",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 309999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-premium-hombre/NIHQ2592-005.html",
+     "fecha": "30/10/2026",
+     "antes": 449999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Nike",
+   "mod": "Pegasus Premium",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "ZoomX + Air Zoom + ReactX",
+   "peso": 309,
+   "drop": 10,
+   "talon": 45,
+   "ante": 35,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio a alto",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Si te importa el peso o tenés pisada pronadora.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-pegasus-premium"
+   ],
+   "fotos": [
+    "fotos/nike-pegasus-premium/1.webp",
+    "fotos/nike-pegasus-premium/2.webp",
+    "fotos/nike-pegasus-premium/3.webp",
+    "fotos/nike-pegasus-premium/4.webp"
+   ]
+  },
+  {
+   "id": 58,
+   "slug": "nike-pegasus-41",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-41-hombre/NIFD2722-401.html",
+     "fecha": "30/10/2026",
+     "antes": 279999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Nike",
+   "mod": "Pegasus",
+   "ver": "41",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "ReactX + Air Zoom",
+   "peso": 283,
+   "drop": 10,
+   "talon": 37,
+   "ante": 27,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Competencia o series muy rápidas.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-pegasus-41"
+   ],
+   "fotos": [
+    "fotos/nike-pegasus-41/1.webp",
+    "fotos/nike-pegasus-41/2.webp",
+    "fotos/nike-pegasus-41/3.webp",
+    "fotos/nike-pegasus-41/4.webp"
+   ]
+  },
+  {
+   "id": 59,
+   "slug": "nike-quest-6",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 179999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-quest-6-hombre/NIFD6033-001.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Nike",
+   "mod": "Quest",
+   "ver": "6",
+   "tipo": "Neutra",
+   "uso": "Iniciación",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "EVA",
+   "peso": 295,
+   "drop": 12,
+   "talon": 35,
+   "ante": 23,
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Fondos largos o ritmos exigentes.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-quest-6"
+   ],
+   "fotos": [
+    "fotos/nike-quest-6/1.webp",
+    "fotos/nike-quest-6/2.webp",
+    "fotos/nike-quest-6/3.webp",
+    "fotos/nike-quest-6/4.webp"
+   ]
+  },
+  {
+   "id": 60,
+   "slug": "nike-revolution-8",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-nike-revolution-8-hombre/NIHJ9198-403.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Nike",
+   "mod": "Revolution",
+   "ver": "8",
+   "tipo": "Neutra",
+   "uso": "Iniciación",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "EVA",
+   "peso": 270,
+   "drop": 10,
+   "talon": 33,
+   "ante": 23,
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Más de 10K seguidos o entrenar todos los días.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-revolution-8"
+   ],
+   "fotos": [
+    "fotos/nike-revolution-8/1.webp",
+    "fotos/nike-revolution-8/2.webp",
+    "fotos/nike-revolution-8/3.webp",
+    "fotos/nike-revolution-8/4.webp"
+   ]
+  },
+  {
+   "id": 61,
+   "slug": "adidas-adistar-5",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 229999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adistar-5-hombre/ADIH7178.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Adidas",
+   "mod": "Adistar",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Dreamstrike",
+   "peso": 264,
+   "drop": 6,
+   "talon": 45,
+   "ante": 39,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio a alto",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "Series o si buscás una zapa liviana.",
+   "fuente": [
+    "adidas",
+    "https://www.adidas.com.tr/en/adistar-5-running-shoes/KK4211.html"
+   ],
+   "fotos": [
+    "fotos/adidas-adistar-5/1.webp",
+    "fotos/adidas-adistar-5/2.webp",
+    "fotos/adidas-adistar-5/3.webp",
+    "fotos/adidas-adistar-5/4.webp"
+   ]
+  },
+  {
+   "id": 62,
+   "slug": "adidas-supernova-stride-2",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 89999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-stride-2-mujer/ADIG2164.html",
+     "fecha": "30/10/2026",
+     "antes": 149999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Adidas",
+   "mod": "Supernova Stride",
+   "ver": "2",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Dreamstrike+",
+   "peso": 275,
+   "drop": 11,
+   "talon": 34,
+   "ante": 23,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Ritmos rápidos o competencia.",
+   "fotos": [
+    "fotos/adidas-supernova-stride-2/1.webp",
+    "fotos/adidas-supernova-stride-2/2.webp",
+    "fotos/adidas-supernova-stride-2/3.webp",
+    "fotos/adidas-supernova-stride-2/4.webp"
+   ]
+  },
+  {
+   "id": 63,
+   "slug": "adidas-ultraboost-5",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 74999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-adidas-ultraboost-5-mujer/ADID8851.html",
+     "fecha": "30/10/2026",
+     "antes": 249999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Adidas",
+   "mod": "Ultraboost",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Light Boost",
+   "peso": 323,
+   "drop": 10,
+   "talon": 39,
+   "ante": 29,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Series o si te importa el peso.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/adidas-ultraboost-5"
+   ],
+   "fotos": [
+    "fotos/adidas-ultraboost-5/1.webp",
+    "fotos/adidas-ultraboost-5/2.webp",
+    "fotos/adidas-ultraboost-5/3.webp",
+    "fotos/adidas-ultraboost-5/4.webp"
+   ]
+  },
+  {
+   "id": 64,
+   "slug": "adidas-adizero-takumi-sen-10",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-adidas-adizero-takumi-sen-10-hombre/ADIF1211.html",
+     "fecha": "30/10/2026",
+     "antes": 274999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Adidas",
+   "mod": "Adizero Takumi Sen",
+   "ver": "10",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "terreno": "Asfalto",
+   "pl": "Varillas de fibra de vidrio",
+   "esp": "Lightstrike Pro",
+   "peso": 196,
+   "drop": 6,
+   "talon": 33,
+   "ante": 27,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Medio",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "Fondos largos o si recién empezás.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/adidas-adizero-takumi-sen-10"
+   ],
+   "fotos": [
+    "fotos/adidas-adizero-takumi-sen-10/1.webp",
+    "fotos/adidas-adizero-takumi-sen-10/2.webp",
+    "fotos/adidas-adizero-takumi-sen-10/3.webp",
+    "fotos/adidas-adizero-takumi-sen-10/4.webp"
+   ]
+  },
+  {
+   "id": 65,
+   "slug": "puma-foreverrun-nitro-2",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 229999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-puma-foreverrun-nitro-2-hombre/PU310109-01.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Puma",
+   "mod": "ForeverRun Nitro",
+   "ver": "2",
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Nitro + RunGuide",
+   "peso": 283,
+   "drop": 10,
+   "talon": 38,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pisada neutra que busca algo ágil.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/puma-foreverrun-nitro-2"
+   ],
+   "fotos": [
+    "fotos/puma-foreverrun-nitro-2/1.webp",
+    "fotos/puma-foreverrun-nitro-2/2.webp",
+    "fotos/puma-foreverrun-nitro-2/3.webp",
+    "fotos/puma-foreverrun-nitro-2/4.webp"
+   ]
+  },
+  {
+   "id": 66,
+   "slug": "puma-velocity-nitro-5",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-puma-velocity-nitro-5/PU312944-04.html",
+     "fecha": "30/10/2026",
+     "nota": "Unisex"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Puma",
+   "mod": "Velocity Nitro",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "Nitro",
+   "peso": 244,
+   "drop": 8,
+   "talon": 35,
+   "ante": 27,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Medio",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "Pronadores o fondos muy largos si sos pesado.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/puma-velocity-nitro-5"
+   ],
+   "fotos": [
+    "fotos/puma-velocity-nitro-5/1.webp",
+    "fotos/puma-velocity-nitro-5/2.webp",
+    "fotos/puma-velocity-nitro-5/3.webp",
+    "fotos/puma-velocity-nitro-5/4.webp"
+   ]
+  },
+  {
+   "id": 67,
+   "slug": "topper-wind-5",
+   "tiendas": [
+    {
+     "tienda": "Topper",
+     "precio": 72999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.topper.com.ar/wind-5-25787-1/p",
+     "fecha": "30/10/2026",
+     "antes": 79200,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Topper",
+   "mod": "Wind",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Iniciación",
+   "terreno": "Asfalto",
+   "pl": "Sin placa",
+   "esp": "EVA",
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Más de 6:00 min/km",
+    "peso": "Medio",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "Fondos largos o ritmos rápidos.",
+   "fotos": [
+    "fotos/topper-wind-5/1.webp",
+    "fotos/topper-wind-5/2.webp"
+   ]
+  },
+  {
+   "id": 68,
+   "slug": "nike-pegasus-trail-5-gtx",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 109999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-trail-5-gore-tex-mujer/NIFQ0912-101.html",
+     "fecha": "30/10/2026",
+     "antes": 369999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Nike",
+   "mod": "Pegasus Trail",
+   "ver": "5 GTX",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Trail",
+   "pl": "Sin placa",
+   "esp": "ReactX",
+   "peso": 300,
+   "drop": 9.5,
+   "talon": 37,
+   "ante": 27.5,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje en senderos",
+    "peso": "Medio",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "Montaña técnica con mucha piedra suelta.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-pegasus-trail-5-gtx"
+   ],
+   "fotos": [
+    "fotos/nike-pegasus-trail-5-gtx/1.webp",
+    "fotos/nike-pegasus-trail-5-gtx/2.webp",
+    "fotos/nike-pegasus-trail-5-gtx/3.webp",
+    "fotos/nike-pegasus-trail-5-gtx/4.webp"
+   ]
+  },
+  {
+   "id": 69,
+   "slug": "nike-kiger-9",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 89999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-kiger-9-hombre/NIDR2693-100.html",
+     "fecha": "30/10/2026",
+     "antes": 299999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Nike",
+   "mod": "Kiger",
+   "ver": "9",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "terreno": "Trail",
+   "pl": "Sin placa",
+   "esp": "React",
+   "peso": 286,
+   "drop": 3,
+   "talon": 31,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Rápido en bajadas y senderos",
+    "peso": "Liviano a medio",
+    "distancia": "Carreras de montaña cortas"
+   },
+   "evitar": "Ultras largos o si necesitás mucha amortiguación.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-terra-kiger-9"
+   ],
+   "fotos": [
+    "fotos/nike-kiger-9/1.webp",
+    "fotos/nike-kiger-9/2.webp",
+    "fotos/nike-kiger-9/3.webp",
+    "fotos/nike-kiger-9/4.webp"
+   ]
+  },
+  {
+   "id": 70,
+   "slug": "nike-zegama-2",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 119999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-outdoor-nike-zegama-2-mujer/NIFD5191-300.html",
+     "fecha": "30/10/2026",
+     "antes": 399999,
+     "nota": "Mujer"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Nike",
+   "mod": "Zegama",
+   "ver": "2",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Trail",
+   "pl": "Sin placa",
+   "esp": "ZoomX",
+   "peso": 303,
+   "drop": 4,
+   "talon": 36,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "Terreno muy técnico donde precisás sentir el piso.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-zegama-2"
+   ],
+   "fotos": [
+    "fotos/nike-zegama-2/1.webp",
+    "fotos/nike-zegama-2/2.webp",
+    "fotos/nike-zegama-2/3.webp",
+    "fotos/nike-zegama-2/4.webp"
+   ]
+  },
+  {
+   "id": 71,
+   "slug": "asics-gel-trabuco-13",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 239999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-trabuco-13-hombre/AS1011B973002.html",
+     "fecha": "30/10/2026",
+     "antes": 319999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Asics",
+   "mod": "Gel-Trabuco",
+   "ver": "13",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Trail",
+   "pl": "Placa antirrocas",
+   "esp": "FF Blast+",
+   "peso": 283,
+   "drop": 8,
+   "talon": 34,
+   "ante": 26,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Rodaje suave",
+    "peso": "Medio",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "Carreras cortas y rápidas de montaña.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/asics-gel-trabuco-13"
+   ],
+   "fotos": [
+    "fotos/asics-gel-trabuco-13/1.webp",
+    "fotos/asics-gel-trabuco-13/2.webp",
+    "fotos/asics-gel-trabuco-13/3.webp",
+    "fotos/asics-gel-trabuco-13/4.webp"
+   ]
+  },
+  {
+   "id": 72,
+   "slug": "adidas-terrex-agravic-4",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 229999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-adidas-terrex-agravic-4-trail-hombre/ADKJ8870.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Adidas",
+   "mod": "Terrex Agravic",
+   "ver": "4",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Trail",
+   "pl": "Sin placa",
+   "esp": "Lightstrike",
+   "peso": 277,
+   "drop": 8,
+   "talon": 35,
+   "ante": 27,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje en senderos",
+    "peso": "Medio",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "Barro profundo o terreno muy técnico.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/adidas-terrex-agravic-4"
+   ],
+   "fotos": [
+    "fotos/adidas-terrex-agravic-4/1.webp",
+    "fotos/adidas-terrex-agravic-4/2.webp",
+    "fotos/adidas-terrex-agravic-4/3.webp",
+    "fotos/adidas-terrex-agravic-4/4.webp"
+   ]
+  },
+  {
+   "id": 73,
+   "slug": "saucony-peregrine-15",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 179999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-saucony-peregrine-hombre/SAS20990-164.html",
+     "fecha": "30/10/2026",
+     "antes": 184999,
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "Saucony",
+   "mod": "Peregrine",
+   "ver": "15",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Trail",
+   "pl": "Placa antirrocas",
+   "esp": "PWRRUN",
+   "peso": 275,
+   "drop": 4,
+   "talon": 28,
+   "ante": 24,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Rodaje en senderos",
+    "peso": "Liviano a medio",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "Ultras largos si buscás mucha amortiguación.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-peregrine-15"
+   ],
+   "fotos": [
+    "fotos/saucony-peregrine-15/1.webp",
+    "fotos/saucony-peregrine-15/2.webp",
+    "fotos/saucony-peregrine-15/3.webp",
+    "fotos/saucony-peregrine-15/4.webp"
+   ]
+  },
+  {
+   "id": 74,
+   "slug": "on-cloudultra-3",
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 339999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-on-cloudultra-3-hombre/ON3MF30234-788.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "m": "On",
+   "mod": "Cloudultra",
+   "ver": "3",
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "terreno": "Trail",
+   "pl": "Speedboard (TPU)",
+   "esp": "Helion HF",
+   "peso": 295,
+   "drop": 6,
+   "talon": 32,
+   "ante": 26,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Rodaje suave",
+    "peso": "Liviano a medio",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "Carreras cortas y técnicas donde necesitás agilidad.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/on-cloudultra-3"
+   ],
+   "fotos": [
+    "fotos/on-cloudultra-3/1.webp",
+    "fotos/on-cloudultra-3/2.webp",
+    "fotos/on-cloudultra-3/3.webp",
+    "fotos/on-cloudultra-3/4.webp"
+   ]
   }
  ]
 }

@@ -31,13 +31,47 @@ Nombres de carpeta:
   new-balance-fresh-foam-x-880-v15
   new-balance-fuelcell-rebel-v5
   new-balance-fuelcell-sc-elite-v5
-  saucony-ride
   saucony-guide-18
   saucony-endorphin-speed-4
   saucony-endorphin-pro-5
   puma-velocity-nitro-4
   puma-deviate-nitro-4
   puma-magmax-nitro-2
-  mizuno-wave-rider
-  mizuno-wave-inspire
   topper-fast-2-0
+  on-cloudmonster-3
+  on-cloudsurfer-next
+  on-cloudrunner-3
+  on-cloudflyer-5
+  on-cloudboom-max
+  brooks-ghost-15
+  brooks-glycerin-20
+  brooks-adrenaline-gts-23
+  brooks-launch-10
+  brooks-hyperion
+  under-armour-velociti-3
+  under-armour-infinite-pro
+  under-armour-infinite-elite
+  saucony-triumph-22
+  saucony-kinvara-14
+  saucony-endorphin-elite-2
+  asics-gt-1000-14
+  asics-gel-excite-11
+  asics-dynablast-5
+  nike-pegasus-premium
+  nike-pegasus-41
+  nike-quest-6
+  nike-revolution-8
+  adidas-adistar-5
+  adidas-supernova-stride-2
+  adidas-ultraboost-5
+  adidas-adizero-takumi-sen-10
+  puma-foreverrun-nitro-2
+  puma-velocity-nitro-5
+  topper-wind-5
+  nike-pegasus-trail-5-gtx
+  nike-kiger-9
+  nike-zegama-2
+  asics-gel-trabuco-13
+  adidas-terrex-agravic-4
+  saucony-peregrine-15
+  on-cloudultra-3

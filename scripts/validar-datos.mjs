@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 
 const PISADAS = ["Neutra", "Estabilidad", ""];
 const USOS = ["Iniciación", "Rodaje diario", "Rodaje largo", "Ritmo", "Competencia"];
+const TERRENOS = ["Asfalto", "Trail"];
 const errores = [];
 let cat;
 try {
@@ -19,6 +20,7 @@ for (const m of cat.modelos) {
   if (!m.m || !m.mod) errores.push(`${n}: falta marca o modelo`);
   if (!PISADAS.includes(m.tipo)) errores.push(`${n}: tipo "${m.tipo}" no válido (Neutra, Estabilidad o vacío)`);
   if (!USOS.includes(m.uso)) errores.push(`${n}: uso "${m.uso}" no válido`);
+  if (m.terreno && !TERRENOS.includes(m.terreno)) errores.push(`${n}: terreno "${m.terreno}" no válido (Asfalto o Trail)`);
   for (const k of ["peso", "drop", "talon", "ante"])
     if (m[k] != null && (typeof m[k] !== "number" || m[k] < 0)) errores.push(`${n}: ${k} tiene que ser un número`);
   if (m.talon && m.ante && Math.abs(m.talon - m.ante - (m.drop ?? m.talon - m.ante)) > 1)

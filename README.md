@@ -117,6 +117,8 @@ Editá `public/data/modelos.json` y hacé push. Cada oferta de una tienda tiene 
 
 La web ordena sola de la más barata a la más cara y calcula el "desde" de cada modelo.
 
+Cada modelo lleva `"terreno": "Asfalto"` o `"terreno": "Trail"`. El catálogo los muestra separados con el selector Asfalto / Trail.
+
 ## Cómo escalar (en orden)
 
 | Etapa | Qué | Cuándo |

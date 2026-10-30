@@ -11,8 +11,11 @@ const [CAT, HIST] = await Promise.all(["modelos", "historial"].map(n => fetch(BA
 //@@FIN
 
 /* ---------- datos ---------- */
+// Un precio que el robot no pudo actualizar en más de 7 días deja de mostrarse.
+const aMs = f => { const [d, mo, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, mo - 1, d) : 0; };
+const vigenteHasta = f => aMs(CAT.actualizado) - aMs(f) <= 7 * 864e5;
 const DATA = CAT.modelos.map(d => {
-  const tiendas = (d.tiendas || []).filter(t => !t.sinStock).sort((a, b) => a.precio - b.precio);
+  const tiendas = (d.tiendas || []).filter(t => !t.sinStock && vigenteHasta(t.fecha)).sort((a, b) => a.precio - b.precio);
   const hist = HIST.series?.[d.slug] || {};
   return { ...d, fotos: d.fotos || [], tiendas, min: tiendas[0]?.precio ?? null, hist, var: variacion(hist) };
 });

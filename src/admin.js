@@ -173,6 +173,14 @@ function pintar() {
     <div class="ad-ctl"><div class="seg" id="rango">${[7, 30, 90].map(d => `<button data-d="${d}" aria-pressed="${d === rango}">${d} días</button>`).join("")}</div>
     <button class="pill" id="recargar" type="button">Actualizar</button><button class="pill" id="csv" type="button">Bajar CSV</button></div></div>`;
   if (cargando) { app.innerHTML = cab + `<p class="ad-vacio">Leyendo los datos…</p>`; return eventosCab(); }
+  if (!eventos.length) { app.innerHTML = cab + `<section class="ad-box ad-diag"><h2 class="cond">La base no te devuelve eventos</h2>
+    <p>Entraste bien como <b>${esc(sesion.email)}</b>, pero no llegó ningún evento de los últimos ${rango} días. Si en Supabase sí ves filas en la tabla <code>eventos</code>, es la regla de lectura: el email de la regla no coincide con el tuyo.</p>
+    <p>En Supabase, andá a <b>SQL Editor</b>, pegá esto y tocá <b>Run</b>:</p>
+    <pre><code>drop policy if exists "solo el admin lee" on public.eventos;
+create policy "solo el admin lee" on public.eventos
+  for select to authenticated
+  using (lower(auth.jwt() ->> 'email') = '${esc(String(sesion.email || "").toLowerCase())}');</code></pre>
+    <p>Después tocá <b>Actualizar</b>.</p></section>`; return eventosCab(); }
   const c = calcular(), cat = window.__cat, rb = window.__robot;
   const precios = cat ? cat.modelos.reduce((a, m) => a + (m.tiendas?.length || 0), 0) : 0;
   app.innerHTML = cab + `

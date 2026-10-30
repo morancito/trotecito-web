@@ -36,7 +36,7 @@ alter table public.eventos enable row level security;
 create policy "el sitio agrega eventos" on public.eventos
   for insert to anon with check (true);
 create policy "solo el admin lee" on public.eventos
-  for select to authenticated using ((auth.jwt() ->> 'email') = 'TU_EMAIL');
+  for select to authenticated using (lower(auth.jwt() ->> 'email') = lower('TU_EMAIL'));
 ```
 
 3. Andá a **Authentication → Users → Add user → Create new user**: poné tu email (el mismo

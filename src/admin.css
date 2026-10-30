@@ -48,3 +48,4 @@
 .ad-ev thead th { font-family: var(--mono); font-stretch: 100%; font-size: 11px; font-weight: 500; letter-spacing: .08em; color: var(--muted); }
 .ad-ev td:first-child { white-space: nowrap; }
 .ad-b .tblwrap { border-width: 1px; }
+.ad-diag { max-width: 760px; } .ad-diag pre { background: var(--soft); border-radius: 10px; padding: 12px; overflow-x: auto; font-size: 13px; }

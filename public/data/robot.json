@@ -1,0 +1,17 @@
+{
+ "fecha": "30/10/2026",
+ "hora": "01:44 a. m.",
+ "leidos": 91,
+ "cambiaron": 0,
+ "fallaron": 7,
+ "errores": [
+  "adidas-adizero-evo-sl · adidas.com.ar: HTTP 403",
+  "nike-pegasus-42 · Duke Sport: no encontré el precio en la página",
+  "nike-pegasus-42 · Nike: HTTP 403",
+  "nike-pegasus-plus · Nike: HTTP 403",
+  "nike-vomero-18 · Duke Sport: no encontré el precio en la página",
+  "nike-vomero-18 · Nike: HTTP 403",
+  "nike-vomero-plus · Nike: HTTP 403"
+ ],
+ "sinStock": []
+}

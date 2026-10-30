@@ -64,7 +64,7 @@ button, input, select { font: inherit; color: inherit; }
   background: repeating-linear-gradient(180deg, transparent 0 62px, rgba(255,255,255,.09) 62px 64px); -webkit-mask: linear-gradient(90deg, transparent 35%, #000 85%); mask: linear-gradient(90deg, transparent 35%, #000 85%); }
 .hero-in { position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: center; gap: 40px; padding-block: 36px 48px; }
 .hero .kicker { color: var(--celeste); }
-.hero h1 { font-size: clamp(64px, 10vw, 140px); line-height: .8; margin: .25em 0 16px; letter-spacing: -.005em; }
+.hero h1 { font-size: clamp(64px, 10vw, 140px); line-height: .98; margin: 0 0 18px; letter-spacing: -.005em; }
 .hero h1 em { font-style: normal; color: var(--celeste); }
 .hero .lede { font-size: 19px; max-width: 36ch; margin: 0; font-weight: 500; color: #E4EAF6; }
 .hbusca { display: flex; margin-top: 24px; max-width: 560px; background: #fff; border: 2.5px solid var(--band); border-radius: 999px; box-shadow: 5px 5px 0 var(--band); overflow: hidden; }

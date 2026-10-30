@@ -829,11 +829,12 @@
     },
     {
      "tienda": "Asics",
-     "precio": 319900,
-     "cuotas": "12 cuotas sin interés",
+     "precio": 287910,
+     "cuotas": "6 cuotas sin interés",
      "url": "https://www.asics.com.ar/1012b765-402-zapatilla-asics-novablast-5-w-1/p",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "antes": 319900
     }
    ],
    "colores": [
@@ -1223,11 +1224,12 @@
    "tiendas": [
     {
      "tienda": "Asics",
-     "precio": 399900,
+     "precio": 319920,
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.asics.com.ar/1013a115-301-zapatilla-asics-metaspeed-sky-m-1/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "antes": 399900
     }
    ],
    "colores": [],

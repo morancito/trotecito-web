@@ -1,8 +1,8 @@
 {
  "fecha": "30/10/2026",
- "hora": "01:44 a. m.",
+ "hora": "12:57 p. m.",
  "leidos": 91,
- "cambiaron": 0,
+ "cambiaron": 2,
  "fallaron": 7,
  "errores": [
   "adidas-adizero-evo-sl · adidas.com.ar: HTTP 403",

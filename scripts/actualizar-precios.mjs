@@ -71,12 +71,13 @@ async function leer(url) {
 }
 
 let ok = 0, fallas = 0, cambios = 0;
+const errores = [], sinStockL = [];
 for (const m of cat.modelos) {
   for (const t of m.tiendas || []) {
     if (!t.url) continue;
     try {
       const r = await leer(t.url);
-      if (r.sinStock) { t.sinStock = true; console.log(`– ${m.slug} · ${t.tienda}: sin stock`); }
+      if (r.sinStock) { t.sinStock = true; sinStockL.push(`${m.slug} · ${t.tienda}`); console.log(`– ${m.slug} · ${t.tienda}: sin stock`); }
       else {
         delete t.sinStock;
         if (r.precio !== t.precio) cambios++;
@@ -90,7 +91,7 @@ for (const m of cat.modelos) {
       }
       ok++;
     } catch (e) {
-      fallas++; console.warn(`✗ ${m.slug} · ${t.tienda}: ${e.message}`);
+      fallas++; errores.push(`${m.slug} · ${t.tienda}: ${e.message}`); console.warn(`✗ ${m.slug} · ${t.tienda}: ${e.message}`);
     }
     await dormir(PAUSA_MS);
   }
@@ -104,5 +105,7 @@ for (const s of Object.values(hist.series)) for (const k of Object.keys(s)) s[k]
 cat.actualizado = hoyAR;
 writeFileSync(new URL("modelos.json", RAIZ), JSON.stringify(cat, null, 1) + "\n");
 writeFileSync(new URL("historial.json", RAIZ), JSON.stringify(hist) + "\n");
+const hora = new Intl.DateTimeFormat("es-AR", { timeZone: "America/Argentina/Buenos_Aires", hour: "2-digit", minute: "2-digit" }).format(new Date());
+writeFileSync(new URL("robot.json", RAIZ), JSON.stringify({ fecha: hoyAR, hora, leidos: ok, cambiaron: cambios, fallaron: fallas, errores, sinStock: sinStockL }, null, 1) + "\n");
 console.log(`\n${ok} precios leídos (${cambios} cambiaron), ${fallas} con error. Fecha: ${hoyAR}.`);
 if (ok === 0) process.exit(1);

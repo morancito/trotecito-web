@@ -32,7 +32,7 @@ const conPlaca = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
 const placa = d => d.pl && d.pl !== "Sin placa" ? d.pl : "";
 const terr = d => d.terreno || "Asfalto";
 const pisadaPara = d => d.tipo === "Estabilidad" ? "Pronadora" : "Neutra o supinadora";
-const AMORT = [[0, "Mínima", "sentís todo el piso"], [28, "Baja", "firme, se siente el piso"], [33, "Media", "ni blanda ni firme"], [38, "Alta", "blanda y protectora"], [42, "Máxima", "la máxima espuma"]];
+const AMORT = [[0, "Mínima", "casi no hay espuma, sentís todo el piso"], [28, "Baja", "poca espuma, se siente el piso"], [33, "Media", "espuma intermedia"], [38, "Alta", "mucha espuma entre tu pie y el piso"], [42, "Máxima", "de las más altas que se fabrican"]];
 const amort = d => { if (!d.talon) return null; let n = 0; AMORT.forEach(([mm], i) => { if (d.talon >= mm) n = i; }); return { n: n + 1, t: AMORT[n][1], s: AMORT[n][2] }; };
 const medidor = a => `<span class="amort" role="img" aria-label="Amortiguación ${a.t}, ${a.n} de 5"><span class="amort-m">${[1, 2, 3, 4, 5].map(k => `<i${k <= a.n ? ' class="on"' : ""}></i>`).join("")}</span><b>${a.t}</b></span>`;
 const kgCorto = d => { const p = d.corredor?.peso || ""; return /cualquier/i.test(p) ? "cualquier peso" : p.toLowerCase(); };
@@ -211,7 +211,7 @@ function ficha(d) {
       <div><dt>Pisada</dt><dd>${pisadaPara(d)}</dd></div><div><dt>Tu peso</dt><dd>${esc(c.peso)}</dd></div>
       <div><dt>Ritmo</dt><dd>${esc(c.ritmo)}</dd></div><div><dt>Distancias</dt><dd>${esc(c.distancia)}</dd></div>
       <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div></dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
-    ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2>${amort(d) ? `<div class="amort-box">${medidor(amort(d))}<p><b>${d.talon} mm</b> de espuma en el talón: ${amort(d).s}.</p></div>` : ""}<dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
+    ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2>${amort(d) ? `<div class="amort-box"><span class="amort-k">Amortiguación</span>${medidor(amort(d))}<p><b>${d.talon} mm</b> de espuma en el talón: ${amort(d).s}.</p><small>Mide cuánta espuma tiene, no si se siente blanda o dura ni cuánto rebota.</small></div>` : ""}<dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
     <div class="acciones"><button class="btn" data-c="${d.id}" aria-pressed="${st.cmp.includes(d.id)}">${st.cmp.includes(d.id) ? "✓ Comparando" : "+ Comparar"}</button>
       ${d.fuente ? `<a class="review" href="${esc(d.fuente[1])}" target="_blank" rel="noopener">Review en ${esc(d.fuente[0])} ↗</a>` : ""}</div>
   </div></div>`;
@@ -243,7 +243,7 @@ function perfiles(ds) {
         ${n ? "" : `<text x="${X0}" y="84" class="alt-e">TALÓN</text><text x="${X1 + 28}" y="84" text-anchor="end" class="alt-e">PUNTA</text>`}
       </svg></div>`; };
   return `<div class="overlay"><h2 class="cond">Cuánta suela tiene cada una</h2>
-    <p class="alt-sub">Vista de costado, en milímetros. Más alta, más amortiguación. Más inclinada del talón a la punta, más drop.</p>
+    <p class="alt-sub">Vista de costado, en milímetros. Más alta, más amortiguación (cantidad de espuma, no si es blanda o dura). Más inclinada del talón a la punta, más drop.</p>
     ${ok.map(fila).join("")}</div>`;
 }
 function comparar() {

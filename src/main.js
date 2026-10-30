@@ -3,16 +3,18 @@ import "@fontsource/kanit/900-italic.css";
 import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
 import { Viewer, perfil, topY, RM } from "./shoe3d.js";
+import { grafico, montarGrafico, variacion } from "./precios.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
-const CAT = await (await fetch(BASE + "data/modelos.json", { cache: "no-cache" })).json();
+const [CAT, HIST] = await Promise.all(["modelos", "historial"].map(n => fetch(BASE + `data/${n}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : { series: {} })));
 //@@FIN
 
 /* ---------- datos ---------- */
 const DATA = CAT.modelos.map(d => {
-  const tiendas = (d.tiendas || []).slice().sort((a, b) => a.precio - b.precio);
-  return { ...d, fotos: d.fotos || [], tiendas, min: tiendas[0]?.precio ?? null };
+  const tiendas = (d.tiendas || []).filter(t => !t.sinStock).sort((a, b) => a.precio - b.precio);
+  const hist = HIST.series?.[d.slug] || {};
+  return { ...d, fotos: d.fotos || [], tiendas, min: tiendas[0]?.precio ?? null, hist, var: variacion(hist) };
 });
 const USOS = ["Iniciación", "Rodaje diario", "Rodaje largo", "Ritmo", "Competencia"];
 const UCLS = { "Iniciación": "u-ini", "Rodaje diario": "u-diario", "Rodaje largo": "u-largo", "Ritmo": "u-ritmo", "Competencia": "u-comp" };
@@ -102,7 +104,7 @@ function tarjeta(d) {
     <div class="bib-band"><span>${esc(d.m)}</span><span>N° ${pad(d.id)}</span></div>
     <div class="bib-img">${img}</div>
     <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>
-      <div class="bib-foot"><span class="bib-uso">${esc(d.uso)}</span>${d.min ? `<span class="bib-p"><small>desde</small>${fmt(d.min)}</span>` : `<span class="pronto">Pronto</span>`}</div></div>
+      <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${d.min ? `<span class="bib-p"><small>desde</small>${fmt(d.min)}</span>` : `<span class="pronto">Pronto</span>`}</div></div>
     <button class="cmp" aria-pressed="${on}" aria-label="Comparar ${esc(nombre(d))}" data-c="${d.id}">${on ? "✓" : "+"}</button></a>`;
 }
 function lista() {
@@ -185,6 +187,7 @@ function ficha(d) {
       <a class="btn" href="${esc(best.url)}" target="_blank" rel="noopener">Comprar en ${esc(best.tienda)} ↗</a>
       ${ahorro > 0 ? `<p class="ahorro">Ahorrás ${fmt(ahorro)} contra la más cara.</p>` : ""}</div>` : `<div class="buy"><b class="buy-p cond" style="font-size:48px">Precio pronto</b></div>`}
     ${resto.length ? `<ul class="tiendas">${resto.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><span class="t-n">${esc(s.tienda)} ↗</span><span class="t-c">${esc(s.nota || "")}</span><span class="t-p">${fmt(s.precio)}</span></a></li>`).join("")}</ul>` : ""}
+    ${grafico(d.hist) ? `<div class="bloque" id="histBox"><h2 class="cond">Cómo varió el precio</h2>${grafico(d.hist)}</div>` : ""}
     ${c ? `<div class="bloque"><h2 class="cond">¿Para quién?</h2><dl class="para">
       <div><dt>Pisada</dt><dd>${d.tipo === "Estabilidad" ? "Pronadora" : "Neutra o supinadora"}</dd></div>
       <div><dt>Ritmo</dt><dd>${esc(c.ritmo)}</dd></div><div><dt>Distancias</dt><dd>${esc(c.distancia)}</dd></div>
@@ -195,6 +198,7 @@ function ficha(d) {
   </div></div>`;
 }
 function montarFicha(d) {
+  montarGrafico(document.getElementById("histBox"), d.hist);
   const crear = () => { if (!visor) visor = Viewer($("#dStage"), { H: d.talon || 36, F: d.ante || 28, plate: conPlaca(d), dims: !!(d.talon && d.ante), view: 0.3 }); };
   if (!d.fotos.length) { crear(); return; }
   $("#mtabs").onclick = e => { const b = e.target.closest("button"); if (!b) return; const tres = b.dataset.mt === "3d";

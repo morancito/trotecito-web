@@ -96,7 +96,16 @@ git add public/fotos && git commit -m "Fotos de modelos" && git push
 El script entra a las páginas de las tiendas cargadas en `modelos.json` y baja hasta 4 fotos de producto por modelo. Solo completa los modelos que todavía no tienen fotos. Para volver a bajar uno: `npm run bajar-fotos -- nike-vomero-18`.
 Para usar fotos del kit de prensa de una marca, poné sus links en `scripts/fotos-urls.json`, por ejemplo `{ "nike-vomero-18": ["https://..."] }`.
 
-## Actualizar precios
+## Seguimiento de precios
+
+Todos los días a las 06:17 (hora de Argentina) GitHub Actions corre `scripts/actualizar-precios.mjs`:
+lee el precio de cada tienda cargada en `modelos.json`, lo actualiza, suma un punto a `public/data/historial.json`,
+guarda el cambio en el repo y vuelve a publicar la web. El historial guarda los últimos 7 meses; la ficha muestra 6.
+
+Para correrlo a mano: pestaña **Actions → Publicar en GitHub Pages → Run workflow**.
+Si una tienda no responde, se conserva el último precio y ese día no suma punto (queda en el log).
+
+## Actualizar precios a mano
 
 Editá `public/data/modelos.json` y hacé push. Cada oferta de una tienda tiene esta forma:
 

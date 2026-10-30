@@ -691,10 +691,9 @@
    "tiendas": [
     {
      "tienda": "Run & Bike",
-     "precio": 239669,
-     "fecha": "27/10/2026",
-     "antes": 289999,
-     "cuotas": "Hasta 12 cuotas con Mercado Pago",
+     "precio": 289999,
+     "fecha": "30/10/2026",
+     "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.runandbike.com.ar/zapatillas-asics-gel-nimbus-27-1012b753-401.html"
     },
@@ -755,16 +754,16 @@
     {
      "tienda": "Dash Deportes",
      "precio": 223999,
-     "fecha": "27/10/2026",
+     "fecha": "30/10/2026",
      "antes": 319999,
-     "cuotas": "3 cuotas sin interés",
+     "cuotas": "6 cuotas sin interés",
      "url": "https://www.dashdeportes.com.ar/zapatillas-asics-gel-kayano-32-running-hombre-0612746/p"
     },
     {
      "tienda": "Vanguard Deportes",
      "precio": 299000,
-     "fecha": "27/10/2026",
-     "cuotas": "3 cuotas sin interés · 5% off con transferencia",
+     "fecha": "30/10/2026",
+     "cuotas": "3 cuotas sin interés",
      "url": "https://vanguarddeportes.com.ar/productos/zapatilla-asics-running-gel-kayano-32-hombre-azul-negro/"
     },
     {

@@ -47,6 +47,8 @@ function silueta(d) {
 const baratas = DATA.filter(d => d.min).sort((a, b) => a.min - b.min);
 const items = baratas.map(d => `<a href="#m-${d.id}"><b>${esc(nombre(d).toUpperCase())}</b>${fmt(d.min)} <span>en ${esc(d.tiendas[0].tienda)}</span></a><i></i>`).join("");
 $("#ticker").innerHTML = `<div class="tk-run">${items}</div><div class="tk-run" aria-hidden="true">${items}</div>`;
+/* velocidad fija (~40 px por segundo) sin importar cuántas zapas haya */
+requestAnimationFrame(() => { const w = $("#ticker .tk-run").scrollWidth; $("#ticker").style.animationDuration = Math.round(w / 40) + "s"; });
 
 /* ---------- aprendé ---------- */
 const VISTAS = { "Costado": 0, "3/4": 0.55, "Atrás": Math.PI / 2 };
@@ -95,43 +97,137 @@ $("#lanes").onclick = e => { const b = e.target.closest(".tab"); if (b) abrirLan
 abrirLane("drop");
 
 /* ---------- catálogo ---------- */
-const st = { q: "", terreno: "Asfalto", pis: "", uso: new Set(), marca: "", precio: false, orden: "precio", cmp: [] };
+const KG = d => { const p = d.corredor?.peso || ""; return /cualquier/i.test(p) ? 999 : +(p.match(/\d+/) || [999])[0]; };
+const desc = d => { const t = d.tiendas[0]; return t?.antes > t?.precio ? 1 - t.precio / t.antes : 0; };
+const nivelAm = d => amort(d)?.t || "";
+const PASO = 10000;
+const P_MIN = Math.floor(Math.min(...DATA.filter(d => d.min).map(d => d.min)) / PASO) * PASO;
+const P_MAX = Math.ceil(Math.max(...DATA.filter(d => d.min).map(d => d.min)) / PASO) * PASO;
+const VACIO = () => ({ pis: "", uso: new Set(), marcas: new Set(), am: new Set(), kg: 0, pmin: P_MIN, pmax: P_MAX, desc: false, placa: false });
+const st = { q: "", terreno: "Asfalto", orden: "precio", cmp: [], ...VACIO() };
 const TERRENOS = [["Asfalto", "Calle, pista y cinta"], ["Trail", "Senderos y montaña"]];
+const PESOS = [[74, "Menos de 75 kg"], [89, "75 a 90 kg"], [91, "Más de 90 kg"]];
+const AMS = ["Baja", "Media", "Alta", "Máxima"];
+const milK = n => n >= 1e6 ? "$" + (n / 1e6).toLocaleString("es-AR", { maximumFractionDigits: 2 }) + " M" : "$" + Math.round(n / 1000) + " mil";
+
 $("#terreno").innerHTML = TERRENOS.map(([t, s]) => `<button data-t="${t}" aria-pressed="${t === st.terreno}"><b class="cond">${t}</b><span>${s}</span><i>${DATA.filter(d => terr(d) === t).length}</i></button>`).join("");
 $("#terreno").onclick = e => { const b = e.target.closest("button"); if (b) setTerreno(b.dataset.t); };
-function setTerreno(t) { st.terreno = t; document.querySelectorAll("#terreno button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === t));
-  st.uso.forEach(u => { if (!DATA.some(d => terr(d) === t && d.uso === u)) st.uso.delete(u); });
-  document.querySelectorAll(".chip[data-uso]").forEach(b => { b.hidden = !DATA.some(d => terr(d) === t && d.uso === b.dataset.uso); b.setAttribute("aria-pressed", st.uso.has(b.dataset.uso)); });
-  render(); }
-$("#filtros").innerHTML = `
-  <div class="seg" id="fPis"><button data-p="" aria-pressed="true">Todas</button><button data-p="Neutra" aria-pressed="false">Neutras</button><button data-p="Estabilidad" aria-pressed="false">Pronador</button></div>
-  ${USOS.map(u => `<button class="chip ${UCLS[u]}" data-uso="${u}" aria-pressed="false">${u}</button>`).join("")}
-  <select class="pill" id="fMarca" aria-label="Marca"><option value="">Todas las marcas</option>${MARCAS.map(m => `<option>${esc(m)}</option>`).join("")}</select>
-  <select class="pill" id="fOrden" aria-label="Ordenar"><option value="precio">Más baratas</option><option value="peso">Más livianas</option><option value="stack">Más amortiguadas</option><option value="az">A a Z</option></select>`;
-$("#fPis").onclick = e => { const b = e.target.closest("button"); if (!b) return; st.pis = b.dataset.p; document.querySelectorAll("#fPis button").forEach(x => x.setAttribute("aria-pressed", x === b)); render(); };
-document.querySelectorAll(".chip[data-uso]").forEach(b => b.onclick = () => { const u = b.dataset.uso; st.uso.has(u) ? st.uso.delete(u) : st.uso.add(u); b.setAttribute("aria-pressed", st.uso.has(u)); render(); });
-$("#fMarca").onchange = e => { st.marca = e.target.value; render(); };
+function setTerreno(t) { st.terreno = t; document.querySelectorAll("#terreno button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === t)); render(); }
+
+const grupo = (t, html, extra = "") => `<fieldset class="fg"${extra}><legend>${t}</legend>${html}</fieldset>`;
+const opc = (k, v, t, tipo = "checkbox", cls = "") => `<label class="op ${cls}"><input type="${tipo}" name="${k}" value="${esc(v)}"><span>${t}</span><em data-n="${k}|${esc(v)}"></em></label>`;
+$("#fpanel").innerHTML = `
+  <div class="fp-head"><b class="cond">Filtros</b><button type="button" class="fp-x" id="fpCerrar" aria-label="Cerrar filtros">✕</button></div>
+  <div class="fp-body">
+  ${grupo("Precio", `<div class="rango"><div class="rango-v"><b id="pMinV"></b><span>a</span><b id="pMaxV"></b></div>
+    <div class="rango-s"><div class="rango-f" id="pFill"></div>
+      <input type="range" id="pMin" min="${P_MIN}" max="${P_MAX}" step="${PASO}" value="${P_MIN}" aria-label="Precio mínimo">
+      <input type="range" id="pMax" min="${P_MIN}" max="${P_MAX}" step="${PASO}" value="${P_MAX}" aria-label="Precio máximo"></div>
+    <div class="atajos-p">${[[0, 100000, "Hasta $100 mil"], [100000, 200000, "$100 a 200 mil"], [200000, 300000, "$200 a 300 mil"], [300000, 0, "Más de $300 mil"]]
+      .map(([a, b, t]) => `<button type="button" data-pa="${a}" data-pb="${b}">${t}</button>`).join("")}</div></div>`)}
+  ${grupo("¿Para qué la querés?", USOS.map(u => opc("uso", u, u, "checkbox", UCLS[u])).join(""))}
+  ${grupo("¿Cómo pisás?", [["", "Me da igual"], ["Neutra", "Neutra o supinadora"], ["Estabilidad", "Pronador"]].map(([v, t]) => opc("pis", v, t, "radio")).join(""))}
+  ${grupo("¿Cuánto pesás?", [[0, "No filtrar"], ...PESOS].map(([v, t]) => opc("kg", v, t, "radio")).join(""))}
+  ${grupo("Amortiguación", AMS.map(a => opc("am", a, a)).join(""))}
+  ${grupo("Marca", MARCAS.map(m => opc("marca", m, esc(m))).join(""), ' id="fgMarca"')}
+  ${grupo("Más", opc("desc", "1", "Con descuento") + opc("placa", "1", "Con placa"))}
+  </div>
+  <div class="fp-foot"><button type="button" class="fp-limpiar" id="fpLimpiar">Limpiar</button><button type="button" class="fp-ver" id="fpVer">Ver zapas</button></div>`;
+
+const fp = $("#fpanel");
+fp.addEventListener("change", e => {
+  const i = e.target, k = i.name; if (!k) return;
+  if (k === "uso" || k === "am") st[k][i.checked ? "add" : "delete"](i.value);
+  else if (k === "marca") st.marcas[i.checked ? "add" : "delete"](i.value);
+  else if (k === "pis") st.pis = i.value;
+  else if (k === "kg") st.kg = +i.value;
+  else if (k === "desc" || k === "placa") st[k] = i.checked;
+  render();
+});
+const pMin = $("#pMin"), pMax = $("#pMax");
+function pintarRango() {
+  $("#pMinV").textContent = milK(st.pmin); $("#pMaxV").textContent = st.pmax >= P_MAX ? milK(P_MAX) + "+" : milK(st.pmax);
+  const a = (st.pmin - P_MIN) / (P_MAX - P_MIN) * 100, b = (st.pmax - P_MIN) / (P_MAX - P_MIN) * 100;
+  $("#pFill").style.left = a + "%"; $("#pFill").style.right = (100 - b) + "%";
+  pMin.value = st.pmin; pMax.value = st.pmax;
+}
+pMin.oninput = () => { st.pmin = Math.min(+pMin.value, st.pmax - PASO); render(); };
+pMax.oninput = () => { st.pmax = Math.max(+pMax.value, st.pmin + PASO); render(); };
+fp.querySelector(".atajos-p").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+  st.pmin = Math.max(P_MIN, +b.dataset.pa); st.pmax = +b.dataset.pb || P_MAX; render(); };
+$("#fpLimpiar").onclick = () => { Object.assign(st, VACIO()); render(); };
+const abrirF = v => { fp.classList.toggle("open", v); document.body.classList.toggle("fp-on", v); };
+$("#fpCerrar").onclick = $("#fpVer").onclick = () => abrirF(false);
+$("#fAbrir").onclick = () => abrirF(true);
 $("#fOrden").onchange = e => { st.orden = e.target.value; render(); };
 $("#q").oninput = e => { st.q = e.target.value.trim().toLowerCase(); render(); };
 
+/* sincroniza los controles del panel con el estado */
+function pintarPanel() {
+  fp.querySelectorAll("input[name]").forEach(i => {
+    const k = i.name, v = i.value;
+    i.checked = k === "uso" || k === "am" ? st[k].has(v) : k === "marca" ? st.marcas.has(v) : k === "pis" ? st.pis === v : k === "kg" ? st.kg === +v : k === "desc" || k === "placa" ? st[k] : false;
+  });
+  fp.querySelectorAll(".atajos-p button").forEach(b => b.setAttribute("aria-pressed", st.pmin === Math.max(P_MIN, +b.dataset.pa) && st.pmax === (+b.dataset.pb || P_MAX)));
+  pintarRango();
+}
+const pasa = (d, sin) => (st.q ? `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}`.toLowerCase().includes(st.q) : terr(d) === st.terreno)
+  && (sin === "pis" || !st.pis || d.tipo === st.pis) && (sin === "uso" || !st.uso.size || st.uso.has(d.uso))
+  && (sin === "marca" || !st.marcas.size || st.marcas.has(d.m)) && (sin === "am" || !st.am.size || st.am.has(nivelAm(d)))
+  && (sin === "kg" || !st.kg || KG(d) >= st.kg) && (sin === "desc" || !st.desc || desc(d) > 0.01) && (sin === "placa" || !st.placa || conPlaca(d))
+  && (st.pmin <= P_MIN && st.pmax >= P_MAX || d.min && d.min >= st.pmin && (st.pmax >= P_MAX || d.min <= st.pmax));
+/* cuántas zapas quedarían al tocar cada opción */
+function contarOpciones() {
+  fp.querySelectorAll("em[data-n]").forEach(em => {
+    const [k, v] = em.dataset.n.split("|");
+    const f = { uso: d => d.uso === v, am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || KG(d) >= +v, desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
+    const n = DATA.filter(d => pasa(d, k) && f(d)).length;
+    em.textContent = n; em.closest(".op").classList.toggle("cero", n === 0);
+  });
+}
+function chipsActivos() {
+  const c = [];
+  if (st.pmin > P_MIN || st.pmax < P_MAX) c.push(["precio", `${milK(st.pmin)} a ${st.pmax >= P_MAX ? "más" : milK(st.pmax)}`]);
+  st.uso.forEach(u => c.push(["uso:" + u, u]));
+  if (st.pis) c.push(["pis", st.pis === "Estabilidad" ? "Pronador" : "Neutra"]);
+  if (st.kg) c.push(["kg", PESOS.find(p => p[0] === st.kg)[1]]);
+  st.am.forEach(a => c.push(["am:" + a, "Amortiguación " + a.toLowerCase()]));
+  st.marcas.forEach(m => c.push(["marca:" + m, m]));
+  if (st.desc) c.push(["desc", "Con descuento"]); if (st.placa) c.push(["placa", "Con placa"]);
+  return c;
+}
+$("#activos").onclick = e => { const b = e.target.closest("button[data-x]"); if (!b) return; const [k, v] = b.dataset.x.split(":");
+  if (k === "precio") { st.pmin = P_MIN; st.pmax = P_MAX; } else if (k === "uso" || k === "am") st[k].delete(v); else if (k === "marca") st.marcas.delete(v);
+  else if (k === "pis") st.pis = ""; else if (k === "kg") st.kg = 0; else st[k] = false;
+  if (k === "todo") Object.assign(st, VACIO());
+  render(); };
+
 function tarjeta(d) {
-  const on = st.cmp.includes(d.id);
+  const on = st.cmp.includes(d.id), dc = desc(d);
   const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
   return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="#m-${d.id}">
     <div class="bib-band"><span>${esc(d.m)}</span><span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
-    <div class="bib-img">${img}</div>
+    <div class="bib-img">${img}${dc >= 0.05 ? `<span class="off">−${Math.round(dc * 100)}%</span>` : ""}</div>
     <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>${d.corredor ? `<p class="bib-perfil">${d.tipo === "Estabilidad" ? "Pronador" : "Neutra"} · ${esc(kgCorto(d))}</p>` : ""}
       <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${d.min ? `<span class="bib-p"><small>desde</small>${fmt(d.min)}</span>` : `<span class="pronto">Pronto</span>`}</div></div>
     <button class="cmp" aria-pressed="${on}" aria-label="Comparar ${esc(nombre(d))}" data-c="${d.id}">${on ? "✓" : "+"}</button></a>`;
 }
 function lista() {
-  const l = DATA.filter(d => (st.q ? `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}`.toLowerCase().includes(st.q) : terr(d) === st.terreno) && (!st.pis || d.tipo === st.pis)
-    && (!st.uso.size || st.uso.has(d.uso)) && (!st.marca || d.m === st.marca));
+  const l = DATA.filter(d => pasa(d));
   const X = 1e12, o = st.orden;
   return l.sort(o === "peso" ? (a, b) => (a.peso ?? X) - (b.peso ?? X) : o === "stack" ? (a, b) => (b.talon ?? -1) - (a.talon ?? -1)
-    : o === "az" ? (a, b) => a.m.localeCompare(b.m) || a.mod.localeCompare(b.mod) : (a, b) => (a.min ?? X) - (b.min ?? X) || a.id - b.id);
+    : o === "desc" ? (a, b) => desc(b) - desc(a) : o === "az" ? (a, b) => a.m.localeCompare(b.m) || a.mod.localeCompare(b.mod) : (a, b) => (a.min ?? X) - (b.min ?? X) || a.id - b.id);
 }
-function render() { const l = lista(); $("#grid").innerHTML = l.map(tarjeta).join(""); $("#empty").hidden = l.length > 0; bandeja(); }
+function render() {
+  const l = lista(), act = chipsActivos();
+  $("#grid").innerHTML = l.map(tarjeta).join(""); $("#empty").hidden = l.length > 0;
+  $("#cuenta").textContent = `${l.length} ${l.length === 1 ? "zapa" : "zapas"}`;
+  $("#fpVer").textContent = `Ver ${l.length} ${l.length === 1 ? "zapa" : "zapas"}`;
+  $("#fAbrir").innerHTML = `Filtros${act.length ? ` <i>${act.length}</i>` : ""}`;
+  $("#activos").innerHTML = act.map(([k, t]) => `<button type="button" data-x="${esc(k)}" aria-label="Quitar ${esc(t)}">${esc(t)} <span aria-hidden="true">✕</span></button>`).join("")
+    + (act.length > 1 ? `<button type="button" class="todo" data-x="todo">Limpiar todo</button>` : "");
+  pintarPanel(); contarOpciones(); bandeja();
+}
 function bandeja() { const n = st.cmp.length; $("#tray").hidden = n === 0 || location.hash === "#comparar"; $("#traytxt").textContent = `${n} de 3 para comparar`; $("#traygo").disabled = n < 2; }
 document.addEventListener("click", e => {
   const c = e.target.closest("[data-c]"); if (!c) return; e.preventDefault(); e.stopPropagation();
@@ -143,43 +239,25 @@ document.addEventListener("click", e => {
 $("#trayclear").onclick = () => { st.cmp = []; render(); route(); };
 $("#traygo").onclick = () => { location.hash = "comparar"; };
 
-/* ---------- buscador del dorsal ---------- */
-const FINDER = {
-  terreno: [["Calle", "Asfalto"], ["Montaña", "Trail"]],
-  uso: [["Arrancar", "Iniciación"], ["Todos los días", "Rodaje diario"], ["Fondos largos", "Rodaje largo"], ["Ir rápido", "Ritmo"], ["Competir", "Competencia"]],
-  pis: [["Neutra", "Neutra"], ["Pronador", "Estabilidad"], ["No sé", ""]],
-  orden: [["Precio", "precio"], ["Liviandad", "peso"], ["Amortiguación", "stack"]],
-};
-const fsel = { terreno: "", uso: "", pis: "", orden: "" };
-document.querySelectorAll(".dh-ops").forEach(box => {
-  const k = box.dataset.k;
-  box.innerHTML = FINDER[k].map(([t, v]) => `<button type="button" data-v="${v}" aria-pressed="false">${t}</button>`).join("");
-  box.onclick = e => { const b = e.target.closest("button"); if (!b) return;
-    fsel[k] = b.getAttribute("aria-pressed") === "true" ? "" : b.dataset.v;
-    box.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b && fsel[k] === b.dataset.v));
-    contar(); };
-});
-const fFilt = () => DATA.filter(d => terr(d) === (fsel.terreno || "Asfalto") && (!fsel.uso || d.uso === fsel.uso) && (!fsel.pis || d.tipo === fsel.pis));
-let numActual = fFilt().length, numAnim;
-$("#fNum").textContent = String(numActual).padStart(2, "0");
-function contar() {
-  const n = fFilt().length;
-  $("#fNumL").innerHTML = n === 1 ? "zapa<br>te va" : "zapas<br>te van";
-  cancelAnimationFrame(numAnim);
-  const desde = numActual, t0 = performance.now(), dur = RM ? 0 : 450;
-  const paso = t => { const k = dur ? Math.min(1, (t - t0) / dur) : 1; numActual = Math.round(desde + (n - desde) * (1 - Math.pow(1 - k, 3)));
-    $("#fNum").textContent = String(numActual).padStart(2, "0"); if (k < 1) numAnim = requestAnimationFrame(paso); };
-  numAnim = requestAnimationFrame(paso);
-  $("#finder").classList.remove("pop"); void $("#finder").offsetWidth; $("#finder").classList.add("pop");
-}
-$("#finder").onsubmit = e => {
-  e.preventDefault();
-  st.uso.clear(); if (fsel.uso) st.uso.add(fsel.uso); st.q = ""; $("#q").value = "";
-  st.pis = fsel.pis; document.querySelectorAll("#fPis button").forEach(x => x.setAttribute("aria-pressed", x.dataset.p === st.pis));
-  st.orden = fsel.orden || "precio"; $("#fOrden").value = st.orden;
-  setTerreno(fsel.terreno || "Asfalto");
-  if (location.hash === "#catalogo") document.getElementById("catalogo").scrollIntoView(); else location.hash = "catalogo";
-};
+/* ---------- inicio: búsqueda, atajos y ofertas ---------- */
+const irCatalogo = () => { if (location.hash === "#catalogo") document.getElementById("catalogo").scrollIntoView(); else location.hash = "catalogo"; };
+const ATAJOS = [
+  ["Para arrancar", { uso: ["Iniciación"] }], ["Todos los días", { uso: ["Rodaje diario"] }], ["Fondos largos", { uso: ["Rodaje largo"] }],
+  ["Para ir rápido", { uso: ["Ritmo"] }], ["Para competir", { uso: ["Competencia"] }], ["Pronadores", { pis: "Estabilidad" }],
+  ["Menos de $100 mil", { pmax: 100000 }], ["Trail", { terreno: "Trail" }],
+];
+const aplicaAtajo = a => d => terr(d) === (a.terreno || "Asfalto") && (!a.uso || a.uso.includes(d.uso)) && (!a.pis || d.tipo === a.pis) && (!a.pmax || d.min && d.min <= a.pmax);
+$("#atajos").innerHTML = ATAJOS.map(([t, a], i) => `<button type="button" data-a="${i}"><span>${t}</span><b>${DATA.filter(aplicaAtajo(a)).length}</b></button>`).join("");
+$("#atajos").onclick = e => { const b = e.target.closest("button"); if (!b) return; const a = ATAJOS[+b.dataset.a][1];
+  Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
+  if (a.uso) a.uso.forEach(u => st.uso.add(u)); if (a.pis) st.pis = a.pis; if (a.pmax) st.pmax = a.pmax;
+  st.terreno = a.terreno || "Asfalto"; setTerreno(st.terreno); irCatalogo(); };
+$("#hbusca").onsubmit = e => { e.preventDefault(); const v = $("#hq").value.trim(); st.q = v.toLowerCase(); $("#q").value = v; render(); irCatalogo(); };
+const ofertas = DATA.filter(d => desc(d) >= 0.1 && d.fotos.length).sort((a, b) => desc(b) - desc(a)).slice(0, 4);
+$("#ofertas").innerHTML = ofertas.length ? `<div class="of-h"><span class="kicker">Ofertas de hoy</span><a href="#catalogo" id="ofTodas">Ver todas →</a></div>
+  ${ofertas.map(d => `<a class="of" href="#m-${d.id}"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><span class="of-n"><small>${esc(d.m)}</small><b>${esc(nombre(d))}</b><s>${fmt(d.tiendas[0].antes)}</s></span>
+    <span class="of-p"><em>−${Math.round(desc(d) * 100)}%</em><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("")}` : "";
+$("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); });
 
 /* ---------- ficha ---------- */
 let visor = null;
@@ -229,7 +307,7 @@ function montarFicha(d) {
 }
 
 /* ---------- comparar ---------- */
-const CC = ["#E8341C", "#2C5AA0", "#FFAA00"];
+const CC = ["#8E1F3F", "#2F5DB8", "#C08A1E"];
 function perfiles(ds) {
   const ok = ds.filter(d => d.talon && d.ante); if (!ok.length) return "";
   const max = Math.max(48, ...ok.map(d => d.talon)), k = 56 / max, B = 66, X0 = 92, X1 = 318;
@@ -278,5 +356,4 @@ function route() {
   bandeja();
 }
 addEventListener("hashchange", route);
-setTerreno("Asfalto");
 route();

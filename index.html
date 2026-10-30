@@ -8,7 +8,7 @@
 <meta property="og:title" content="Trotecito · Zapas de running en Argentina">
 <meta property="og:description" content="¿Qué zapa te va? Compará modelos y precios de todas las tiendas.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#FFC700">
+<meta name="theme-color" content="#1F3F8F">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -20,24 +20,14 @@
 
 <div id="home">
   <section class="hero"><div class="wrap hero-in">
-    <div>
+    <div class="hero-txt">
       <p class="kicker">Zapatillas de running · Argentina</p>
       <h1 class="cond">¿Qué zapa<br>te <em>va?</em></h1>
       <p class="lede">Compará los modelos que se consiguen acá y comprá donde están más baratos.</p>
-      <div class="ctas"><a class="btn fuerte" href="#catalogo">Ver zapas</a><a class="btn" href="#aprender">Aprendé en 3D</a></div>
+      <form class="hbusca" id="hbusca" role="search"><input type="search" id="hq" placeholder="Buscá un modelo: Pegasus, Novablast, Cloudmonster…" aria-label="Buscar zapatilla"><button type="submit">Buscar</button></form>
+      <div class="atajos" id="atajos"></div>
     </div>
-    <div class="hero-art"><div class="sol" aria-hidden="true"></div>
-      <form class="dh" id="finder">
-        <i class="pin p1" aria-hidden="true"></i><i class="pin p2" aria-hidden="true"></i><i class="pin p3" aria-hidden="true"></i><i class="pin p4" aria-hidden="true"></i>
-        <div class="dh-top"><span>Trotecito · Buscador</span><span>Largada</span></div>
-        <div class="dh-num" aria-live="polite"><b id="fNum">37</b><span id="fNumL">zapas<br>te van</span></div>
-        <div class="dh-q"><p>¿Dónde corrés?</p><div class="dh-ops" data-k="terreno"></div></div>
-        <div class="dh-q"><p>¿Para qué corrés?</p><div class="dh-ops" data-k="uso"></div></div>
-        <div class="dh-q"><p>¿Cómo pisás?</p><div class="dh-ops" data-k="pis"></div></div>
-        <div class="dh-q"><p>¿Qué te importa más?</p><div class="dh-ops" data-k="orden"></div></div>
-        <button class="dh-go" type="submit">Ver mis zapas →</button>
-      </form>
-    </div>
+    <div class="ofertas" id="ofertas"></div>
   </div></section>
 
   <div class="ticker"><div class="tk-track" id="ticker"></div></div>
@@ -55,9 +45,16 @@
     <div class="head"><h2 class="sec cond">Las <span>zapas</span></h2>
       <input type="search" class="buscar" id="q" placeholder="Buscá un modelo o marca" aria-label="Buscar"></div>
     <div class="terreno" id="terreno" role="group" aria-label="Terreno"></div>
-    <div class="filtros" id="filtros"></div>
-    <div class="grid" id="grid"></div>
-    <p class="empty" id="empty" hidden>No hay zapas con esos filtros.</p>
+    <div class="cat-grid">
+      <aside class="fpanel" id="fpanel" aria-label="Filtros"></aside>
+      <div class="cat-main">
+        <div class="toolbar"><b id="cuenta" aria-live="polite"></b><button type="button" class="f-abrir" id="fAbrir">Filtros</button>
+          <label class="orden">Ordenar <select class="pill" id="fOrden"><option value="precio">Más baratas</option><option value="desc">Más descuento</option><option value="peso">Más livianas</option><option value="stack">Más amortiguadas</option><option value="az">A a Z</option></select></label></div>
+        <div class="activos" id="activos"></div>
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="empty" hidden>No hay zapas con esos filtros. Probá sacando alguno.</p>
+      </div>
+    </div>
   </div></section>
 </div>
 

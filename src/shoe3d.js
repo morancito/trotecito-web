@@ -5,8 +5,8 @@ import * as THREE from "three";
 
 export const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
 export const PALETA = {
-  upperA: "#74ACDF", upperB: "#F4F8FC", overlay: "#16181D", midsole: "#F7F6F2",
-  sole: "#1C1D21", sol: "#FFC700", rojo: "#E8341C", lengua: "#EEF2F6",
+  upperA: "#2F5DB8", upperB: "#EAF1FA", overlay: "#141A2E", midsole: "#F7F6F2",
+  sole: "#1C1D21", sol: "#A9C9EC", rojo: "#8E1F3F", lengua: "#EEF2F6",
 };
 const L = 290;
 const sstep = t => (t <= 0 ? 0 : t >= 1 ? 1 : t * t * (3 - 2 * t));

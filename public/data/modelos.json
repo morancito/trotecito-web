@@ -62,7 +62,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, 10K a media maratón"
    },
-   "evitar": "Rodajes de recuperación, pie ancho o quien necesita estabilidad.",
+   "evitar": "tenés el pie ancho, sos pronador o la querés para trotar lento: es angosta y está hecha para ir rápido.",
    "fuente": [
     "Correr una Maratón",
     "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adizero-evo-sl/"
@@ -123,7 +123,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes diarios y fondos medios"
    },
-   "evitar": "Quien busca una zapatilla liviana para series.",
+   "evitar": "buscás una zapa liviana para series: pesa 300 g.",
    "fuente": [
     "Carreras de Montaña",
     "https://carrerasdemontana.com/2026/03/04/nike-pegasus-42-mayayo/"
@@ -185,7 +185,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Pisada pronadora o si buscás mucha amortiguación para fondos.",
+   "evitar": "sos pronador o buscás mucha espuma para fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-pegasus-plus"
@@ -243,7 +243,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y recuperación"
    },
-   "evitar": "Quien busca sensación de suelo o ritmos rápidos.",
+   "evitar": "te gusta sentir el piso o vas a hacer series rápidas: es alta y pesada.",
    "fuente": [
     "Carreras de Montaña",
     "https://carrerasdemontana.com/2025/03/13/nike-vomero-18-review-mayayo/"
@@ -313,7 +313,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Si te gusta sentir el piso o corrés series cortas.",
+   "evitar": "te gusta sentir el piso o vas a hacer series cortas.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-vomero-plus"
@@ -358,7 +358,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pisada neutra que busca algo liviano y rápido.",
+   "evitar": "tu pisada es neutra: el soporte extra no te suma y la hace más pesada.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-structure-26"
@@ -404,7 +404,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Fondos largos o si ya corrés rápido.",
+   "evitar": "hacés fondos largos o ya corrés rápido: tiene poca espuma.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-winflo-10"
@@ -450,7 +450,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Series o si te cuesta la estabilidad en zapas muy blandas.",
+   "evitar": "hacés series o te sentís inestable en zapas muy blandas.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-zoom-x-invincible-run-flyknit-3"
@@ -496,7 +496,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Rodajes lentos de recuperación o si recién empezás."
+   "evitar": "la querés para trotes lentos o estás empezando: la placa pide ritmo."
   },
   {
    "m": "Nike",
@@ -538,7 +538,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Uso diario: la espuma dura menos y es cara para entrenar.",
+   "evitar": "la querés para entrenar todos los días: la espuma se gasta rápido y es cara.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-zoom-x-vaporfly-next-3"
@@ -593,7 +593,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Pronadores o fondos muy largos.",
+   "evitar": "sos pronador o la querés para fondos de más de 25K.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-sl2"
@@ -646,7 +646,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Si recién empezás o buscás una zapa blanda.",
+   "evitar": "estás empezando o buscás una zapa blanda: es firme y pide ritmo.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-boston-13"
@@ -700,7 +700,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Series rápidas o competencia.",
+   "evitar": "la querés para series rápidas o para competir.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-supernova-rise-3"
@@ -753,7 +753,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Rodajes diarios o ritmos lentos.",
+   "evitar": "la querés para entrenar todos los días o corrés lento: está hecha para el día de carrera.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-adios-pro-5"
@@ -807,7 +807,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Fondos largos o ritmos exigentes."
+   "evitar": "hacés fondos largos o entrenamientos exigentes: tiene amortiguación básica."
   },
   {
    "m": "Asics",
@@ -853,7 +853,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes diarios"
    },
-   "evitar": "Pronadores marcados sin plantilla.",
+   "evitar": "sos pronador marcado y no usás plantilla.",
    "fuente": [
     "Foro Atletismo",
     "https://www.foroatletismo.com/zapatillas/asics-novablast-5/"
@@ -916,7 +916,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Quien busca una zapatilla rápida o liviana.",
+   "evitar": "buscás una zapa rápida o liviana.",
    "fuente": [
     "Road Running Review",
     "https://www.roadrunningreview.com/es/ASICS-Gel-Nimbus-27/REVIEW--101383.html"
@@ -999,7 +999,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos"
    },
-   "evitar": "Pisada neutra que busca una zapatilla ágil.",
+   "evitar": "tu pisada es neutra y buscás algo ágil.",
    "fuente": [
     "Carreras de Montaña",
     "https://carrerasdemontana.com/2025/05/21/asics-gel-kayano-32-zapatillas-running-estabilidad-40mm-talon/"
@@ -1062,7 +1062,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pisada neutra o si buscás velocidad.",
+   "evitar": "tu pisada es neutra o buscás velocidad.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-gt-2000-14"
@@ -1116,7 +1116,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pronadores marcados o series rápidas.",
+   "evitar": "sos pronador marcado o la querés para series rápidas.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-gel-cumulus-27"
@@ -1161,7 +1161,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Pronadores o si querés sentir el piso.",
+   "evitar": "sos pronador o te gusta sentir el piso: es muy alta.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-superblast-2"
@@ -1206,7 +1206,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Rodajes lentos o si recién arrancás.",
+   "evitar": "corrés lento o estás empezando: la placa rinde a ritmo rápido.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-magic-speed-4"
@@ -1251,7 +1251,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Entrenamiento diario o ritmos lentos.",
+   "evitar": "la querés para entrenar todos los días o corrés lento.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-metaspeed-sky-plus"
@@ -1296,7 +1296,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Series o pisada pronadora marcada.",
+   "evitar": "la querés para series o sos pronador marcado.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fresh-foam-x-1080-v14"
@@ -1341,7 +1341,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Si buscás una zapa liviana para ritmos rápidos.",
+   "evitar": "buscás una zapa liviana para ir rápido.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15"
@@ -1386,7 +1386,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Pronadores o corredores pesados en fondos largos.",
+   "evitar": "sos pronador o pesás más de 85 kg y hacés fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fuel-cell-rebel-v-5"
@@ -1430,7 +1430,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Entrenamiento diario o ritmos lentos.",
+   "evitar": "la querés para entrenar todos los días o corrés lento.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5"
@@ -1484,7 +1484,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pisada neutra que busca velocidad.",
+   "evitar": "tu pisada es neutra y buscás velocidad.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-guide-18"
@@ -1529,7 +1529,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Si recién empezás o tenés pisada pronadora.",
+   "evitar": "estás empezando o sos pronador.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-speed-4"
@@ -1574,7 +1574,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Rodajes diarios o ritmos lentos.",
+   "evitar": "la querés para entrenar todos los días o corrés lento.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-pro-5"
@@ -1620,7 +1620,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Fondos muy largos si sos pesado o pronador.",
+   "evitar": "pesás más de 85 kg o sos pronador y hacés fondos muy largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-velocity-nitro-4"
@@ -1673,7 +1673,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Si recién arrancás o corrés siempre suave.",
+   "evitar": "estás empezando o corrés siempre suave: la placa pide ritmo.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-deviate-nitro-4"
@@ -1726,7 +1726,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Series cortas o si te gusta sentir el piso.",
+   "evitar": "vas a hacer series cortas o te gusta sentir el piso.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-mag-max-nitro-2"
@@ -1775,7 +1775,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Fondos largos o ritmos rápidos."
+   "evitar": "hacés fondos largos o corrés rápido: es una zapa básica."
   },
   {
    "id": 38,
@@ -1810,7 +1810,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Si querés una zapa blanda: la pisada es firme.",
+   "evitar": "buscás una zapa blanda: la pisada es firme.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudmonster-3"
@@ -1855,7 +1855,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Ritmos rápidos o fondos de más de 20K.",
+   "evitar": "vas a ir rápido o hacer fondos de más de 20K.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudsurfer-next"
@@ -1900,7 +1900,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pisada neutra que busca algo ágil.",
+   "evitar": "tu pisada es neutra y buscás algo ágil.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudrunner-3"
@@ -1945,7 +1945,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Si buscás mucha amortiguación o una zapa liviana.",
+   "evitar": "buscás mucha amortiguación o una zapa liviana.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudflyer-5"
@@ -1990,7 +1990,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Si recién arrancás o corrés siempre muy lento.",
+   "evitar": "estás empezando o corrés siempre muy lento.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudboom-max"
@@ -2036,7 +2036,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Si corrés apoyando el antepié: el drop es alto.",
+   "evitar": "apoyás primero la punta del pie: tiene mucho drop.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/brooks-ghost-15"
@@ -2082,7 +2082,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Series o si buscás una zapa liviana.",
+   "evitar": "la querés para series o buscás una zapa liviana.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/brooks-glycerin-20"
@@ -2128,7 +2128,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pisada neutra o si buscás velocidad.",
+   "evitar": "tu pisada es neutra o buscás velocidad.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/brooks-adrenaline-gts-23"
@@ -2174,7 +2174,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Fondos largos si sos pesado.",
+   "evitar": "pesás más de 85 kg y hacés fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/brooks-launch-10"
@@ -2220,7 +2220,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Rodajes largos o si buscás amortiguación.",
+   "evitar": "hacés fondos largos o buscás amortiguación: tiene muy poca espuma.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/brooks-hyperion"
@@ -2266,7 +2266,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Fondos largos si buscás mucha amortiguación.",
+   "evitar": "hacés fondos largos y buscás mucha amortiguación.",
    "fotos": [
     "fotos/under-armour-velociti-3/1.webp",
     "fotos/under-armour-velociti-3/2.webp",
@@ -2308,7 +2308,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Si buscás una zapa liviana o rápida.",
+   "evitar": "buscás una zapa liviana o rápida.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/under-armour-infinite-pro"
@@ -2354,7 +2354,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Series o si te importa el peso.",
+   "evitar": "la querés para series o te importa el peso.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/under-armour-infinite-elite"
@@ -2399,7 +2399,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Series cortas o pisada pronadora marcada.",
+   "evitar": "vas a hacer series cortas o sos pronador marcado.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-triumph-22"
@@ -2445,7 +2445,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "Fondos largos o si talonás fuerte.",
+   "evitar": "hacés fondos largos o apoyás fuerte el talón: tiene poca espuma.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-kinvara-14"
@@ -2490,7 +2490,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Entrenamiento diario o ritmos lentos.",
+   "evitar": "la querés para entrenar todos los días o corrés lento.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-elite-2"
@@ -2536,7 +2536,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pisada neutra o fondos de más de 25K.",
+   "evitar": "tu pisada es neutra o hacés fondos de más de 25K.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-gt-1000-14"
@@ -2582,7 +2582,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Ritmos rápidos o fondos largos.",
+   "evitar": "vas a ir rápido o hacer fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-gel-excite-11"
@@ -2628,7 +2628,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pronadores marcados.",
+   "evitar": "sos pronador marcado.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-dynablast-5"
@@ -2674,7 +2674,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Si te importa el peso o tenés pisada pronadora.",
+   "evitar": "te importa el peso de la zapa o sos pronador.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-pegasus-premium"
@@ -2720,7 +2720,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Competencia o series muy rápidas.",
+   "evitar": "la querés para competir o hacer series muy rápidas.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-pegasus-41"
@@ -2765,7 +2765,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Fondos largos o ritmos exigentes.",
+   "evitar": "hacés fondos largos o entrenamientos exigentes.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-quest-6"
@@ -2810,7 +2810,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Más de 10K seguidos o entrenar todos los días.",
+   "evitar": "corrés más de 10K seguidos o entrenás todos los días.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-revolution-8"
@@ -2855,7 +2855,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "Series o si buscás una zapa liviana.",
+   "evitar": "la querés para series o buscás una zapa liviana.",
    "fuente": [
     "adidas",
     "https://www.adidas.com.tr/en/adistar-5-running-shoes/KK4211.html"
@@ -2901,7 +2901,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Ritmos rápidos o competencia.",
+   "evitar": "vas a ir rápido o competir.",
    "fotos": [
     "fotos/adidas-supernova-stride-2/1.webp",
     "fotos/adidas-supernova-stride-2/2.webp",
@@ -2943,7 +2943,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Series o si te importa el peso.",
+   "evitar": "la querés para series o te importa el peso: pasa los 320 g.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-ultraboost-5"
@@ -2989,7 +2989,7 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "Fondos largos o si recién empezás.",
+   "evitar": "hacés fondos largos o estás empezando: tiene poca espuma.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-takumi-sen-10"
@@ -3034,7 +3034,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pisada neutra que busca algo ágil.",
+   "evitar": "tu pisada es neutra y buscás algo ágil.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-foreverrun-nitro-2"
@@ -3079,7 +3079,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "Pronadores o fondos muy largos si sos pesado.",
+   "evitar": "sos pronador, o pesás más de 85 kg y hacés fondos muy largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-velocity-nitro-5"
@@ -3121,7 +3121,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "Fondos largos o ritmos rápidos.",
+   "evitar": "hacés fondos largos o corrés rápido: es una zapa básica.",
    "fotos": [
     "fotos/topper-wind-5/1.webp",
     "fotos/topper-wind-5/2.webp"
@@ -3161,7 +3161,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Senderos y cerros, hasta 25K"
    },
-   "evitar": "Montaña técnica con mucha piedra suelta.",
+   "evitar": "corrés en montaña técnica con mucha piedra suelta: el agarre es para senderos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-pegasus-trail-5-gtx"
@@ -3207,7 +3207,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Carreras de montaña cortas"
    },
-   "evitar": "Ultras largos o si necesitás mucha amortiguación.",
+   "evitar": "hacés ultras largos o necesitás mucha amortiguación.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-terra-kiger-9"
@@ -3253,7 +3253,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Montaña, 21K a ultra"
    },
-   "evitar": "Terreno muy técnico donde precisás sentir el piso.",
+   "evitar": "corrés en terreno muy técnico donde necesitás sentir el piso: es muy alta.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-zegama-2"
@@ -3299,7 +3299,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Montaña, 21K a ultra"
    },
-   "evitar": "Carreras cortas y rápidas de montaña.",
+   "evitar": "hacés carreras de montaña cortas y rápidas.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-gel-trabuco-13"
@@ -3344,7 +3344,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Senderos y cerros, hasta 25K"
    },
-   "evitar": "Barro profundo o terreno muy técnico.",
+   "evitar": "corrés en barro profundo o terreno muy técnico.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-terrex-agravic-4"
@@ -3390,7 +3390,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Senderos y cerros, hasta 25K"
    },
-   "evitar": "Ultras largos si buscás mucha amortiguación.",
+   "evitar": "hacés ultras largos y buscás mucha amortiguación.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-peregrine-15"
@@ -3435,7 +3435,7 @@
     "peso": "Hasta 75 kg",
     "distancia": "Montaña, 21K a ultra"
    },
-   "evitar": "Carreras cortas y técnicas donde necesitás agilidad.",
+   "evitar": "hacés carreras cortas y técnicas donde necesitás agilidad.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudultra-3"

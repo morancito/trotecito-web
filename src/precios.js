@@ -38,7 +38,12 @@ function ticksY(lo, hi) {
 
 export function grafico(series) {
   const { elegidas, fechas } = preparar(series);
-  if (fechas.length < 2) return "";
+  if (!fechas.length) return "";
+  if (fechas.length < 2) {
+    const hoy = Math.min(...elegidas.map(([, s]) => s[s.length - 1][1])), f = t(fechas[0]);
+    return `<div class="hist hist-nuevo"><div class="hist-sum"><div><span>Hoy desde</span><b>${fmt(hoy)}</b></div></div>
+      <p>Empezamos a seguir este precio el <b>${dm(f)}</b>. Lo revisamos todos los días en ${elegidas.length === 1 ? "la tienda" : `las ${elegidas.length} tiendas`}: desde el <b>${dm(f + DIA)}</b> vas a ver acá cómo sube o baja.</p></div>`;
+  }
   const fin = t(fechas[fechas.length - 1]), ini = Math.max(t(fechas[0]), fin - VENTANA_DIAS * DIA);
   const visibles = elegidas.map(([n, s]) => [n, s.filter(([d]) => t(d) >= ini - 400 * DIA)]);
   const valores = visibles.flatMap(([, s]) => s.filter(([d]) => t(d) >= ini).map(x => x[1])).concat(visibles.map(([, s]) => vigente(s, ini)).filter(v => v != null));
@@ -58,7 +63,8 @@ export function grafico(series) {
     for (const [f, p] of s) { const ms = t(f); if (ms < ini) continue;
       d += d ? ` H${X(ms).toFixed(1)} V${Y(p).toFixed(1)}` : `M${X(ms).toFixed(1)},${Y(p).toFixed(1)}`; prev = p;
       if (s.length <= 40) pts += `<circle cx="${X(ms).toFixed(1)}" cy="${Y(p).toFixed(1)}" r="4" fill="var(--s${i + 1})" stroke="var(--surface)" stroke-width="2"/>`; }
-    if (prev != null) d += ` H${X(fin).toFixed(1)}`;
+    const ultFecha = s.length ? t(s[s.length - 1][0]) : ini;
+    if (prev != null && fin - ultFecha <= 2 * DIA) d += ` H${X(fin).toFixed(1)}`;
     return { n, i, d, pts, ult: prev };
   });
   /* etiquetas directas a la derecha, separadas para que no se pisen */
@@ -93,7 +99,8 @@ export function grafico(series) {
 export function montarGrafico(root, series) {
   const box = root?.querySelector(".hist"); if (!box) return;
   const { elegidas, fechas } = preparar(series);
-  const svg = box.querySelector("svg"), hit = svg.querySelector(".hit"), hx = svg.querySelector(".hx"), tip = box.querySelector(".hist-tip");
+  const svg = box.querySelector("svg"); if (!svg) return;
+  const hit = svg.querySelector(".hit"), hx = svg.querySelector(".hx"), tip = box.querySelector(".hist-tip");
   const ini = +box.dataset.ini, fin = +box.dataset.fin;
   const puntos = [...new Set([ini, ...fechas.map(t).filter(ms => ms >= ini), fin])].sort((a, b) => a - b);
   const x0 = +hit.getAttribute("x"), w = +hit.getAttribute("width");

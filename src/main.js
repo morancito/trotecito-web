@@ -32,6 +32,9 @@ const conPlaca = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
 const placa = d => d.pl && d.pl !== "Sin placa" ? d.pl : "";
 const terr = d => d.terreno || "Asfalto";
 const pisadaPara = d => d.tipo === "Estabilidad" ? "Pronadora" : "Neutra o supinadora";
+const AMORT = [[0, "Mínima", "sentís todo el piso"], [28, "Baja", "firme, se siente el piso"], [33, "Media", "ni blanda ni firme"], [38, "Alta", "blanda y protectora"], [42, "Máxima", "la máxima espuma"]];
+const amort = d => { if (!d.talon) return null; let n = 0; AMORT.forEach(([mm], i) => { if (d.talon >= mm) n = i; }); return { n: n + 1, t: AMORT[n][1], s: AMORT[n][2] }; };
+const medidor = a => `<span class="amort" role="img" aria-label="Amortiguación ${a.t}, ${a.n} de 5"><span class="amort-m">${[1, 2, 3, 4, 5].map(k => `<i${k <= a.n ? ' class="on"' : ""}></i>`).join("")}</span><b>${a.t}</b></span>`;
 const kgCorto = d => { const p = d.corredor?.peso || ""; return /cualquier/i.test(p) ? "cualquier peso" : p.toLowerCase(); };
 const src = s => /^https?:/.test(s) ? s : BASE + s;
 const silCache = {};
@@ -207,8 +210,8 @@ function ficha(d) {
     ${c ? `<div class="bloque"><h2 class="cond">¿Para quién?</h2><dl class="para">
       <div><dt>Pisada</dt><dd>${pisadaPara(d)}</dd></div><div><dt>Tu peso</dt><dd>${esc(c.peso)}</dd></div>
       <div><dt>Ritmo</dt><dd>${esc(c.ritmo)}</dd></div><div><dt>Distancias</dt><dd>${esc(c.distancia)}</dd></div>
-      <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div>${d.evitar ? `<div><dt>Mejor no si</dt><dd>${esc(d.evitar)}</dd></div>` : ""}</dl></div>` : ""}
-    ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2><dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
+      <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div></dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
+    ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2>${amort(d) ? `<div class="amort-box">${medidor(amort(d))}<p><b>${d.talon} mm</b> de espuma en el talón: ${amort(d).s}.</p></div>` : ""}<dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
     <div class="acciones"><button class="btn" data-c="${d.id}" aria-pressed="${st.cmp.includes(d.id)}">${st.cmp.includes(d.id) ? "✓ Comparando" : "+ Comparar"}</button>
       ${d.fuente ? `<a class="review" href="${esc(d.fuente[1])}" target="_blank" rel="noopener">Review en ${esc(d.fuente[0])} ↗</a>` : ""}</div>
   </div></div>`;
@@ -251,8 +254,8 @@ function comparar() {
     ["Precio", [["Mejor precio", d => d.min ? `<span class="${d.min === minP ? "win" : ""}">${fmt(d.min)}</span>` : ""],
       ["Tienda", d => d.tiendas[0] ? esc(d.tiendas[0].tienda) : ""]]],
     ["Para quién", [["Pisada", d => pisadaPara(d)], ["Tu peso", d => esc(d.corredor?.peso)], ["Ritmo", d => esc(d.corredor?.ritmo)],
-      ["Distancias", d => esc(d.corredor?.distancia)], ["Nivel", d => esc(d.corredor?.nivel)], ["Mejor no si", d => esc(d.evitar)]]],
-    ["Ficha", [["Uso", d => esc(d.uso)], ["Terreno", d => ds.some(x => terr(x) !== terr(d)) ? terr(d) : ""],
+      ["Distancias", d => esc(d.corredor?.distancia)], ["Nivel", d => esc(d.corredor?.nivel)], ["No te conviene si", d => esc(d.evitar)]]],
+    ["Ficha", [["Amortiguación", d => amort(d) ? medidor(amort(d)) : ""], ["Uso", d => esc(d.uso)], ["Terreno", d => ds.some(x => terr(x) !== terr(d)) ? terr(d) : ""],
       ["Peso de la zapa", d => d.peso ? `<span class="${d.peso === minW ? "win" : ""}">${d.peso} g</span>` : ""],
       ["Drop", d => d.drop != null ? d.drop + " mm" : ""], ["Talón", d => d.talon ? d.talon + " mm" : ""], ["Antepié", d => d.ante ? d.ante + " mm" : ""],
       ["Espuma", d => esc(d.esp)], ["Placa", d => esc(placa(d))]]],

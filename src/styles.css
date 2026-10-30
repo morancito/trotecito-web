@@ -278,6 +278,19 @@ input[type="range"] { width: 100%; accent-color: var(--rojo); margin: 14px 0 4px
 .alt-piso { stroke: var(--line); stroke-width: 2; }
 .alt-v { font-family: var(--mono); font-size: 15px; font-weight: 500; fill: var(--ink); }
 table.cmpt tr.grp th { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); background: var(--soft); padding: 8px 14px; }
+.amort { display: inline-flex; align-items: center; gap: 10px; }
+.amort-m { display: inline-flex; gap: 3px; }
+.amort-m i { width: 18px; height: 10px; border-radius: 3px; border: 1.5px solid var(--line); background: transparent; }
+.amort-m i.on { background: var(--rojo); border-color: var(--rojo); }
+.amort b { font-weight: 800; }
+.amort-box { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; padding: 12px 14px; margin-bottom: 10px; border: 2px solid var(--line); border-radius: 12px; }
+.amort-box .amort-m i { width: 26px; height: 14px; }
+.amort-box .amort b { font-size: 18px; }
+.amort-box p { margin: 0; font-size: 14px; color: var(--muted); }
+.amort-box p b { color: var(--ink); }
+.evitar { margin: 12px 0 0; padding: 12px 14px; border-left: 4px solid var(--rojo); background: var(--soft); border-radius: 0 10px 10px 0; font-size: 15px; }
+.evitar b { display: block; font-size: 12px; font-family: var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--rojo); margin-bottom: 2px; }
+.hist-nuevo p { margin: 10px 0 0; padding: 12px 14px; background: var(--soft); border-radius: 10px; font-size: 14px; }
 .bib-perfil { margin: 2px 0 0; font-size: 13px; font-weight: 600; color: var(--muted); }
 @media (max-width: 560px) { .alt-row { grid-template-columns: 1fr; } }
 .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 14px; font-weight: 700; margin-top: 8px; }
@@ -336,3 +349,4 @@ footer p { margin: 8px 0 0; color: #CFCFCF; font-size: 17px; }
 @keyframes gira { to { rotate: 360deg; } }
 @keyframes cinta { to { transform: translateX(-50%); } }
 .chip[hidden], .dh-ops button[hidden] { display: none; }
+.hist-tip[hidden] { display: none; }

@@ -1,0 +1,10 @@
+// Cloudflare Workers: publica el sitio estático que arma `npm run build` en la carpeta dist.
+// Las rutas del sitio son con # (ej. /#catalogo), así que no hace falta redirigir nada al index.
+{
+  "name": "trotecito-web",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}

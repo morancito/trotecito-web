@@ -2,8 +2,8 @@
    Sin cookies ni datos personales: un número al azar por visitante y otro por visita.
    Los eventos se guardan en Supabase (ver docs/medicion.md). Mientras SUPABASE_URL esté vacío, no se mide nada. */
 
-export const SUPABASE_URL = import.meta.env.VITE_SB_URL || "";   // ej. https://abcdefgh.supabase.co
-export const SUPABASE_KEY = import.meta.env.VITE_SB_KEY || "";   // la "anon public key" del proyecto (es pública por diseño)
+export const SUPABASE_URL = import.meta.env.VITE_SB_URL || "https://qnyqaqklsgzfojnaetal.supabase.co";   // ej. https://abcdefgh.supabase.co
+export const SUPABASE_KEY = import.meta.env.VITE_SB_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFueXFhcWtsc2d6Zm9qbmFldGFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMzODg5MjIsImV4cCI6MjEwODk2NDkyMn0.s1DdIYXgy1SGm1yebj6GtgaTy8O5-KiGrrqTWZhKTD4";   // la "anon public key" del proyecto (es pública por diseño)
 
 const lee = (st, k) => { try { return st.getItem(k); } catch { return null; } };
 const pone = (st, k, v) => { try { st.setItem(k, v); } catch {} };

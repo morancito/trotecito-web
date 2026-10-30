@@ -59,7 +59,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Liviano a medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, 10K a media maratón"
    },
    "evitar": "Rodajes de recuperación, pie ancho o quien necesita estabilidad.",
@@ -119,8 +119,8 @@
    "ar": true,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje cómodo",
-    "peso": "Medio",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes diarios y fondos medios"
    },
    "evitar": "Quien busca una zapatilla liviana para series.",
@@ -182,7 +182,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Pisada pronadora o si buscás mucha amortiguación para fondos.",
@@ -239,8 +239,8 @@
    "ar": true,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y recuperación"
    },
    "evitar": "Quien busca sensación de suelo o ritmos rápidos.",
@@ -309,8 +309,8 @@
    "ante": 35,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Si te gusta sentir el piso o corrés series cortas.",
@@ -355,7 +355,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pisada neutra que busca algo liviano y rápido.",
@@ -400,8 +400,8 @@
    "ante": 23,
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Fondos largos o si ya corrés rápido.",
@@ -446,8 +446,8 @@
    "ante": 31,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Series o si te cuesta la estabilidad en zapas muy blandas.",
@@ -493,7 +493,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Rodajes lentos de recuperación o si recién empezás."
@@ -535,7 +535,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio a alto",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Uso diario: la espuma dura menos y es cara para entrenar.",
@@ -590,7 +590,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Pronadores o fondos muy largos.",
@@ -643,7 +643,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Si recién empezás o buscás una zapa blanda.",
@@ -697,7 +697,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Series rápidas o competencia.",
@@ -750,7 +750,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Rodajes diarios o ritmos lentos.",
@@ -803,8 +803,8 @@
    "ante": 24,
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Fondos largos o ritmos exigentes."
@@ -849,7 +849,7 @@
    "ar": true,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Ritmos medios y lentos",
+    "ritmo": "5:00 a 6:30 min/km",
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes diarios"
    },
@@ -912,8 +912,8 @@
    "ar": true,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto (desde 66 kg)",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Quien busca una zapatilla rápida o liviana.",
@@ -995,8 +995,8 @@
    "ar": true,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos"
    },
    "evitar": "Pisada neutra que busca una zapatilla ágil.",
@@ -1059,7 +1059,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pisada neutra o si buscás velocidad.",
@@ -1113,7 +1113,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pronadores marcados o series rápidas.",
@@ -1158,7 +1158,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio a alto",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Pronadores o si querés sentir el piso.",
@@ -1203,7 +1203,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio a alto",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Rodajes lentos o si recién arrancás.",
@@ -1248,7 +1248,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Entrenamiento diario o ritmos lentos.",
@@ -1292,8 +1292,8 @@
    "ante": 32,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Hasta 90 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Series o pisada pronadora marcada.",
@@ -1338,7 +1338,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio a alto",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Si buscás una zapa liviana para ritmos rápidos.",
@@ -1383,7 +1383,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Pronadores o corredores pesados en fondos largos.",
@@ -1427,7 +1427,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio a alto",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Entrenamiento diario o ritmos lentos.",
@@ -1481,7 +1481,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pisada neutra que busca velocidad.",
@@ -1526,7 +1526,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Si recién empezás o tenés pisada pronadora.",
@@ -1571,7 +1571,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Rodajes diarios o ritmos lentos.",
@@ -1617,7 +1617,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Fondos muy largos si sos pesado o pronador.",
@@ -1670,7 +1670,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Si recién arrancás o corrés siempre suave.",
@@ -1722,8 +1722,8 @@
    "ante": 38,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Series cortas o si te gusta sentir el piso.",
@@ -1771,8 +1771,8 @@
    "terreno": "Asfalto",
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Fondos largos o ritmos rápidos."
@@ -1806,8 +1806,8 @@
    "ante": 34,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Si querés una zapa blanda: la pisada es firme.",
@@ -1851,8 +1851,8 @@
    "ante": 31,
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 90 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Ritmos rápidos o fondos de más de 20K.",
@@ -1897,7 +1897,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pisada neutra que busca algo ágil.",
@@ -1942,7 +1942,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Liviano a medio",
+    "peso": "Hasta 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Si buscás mucha amortiguación o una zapa liviana.",
@@ -1986,8 +1986,8 @@
    "ante": 32,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Si recién arrancás o corrés siempre muy lento.",
@@ -2033,7 +2033,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Si corrés apoyando el antepié: el drop es alto.",
@@ -2078,8 +2078,8 @@
    "ante": 24,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Hasta 90 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Series o si buscás una zapa liviana.",
@@ -2125,7 +2125,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pisada neutra o si buscás velocidad.",
@@ -2171,7 +2171,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Fondos largos si sos pesado.",
@@ -2217,7 +2217,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Liviano a medio",
+    "peso": "Hasta 75 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Rodajes largos o si buscás amortiguación.",
@@ -2263,7 +2263,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Liviano a medio",
+    "peso": "Hasta 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Fondos largos si buscás mucha amortiguación.",
@@ -2305,7 +2305,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Liviano a medio",
+    "peso": "Hasta 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Si buscás una zapa liviana o rápida.",
@@ -2350,8 +2350,8 @@
    "ante": 32,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Series o si te importa el peso.",
@@ -2395,8 +2395,8 @@
    "ante": 27,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Hasta 90 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Series cortas o pisada pronadora marcada.",
@@ -2442,7 +2442,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Liviano a medio",
+    "peso": "Hasta 75 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "Fondos largos o si talonás fuerte.",
@@ -2487,7 +2487,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Entrenamiento diario o ritmos lentos.",
@@ -2533,7 +2533,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pisada neutra o fondos de más de 25K.",
@@ -2578,8 +2578,8 @@
    "ante": 27,
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 90 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Ritmos rápidos o fondos largos.",
@@ -2625,7 +2625,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pronadores marcados.",
@@ -2671,7 +2671,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio a alto",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Si te importa el peso o tenés pisada pronadora.",
@@ -2717,7 +2717,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Competencia o series muy rápidas.",
@@ -2761,8 +2761,8 @@
    "ante": 23,
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 90 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Fondos largos o ritmos exigentes.",
@@ -2806,8 +2806,8 @@
    "ante": 23,
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Más de 10K seguidos o entrenar todos los días.",
@@ -2851,8 +2851,8 @@
    "ante": 39,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio a alto",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "Series o si buscás una zapa liviana.",
@@ -2898,7 +2898,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Ritmos rápidos o competencia.",
@@ -2940,7 +2940,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Series o si te importa el peso.",
@@ -2986,7 +2986,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "Fondos largos o si recién empezás.",
@@ -3031,7 +3031,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pisada neutra que busca algo ágil.",
@@ -3076,7 +3076,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Medio",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "Pronadores o fondos muy largos si sos pesado.",
@@ -3117,8 +3117,8 @@
    "esp": "EVA",
    "corredor": {
     "nivel": "Principiante",
-    "ritmo": "Más de 6:00 min/km",
-    "peso": "Medio",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
    "evitar": "Fondos largos o ritmos rápidos.",
@@ -3157,8 +3157,8 @@
    "ante": 27.5,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje en senderos",
-    "peso": "Medio",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 90 kg",
     "distancia": "Senderos y cerros, hasta 25K"
    },
    "evitar": "Montaña técnica con mucha piedra suelta.",
@@ -3203,8 +3203,8 @@
    "ante": 28,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "Rápido en bajadas y senderos",
-    "peso": "Liviano a medio",
+    "ritmo": "Rápido en sendero y bajadas",
+    "peso": "Hasta 75 kg",
     "distancia": "Carreras de montaña cortas"
    },
    "evitar": "Ultras largos o si necesitás mucha amortiguación.",
@@ -3249,8 +3249,8 @@
    "ante": 32,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Hasta 90 kg",
     "distancia": "Montaña, 21K a ultra"
    },
    "evitar": "Terreno muy técnico donde precisás sentir el piso.",
@@ -3295,8 +3295,8 @@
    "ante": 26,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "Rodaje suave",
-    "peso": "Medio",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Hasta 90 kg",
     "distancia": "Montaña, 21K a ultra"
    },
    "evitar": "Carreras cortas y rápidas de montaña.",
@@ -3340,8 +3340,8 @@
    "ante": 27,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje en senderos",
-    "peso": "Medio",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 90 kg",
     "distancia": "Senderos y cerros, hasta 25K"
    },
    "evitar": "Barro profundo o terreno muy técnico.",
@@ -3386,8 +3386,8 @@
    "ante": 24,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "Rodaje en senderos",
-    "peso": "Liviano a medio",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 75 kg",
     "distancia": "Senderos y cerros, hasta 25K"
    },
    "evitar": "Ultras largos si buscás mucha amortiguación.",
@@ -3431,8 +3431,8 @@
    "ante": 26,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "Rodaje suave",
-    "peso": "Liviano a medio",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Hasta 75 kg",
     "distancia": "Montaña, 21K a ultra"
    },
    "evitar": "Carreras cortas y técnicas donde necesitás agilidad.",

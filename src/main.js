@@ -31,6 +31,8 @@ const pisada = d => d.tipo === "Estabilidad" ? "Pronadora" : d.tipo === "Neutra"
 const conPlaca = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
 const placa = d => d.pl && d.pl !== "Sin placa" ? d.pl : "";
 const terr = d => d.terreno || "Asfalto";
+const pisadaPara = d => d.tipo === "Estabilidad" ? "Pronadora" : "Neutra o supinadora";
+const kgCorto = d => { const p = d.corredor?.peso || ""; return /cualquier/i.test(p) ? "cualquier peso" : p.toLowerCase(); };
 const src = s => /^https?:/.test(s) ? s : BASE + s;
 const silCache = {};
 function silueta(d) {
@@ -115,7 +117,7 @@ function tarjeta(d) {
   return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="#m-${d.id}">
     <div class="bib-band"><span>${esc(d.m)}</span><span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
     <div class="bib-img">${img}</div>
-    <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>
+    <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>${d.corredor ? `<p class="bib-perfil">${d.tipo === "Estabilidad" ? "Pronador" : "Neutra"} · ${esc(kgCorto(d))}</p>` : ""}
       <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${d.min ? `<span class="bib-p"><small>desde</small>${fmt(d.min)}</span>` : `<span class="pronto">Pronto</span>`}</div></div>
     <button class="cmp" aria-pressed="${on}" aria-label="Comparar ${esc(nombre(d))}" data-c="${d.id}">${on ? "✓" : "+"}</button></a>`;
 }
@@ -203,9 +205,9 @@ function ficha(d) {
     ${resto.length ? `<ul class="tiendas">${resto.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><span class="t-n">${esc(s.tienda)} ↗</span><span class="t-c">${esc(s.nota || "")}</span><span class="t-p">${fmt(s.precio)}</span></a></li>`).join("")}</ul>` : ""}
     ${grafico(d.hist) ? `<div class="bloque" id="histBox"><h2 class="cond">Cómo varió el precio</h2>${grafico(d.hist)}</div>` : ""}
     ${c ? `<div class="bloque"><h2 class="cond">¿Para quién?</h2><dl class="para">
-      <div><dt>Pisada</dt><dd>${d.tipo === "Estabilidad" ? "Pronadora" : "Neutra o supinadora"}</dd></div>
+      <div><dt>Pisada</dt><dd>${pisadaPara(d)}</dd></div><div><dt>Tu peso</dt><dd>${esc(c.peso)}</dd></div>
       <div><dt>Ritmo</dt><dd>${esc(c.ritmo)}</dd></div><div><dt>Distancias</dt><dd>${esc(c.distancia)}</dd></div>
-      <div><dt>Corredor</dt><dd>${esc(c.peso)}</dd></div>${d.evitar ? `<div><dt>Mejor no si</dt><dd>${esc(d.evitar)}</dd></div>` : ""}</dl></div>` : ""}
+      <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div>${d.evitar ? `<div><dt>Mejor no si</dt><dd>${esc(d.evitar)}</dd></div>` : ""}</dl></div>` : ""}
     ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2><dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
     <div class="acciones"><button class="btn" data-c="${d.id}" aria-pressed="${st.cmp.includes(d.id)}">${st.cmp.includes(d.id) ? "✓ Comparando" : "+ Comparar"}</button>
       ${d.fuente ? `<a class="review" href="${esc(d.fuente[1])}" target="_blank" rel="noopener">Review en ${esc(d.fuente[0])} ↗</a>` : ""}</div>
@@ -227,30 +229,39 @@ function montarFicha(d) {
 const CC = ["#E8341C", "#2C5AA0", "#FFAA00"];
 function perfiles(ds) {
   const ok = ds.filter(d => d.talon && d.ante); if (!ok.length) return "";
-  const k = 3, Hm = Math.max(...ok.map(d => d.talon)) * k + 20;
-  const lineas = ok.map(d => { const pts = []; for (let j = 0; j <= 30; j++) { const x = 22 + 260 * j / 30; pts.push(`${x},${(Hm - topY(x, d.talon, d.ante) * k).toFixed(1)}`); }
-    return `<polyline points="${pts.join(" ")}" fill="none" stroke="${CC[ds.indexOf(d)]}" stroke-width="4" stroke-linejoin="round"/>`; }).join("");
-  return `<div class="overlay"><svg viewBox="0 0 300 ${Hm + 14}" role="img" aria-label="Altura de la mediasuela de cada modelo">
-    <line x1="0" y1="${Hm}" x2="300" y2="${Hm}" stroke="currentColor" stroke-width="2"/>
-    <text x="4" y="${Hm + 12}" font-size="9" fill="currentColor" font-family="JetBrains Mono, monospace">TALÓN</text>
-    <text x="296" y="${Hm + 12}" font-size="9" fill="currentColor" text-anchor="end" font-family="JetBrains Mono, monospace">PUNTA</text>${lineas}</svg>
-    <div class="legend">${ok.map(d => `<span><i style="background:${CC[ds.indexOf(d)]}"></i>${esc(nombre(d))} · ${d.talon}/${d.ante} mm</span>`).join("")}</div></div>`;
+  const max = Math.max(48, ...ok.map(d => d.talon)), k = 56 / max, B = 66, X0 = 92, X1 = 318;
+  const fila = (d, n) => { const i = ds.indexOf(d), yh = B - d.talon * k, yf = B - d.ante * k, VH = n ? 72 : 88;
+    return `<div class="alt-row"><div class="alt-n"><i style="background:${CC[i]}"></i><b>${esc(nombre(d))}</b><span>Drop ${d.drop ?? +(d.talon - d.ante).toFixed(1)} mm</span></div>
+      <svg viewBox="0 0 420 ${VH}" role="img" aria-label="${esc(nombre(d))}: ${d.talon} mm en el talón y ${d.ante} mm en la punta">
+        <line x1="${X0 - 6}" x2="${X1 + 34}" y1="${B}" y2="${B}" class="alt-piso"/>
+        <path d="M${X0} ${B} V${(yh + 6).toFixed(1)} Q${X0} ${yh.toFixed(1)} ${X0 + 8} ${yh.toFixed(1)} L${X1} ${yf.toFixed(1)} Q${X1 + 28} ${yf.toFixed(1)} ${X1 + 28} ${B} Z" fill="${CC[i]}"/>
+        <text x="${X0 - 10}" y="${(yh + 5).toFixed(1)}" text-anchor="end" class="alt-v">${d.talon}<tspan class="alt-u"> mm</tspan></text>
+        <text x="${X1 + 36}" y="${(yf + 5).toFixed(1)}" class="alt-v">${d.ante}<tspan class="alt-u"> mm</tspan></text>
+        ${n ? "" : `<text x="${X0}" y="84" class="alt-e">TALÓN</text><text x="${X1 + 28}" y="84" text-anchor="end" class="alt-e">PUNTA</text>`}
+      </svg></div>`; };
+  return `<div class="overlay"><h2 class="cond">Cuánta suela tiene cada una</h2>
+    <p class="alt-sub">Vista de costado, en milímetros. Más alta, más amortiguación. Más inclinada del talón a la punta, más drop.</p>
+    ${ok.map(fila).join("")}</div>`;
 }
 function comparar() {
   const ds = st.cmp.map(id => DATA.find(x => x.id === id));
   if (ds.length < 2) return `<a class="back" href="#catalogo">← Todas las zapas</a><p class="empty">Elegí al menos dos zapas con el botón +.</p>`;
   const minP = Math.min(...ds.map(d => d.min ?? 1e12)), minW = Math.min(...ds.map(d => d.peso ?? 1e12));
-  const filas = [
-    ["Mejor precio", d => d.min ? `<span class="${d.min === minP ? "win" : ""}">${fmt(d.min)}</span>` : ""],
-    ["Tienda", d => d.tiendas[0] ? esc(d.tiendas[0].tienda) : ""],
-    ["Peso", d => d.peso ? `<span class="${d.peso === minW ? "win" : ""}">${d.peso} g</span>` : ""],
-    ["Terreno", d => ds.some(x => terr(x) !== terr(d)) ? terr(d) : ""], ["Pisada", d => pisada(d)], ["Uso", d => esc(d.uso)], ["Drop", d => d.drop != null ? d.drop + " mm" : ""],
-    ["Talón", d => d.talon ? d.talon + " mm" : ""], ["Antepié", d => d.ante ? d.ante + " mm" : ""],
-    ["Espuma", d => esc(d.esp)], ["Placa", d => esc(placa(d))], ["Ritmo", d => d.corredor ? esc(d.corredor.ritmo) : ""],
-  ].filter(([, f]) => ds.some(d => f(d)));
+  const grupos = [
+    ["Precio", [["Mejor precio", d => d.min ? `<span class="${d.min === minP ? "win" : ""}">${fmt(d.min)}</span>` : ""],
+      ["Tienda", d => d.tiendas[0] ? esc(d.tiendas[0].tienda) : ""]]],
+    ["Para quién", [["Pisada", d => pisadaPara(d)], ["Tu peso", d => esc(d.corredor?.peso)], ["Ritmo", d => esc(d.corredor?.ritmo)],
+      ["Distancias", d => esc(d.corredor?.distancia)], ["Nivel", d => esc(d.corredor?.nivel)], ["Mejor no si", d => esc(d.evitar)]]],
+    ["Ficha", [["Uso", d => esc(d.uso)], ["Terreno", d => ds.some(x => terr(x) !== terr(d)) ? terr(d) : ""],
+      ["Peso de la zapa", d => d.peso ? `<span class="${d.peso === minW ? "win" : ""}">${d.peso} g</span>` : ""],
+      ["Drop", d => d.drop != null ? d.drop + " mm" : ""], ["Talón", d => d.talon ? d.talon + " mm" : ""], ["Antepié", d => d.ante ? d.ante + " mm" : ""],
+      ["Espuma", d => esc(d.esp)], ["Placa", d => esc(placa(d))]]],
+  ].map(([g, fs]) => [g, fs.filter(([, f]) => ds.some(d => f(d)))]);
+  const filas = grupos.flatMap(([g, fs]) => [`<tr class="grp"><th colspan="${ds.length + 1}">${g}</th></tr>`,
+    ...fs.map(([k, f]) => `<tr><th>${k}</th>${ds.map(d => `<td>${f(d) || "–"}</td>`).join("")}</tr>`)]).join("");
   return `<a class="back" href="#catalogo">← Todas las zapas</a><h1 class="cmp-h cond">Cara a cara</h1>${perfiles(ds)}
     <div class="tblwrap"><table class="cmpt"><thead><tr><th></th>${ds.map((d, i) => `<th><a href="#m-${d.id}" style="border-bottom:4px solid ${CC[i]}">${esc(nombre(d))}</a></th>`).join("")}</tr></thead>
-    <tbody>${filas.map(([k, f]) => `<tr><th>${k}</th>${ds.map(d => `<td>${f(d) || "–"}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    <tbody>${filas}</tbody></table></div>`;
 }
 
 /* ---------- rutas ---------- */

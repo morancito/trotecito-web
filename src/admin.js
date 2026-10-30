@@ -33,7 +33,7 @@ function login(error = "") {
     <label>Contraseña<input type="password" name="pass" autocomplete="current-password" required></label>
     ${error ? `<p class="ad-err">${esc(error)}</p>` : ""}
     <button class="btn fuerte" type="submit">Entrar</button>
-    <p class="ad-mini">Es el usuario que creaste en Supabase (Authentication → Users).</p></form>`;
+</form>`;
   $("#flogin").onsubmit = async e => {
     e.preventDefault(); const f = new FormData(e.target);
     const r = await fetch(URL_SB + "/auth/v1/token?grant_type=password", { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" },

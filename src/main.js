@@ -5,6 +5,7 @@ import "./styles.css";
 import { Viewer, perfil, topY, RM } from "./shoe3d.js";
 import { grafico, montarGrafico, variacion } from "./precios.js";
 import { PREGUNTAS, recomendar } from "./recomendador.js";
+import { medir, medirVisita } from "./medir.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
@@ -154,6 +155,7 @@ $("#fpanel").innerHTML = `
 const fp = $("#fpanel");
 fp.addEventListener("change", e => {
   const i = e.target, k = i.name; if (!k) return;
+  if (i.checked || i.type === "radio") medir("filtro", { k, v: i.value, terreno: st.terreno });
   if (k === "uso" || k === "am") st[k][i.checked ? "add" : "delete"](i.value);
   else if (k === "marca") st.marcas[i.checked ? "add" : "delete"](i.value);
   else if (k === "gen") { setGen(i.value); return; }
@@ -171,14 +173,16 @@ function pintarRango() {
 }
 pMin.oninput = () => { st.pmin = Math.min(+pMin.value, st.pmax - PASO); render(); };
 pMax.oninput = () => { st.pmax = Math.max(+pMax.value, st.pmin + PASO); render(); };
-fp.querySelector(".atajos-p").onclick = e => { const b = e.target.closest("button"); if (!b) return;
+[pMin, pMax].forEach(x => x.addEventListener("change", () => medir("filtro", { k: "precio", v: `${st.pmin}-${st.pmax}`, terreno: st.terreno })));
+fp.querySelector(".atajos-p").onclick = e => { const b = e.target.closest("button"); if (!b) return; medir("filtro", { k: "precio", v: b.textContent, terreno: st.terreno });
   st.pmin = Math.max(P_MIN, +b.dataset.pa); st.pmax = +b.dataset.pb || P_MAX; render(); };
 $("#fpLimpiar").onclick = () => { Object.assign(st, VACIO()); render(); };
 const abrirF = v => { fp.classList.toggle("open", v); document.body.classList.toggle("fp-on", v); };
 $("#fpCerrar").onclick = $("#fpVer").onclick = () => abrirF(false);
 $("#fAbrir").onclick = () => abrirF(true);
 $("#fOrden").onchange = e => { st.orden = e.target.value; render(); };
-$("#q").oninput = e => { st.q = e.target.value.trim().toLowerCase(); render(); };
+let busqT; const medirBusqueda = (desde) => { if (st.q.length >= 3) medir("busqueda", { q: st.q, n: lista().length, desde }); };
+$("#q").oninput = e => { st.q = e.target.value.trim().toLowerCase(); render(); clearTimeout(busqT); busqT = setTimeout(() => medirBusqueda("catalogo"), 1500); };
 
 /* sincroniza los controles del panel con el estado */
 function pintarPanel() {
@@ -271,17 +275,17 @@ const ATAJOS = [
 ];
 const aplicaAtajo = a => d => terr(d) === (a.terreno || "Asfalto") && (!a.uso || a.uso.includes(d.uso)) && (!a.pis || d.tipo === a.pis) && (!a.pmax || d.min && d.min <= a.pmax);
 $("#atajos").innerHTML = ATAJOS.map(([t, a], i) => `<button type="button" data-a="${i}"><span>${t}</span><b>${DATA.filter(aplicaAtajo(a)).length}</b></button>`).join("");
-$("#atajos").onclick = e => { const b = e.target.closest("button"); if (!b) return; const a = ATAJOS[+b.dataset.a][1];
+$("#atajos").onclick = e => { const b = e.target.closest("button"); if (!b) return; const a = ATAJOS[+b.dataset.a][1]; medir("atajo", { t: ATAJOS[+b.dataset.a][0] });
   Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
   if (a.uso) a.uso.forEach(u => st.uso.add(u)); if (a.pis) st.pis = a.pis; if (a.pmax) st.pmax = a.pmax;
   st.terreno = a.terreno || "Asfalto"; setTerreno(st.terreno); irCatalogo(); };
-$("#hbusca").onsubmit = e => { e.preventDefault(); const v = $("#hq").value.trim(); st.q = v.toLowerCase(); $("#q").value = v; render(); irCatalogo(); };
+$("#hbusca").onsubmit = e => { e.preventDefault(); const v = $("#hq").value.trim(); st.q = v.toLowerCase(); $("#q").value = v; render(); medirBusqueda("inicio"); irCatalogo(); };
 function pintarOfertas() {
 const ofertas = DATA.filter(d => desc(d) >= 0.1 && d.fotos.length).sort((a, b) => desc(b) - desc(a)).slice(0, 4);
 $("#ofertas").innerHTML = ofertas.length ? `<div class="of-h"><span class="kicker">Ofertas de hoy</span><a href="#catalogo" id="ofTodas">Ver todas →</a></div>
   ${ofertas.map(d => `<a class="of" href="#m-${d.id}"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><span class="of-n"><small>${esc(d.m)}</small><b>${esc(nombre(d))}</b><s>${fmt(d.tiendas[0].antes)}</s></span>
     <span class="of-p"><em>−${Math.round(desc(d) * 100)}%</em><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("")}` : "";
-$("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); });
+$("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); });
 }
 pintarOfertas();
 
@@ -420,14 +424,16 @@ function pintarReco() {
 $("#reco").addEventListener("click", e => {
   const op = e.target.closest(".rq-ops button");
   if (op) { const q = PREGUNTAS[paso]; resp[q.k] = /^\d+$/.test(op.dataset.v) ? +op.dataset.v : op.dataset.v;
+    medir("reco_paso", { n: paso + 1, k: q.k, v: String(resp[q.k]) });
     if (q.k === "terreno" && resp.terreno === "Trail" && !q.trail && !PREGUNTAS[2].trail.some(([v]) => v === resp.uso)) delete resp.uso;
     if (q.k === "terreno" && resp.uso && !opsDe(PREGUNTAS[2]).some(([v]) => v === resp.uso)) delete resp.uso;
-    paso++; if (paso >= PREGUNTAS.length) { guardar(RESP_K, JSON.stringify(resp)); if (resp.gen !== GEN) { GEN = resp.gen; guardar("trotecito-gen", GEN); aplicarGenero(); pintarOfertas(); } }
+    paso++; if (paso >= PREGUNTAS.length) { guardar(RESP_K, JSON.stringify(resp));
+      medir("reco_fin", { ...resp, picks: recomendar(DATA, resp).picks.map(p => p.d.slug) }); if (resp.gen !== GEN) { GEN = resp.gen; guardar("trotecito-gen", GEN); aplicarGenero(); pintarOfertas(); } }
     pintarReco(); return; }
   if (e.target.closest("[data-atras]")) { paso = Math.max(0, paso - 1); pintarReco(); return; }
-  if (e.target.closest("[data-rehacer]")) { paso = 0; pintarReco(); return; }
-  if (e.target.closest("[data-cmp3]")) { st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); location.hash = "comparar"; return; }
-  if (e.target.closest("[data-vertodas]")) { e.preventDefault(); Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
+  if (e.target.closest("[data-rehacer]")) { paso = 0; medir("reco_inicio", { otra: true }); pintarReco(); return; }
+  if (e.target.closest("[data-cmp3]")) { medir("reco_comparar"); st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); location.hash = "comparar"; return; }
+  if (e.target.closest("[data-vertodas]")) { e.preventDefault(); medir("reco_vertodas"); Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
     st.uso.add(resp.uso); if (resp.pis === "Pronadora") st.pis = "Estabilidad"; else if (resp.pis === "Neutra" || resp.pis === "Supinadora") st.pis = "Neutra";
     st.kg = resp.kg >= 90 ? 91 : resp.kg >= 75 ? 89 : 0; if (resp.tope) st.pmax = Math.min(P_MAX, resp.tope);
     st.terreno = resp.terreno; location.hash = "catalogo"; setTerreno(resp.terreno); }
@@ -440,11 +446,22 @@ function route() {
   if (visor) { visor.destroy(); visor = null; }
   const reco = h === "tu-zapa";
   $("#home").hidden = !!(d || h === "comparar" || reco); $("#detalle").hidden = !d; $("#comparar").hidden = h !== "comparar"; $("#reco").hidden = !reco;
+  medir("vista", d ? { pag: "ficha", slug: d.slug } : h === "comparar" ? { pag: "comparar", slugs: st.cmp.map(id => DATA.find(x => x.id === id)?.slug) } : { pag: reco ? "tu-zapa" : h || "inicio" });
+  if (reco && !PREGUNTAS.every(q => resp[q.k] !== undefined)) medir("reco_inicio");
   if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${nombre(d)} · Trotecito`; window.scrollTo(0, 0); }
   else if (reco) { paso = PREGUNTAS.every(q => resp[q.k] !== undefined) ? PREGUNTAS.length : 0; pintarReco(); document.title = "Tu zapa · Trotecito"; }
   else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Trotecito"; window.scrollTo(0, 0); }
   else { document.title = "Trotecito"; render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
   bandeja();
 }
+const URL_TIENDA = new Map(DATA.flatMap(d => d.todas.map(t => [t.url, [d, t]])));
+document.addEventListener("click", e => {
+  const a = e.target.closest('a[href^="http"]'); if (!a) return;
+  const x = URL_TIENDA.get(a.href); if (!x) return;
+  const [d, t] = x, h = location.hash.slice(1);
+  medir("tienda_clic", { slug: d.slug, tienda: t.tienda, precio: t.precio, nota: t.nota || "", origen: h === "tu-zapa" ? "recomendador" : h === "comparar" ? "comparar" : /^m-/.test(h) ? "ficha" : "otro", mejor: d.tiendas[0]?.url === t.url });
+}, true);
+document.addEventListener("click", e => { const a = e.target.closest('#reco a[href^="#m-"]'); if (a) medir("reco_ficha", { slug: DATA.find(x => x.id === +a.getAttribute("href").slice(3))?.slug }); }, true);
+medirVisita();
 addEventListener("hashchange", route);
 route();

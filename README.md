@@ -119,6 +119,11 @@ La web ordena sola de la más barata a la más cara y calcula el "desde" de cada
 
 Cada modelo lleva `"terreno": "Asfalto"` o `"terreno": "Trail"`. El catálogo los muestra separados con el selector Asfalto / Trail.
 
+## Medición y panel de administración
+
+El sitio mide de forma anónima visitas, búsquedas, filtros, el recomendador y los clics a tiendas.
+Los resultados se ven en `admin.html`, con usuario y contraseña. Cómo configurarlo, en [docs/medicion.md](docs/medicion.md).
+
 ## Cómo escalar (en orden)
 
 | Etapa | Qué | Cuándo |

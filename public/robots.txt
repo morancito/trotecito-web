@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /trotecito-web/admin.html
+Disallow: /admin.html

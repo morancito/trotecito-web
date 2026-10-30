@@ -1,4 +1,4 @@
-Fotos de Zapada
+Fotos de Trotecito
 
 Creá una carpeta con el nombre exacto del modelo y poné adentro las fotos (1.jpg, 2.jpg...).
 La primera foto es la que se ve en el catálogo. Formatos: jpg, png, webp o avif.

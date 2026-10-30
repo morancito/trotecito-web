@@ -1,12 +1,12 @@
-/* Zapada — sol amarillo, tinta negra, rojo y celeste. Hero con sol que gira, cinta de precios, dorsales con sombra dura. */
+/* Trotecito — sol amarillo, tinta negra, rojo y celeste. Hero con sol que gira, cinta de precios, dorsales con sombra dura. */
 :root {
   --bg: #FFFFFF; --surface: #FFFFFF; --soft: #F1F3F6; --ink: #121212; --muted: #5C6370; --line: #121212; --hair: #DDE1E7;
   --hard: #121212; --hard2: #121212;
   --sol: #FFC700; --sol2: #FFAA00; --rojo: #E8341C; --celeste: #74ACDF; --azul: #2C5AA0;
   --band: #121212;
-  --display: "Archivo", "Arial Narrow", Arial, sans-serif;
-  --body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --logo: "Shrikhand", Georgia, serif;
+  --display: "Archivo Variable", "Archivo", "Arial Narrow", Arial, sans-serif;
+  --body: "Archivo Variable", "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --logo: "Kanit", "Arial Black", Impact, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
@@ -30,8 +30,19 @@ button, input, select { font: inherit; color: inherit; }
 /* barra */
 .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); border-bottom: 2px solid var(--line); }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 6px; }
-.logo { font-family: var(--logo); font-size: 30px; line-height: 1.15; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
-.logo i { width: 16px; height: 16px; border-radius: 50%; background: var(--sol); box-shadow: 0 0 0 2px var(--line); }
+/* logo: wordmark itálico pesado, líneas de velocidad y el punto de la i como sol */
+.logo { --lg: 34px; display: inline-flex; align-items: center; gap: calc(var(--lg) * .1); text-decoration: none; color: var(--ink);
+  font-family: var(--logo); font-weight: 900; font-style: italic; font-size: var(--lg); line-height: 1; letter-spacing: -.035em; padding-block: .1em; }
+.lg-vel { display: flex; flex-direction: column; align-items: flex-end; gap: calc(var(--lg) * .07); transform: skewX(-12deg); margin-top: .12em; }
+.lg-vel i { display: block; height: calc(var(--lg) * .085); border-radius: 99px; background: var(--rojo); transform-origin: right; }
+.lg-vel i:nth-child(1) { width: calc(var(--lg) * .42); }
+.lg-vel i:nth-child(2) { width: calc(var(--lg) * .62); }
+.lg-vel i:nth-child(3) { width: calc(var(--lg) * .3); }
+.lg-w { display: inline-block; padding-right: .06em; }
+.lg-i { position: relative; display: inline-block; }
+.lg-i b { position: absolute; width: .3em; height: .3em; left: .17em; top: .15em; border-radius: 50%; background: var(--sol); box-shadow: 0 0 0 .045em var(--hard2); }
+.logo.xl { --lg: clamp(56px, 12vw, 150px); color: #fff; }
+.logo.xl .lg-i b { box-shadow: none; }
 .nav { display: flex; gap: 4px; }
 .nav a { font-weight: 800; text-decoration: none; padding: 6px 14px; border-radius: 999px; border: 2px solid transparent; }
 .nav a:hover { border-color: var(--line); }
@@ -46,12 +57,13 @@ button, input, select { font: inherit; color: inherit; }
 /* hero */
 .hero { background: var(--sol); color: #121212; border-bottom: 2px solid var(--band); overflow: hidden; }
 .hero-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: center; gap: 8px; padding-block: 28px 16px; }
-.hero h1 { font-size: clamp(68px, 11.5vw, 156px); line-height: .8; margin: 12px 0 18px; letter-spacing: -.005em; }
+.hero h1 { font-size: clamp(68px, 11.5vw, 156px); line-height: .8; margin: .3em 0 18px; letter-spacing: -.005em; }
 .hero h1 em { font-style: normal; color: var(--rojo); -webkit-text-stroke: 0; }
 .hero .lede { font-size: 19px; max-width: 34ch; margin: 0; font-weight: 500; }
 .ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
 .hero .btn { background: #fff; color: #121212; border-color: #121212; box-shadow: 4px 4px 0 #121212; }
 .hero .btn.fuerte { background: #121212; color: var(--sol); }
+.hero-in > div:first-child { position: relative; z-index: 1; }
 .hero-art { position: relative; min-width: 0; }
 .sol { position: absolute; left: 50%; top: 52%; width: min(130%, 820px); aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; pointer-events: none;
   background: radial-gradient(circle, var(--sol) 0 17%, transparent 17.4%), repeating-conic-gradient(from 0deg, var(--sol2) 0 5deg, transparent 5deg 12deg);
@@ -213,7 +225,7 @@ table.cmpt tr:last-child td, table.cmpt tr:last-child th { border-bottom: 0; }
 
 /* pie */
 footer { background: var(--band); color: #fff; padding-block: 44px calc(96px + env(safe-area-inset-bottom, 0px)); }
-.foot-logo { font-family: var(--logo); font-size: clamp(64px, 13vw, 160px); color: var(--sol); line-height: 1; }
+.foot-logo { line-height: 1; }
 footer p { margin: 8px 0 0; color: #CFCFCF; font-size: 17px; }
 
 @media (max-width: 900px) {
@@ -225,9 +237,14 @@ footer p { margin: 8px 0 0; color: #CFCFCF; font-size: 17px; }
 @media (max-width: 560px) {
   .escala { grid-template-columns: minmax(0, 1fr); }
   .para div { grid-template-columns: 100px minmax(0, 1fr); }
-  .logo { font-size: 26px; }
+  .logo { --lg: 28px; }
 }
 @media (prefers-reduced-motion: no-preference) {
+  .lg-vel i { transition: transform .25s cubic-bezier(.3,1.6,.5,1); }
+  .logo:hover .lg-vel i:nth-child(1) { transform: scaleX(1.35); }
+  .logo:hover .lg-vel i:nth-child(2) { transform: scaleX(1.2); transition-delay: .04s; }
+  .logo:hover .lg-vel i:nth-child(3) { transform: scaleX(1.6); transition-delay: .08s; }
+  .logo:hover .lg-i b { animation: pique .5s cubic-bezier(.3,.7,.4,1); }
   .sol { animation: gira 120s linear infinite; }
   .tk-track { animation: cinta 45s linear infinite; }
 }
@@ -236,5 +253,6 @@ footer p { margin: 8px 0 0; color: #CFCFCF; font-size: 17px; }
   .ticker { overflow-x: auto; }
   .btn, .bib { transition: none; }
 }
+@keyframes pique { 40% { translate: 0 -.18em; } 70% { translate: 0 .02em; } }
 @keyframes gira { to { rotate: 360deg; } }
 @keyframes cinta { to { transform: translateX(-50%); } }

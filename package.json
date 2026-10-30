@@ -1,5 +1,5 @@
 {
-  "name": "zapada-web",
+  "name": "trotecito-web",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -12,6 +12,9 @@
     "bajar-fotos": "node scripts/bajar-fotos.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/archivo": "^5.1.1",
+    "@fontsource/jetbrains-mono": "^5.1.2",
+    "@fontsource/kanit": "^5.1.1",
     "three": "0.128.0"
   },
   "devDependencies": {

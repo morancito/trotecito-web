@@ -1,4 +1,4 @@
-# Zapada
+# Trotecito
 
 Comparador de zapatillas de running que se consiguen en Argentina: ficha técnica, perfil de corredor, precios por tienda de menor a mayor y un laboratorio 3D para entender drop, pisada, amortiguación, placa y espuma.
 
@@ -31,17 +31,17 @@ npm run preview    # sirve dist/ como en producción
 
 El repo ya trae el workflow `.github/workflows/deploy.yml`, que compila y publica solo.
 
-1. Creá un repo **público** en GitHub llamado `zapada-web` (en cuentas gratis, Pages funciona solo con repos públicos).
+1. Creá un repo **público** en GitHub llamado `trotecito-web` (en cuentas gratis, Pages funciona solo con repos públicos).
 2. Subí el proyecto:
    ```bash
-   git init && git add . && git commit -m "Zapada v0.2"
+   git init && git add . && git commit -m "Trotecito v0.3"
    git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/zapada-web.git
+   git remote add origin https://github.com/TU_USUARIO/trotecito-web.git
    git push -u origin main
    ```
 3. En el repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 4. Andá a la pestaña **Actions**. Si el primer intento falló porque Pages todavía no estaba activado, entrá al workflow y tocá **Run workflow**.
-5. En uno o dos minutos queda online en `https://TU_USUARIO.github.io/zapada-web/`.
+5. En uno o dos minutos queda online en `https://TU_USUARIO.github.io/trotecito-web/`.
 
 Cada `git push` a main vuelve a publicar. Si cambiás el nombre del repo, la ruta se ajusta sola.
 
@@ -49,9 +49,9 @@ Cada `git push` a main vuelve a publicar. Si cambiás el nombre del repo, la rut
 
 1. Creá un repositorio en GitHub y subí esta carpeta:
    ```bash
-   git init && git add . && git commit -m "Zapada v0.2"
+   git init && git add . && git commit -m "Trotecito v0.3"
    git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/zapada-web.git
+   git remote add origin https://github.com/TU_USUARIO/trotecito-web.git
    git push -u origin main
    ```
 2. En dash.cloudflare.com: **Workers & Pages → Create → Pages → Connect to Git** y elegí el repo.
@@ -60,7 +60,7 @@ Cada `git push` a main vuelve a publicar. Si cambiás el nombre del repo, la rut
    - Build command: `npm run build`
    - Build output directory: `dist`
    - Variable de entorno: `NODE_VERSION` = `20`
-4. Deploy. Te da una URL `zapada-web.pages.dev` con HTTPS.
+4. Deploy. Te da una URL `trotecito-web.pages.dev` con HTTPS.
 
 Desde ahí, **cada `git push` a main publica solo**. Cada rama o pull request genera una URL de vista previa para probar sin tocar producción.
 

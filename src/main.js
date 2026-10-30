@@ -1,3 +1,6 @@
+import "@fontsource-variable/archivo/wdth.css";
+import "@fontsource/kanit/900-italic.css";
+import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
 import { Viewer, perfil, topY } from "./shoe3d.js";
 
@@ -202,9 +205,9 @@ function route() {
   const h = location.hash.slice(1), m = h.match(/^m-(\d+)$/), d = m && DATA.find(x => x.id === +m[1]);
   if (visor) { visor.destroy(); visor = null; }
   $("#home").hidden = !!(d || h === "comparar"); $("#detalle").hidden = !d; $("#comparar").hidden = h !== "comparar";
-  if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${nombre(d)} · Zapada`; window.scrollTo(0, 0); }
-  else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Zapada"; window.scrollTo(0, 0); }
-  else { document.title = "Zapada"; render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
+  if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${nombre(d)} · Trotecito`; window.scrollTo(0, 0); }
+  else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Trotecito"; window.scrollTo(0, 0); }
+  else { document.title = "Trotecito"; render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
   bandeja();
 }
 addEventListener("hashchange", route);

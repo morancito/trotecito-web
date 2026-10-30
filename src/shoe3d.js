@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-/* Zapatilla 3D paramétrica de Zapada. Todas las medidas en milímetros.
+/* Zapatilla 3D paramétrica de Trotecito. Todas las medidas en milímetros.
    La altura de talón (H) y de antepié (F) salen de la ficha de cada modelo. */
 
 export const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;

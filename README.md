@@ -82,6 +82,20 @@ Si el catálogo tiene un error (precio vacío, link sin https, id repetido), el 
 Si una carpeta tiene un nombre mal escrito, el build te avisa cuál es.
 Para que la página cargue rápido, usá fotos de unos 1600 px de ancho en formato `.webp` o `.jpg`.
 
+### Bajar las fotos automáticamente
+
+En tu compu, con el repo clonado:
+
+```bash
+git pull
+npm install
+npm run bajar-fotos
+git add public/fotos && git commit -m "Fotos de modelos" && git push
+```
+
+El script entra a las páginas de las tiendas cargadas en `modelos.json` y baja hasta 4 fotos de producto por modelo. Solo completa los modelos que todavía no tienen fotos. Para volver a bajar uno: `npm run bajar-fotos -- nike-vomero-18`.
+Para usar fotos del kit de prensa de una marca, poné sus links en `scripts/fotos-urls.json`, por ejemplo `{ "nike-vomero-18": ["https://..."] }`.
+
 ## Actualizar precios
 
 Editá `public/data/modelos.json` y hacé push. Cada oferta de una tienda tiene esta forma:

@@ -479,7 +479,6 @@
      "fecha": "31/10/2026",
      "nota": "Hombre",
      "talles": [
-      "39.5",
       "40",
       "40.5",
       "41",
@@ -1404,8 +1403,7 @@
       "41",
       "42",
       "42.5",
-      "43",
-      "44"
+      "43"
      ],
      "sistema": "AR"
     },
@@ -2144,7 +2142,7 @@
     },
     {
      "tienda": "Sporting",
-     "precio": 130729,
+     "precio": 153799,
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-18-de-hombre-s20998099-000/p",
      "fecha": "31/10/2026",
@@ -3086,8 +3084,6 @@
      "antes": 224999,
      "nota": "Mujer",
      "talles": [
-      "35",
-      "35.5",
       "36.5"
      ],
      "sistema": "AR"
@@ -3631,7 +3627,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 169999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-triumph-22-mujer-celeste-nl5ef/",
      "fecha": "31/10/2026",
      "antes": 219999,
@@ -3702,7 +3698,8 @@
      "talles": [
       "41.5"
      ],
-     "sistema": "AR"
+     "sistema": "AR",
+     "sinStock": true
     }
    ],
    "colores": [],
@@ -4124,7 +4121,6 @@
      "antes": 179999,
      "talles": [
       "35.5",
-      "37.5",
       "39",
       "39.5",
       "41",
@@ -4208,6 +4204,8 @@
       "38.5",
       "39",
       "39.5",
+      "40",
+      "40.5",
       "41",
       "41.5"
      ],
@@ -4772,7 +4770,8 @@
      "talles": [
       "43"
      ],
-     "sistema": "AR"
+     "sistema": "AR",
+     "sinStock": true
     }
    ],
    "colores": [],
@@ -4900,7 +4899,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 151999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-peregrine-15-hombre-autum-amber-v134t/",
      "fecha": "31/10/2026",
      "antes": 189999,
@@ -4959,7 +4958,6 @@
      "fecha": "31/10/2026",
      "nota": "Hombre",
      "talles": [
-      "40.5",
       "41",
       "42",
       "42.5",
@@ -5124,7 +5122,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 299999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-hombre-oltm/",
      "fecha": "31/10/2026",
      "nota": "Hombre",
@@ -5136,7 +5134,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 299999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-mujer-gris-grtm-1515g/",
      "fecha": "31/10/2026",
      "nota": "Mujer",
@@ -5264,8 +5262,8 @@
    "tiendas": [
     {
      "tienda": "TodoTrail",
-     "precio": 242999,
-     "cuotas": "6 cuotas sin interés",
+     "precio": 215999,
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-mujer-wnh-1vjlg/",
      "fecha": "31/10/2026",
      "antes": 269999,
@@ -5277,8 +5275,8 @@
     },
     {
      "tienda": "TodoTrail",
-     "precio": 242999,
-     "cuotas": "6 cuotas sin interés",
+     "precio": 215999,
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-hombre-negra-1pk3z/",
      "fecha": "31/10/2026",
      "antes": 269999,
@@ -5348,7 +5346,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 284999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-7-mujer-bjm-u8htu/",
      "fecha": "31/10/2026",
      "nota": "Mujer",
@@ -5361,7 +5359,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 284999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-7-hombre-fyz-1wfpg/",
      "fecha": "31/10/2026",
      "nota": "Hombre",
@@ -5416,7 +5414,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 399999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-x3-hombre-fluo-1ixpf/",
      "fecha": "31/10/2026",
      "nota": "Hombre",
@@ -5430,7 +5428,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 399999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-x3-mujer-fuccia-14kss/",
      "fecha": "31/10/2026",
      "nota": "Mujer",
@@ -5485,7 +5483,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 254999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-arahi-8-bwht-f0ktt/",
      "fecha": "31/10/2026",
      "nota": "Hombre",
@@ -5502,7 +5500,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 274999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mujer-arahi-8-cyg-16vsu/",
      "fecha": "31/10/2026",
      "nota": "Mujer",
@@ -5551,7 +5549,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 319999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-gaviota-6-hombre-azul-noche-1u4ra/",
      "fecha": "31/10/2026",
      "nota": "Hombre",
@@ -5566,7 +5564,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 319999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-gaviota-6-mujer-vainilla-16s2g/",
      "fecha": "31/10/2026",
      "nota": "Mujer",
@@ -5724,7 +5722,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 256499,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-skyflow-negra-blanca-1nrbj/",
      "fecha": "31/10/2026",
      "antes": 284999,
@@ -5860,7 +5858,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 294999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-challenger-atr-8-ladrillo-mplc-5qcsx/",
      "fecha": "31/10/2026",
      "talles": [
@@ -6031,8 +6029,8 @@
     },
     {
      "tienda": "TodoTrail",
-     "precio": 242999,
-     "cuotas": "6 cuotas sin interés",
+     "precio": 215999,
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-hoka-torrent-4-sstw-1mr1t/",
      "fecha": "31/10/2026",
      "antes": 269999,
@@ -6124,7 +6122,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 274999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-negro-gris-1s1wk/",
      "fecha": "31/10/2026",
      "talles": [
@@ -6362,8 +6360,8 @@
    "tiendas": [
     {
      "tienda": "TodoTrail",
-     "precio": 449999,
-     "cuotas": "6 cuotas sin interés",
+     "precio": 399999,
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-salomon-s-lab-pulsar-4-unisex-roja-12cl1/",
      "fecha": "31/10/2026",
      "antes": 499999,
@@ -6421,7 +6419,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 391499,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-pro-w-white-155y9/",
      "fecha": "31/10/2026",
      "antes": 434999,
@@ -6434,7 +6432,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 391499,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-pro-m-mountain-red-6doew/",
      "fecha": "31/10/2026",
      "antes": 434999,
@@ -6485,7 +6483,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 346949,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-max-w-y354f/",
      "fecha": "31/10/2026",
      "antes": 385499,
@@ -6607,7 +6605,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 249999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-endorphin-speed-5-mujer-blanca-rr8a6/",
      "fecha": "31/10/2026",
      "nota": "Mujer",
@@ -6706,7 +6704,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 219999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-peregrine-16-hombre-blanca-sy73e/",
      "fecha": "31/10/2026",
      "nota": "Hombre",
@@ -6720,7 +6718,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 219999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-peregrine-16-mujer-blanca-40loa/",
      "fecha": "31/10/2026",
      "nota": "Mujer",
@@ -6770,7 +6768,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 174999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-hurricane-25-mujer-verde-agua-1pzbq/",
      "fecha": "31/10/2026",
      "antes": 249999,
@@ -6834,7 +6832,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 104999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-hombre-blanca-19luo/",
      "fecha": "31/10/2026",
      "antes": 149999,
@@ -6850,7 +6848,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 104999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-mujer-rosa-claro-4u26l/",
      "fecha": "31/10/2026",
      "antes": 149999,
@@ -6926,7 +6924,7 @@
     {
      "tienda": "TodoTrail",
      "precio": 269999,
-     "cuotas": "6 cuotas sin interés",
+     "cuotas": "12 cuotas sin interés",
      "url": "https://todotrail.com.ar/productos/zapatilla-saucony-xodus-ultra-4-mujer-aloe-barley-cupny/",
      "fecha": "31/10/2026",
      "nota": "Mujer",

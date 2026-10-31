@@ -1,8 +1,9 @@
 {
  "fecha": "30/10/2026",
- "hora": "08:36 p. m.",
+ "hora": "09:43 p. m.",
  "leidos": 127,
- "cambiaron": 1,
+ "cambiaron": 0,
+ "conTalles": 115,
  "fallaron": 7,
  "errores": [
   "adidas-adizero-evo-sl · adidas.com.ar: HTTP 403",
@@ -13,5 +14,16 @@
   "nike-vomero-18 · Nike: HTTP 403",
   "nike-vomero-plus · Nike: HTTP 403"
  ],
- "sinStock": []
+ "sinStock": [
+  "adidas-adizero-evo-sl · Dexter",
+  "nike-winflo-10 · Dexter",
+  "nike-vaporfly-3 · Dexter",
+  "asics-novablast-5 · Dexter",
+  "asics-gel-nimbus-27 · Dexter",
+  "brooks-ghost-15 · Dexter",
+  "under-armour-infinite-pro · Dexter",
+  "nike-pegasus-premium · Dexter",
+  "adidas-supernova-stride-2 · Dexter",
+  "nike-kiger-9 · Dexter"
+ ]
 }

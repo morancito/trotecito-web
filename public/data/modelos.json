@@ -25,7 +25,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-evo-sl-hombre/ADKJ1364.html",
      "fecha": "30/10/2026",
      "antes": 249999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     },
     {
      "tienda": "Sporting",
@@ -34,7 +35,20 @@
      "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-evo-sl-de-hombre-6ki9874-000/p",
      "fecha": "30/10/2026",
      "antes": 249999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -42,7 +56,17 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-evo-sl-mujer/ADKI4794.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -108,7 +132,26 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-zoom-pegasus-42-hombre/NIIB1873-001.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "40.5",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44",
+      "44.5",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Nike",
@@ -124,7 +167,21 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-42-mujer/NIIB1881-101.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -177,7 +234,15 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-nike-pegasus-plus-de-mujer-fq7261002-000/p",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36.5",
+      "37",
+      "37.5",
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -229,7 +294,12 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-vomero-18-hombre/NIHM6803-404.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Nike",
@@ -244,7 +314,14 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-nike-vomero-18-de-mujer-hm6804004-000/p",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "39.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -252,7 +329,19 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-nike-vomero-18-mujer/NIHM6804-005.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -297,7 +386,13 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-vomero-plus-hombre/NIHV8150-009.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Nike",
@@ -313,7 +408,14 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-nike-vomero-plus-de-mujer-hv8154002-000/p",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36.5",
+      "37",
+      "37.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -321,7 +423,16 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-vomero-plus-mujer/NIHV8154-002.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "38",
+      "38.5",
+      "40",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -366,7 +477,21 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-structure-26-hombre/NIHJ1102-002.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44",
+      "44.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -374,7 +499,21 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-nike-structure-26-mujer/NIHJ1101-003.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "39",
+      "39.5",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -420,7 +559,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo-10-hombre/NIDV4022-003.html",
      "fecha": "30/10/2026",
      "antes": 199999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     },
     {
      "tienda": "Dexter",
@@ -429,7 +569,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo-10-mujer/NIDV4023-003.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 199999
+     "antes": 199999,
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -475,7 +619,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-invincible-3-mujer/NIHJ6655-900.html",
      "fecha": "30/10/2026",
      "antes": 389999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -521,7 +670,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-zoom-fly-5-mujer/NIDM8974-100.html",
      "fecha": "30/10/2026",
      "antes": 339999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -563,7 +716,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-vaporfly-3-hombre/NIDV4129-700.html",
      "fecha": "30/10/2026",
      "antes": 499999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     },
     {
      "tienda": "Dexter",
@@ -572,7 +726,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-zoomx-vaporfly-3-mujer/NIDV4130-100.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 499999
+     "antes": 499999,
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -618,7 +776,17 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-sl2-hombre/ADJQ3127.html",
      "fecha": "30/10/2026",
      "antes": 219999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -627,7 +795,12 @@
      "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-sl2-de-mujer-6jq3124-000/p",
      "fecha": "30/10/2026",
      "antes": 219999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -635,7 +808,20 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-adidas-adizero-sl2-mujer/ADJI2994.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -680,7 +866,13 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-boston-13-hombre/ADKH8859.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -688,7 +880,20 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-boston-13-de-hombre-6kh8859-000/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -697,7 +902,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-adidas-adizero-boston-13-mujer/ADJP9247.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 299999
+     "antes": 299999,
+     "talles": [
+      "38.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -743,7 +952,14 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADJP8689.html",
      "fecha": "30/10/2026",
      "antes": 249999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -752,7 +968,21 @@
      "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6jq8502-000/p",
      "fecha": "30/10/2026",
      "nota": "Hombre",
-     "antes": 249999
+     "antes": 249999,
+     "talles": [
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -761,7 +991,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 249999
+     "antes": 249999,
+     "talles": [
+      "35.5",
+      "36"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -806,7 +1041,16 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-hombre/ADKJ7040.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -814,7 +1058,15 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-adios-pro-5-de-hombre-6ki8294-000/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -822,7 +1074,19 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-mujer/ADKJ7042.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -867,7 +1131,18 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-duramo-sl2-hombre/ADIH8218.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -876,7 +1151,12 @@
      "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl2-de-hombre-6jq0606-000/p",
      "fecha": "30/10/2026",
      "antes": 129999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "38.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -884,7 +1164,20 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-adidas-duramo-sl2-mujer/ADIH8225.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -926,7 +1219,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-para-hombre/AS1011B974500.html",
      "fecha": "30/10/2026",
      "antes": 319999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     },
     {
      "tienda": "Asics",
@@ -935,7 +1229,12 @@
      "url": "https://www.asics.com.ar/1012b765-402-zapatilla-asics-novablast-5-w-1/p",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 319900
+     "antes": 319900,
+     "talles": [
+      "35.5",
+      "36"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -944,7 +1243,14 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-mujer/AS1012B765701.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 319999
+     "antes": 319999,
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -1003,7 +1309,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-nimbus-27-para-hombre/AS1011B958400.html",
      "fecha": "30/10/2026",
      "antes": 319999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     }
    ],
    "colores": [
@@ -1057,7 +1364,14 @@
      "fecha": "30/10/2026",
      "antes": 319999,
      "cuotas": "6 cuotas sin interés",
-     "url": "https://www.dashdeportes.com.ar/zapatillas-asics-gel-kayano-32-running-hombre-0612746/p"
+     "url": "https://www.dashdeportes.com.ar/zapatillas-asics-gel-kayano-32-running-hombre-0612746/p",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Vanguard Deportes",
@@ -1073,7 +1387,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-kayano-32-hombre/AS1011C052101.html",
      "fecha": "30/10/2026",
      "antes": 319999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Asics",
@@ -1081,7 +1399,16 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.asics.com.ar/1011c052-101-zapatilla-asics-gel-kayano-32-m-1/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -1090,7 +1417,11 @@
      "url": "https://www.sporting.com.ar/zapatillas-asics-gel-kayano-32-unisex-1012b838003-000/p",
      "fecha": "30/10/2026",
      "antes": 319900,
-     "nota": "Unisex"
+     "nota": "Unisex",
+     "talles": [
+      "42.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1099,7 +1430,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-kayano-32-mujer/AS1012B838003.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 319999
+     "antes": 319999,
+     "talles": [
+      "37",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -1150,7 +1486,17 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gt-2000-14-hombre-malla/AS1011C056400.html",
      "fecha": "30/10/2026",
      "antes": 279999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Asics",
@@ -1158,7 +1504,11 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.asics.com.ar/1011c056-400-zapatilla-asics-gt-2000-14-m-1/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1167,7 +1517,14 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gt-2000-14-mujer/AS1012B843300.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 279999
+     "antes": 279999,
+     "talles": [
+      "36",
+      "38.5",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1213,7 +1570,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-cumulus-27-hombre-malla/AS1011B960004.html",
      "fecha": "30/10/2026",
      "antes": 299999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Asics",
@@ -1221,7 +1583,13 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.asics.com.ar/1011b960-500-zapatilla-asics-gel-cumulus-27-m-1/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1230,7 +1598,17 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-cumulus-27-mujer/AS1012B772701.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 299999
+     "antes": 299999,
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "38.5",
+      "39",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1275,7 +1653,11 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-superblast-2/AS1013A142401.html",
      "fecha": "30/10/2026",
-     "antes": 449999
+     "antes": 449999,
+     "talles": [
+      "40"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1284,7 +1666,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-superblast-2/AS1013A142401.html",
      "fecha": "30/10/2026",
      "nota": "Unisex",
-     "antes": 449999
+     "antes": 449999,
+     "talles": [
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1329,7 +1715,15 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.asics.com.ar/1012b676-600-zapatilla-asics-magic-speed-4-w/p",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "38",
+      "38.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1375,7 +1769,11 @@
      "url": "https://www.asics.com.ar/1013a115-301-zapatilla-asics-metaspeed-sky-m-1/p",
      "fecha": "30/10/2026",
      "nota": "Hombre",
-     "antes": 399900
+     "antes": 399900,
+     "talles": [
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1420,7 +1818,17 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000217.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "7",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1465,7 +1873,20 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000485.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "7",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1510,7 +1931,21 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000323.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1555,7 +1990,12 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000320090010.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1599,7 +2039,13 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5",
+      "45.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -1608,7 +2054,14 @@
      "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-18-de-hombre-s20998099-000/p",
      "fecha": "30/10/2026",
      "antes": 180899,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1653,7 +2106,15 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-endorphin-speed-4-hombre/SAS20940-100.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "43",
+      "43.5",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1698,7 +2159,13 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-pro-5-de-hombre-s21064130-000/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1744,7 +2211,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-puma-velocity-nitro-4-running-hombre/PU311140-10.html",
      "fecha": "30/10/2026",
      "antes": 199999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1789,7 +2260,19 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-puma-deviate-nitro-4-pwrplate-hombre/PU312123-01.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "38",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -1797,7 +2280,18 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-puma-deviate-nitro™-4-de-hombre-31212319-000/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1806,7 +2300,16 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-puma-deviate-nitro-4-mujer/PU312124-04.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 269999
+     "antes": 269999,
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "36.5",
+      "37.5",
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1851,7 +2354,19 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-puma-magmax-nitro-2-hombre/PU312125-01.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Sporting",
@@ -1859,7 +2374,16 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-puma-magmax-nitro-2-de-hombre-31212524-000/p",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1867,7 +2391,17 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-puma-magmax-nitro-2-mujer/PU312126-01.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1912,7 +2446,22 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.sporting.com.ar/zapatillas-topper-fast-2-0-unisex-225860-000/p",
      "fecha": "30/10/2026",
-     "nota": "Unisex"
+     "nota": "Unisex",
+     "talles": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Topper",
@@ -1921,7 +2470,16 @@
      "url": "https://www.topper.com.ar/zapatillas-fast-2-0-025860/p",
      "fecha": "30/10/2026",
      "antes": 86900,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "35",
+      "37",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1952,7 +2510,17 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudmonster-3-hombre/ON3MG10054-859.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1960,7 +2528,14 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudmonster-3-mujer/ON3WG10034-888.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2005,7 +2580,16 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudsurfer-next-hombre/ON3ME30022-906.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -2013,7 +2597,11 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudsurfer-next-mujer/ON3WE30054-292.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "38"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2058,7 +2646,16 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudrunner-3-hombre/ON3MG10071-043.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -2066,7 +2663,12 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10050-924.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "38",
+      "38.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2111,7 +2713,15 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudflyer-5-hombre/ON3ME30010-299.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -2119,7 +2729,14 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudflyer-5-mujer/ON3WE30040-299.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "38.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2164,7 +2781,17 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudboom-max-hombre/ON3MF30310-438.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -2172,7 +2799,14 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudboom-max-mujer/ON3WF30180-438.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2218,7 +2852,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-brooks-ghost-15-hombre/BRCRNMLIV0028AZNGVE.html",
      "fecha": "30/10/2026",
      "antes": 199999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     },
     {
      "tienda": "Dexter",
@@ -2227,7 +2862,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-brooks-ghost-15-mujer/BRCRNFLIV0027VIRSNG.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 199999
+     "antes": 199999,
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2273,7 +2912,13 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-brooks-glycerin-20-mujer/BRCRNFLIV0007BLCE.html",
      "fecha": "30/10/2026",
      "antes": 224999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2319,7 +2964,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-brooks-adrenaline-gts-23-mujer/BRCRNFLIV0014NGRSLM.html",
      "fecha": "30/10/2026",
      "antes": 199999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2365,7 +3014,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-brooks-launch-10-mujer/BRBRCRNFLIV0018GRSA.html",
      "fecha": "30/10/2026",
      "antes": 174999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2411,7 +3065,15 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-brooks-hyperion-mujer/BRCRNFLIV0016RSLMNG.html",
      "fecha": "30/10/2026",
      "antes": 199999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "36.5",
+      "37"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2457,7 +3119,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-velociti-3-para-hombre/UA3026117-400.html",
      "fecha": "30/10/2026",
      "antes": 179999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -2466,7 +3132,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-velociti-3-mujer/UA3026124-603.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 179999
+     "antes": 179999,
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2508,7 +3179,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-infinite-pro-hombre/UA3027190-101.html",
      "fecha": "30/10/2026",
      "antes": 189999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     },
     {
      "tienda": "Dexter",
@@ -2517,7 +3189,14 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-infinite-pro-mujer/UA3027200-501.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 189999
+     "antes": 189999,
+     "talles": [
+      "34.5",
+      "35",
+      "42",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2563,7 +3242,17 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-under-armour-infinite-elite-mujer/UA3027199-004.html",
      "fecha": "30/10/2026",
      "antes": 219999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "39.5",
+      "41",
+      "42",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2608,7 +3297,14 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-triumph-22-hombre/SAS20964-135.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "44",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2654,7 +3350,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-kinvara-14-hombre/SAS20823-115.html",
      "fecha": "30/10/2026",
      "antes": 133899,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "43"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -2663,7 +3363,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-kinvara-14-mujer/SAS10823-25.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 133899
+     "antes": 133899,
+     "talles": [
+      "41.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2708,7 +3412,21 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-endorphin-elite-2/SAS30994-135.html",
      "fecha": "30/10/2026",
-     "nota": "Unisex"
+     "nota": "Unisex",
+     "talles": [
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "43",
+      "43.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2754,7 +3472,13 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gt-1000-14-mujer-malla/AS1012B859001.html",
      "fecha": "30/10/2026",
      "antes": 249999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "37",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2800,7 +3524,13 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-excite-11-mujer/AS1012B861700.html",
      "fecha": "30/10/2026",
      "antes": 209999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "38.5",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2846,7 +3576,17 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-dynablast-5-hombre/AS1011B983401.html",
      "fecha": "30/10/2026",
      "antes": 279999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2892,7 +3632,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-premium-hombre/NIHQ2592-005.html",
      "fecha": "30/10/2026",
      "antes": 449999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     },
     {
      "tienda": "Dexter",
@@ -2901,7 +3642,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-nike-pegasus-premium-mujer/NIHQ2593-602.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 449999
+     "antes": 449999,
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2947,7 +3693,20 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-41-hombre/NIFD2722-401.html",
      "fecha": "30/10/2026",
      "antes": 279999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -2956,7 +3715,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-41-mujer/NIFD2723-605.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 279999
+     "antes": 279999,
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3001,7 +3764,20 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-quest-6-hombre/NIFD6033-001.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "39",
+      "39.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -3010,7 +3786,17 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-quest-6-mujer/NIFD6034-108.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 179999
+     "antes": 179999,
+     "talles": [
+      "35.5",
+      "37.5",
+      "39",
+      "39.5",
+      "41",
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3055,7 +3841,21 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-nike-revolution-8-hombre/NIHJ9198-403.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44",
+      "44.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -3063,7 +3863,20 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-nike-revolution-8-mujer/NIHJ8485-001.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3108,7 +3921,18 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adistar-5-hombre/ADIH7178.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -3116,7 +3940,17 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adistar-5-mujer/ADKI9523.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3162,7 +3996,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-stride-2-mujer/ADIG2164.html",
      "fecha": "30/10/2026",
      "antes": 149999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "sinStock": true
     }
    ],
    "colores": [],
@@ -3204,7 +4039,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-adidas-ultraboost-5-mujer/ADID8851.html",
      "fecha": "30/10/2026",
      "antes": 249999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3250,7 +4089,16 @@
      "url": "https://www.dexter.com.ar/zapatillas-adidas-adizero-takumi-sen-10-hombre/ADIF1211.html",
      "fecha": "30/10/2026",
      "antes": 274999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -3259,7 +4107,13 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-takumi-sen-10-mujer/ADID3629.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 269999
+     "antes": 269999,
+     "talles": [
+      "34.5",
+      "35.5",
+      "36.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3304,7 +4158,16 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-puma-foreverrun-nitro-2-hombre/PU310109-01.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "41",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -3313,7 +4176,12 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-puma-foreverrun-nitro-2-mujer/PU310471-19.html",
      "fecha": "30/10/2026",
      "nota": "Mujer",
-     "antes": 229999
+     "antes": 229999,
+     "talles": [
+      "36",
+      "36.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3358,7 +4226,18 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-puma-velocity-nitro-5/PU312944-04.html",
      "fecha": "30/10/2026",
-     "nota": "Unisex"
+     "nota": "Unisex",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3404,7 +4283,21 @@
      "url": "https://www.topper.com.ar/wind-5-25787-1/p",
      "fecha": "30/10/2026",
      "antes": 79200,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3440,7 +4333,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-trail-5-gore-tex-mujer/NIFQ0912-101.html",
      "fecha": "30/10/2026",
      "antes": 369999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3486,7 +4383,8 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-kiger-9-hombre/NIDR2693-100.html",
      "fecha": "30/10/2026",
      "antes": 299999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "sinStock": true
     }
    ],
    "colores": [],
@@ -3532,7 +4430,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-outdoor-nike-zegama-2-mujer/NIFD5191-300.html",
      "fecha": "30/10/2026",
      "antes": 399999,
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3578,7 +4480,11 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-trabuco-13-hombre/AS1011B973002.html",
      "fecha": "30/10/2026",
      "antes": 319999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "43"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3623,7 +4529,19 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-terrex-agravic-4-trail-hombre/ADKJ8870.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3669,7 +4587,14 @@
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-peregrine-hombre/SAS20990-164.html",
      "fecha": "30/10/2026",
      "antes": 184999,
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "43",
+      "43.5",
+      "45.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3714,7 +4639,17 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudultra-3-hombre/ON3MF30234-788.html",
      "fecha": "30/10/2026",
-     "nota": "Hombre"
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -3722,7 +4657,15 @@
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudultra-3-mujer/ON3WF30114-882.html",
      "fecha": "30/10/2026",
-     "nota": "Mujer"
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],

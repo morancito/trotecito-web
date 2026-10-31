@@ -1,12 +1,12 @@
 {
- "fecha": "30/10/2026",
- "hora": "09:43 p. m.",
- "leidos": 127,
+ "fecha": "31/10/2026",
+ "hora": "12:25 a. m.",
+ "leidos": 216,
  "cambiaron": 0,
- "conTalles": 115,
+ "conTalles": 206,
  "fallaron": 7,
  "errores": [
-  "adidas-adizero-evo-sl · adidas.com.ar: HTTP 403",
+  "adidas-adizero-evo-sl · adidas.com.ar: The operation was aborted due to timeout",
   "nike-pegasus-42 · Duke Sport: no encontré el precio en la página",
   "nike-pegasus-42 · Nike: HTTP 403",
   "nike-pegasus-plus · Nike: HTTP 403",

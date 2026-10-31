@@ -616,3 +616,11 @@ a.puerta:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--b
 .foot-contacto { margin-top: 18px !important; font-size: 15px !important; }
 .foot-contacto a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .foot-contacto a:hover { color: var(--celeste); }
+
+/* ficha: todas las opciones para comprar */
+.tiendas-box { margin-top: 18px; }
+.tiendas-h { margin: 0; font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; gap: 10px; }
+.tiendas-h span { letter-spacing: 0; text-transform: none; }
+.tiendas-box .tiendas { margin-top: 6px; }
+.tiendas-sub { margin: 14px 0 0; font-size: 13px; font-weight: 700; color: var(--muted); }
+.tiendas.apagadas .t-n, .tiendas.apagadas .t-p { color: var(--muted); }

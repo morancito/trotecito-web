@@ -358,6 +358,18 @@ function bloqueTalles(d) {
   return `<div class="bloque"><h2 class="cond">Talles con stock</h2><p class="ad-sub">${ts.every(t => t.sistema === "US") ? "Talles de EE. UU. (así los informa la tienda)" : ts.some(t => t.sistema === "US") ? "Talles argentinos; los que dicen US son de EE. UU., como los informa la tienda" : "Talles argentinos"}, chequeados el ${esc(CAT.actualizado)}. ${TALLE ? `Resaltado, tu talle (${TALLE}).` : `Elegí tu talle en los filtros y te mostramos solo las tiendas que lo tienen.`}</p>
     <ul class="talles">${ts.map(t => `<li><span class="tl-n">${esc(t.tienda)}${t.nota ? ` <small>${esc(t.nota.toLowerCase())}</small>` : ""}</span><span class="tl-c">${chips(t)}</span></li>`).join("")}</ul></div>`;
 }
+/* todas las tiendas donde se consigue: primero las que te sirven; después, las que no tienen tu talle y las de otro talle de género */
+const filaTienda = (s, extra) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><span class="t-n">${esc(s.tienda)} ↗</span><span class="t-c">${[s.nota, extra !== undefined ? extra : TALLE && (estadoTalle(s) ? `✓ talle ${TALLE}` : `talle ${TALLE} sin confirmar`)].filter(Boolean).map(esc).join(" · ")}</span><span class="t-p">${fmt(s.precio)}</span></a></li>`;
+function todasLasTiendas(d, resto) {
+  const sinTu = TALLE ? d.todas.filter(x => paraGen(x) && estadoTalle(x) === false) : [];
+  const otroGen = GEN ? d.todas.filter(x => !paraGen(x)) : [];
+  if (!resto.length && !sinTu.length && !otroGen.length) return "";
+  const total = d.tiendas.length + sinTu.length + otroGen.length;
+  return `<div class="tiendas-box"><h3 class="tiendas-h">Todas las opciones para comprar <span>${total} ${total === 1 ? "tienda" : "tiendas"}</span></h3>
+    ${resto.length ? `<ul class="tiendas">${resto.map(x => filaTienda(x)).join("")}</ul>` : ""}
+    ${sinTu.length ? `<p class="tiendas-sub">Sin tu talle ${esc(TALLE)} ahora</p><ul class="tiendas apagadas">${sinTu.map(x => filaTienda(x, `no tiene el ${TALLE}`)).join("")}</ul>` : ""}
+    ${otroGen.length ? `<p class="tiendas-sub">En talles de ${otroGen[0].nota === "Mujer" ? "mujer" : "hombre"}</p><ul class="tiendas apagadas">${otroGen.map(x => filaTienda(x, "")).join("")}</ul>` : ""}</div>`;
+}
 function ficha(d) {
   const t = d.tiendas, best = t[0], resto = t.slice(1), ahorro = t.length > 1 ? t[t.length - 1].precio - best.precio : 0;
   const datos = [["Peso", d.peso && `${d.peso} g`], ["Drop", d.drop != null && `${d.drop} mm`], ["Talón", d.talon && `${d.talon} mm`], ["Antepié", d.ante && `${d.ante} mm`],
@@ -377,9 +389,8 @@ function ficha(d) {
       : d.otro
       ? `<div class="buy"><span class="kicker">Talles de ${GEN.toLowerCase()}</span><b class="buy-p cond" style="font-size:40px">No conseguimos</b><span class="buy-s">Solo la encontramos en talles de ${d.otro.gen.toLowerCase()}, desde ${fmt(d.otro.precio)}.</span><button class="btn" type="button" data-gen="">Ver todos los talles</button></div>`
       : `<div class="buy"><b class="buy-p cond" style="font-size:48px">Precio pronto</b></div>`}
-    ${best && d.otro ? `<p class="otro-gen">También en talles de ${d.otro.gen.toLowerCase()} desde ${fmt(d.otro.precio)} · <button type="button" data-gen="">ver todos</button></p>` : ""}
     ${best && GEN && !d.otro ? `<p class="otro-gen">Mostrando precios de talles de ${GEN.toLowerCase()}.</p>` : ""}
-    ${resto.length ? `<ul class="tiendas">${resto.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener"><span class="t-n">${esc(s.tienda)} ↗</span><span class="t-c">${[s.nota, TALLE && (estadoTalle(s) ? `✓ talle ${TALLE}` : `talle ${TALLE} sin confirmar`)].filter(Boolean).map(esc).join(" · ")}</span><span class="t-p">${fmt(s.precio)}</span></a></li>`).join("")}</ul>` : ""}
+    ${todasLasTiendas(d, resto)}
     ${bloqueTalles(d)}
     ${grafico(d.hist) ? `<div class="bloque" id="histBox"><h2 class="cond">Cómo varió el precio</h2>${grafico(d.hist)}</div>` : ""}
     ${c ? `<div class="bloque"><h2 class="cond">¿Para quién?</h2><dl class="para">

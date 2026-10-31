@@ -5161,7 +5161,92 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 298999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-clifton-10-de-hombre-1162030bblc-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 298999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-clifton-10-de-mujer-1162031bwht-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 276500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/m-clifton-101162030-bblc-hot000014015.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 276500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/w-clifton-101162031-grtm-hot000019185.html",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 299999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-hombre-oltm/",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 299999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-mujer-gris-grtm-1515g/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5178,7 +5263,51 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 321999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-bondi-9-de-mujer-1162012vch-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "39.5",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 321999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-bondi-9-de-hombre-1162011mvr-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41.5",
+      "42",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 309500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/w-bondi-91162012-bjm-hot000018801.html",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "38.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5195,7 +5324,38 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 242999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-mujer-wnh-1vjlg/",
+     "fecha": "30/10/2026",
+     "antes": 269999,
+     "nota": "Mujer",
+     "talles": [
+      "8.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 242999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-hombre-negra-1pk3z/",
+     "fecha": "30/10/2026",
+     "antes": 269999,
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "11",
+      "12.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5212,7 +5372,55 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 275999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-mach-7-de-mujer-1171938bjm-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 284999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-7-mujer-bjm-u8htu/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "6",
+      "7.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 284999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-7-hombre-fyz-1wfpg/",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "8",
+      "9",
+      "9.5",
+      "10.5",
+      "11.5",
+      "12.5",
+      "13"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5229,7 +5437,40 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 399999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-x3-hombre-fluo-1ixpf/",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "8.5",
+      "9",
+      "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 399999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-x3-mujer-fuccia-14kss/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5246,7 +5487,37 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 254999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-arahi-8-bwht-f0ktt/",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 274999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mujer-arahi-8-cyg-16vsu/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "6"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5263,7 +5534,37 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 319999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-gaviota-6-hombre-azul-noche-1u4ra/",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "8.5",
+      "9",
+      "11.5",
+      "12.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 319999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-gaviota-6-mujer-vainilla-16s2g/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "8",
+      "8.5",
+      "9"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5280,7 +5581,30 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 229999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-rincon-4-de-hombre-1155130bwht-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5297,7 +5621,71 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 322999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-skyflow-de-hombre-1155111bwht-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 322999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-running-hoka-skyflow-de-mujer-1155113bwht-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 263000,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/hot000023551-m-skyflow-1155111-bwht.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 256499,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-skyflow-negra-blanca-1nrbj/",
+     "fecha": "30/10/2026",
+     "antes": 284999,
+     "nota": "Hombre",
+     "talles": [
+      "11.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5331,7 +5719,57 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 297999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-m-speedgoat-6-de-hombre-1147791ttt-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 251000,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/m-speedgoat-6-hot000009.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 263000,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/hot000010405-w-speedgoat-6-1147811-rslt.html",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5365,7 +5803,25 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 294999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-challenger-atr-8-ladrillo-mplc-5qcsx/",
+     "fecha": "30/10/2026",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "11.5",
+      "12",
+      "12.5",
+      "13"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5382,7 +5838,48 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 398999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-mafate-5-de-hombre-1168722cmntb-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 398999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-mafate-5-de-mujer-1168723abnt-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 383500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/hot000024b56-m-mafate-5-1168722-swrd.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "46"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5399,7 +5896,65 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 240999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-torrent-4-de-hombre-1155115cyf-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 252999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-torrent-4-de-mujer-1155074sstw-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 242999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-hoka-torrent-4-sstw-1mr1t/",
+     "fecha": "30/10/2026",
+     "antes": 269999,
+     "talles": [
+      "5",
+      "5.5",
+      "6",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5416,7 +5971,65 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-genesis-2-de-hombre-17492998-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-genesis-2-de-mujer-17493092-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 274999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-negro-gris-1s1wk/",
+     "fecha": "30/10/2026",
+     "talles": [
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5433,7 +6046,80 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-glide-4-de-mujer-17491490-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-glide-4-de-hombre-17479569-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 239999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/smt000004335-ultra-glide-4-m.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 239999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/smt000006146-ultra-glide-4-w.html",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5450,7 +6136,49 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-flow-2-de-mujer-17478837-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 170999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-flow-2-de-hombre-17478835-000/p",
+     "fecha": "30/10/2026",
+     "antes": 189999,
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5467,7 +6195,17 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 449999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-salomon-s-lab-pulsar-4-unisex-roja-12cl1/",
+     "fecha": "30/10/2026",
+     "antes": 499999,
+     "nota": "Unisex"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5518,7 +6256,26 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 391499,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-pro-w-white-155y9/",
+     "fecha": "30/10/2026",
+     "antes": 434999,
+     "nota": "Mujer"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 391499,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-pro-m-mountain-red-6doew/",
+     "fecha": "30/10/2026",
+     "antes": 434999,
+     "nota": "Hombre"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5535,7 +6292,17 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 346949,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-max-w-y354f/",
+     "fecha": "30/10/2026",
+     "antes": 385499,
+     "nota": "Mujer"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5552,7 +6319,88 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-speed-5-de-mujer-s1013911010-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-speed-5-de-hombre-s1013681004-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 249000,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/sat000069804-endorphin-speed-5-m.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 249900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/sat000098185-endorphin-speed-5-w-coral-salm.html",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 249999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-endorphin-speed-5-mujer-blanca-rr8a6/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5569,7 +6417,85 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 209999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-peregrine-16-de-hombre-s1015551008-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 209999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-peregrine-16-de-mujer-s1015771005-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 209900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/sat000093008-peregrine-16-m-carbon-black.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-peregrine-16-hombre-blanca-sy73e/",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-peregrine-16-mujer-blanca-40loa/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "8.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5586,7 +6512,21 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "TodoTrail",
+     "precio": 174999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-hurricane-25-mujer-verde-agua-1pzbq/",
+     "fecha": "30/10/2026",
+     "antes": 249999,
+     "nota": "Mujer",
+     "talles": [
+      "7"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5603,7 +6543,51 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-saucony-surge-3-hombre/SAS28215-3.html",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 104999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-hombre-blanca-19luo/",
+     "fecha": "30/10/2026",
+     "antes": 149999,
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 104999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-mujer-rosa-claro-4u26l/",
+     "fecha": "30/10/2026",
+     "antes": 149999,
+     "nota": "Mujer",
+     "talles": [
+      "6"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -5620,7 +6604,49 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-xodus-ultra-4-de-mujer-s1016261005-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-xodus-ultra-4-de-hombre-s1016171009-000/p",
+     "fecha": "30/10/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 269999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-xodus-ultra-4-mujer-aloe-barley-cupny/",
+     "fecha": "30/10/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,

@@ -1,25 +1,39 @@
 {
- "fecha": "2026-10-31T01:16:51.299Z",
+ "fecha": "2026-10-31T01:49:43.742Z",
  "tiendas": {
-  "Gostore": {
-   "tipo": "magento",
-   "pista": "gostore.com.ar | static.cloudflareinsights.com",
-   "buscados": 71,
+  "Dexter": {
+   "tipo": "sfcc",
+   "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
+   "buscados": 28,
+   "encontrados": 1,
+   "errores": []
+  },
+  "Sporting": {
+   "tipo": "vtex",
+   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sporting.vtexassets.com",
+   "buscados": 28,
    "encontrados": 25,
    "errores": []
   },
   "Moov": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 71,
-   "encontrados": 1,
+   "buscados": 28,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Gostore": {
+   "tipo": "magento",
+   "pista": "gostore.com.ar | static.cloudflareinsights.com",
+   "buscados": 28,
+   "encontrados": 12,
    "errores": []
   },
   "TodoTrail": {
    "tipo": "tiendanube",
    "pista": "nsk-cdn-static.tiendanube.com | www.googletagmanager.com | static.cloudflareinsights.com",
-   "buscados": 71,
-   "encontrados": 2,
+   "buscados": 28,
+   "encontrados": 33,
    "errores": []
   },
   "Naka Outdoors": {
@@ -579,6 +593,1268 @@
     "10",
     "10.5",
     "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-surge-3",
+   "modelo": "Saucony Surge 3",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running saucony surge 3 hombre",
+   "url": "https://www.dexter.com.ar/zapatillas-running-saucony-surge-3-hombre/SAS28215-3.html",
+   "nota": "Hombre",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Clifton 10 De Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-clifton-10-de-hombre-1162030bblc-000/p",
+   "nota": "Hombre",
+   "precio": 298999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Clifton 10 De Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-clifton-10-de-mujer-1162031bwht-000/p",
+   "nota": "Mujer",
+   "precio": 298999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37.5",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-bondi-9",
+   "modelo": "Hoka Bondi 9",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Bondi 9 De Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-bondi-9-de-mujer-1162012vch-000/p",
+   "nota": "Mujer",
+   "precio": 321999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "39.5",
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-bondi-9",
+   "modelo": "Hoka Bondi 9",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Bondi 9 De Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-bondi-9-de-hombre-1162011mvr-000/p",
+   "nota": "Hombre",
+   "precio": 321999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41.5",
+    "42",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mach-7",
+   "modelo": "Hoka Mach 7",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Mach 7 De Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-mach-7-de-mujer-1171938bjm-000/p",
+   "nota": "Mujer",
+   "precio": 275999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-rincon-4",
+   "modelo": "Hoka Rincon 4",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Rincon 4 De Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-rincon-4-de-hombre-1155130bwht-000/p",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45",
+    "45.5",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-skyflow",
+   "modelo": "Hoka Skyflow",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Skyflow De Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-skyflow-de-hombre-1155111bwht-000/p",
+   "nota": "Hombre",
+   "precio": 322999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-skyflow",
+   "modelo": "Hoka Skyflow",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Hoka Skyflow De Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-skyflow-de-mujer-1155113bwht-000/p",
+   "nota": "Mujer",
+   "precio": 322999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-speedgoat-6",
+   "modelo": "Hoka Speedgoat 6",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Hoka M Speedgoat 6 De Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-m-speedgoat-6-de-hombre-1147791ttt-000/p",
+   "nota": "Hombre",
+   "precio": 297999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mafate-5",
+   "modelo": "Hoka Mafate 5",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Hoka Mafate 5 De Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-mafate-5-de-hombre-1168722cmntb-000/p",
+   "nota": "Hombre",
+   "precio": 398999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "42",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mafate-5",
+   "modelo": "Hoka Mafate 5",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Hoka Mafate 5 De Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-mafate-5-de-mujer-1168723abnt-000/p",
+   "nota": "Mujer",
+   "precio": 398999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39.5",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-torrent-4",
+   "modelo": "Hoka Torrent 4",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Hoka Torrent 4 De Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-torrent-4-de-hombre-1155115cyf-000/p",
+   "nota": "Hombre",
+   "precio": 240999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-torrent-4",
+   "modelo": "Hoka Torrent 4",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Hoka Torrent 4 De Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-torrent-4-de-mujer-1155074sstw-000/p",
+   "nota": "Mujer",
+   "precio": 252999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Salomon Genesis 2 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-salomon-genesis-2-de-hombre-17492998-000/p",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Salomon Genesis 2 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-salomon-genesis-2-de-mujer-17493092-000/p",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-glide-4",
+   "modelo": "Salomon Ultra Glide 4",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Salomon Ultra Glide 4 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-glide-4-de-mujer-17491490-000/p",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-glide-4",
+   "modelo": "Salomon Ultra Glide 4",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Salomon Ultra Glide 4 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-glide-4-de-hombre-17479569-000/p",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39.5",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Salomon Ultra Flow 2 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-flow-2-de-mujer-17478837-000/p",
+   "nota": "Mujer",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Salomon Ultra Flow 2 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-flow-2-de-hombre-17478835-000/p",
+   "nota": "Hombre",
+   "precio": 170999,
+   "antes": 189999,
+   "cuotas": 12,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Endorphin Speed 5 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-speed-5-de-mujer-s1013911010-000/p",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Endorphin Speed 5 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-speed-5-de-hombre-s1013681004-000/p",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Peregrine 16 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-peregrine-16-de-hombre-s1015551008-000/p",
+   "nota": "Hombre",
+   "precio": 209999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Peregrine 16 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-peregrine-16-de-mujer-s1015771005-000/p",
+   "nota": "Mujer",
+   "precio": 209999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Xodus Ultra 4 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-xodus-ultra-4-de-mujer-s1016261005-000/p",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Xodus Ultra 4 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-xodus-ultra-4-de-hombre-s1016171009-000/p",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "Gostore",
+   "nombre": "Clifton 10 M",
+   "url": "https://gostore.com.ar/m-clifton-101162030-bblc-hot000014015.html",
+   "nota": "Hombre",
+   "precio": 276500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "Gostore",
+   "nombre": "Clifton 10 W",
+   "url": "https://gostore.com.ar/w-clifton-101162031-grtm-hot000019185.html",
+   "nota": "Mujer",
+   "precio": 276500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-bondi-9",
+   "modelo": "Hoka Bondi 9",
+   "tienda": "Gostore",
+   "nombre": "Bondi 9 W",
+   "url": "https://gostore.com.ar/w-bondi-91162012-bjm-hot000018801.html",
+   "nota": "Mujer",
+   "precio": 309500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-skyflow",
+   "modelo": "Hoka Skyflow",
+   "tienda": "Gostore",
+   "nombre": "Skyflow M",
+   "url": "https://gostore.com.ar/hot000023551-m-skyflow-1155111-bwht.html",
+   "nota": "Hombre",
+   "precio": 263000,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-speedgoat-6",
+   "modelo": "Hoka Speedgoat 6",
+   "tienda": "Gostore",
+   "nombre": "Speedgoat 6 M",
+   "url": "https://gostore.com.ar/m-speedgoat-6-hot000009.html",
+   "nota": "Hombre",
+   "precio": 251000,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-speedgoat-6",
+   "modelo": "Hoka Speedgoat 6",
+   "tienda": "Gostore",
+   "nombre": "Speedgoat 6 W",
+   "url": "https://gostore.com.ar/hot000010405-w-speedgoat-6-1147811-rslt.html",
+   "nota": "Mujer",
+   "precio": 263000,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "35.5",
+    "36.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mafate-5",
+   "modelo": "Hoka Mafate 5",
+   "tienda": "Gostore",
+   "nombre": "Mafate 5 M",
+   "url": "https://gostore.com.ar/hot000024b56-m-mafate-5-1168722-swrd.html",
+   "nota": "Hombre",
+   "precio": 383500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-glide-4",
+   "modelo": "Salomon Ultra Glide 4",
+   "tienda": "Gostore",
+   "nombre": "Ultra Glide 4 M",
+   "url": "https://gostore.com.ar/smt000004335-ultra-glide-4-m.html",
+   "nota": "Hombre",
+   "precio": 239999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-glide-4",
+   "modelo": "Salomon Ultra Glide 4",
+   "tienda": "Gostore",
+   "nombre": "Ultra Glide 4 W",
+   "url": "https://gostore.com.ar/smt000006146-ultra-glide-4-w.html",
+   "nota": "Mujer",
+   "precio": 239999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "Gostore",
+   "nombre": "Endorphin Speed 5 M",
+   "url": "https://gostore.com.ar/sat000069804-endorphin-speed-5-m.html",
+   "nota": "Hombre",
+   "precio": 249000,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "Gostore",
+   "nombre": "Endorphin Speed 5 W",
+   "url": "https://gostore.com.ar/sat000098185-endorphin-speed-5-w-coral-salm.html",
+   "nota": "Mujer",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "Gostore",
+   "nombre": "Peregrine 16 M",
+   "url": "https://gostore.com.ar/sat000093008-peregrine-16-m-carbon-black.html",
+   "nota": "Hombre",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Clifton 10 Hombre - OLTM",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-hombre-oltm/",
+   "nota": "Hombre",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "9"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Clifton 10 Mujer -Gris - GRTM",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-mujer-gris-grtm-1515g/",
+   "nota": "Mujer",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "7"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-bondi-9",
+   "modelo": "Hoka Bondi 9",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Bondi 9 Hombre - Celeste",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-bondi-9-hombre-celeste/",
+   "nota": "Hombre",
+   "sinStock": true
+  },
+  {
+   "slug": "hoka-bondi-9",
+   "modelo": "Hoka Bondi 9",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Bondi 9 Mujer - Negra",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-bondi-9-mujer-negra/",
+   "nota": "Mujer",
+   "sinStock": true
+  },
+  {
+   "slug": "hoka-mach-6",
+   "modelo": "Hoka Mach 6",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Mach 6 Mujer - WNH",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-mujer-wnh-1vjlg/",
+   "nota": "Mujer",
+   "precio": 242999,
+   "antes": 269999,
+   "cuotas": 6,
+   "talles": [
+    "8.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-mach-6",
+   "modelo": "Hoka Mach 6",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Mach 6 Hombre - Negra",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-hombre-negra-1pk3z/",
+   "nota": "Hombre",
+   "precio": 242999,
+   "antes": 269999,
+   "cuotas": 6,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "11",
+    "12.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-mach-7",
+   "modelo": "Hoka Mach 7",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Mach 7 Mujer - BJM",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-7-mujer-bjm-u8htu/",
+   "nota": "Mujer",
+   "precio": 284999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "6",
+    "7.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-mach-7",
+   "modelo": "Hoka Mach 7",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Mach 7 Hombre - FYZ",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-7-hombre-fyz-1wfpg/",
+   "nota": "Hombre",
+   "precio": 284999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "8",
+    "9",
+    "9.5",
+    "10.5",
+    "11.5",
+    "12.5",
+    "13"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-mach-x-3",
+   "modelo": "Hoka Mach X 3",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Mach X3 Hombre -Fluo",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-x3-hombre-fluo-1ixpf/",
+   "nota": "Hombre",
+   "precio": 399999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "8.5",
+    "9",
+    "12"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-mach-x-3",
+   "modelo": "Hoka Mach X 3",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Mach X3 Mujer - Fuccia",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-x3-mujer-fuccia-14kss/",
+   "nota": "Mujer",
+   "precio": 399999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-arahi-8",
+   "modelo": "Hoka Arahi 8",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla HOKA Arahi 8 - BWHT",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-arahi-8-bwht-f0ktt/",
+   "nota": "",
+   "precio": 254999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-arahi-8",
+   "modelo": "Hoka Arahi 8",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Mujer Arahi 8 - CYG",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mujer-arahi-8-cyg-16vsu/",
+   "nota": "Mujer",
+   "precio": 274999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "6"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-gaviota-6",
+   "modelo": "Hoka Gaviota 6",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Gaviota 6 Hombre - Azul Noche",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-gaviota-6-hombre-azul-noche-1u4ra/",
+   "nota": "Hombre",
+   "precio": 319999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "8.5",
+    "9",
+    "11.5",
+    "12.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-gaviota-6",
+   "modelo": "Hoka Gaviota 6",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Gaviota 6 Mujer - Vainilla",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-gaviota-6-mujer-vainilla-16s2g/",
+   "nota": "Mujer",
+   "precio": 319999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "8",
+    "8.5",
+    "9"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-rincon-4",
+   "modelo": "Hoka Rincon 4",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Rincon 4 - ECC",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-rincon-4-ecc/",
+   "nota": "",
+   "sinStock": true
+  },
+  {
+   "slug": "hoka-skyflow",
+   "modelo": "Hoka Skyflow",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Skyflow - Negra/Blanca",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-skyflow-negra-blanca-1nrbj/",
+   "nota": "",
+   "precio": 256499,
+   "antes": 284999,
+   "cuotas": 6,
+   "talles": [
+    "11.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-skyflow",
+   "modelo": "Hoka Skyflow",
+   "tienda": "TodoTrail",
+   "nombre": "Rompeviento HOKA Skyflow Hombre",
+   "url": "https://todotrail.com.ar/productos/rompeviento-hoka-skyflow-hombre/",
+   "nota": "Hombre",
+   "sinStock": true
+  },
+  {
+   "slug": "hoka-skyflow",
+   "modelo": "Hoka Skyflow",
+   "tienda": "TodoTrail",
+   "nombre": "Rompeviento HOKA Skyflow Mujer - Negro",
+   "url": "https://todotrail.com.ar/productos/rompeviento-hoka-skyflow-mujer-negro/",
+   "nota": "Mujer",
+   "sinStock": true
+  },
+  {
+   "slug": "hoka-rocket-x-2",
+   "modelo": "Hoka Rocket X 2",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Rocket X2 - Unisex",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-rocket-x2-unisex/",
+   "nota": "Unisex",
+   "sinStock": true
+  },
+  {
+   "slug": "hoka-challenger-atr-8",
+   "modelo": "Hoka Challenger ATR 8",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Challenger ATR 8 - Ladrillo - MPLC",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-challenger-atr-8-ladrillo-mplc-5qcsx/",
+   "nota": "",
+   "precio": 294999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "11.5",
+    "12",
+    "12.5",
+    "13"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "hoka-torrent-4",
+   "modelo": "Hoka Torrent 4",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Hoka Torrent 4 SSTW",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-torrent-4-sstw-1mr1t/",
+   "nota": "",
+   "precio": 242999,
+   "antes": 269999,
+   "cuotas": 6,
+   "talles": [
+    "5",
+    "5.5",
+    "6",
+    "8",
+    "8.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Salomon Genesis 2 - Negro/Gris",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-negro-gris-1s1wk/",
+   "nota": "",
+   "precio": 274999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "salomon-slab-pulsar-4",
+   "modelo": "Salomon S/LAB Pulsar 4",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Salomon S/LAB Pulsar 4 - Unisex - Roja",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-s-lab-pulsar-4-unisex-roja-12cl1/",
+   "nota": "Unisex",
+   "precio": 449999,
+   "antes": 499999,
+   "cuotas": 6,
+   "_muestra": [
+    "US M 5.5 / US W 6.5 - 23.5 cm",
+    "US M 6 / US W 7 - 24 cm",
+    "US M 6.5 / US W 7.5 - 24.5 cm",
+    "US M 8 / US W 9 - 26 cm"
+   ]
+  },
+  {
+   "slug": "la-sportiva-prodigio-pro",
+   "modelo": "La Sportiva Prodigio Pro",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla La Sportiva Prodigio Pro W - White",
+   "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-pro-w-white-155y9/",
+   "nota": "Mujer",
+   "precio": 391499,
+   "antes": 434999,
+   "cuotas": 6,
+   "_muestra": [
+    "US M6.5/ US W7.5 / 24.7cm"
+   ]
+  },
+  {
+   "slug": "la-sportiva-prodigio-pro",
+   "modelo": "La Sportiva Prodigio Pro",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla La Sportiva Prodigio Pro M - Mountain Red",
+   "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-pro-m-mountain-red-6doew/",
+   "nota": "Hombre",
+   "precio": 391499,
+   "antes": 434999,
+   "cuotas": 6,
+   "_muestra": [
+    "US M10/ US W11/ 27.7cm",
+    "US M12/ US W13/ 29.3cm"
+   ]
+  },
+  {
+   "slug": "la-sportiva-prodigio-max",
+   "modelo": "La Sportiva Prodigio Max",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla La Sportiva Prodigio Max W",
+   "url": "https://todotrail.com.ar/productos/zapatilla-la-sportiva-prodigio-max-w-y354f/",
+   "nota": "Mujer",
+   "precio": 346949,
+   "antes": 385499,
+   "cuotas": 6,
+   "_muestra": [
+    "US M4.5+ / US W5.5+ / 23.3cm",
+    "US M5 / US W6 / 23.7cm",
+    "US M5.5 / US W6.5 / 24cm",
+    "US M6 / US W7 / 24.3cm"
+   ]
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Endorphin Speed 5 Mujer - Blanca",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-endorphin-speed-5-mujer-blanca-rr8a6/",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "7"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Peregrine 16 Hombre - Blanca",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-peregrine-16-hombre-blanca-sy73e/",
+   "nota": "Hombre",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "9",
+    "9.5",
+    "10.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Peregrine 16 Mujer - Blanca",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-peregrine-16-mujer-blanca-40loa/",
+   "nota": "Mujer",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "7",
+    "8.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-hurricane-25",
+   "modelo": "Saucony Hurricane 25",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Hurricane 25 Mujer - Verde Agua",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-hurricane-25-mujer-verde-agua-1pzbq/",
+   "nota": "Mujer",
+   "precio": 174999,
+   "antes": 249999,
+   "cuotas": 6,
+   "talles": [
+    "7"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-surge-3",
+   "modelo": "Saucony Surge 3",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Surge 3 Hombre - Blanca",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-hombre-blanca-19luo/",
+   "nota": "Hombre",
+   "precio": 104999,
+   "antes": 149999,
+   "cuotas": 6,
+   "talles": [
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-surge-3",
+   "modelo": "Saucony Surge 3",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Surge 3 Mujer - Rosa Claro",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-mujer-rosa-claro-4u26l/",
+   "nota": "Mujer",
+   "precio": 104999,
+   "antes": 149999,
+   "cuotas": 6,
+   "talles": [
+    "6"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Xodus Ultra 4 Mujer - Eggplant / Shock",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-xodus-ultra-4-mujer-aloe-barley-cupny/",
+   "nota": "Mujer",
+   "precio": 269999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "7",
+    "7.5",
+    "8",
+    "8.5"
    ],
    "sistema": "US"
   }

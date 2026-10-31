@@ -36,4 +36,4 @@ if (errores.length) {
   console.error(`Encontré ${errores.length} problema(s) en modelos.json:\n- ` + errores.join("\n- "));
   process.exit(1);
 }
-console.log(`modelos.json OK: ${cat.modelos.length} modelos, ${cat.modelos.reduce((a, m) => a + (m.tiendas?.length || 0), 0)} precios.`);
+console.log(`modelos.json OK: ${cat.modelos.filter(m => !m.borrador).length} modelos${cat.modelos.some(m => m.borrador) ? ` (+${cat.modelos.filter(m => m.borrador).length} en borrador)` : ""}, ${cat.modelos.reduce((a, m) => a + (m.tiendas?.length || 0), 0)} precios.`);

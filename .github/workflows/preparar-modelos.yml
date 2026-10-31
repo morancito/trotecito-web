@@ -1,0 +1,35 @@
+name: Preparar modelos nuevos
+
+# Para los modelos en borrador: trae la ficha de RunRepeat, busca precios y talles en las tiendas, los suma
+# y baja fotos de producto. Deja todo en el repo para revisarlo; los borradores no se ven en el sitio.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fichas de RunRepeat
+        run: node scripts/fichas-runrepeat.mjs
+        continue-on-error: true
+      - name: Buscar precios y talles en las tiendas
+        run: node scripts/buscar-ofertas.mjs --borradores
+      - name: Sumar las ofertas encontradas
+        run: node scripts/sumar-ofertas.mjs --guardar
+      - name: Bajar fotos
+        run: node scripts/bajar-fotos-tiendas.mjs
+        continue-on-error: true
+      - name: Guardar
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts public/data
+          git diff --cached --quiet || (git commit -m "Modelos nuevos: fichas, ofertas y fotos para revisar" && git pull --rebase && git push)

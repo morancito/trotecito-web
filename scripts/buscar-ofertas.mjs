@@ -7,6 +7,8 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { leer, traer, dormir } from "./tiendas.mjs";
 
 const TIENDAS = [
+  { nombre: "Dexter", url: "https://www.dexter.com.ar" },
+  { nombre: "Sporting", url: "https://www.sporting.com.ar" },
   { nombre: "Moov", url: "https://www.moov.com.ar" },
   { nombre: "Gostore", url: "https://gostore.com.ar" },
   { nombre: "TodoTrail", url: "https://todotrail.com.ar" },
@@ -15,7 +17,10 @@ const TIENDAS = [
 const PAUSA = 800, PAUSA_LENTA = 2500;   // algunas tiendas frenan si se consulta rápido
 async function conReintento(f) { try { return await f(); } catch (e) { if (!/429|503/.test(e.message)) throw e; await dormir(20000); return f(); } }
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));
-const elegidas = process.argv.slice(2).map(x => x.toLowerCase());
+/* --borradores: busca solo los modelos nuevos (en borrador). Sin nombres de tienda: todas, salvo las que ya están cargadas a mano (Dexter, Sporting) */
+const soloBorradores = process.argv.includes("--borradores");
+const elegidas = process.argv.slice(2).filter(x => !x.startsWith("--")).map(x => x.toLowerCase());
+const modelos = cat.modelos.filter(m => !soloBorradores || m.borrador);
 
 const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/([a-z])(\d)/g, "$1 $2").replace(/(\d)([a-z])/g, "$1 $2").replace(/[^a-z0-9.]+/g, " ").trim();
 const MARCAS = ["nike", "adidas", "asics", "new balance", "saucony", "puma", "brooks", "on", "hoka", "mizuno", "under armour", "salomon", "topper", "reebok", "fila", "diadora", "la sportiva", "nnormal", "dynafit", "merrell", "columbia", "altra"];
@@ -86,12 +91,13 @@ async function buscar(tipo, base, q) {
   return [];
 }
 
-const corridas = TIENDAS.filter(t => !elegidas.length || elegidas.some(x => t.nombre.toLowerCase().startsWith(x)));
+const corridas = TIENDAS.filter(t => elegidas.length ? elegidas.some(x => t.nombre.toLowerCase().startsWith(x)) : soloBorradores || !["Dexter", "Sporting"].includes(t.nombre));
 /* se conserva lo encontrado antes en las tiendas que no se corren esta vez */
 const ARCH = new URL("./ofertas-encontradas.json", import.meta.url);
 let previo = { tiendas: {}, resultados: [] }; try { previo = JSON.parse(readFileSync(ARCH, "utf8")); } catch {}
 const nombres = new Set(corridas.map(t => t.nombre));
-const salida = { fecha: new Date().toISOString(), tiendas: Object.fromEntries(Object.entries(previo.tiendas).filter(([k]) => !nombres.has(k))), resultados: previo.resultados.filter(r => !nombres.has(r.tienda)) };
+const nuevos = new Set(modelos.map(m => m.slug));
+const salida = { fecha: new Date().toISOString(), tiendas: Object.fromEntries(Object.entries(previo.tiendas).filter(([k]) => !nombres.has(k))), resultados: previo.resultados.filter(r => !nombres.has(r.tienda) || !nuevos.has(r.slug)) };
 for (const ti of corridas) {
   let tipo;
   try { tipo = await plataforma(ti.url); } catch (e) { salida.tiendas[ti.nombre] = { error: "no abre: " + e.message }; console.warn(`✗ ${ti.nombre}: ${e.message}`); continue; }
@@ -99,7 +105,7 @@ for (const ti of corridas) {
   const pausa = /gostore/.test(ti.url) ? PAUSA_LENTA : PAUSA;
   console.log(`\n== ${ti.nombre} (${tipo})`);
   if (tipo === "desconocida") continue;
-  for (const m of cat.modelos) {
+  for (const m of modelos) {
     const q = `${m.mod} ${m.ver}`.replace(/^(Gel-|Fresh Foam X |FuelCell )/, "").trim();
     let cands = [];
     try { cands = await conReintento(() => buscar(tipo, ti.url, q)); salida.tiendas[ti.nombre].buscados++; }

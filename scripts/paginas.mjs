@@ -52,7 +52,7 @@ writeFileSync(new URL("404.html", DIST), cabecera(plantilla, { titulo: "No encon
 
 /* una página por modelo */
 const urls = [SITIO + BASE];
-for (const m of cat.modelos) {
+for (const m of cat.modelos.filter(x => !x.borrador)) {
   const t = vigentes(m), min = t[0]?.precio, max = t[t.length - 1]?.precio, n = nombre(m);
   const url = abs(`zapa/${m.slug}/`);
   const img = existsSync(new URL(`../public/og/${m.slug}.jpg`, import.meta.url)) ? abs(`og/${m.slug}.jpg`) : m.fotos?.[0] ? abs(m.fotos[0]) : abs("og/trotecito.jpg");
@@ -98,4 +98,4 @@ ${urls.map(u => `  <url><loc>${esc(u)}</loc></url>`).join("\n")}
 </urlset>
 `);
 writeFileSync(new URL("robots.txt", DIST), `User-agent: *\nAllow: /\nDisallow: ${BASE}admin.html\n\nSitemap: ${SITIO + BASE}sitemap.xml\n`);
-console.log(`Páginas: ${cat.modelos.length} fichas + portada, sitemap y 404 (${SITIO}).`);
+console.log(`Páginas: ${urls.length - 1} fichas + portada, sitemap y 404 (${SITIO}).`);

@@ -86,8 +86,13 @@ async function buscar(tipo, base, q) {
   return [];
 }
 
-const salida = { fecha: new Date().toISOString(), tiendas: {}, resultados: [] };
-for (const ti of TIENDAS.filter(t => !elegidas.length || elegidas.includes(t.nombre.toLowerCase()))) {
+const corridas = TIENDAS.filter(t => !elegidas.length || elegidas.some(x => t.nombre.toLowerCase().startsWith(x)));
+/* se conserva lo encontrado antes en las tiendas que no se corren esta vez */
+const ARCH = new URL("./ofertas-encontradas.json", import.meta.url);
+let previo = { tiendas: {}, resultados: [] }; try { previo = JSON.parse(readFileSync(ARCH, "utf8")); } catch {}
+const nombres = new Set(corridas.map(t => t.nombre));
+const salida = { fecha: new Date().toISOString(), tiendas: Object.fromEntries(Object.entries(previo.tiendas).filter(([k]) => !nombres.has(k))), resultados: previo.resultados.filter(r => !nombres.has(r.tienda)) };
+for (const ti of corridas) {
   let tipo;
   try { tipo = await plataforma(ti.url); } catch (e) { salida.tiendas[ti.nombre] = { error: "no abre: " + e.message }; console.warn(`✗ ${ti.nombre}: ${e.message}`); continue; }
   salida.tiendas[ti.nombre] = { tipo, pista, buscados: 0, encontrados: 0, errores: [] };
@@ -113,5 +118,5 @@ for (const ti of TIENDAS.filter(t => !elegidas.length || elegidas.includes(t.nom
     }
   }
 }
-writeFileSync(new URL("./ofertas-encontradas.json", import.meta.url), JSON.stringify(salida, null, 1) + "\n");
+writeFileSync(ARCH, JSON.stringify(salida, null, 1) + "\n");
 console.log(`\nListo: ${salida.resultados.length} ofertas encontradas.`);

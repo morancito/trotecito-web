@@ -22,7 +22,12 @@ export const ordenar = arr => [...new Set(arr)].sort((a, b) => parseFloat(a) - p
 export const num = v => (v == null || v === "" ? null : Math.round(parseFloat(String(v).replace(/[^\d.]/g, ""))));
 const desescapar = s => s.replace(/&quot;/g, '"').replace(/&#34;/g, '"').replace(/&amp;/g, "&").replace(/&#39;/g, "'");
 const cuotasDe = texto => +((texto.match(/Cuotas habituales\s*(\d+)\s*Cuotas sin inter/i) || texto.match(/(\d+)\s*cuotas sin inter[eé]s/i) || [])[1] || 0);
-const conTalles = (lista) => { const t = ordenar(lista.flatMap(talleAR)); return t.length ? { talles: t, sistema: "AR" } : {}; };
+/* primero numeración argentina; si la tienda usa la de EE. UU. ("US 9 - 27cm"), se guarda como US */
+const talleUS = v => { const m = String(v).match(/\bUS\s*(\d{1,2}(?:[.,]5)?)\b/i); return m ? [m[1].replace(",", ".")] : []; };
+const conTalles = (lista) => {
+  const t = ordenar(lista.flatMap(talleAR)); if (t.length) return { talles: t, sistema: "AR" };
+  const u = ordenar(lista.flatMap(talleUS)); return u.length ? { talles: u, sistema: "US" } : {};
+};
 
 /* ---------- VTEX ---------- */
 async function vtex(url) {
@@ -85,7 +90,7 @@ function tiendanube(h, texto) {
   const disp = vs.filter(v => v.available !== false && (v.stock == null || v.stock > 0));
   if (!disp.length) return { sinStock: true };
   const o = disp.sort((a, b) => a.price_number - b.price_number)[0];
-  const talle = v => [v.option0, v.option1, v.option2].find(x => x != null && talleAR(x).length) || "";
+  const talle = v => [v.option0, v.option1, v.option2].find(x => x != null && (talleAR(x).length || talleUS(x).length)) || "";
   const antes = num(o.compare_at_price_number);
   const tall = conTalles(disp.map(talle));
   /* si no reconocemos los talles, dejamos una muestra de cómo los nombra la tienda (solo la usa el buscador para revisar) */

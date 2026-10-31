@@ -218,10 +218,13 @@ input[type="range"] { width: 100%; accent-color: var(--rojo); margin: 14px 0 4px
 .sil-sole { fill: none; stroke: #141A2E; stroke-width: 6; stroke-linecap: round; }
 .bib-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 2px; flex: 1; }
 .bib h3 { font-size: 30px; line-height: .9; margin: 0; }
-.bib-foot { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-top: auto; padding-top: 12px; }
-.bib-uso { font-size: 13px; font-weight: 600; color: var(--muted); }
-.bib-p { font-family: var(--display); font-stretch: 75%; font-weight: 900; font-size: 26px; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.bib-p small { font-family: var(--body); font-stretch: 100%; font-weight: 600; font-size: 12px; color: var(--muted); margin-right: 4px; }
+/* pie de la tarjeta: uso a la izquierda; a la derecha, el detalle (talle, "desde") arriba y el precio abajo, siempre alineados */
+.bib-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; margin-top: auto; padding-top: 12px; }
+.bib-uso { flex: none; font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap; line-height: 1.2; padding-bottom: 3px; }
+.bib-p { display: flex; flex-direction: column; align-items: flex-end; min-width: 0; text-align: right;
+  font-family: var(--display); font-stretch: 75%; font-weight: 900; font-size: 26px; line-height: 1; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.bib-p small { display: block; margin: 0 0 3px; font-family: var(--body); font-stretch: 100%; font-weight: 600; font-size: 12px; line-height: 1.25; color: var(--muted); white-space: nowrap; }
+.bib-pp i { font-style: normal; font-family: var(--body); font-stretch: 100%; font-weight: 600; font-size: 12px; color: var(--muted); margin-right: 5px; }
 .pronto { font-size: 14px; font-weight: 700; color: var(--muted); }
 .cmp { position: absolute; top: 46px; right: 10px; width: 36px; height: 36px; border-radius: 50%; border: 2px solid #141A2E; background: #fff; color: #141A2E;
   font-weight: 900; font-size: 20px; line-height: 1; cursor: pointer; display: grid; place-items: center; padding: 0; }

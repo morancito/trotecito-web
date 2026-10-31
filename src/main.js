@@ -261,7 +261,8 @@ $("#activos").onclick = e => { const b = e.target.closest("button[data-x]"); if 
 function precioTarjeta(d) {
   if (d.sinTalle) return `<span class="pronto">Sin talle ${TALLE}</span>`;
   if (d.min) { const t = d.tiendas[0], n = t.nota, e = estadoTalle(t);
-    return `<span class="bib-p"><small>${TALLE ? (e ? `<em class="t-si">✓ talle ${TALLE}</em> · ` : `<em class="t-nd">talle ${TALLE} sin confirmar</em> · `) : pocosTalles(t) ? `<em class="t-nd">quedan pocos talles</em> · ` : !GEN && (n === "Hombre" || n === "Mujer") ? n.toLowerCase() + " · " : ""}desde</small>${fmt(d.min)}</span>`; }
+    const meta = TALLE ? (e ? `<em class="t-si">✓ talle ${TALLE}</em>` : `<em class="t-nd">talle ${TALLE} sin confirmar</em>`) : pocosTalles(t) ? `<em class="t-nd">quedan pocos talles</em>` : !GEN && (n === "Hombre" || n === "Mujer") ? n.toLowerCase() : "";
+    return `<span class="bib-p">${meta ? `<small>${meta}</small>` : ""}<span class="bib-pp"><i>desde</i>${fmt(d.min)}</span></span>`; }
   return d.otro ? `<span class="pronto">Solo talles de ${d.otro.gen.toLowerCase()}</span>` : `<span class="pronto">Pronto</span>`;
 }
 function tarjeta(d) {

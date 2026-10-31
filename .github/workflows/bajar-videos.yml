@@ -1,0 +1,37 @@
+name: Bajar videos de fondo
+
+# Baja videos de stock con licencia libre (Mixkit) a scripts/videos/ para elegir y procesar el fondo de la portada.
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "IDs de videos de Mixkit separados por espacio"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bajar
+        env:
+          IDS: ${{ inputs.ids }}
+        run: |
+          mkdir -p scripts/videos
+          for id in $IDS; do
+            case "$id" in (*[!0-9]*) echo "id inválido: $id"; continue;; esac
+            for q in 1080 720 360; do
+              if curl -fsSL -A "Mozilla/5.0 (compatible; TrotecitoBot/1.0)" -o "scripts/videos/$id.mp4" "https://assets.mixkit.co/videos/$id/$id-$q.mp4"; then echo "$id: $q ok"; break; fi
+            done
+            curl -fsSL -o "scripts/videos/$id.jpg" "https://assets.mixkit.co/videos/$id/$id-thumb-720-0.jpg" || true
+          done
+          ls -la scripts/videos
+      - name: Guardar
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f scripts/videos
+          git diff --cached --quiet || (git commit -m "Videos de fondo para elegir" && git pull --rebase && git push)

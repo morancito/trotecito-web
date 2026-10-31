@@ -2544,75 +2544,6 @@
    ]
   },
   {
-   "m": "Topper",
-   "mod": "Fast",
-   "ver": "2.0",
-   "tipo": "Neutra",
-   "uso": "Iniciación",
-   "esp": "T-Cushion (EVA)",
-   "pl": "Sin placa",
-   "tiendas": [
-    {
-     "tienda": "Sporting",
-     "precio": 84999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.sporting.com.ar/zapatillas-topper-fast-2-0-unisex-225860-000/p",
-     "fecha": "30/10/2026",
-     "nota": "Unisex",
-     "talles": [
-      "35",
-      "36",
-      "37",
-      "38",
-      "39",
-      "40",
-      "41",
-      "42",
-      "43",
-      "44",
-      "45",
-      "46"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Topper",
-     "precio": 84999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.topper.com.ar/zapatillas-fast-2-0-025860/p",
-     "fecha": "30/10/2026",
-     "antes": 86900,
-     "nota": "Hombre",
-     "talles": [
-      "35",
-      "37",
-      "42",
-      "43",
-      "44",
-      "45"
-     ],
-     "sistema": "AR"
-    }
-   ],
-   "colores": [],
-   "id": 37,
-   "slug": "topper-fast-2-0",
-   "fotos": [
-    "fotos/topper-fast-2-0/1.webp",
-    "fotos/topper-fast-2-0/2.webp",
-    "fotos/topper-fast-2-0/3.webp"
-   ],
-   "ar": true,
-   "terreno": "Asfalto",
-   "corredor": {
-    "nivel": "Principiante",
-    "ritmo": "6:00 min/km o más lento",
-    "peso": "Hasta 75 kg",
-    "distancia": "Hasta 10K"
-   },
-   "evitar": "hacés fondos largos o corrés rápido: es una zapa básica."
-  },
-  {
    "id": 38,
    "slug": "on-cloudmonster-3",
    "tiendas": [
@@ -4670,56 +4601,6 @@
     "fotos/puma-velocity-nitro-5/2.webp",
     "fotos/puma-velocity-nitro-5/3.webp",
     "fotos/puma-velocity-nitro-5/4.webp"
-   ]
-  },
-  {
-   "id": 67,
-   "slug": "topper-wind-5",
-   "tiendas": [
-    {
-     "tienda": "Topper",
-     "precio": 72999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.topper.com.ar/wind-5-25787-1/p",
-     "fecha": "30/10/2026",
-     "antes": 79200,
-     "nota": "Hombre",
-     "talles": [
-      "35",
-      "36",
-      "37",
-      "38",
-      "39",
-      "40",
-      "41",
-      "42",
-      "43",
-      "44",
-      "45"
-     ],
-     "sistema": "AR"
-    }
-   ],
-   "colores": [],
-   "ar": true,
-   "m": "Topper",
-   "mod": "Wind",
-   "ver": "5",
-   "tipo": "Neutra",
-   "uso": "Iniciación",
-   "terreno": "Asfalto",
-   "pl": "Sin placa",
-   "esp": "EVA",
-   "corredor": {
-    "nivel": "Principiante",
-    "ritmo": "6:00 min/km o más lento",
-    "peso": "Hasta 75 kg",
-    "distancia": "Hasta 10K"
-   },
-   "evitar": "hacés fondos largos o corrés rápido: es una zapa básica.",
-   "fotos": [
-    "fotos/topper-wind-5/1.webp",
-    "fotos/topper-wind-5/2.webp"
    ]
   },
   {

@@ -37,7 +37,6 @@ Nombres de carpeta:
   puma-velocity-nitro-4
   puma-deviate-nitro-4
   puma-magmax-nitro-2
-  topper-fast-2-0
   on-cloudmonster-3
   on-cloudsurfer-next
   on-cloudrunner-3
@@ -67,7 +66,6 @@ Nombres de carpeta:
   adidas-adizero-takumi-sen-10
   puma-foreverrun-nitro-2
   puma-velocity-nitro-5
-  topper-wind-5
   nike-pegasus-trail-5-gtx
   nike-kiger-9
   nike-zegama-2

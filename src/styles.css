@@ -612,3 +612,7 @@ a.puerta:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--b
   .hero-bg video { object-position: center 35%; }
   .hero-bg::after { background: linear-gradient(180deg, rgba(16, 26, 70, .55) 0%, rgba(20, 38, 96, .7) 40%, rgba(14, 20, 46, .86) 100%); }
 }
+
+.foot-contacto { margin-top: 18px !important; font-size: 15px !important; }
+.foot-contacto a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.foot-contacto a:hover { color: var(--celeste); }

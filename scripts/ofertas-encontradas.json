@@ -1,157 +1,50 @@
 {
- "fecha": "2026-10-31T01:03:58.925Z",
+ "fecha": "2026-10-31T01:10:06.439Z",
  "tiendas": {
-  "Moov": {
-   "tipo": "sfcc",
-   "buscados": 71,
-   "encontrados": 4,
-   "errores": []
-  },
   "Gostore": {
    "tipo": "magento",
-   "buscados": 40,
-   "encontrados": 15,
-   "errores": [
-    "asics-gel-nimbus-27: búsqueda HTTP 429",
-    "asics-gt-2000-14: búsqueda HTTP 429",
-    "asics-gel-cumulus-27: búsqueda HTTP 429",
-    "asics-magic-speed-4: búsqueda HTTP 429",
-    "asics-metaspeed-sky: búsqueda HTTP 429",
-    "new-balance-fresh-foam-x-880-v15: búsqueda HTTP 429",
-    "saucony-guide-18: búsqueda HTTP 429",
-    "saucony-endorphin-pro-5: búsqueda HTTP 429",
-    "puma-velocity-nitro-4: búsqueda HTTP 429",
-    "puma-deviate-nitro-4: búsqueda HTTP 429",
-    "topper-fast-2-0: búsqueda HTTP 429",
-    "on-cloudmonster-3: búsqueda HTTP 429",
-    "on-cloudboom-max: búsqueda HTTP 429",
-    "brooks-ghost-15: búsqueda HTTP 429",
-    "under-armour-velociti-3: búsqueda HTTP 429",
-    "under-armour-infinite-elite: búsqueda HTTP 429",
-    "saucony-endorphin-elite-2: búsqueda HTTP 429",
-    "asics-gel-excite-11: búsqueda HTTP 429",
-    "asics-dynablast-5: búsqueda HTTP 429",
-    "nike-pegasus-41: búsqueda HTTP 429",
-    "nike-quest-6: búsqueda HTTP 429",
-    "nike-revolution-8: búsqueda HTTP 429",
-    "adidas-supernova-stride-2: búsqueda HTTP 429",
-    "adidas-ultraboost-5: búsqueda HTTP 429",
-    "puma-foreverrun-nitro-2: búsqueda HTTP 429",
-    "puma-velocity-nitro-5: búsqueda HTTP 429",
-    "nike-pegasus-trail-5-gtx: búsqueda HTTP 429",
-    "nike-kiger-9: búsqueda HTTP 429",
-    "asics-gel-trabuco-13: búsqueda HTTP 429",
-    "adidas-terrex-agravic-4: búsqueda HTTP 429",
-    "on-cloudultra-3: búsqueda HTTP 429"
-   ]
+   "pista": "gostore.com.ar | static.cloudflareinsights.com",
+   "buscados": 71,
+   "encontrados": 25,
+   "errores": []
   },
   "TodoTrail": {
    "tipo": "tiendanube",
+   "pista": "nsk-cdn-static.tiendanube.com | www.googletagmanager.com | static.cloudflareinsights.com",
    "buscados": 71,
-   "encontrados": 4,
-   "errores": []
-  },
-  "Naka Outdoors": {
-   "tipo": "desconocida",
-   "buscados": 0,
-   "encontrados": 0,
+   "encontrados": 2,
    "errores": []
   }
  },
  "resultados": [
   {
-   "slug": "on-cloudrunner-3",
-   "modelo": "On Cloudrunner 3",
-   "tienda": "Moov",
-   "nombre": "zapatillas on cloudrunner 3 mujer",
-   "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10054-723.html",
-   "nota": "Mujer",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 2,
-   "sinStock": false,
-   "talles": [
-    "36",
-    "37",
-    "38",
-    "38.5",
-    "39"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adistar-5",
-   "modelo": "Adidas Adistar 5",
-   "tienda": "Moov",
-   "nombre": "zapatillas adidas adistar control 5 hombre",
-   "url": "https://www.moov.com.ar/zapatillas-adidas-adistar-control-5-hombre/ADKI6121.html",
+   "slug": "asics-gel-nimbus-27",
+   "modelo": "Asics Gel-Nimbus 27",
+   "tienda": "Gostore",
+   "nombre": "Gel - Nimbus 27 M",
+   "url": "https://gostore.com.ar/act000024.html",
    "nota": "Hombre",
-   "precio": 269999,
+   "precio": 275000,
    "antes": null,
-   "cuotas": 2,
-   "sinStock": false,
+   "cuotas": 6,
    "talles": [
-    "35.5",
-    "36",
-    "36.5",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "39.5",
-    "40",
     "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
     "44"
    ],
    "sistema": "AR"
   },
   {
-   "slug": "adidas-adistar-5",
-   "modelo": "Adidas Adistar 5",
-   "tienda": "Moov",
-   "nombre": "zapatillas adidas adistar control 5 mary jane mujer malla",
-   "url": "https://www.moov.com.ar/zapatillas-adidas-adistar-control-5-mary-jane-mujer-malla/ADLA1824.html",
-   "nota": "Mujer",
-   "precio": 159999,
-   "antes": 199999,
-   "cuotas": 2,
-   "sinStock": false,
-   "talles": [
-    "34.5",
-    "35.5",
-    "36",
-    "36.5",
-    "37.5",
-    "38.5",
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adistar-5",
-   "modelo": "Adidas Adistar 5",
-   "tienda": "Moov",
-   "nombre": "zapatillas adidas adistar control 5 malla",
-   "url": "https://www.moov.com.ar/zapatillas-adidas-adistar-control-5-malla/ADLA4063.html",
-   "nota": "",
-   "precio": 269999,
+   "slug": "asics-metaspeed-sky",
+   "modelo": "Asics Metaspeed Sky",
+   "tienda": "Gostore",
+   "nombre": "Metaspeed SKY M",
+   "url": "https://gostore.com.ar/zapatilla-asics-metaspeed-sky-act000011104.html",
+   "nota": "Hombre",
+   "precio": 399000,
    "antes": null,
-   "cuotas": 2,
-   "sinStock": false,
+   "cuotas": 6,
    "talles": [
-    "35.5",
-    "36",
-    "36.5",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "39.5",
-    "40"
+    "42.5"
    ],
    "sistema": "AR"
   },
@@ -220,6 +113,61 @@
    "sistema": "AR"
   },
   {
+   "slug": "saucony-endorphin-pro-5",
+   "modelo": "Saucony Endorphin Pro 5",
+   "tienda": "Gostore",
+   "nombre": "Endorphin Pro 5 W",
+   "url": "https://gostore.com.ar/sat000096556-endorphin-pro-5-w-black-shock.html",
+   "nota": "Mujer",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-5",
+   "modelo": "Saucony Endorphin Pro 5",
+   "tienda": "Gostore",
+   "nombre": "Endorphin Pro 5 M",
+   "url": "https://gostore.com.ar/sat000090631-endorphin-pro-5-m-citron-black.html",
+   "nota": "Hombre",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudmonster-3",
+   "modelo": "On Cloudmonster 3",
+   "tienda": "Gostore",
+   "nombre": "Cloudmonster 3 M",
+   "url": "https://gostore.com.ar/zapatillas-on-cloudmonster-3-hombre-ont000179.html",
+   "nota": "Hombre",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
    "slug": "on-cloudsurfer-next",
    "modelo": "On Cloudsurfer Next",
    "tienda": "Gostore",
@@ -268,6 +216,54 @@
     "37",
     "37.5",
     "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "brooks-ghost-15",
+   "modelo": "Brooks Ghost 15",
+   "tienda": "Gostore",
+   "nombre": "Ghost 15 W",
+   "url": "https://gostore.com.ar/ghost-15-w-606-br1012007044.html",
+   "nota": "Mujer",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "36.5",
+    "37",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "brooks-ghost-15",
+   "modelo": "Brooks Ghost 15",
+   "tienda": "Gostore",
+   "nombre": "Ghost 15 M",
+   "url": "https://gostore.com.ar/ghost-15-m-004-br1011007024.html",
+   "nota": "Hombre",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "40.5",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "44",
+    "44.5",
+    "45"
    ],
    "sistema": "AR"
   },
@@ -360,28 +356,6 @@
    "sistema": "AR"
   },
   {
-   "slug": "brooks-hyperion",
-   "modelo": "Brooks Hyperion",
-   "tienda": "Gostore",
-   "nombre": "Hyperion Tempo M",
-   "url": "https://gostore.com.ar/hyperion-tempo-m-767-br1031002831.html",
-   "nota": "Hombre",
-   "precio": 209999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "44.5",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "under-armour-infinite-pro",
    "modelo": "Under Armour Infinite Pro",
    "tienda": "Gostore",
@@ -404,6 +378,50 @@
     "44.5",
     "45",
     "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-elite",
+   "modelo": "Under Armour Infinite Elite",
+   "tienda": "Gostore",
+   "nombre": "Infinite Elite M",
+   "url": "https://gostore.com.ar/ua-infinite-elite-uat000003.html",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-elite",
+   "modelo": "Under Armour Infinite Elite",
+   "tienda": "Gostore",
+   "nombre": "Infinite Elite W",
+   "url": "https://gostore.com.ar/ua-u-velociti-elite-2-eis-uat000001.html",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "36.5",
+    "37",
+    "37.5",
+    "38"
    ],
    "sistema": "AR"
   },
@@ -460,13 +478,41 @@
    "sistema": "AR"
   },
   {
-   "slug": "adidas-adizero-sl-2",
-   "modelo": "Adidas Adizero SL 2",
-   "tienda": "TodoTrail",
-   "nombre": "Chaleco Hidratacion Patagonia Slope Runner 4L // Incluye 2 Softflask Hydrapack",
-   "url": "https://todotrail.com.ar/productos/chaleco-hidratacion-patagonia-slope-runner-4l-incluye-2-softflask-hydrapack/",
-   "nota": "",
-   "sinStock": true
+   "slug": "on-cloudultra-3",
+   "modelo": "On Cloudultra 3",
+   "tienda": "Gostore",
+   "nombre": "Cloudultra 3 M",
+   "url": "https://gostore.com.ar/ont000186401-cloudultra-3-m-3mf30234-788.html",
+   "nota": "Hombre",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudultra-3",
+   "modelo": "On Cloudultra 3",
+   "tienda": "Gostore",
+   "nombre": "Cloudultra 3 W",
+   "url": "https://gostore.com.ar/ont000187401-cloudultra-3-f-3wf30114-882.html",
+   "nota": "Mujer",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
   },
   {
    "slug": "saucony-triumph-22",
@@ -477,7 +523,10 @@
    "nota": "Mujer",
    "precio": 169999,
    "antes": 219999,
-   "cuotas": 6
+   "cuotas": 6,
+   "_muestra": [
+    "US 8.5 - 25cm"
+   ]
   },
   {
    "slug": "saucony-peregrine-15",
@@ -488,16 +537,13 @@
    "nota": "Hombre",
    "precio": 151999,
    "antes": 189999,
-   "cuotas": 6
-  },
-  {
-   "slug": "saucony-peregrine-15",
-   "modelo": "Saucony Peregrine 15",
-   "tienda": "TodoTrail",
-   "nombre": "Bolso Saucony Peregrine Duffle - 50lts",
-   "url": "https://todotrail.com.ar/productos/bolso-saucony-peregrine-duffle-50lts-y15ib/",
-   "nota": "",
-   "sinStock": true
+   "cuotas": 6,
+   "_muestra": [
+    "US 9 - 27cm",
+    "US 9.5 - 27,5cm",
+    "US 10 - 28cm",
+    "US 10.5 - 28,5cm"
+   ]
   }
  ]
 }

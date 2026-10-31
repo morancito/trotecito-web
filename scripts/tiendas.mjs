@@ -87,7 +87,10 @@ function tiendanube(h, texto) {
   const o = disp.sort((a, b) => a.price_number - b.price_number)[0];
   const talle = v => [v.option0, v.option1, v.option2].find(x => x != null && talleAR(x).length) || "";
   const antes = num(o.compare_at_price_number);
-  return { precio: num(o.price_number), antes: antes > o.price_number * 1.01 ? antes : null, cuotas: cuotasDe(texto), ...conTalles(disp.map(talle)) };
+  const tall = conTalles(disp.map(talle));
+  /* si no reconocemos los talles, dejamos una muestra de cómo los nombra la tienda (solo la usa el buscador para revisar) */
+  if (!tall.talles) tall._muestra = disp.slice(0, 4).map(v => [v.option0, v.option1, v.option2].filter(x => x != null).join(" / "));
+  return { precio: num(o.price_number), antes: antes > o.price_number * 1.01 ? antes : null, cuotas: cuotasDe(texto), ...tall };
 }
 
 /* ---------- Shopify: el producto en JSON en <url>.js ---------- */

@@ -12,15 +12,16 @@ const TIENDAS = [
   { nombre: "TodoTrail", url: "https://todotrail.com.ar" },
   { nombre: "Naka Outdoors", url: "https://www.nakaoutdoors.com.ar" },
 ];
-const PAUSA = 800;
+const PAUSA = 800, PAUSA_LENTA = 2500;   // algunas tiendas frenan si se consulta rápido
+async function conReintento(f) { try { return await f(); } catch (e) { if (!/429|503/.test(e.message)) throw e; await dormir(20000); return f(); } }
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));
 const elegidas = process.argv.slice(2).map(x => x.toLowerCase());
 
 const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/([a-z])(\d)/g, "$1 $2").replace(/(\d)([a-z])/g, "$1 $2").replace(/[^a-z0-9.]+/g, " ").trim();
 const MARCAS = ["nike", "adidas", "asics", "new balance", "saucony", "puma", "brooks", "on", "hoka", "mizuno", "under armour", "salomon", "topper", "reebok", "fila", "diadora", "la sportiva", "nnormal", "dynafit", "merrell", "columbia", "altra"];
 /* palabras que indican otra versión del modelo: si aparecen en la tienda y no en nuestro modelo, no es el mismo */
-const VARIANTES = ["trail", "gtx", "gore", "plus", "premium", "max", "elite", "pro", "tr", "ultra", "mid", "speed", "sl", "lite", "flow", "next", "rise", "stride", "hyper", "prime", "se", "luxe", "boa", "evo", "x"];
-const NO_ZAPA = /\b(buzo|remera|media|medias|short|gorra|mochila|campera|calza|musculosa|ojotas?|sandalia|bota|botin|kids|nino|nina|junior|jr|gs|ps|td|bebe)\b/;
+const VARIANTES = ["trail", "gtx", "gore", "plus", "premium", "max", "elite", "pro", "tr", "ultra", "mid", "speed", "sl", "lite", "flow", "next", "rise", "stride", "hyper", "prime", "se", "luxe", "boa", "evo", "x", "control", "tempo", "mary", "jane", "shield", "winter", "spike", "spikes", "atr"];
+const NO_ZAPA = /\b(buzo|remera|media|medias|short|gorra|gorro|visera|mochila|bolso|duffle|chaleco|bidon|rinonera|cinturon|guantes|polainas|campera|calza|musculosa|ojotas?|sandalia|bota|botin|kids|nino|nina|junior|jr|gs|ps|td|bebe)\b/;
 const generoDe = s => { const t = ` ${norm(s)} `; return / (mujer|women|womens|wmns|w|dama) /.test(t) ? "Mujer" : / (hombre|men|mens|m|caballero) /.test(t) ? "Hombre" : / unisex /.test(t) ? "Unisex" : ""; };
 
 function coincide(m, nombre, url) {
@@ -31,7 +32,7 @@ function coincide(m, nombre, url) {
   const tokens = norm(`${m.mod} ${m.ver}`).split(" ").filter(x => x && !["gel", "fresh", "foam", "fuelcell", "adizero", "terrex", "zoom", "air"].includes(x));
   for (const k of tokens) {
     if (/^\d+(\.\d)?$/.test(k)) { if (!new RegExp(`[^0-9.]${k.replace(".", "\\.")}[^0-9]`).test(t)) return false; }
-    else if (!t.includes(` ${k} `) && !t.includes(` ${k}`)) return false;
+    else if (!t.includes(` ${k} `)) return false;
   }
   if (VARIANTES.some(v => !tokens.includes(v) && t.includes(` ${v} `) && !norm(m.mod).split(" ").includes(v))) return false;
   /* otro número de versión pegado al nombre (ej. Pegasus 40 cuando buscamos 41) */
@@ -41,8 +42,10 @@ function coincide(m, nombre, url) {
 }
 
 /* ---------- búsqueda según la plataforma de la tienda ---------- */
+let pista = "";
 async function plataforma(base) {
   const h = await traer(base + "/");
+  pista = [(h.match(/<meta[^>]+name="generator"[^>]+content="([^"]+)"/i) || [])[1], ...new Set([...h.matchAll(/<script[^>]+src="https?:\/\/([^/"]+)/g)].map(x => x[1]))].filter(Boolean).slice(0, 12).join(" | ");
   if (/demandware/i.test(h)) return "sfcc";
   if (/x-magento-init|Magento_/.test(h)) return "magento";
   if (/tiendanube|nuvemshop|LS\.store/i.test(h)) return "tiendanube";
@@ -87,25 +90,26 @@ const salida = { fecha: new Date().toISOString(), tiendas: {}, resultados: [] };
 for (const ti of TIENDAS.filter(t => !elegidas.length || elegidas.includes(t.nombre.toLowerCase()))) {
   let tipo;
   try { tipo = await plataforma(ti.url); } catch (e) { salida.tiendas[ti.nombre] = { error: "no abre: " + e.message }; console.warn(`✗ ${ti.nombre}: ${e.message}`); continue; }
-  salida.tiendas[ti.nombre] = { tipo, buscados: 0, encontrados: 0, errores: [] };
+  salida.tiendas[ti.nombre] = { tipo, pista, buscados: 0, encontrados: 0, errores: [] };
+  const pausa = /gostore/.test(ti.url) ? PAUSA_LENTA : PAUSA;
   console.log(`\n== ${ti.nombre} (${tipo})`);
   if (tipo === "desconocida") continue;
   for (const m of cat.modelos) {
     const q = `${m.mod} ${m.ver}`.replace(/^(Gel-|Fresh Foam X |FuelCell )/, "").trim();
     let cands = [];
-    try { cands = await buscar(tipo, ti.url, q); salida.tiendas[ti.nombre].buscados++; }
-    catch (e) { salida.tiendas[ti.nombre].errores.push(`${m.slug}: búsqueda ${e.message}`); await dormir(PAUSA); continue; }
-    await dormir(PAUSA);
+    try { cands = await conReintento(() => buscar(tipo, ti.url, q)); salida.tiendas[ti.nombre].buscados++; }
+    catch (e) { salida.tiendas[ti.nombre].errores.push(`${m.slug}: búsqueda ${e.message}`); await dormir(pausa); continue; }
+    await dormir(pausa);
     const porGenero = new Map();
     for (const c of cands) { if (!coincide(m, c.nombre, c.url)) continue; const g = generoDe(c.nombre + " " + c.url); if (!porGenero.has(g)) porGenero.set(g, c); }
     for (const [g, c] of porGenero) {
       try {
-        const r = await leer(c.url);
+        const r = await conReintento(() => leer(c.url));
         salida.resultados.push({ slug: m.slug, modelo: `${m.m} ${m.mod} ${m.ver}`.trim(), tienda: ti.nombre, nombre: c.nombre, url: c.url, nota: g, ...r });
         salida.tiendas[ti.nombre].encontrados++;
         console.log(`✓ ${m.slug} · ${g || "?"} · ${r.sinStock ? "sin stock" : "$" + r.precio} · ${c.nombre}`);
       } catch (e) { salida.tiendas[ti.nombre].errores.push(`${m.slug}: ${e.message} (${c.url})`); }
-      await dormir(PAUSA);
+      await dormir(pausa);
     }
   }
 }

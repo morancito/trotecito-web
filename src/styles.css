@@ -483,3 +483,19 @@ footer p { margin: 8px 0 0; color: #CFCFCF; font-size: 17px; }
 .rq-ops.grid { grid-template-columns: repeat(auto-fill, minmax(78px, 1fr)); }
 .rq-ops.grid button { text-align: center; padding: 12px 6px; font-family: var(--mono); font-weight: 500; }
 .rq-ops.grid button:last-child { grid-column: 1 / -1; font-family: var(--body); font-weight: 700; }
+
+/* ---------- sello de marca ---------- */
+.sello { --sc: #141A2E; display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 7px; border-radius: 4px; background: #fff; color: #141A2E;
+  border: 1.5px solid #141A2E; font-family: var(--display); font-stretch: 70%; font-weight: 900; font-size: 15px; line-height: 1; letter-spacing: .02em;
+  text-transform: uppercase; white-space: nowrap; }
+.sello::before { content: ""; width: 9px; height: 9px; border-radius: 2px; background: var(--sc); flex: none; transform: skewX(-12deg); }
+.bib-band .sello { font-size: 14px; padding: 2px 8px 2px 6px; }
+.sello.grande { font-size: 20px; padding: 5px 12px 5px 9px; border-width: 2px; gap: 8px; }
+.sello.grande::before { width: 12px; height: 12px; }
+.f-marca { display: flex; align-items: center; gap: 12px; }
+.rr-body .sello { margin-bottom: 6px; }
+.cmpt thead th .sello { display: inline-flex; margin-bottom: 8px; font-size: 13px; }
+.cmpt thead th a { display: block; }
+#fgMarca .op span .sello { font-size: 14px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sello { border-color: #EEF0F5; } }
+:root[data-theme="dark"] .sello { border-color: #EEF0F5; }

@@ -44,6 +44,10 @@ aplicarGenero();
 const USOS = ["Iniciación", "Rodaje diario", "Rodaje largo", "Ritmo", "Competencia"];
 const UCLS = { "Iniciación": "u-ini", "Rodaje diario": "u-diario", "Rodaje largo": "u-largo", "Ritmo": "u-ritmo", "Competencia": "u-comp" };
 const MARCAS = [...new Set(DATA.map(d => d.m))].sort((a, b) => a.localeCompare(b));
+/* sello de marca: el nombre en la tipografía de Trotecito con un color propio (de nuestra paleta, no el de la marca) */
+const SELLO_C = { Adidas: "#1F3F8F", Asics: "#2F5DB8", Brooks: "#8E1F3F", Hoka: "#C08A1E", "La Sportiva": "#B4532A", "New Balance": "#5B6172",
+  Nike: "#141A2E", On: "#14946A", Puma: "#7E1A36", Salomon: "#3F6B4E", Saucony: "#6A3FA0", "Under Armour": "#2B2F3A" };
+const sello = (m, cls = "") => `<span class="sello ${cls}" style="--sc:${SELLO_C[m] || "#141A2E"}">${esc(m)}</span>`;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
@@ -159,7 +163,7 @@ $("#fpanel").innerHTML = `
   ${grupo("¿Cómo pisás?", [["", "Me da igual"], ["Neutra", "Neutra o supinadora"], ["Estabilidad", "Pronador"]].map(([v, t]) => opc("pis", v, t, "radio")).join(""))}
   ${grupo("¿Cuánto pesás?", [[0, "No filtrar"], ...PESOS].map(([v, t]) => opc("kg", v, t, "radio")).join(""))}
   ${grupo("Amortiguación", AMS.map(a => opc("am", a, a)).join(""))}
-  ${grupo("Marca", MARCAS.map(m => opc("marca", m, esc(m))).join(""), ' id="fgMarca"')}
+  ${grupo("Marca", MARCAS.map(m => opc("marca", m, sello(m))).join(""), ' id="fgMarca"')}
   ${grupo("Más", opc("desc", "1", "Con descuento") + opc("placa", "1", "Con placa"))}
   </div>
   <div class="fp-foot"><button type="button" class="fp-limpiar" id="fpLimpiar">Limpiar</button><button type="button" class="fp-ver" id="fpVer">Ver zapas</button></div>`;
@@ -250,7 +254,7 @@ function tarjeta(d) {
   const on = st.cmp.includes(d.id), dc = desc(d);
   const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
   return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="${zurl(d)}">
-    <div class="bib-band"><span>${esc(d.m)}</span><span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
+    <div class="bib-band">${sello(d.m)}<span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
     <div class="bib-img">${img}${dc >= 0.05 ? `<span class="off">−${Math.round(dc * 100)}%</span>` : ""}</div>
     <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>${d.corredor ? `<p class="bib-perfil">${d.tipo === "Estabilidad" ? "Pronador" : "Neutra"} · ${esc(kgCorto(d))}</p>` : ""}
       <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${precioTarjeta(d)}</div></div>
@@ -330,7 +334,7 @@ function ficha(d) {
   return `<a class="back" href="#catalogo">← Todas las zapas</a>
   <div class="det-grid"><div class="media">${media(d)}</div>
   <div class="info">
-    <p class="kicker">${esc(d.m)} · N° ${pad(d.id)}</p>
+    <p class="kicker f-marca">${sello(d.m, "grande")}<span>N° ${pad(d.id)}</span></p>
     <h1 class="cond">${esc(nombre(d))}</h1>
     <div class="tags">${terr(d) === "Trail" ? `<span class="tag trail">Trail</span>` : ""}<span class="tag uso ${UCLS[d.uso] || ""}">${esc(d.uso)}</span>${pisada(d) ? `<span class="tag">${pisada(d)}</span>` : ""}${conPlaca(d) ? `<span class="tag">Con placa</span>` : ""}</div>
     ${best ? `<div class="buy"><span class="kicker">Mejor precio</span><b class="buy-p">${fmt(best.precio)}</b>
@@ -402,7 +406,7 @@ function comparar() {
   const filas = grupos.flatMap(([g, fs]) => [`<tr class="grp"><th colspan="${ds.length + 1}">${g}</th></tr>`,
     ...fs.map(([k, f]) => `<tr><th>${k}</th>${ds.map(d => `<td>${f(d) || "–"}</td>`).join("")}</tr>`)]).join("");
   return `<a class="back" href="#catalogo">← Todas las zapas</a><h1 class="cmp-h cond">Cara a cara</h1>${perfiles(ds)}
-    <div class="tblwrap"><table class="cmpt"><thead><tr><th></th>${ds.map((d, i) => `<th><a href="${zurl(d)}" style="border-bottom:4px solid ${CC[i]}">${esc(nombre(d))}</a></th>`).join("")}</tr></thead>
+    <div class="tblwrap"><table class="cmpt"><thead><tr><th></th>${ds.map((d, i) => `<th>${sello(d.m)}<a href="${zurl(d)}" style="border-bottom:4px solid ${CC[i]}">${esc(nombre(d))}</a></th>`).join("")}</tr></thead>
     <tbody>${filas}</tbody></table></div>`;
 }
 
@@ -428,7 +432,7 @@ function recoResultado() {
     return `<article class="rr ${i === 0 ? "top" : ""}">
       <div class="rr-et"><b>${esc(p.etiqueta)}</b><span>${esc(p.sub)}</span></div>
       <a class="rr-img" href="${zurl(d)}">${d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}">` : silueta(d)}</a>
-      <div class="rr-body"><p class="kicker">${esc(d.m)}</p><h2 class="cond"><a href="${zurl(d)}">${esc(nombre(d))}</a></h2>
+      <div class="rr-body">${sello(d.m)}<h2 class="cond"><a href="${zurl(d)}">${esc(nombre(d))}</a></h2>
         <div class="rr-p"><b>${fmt(t.precio)}</b><span>en ${esc(t.tienda)}${t.antes > t.precio ? ` · antes ${fmt(t.antes)}` : ""}</span></div>
         <h3>Por qué te la recomendamos</h3>${porque(p.pros.slice(0, 4), "pro")}
         ${p.contras.length ? `<h3>Tené en cuenta</h3>${porque(p.contras.slice(0, 2), "con")}` : ""}

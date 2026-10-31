@@ -17,7 +17,7 @@ let ses = lee(sessionStorage, "tt-s"); if (!ses) { ses = azar(); pone(sessionSto
 
 export function medir(tipo, datos = {}) {
   if (!activo()) return;
-  const cuerpo = { sesion: ses, tipo, ruta: location.hash.slice(1).split("?")[0] || "inicio", datos: { vis, ...datos } };
+  const cuerpo = { sesion: ses, tipo, ruta: (location.pathname.match(/\/zapa\/([^/]+)/) || [])[1] ? "zapa/" + location.pathname.match(/\/zapa\/([^/]+)/)[1] : location.hash.slice(1).split("?")[0] || "inicio", datos: { vis, ...datos } };
   fetch(SUPABASE_URL + "/rest/v1/eventos", {
     method: "POST", keepalive: true,
     headers: { apikey: SUPABASE_KEY, Authorization: "Bearer " + SUPABASE_KEY, "Content-Type": "application/json", Prefer: "return=minimal" },

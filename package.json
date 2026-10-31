@@ -7,7 +7,7 @@
     "dev": "node scripts/fotos.mjs && vite",
     "fotos": "node scripts/fotos.mjs",
     "validar": "node scripts/validar-datos.mjs",
-    "build": "node scripts/fotos.mjs && node scripts/validar-datos.mjs && vite build",
+    "build": "node scripts/fotos.mjs && node scripts/validar-datos.mjs && vite build && node scripts/paginas.mjs",
     "preview": "vite preview",
     "bajar-fotos": "node scripts/bajar-fotos.mjs"
   },

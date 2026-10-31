@@ -53,6 +53,7 @@ const amort = d => { if (!d.talon) return null; let n = 0; AMORT.forEach(([mm], 
 const medidor = a => `<span class="amort" role="img" aria-label="Amortiguación ${a.t}, ${a.n} de 5"><span class="amort-m">${[1, 2, 3, 4, 5].map(k => `<i${k <= a.n ? ' class="on"' : ""}></i>`).join("")}</span><b>${a.t}</b></span>`;
 const kgCorto = d => { const p = d.corredor?.peso || ""; return /cualquier/i.test(p) ? "cualquier peso" : p.toLowerCase(); };
 const src = s => /^https?:/.test(s) ? s : BASE + s;
+const zurl = d => `${BASE}zapa/${d.slug}/`;
 const silCache = {};
 function silueta(d) {
   const H = d.talon || 36, F = d.ante || 28, k = H + "/" + F, P = silCache[k] || (silCache[k] = perfil(H, F));
@@ -61,7 +62,7 @@ function silueta(d) {
 
 /* ---------- hero y cinta ---------- */
 const baratas = DATA.filter(d => d.min).sort((a, b) => a.min - b.min);
-const items = baratas.map(d => `<a href="#m-${d.id}"><b>${esc(nombre(d).toUpperCase())}</b>${fmt(d.min)} <span>en ${esc(d.tiendas[0].tienda)}</span></a><i></i>`).join("");
+const items = baratas.map(d => `<a href="${zurl(d)}"><b>${esc(nombre(d).toUpperCase())}</b>${fmt(d.min)} <span>en ${esc(d.tiendas[0].tienda)}</span></a><i></i>`).join("");
 $("#ticker").innerHTML = `<div class="tk-run">${items}</div><div class="tk-run" aria-hidden="true">${items}</div>`;
 /* velocidad fija (~40 px por segundo) sin importar cuántas zapas haya */
 requestAnimationFrame(() => { const w = $("#ticker .tk-run").scrollWidth; $("#ticker").style.animationDuration = Math.round(w / 40) + "s"; });
@@ -232,7 +233,7 @@ function precioTarjeta(d) {
 function tarjeta(d) {
   const on = st.cmp.includes(d.id), dc = desc(d);
   const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
-  return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="#m-${d.id}">
+  return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="${zurl(d)}">
     <div class="bib-band"><span>${esc(d.m)}</span><span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
     <div class="bib-img">${img}${dc >= 0.05 ? `<span class="off">−${Math.round(dc * 100)}%</span>` : ""}</div>
     <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>${d.corredor ? `<p class="bib-perfil">${d.tipo === "Estabilidad" ? "Pronador" : "Neutra"} · ${esc(kgCorto(d))}</p>` : ""}
@@ -264,10 +265,10 @@ document.addEventListener("click", e => {
   bandeja();
 });
 $("#trayclear").onclick = () => { st.cmp = []; render(); route(); };
-$("#traygo").onclick = () => { location.hash = "comparar"; };
+$("#traygo").onclick = () => ir(BASE + "#comparar");
 
 /* ---------- inicio: búsqueda, atajos y ofertas ---------- */
-const irCatalogo = () => { if (location.hash === "#catalogo") document.getElementById("catalogo").scrollIntoView(); else location.hash = "catalogo"; };
+const irCatalogo = () => { if (location.hash === "#catalogo" && !esFicha()) document.getElementById("catalogo").scrollIntoView(); else ir(BASE + "#catalogo"); };
 const ATAJOS = [
   ["Para arrancar", { uso: ["Iniciación"] }], ["Todos los días", { uso: ["Rodaje diario"] }], ["Fondos largos", { uso: ["Rodaje largo"] }],
   ["Para ir rápido", { uso: ["Ritmo"] }], ["Para competir", { uso: ["Competencia"] }], ["Pronadores", { pis: "Estabilidad" }],
@@ -283,7 +284,7 @@ $("#hbusca").onsubmit = e => { e.preventDefault(); const v = $("#hq").value.trim
 function pintarOfertas() {
 const ofertas = DATA.filter(d => desc(d) >= 0.1 && d.fotos.length).sort((a, b) => desc(b) - desc(a)).slice(0, 4);
 $("#ofertas").innerHTML = ofertas.length ? `<div class="of-h"><span class="kicker">Ofertas de hoy</span><a href="#catalogo" id="ofTodas">Ver todas →</a></div>
-  ${ofertas.map(d => `<a class="of" href="#m-${d.id}"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><span class="of-n"><small>${esc(d.m)}</small><b>${esc(nombre(d))}</b><s>${fmt(d.tiendas[0].antes)}</s></span>
+  ${ofertas.map(d => `<a class="of" href="${zurl(d)}"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><span class="of-n"><small>${esc(d.m)}</small><b>${esc(nombre(d))}</b><s>${fmt(d.tiendas[0].antes)}</s></span>
     <span class="of-p"><em>−${Math.round(desc(d) * 100)}%</em><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("")}` : "";
 $("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); });
 }
@@ -375,7 +376,7 @@ function comparar() {
   const filas = grupos.flatMap(([g, fs]) => [`<tr class="grp"><th colspan="${ds.length + 1}">${g}</th></tr>`,
     ...fs.map(([k, f]) => `<tr><th>${k}</th>${ds.map(d => `<td>${f(d) || "–"}</td>`).join("")}</tr>`)]).join("");
   return `<a class="back" href="#catalogo">← Todas las zapas</a><h1 class="cmp-h cond">Cara a cara</h1>${perfiles(ds)}
-    <div class="tblwrap"><table class="cmpt"><thead><tr><th></th>${ds.map((d, i) => `<th><a href="#m-${d.id}" style="border-bottom:4px solid ${CC[i]}">${esc(nombre(d))}</a></th>`).join("")}</tr></thead>
+    <div class="tblwrap"><table class="cmpt"><thead><tr><th></th>${ds.map((d, i) => `<th><a href="${zurl(d)}" style="border-bottom:4px solid ${CC[i]}">${esc(nombre(d))}</a></th>`).join("")}</tr></thead>
     <tbody>${filas}</tbody></table></div>`;
 }
 
@@ -400,12 +401,12 @@ function recoResultado() {
   const card = (p, i) => { const d = p.d, t = p.t;
     return `<article class="rr ${i === 0 ? "top" : ""}">
       <div class="rr-et"><b>${esc(p.etiqueta)}</b><span>${esc(p.sub)}</span></div>
-      <a class="rr-img" href="#m-${d.id}">${d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}">` : silueta(d)}</a>
-      <div class="rr-body"><p class="kicker">${esc(d.m)}</p><h2 class="cond"><a href="#m-${d.id}">${esc(nombre(d))}</a></h2>
+      <a class="rr-img" href="${zurl(d)}">${d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}">` : silueta(d)}</a>
+      <div class="rr-body"><p class="kicker">${esc(d.m)}</p><h2 class="cond"><a href="${zurl(d)}">${esc(nombre(d))}</a></h2>
         <div class="rr-p"><b>${fmt(t.precio)}</b><span>en ${esc(t.tienda)}${t.antes > t.precio ? ` · antes ${fmt(t.antes)}` : ""}</span></div>
         <h3>Por qué te la recomendamos</h3>${porque(p.pros.slice(0, 4), "pro")}
         ${p.contras.length ? `<h3>Tené en cuenta</h3>${porque(p.contras.slice(0, 2), "con")}` : ""}
-        <div class="rr-acc"><a class="btn fuerte" href="${esc(t.url)}" target="_blank" rel="noopener">Ver en ${esc(t.tienda)} ↗</a><a class="btn" href="#m-${d.id}">Ficha completa</a></div></div></article>`; };
+        <div class="rr-acc"><a class="btn fuerte" href="${esc(t.url)}" target="_blank" rel="noopener">Ver en ${esc(t.tienda)} ↗</a><a class="btn" href="${zurl(d)}">Ficha completa</a></div></div></article>`; };
   return `<a class="back" href="#">← Volver al inicio</a>
   <div class="rr-head"><h1 class="cond">Tus <em>${picks.length}</em> zapas</h1>
     <p class="rr-perfil">${perfilTxt.map(esc).join(" · ")} · <button type="button" data-rehacer>Cambiar respuestas</button></p>
@@ -432,23 +433,36 @@ $("#reco").addEventListener("click", e => {
     pintarReco(); return; }
   if (e.target.closest("[data-atras]")) { paso = Math.max(0, paso - 1); pintarReco(); return; }
   if (e.target.closest("[data-rehacer]")) { paso = 0; medir("reco_inicio", { otra: true }); pintarReco(); return; }
-  if (e.target.closest("[data-cmp3]")) { medir("reco_comparar"); st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); location.hash = "comparar"; return; }
+  if (e.target.closest("[data-cmp3]")) { medir("reco_comparar"); st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); ir(BASE + "#comparar"); return; }
   if (e.target.closest("[data-vertodas]")) { e.preventDefault(); medir("reco_vertodas"); Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
     st.uso.add(resp.uso); if (resp.pis === "Pronadora") st.pis = "Estabilidad"; else if (resp.pis === "Neutra" || resp.pis === "Supinadora") st.pis = "Neutra";
     st.kg = resp.kg >= 90 ? 91 : resp.kg >= 75 ? 89 : 0; if (resp.tope) st.pmax = Math.min(P_MAX, resp.tope);
-    st.terreno = resp.terreno; location.hash = "catalogo"; setTerreno(resp.terreno); }
+    st.terreno = resp.terreno; setTerreno(resp.terreno); ir(BASE + "#catalogo"); }
 });
 document.addEventListener("click", e => { const b = e.target.closest("[data-gen]"); if (!b) return; setGen(b.dataset.gen); route(); });
 
 /* ---------- rutas ---------- */
+/* las fichas viven en /zapa/<modelo>/ (páginas reales que Google indexa); el resto, en la raíz con # */
+const esFicha = () => location.pathname.startsWith(BASE + "zapa/");
+function rutaActual() {
+  if (esFicha()) {
+    const slug = location.pathname.slice((BASE + "zapa/").length).split("/")[0], d = DATA.find(x => x.slug === slug);
+    if (!d) history.replaceState(null, "", BASE);
+    return { d: d || null, h: "" };
+  }
+  const h = location.hash.slice(1), m = h.match(/^m-(\d+)$/);
+  if (m) { const d = DATA.find(x => x.id === +m[1]); history.replaceState(null, "", d ? zurl(d) : BASE); return { d: d || null, h: "" }; }
+  return { d: null, h };
+}
+function ir(url) { if (url !== location.pathname + location.hash) history.pushState(null, "", url); route(); }
 function route() {
-  const h = location.hash.slice(1), m = h.match(/^m-(\d+)$/), d = m && DATA.find(x => x.id === +m[1]);
+  const { d, h } = rutaActual();
   if (visor) { visor.destroy(); visor = null; }
   const reco = h === "tu-zapa";
   $("#home").hidden = !!(d || h === "comparar" || reco); $("#detalle").hidden = !d; $("#comparar").hidden = h !== "comparar"; $("#reco").hidden = !reco;
   medir("vista", d ? { pag: "ficha", slug: d.slug } : h === "comparar" ? { pag: "comparar", slugs: st.cmp.map(id => DATA.find(x => x.id === id)?.slug) } : { pag: reco ? "tu-zapa" : h || "inicio" });
   if (reco && !PREGUNTAS.every(q => resp[q.k] !== undefined)) medir("reco_inicio");
-  if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${nombre(d)} · Trotecito`; window.scrollTo(0, 0); }
+  if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${d.m} ${nombre(d)}: precio en Argentina y ficha técnica · Trotecito`; window.scrollTo(0, 0); }
   else if (reco) { paso = PREGUNTAS.every(q => resp[q.k] !== undefined) ? PREGUNTAS.length : 0; pintarReco(); document.title = "Tu zapa · Trotecito"; }
   else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Trotecito"; window.scrollTo(0, 0); }
   else { document.title = "Trotecito"; render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
@@ -458,10 +472,19 @@ const URL_TIENDA = new Map(DATA.flatMap(d => d.todas.map(t => [t.url, [d, t]])))
 document.addEventListener("click", e => {
   const a = e.target.closest('a[href^="http"]'); if (!a) return;
   const x = URL_TIENDA.get(a.href); if (!x) return;
-  const [d, t] = x, h = location.hash.slice(1);
+  const [d, t] = x, h = esFicha() ? "m-" : location.hash.slice(1);
   medir("tienda_clic", { slug: d.slug, tienda: t.tienda, precio: t.precio, nota: t.nota || "", origen: h === "tu-zapa" ? "recomendador" : h === "comparar" ? "comparar" : /^m-/.test(h) ? "ficha" : "otro", mejor: d.tiendas[0]?.url === t.url });
 }, true);
-document.addEventListener("click", e => { const a = e.target.closest('#reco a[href^="#m-"]'); if (a) medir("reco_ficha", { slug: DATA.find(x => x.id === +a.getAttribute("href").slice(3))?.slug }); }, true);
+document.addEventListener("click", e => { const a = e.target.closest('#reco a[href*="/zapa/"]'); if (a) medir("reco_ficha", { slug: a.getAttribute("href").split("/zapa/")[1].split("/")[0] }); }, true);
 medirVisita();
-addEventListener("hashchange", route);
+/* links internos: se navega sin recargar la página */
+document.addEventListener("click", e => {
+  if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest("a[href]"); if (!a || a.target || a.hasAttribute("download")) return;
+  const raw = a.getAttribute("href"), url = raw.startsWith("#") ? BASE + raw : raw;
+  if (raw === "#" ) { e.preventDefault(); return ir(BASE); }
+  if (!url.startsWith(BASE) || /^(data|fotos|assets)\/|admin\.html/.test(url.slice(BASE.length))) return;
+  e.preventDefault(); ir(url);
+});
+addEventListener("popstate", route);
 route();

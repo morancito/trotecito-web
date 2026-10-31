@@ -460,3 +460,7 @@ footer p { margin: 8px 0 0; color: #CFCFCF; font-size: 17px; }
 @media (max-width: 560px) { .cta-reco b { font-size: 24px; } .rq-ops button { font-size: 16px; padding: 14px 16px; } .nav a { padding: 6px 8px; font-size: 14px; } }
 .lg-w, .nav a { white-space: nowrap; }
 @media (max-width: 440px) { .nav a[href="#aprender"] { display: none; } .top .wrap { gap: 8px; } }
+/* contenido de la ficha que viene en el HTML (para Google), hasta que carga la app */
+.seo img { width: min(100%, 480px); height: auto; border-radius: 18px; background: var(--soft); display: block; margin: 12px 0; }
+.seo h1 { font-size: clamp(56px, 8vw, 104px); line-height: .85; margin: 6px 0 12px; }
+.seo h2 { font-size: 26px; margin: 22px 0 6px; }

@@ -25,6 +25,10 @@ async function traer(url, json = false) {
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return json ? r.json() : r.text();
 }
+/* Talles: se guardan solo los que tienen stock. "38-38.5" (Dexter) vale por los dos. AR = numeración argentina;
+   US = numeración de EE. UU. (New Balance), que no se convierte porque la equivalencia cambia según la marca. */
+const talleAR = v => String(v).trim().replace(",", ".").split(/\s*-\s*/).filter(x => /^\d{2}(\.5)?$/.test(x));
+const ordenar = arr => [...new Set(arr)].sort((a, b) => parseFloat(a) - parseFloat(b));
 const num = v => (v == null || v === "" ? null : Math.round(parseFloat(String(v).replace(/[^\d.]/g, ""))));
 
 async function vtex(url) {
@@ -36,7 +40,10 @@ async function vtex(url) {
   if (!ofertas.length) return { sinStock: true };
   const o = ofertas.sort((a, b) => a.Price - b.Price)[0];
   const cuotas = Math.max(0, ...(o.Installments || []).filter(x => x.InterestRate === 0).map(x => x.NumberOfInstallments));
-  return { precio: num(o.Price), antes: o.ListPrice > o.Price * 1.01 ? num(o.ListPrice) : null, cuotas };
+  /* talle de cada variante (campo "Talle", "Size" o "Tamaño") y si tiene stock */
+  const talles = ordenar(p.items.filter(i => i.sellers.some(s => s.commertialOffer.AvailableQuantity > 0)).flatMap(i => {
+    const k = (i.variations || []).find(v => /talle|size|tama/i.test(v)); return k ? talleAR((i[k] || [])[0] || "") : []; }));
+  return { precio: num(o.Price), antes: o.ListPrice > o.Price * 1.01 ? num(o.ListPrice) : null, cuotas, ...(talles.length ? { talles, sistema: "AR" } : {}) };
 }
 
 function html(h) {
@@ -65,12 +72,31 @@ function html(h) {
   throw new Error("no encontré el precio en la página");
 }
 
-async function leer(url) {
-  if (/\/p\/?$/.test(new URL(url).pathname)) { try { return await vtex(url); } catch (e) { if (!/404/.test(e.message)) throw e; } }
-  return html(await traer(url));
+/* Salesforce (Dexter, New Balance): la página trae los talles, pero el stock llega por Product-Variation */
+async function tallesSfcc(url, h) {
+  const ruta = (h.match(/\/on\/demandware\.store\/(Sites-[^/"']+\/[^/"']+)\/Product-Variation/) || [])[1];
+  const pid = (h.match(/data-pid="([^"]+)"/) || [])[1] || (new URL(url).pathname.match(/([A-Z0-9][A-Z0-9_-]+)\.html$/) || [])[1];
+  if (!ruta || !pid) return {};
+  try {
+    const j = await traer(`${new URL(url).origin}/on/demandware.store/${ruta}/Product-Variation?pid=${encodeURIComponent(pid)}&quantity=1`, true);
+    const a = (j.product?.variationAttributes || []).find(x => x.id === "size");
+    if (!a) return {};
+    const disp = a.values.filter(v => v.selectable).map(v => String(v.value ?? v.displayValue));
+    const ar = ordenar(disp.flatMap(talleAR));
+    if (ar.length && ar.length >= disp.length * 0.8) return { talles: ar, sistema: "AR" };
+    const us = ordenar(disp.filter(x => /^\d{1,2}(\.5)?$/.test(x)));
+    return us.length ? { talles: us, sistema: "US" } : { talles: [], sistema: "AR" };
+  } catch { return {}; }
 }
 
-let ok = 0, fallas = 0, cambios = 0;
+async function leer(url) {
+  if (/\/p\/?$/.test(new URL(url).pathname)) { try { return await vtex(url); } catch (e) { if (!/404/.test(e.message)) throw e; } }
+  const h = await traer(url), r = html(h);
+  if (/demandware/i.test(h) && !r.sinStock) { Object.assign(r, await tallesSfcc(url, h)); if (r.talles && !r.talles.length) r.sinStock = true; }
+  return r;
+}
+
+let ok = 0, fallas = 0, cambios = 0, conTalles = 0;
 const errores = [], sinStockL = [];
 for (const m of cat.modelos) {
   for (const t of m.tiendas || []) {
@@ -84,6 +110,7 @@ for (const m of cat.modelos) {
         t.precio = r.precio; t.fecha = hoyAR;
         if (r.antes) t.antes = r.antes; else delete t.antes;
         if (r.cuotas) t.cuotas = `${r.cuotas} cuotas sin interés`;
+        if (r.talles?.length) { t.talles = r.talles; t.sistema = r.sistema; conTalles++; } else { delete t.talles; delete t.sistema; }
         const clave = t.tienda + (t.nota === "Mujer" ? " · Mujer" : "");   // hombre y mujer llevan historial separado
         const serie = ((hist.series[m.slug] ??= {})[clave] ??= []);
         const ult = serie[serie.length - 1];
@@ -107,6 +134,6 @@ cat.actualizado = hoyAR;
 writeFileSync(new URL("modelos.json", RAIZ), JSON.stringify(cat, null, 1) + "\n");
 writeFileSync(new URL("historial.json", RAIZ), JSON.stringify(hist) + "\n");
 const hora = new Intl.DateTimeFormat("es-AR", { timeZone: "America/Argentina/Buenos_Aires", hour: "2-digit", minute: "2-digit" }).format(new Date());
-writeFileSync(new URL("robot.json", RAIZ), JSON.stringify({ fecha: hoyAR, hora, leidos: ok, cambiaron: cambios, fallaron: fallas, errores, sinStock: sinStockL }, null, 1) + "\n");
+writeFileSync(new URL("robot.json", RAIZ), JSON.stringify({ fecha: hoyAR, hora, leidos: ok, cambiaron: cambios, conTalles, fallaron: fallas, errores, sinStock: sinStockL }, null, 1) + "\n");
 console.log(`\n${ok} precios leídos (${cambios} cambiaron), ${fallas} con error. Fecha: ${hoyAR}.`);
 if (ok === 0) process.exit(1);

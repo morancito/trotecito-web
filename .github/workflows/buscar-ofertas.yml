@@ -1,0 +1,32 @@
+name: Buscar ofertas
+
+# Busca los modelos del catálogo en las tiendas de scripts/buscar-ofertas.mjs y guarda lo que encuentra en
+# scripts/ofertas-encontradas.json para revisarlo. No cambia el catálogo. Se corre a mano desde Actions.
+on:
+  workflow_dispatch:
+    inputs:
+      tiendas:
+        description: "Tiendas separadas por espacio (vacío = todas)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Buscar en las tiendas
+        run: node scripts/buscar-ofertas.mjs ${{ inputs.tiendas }}
+      - name: Guardar lo encontrado
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/ofertas-encontradas.json
+          git diff --cached --quiet || (git commit -m "Ofertas encontradas en tiendas nuevas" && git pull --rebase && git push)

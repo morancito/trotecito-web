@@ -1,3 +1,6 @@
 node_modules
 dist
 .DS_Store
+
+# fotos crudas que baja el workflow "Preparar modelos nuevos" (se procesan a public/fotos)
+scripts/fotos-nuevas/*/

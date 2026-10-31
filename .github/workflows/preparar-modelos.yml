@@ -41,5 +41,5 @@ jobs:
         run: |
           git config user.name "trotecito-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts public/data
+          git add scripts public/data && git add -f scripts/fotos-nuevas
           git diff --cached --quiet || (git commit -m "Modelos nuevos: fichas, ofertas y fotos para revisar" && git pull --rebase && git push)

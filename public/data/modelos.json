@@ -5159,7 +5159,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA comprimida (CMEVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5249,8 +5249,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-clifton-10/1.webp",
+    "fotos/hoka-clifton-10/2.webp",
+    "fotos/hoka-clifton-10/3.webp",
+    "fotos/hoka-clifton-10/4.webp"
+   ],
+   "peso": 277,
+   "drop": 8,
+   "talon": 42,
+   "ante": 34,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "buscás una zapatilla liviana para ir rápido: es blanda y algo pesada.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-clifton-10"
+   ]
   },
   {
    "id": 76,
@@ -5261,7 +5280,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA supercrítica",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5310,8 +5329,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-bondi-9/1.webp",
+    "fotos/hoka-bondi-9/2.webp",
+    "fotos/hoka-bondi-9/3.webp",
+    "fotos/hoka-bondi-9/4.webp"
+   ],
+   "peso": 297,
+   "drop": 5,
+   "talon": 43,
+   "ante": 38,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "querés hacer series o ritmos rápidos: es la más alta y pesada de Hoka.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-bondi-9"
+   ]
   },
   {
    "id": 77,
@@ -5320,9 +5358,9 @@
    "mod": "Mach",
    "ver": "6",
    "tipo": "Neutra",
-   "uso": "Ritmo",
+   "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA supercrítica",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5358,8 +5396,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-mach-6/1.webp",
+    "fotos/hoka-mach-6/2.webp",
+    "fotos/hoka-mach-6/3.webp",
+    "fotos/hoka-mach-6/4.webp"
+   ],
+   "peso": 235,
+   "drop": 5,
+   "talon": 37,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "necesitás estabilidad o mucha amortiguación para fondos largos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-mach-6"
+   ]
   },
   {
    "id": 78,
@@ -5368,9 +5425,9 @@
    "mod": "Mach",
    "ver": "7",
    "tipo": "Neutra",
-   "uso": "Ritmo",
+   "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA supercrítica",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5423,8 +5480,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-mach-7/1.webp",
+    "fotos/hoka-mach-7/2.webp",
+    "fotos/hoka-mach-7/3.webp",
+    "fotos/hoka-mach-7/4.webp"
+   ],
+   "peso": 241,
+   "drop": 5,
+   "talon": 37,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "necesitás estabilidad o buscás la máxima amortiguación para fondos largos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-mach-7"
+   ]
   },
   {
    "id": 79,
@@ -5435,8 +5511,8 @@
    "tipo": "Neutra",
    "uso": "Ritmo",
    "terreno": "Asfalto",
-   "esp": "",
-   "pl": "Sin placa",
+   "esp": "PEBA + EVA supercrítica",
+   "pl": "Pebax",
    "tiendas": [
     {
      "tienda": "TodoTrail",
@@ -5473,8 +5549,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-mach-x-3/1.webp",
+    "fotos/hoka-mach-x-3/2.webp",
+    "fotos/hoka-mach-x-3/3.webp",
+    "fotos/hoka-mach-x-3/4.webp"
+   ],
+   "peso": 252,
+   "drop": 5,
+   "talon": 44,
+   "ante": 39,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "sos pronador o buscás una zapatilla barata para empezar: es firme y de precio alto.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-mach-x-3"
+   ]
   },
   {
    "id": 80,
@@ -5485,7 +5580,7 @@
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA comprimida (CMEVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5520,8 +5615,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-arahi-8/1.webp",
+    "fotos/hoka-arahi-8/2.webp",
+    "fotos/hoka-arahi-8/3.webp",
+    "fotos/hoka-arahi-8/4.webp"
+   ],
+   "peso": 256,
+   "drop": 8,
+   "talon": 39,
+   "ante": 31,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "tenés pisada neutra y buscás una zapatilla blanda: el soporte se siente firme.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-arahi-8"
+   ]
   },
   {
    "id": 81,
@@ -5530,9 +5644,9 @@
    "mod": "Gaviota",
    "ver": "6",
    "tipo": "Estabilidad",
-   "uso": "Rodaje largo",
+   "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5567,8 +5681,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-gaviota-6/1.webp",
+    "fotos/hoka-gaviota-6/2.webp",
+    "fotos/hoka-gaviota-6/3.webp",
+    "fotos/hoka-gaviota-6/4.webp"
+   ],
+   "peso": 283,
+   "drop": 6,
+   "talon": 39,
+   "ante": 33,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes diarios y fondos medios"
+   },
+   "evitar": "buscás algo liviano para ir rápido: es pesada y pensada para dar mucha contención.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-gaviota-6"
+   ]
   },
   {
    "id": 82,
@@ -5579,7 +5712,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA comprimida",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5607,8 +5740,25 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-rincon-4/1.webp",
+    "fotos/hoka-rincon-4/2.webp"
+   ],
+   "peso": 228,
+   "drop": 5,
+   "talon": 33,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 75 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "pesás más de 85 kg o hacés fondos largos: tiene menos espuma que otras Hoka y se gasta rápido.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-rincon-4"
+   ]
   },
   {
    "id": 83,
@@ -5619,7 +5769,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "EVA supercrítica",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5688,25 +5838,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
-  },
-  {
-   "id": 84,
-   "slug": "hoka-rocket-x-2",
-   "m": "Hoka",
-   "mod": "Rocket X",
-   "ver": "2",
-   "tipo": "Neutra",
-   "uso": "Competencia",
-   "terreno": "Asfalto",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [],
-   "colores": [],
-   "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-skyflow/1.webp",
+    "fotos/hoka-skyflow/2.webp",
+    "fotos/hoka-skyflow/3.webp",
+    "fotos/hoka-skyflow/4.webp"
+   ],
+   "peso": 283,
+   "drop": 5,
+   "talon": 39,
+   "ante": 34,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "buscás una zapatilla liviana para ritmos rápidos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-skyflow"
+   ]
   },
   {
    "id": 85,
@@ -5717,7 +5869,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EVA supercrítica",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5772,25 +5924,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
-  },
-  {
-   "id": 86,
-   "slug": "hoka-speedgoat-7",
-   "m": "Hoka",
-   "mod": "Speedgoat",
-   "ver": "7",
-   "tipo": "Neutra",
-   "uso": "Rodaje largo",
-   "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [],
-   "colores": [],
-   "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-speedgoat-6/1.webp",
+    "fotos/hoka-speedgoat-6/2.webp",
+    "fotos/hoka-speedgoat-6/3.webp",
+    "fotos/hoka-speedgoat-6/4.webp"
+   ],
+   "peso": 277,
+   "drop": 5,
+   "talon": 40,
+   "ante": 35,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "corrés en senderos fáciles o asfalto: es mucha zapatilla y los tacos se gastan en el pavimento.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-speedgoat-6"
+   ]
   },
   {
    "id": 87,
@@ -5801,7 +5955,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EVA comprimida",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5824,8 +5978,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-challenger-atr-8/1.webp",
+    "fotos/hoka-challenger-atr-8/2.webp",
+    "fotos/hoka-challenger-atr-8/3.webp",
+    "fotos/hoka-challenger-atr-8/4.webp"
+   ],
+   "peso": 275,
+   "drop": 8,
+   "talon": 42,
+   "ante": 34,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "corrés en montaña técnica con barro o piedra suelta: los tacos son cortos, está pensada para caminos de tierra y asfalto.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-challenger-8"
+   ]
   },
   {
    "id": 88,
@@ -5836,7 +6009,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EVA supercrítica (doble capa)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5882,8 +6055,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-mafate-5/1.webp",
+    "fotos/hoka-mafate-5/2.webp",
+    "fotos/hoka-mafate-5/3.webp",
+    "fotos/hoka-mafate-5/4.webp"
+   ],
+   "peso": 332,
+   "drop": 8,
+   "talon": 45,
+   "ante": 37,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "buscás una zapatilla liviana o ágil para carreras cortas: es de las más pesadas y altas.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/hoka-mafate-5"
+   ]
   },
   {
    "id": 89,
@@ -5892,9 +6084,9 @@
    "mod": "Torrent",
    "ver": "4",
    "tipo": "Neutra",
-   "uso": "Ritmo",
+   "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EVA",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -5957,8 +6149,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/hoka-torrent-4/1.webp",
+    "fotos/hoka-torrent-4/2.webp",
+    "fotos/hoka-torrent-4/3.webp",
+    "fotos/hoka-torrent-4/4.webp"
+   ],
+   "peso": 254,
+   "drop": 5,
+   "talon": 33,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 75 kg",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "hacés ultras o necesitás mucha amortiguación: es más baja y firme que otras Hoka de trail.",
+   "fuente": [
+    "irunfar.com",
+    "https://www.irunfar.com/hoka-torrent-4-review"
+   ]
   },
   {
    "id": 90,
@@ -5967,9 +6178,9 @@
    "mod": "Genesis",
    "ver": "2",
    "tipo": "Neutra",
-   "uso": "Rodaje largo",
+   "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Energy Foam",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6032,8 +6243,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-genesis-2/1.webp",
+    "fotos/salomon-genesis-2/2.webp",
+    "fotos/salomon-genesis-2/3.webp",
+    "fotos/salomon-genesis-2/4.webp"
+   ],
+   "peso": 281,
+   "drop": 8,
+   "talon": 33.5,
+   "ante": 25.5,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 75 kg",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "buscás mucha amortiguación para ultras: es más baja que otras de montaña.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-genesis-2"
+   ]
   },
   {
    "id": 91,
@@ -6044,7 +6274,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EVA",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6122,8 +6352,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-ultra-glide-4/1.webp",
+    "fotos/salomon-ultra-glide-4/2.webp",
+    "fotos/salomon-ultra-glide-4/3.webp",
+    "fotos/salomon-ultra-glide-4/4.webp"
+   ],
+   "peso": 280,
+   "drop": 6,
+   "talon": 41,
+   "ante": 35,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "usás plantillas ortopédicas o buscás una suela flexible para subidas empinadas: es rígida.",
+   "fuente": [
+    "doctorsofrunning.com",
+    "https://www.doctorsofrunning.com/2026/02/salomon-ultra-glide-4-review-2026.html"
+   ]
   },
   {
    "id": 92,
@@ -6134,7 +6383,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Energy Foam",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6181,8 +6430,24 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-ultra-flow-2/1.webp"
+   ],
+   "peso": 260,
+   "drop": 6,
+   "talon": 34,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 90 kg",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "corrés en montaña muy técnica o con barro: está pensada para senderos y caminos de tierra.",
+   "fuente": [
+    "blacks.co.uk",
+    "https://www.blacks.co.uk/products/salomon-mens-ultra-flow-2-trail-running-shoes-silver-786531"
+   ]
   },
   {
    "id": 93,
@@ -6191,9 +6456,9 @@
    "mod": "S/LAB Pulsar",
    "ver": "4",
    "tipo": "Neutra",
-   "uso": "Ritmo",
+   "uso": "Competencia",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Energy Surge",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6208,42 +6473,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
-  },
-  {
-   "id": 94,
-   "slug": "nnormal-tomir-2-0",
-   "m": "Nnormal",
-   "mod": "Tomir",
-   "ver": "2.0",
-   "tipo": "Neutra",
-   "uso": "Rodaje diario",
-   "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [],
-   "colores": [],
-   "ar": true,
-   "borrador": true,
-   "fotos": []
-  },
-  {
-   "id": 95,
-   "slug": "nnormal-kjerag-2",
-   "m": "Nnormal",
-   "mod": "Kjerag",
-   "ver": "2",
-   "tipo": "Neutra",
-   "uso": "Ritmo",
-   "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [],
-   "colores": [],
-   "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-slab-pulsar-4/1.webp",
+    "fotos/salomon-slab-pulsar-4/2.webp",
+    "fotos/salomon-slab-pulsar-4/3.webp",
+    "fotos/salomon-slab-pulsar-4/4.webp"
+   ],
+   "peso": 250,
+   "drop": 6,
+   "talon": 31,
+   "ante": 25,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Rápido en sendero y bajadas",
+    "peso": "Hasta 80 kg",
+    "distancia": "Carreras de montaña cortas"
+   },
+   "evitar": "hacés ultras largos, pesás más de 75 kg o recién empezás: es muy liviana, baja y ajustada.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-s-lab-pulsar-4"
+   ]
   },
   {
    "id": 96,
@@ -6254,8 +6504,8 @@
    "tipo": "Neutra",
    "uso": "Ritmo",
    "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
+   "esp": "TPU supercrítico",
+   "pl": "Placa antirrocas",
    "tiendas": [
     {
      "tienda": "TodoTrail",
@@ -6278,8 +6528,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/la-sportiva-prodigio-pro/1.webp",
+    "fotos/la-sportiva-prodigio-pro/2.webp",
+    "fotos/la-sportiva-prodigio-pro/3.webp",
+    "fotos/la-sportiva-prodigio-pro/4.webp"
+   ],
+   "peso": 255,
+   "drop": 6,
+   "talon": 34,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Rápido en sendero y bajadas",
+    "peso": "Hasta 90 kg",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "tenés el pie ancho o buscás una zapatilla blanda: el calce es ajustado y la pisada firme.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/la-sportiva-prodigio-pro"
+   ]
   },
   {
    "id": 97,
@@ -6290,7 +6559,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "TPU supercrítico",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6305,8 +6574,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/la-sportiva-prodigio-max/1.webp",
+    "fotos/la-sportiva-prodigio-max/2.webp",
+    "fotos/la-sportiva-prodigio-max/3.webp",
+    "fotos/la-sportiva-prodigio-max/4.webp"
+   ],
+   "peso": 295,
+   "drop": 6,
+   "talon": 37,
+   "ante": 31,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Hasta 90 kg",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "corrés en terreno muy técnico donde necesitás sentir el piso: es alta.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/la-sportiva-prodigio-max"
+   ]
   },
   {
    "id": 98,
@@ -6317,8 +6605,8 @@
    "tipo": "Neutra",
    "uso": "Ritmo",
    "terreno": "Asfalto",
-   "esp": "",
-   "pl": "Sin placa",
+   "esp": "PWRRUN PB (PEBA)",
+   "pl": "Nylon",
    "tiendas": [
     {
      "tienda": "Sporting",
@@ -6403,8 +6691,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-endorphin-speed-5/1.webp",
+    "fotos/saucony-endorphin-speed-5/2.webp",
+    "fotos/saucony-endorphin-speed-5/3.webp",
+    "fotos/saucony-endorphin-speed-5/4.webp"
+   ],
+   "peso": 238,
+   "drop": 8,
+   "talon": 36,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "4:00 a 5:00 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Series, tempo, 10K a media maratón"
+   },
+   "evitar": "sos pronador o la querés solo para trotar lento: está hecha para ir rápido.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-endorphin-speed-5"
+   ]
   },
   {
    "id": 99,
@@ -6415,8 +6722,8 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
+   "esp": "PWRRUN+",
+   "pl": "Placa antirrocas",
    "tiendas": [
     {
      "tienda": "Sporting",
@@ -6498,8 +6805,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-peregrine-16/1.webp",
+    "fotos/saucony-peregrine-16/2.webp",
+    "fotos/saucony-peregrine-16/3.webp",
+    "fotos/saucony-peregrine-16/4.webp"
+   ],
+   "peso": 271,
+   "drop": 4,
+   "talon": 32,
+   "ante": 28,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 75 kg",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "hacés ultras largos y buscás mucha amortiguación.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-peregrine-16"
+   ]
   },
   {
    "id": 100,
@@ -6510,7 +6836,7 @@
    "tipo": "Estabilidad",
    "uso": "Rodaje largo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "PWRRUN PB + PWRRUN",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6529,8 +6855,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-hurricane-25/1.webp",
+    "fotos/saucony-hurricane-25/2.webp",
+    "fotos/saucony-hurricane-25/3.webp",
+    "fotos/saucony-hurricane-25/4.webp"
+   ],
+   "peso": 283,
+   "drop": 6,
+   "talon": 38,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 90 kg",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "tenés pisada neutra o buscás algo liviano para ir rápido: es pesada y con mucho soporte.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-hurricane-25"
+   ]
   },
   {
    "id": 101,
@@ -6541,7 +6886,7 @@
    "tipo": "Neutra",
    "uso": "Iniciación",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "PWRRUN+",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6590,8 +6935,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-surge-3/1.webp",
+    "fotos/saucony-surge-3/2.webp",
+    "fotos/saucony-surge-3/3.webp",
+    "fotos/saucony-surge-3/4.webp"
+   ],
+   "peso": 293,
+   "drop": 10,
+   "talon": 27,
+   "ante": 17,
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 75 kg",
+    "distancia": "Hasta 10K"
+   },
+   "evitar": "hacés fondos largos o buscás mucha amortiguación: es simple y con poca espuma.",
+   "fuente": [
+    "runnea.co.uk",
+    "https://runnea.co.uk/running-shoes/saucony/surge-3/1039187"
+   ]
   },
   {
    "id": 102,
@@ -6602,7 +6966,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "PWRRUN PB + PWRRUN",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -6649,8 +7013,27 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-xodus-ultra-4/1.webp",
+    "fotos/saucony-xodus-ultra-4/2.webp",
+    "fotos/saucony-xodus-ultra-4/3.webp",
+    "fotos/saucony-xodus-ultra-4/4.webp"
+   ],
+   "peso": 309,
+   "drop": 6,
+   "talon": 36,
+   "ante": 30,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Hasta 90 kg",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "buscás una zapatilla liviana para carreras cortas: es pesada.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-xodus-ultra-4"
+   ]
   }
  ]
 }

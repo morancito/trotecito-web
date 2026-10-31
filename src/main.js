@@ -317,7 +317,7 @@ const lineaTalle = t => { const e = estadoTalle(t); return !TALLE ? "" : e ? `<s
 const chips = t => t.talles?.length ? t.talles.map(x => `<i class="tc${t.sistema === "AR" && x === TALLE ? " on" : ""}">${t.sistema === "US" ? "US " : ""}${x}</i>`).join("") : `<span class="tc-nd">No pudimos chequear los talles: consultalos en la tienda</span>`;
 function bloqueTalles(d) {
   const ts = d.todas.filter(t => paraGen(t)); if (!ts.length) return "";
-  return `<div class="bloque"><h2 class="cond">Talles con stock</h2><p class="ad-sub">Talles argentinos, chequeados el ${esc(CAT.actualizado)}. ${TALLE ? `Resaltado, tu talle (${TALLE}).` : `Elegí tu talle en los filtros y te mostramos solo las tiendas que lo tienen.`}</p>
+  return `<div class="bloque"><h2 class="cond">Talles con stock</h2><p class="ad-sub">${ts.every(t => t.sistema === "US") ? "Talles de EE. UU. (así los informa la tienda)" : ts.some(t => t.sistema === "US") ? "Talles argentinos; los que dicen US son de EE. UU., como los informa la tienda" : "Talles argentinos"}, chequeados el ${esc(CAT.actualizado)}. ${TALLE ? `Resaltado, tu talle (${TALLE}).` : `Elegí tu talle en los filtros y te mostramos solo las tiendas que lo tienen.`}</p>
     <ul class="talles">${ts.map(t => `<li><span class="tl-n">${esc(t.tienda)}${t.nota ? ` <small>${esc(t.nota.toLowerCase())}</small>` : ""}</span><span class="tl-c">${chips(t)}</span></li>`).join("")}</ul></div>`;
 }
 function ficha(d) {

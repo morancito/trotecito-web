@@ -120,7 +120,15 @@ function calcular() {
   const busq = E.filter(e => e.tipo === "busqueda");
   const porQ = new Map(); for (const e of busq) { const q = (e.datos?.q || "").trim(); const x = porQ.get(q) || { n: 0, res: e.datos?.n ?? 0 }; x.n++; x.res = e.datos?.n ?? x.res; porQ.set(q, x); }
   const busquedas = [...porQ].sort((a, b) => b[1].n - a[1].n);
+  /* ¿le sirvió el recomendador? (última respuesta de cada visita) */
+  const util = new Map(); for (const e of E) if (e.tipo === "reco_util") util.set(e.sesion, e.datos || {});
+  const utilSi = [...util.values()].filter(u => u.v === "si").length;
+  const utilMotivos = cuenta([...util.values()].filter(u => u.v === "no"), u => u.motivo || "Sin motivo");
+  /* reemplazos: qué modelos buscan reemplazar y cuáles no encontramos */
+  const reemp = E.filter(e => e.tipo === "reemplazo");
+  const reempBuscados = cuenta(reemp, e => e.datos?.ref ? e.datos.ref : `“${e.datos?.q || ""}” (no la tenemos)`);
   return {
+    util, utilSi, utilMotivos, reempBuscados, reemp,
     recoClicOrigen: cuenta(recoClicOrigen, e => ({ ficha: "Desde la ficha", recomendador: "Desde el resultado", comparar: "Desde el comparador" })[e.datos?.origen] || "Desde otro lado"), recoFicha, ses, vis, clics, sesClic, fichas, recoIni, recoFin, recoClic, dias, sesDia, clicDia, embudo, embudoReco, perfiles, recomendadas, origen, disp, nuevos, visitas, busquedas,
     topFichas: cuenta(fichas, e => e.datos?.slug), clicZapa: cuenta(clics, e => e.datos?.slug), clicTienda: cuenta(clics, e => e.datos?.tienda),
     clicOrigen: cuenta(clics, e => ({ ficha: "Ficha", recomendador: "Recomendador", comparar: "Comparador", otro: "Otro" })[e.datos?.origen] || "Otro"),
@@ -200,6 +208,7 @@ create policy "solo el admin lee" on public.eventos
     ${kpi("Clics a tiendas", n0(c.clics.length), `${pct(c.sesClic.size, c.ses.size)} de las visitas`)}
     ${kpi("Recomendador", pct(c.recoFin.size, c.recoIni.size), `terminaron ${n0(c.recoFin.size)} de ${n0(c.recoIni.size)}`)}
     ${kpi("Del recomendador a la tienda", pct(c.recoClic.size, c.recoFin.size), `${n0(c.recoClic.size)} fueron a la tienda de una recomendada`)}
+    ${kpi("Les sirvió la recomendación", c.util.size ? pct(c.utilSi, c.util.size) : "–", c.util.size ? `${n0(c.utilSi)} de ${n0(c.util.size)} que respondieron` : "Todavía nadie respondió")}
   </div>
   ${bloque("Visitas y clics por día", serieDiaria(c), "Una visita es cada vez que alguien abre el sitio. Pasá el mouse para ver cada día.")}
   <div class="ad-2">
@@ -212,6 +221,8 @@ create policy "solo el admin lee" on public.eventos
     ${bloque("Clics a tiendas por zapa", barras(c.clicZapa, { fmtL: s => esc(nombre(s)) }), "Lo más cercano a una venta.")}
     ${bloque("Clics por tienda", barras(c.clicTienda) + `<h3>Desde dónde</h3>` + barras(c.clicOrigen))}
     ${bloque("Qué buscan", c.busquedas.length ? `<ol class="barras">${c.busquedas.slice(0, 12).map(([q, x]) => `<li><span class="b-l">${esc(q)}${x.res === 0 ? ` <em class="sin">sin resultados</em>` : ""}</span><span class="b-t"><i style="width:${x.n / c.busquedas[0][1].n * 100}%"></i></span><b>${n0(x.n)}</b></li>`).join("")}</ol>` : `<p class="ad-vacio">Todavía sin datos.</p>`, "Las que dicen \"sin resultados\" son modelos que la gente quiere y no tenemos.")}
+    ${bloque("Por qué no les sirvió el recomendador", barras(c.utilMotivos, { vacio: "Nadie respondió que no." }), "Lo que eligieron los que dijeron que las recomendaciones no los ayudaron.")}
+    ${bloque("Reemplazos buscados", barras(c.reempBuscados, { max: 12, fmtL: s => MOD[s] ? esc(nombre(s)) : esc(s) }), `${n0(c.reemp.length)} búsquedas. Las que dicen "no la tenemos" son modelos para sumar al catálogo.`)}
     ${bloque("Filtros más usados", barras(c.filtros, { max: 12 }))}
     ${bloque("Atajos del inicio", barras(c.atajos))}
   </div>

@@ -23,8 +23,14 @@
     <div class="hero-txt">
       <h1 class="cond">¿Qué zapa<br>te <em>va?</em></h1>
       <p class="lede">Compará los modelos que se consiguen acá y comprá donde están más baratos.</p>
-      <a class="cta-reco" href="#tu-zapa"><span><b>Encontrá tu zapa</b><small>8 preguntas · 1 minuto · te recomendamos 3</small></span><i aria-hidden="true">→</i></a>
-      <form class="hbusca" id="hbusca" role="search"><input type="search" id="hq" placeholder="Buscá un modelo: Pegasus, Novablast, Cloudmonster…" aria-label="Buscar zapatilla"><button type="submit">Buscar</button></form>
+      <div class="puertas">
+        <a class="puerta p-reco" href="#tu-zapa"><span><small>No sé qué comprar</small><b>Encontrá tu zapa</b><em>8 preguntas · 1 minuto · te recomendamos 3</em></span><i aria-hidden="true">→</i></a>
+        <div class="puerta p-busca"><small>Ya sé qué modelo quiero</small>
+          <form class="hbusca" id="hbusca" role="search" autocomplete="off"><input type="search" id="hq" placeholder="Pegasus 42, Novablast 5, Cloudmonster…" aria-label="Buscar un modelo" aria-autocomplete="list" aria-controls="hsug" aria-expanded="false"><button type="submit">Buscar</button></form>
+          <ul class="sug" id="hsug" role="listbox" hidden></ul></div>
+        <a class="puerta p-of" href="#catalogo" id="pOfertas"><span><small>Quiero ofertas</small><b>Rebajas de hoy</b><em>Solo las que tienen talles para elegir</em></span><i aria-hidden="true">→</i></a>
+      </div>
+      <a class="p-reemp" href="#reemplazo">¿Se te gastaron las zapas? <b>Encontrá el reemplazo →</b></a>
       <div class="atajos" id="atajos"></div>
     </div>
     <div class="ofertas" id="ofertas"></div>
@@ -61,6 +67,7 @@
 <div id="detalle" class="wrap det" hidden></div>
 <div id="comparar" class="wrap det" hidden></div>
 <div id="reco" class="wrap det" hidden></div>
+<div id="reemplazo" class="wrap det" hidden></div>
 
 <footer><div class="wrap">
   <div class="foot-logo"><a class="logo xl" href="#" aria-label="Trotecito, inicio"><span class="lg-vel" aria-hidden="true"><i></i><i></i><i></i></span><span class="lg-w" aria-hidden="true">trotec<span class="lg-i">ı<b></b></span>to</span></a></div>

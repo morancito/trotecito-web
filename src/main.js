@@ -6,6 +6,7 @@ import { Viewer, perfil, topY, RM } from "./shoe3d.js";
 import { grafico, montarGrafico, variacion } from "./precios.js";
 import { PREGUNTAS, recomendar, rangoKg } from "./recomendador.js";
 import { medir, medirVisita } from "./medir.js";
+import { buscarModelo, reemplazos, sugerir } from "./reemplazo.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
@@ -127,7 +128,9 @@ abrirLane("drop");
 /* el rango recomendado de la zapa se superpone con la franja de peso elegida (74: menos de 75, 89: 75 a 90, 91: más de 90) */
 const FRANJA = { 74: [0, 75], 89: [75, 90], 91: [90, 999] };
 const pesoOk = (d, kg) => { const { min, max } = rangoKg(d), [lo, hi] = FRANJA[kg] || [kg, kg]; return max > lo && min < hi; };
-const desc = d => { const t = d.tiendas[0]; return t?.antes > t?.precio ? 1 - t.precio / t.antes : 0; };
+/* una rebaja con 1 o 2 talles sueltos no es una oferta para la mayoría: no se destaca (salvo que sea justo tu talle) */
+const pocosTalles = t => !!t && !TALLE && !!t.sistema && Array.isArray(t.talles) && t.talles.length < 3;
+const desc = d => { const t = d.tiendas[0]; return t?.antes > t?.precio && !pocosTalles(t) ? 1 - t.precio / t.antes : 0; };
 const nivelAm = d => amort(d)?.t || "";
 const PASO = 10000;
 const P_MIN = Math.floor(Math.min(...DATA.filter(d => d.min).map(d => d.min)) / PASO) * PASO;
@@ -247,7 +250,7 @@ $("#activos").onclick = e => { const b = e.target.closest("button[data-x]"); if 
 function precioTarjeta(d) {
   if (d.sinTalle) return `<span class="pronto">Sin talle ${TALLE}</span>`;
   if (d.min) { const t = d.tiendas[0], n = t.nota, e = estadoTalle(t);
-    return `<span class="bib-p"><small>${TALLE ? (e ? `<em class="t-si">✓ talle ${TALLE}</em> · ` : `<em class="t-nd">talle ${TALLE} sin confirmar</em> · `) : !GEN && (n === "Hombre" || n === "Mujer") ? n.toLowerCase() + " · " : ""}desde</small>${fmt(d.min)}</span>`; }
+    return `<span class="bib-p"><small>${TALLE ? (e ? `<em class="t-si">✓ talle ${TALLE}</em> · ` : `<em class="t-nd">talle ${TALLE} sin confirmar</em> · `) : pocosTalles(t) ? `<em class="t-nd">quedan pocos talles</em> · ` : !GEN && (n === "Hombre" || n === "Mujer") ? n.toLowerCase() + " · " : ""}desde</small>${fmt(d.min)}</span>`; }
   return d.otro ? `<span class="pronto">Solo talles de ${d.otro.gen.toLowerCase()}</span>` : `<span class="pronto">Pronto</span>`;
 }
 function tarjeta(d) {
@@ -300,13 +303,39 @@ $("#atajos").onclick = e => { const b = e.target.closest("button"); if (!b) retu
   Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
   if (a.uso) a.uso.forEach(u => st.uso.add(u)); if (a.pis) st.pis = a.pis; if (a.pmax) st.pmax = a.pmax;
   st.terreno = a.terreno || "Asfalto"; setTerreno(st.terreno); irCatalogo(); };
-$("#hbusca").onsubmit = e => { e.preventDefault(); const v = $("#hq").value.trim(); st.q = v.toLowerCase(); $("#q").value = v; render(); medirBusqueda("inicio"); irCatalogo(); };
+/* buscador con sugerencias: elegir una sugerencia abre la ficha; si no hay coincidencias pero es una versión vieja
+   o de otra línea ("Pegasus 39"), lleva al buscador de reemplazos */
+function sugerencias(input, lista, alElegir) {
+  let act = -1, items = [];
+  const cerrar = () => { lista.hidden = true; input.setAttribute("aria-expanded", "false"); act = -1; };
+  const pintar = () => {
+    items = sugerir(DATA, input.value);
+    lista.innerHTML = items.map((d, i) => `<li role="option" id="${lista.id}-${i}" aria-selected="${i === act}" data-i="${i}">${sello(d.m)}<b>${esc(nombre(d))}</b><span>${d.min ? "desde " + fmt(d.min) : "sin precio hoy"}</span></li>`).join("");
+    lista.hidden = !items.length || !input.value.trim(); input.setAttribute("aria-expanded", String(!lista.hidden));
+    input.setAttribute("aria-activedescendant", act >= 0 ? `${lista.id}-${act}` : ""); };
+  input.addEventListener("input", () => { act = -1; pintar(); });
+  input.addEventListener("keydown", e => {
+    if (lista.hidden || !items.length) return;
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); act = (act + (e.key === "ArrowDown" ? 1 : -1) + items.length) % items.length; pintar(); }
+    else if (e.key === "Enter" && act >= 0) { e.preventDefault(); const d = items[act]; cerrar(); alElegir(d); }
+    else if (e.key === "Escape") cerrar(); });
+  lista.addEventListener("mousedown", e => { const li = e.target.closest("li"); if (!li) return; e.preventDefault(); const d = items[+li.dataset.i]; cerrar(); alElegir(d); });
+  input.addEventListener("blur", () => setTimeout(cerrar, 120));
+  return { cerrar, hay: () => items.length };
+}
+const hsug = sugerencias($("#hq"), $("#hsug"), d => { medir("busqueda", { q: $("#hq").value.trim().toLowerCase(), n: 1, desde: "inicio", eligio: d.slug }); ir(zurl(d)); });
+$("#hbusca").onsubmit = e => { e.preventDefault(); hsug.cerrar(); const v = $("#hq").value.trim(); if (!v) return;
+  st.q = v.toLowerCase(); $("#q").value = v; render();
+  if (!lista().length && buscarModelo(DATA, v)) { medir("busqueda", { q: st.q, n: 0, desde: "inicio", reemplazo: true }); reemQ = v; ir(BASE + "#reemplazo"); return; }
+  medirBusqueda("inicio"); irCatalogo(); };
+const verOfertas = () => { Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); };
+$("#pOfertas").onclick = e => { e.preventDefault(); medir("atajo", { t: "Puerta: ofertas" }); verOfertas(); };
 function pintarOfertas() {
 const ofertas = DATA.filter(d => desc(d) >= 0.1 && d.fotos.length).sort((a, b) => desc(b) - desc(a)).slice(0, 4);
 $("#ofertas").innerHTML = ofertas.length ? `<div class="of-h"><span class="kicker">Ofertas de hoy</span><a href="#catalogo" id="ofTodas">Ver todas →</a></div>
   ${ofertas.map(d => `<a class="of" href="${zurl(d)}"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><span class="of-n"><small>${esc(d.m)}</small><b>${esc(nombre(d))}</b><s>${fmt(d.tiendas[0].antes)}</s></span>
     <span class="of-p"><em>−${Math.round(desc(d) * 100)}%</em><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("")}` : "";
-$("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); });
+$("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); verOfertas(); });
 }
 pintarOfertas();
 
@@ -356,6 +385,7 @@ function ficha(d) {
       <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div></dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
     ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2>${amort(d) ? `<div class="amort-box"><span class="amort-k">Amortiguación</span>${medidor(amort(d))}<p><b>${d.talon} mm</b> de espuma en el talón: ${amort(d).s}.</p><small>Mide cuánta espuma tiene, no si se siente blanda o dura ni cuánto rebota.</small></div>` : ""}<dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
     <div class="acciones"><button class="btn" data-c="${d.id}" aria-pressed="${st.cmp.includes(d.id)}">${st.cmp.includes(d.id) ? "✓ Comparando" : "+ Comparar"}</button>
+      <a class="btn" href="#reemplazo/${d.slug}">¿Corrés con estas? Ver reemplazos</a>
       ${d.fuente ? `<a class="review" href="${esc(d.fuente[1])}" target="_blank" rel="noopener">Review en ${esc(d.fuente[0])} ↗</a>` : ""}</div>
   </div></div>`;
 }
@@ -444,9 +474,19 @@ function recoResultado() {
     ${resp.pis === "nose" ? `<p class="rr-aviso">¿No sabés cómo pisás? Mirá la suela de tus zapas viejas: si se gastan más del lado de adentro, probablemente pronás. Ante la duda, empezá por una neutra.</p>` : ""}</div>
   ${picks.length ? `<div class="rr-grid">${picks.map(card).join("")}</div>
   <div class="rr-pie"><button class="btn" type="button" data-cmp3>Comparar las ${picks.length}</button><a class="btn" href="#catalogo" data-vertodas>Ver todas las que te sirven</a></div>
-  <p class="rr-nota">Las elegimos cruzando tus respuestas con la ficha de cada zapa y el precio de hoy. Ninguna tienda paga por aparecer acá.</p>`
+  <p class="rr-nota">Las elegimos cruzando tus respuestas con la ficha de cada zapa y el precio de hoy. Ninguna tienda paga por aparecer acá.</p>
+  <div class="util" id="util">${utilHtml(utilClave(picks))}</div>`
   : `<p class="empty">No encontramos zapas con precio para ese perfil. Probá con otro presupuesto o con otro tipo de terreno.</p>`}`;
 }
+/* ¿te ayudó? — una respuesta por resultado; si es que no, el motivo */
+const MOTIVOS = ["No conozco estos modelos", "Son muy caras", "No hay mi talle", "Esperaba otras marcas", "No me convencen las razones", "Otro motivo"];
+const utilClave = picks => "trotecito-util-" + picks.map(p => p.d.slug).join(",");
+const UTIL_MEM = {};
+const utilLeer = k => { try { return sessionStorage.getItem(k) ?? UTIL_MEM[k] ?? null; } catch { return UTIL_MEM[k] ?? null; } };
+const utilHtml = k => { const r = utilLeer(k);
+  if (r === "no?") return `<p><b>¿Qué faltó?</b></p><div class="util-ops">${MOTIVOS.map(m => `<button type="button" data-motivo="${esc(m)}">${esc(m)}</button>`).join("")}</div>`;
+  if (r) return `<p class="util-ok">¡Gracias! Lo usamos para mejorar las recomendaciones.</p>`;
+  return `<p><b>¿Estas recomendaciones te ayudan a decidir?</b></p><div class="util-ops"><button type="button" data-util="si">Sí</button><button type="button" data-util="no">No</button></div>`; };
 function pintarReco() {
   const listo = PREGUNTAS.every(q => resp[q.k] !== undefined);
   $("#reco").innerHTML = listo && paso >= PREGUNTAS.length ? recoResultado() : recoPregunta();
@@ -460,6 +500,12 @@ $("#reco").addEventListener("click", e => {
     paso++; if (paso >= PREGUNTAS.length) { guardar(RESP_K, JSON.stringify(resp));
       medir("reco_fin", { ...resp, picks: recomendar(DATA, resp).picks.map(p => p.d.slug) }); if (resp.gen !== GEN || resp.talle !== TALLE) { GEN = resp.gen; TALLE = resp.talle || ""; guardar("trotecito-gen", GEN); guardar("trotecito-talle", TALLE || null); aplicarGenero(); pintarOfertas(); } }
     pintarReco(); return; }
+  const u = e.target.closest("[data-util],[data-motivo]");
+  if (u) { const picks = recomendar(DATA, resp).picks, k = utilClave(picks), sl = picks.map(p => p.d.slug);
+    UTIL_MEM[k] = u.dataset.util === "no" ? "no?" : u.dataset.util || "no"; try { sessionStorage.setItem(k, UTIL_MEM[k]); } catch {}
+    if (u.dataset.util === "si") medir("reco_util", { v: "si", picks: sl });
+    if (u.dataset.motivo) medir("reco_util", { v: "no", motivo: u.dataset.motivo, picks: sl });
+    $("#util").innerHTML = utilHtml(k); return; }
   if (e.target.closest("[data-atras]")) { paso = Math.max(0, paso - 1); pintarReco(); return; }
   if (e.target.closest("[data-rehacer]")) { paso = 0; medir("reco_inicio", { otra: true }); pintarReco(); return; }
   if (e.target.closest("[data-cmp3]")) { medir("reco_comparar"); st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); ir(BASE + "#comparar"); return; }
@@ -470,6 +516,52 @@ $("#reco").addEventListener("click", e => {
 });
 document.addEventListener("click", e => { const b = e.target.closest("[data-gen]"); if (!b) return; setGen(b.dataset.gen); route(); });
 document.addEventListener("click", e => { const b = e.target.closest("[data-talle]"); if (!b) return; setTalle(b.dataset.talle); route(); });
+
+/* ---------- encontrá el reemplazo ---------- */
+let reemQ = "";
+const specCorta = d => [d.talon && `${d.talon} mm de espuma`, d.drop != null && `drop ${d.drop} mm`, d.peso && `${d.peso} g`, d.tipo === "Estabilidad" ? "con estabilidad" : "neutra", d.uso.toLowerCase()].filter(Boolean).join(" · ");
+const imgDe = d => d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
+function reemplazoRes() {
+  if (!reemQ) return "";
+  const h = buscarModelo(DATA, reemQ);
+  if (!h) return `<div class="re-nada"><h2 class="cond">No la encontramos</h2>
+    <p>«${esc(reemQ)}» no está entre las zapas que se venden en las tiendas que seguimos. Probá con el nombre y el número, por ejemplo «Pegasus 39» o «Nimbus 25». Si es de una marca que no tenemos, contanos cómo corrés y te recomendamos 3.</p>
+    <a class="btn fuerte" href="#tu-zapa">Ir al recomendador</a></div>`;
+  const r = h.d, alts = reemplazos(DATA, h);
+  const tuya = h.version != null && h.tipo !== "exacto" ? `${r.mod} ${h.version}` : nombre(r);
+  const nota = { anterior: `La ${esc(tuya)} ya no se consigue en las tiendas que seguimos. La versión actual es la <b>${esc(nombre(r))}</b>: la usamos para comparar.`,
+    posterior: `La ${esc(tuya)} todavía no llegó a las tiendas que seguimos. La que se consigue es la <b>${esc(nombre(r))}</b>.`,
+    linea: `No tenemos esa variante. Comparamos con la <b>${esc(nombre(r))}</b>, de la misma línea.`,
+    exacto: r.min ? `La tenemos: arriba de todo está su mejor precio y después, alternativas por si querés probar otra.` : `Ahora no la encontramos con stock. Te mostramos alternativas parecidas.` }[h.tipo];
+  const filtro = [GEN && `talles de ${GEN.toLowerCase()}`, TALLE && `talle ${TALLE}`].filter(Boolean).join(" · ");
+  const card = o => { const d = o.d, t = d.tiendas[0];
+    return `<article class="re-c"><div class="re-et">${esc(o.t)}</div>
+      <a class="re-img" href="${zurl(d)}">${imgDe(d)}</a>
+      <div class="re-b">${sello(d.m)}<h3 class="cond"><a href="${zurl(d)}">${esc(nombre(d))}</a></h3>
+        ${t ? `<p class="re-p"><b>${fmt(t.precio)}</b><span>en ${esc(t.tienda)}</span></p>` : ""}
+        ${o.dif.length ? `<ul class="re-dif">${o.dif.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p class="re-spec">${esc(specCorta(d))}</p>`}
+        <div class="re-acc"><a class="btn" href="${zurl(d)}">Ver ficha</a>${o.d !== r ? `<button class="btn" type="button" data-recmp="${r.id},${d.id}">Comparar con la tuya</button>` : ""}</div></div></article>`; };
+  return `<div class="re-ref"><div class="re-ref-img">${imgDe(r)}</div><div><span class="kicker">Tus zapas</span>
+      <h2 class="cond">${sello(r.m)} ${esc(tuya)}</h2><p class="re-spec">${h.tipo === "exacto" ? "" : `Ficha de la ${esc(nombre(r))}: `}${esc(specCorta(r))}</p><p class="re-nota">${nota}</p></div></div>
+    ${alts.length ? `<div class="re-grid">${alts.map(card).join("")}</div>` : `<p class="empty">No encontramos alternativas con precio para ${filtro || "este modelo"}.</p>`}
+    <p class="rr-nota">Comparamos la ficha técnica: altura de espuma, drop, peso, tipo de pisada y para qué está pensada. ${filtro ? `Precios para ${filtro}.` : ""} Ninguna tienda paga por aparecer acá.</p>`;
+}
+function pintarReemplazo() {
+  $("#reemplazo").innerHTML = `<a class="back" href="#">← Volver al inicio</a>
+    <div class="re-head"><h1 class="cond">Encontrá el <em>reemplazo</em></h1>
+      <p class="re-lede">Escribí el modelo con el que corrés hoy, aunque sea una versión vieja. Te mostramos la que se consigue ahora y alternativas: parecida, más amortiguada, más estable y más barata.</p>
+      <div class="re-busca"><form class="hbusca re-form" id="rform" role="search" autocomplete="off"><input type="search" id="rq" value="${esc(reemQ)}" placeholder="Ej.: Pegasus 39, Nimbus 25, Ghost 15" aria-label="Modelo con el que corrés hoy" aria-autocomplete="list" aria-controls="rsug" aria-expanded="false"><button type="submit">Buscar</button></form>
+      <ul class="sug" id="rsug" role="listbox" hidden></ul></div></div>
+    <div id="rres">${reemplazoRes()}</div>`;
+  const s2 = sugerencias($("#rq"), $("#rsug"), d => buscarReemplazo(`${d.m} ${nombre(d)}`));
+  $("#rform").onsubmit = e => { e.preventDefault(); s2.cerrar(); buscarReemplazo($("#rq").value.trim()); };
+}
+function buscarReemplazo(q) {
+  reemQ = q; const h = q ? buscarModelo(DATA, q) : null;
+  if (q) medir("reemplazo", { q: q.toLowerCase(), ref: h?.d.slug || null, tipo: h?.tipo || "no" });
+  $("#rres").innerHTML = reemplazoRes(); $("#rq").value = q;
+}
+$("#reemplazo").addEventListener("click", e => { const b = e.target.closest("[data-recmp]"); if (!b) return; st.cmp = b.dataset.recmp.split(",").map(Number); medir("reemplazo_comparar", { slugs: st.cmp.map(id => DATA.find(x => x.id === id)?.slug) }); ir(BASE + "#comparar"); });
 
 /* ---------- rutas ---------- */
 /* las fichas viven en /zapa/<modelo>/ (páginas reales que Google indexa); el resto, en la raíz con # */
@@ -488,12 +580,14 @@ function ir(url) { if (url !== location.pathname + location.hash) history.pushSt
 function route() {
   const { d, h } = rutaActual();
   if (visor) { visor.destroy(); visor = null; }
-  const reco = h === "tu-zapa";
-  $("#home").hidden = !!(d || h === "comparar" || reco); $("#detalle").hidden = !d; $("#comparar").hidden = h !== "comparar"; $("#reco").hidden = !reco;
-  medir("vista", d ? { pag: "ficha", slug: d.slug } : h === "comparar" ? { pag: "comparar", slugs: st.cmp.map(id => DATA.find(x => x.id === id)?.slug) } : { pag: reco ? "tu-zapa" : h || "inicio" });
+  const reco = h === "tu-zapa", reemp = h === "reemplazo" || h.startsWith("reemplazo/");
+  $("#home").hidden = !!(d || h === "comparar" || reco || reemp); $("#detalle").hidden = !d; $("#comparar").hidden = h !== "comparar"; $("#reco").hidden = !reco; $("#reemplazo").hidden = !reemp;
+  medir("vista", d ? { pag: "ficha", slug: d.slug } : h === "comparar" ? { pag: "comparar", slugs: st.cmp.map(id => DATA.find(x => x.id === id)?.slug) } : { pag: reco ? "tu-zapa" : reemp ? "reemplazo" : h || "inicio" });
   if (reco && !PREGUNTAS.every(q => resp[q.k] !== undefined)) medir("reco_inicio");
   if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${d.m} ${nombre(d)}: precio en Argentina y ficha técnica · Trotecito`; window.scrollTo(0, 0); }
   else if (reco) { paso = PREGUNTAS.every(q => resp[q.k] !== undefined) ? PREGUNTAS.length : 0; pintarReco(); document.title = "Tu zapa · Trotecito"; }
+  else if (reemp) { const x = h.startsWith("reemplazo/") && DATA.find(z => z.slug === h.split("/")[1]);
+    pintarReemplazo(); if (x) buscarReemplazo(`${x.m} ${nombre(x)}`); document.title = "Encontrá el reemplazo de tus zapas · Trotecito"; window.scrollTo(0, 0); }
   else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Trotecito"; window.scrollTo(0, 0); }
   else { document.title = "Trotecito"; render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
   bandeja();

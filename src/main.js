@@ -292,17 +292,6 @@ $("#traygo").onclick = () => ir(BASE + "#comparar");
 
 /* ---------- inicio: búsqueda, atajos y ofertas ---------- */
 const irCatalogo = () => { if (location.hash === "#catalogo" && !esFicha()) document.getElementById("catalogo").scrollIntoView(); else ir(BASE + "#catalogo"); };
-const ATAJOS = [
-  ["Para arrancar", { uso: ["Iniciación"] }], ["Todos los días", { uso: ["Rodaje diario"] }], ["Fondos largos", { uso: ["Rodaje largo"] }],
-  ["Para ir rápido", { uso: ["Ritmo"] }], ["Para competir", { uso: ["Competencia"] }], ["Pronadores", { pis: "Estabilidad" }],
-  ["Menos de $100 mil", { pmax: 100000 }], ["Trail", { terreno: "Trail" }],
-];
-const aplicaAtajo = a => d => terr(d) === (a.terreno || "Asfalto") && (!a.uso || a.uso.includes(d.uso)) && (!a.pis || d.tipo === a.pis) && (!a.pmax || d.min && d.min <= a.pmax);
-$("#atajos").innerHTML = ATAJOS.map(([t, a], i) => `<button type="button" data-a="${i}"><span>${t}</span><b>${DATA.filter(aplicaAtajo(a)).length}</b></button>`).join("");
-$("#atajos").onclick = e => { const b = e.target.closest("button"); if (!b) return; const a = ATAJOS[+b.dataset.a][1]; medir("atajo", { t: ATAJOS[+b.dataset.a][0] });
-  Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
-  if (a.uso) a.uso.forEach(u => st.uso.add(u)); if (a.pis) st.pis = a.pis; if (a.pmax) st.pmax = a.pmax;
-  st.terreno = a.terreno || "Asfalto"; setTerreno(st.terreno); irCatalogo(); };
 /* buscador con sugerencias: elegir una sugerencia abre la ficha; si no hay coincidencias pero es una versión vieja
    o de otra línea ("Pegasus 39"), lleva al buscador de reemplazos */
 function sugerencias(input, lista, alElegir) {
@@ -331,12 +320,14 @@ $("#hbusca").onsubmit = e => { e.preventDefault(); hsug.cerrar(); const v = $("#
 const verOfertas = () => { Object.assign(st, VACIO(), { desc: true, q: "" }); st.orden = "desc"; $("#fOrden").value = "desc"; $("#q").value = ""; setTerreno("Asfalto"); irCatalogo(); };
 $("#pOfertas").onclick = e => { e.preventDefault(); medir("atajo", { t: "Puerta: ofertas" }); verOfertas(); };
 function pintarOfertas() {
-const ofertas = DATA.filter(d => desc(d) >= 0.1 && d.fotos.length).sort((a, b) => desc(b) - desc(a)).slice(0, 4);
-$("#ofertas").innerHTML = ofertas.length ? `<div class="of-h"><span class="kicker">Ofertas de hoy</span><a href="#catalogo" id="ofTodas">Ver todas →</a></div>
-  ${ofertas.map(d => `<a class="of" href="${zurl(d)}"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><span class="of-n"><small>${esc(d.m)}</small><b>${esc(nombre(d))}</b><s>${fmt(d.tiendas[0].antes)}</s></span>
-    <span class="of-p"><em>−${Math.round(desc(d) * 100)}%</em><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("")}` : "";
-$("#ofTodas")?.addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); verOfertas(); });
+  const todas = DATA.filter(d => desc(d) >= 0.1 && d.fotos.length).sort((a, b) => desc(b) - desc(a)), ofertas = todas.slice(0, 4);
+  $("#pOfTxt").textContent = todas.length ? `${todas.length} zapas con descuento y talles para elegir` : "Con talles para elegir";
+  $("#ofertasSec").hidden = !ofertas.length;
+  $("#ofertas").innerHTML = ofertas.map(d => `<a class="of" href="${zurl(d)}"><span class="of-img"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><em>−${Math.round(desc(d) * 100)}%</em></span>
+    <span class="of-n">${sello(d.m)}<b>${esc(nombre(d))}</b></span>
+    <span class="of-p"><b>${fmt(d.min)}</b><s>${fmt(d.tiendas[0].antes)}</s><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("");
 }
+$("#ofTodas").addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); verOfertas(); });
 pintarOfertas();
 
 /* ---------- ficha ---------- */

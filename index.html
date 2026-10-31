@@ -22,21 +22,24 @@
   <section class="hero"><div class="wrap hero-in">
     <div class="hero-txt">
       <h1 class="cond">¿Qué zapa<br>te <em>va?</em></h1>
-      <p class="lede">Compará los modelos que se consiguen acá y comprá donde están más baratos.</p>
-      <div class="puertas">
-        <a class="puerta p-reco" href="#tu-zapa"><span><small>No sé qué comprar</small><b>Encontrá tu zapa</b><em>8 preguntas · 1 minuto · te recomendamos 3</em></span><i aria-hidden="true">→</i></a>
-        <div class="puerta p-busca"><small>Ya sé qué modelo quiero</small>
-          <form class="hbusca" id="hbusca" role="search" autocomplete="off"><input type="search" id="hq" placeholder="Pegasus 42, Novablast 5, Cloudmonster…" aria-label="Buscar un modelo" aria-autocomplete="list" aria-controls="hsug" aria-expanded="false"><button type="submit">Buscar</button></form>
-          <ul class="sug" id="hsug" role="listbox" hidden></ul></div>
-        <a class="puerta p-of" href="#catalogo" id="pOfertas"><span><small>Quiero ofertas</small><b>Rebajas de hoy</b><em>Solo las que tienen talles para elegir</em></span><i aria-hidden="true">→</i></a>
-      </div>
-      <a class="p-reemp" href="#reemplazo">¿Se te gastaron las zapas? <b>Encontrá el reemplazo →</b></a>
-      <div class="atajos" id="atajos"></div>
+      <p class="lede">Las zapatillas de running que se consiguen en Argentina, comparadas. Y dónde están más baratas hoy.</p>
     </div>
-    <div class="ofertas" id="ofertas"></div>
+    <div class="puertas">
+      <a class="puerta p-reco" href="#tu-zapa"><small>No sé cuál comprar</small><b>Encontrá tu zapa</b><em>8 preguntas y te recomendamos 3</em><i aria-hidden="true">→</i></a>
+      <div class="puerta p-busca"><small>Ya sé cuál quiero</small><b>Buscala</b>
+        <form class="hbusca" id="hbusca" role="search" autocomplete="off"><input type="search" id="hq" placeholder="Pegasus, Novablast…" aria-label="Buscar un modelo" aria-autocomplete="list" aria-controls="hsug" aria-expanded="false"><button type="submit" aria-label="Buscar">→</button></form>
+        <ul class="sug" id="hsug" role="listbox" hidden></ul></div>
+      <a class="puerta p-of" href="#catalogo" id="pOfertas"><small>Busco ofertas</small><b>Rebajas de hoy</b><em id="pOfTxt">Con talles para elegir</em><i aria-hidden="true">→</i></a>
+    </div>
+    <a class="p-reemp" href="#reemplazo">¿Se te gastaron las zapas? <b>Encontrá el reemplazo →</b></a>
   </div></section>
 
   <div class="ticker"><div class="tk-track" id="ticker"></div></div>
+
+  <section class="blk of-sec" id="ofertasSec" hidden><div class="wrap">
+    <div class="head"><h2 class="sec cond">Ofertas <span>de hoy</span></h2><a class="of-todas" href="#catalogo" id="ofTodas">Ver todas →</a></div>
+    <div class="of-row" id="ofertas"></div>
+  </div></section>
 
   <section class="blk" id="aprender"><div class="wrap">
     <div class="head"><h2 class="sec cond">Aprendé <span>en 3D</span></h2>

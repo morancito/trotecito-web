@@ -1,5 +1,5 @@
 {
- "fecha": "2026-10-31T01:10:06.439Z",
+ "fecha": "2026-10-31T01:16:51.299Z",
  "tiendas": {
   "Gostore": {
    "tipo": "magento",
@@ -8,11 +8,25 @@
    "encontrados": 25,
    "errores": []
   },
+  "Moov": {
+   "tipo": "sfcc",
+   "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
+   "buscados": 71,
+   "encontrados": 1,
+   "errores": []
+  },
   "TodoTrail": {
    "tipo": "tiendanube",
    "pista": "nsk-cdn-static.tiendanube.com | www.googletagmanager.com | static.cloudflareinsights.com",
    "buscados": 71,
    "encontrados": 2,
+   "errores": []
+  },
+  "Naka Outdoors": {
+   "tipo": "desconocida",
+   "pista": "www.googletagmanager.com | accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
+   "buscados": 0,
+   "encontrados": 0,
    "errores": []
   }
  },
@@ -515,6 +529,26 @@
    "sistema": "AR"
   },
   {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "Moov",
+   "nombre": "zapatillas on cloudrunner 3 mujer",
+   "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10054-723.html",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
    "slug": "saucony-triumph-22",
    "modelo": "Saucony Triumph 22",
    "tienda": "TodoTrail",
@@ -524,9 +558,10 @@
    "precio": 169999,
    "antes": 219999,
    "cuotas": 6,
-   "_muestra": [
-    "US 8.5 - 25cm"
-   ]
+   "talles": [
+    "8.5"
+   ],
+   "sistema": "US"
   },
   {
    "slug": "saucony-peregrine-15",
@@ -538,12 +573,14 @@
    "precio": 151999,
    "antes": 189999,
    "cuotas": 6,
-   "_muestra": [
-    "US 9 - 27cm",
-    "US 9.5 - 27,5cm",
-    "US 10 - 28cm",
-    "US 10.5 - 28,5cm"
-   ]
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "sistema": "US"
   }
  ]
 }

@@ -45,9 +45,9 @@ const USOS = ["Iniciación", "Rodaje diario", "Rodaje largo", "Ritmo", "Competen
 const UCLS = { "Iniciación": "u-ini", "Rodaje diario": "u-diario", "Rodaje largo": "u-largo", "Ritmo": "u-ritmo", "Competencia": "u-comp" };
 const MARCAS = [...new Set(DATA.map(d => d.m))].sort((a, b) => a.localeCompare(b));
 /* sello de marca: el nombre en la tipografía de Trotecito con un color propio (de nuestra paleta, no el de la marca) */
-const SELLO_C = { Adidas: "#1F3F8F", Asics: "#2F5DB8", Brooks: "#8E1F3F", Hoka: "#C08A1E", "La Sportiva": "#B4532A", "New Balance": "#5B6172",
-  Nike: "#141A2E", On: "#14946A", Puma: "#7E1A36", Salomon: "#3F6B4E", Saucony: "#6A3FA0", "Under Armour": "#2B2F3A" };
-const sello = (m, cls = "") => `<span class="sello ${cls}" style="--sc:${SELLO_C[m] || "#141A2E"}">${esc(m)}</span>`;
+const SELLO_C = { Adidas: ["#1F3F8F"], Asics: ["#0E7C86"], Brooks: ["#8E1F3F"], Hoka: ["#E7B13C", "#141A2E"], "La Sportiva": ["#C2571F"],
+  "New Balance": ["#5B6172"], Nike: ["#141A2E"], On: ["#0F7A57"], Puma: ["#B8336A"], Salomon: ["#56602A"], Saucony: ["#6A3FA0"], "Under Armour": ["#A9C9EC", "#141A2E"] };
+const sello = (m, cls = "") => { const [bg, fg = "#FFFFFF"] = SELLO_C[m] || ["#141A2E"]; return `<span class="sello ${cls}" style="--sc:${bg};--st:${fg}">${esc(m)}</span>`; };
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");

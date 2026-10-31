@@ -46,12 +46,13 @@ for (const m of cat.modelos.filter(m => m.tiendas?.length && (pedidos.length ? p
       const urls = (await imagenes(t.url)).slice(0, MAX), bajadas = [];
       for (const src of urls) {
         try {
-          const r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) });
+          let r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) });
+          for (let k = 1; r.status === 429 && k <= 3; k++) { await dormir(15000 * k); r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) }); }   // el CDN de VTEX frena si se piden muchas seguidas
           const ct = r.headers.get("content-type") || "", buf = Buffer.from(await r.arrayBuffer());
           if (r.ok && /^image\//.test(ct) && buf.length >= 8000) bajadas.push([/webp/.test(ct) ? "webp" : /png/.test(ct) ? "png" : "jpg", buf]);
           else errores.push(`${src}: HTTP ${r.status} ${ct} ${buf.length} bytes`);
         } catch (e) { errores.push(`${src}: ${e.message}`); }
-        await dormir(400);
+        await dormir(/vteximg|vtexassets/.test(src) ? 2500 : 400);
       }
       if (bajadas.length > (mejor?.fotos.length || 0)) mejor = { tienda: t.tienda, url: t.url, fotos: bajadas };
       if (!urls.length) errores.push(`${m.slug} ${t.tienda}: la página no tiene fotos reconocibles`);

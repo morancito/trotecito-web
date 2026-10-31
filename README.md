@@ -41,6 +41,15 @@ guarda el cambio en el repo y Cloudflare vuelve a publicar la web sola. El histo
 Para correrlo a mano: pestaña **Actions → Actualizar precios → Run workflow**. El resultado de cada pasada queda en `public/data/robot.json` y se ve en el panel.
 Si una tienda no responde, se conserva el último precio y ese día no suma punto (queda en el log).
 
+## Sumar tiendas nuevas
+
+1. Agregá la tienda a la lista `TIENDAS` de `scripts/buscar-ofertas.mjs` (nombre y dirección). Reconoce solo
+   Salesforce, Magento, Tiendanube, VTEX, Shopify y WooCommerce.
+2. Corré **Actions → Buscar ofertas → Run workflow** (podés poner solo el nombre de la tienda nueva).
+   Deja lo encontrado en `scripts/ofertas-encontradas.json`, sin tocar el catálogo.
+3. Revisá ese archivo y sumá las ofertas con `node scripts/sumar-ofertas.mjs --guardar`.
+   Desde ahí el robot diario actualiza su precio, stock y talles como el resto.
+
 ## Actualizar precios a mano
 
 Editá `public/data/modelos.json` y hacé push. Cada oferta de una tienda tiene esta forma:

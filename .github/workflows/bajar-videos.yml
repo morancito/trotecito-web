@@ -1,6 +1,7 @@
 name: Bajar videos de fondo
 
-# Baja videos de stock con licencia libre (Mixkit) a scripts/videos/ para elegir y procesar el fondo de la portada.
+# Baja videos de stock con licencia libre (Mixkit) para elegir el fondo de la portada.
+# No los guarda en el repo (pesan mucho): quedan como artefacto de la corrida, para bajarlos con `gh run download`.
 on:
   workflow_dispatch:
     inputs:
@@ -9,7 +10,7 @@ on:
         required: true
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   bajar:
@@ -29,9 +30,8 @@ jobs:
             curl -fsSL -o "scripts/videos/$id.jpg" "https://assets.mixkit.co/videos/$id/$id-thumb-720-0.jpg" || true
           done
           ls -la scripts/videos
-      - name: Guardar
-        run: |
-          git config user.name "trotecito-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f scripts/videos
-          git diff --cached --quiet || (git commit -m "Videos de fondo para elegir" && git pull --rebase && git push)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: scripts/videos
+          retention-days: 7

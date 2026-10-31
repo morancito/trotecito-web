@@ -78,6 +78,17 @@ $("#ticker").innerHTML = `<div class="tk-run">${items}</div><div class="tk-run" 
 /* velocidad fija (~40 px por segundo) sin importar cuántas zapas haya */
 requestAnimationFrame(() => { const w = $("#ticker .tk-run").scrollWidth; $("#ticker").style.animationDuration = Math.round(w / 40) + "s"; });
 
+/* video de fondo de la portada: no se carga si pidieron menos movimiento o ahorro de datos; se pausa fuera de pantalla */
+(() => {
+  const v = $("#heroVid"); if (!v) return;
+  const quieto = matchMedia("(prefers-reduced-motion: reduce)").matches || navigator.connection?.saveData;
+  if (quieto) return;
+  v.src = BASE + (innerWidth < 700 ? "video/portada-540.mp4" : "video/portada-1280.mp4");
+  const jugar = () => v.play().catch(() => {});
+  new IntersectionObserver(([e]) => e.isIntersecting && !document.hidden ? jugar() : v.pause()).observe(v);
+  document.addEventListener("visibilitychange", () => document.hidden ? v.pause() : jugar());
+})();
+
 /* ---------- aprendé ---------- */
 const VISTAS = { "Costado": 0, "3/4": 0.55, "Atrás": Math.PI / 2 };
 const lab = Viewer($("#labStage"), { H: 38, F: 28, auto: false, view: 0.35 });

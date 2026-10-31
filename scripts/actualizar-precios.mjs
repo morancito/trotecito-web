@@ -18,32 +18,42 @@ const hoyISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/B
 const hoyAR = hoyISO.split("-").reverse().join("/");
 
 let ok = 0, fallas = 0, cambios = 0, conTalles = 0;
-const errores = [], sinStockL = [];
+const errores = [], sinStockL = [], pendientes = [];
+async function procesar(m, t, ultimoIntento) {
+  try {
+    const r = await leer(t.url);
+    if (r.sinStock) { t.sinStock = true; sinStockL.push(`${m.slug} · ${t.tienda}`); console.log(`– ${m.slug} · ${t.tienda}: sin stock`); }
+    else {
+      delete t.sinStock;
+      if (r.precio !== t.precio) cambios++;
+      t.precio = r.precio; t.fecha = hoyAR;
+      if (r.antes) t.antes = r.antes; else delete t.antes;
+      if (r.cuotas) t.cuotas = `${r.cuotas} cuotas sin interés`;
+      if (r.talles?.length) { t.talles = r.talles; t.sistema = r.sistema; conTalles++; } else { delete t.talles; delete t.sistema; }
+      const clave = t.tienda + (t.nota === "Mujer" ? " · Mujer" : "");   // hombre y mujer llevan historial separado
+      const serie = ((hist.series[m.slug] ??= {})[clave] ??= []);
+      const ult = serie[serie.length - 1];
+      if (ult && ult[0] === hoyISO) ult[1] = r.precio; else serie.push([hoyISO, r.precio]);
+      console.log(`✓ ${m.slug} · ${t.tienda}: $${r.precio.toLocaleString("es-AR")}`);
+    }
+    ok++;
+  } catch (e) {
+    /* las tiendas a veces frenan si se les pide mucho seguido: lo que falla se reintenta al final, más despacio */
+    if (!ultimoIntento && !/404/.test(e.message)) { pendientes.push([m, t]); return; }
+    fallas++; errores.push(`${m.slug} · ${t.tienda}: ${e.message}`); console.warn(`✗ ${m.slug} · ${t.tienda}: ${e.message}`);
+  }
+}
 for (const m of cat.modelos) {
   for (const t of m.tiendas || []) {
     if (!t.url) continue;
-    try {
-      const r = await leer(t.url);
-      if (r.sinStock) { t.sinStock = true; sinStockL.push(`${m.slug} · ${t.tienda}`); console.log(`– ${m.slug} · ${t.tienda}: sin stock`); }
-      else {
-        delete t.sinStock;
-        if (r.precio !== t.precio) cambios++;
-        t.precio = r.precio; t.fecha = hoyAR;
-        if (r.antes) t.antes = r.antes; else delete t.antes;
-        if (r.cuotas) t.cuotas = `${r.cuotas} cuotas sin interés`;
-        if (r.talles?.length) { t.talles = r.talles; t.sistema = r.sistema; conTalles++; } else { delete t.talles; delete t.sistema; }
-        const clave = t.tienda + (t.nota === "Mujer" ? " · Mujer" : "");   // hombre y mujer llevan historial separado
-        const serie = ((hist.series[m.slug] ??= {})[clave] ??= []);
-        const ult = serie[serie.length - 1];
-        if (ult && ult[0] === hoyISO) ult[1] = r.precio; else serie.push([hoyISO, r.precio]);
-        console.log(`✓ ${m.slug} · ${t.tienda}: $${r.precio.toLocaleString("es-AR")}`);
-      }
-      ok++;
-    } catch (e) {
-      fallas++; errores.push(`${m.slug} · ${t.tienda}: ${e.message}`); console.warn(`✗ ${m.slug} · ${t.tienda}: ${e.message}`);
-    }
+    await procesar(m, t, false);
     await dormir(PAUSA_MS);
   }
+}
+if (pendientes.length) {
+  console.log(`\nReintentando ${pendientes.length} que fallaron…`);
+  await dormir(30000);
+  for (const [m, t] of pendientes) { await procesar(m, t, true); await dormir(PAUSA_MS * 3); }
 }
 
 // Recorta el historial a los últimos meses para que el archivo no crezca sin límite.

@@ -23,7 +23,8 @@ export const num = v => (v == null || v === "" ? null : Math.round(parseFloat(St
 const desescapar = s => s.replace(/&quot;/g, '"').replace(/&#34;/g, '"').replace(/&amp;/g, "&").replace(/&#39;/g, "'");
 const cuotasDe = texto => +((texto.match(/Cuotas habituales\s*(\d+)\s*Cuotas sin inter/i) || texto.match(/(\d+)\s*cuotas sin inter[eé]s/i) || [])[1] || 0);
 /* primero numeración argentina; si la tienda usa la de EE. UU. ("US 9 - 27cm"), se guarda como US */
-const talleUS = v => { const m = String(v).match(/\bUS\s*(\d{1,2}(?:[.,]5)?)\b/i); return m ? [m[1].replace(",", ".")] : []; };
+/* "US 9 - 27cm" o, en las unisex, "US M10 / US W11" (se toma la de hombre) */
+const talleUS = v => { const m = String(v).match(/\bUS\s*M?\s*(\d{1,2}(?:[.,]5)?)(?![\d.,])/i); return m ? [m[1].replace(",", ".")] : []; };
 const conTalles = (lista) => {
   const t = ordenar(lista.flatMap(talleAR)); if (t.length) return { talles: t, sistema: "AR" };
   const u = ordenar(lista.flatMap(talleUS)); return u.length ? { talles: u, sistema: "US" } : {};

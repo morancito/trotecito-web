@@ -4,6 +4,11 @@ name: Preparar modelos nuevos
 # y baja fotos de producto. Deja todo en el repo para revisarlo; los borradores no se ven en el sitio.
 on:
   workflow_dispatch:
+    inputs:
+      fotos:
+        description: "Solo bajar fotos de estos modelos (slugs separados por espacio). Vacío = todo el proceso"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -18,14 +23,19 @@ jobs:
         with:
           node-version: 22
       - name: Fichas de RunRepeat
+        if: inputs.fotos == ''
         run: node scripts/fichas-runrepeat.mjs
         continue-on-error: true
       - name: Buscar precios y talles en las tiendas
+        if: inputs.fotos == ''
         run: node scripts/buscar-ofertas.mjs --borradores
       - name: Sumar las ofertas encontradas
+        if: inputs.fotos == ''
         run: node scripts/sumar-ofertas.mjs --guardar
       - name: Bajar fotos
-        run: node scripts/bajar-fotos-tiendas.mjs
+        env:
+          FOTOS: ${{ inputs.fotos }}
+        run: node scripts/bajar-fotos-tiendas.mjs $FOTOS
         continue-on-error: true
       - name: Guardar
         run: |

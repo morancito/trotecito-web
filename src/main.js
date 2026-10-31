@@ -4,7 +4,7 @@ import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
 import { Viewer, perfil, topY, RM } from "./shoe3d.js";
 import { grafico, montarGrafico, variacion } from "./precios.js";
-import { PREGUNTAS, recomendar } from "./recomendador.js";
+import { PREGUNTAS, recomendar, rangoKg } from "./recomendador.js";
 import { medir, medirVisita } from "./medir.js";
 
 //@@DATOS
@@ -120,7 +120,9 @@ $("#lanes").onclick = e => { const b = e.target.closest(".tab"); if (b) abrirLan
 abrirLane("drop");
 
 /* ---------- catálogo ---------- */
-const KG = d => { const p = d.corredor?.peso || ""; return /cualquier/i.test(p) ? 999 : +(p.match(/\d+/) || [999])[0]; };
+/* el rango recomendado de la zapa se superpone con la franja de peso elegida (74: menos de 75, 89: 75 a 90, 91: más de 90) */
+const FRANJA = { 74: [0, 75], 89: [75, 90], 91: [90, 999] };
+const pesoOk = (d, kg) => { const { min, max } = rangoKg(d), [lo, hi] = FRANJA[kg] || [kg, kg]; return max > lo && min < hi; };
 const desc = d => { const t = d.tiendas[0]; return t?.antes > t?.precio ? 1 - t.precio / t.antes : 0; };
 const nivelAm = d => amort(d)?.t || "";
 const PASO = 10000;
@@ -208,13 +210,13 @@ function pintarPanel() {
 const pasa = (d, sin) => (st.q ? `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}`.toLowerCase().includes(st.q) : terr(d) === st.terreno)
   && (sin === "pis" || !st.pis || d.tipo === st.pis) && (sin === "uso" || !st.uso.size || st.uso.has(d.uso))
   && (sin === "marca" || !st.marcas.size || st.marcas.has(d.m)) && (sin === "am" || !st.am.size || st.am.has(nivelAm(d)))
-  && (sin === "kg" || !st.kg || KG(d) >= st.kg) && (sin === "desc" || !st.desc || desc(d) > 0.01) && (sin === "placa" || !st.placa || conPlaca(d))
+  && (sin === "kg" || !st.kg || pesoOk(d, st.kg)) && (sin === "desc" || !st.desc || desc(d) > 0.01) && (sin === "placa" || !st.placa || conPlaca(d))
   && (st.pmin <= P_MIN && st.pmax >= P_MAX || d.min && d.min >= st.pmin && (st.pmax >= P_MAX || d.min <= st.pmax));
 /* cuántas zapas quedarían al tocar cada opción */
 function contarOpciones() {
   fp.querySelectorAll("em[data-n]").forEach(em => {
     const [k, v] = em.dataset.n.split("|");
-    const f = { gen: d => d.todas.some(t => paraGen(t, v)), uso: d => d.uso === v, am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || KG(d) >= +v, desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
+    const f = { gen: d => d.todas.some(t => paraGen(t, v)), uso: d => d.uso === v, am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || pesoOk(d, +v), desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
     const n = DATA.filter(d => pasa(d, k) && f(d)).length;
     em.textContent = n; em.closest(".op").classList.toggle("cero", n === 0);
   });

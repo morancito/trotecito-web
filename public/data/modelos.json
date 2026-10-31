@@ -90,11 +90,11 @@
    "ar": true,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Hasta 90 kg",
-    "distancia": "Series, 10K a media maratón"
+    "ritmo": "4:15 a 5:45 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes de calidad, 10K a maratón"
    },
-   "evitar": "tenés el pie ancho, sos pronador o la querés para trotar lento: es angosta y está hecha para ir rápido.",
+   "evitar": "usás plantillas ortopédicas, sos pronador o la querés para trotes lentos de más de 20K: está hecha para ir rápido.",
    "fuente": [
     "Correr una Maratón",
     "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adizero-evo-sl/"
@@ -193,10 +193,10 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 80 kg",
     "distancia": "Rodajes diarios y fondos medios"
    },
-   "evitar": "buscás una zapa liviana para series: pesa 300 g.",
+   "evitar": "buscás una zapatilla liviana para competir: pesa 300 g y no tiene placa.",
    "fuente": [
     "Carreras de Montaña",
     "https://carrerasdemontana.com/2026/03/04/nike-pegasus-42-mayayo/"
@@ -353,7 +353,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "peso": "Hasta 90 kg",
     "distancia": "Fondos largos y recuperación"
    },
    "evitar": "te gusta sentir el piso o vas a hacer series rápidas: es alta y pesada.",
@@ -453,7 +453,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "peso": "Entre 70 y 100 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "te gusta sentir el piso o vas a hacer series cortas.",
@@ -534,7 +534,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 95 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "tu pisada es neutra: el soporte extra no te suma y la hace más pesada.",
@@ -698,7 +698,11 @@
     "peso": "Hasta 90 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "la querés para trotes lentos o estás empezando: la placa pide ritmo."
+   "evitar": "la querés para trotes lentos o estás empezando: la placa pide ritmo.",
+   "fuente": [
+    "Foroatletismo",
+    "https://www.foroatletismo.com/zapatillas/nike-zoom-fly-5/"
+   ]
   },
   {
    "m": "Nike",
@@ -1465,7 +1469,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "peso": "Hasta 95 kg",
     "distancia": "Fondos largos"
    },
    "evitar": "tu pisada es neutra y buscás algo ágil.",
@@ -1558,7 +1562,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "tu pisada es neutra o buscás velocidad.",
@@ -1703,9 +1707,9 @@
    "ante": 37,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
-    "distancia": "Series, tempo, 10K a media maratón"
+    "ritmo": "4:00 a 6:00 min/km",
+    "peso": "Hasta 95 kg",
+    "distancia": "Rodajes, tempo y competencias largas"
    },
    "evitar": "sos pronador o te gusta sentir el piso: es muy alta.",
    "fuente": [
@@ -1756,8 +1760,8 @@
    "ante": 35.5,
    "corredor": {
     "nivel": "Avanzado",
-    "ritmo": "Menos de 4:30 min/km",
-    "peso": "Hasta 80 kg",
+    "ritmo": "3:30 a 4:30 min/km",
+    "peso": "Hasta 85 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "corrés lento o estás empezando: la placa rinde a ritmo rápido.",
@@ -1819,7 +1823,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
-    "peso": "Hasta 80 kg",
+    "peso": "Más de 65 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "la querés para entrenar todos los días o corrés lento.",
@@ -1893,7 +1897,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Entre 65 y 85 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "la querés para series o sos pronador marcado.",
@@ -1951,7 +1955,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "buscás una zapa liviana para ir rápido.",
@@ -2045,11 +2049,11 @@
    "ante": 29,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Hasta 90 kg",
+    "ritmo": "4:00 a 5:30 min/km",
+    "peso": "Hasta 80 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "sos pronador o pesás más de 85 kg y hacés fondos largos.",
+   "evitar": "sos pronador, o pesás más de 80 kg y la querés para fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fuel-cell-rebel-v-5"
@@ -2214,8 +2218,8 @@
    "ante": 30,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Hasta 90 kg",
+    "ritmo": "3:30 a 5:15 min/km",
+    "peso": "Hasta 85 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "estás empezando o sos pronador.",
@@ -2293,8 +2297,8 @@
    "ante": 31.5,
    "corredor": {
     "nivel": "Avanzado",
-    "ritmo": "Menos de 4:30 min/km",
-    "peso": "Hasta 80 kg",
+    "ritmo": "Menos de 5:00 min/km",
+    "peso": "Hasta 90 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "la querés para entrenar todos los días o corrés lento.",
@@ -2344,10 +2348,10 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "pesás más de 85 kg o sos pronador y hacés fondos muy largos.",
+   "evitar": "sos pronador: casi no tiene soporte en el arco.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-velocity-nitro-4"
@@ -2437,11 +2441,11 @@
    "ante": 30,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Hasta 90 kg",
-    "distancia": "Series, tempo, 10K a media maratón"
+    "ritmo": "3:30 a 6:00 min/km",
+    "peso": "Entre 70 y 100 kg",
+    "distancia": "Series, tempo, 10K a maratón"
    },
-   "evitar": "estás empezando o corrés siempre suave: la placa pide ritmo.",
+   "evitar": "sos pronador o pesás menos de 65 kg: la placa rinde más con algo de peso y ritmo.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-deviate-nitro-4"
@@ -2530,7 +2534,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "peso": "Más de 70 kg, ideal 85 kg o más",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "vas a hacer series cortas o te gusta sentir el piso.",
@@ -3014,7 +3018,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "estás empezando o corrés siempre muy lento.",
+   "evitar": "buscás una zapatilla liviana para series: es alta y pesa casi 300 g.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudboom-max"
@@ -3113,7 +3117,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "apoyás primero la punta del pie: tiene mucho drop.",
@@ -3210,7 +3214,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Entre 70 y 100 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "la querés para series o buscás una zapa liviana.",
@@ -3342,10 +3346,10 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "pesás más de 85 kg y hacés fondos largos.",
+   "evitar": "pesás más de 85 kg y la querés para fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/brooks-launch-10"
@@ -3469,6 +3473,10 @@
     "fotos/under-armour-velociti-3/2.webp",
     "fotos/under-armour-velociti-3/3.webp",
     "fotos/under-armour-velociti-3/4.webp"
+   ],
+   "fuente": [
+    "RunningShoesGuru",
+    "https://www.runningshoesguru.com/reviews/road/under-armour-velociti-3-review/"
    ]
   },
   {
@@ -3618,7 +3626,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "peso": "Más de 80 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "la querés para series o te importa el peso.",
@@ -3712,7 +3720,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Más de 70 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "vas a hacer series cortas o sos pronador marcado.",
@@ -3775,7 +3783,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Hasta 75 kg",
+    "peso": "Hasta 80 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
    "evitar": "hacés fondos largos o apoyás fuerte el talón: tiene poca espuma.",
@@ -3833,8 +3841,8 @@
    "ante": 31.5,
    "corredor": {
     "nivel": "Avanzado",
-    "ritmo": "Menos de 4:30 min/km",
-    "peso": "Hasta 80 kg",
+    "ritmo": "Menos de 5:00 min/km",
+    "peso": "Hasta 85 kg",
     "distancia": "10K a maratón, día de carrera"
    },
    "evitar": "la querés para entrenar todos los días o corrés lento.",
@@ -4055,7 +4063,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "te importa el peso de la zapa o sos pronador.",
@@ -4127,7 +4135,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 80 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "la querés para competir o hacer series muy rápidas.",
@@ -4414,6 +4422,10 @@
     "fotos/adidas-supernova-stride-2/2.webp",
     "fotos/adidas-supernova-stride-2/3.webp",
     "fotos/adidas-supernova-stride-2/4.webp"
+   ],
+   "fuente": [
+    "i-run",
+    "https://www.i-run.com/man/shoes/road-trail/adidas/Supernova-Stride-2_fiche_143254.html"
    ]
   },
   {
@@ -4645,10 +4657,10 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "sos pronador, o pesás más de 85 kg y hacés fondos muy largos.",
+   "evitar": "sos pronador: casi no tiene soporte en el arco.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-velocity-nitro-5"
@@ -4792,7 +4804,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "Rápido en sendero y bajadas",
-    "peso": "Hasta 75 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Carreras de montaña cortas"
    },
    "evitar": "hacés ultras largos o necesitás mucha amortiguación.",
@@ -5341,11 +5353,11 @@
    "ante": 38,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "6:00 min/km o más lento",
-    "peso": "Cualquier peso, ideal más de 75 kg",
+    "ritmo": "5:00 min/km o más lento",
+    "peso": "Más de 70 kg",
     "distancia": "Fondos largos y regenerativos"
    },
-   "evitar": "querés hacer series o ritmos rápidos: es la más alta y pesada de Hoka.",
+   "evitar": "querés hacer series o ritmos rápidos: es de las Hoka más altas y pesadas.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-bondi-9"
@@ -5358,7 +5370,7 @@
    "mod": "Mach",
    "ver": "6",
    "tipo": "Neutra",
-   "uso": "Rodaje diario",
+   "uso": "Ritmo",
    "terreno": "Asfalto",
    "esp": "EVA supercrítica",
    "pl": "Sin placa",
@@ -5408,11 +5420,11 @@
    "ante": 32,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
-    "distancia": "Rodajes de 5 a 15K"
+    "ritmo": "4:00 a 5:30 min/km",
+    "peso": "Hasta 80 kg",
+    "distancia": "Series, tempo, 10K a maratón"
    },
-   "evitar": "necesitás estabilidad o mucha amortiguación para fondos largos.",
+   "evitar": "necesitás estabilidad o pesás más de 85 kg y la querés para fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-mach-6"
@@ -5425,7 +5437,7 @@
    "mod": "Mach",
    "ver": "7",
    "tipo": "Neutra",
-   "uso": "Rodaje diario",
+   "uso": "Ritmo",
    "terreno": "Asfalto",
    "esp": "EVA supercrítica",
    "pl": "Sin placa",
@@ -5492,11 +5504,11 @@
    "ante": 32,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 90 kg",
-    "distancia": "Rodajes de 5 a 15K"
+    "ritmo": "4:00 a 5:30 min/km",
+    "peso": "Hasta 80 kg",
+    "distancia": "Series, tempo, 10K a maratón"
    },
-   "evitar": "necesitás estabilidad o buscás la máxima amortiguación para fondos largos.",
+   "evitar": "necesitás estabilidad o pesás más de 85 kg y la querés para fondos largos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-mach-7"
@@ -5565,7 +5577,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "sos pronador o buscás una zapatilla barata para empezar: es firme y de precio alto.",
+   "evitar": "sos pronador o la querés para trotes muy lentos: tiene placa y está pensada para ritmos vivos.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-mach-x-3"
@@ -5628,7 +5640,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 85 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "tenés pisada neutra y buscás una zapatilla blanda: el soporte se siente firme.",
@@ -5751,10 +5763,10 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:00 a 6:30 min/km",
-    "peso": "Hasta 75 kg",
-    "distancia": "Rodajes de 5 a 15K"
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes, fartlek y carreras de 10K a media maratón"
    },
-   "evitar": "pesás más de 85 kg o hacés fondos largos: tiene menos espuma que otras Hoka y se gasta rápido.",
+   "evitar": "sos pronador o buscás mucha amortiguación para fondos largos: es liviana y tiene menos espuma que otras Hoka.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-rincon-4"
@@ -5851,7 +5863,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "5:30 a 7:00 min/km",
-    "peso": "Hasta 90 kg",
+    "peso": "Más de 70 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
    "evitar": "buscás una zapatilla liviana para ritmos rápidos.",
@@ -5940,7 +5952,7 @@
     "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Montaña, 21K a ultra"
    },
-   "evitar": "corrés en senderos fáciles o asfalto: es mucha zapatilla y los tacos se gastan en el pavimento.",
+   "evitar": "corrés mucho en asfalto: los tacos se gastan rápido en el pavimento.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-speedgoat-6"
@@ -6365,8 +6377,8 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "Trote suave, muchas horas",
-    "peso": "Cualquier peso, ideal más de 75 kg",
-    "distancia": "Montaña, 21K a ultra"
+    "peso": "Hasta 95 kg",
+    "distancia": "Montaña fácil, 21K a ultra"
    },
    "evitar": "usás plantillas ortopédicas o buscás una suela flexible para subidas empinadas: es rígida.",
    "fuente": [
@@ -6486,7 +6498,7 @@
    "corredor": {
     "nivel": "Avanzado",
     "ritmo": "Rápido en sendero y bajadas",
-    "peso": "Hasta 80 kg",
+    "peso": "Hasta 75 kg",
     "distancia": "Carreras de montaña cortas"
    },
    "evitar": "hacés ultras largos, pesás más de 75 kg o recién empezás: es muy liviana, baja y ajustada.",
@@ -6541,8 +6553,8 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "Rápido en sendero y bajadas",
-    "peso": "Hasta 90 kg",
-    "distancia": "Montaña, 21K a ultra"
+    "peso": "Hasta 85 kg",
+    "distancia": "Montaña, de 21K a 100K"
    },
    "evitar": "tenés el pie ancho o buscás una zapatilla blanda: el calce es ajustado y la pisada firme.",
    "fuente": [
@@ -6587,7 +6599,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "Trote suave, muchas horas",
-    "peso": "Hasta 90 kg",
+    "peso": "Más de 70 kg",
     "distancia": "Montaña, 21K a ultra"
    },
    "evitar": "corrés en terreno muy técnico donde necesitás sentir el piso: es alta.",
@@ -6703,11 +6715,11 @@
    "ante": 28,
    "corredor": {
     "nivel": "Intermedio a avanzado",
-    "ritmo": "4:00 a 5:00 min/km",
-    "peso": "Hasta 90 kg",
+    "ritmo": "3:30 a 5:30 min/km",
+    "peso": "Hasta 85 kg",
     "distancia": "Series, tempo, 10K a media maratón"
    },
-   "evitar": "sos pronador o la querés solo para trotar lento: está hecha para ir rápido.",
+   "evitar": "sos pronador: es poco estable para corregir la pisada.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-speed-5"
@@ -6867,8 +6879,8 @@
    "ante": 32,
    "corredor": {
     "nivel": "Todos los niveles",
-    "ritmo": "6:00 min/km o más lento",
-    "peso": "Hasta 90 kg",
+    "ritmo": "5:00 min/km o más lento",
+    "peso": "Más de 75 kg",
     "distancia": "Fondos largos y regenerativos"
    },
    "evitar": "tenés pisada neutra o buscás algo liviano para ir rápido: es pesada y con mucho soporte.",
@@ -7026,7 +7038,7 @@
    "corredor": {
     "nivel": "Intermedio a avanzado",
     "ritmo": "Trote suave, muchas horas",
-    "peso": "Hasta 90 kg",
+    "peso": "Hasta 100 kg",
     "distancia": "Montaña, 21K a ultra"
    },
    "evitar": "buscás una zapatilla liviana para carreras cortas: es pesada.",

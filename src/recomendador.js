@@ -29,7 +29,15 @@ const SIGUE = { "Iniciación": ["Rodaje diario", "Para dar un paso más", "Para 
 const ORDEN = ["La mejor para vos", "La que más conviene por precio", "Otra muy buena opción"];
 
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
-export const capacidadKg = d => { const p = d.corredor?.peso || ""; return /cualquier/i.test(p) ? 999 : +(p.match(/\d+/) || [999])[0]; };
+/* rango de peso del corredor para el que se recomienda: "Hasta 85 kg", "Más de 70 kg", "Entre 70 y 100 kg", "Cualquier peso..." */
+export const rangoKg = d => {
+  const p = d.corredor?.peso || "", n = (p.match(/\d+/g) || []).map(Number);
+  if (/^cualquier/i.test(p) || !n.length) return { min: 0, max: 999 };
+  if (/^entre/i.test(p)) return { min: n[0], max: n[1] ?? 999 };
+  if (/^m[aá]s de/i.test(p)) return { min: n[0], max: 999 };
+  return { min: 0, max: n[0] };
+};
+export const capacidadKg = d => rangoKg(d).max;
 const placa = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
 
 /* precio más bajo para el género pedido (Unisex y sin dato valen para los dos) */
@@ -57,9 +65,10 @@ export function puntaje(d, r, usoBuscado = r.uso) {
   else if (r.pis === "Supinadora") { if (est) add(-16, "Trae soporte para pronadores, que no es lo que te conviene"); else if (d.talon >= 36) add(14, "Neutra y con buena espuma, lo que conviene si supinás"); else add(6); }
   else { if (est) add(-4); else add(4, "Es neutra: la opción más segura si no sabés cómo pisás", 4); }
   /* peso del corredor */
-  const cap = capacidadKg(d);
-  if (r.kg <= cap) add(0, cap >= 999 ? "Sirve para cualquier peso" : `Va bien con tu peso: la recomendamos ${d.corredor.peso.toLowerCase()}`, 2);
-  if (r.kg > cap) add(-20, `Para tu peso le falta espuma: la recomendamos ${d.corredor.peso.toLowerCase()}`);
+  const { min, max } = rangoKg(d), pTxt = (d.corredor?.peso || "").toLowerCase();
+  if (r.kg > max) add(-20, `Para tu peso le falta espuma: la recomendamos ${pTxt}`);
+  else if (r.kg < min - 3) add(-8, `Está pensada para corredores más pesados: la recomendamos ${pTxt}`);
+  else add(0, max >= 999 && !min ? "Sirve para cualquier peso" : `Va bien con tu peso: la recomendamos ${pTxt}`, 2);
   if (r.kg >= 90 && d.talon >= 40) add(10, `${d.talon} mm de espuma en el talón: protege más con tu peso`);
   else if (r.kg >= 90 && d.talon && d.talon < 34) add(-10, "Poca espuma para tu peso");
   if (r.kg <= 70 && d.peso && d.peso <= 240) add(6, `Liviana: ${d.peso} g`);

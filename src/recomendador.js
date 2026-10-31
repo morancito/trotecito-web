@@ -3,6 +3,7 @@
 
 export const PREGUNTAS = [
   { k: "gen", t: "¿Qué talles buscás?", ops: [["Hombre", "Hombre"], ["Mujer", "Mujer"]] },
+  { k: "talle", t: "¿Qué talle usás?", grid: true, ops: [...Array.from({ length: 27 }, (_, i) => String(34 + i / 2).replace(/\.0$/, "")).map(x => [x, x]), ["", "No sé, mostrame todo"]] },
   { k: "terreno", t: "¿Dónde corrés?", ops: [["Asfalto", "Calle, pista o cinta"], ["Trail", "Senderos y montaña"]] },
   { k: "uso", t: "¿Para qué la querés?", ops: [["Iniciación", "Estoy empezando"], ["Rodaje diario", "Entrenar casi todos los días"], ["Rodaje largo", "Fondos largos"], ["Ritmo", "Series y ritmos rápidos"], ["Competencia", "Competir"]],
     trail: [["Rodaje diario", "Salidas cortas y medias"], ["Rodaje largo", "Fondos largos y ultras"], ["Ritmo", "Carreras rápidas"]] },
@@ -32,8 +33,11 @@ export const capacidadKg = d => { const p = d.corredor?.peso || ""; return /cual
 const placa = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
 
 /* precio más bajo para el género pedido (Unisex y sin dato valen para los dos) */
-export function precioPara(d, gen) {
-  const t = (d.todas || d.tiendas || []).filter(x => !gen || !x.nota || x.nota === "Unisex" || x.nota === gen).sort((a, b) => a.precio - b.precio)[0];
+/* talle: true = la tienda lo tiene, false = no, null = no lo pudimos confirmar */
+export const tieneTalle = (t, talle) => !talle ? null : t.sistema === "AR" && t.talles ? t.talles.includes(talle) : null;
+export function precioPara(d, gen, talle = "") {
+  const t = (d.todas || d.tiendas || []).filter(x => (!gen || !x.nota || x.nota === "Unisex" || x.nota === gen) && tieneTalle(x, talle) !== false)
+    .sort((a, b) => (tieneTalle(b, talle) === true) - (tieneTalle(a, talle) === true) || a.precio - b.precio)[0];
   return t || null;
 }
 
@@ -80,13 +84,14 @@ export function puntaje(d, r, usoBuscado = r.uso) {
 
 export function recomendar(DATA, r) {
   const tope = +r.tope || Infinity;
-  const base = DATA.filter(d => (d.terreno || "Asfalto") === r.terreno).map(d => ({ d, t: precioPara(d, r.gen) })).filter(x => x.t);
+  const base = DATA.filter(d => (d.terreno || "Asfalto") === r.terreno).map(d => ({ d, t: precioPara(d, r.gen, r.talle) })).filter(x => x.t);
   const dentro = base.filter(x => x.t.precio <= tope);
   const pool = dentro.length >= 3 ? dentro : base;            // si el presupuesto no alcanza para 3, avisamos y usamos todo
   const precios = pool.map(x => x.t.precio), pMin = Math.min(...precios), pMax = Math.max(...precios);
   const evalua = (x, uso) => {
     const p = puntaje(x.d, r, uso);
     p.s += pMax > pMin ? 8 * (1 - (x.t.precio - pMin) / (pMax - pMin)) : 0;   // a igual calidad, mejor más barata
+    if (r.talle && !tieneTalle(x.t, r.talle)) p.s -= 6;                         // preferimos las que confirmamos que tienen tu talle
     const off = x.t.antes > x.t.precio ? 1 - x.t.precio / x.t.antes : 0;
     if (off >= 0.3) { p.s += 4; p.pros.push(`En oferta: −${Math.round(off * 100)}% en ${x.t.tienda}`); }
     return { ...x, ...p, off };
@@ -108,6 +113,10 @@ export function recomendar(DATA, r) {
     if (picks.some(p => p.d.m === x.d.m) && rank.some(y => !usados.has(y.d.id) && !picks.some(p => p.d.m === y.d.m) && y.s >= x.s - 6)) continue;
     tomar(x, "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo."); }
   picks.sort((a, b) => (ORDEN.indexOf(a.etiqueta) + 1 || 9) - (ORDEN.indexOf(b.etiqueta) + 1 || 9));
+  if (r.talle) for (const p of picks) {
+    if (tieneTalle(p.t, r.talle)) p.pros.unshift(`Hay talle ${r.talle} en ${p.t.tienda}`);
+    else p.contras.unshift(`No pudimos confirmar el talle ${r.talle} en ${p.t.tienda}: chequealo antes de comprar`);
+  }
   /* qué la diferencia de la primera */
   const ref = picks[0], nRef = ref.d.mod + (ref.d.ver ? " " + ref.d.ver : "");
   for (const p of picks.slice(1)) {

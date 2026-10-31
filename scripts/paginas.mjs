@@ -78,7 +78,7 @@ for (const m of cat.modelos) {
   <p class="kicker">${esc(m.m)}</p><h1 class="cond">${esc(n)}</h1>
   ${m.fotos?.[0] ? `<img src="${BASE}${esc(m.fotos[0])}" alt="${esc(m.m + " " + n)}" width="800" height="800">` : ""}
   <p>${esc(desc)}</p>
-  ${t.length ? `<h2>Dónde comprarla</h2><ul>${t.map(x => `<li><a href="${esc(x.url)}" rel="nofollow noopener" target="_blank">${esc(x.tienda)}</a>${x.nota ? ` (${esc(x.nota.toLowerCase())})` : ""}: ${fmt(x.precio)}</li>`).join("")}</ul><p>Precios del ${esc(hoyAR)}.</p>` : ""}
+  ${t.length ? `<h2>Dónde comprarla</h2><ul>${t.map(x => `<li><a href="${esc(x.url)}" rel="nofollow noopener" target="_blank">${esc(x.tienda)}</a>${x.nota ? ` (${esc(x.nota.toLowerCase())})` : ""}: ${fmt(x.precio)}${x.talles?.length ? ` · talles con stock: ${x.sistema === "US" ? "US " : ""}${x.talles.join(", ")}` : ""}</li>`).join("")}</ul><p>Precios del ${esc(hoyAR)}.</p>` : ""}
   <h2>Ficha técnica</h2><ul>${[["Peso", m.peso && `${m.peso} g`], ["Drop", m.drop != null && `${m.drop} mm`], ["Talón", m.talon && `${m.talon} mm`], ["Antepié", m.ante && `${m.ante} mm`], ["Espuma", m.esp], ["Placa", m.pl && m.pl !== "Sin placa" ? m.pl : ""]].filter(([, v]) => v).map(([k, v]) => `<li>${k}: ${esc(v)}</li>`).join("")}</ul>
   ${c.peso ? `<h2>¿Para quién?</h2><ul><li>Pisada: ${m.tipo === "Estabilidad" ? "pronadora" : "neutra o supinadora"}</li><li>Tu peso: ${esc(c.peso)}</li><li>Ritmo: ${esc(c.ritmo)}</li><li>Distancias: ${esc(c.distancia)}</li></ul>` : ""}
   ${m.evitar ? `<p><b>No te conviene si</b> ${esc(m.evitar)}</p>` : ""}

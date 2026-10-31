@@ -1601,7 +1601,6 @@
      "antes": 299999,
      "nota": "Hombre",
      "talles": [
-      "41",
       "42"
      ],
      "sistema": "AR"
@@ -2131,7 +2130,7 @@
    "tiendas": [
     {
      "tienda": "Dexter",
-     "precio": 179999,
+     "precio": 180999,
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
      "fecha": "31/10/2026",
@@ -3372,7 +3371,8 @@
      "talles": [
       "39"
      ],
-     "sistema": "AR"
+     "sistema": "AR",
+     "sinStock": true
     },
     {
      "tienda": "Dexter",
@@ -3522,9 +3522,7 @@
       "34.5",
       "35",
       "35.5",
-      "39.5",
       "41",
-      "42",
       "43.5"
      ],
      "sistema": "AR"
@@ -4872,11 +4870,10 @@
    "tiendas": [
     {
      "tienda": "Dexter",
-     "precio": 179999,
+     "precio": 184999,
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-peregrine-hombre/SAS20990-164.html",
      "fecha": "31/10/2026",
-     "antes": 184999,
      "nota": "Hombre",
      "talles": [
       "42",

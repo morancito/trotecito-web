@@ -1,0 +1,31 @@
+name: Diagnosticar tiendas
+
+# Mira qué le devuelve cada página al robot y lo deja en scripts/diagnostico.json.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "URLs separadas por espacio"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Diagnosticar
+        env:
+          URLS: ${{ inputs.urls }}
+        run: node scripts/diagnostico.mjs $URLS
+      - name: Guardar
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/diagnostico.json
+          git diff --cached --quiet || (git commit -m "Diagnóstico de tiendas" && git pull --rebase && git push)

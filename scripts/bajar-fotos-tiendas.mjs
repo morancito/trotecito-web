@@ -11,13 +11,16 @@ const PREFERIDAS = ["Dexter", "Gostore", "Sporting", "TodoTrail", "Moov"];   // 
 const MAX = 5;
 const tieneFotos = m => { const d = new URL(`../public/fotos/${m.slug}/`, import.meta.url); return existsSync(d) && readdirSync(d).some(f => /\.(webp|jpe?g|png|avif)$/i.test(f)); };
 
+const errores = [];
 async function imagenes(url) {
   const u = new URL(url);
-  if (/\/p\/?$/.test(u.pathname)) {                       // VTEX
-    const p = (await traer(`${u.origin}/api/catalog_system/pub/products/search${u.pathname}`, true))[0];
-    const vistas = new Map();
-    for (const it of p?.items || []) for (const i of it.images || []) if (!vistas.has(i.imageId)) vistas.set(i.imageId, i.imageUrl);
-    return [...vistas.values()];
+  if (/\/p\/?$/.test(u.pathname)) {                       // VTEX (si la API no da fotos, sigue con la página)
+    try {
+      const p = (await traer(`${u.origin}/api/catalog_system/pub/products/search${u.pathname}`, true))[0];
+      const vistas = new Map();
+      for (const it of p?.items || []) for (const i of it.images || []) if (!vistas.has(i.imageId)) vistas.set(i.imageId, i.imageUrl);
+      if (vistas.size) return [...vistas.values()];
+    } catch (e) { errores.push(`${url}: API ${e.message}`); }
   }
   const h = await traer(url), out = [];
   for (const m of h.matchAll(/\/on\/demandware\.static\/[^"'\s]+?\/products\/([A-Z0-9_-]+)\/\1-(\d+)\.(?:JPG|jpg|jpeg|png)/g))   // Salesforce (Dexter, Moov)
@@ -46,11 +49,13 @@ for (const m of cat.modelos.filter(m => m.tiendas?.length && (pedidos.length ? p
           const r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) });
           const ct = r.headers.get("content-type") || "", buf = Buffer.from(await r.arrayBuffer());
           if (r.ok && /^image\//.test(ct) && buf.length >= 8000) bajadas.push([/webp/.test(ct) ? "webp" : /png/.test(ct) ? "png" : "jpg", buf]);
-        } catch {}
+          else errores.push(`${src}: HTTP ${r.status} ${ct} ${buf.length} bytes`);
+        } catch (e) { errores.push(`${src}: ${e.message}`); }
         await dormir(400);
       }
       if (bajadas.length > (mejor?.fotos.length || 0)) mejor = { tienda: t.tienda, url: t.url, fotos: bajadas };
-    } catch (e) { console.warn(`· ${m.slug} ${t.tienda}: ${e.message}`); }
+      if (!urls.length) errores.push(`${m.slug} ${t.tienda}: la página no tiene fotos reconocibles`);
+    } catch (e) { errores.push(`${m.slug} ${t.tienda}: ${e.message}`); console.warn(`· ${m.slug} ${t.tienda}: ${e.message}`); }
     if (mejor?.fotos.length >= 3) break;
     await dormir(800);
   }
@@ -63,4 +68,4 @@ for (const m of cat.modelos.filter(m => m.tiendas?.length && (pedidos.length ? p
 mkdirSync(DEST, { recursive: true });
 const ARCH = new URL("informe.json", DEST);
 let previo = {}; try { previo = JSON.parse(readFileSync(ARCH, "utf8")); } catch {}
-writeFileSync(ARCH, JSON.stringify({ ...previo, ...informe }, null, 1) + "\n");
+writeFileSync(ARCH, JSON.stringify({ ...previo, ...informe, _errores: errores.slice(0, 60) }, null, 1) + "\n");

@@ -22,11 +22,13 @@ async function urlsZapatillas() {
       const mapas = [...x.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
       for (const mp of mapas) {
         if (/\/zapatillas\//.test(mp) && !/\.xml/.test(mp)) { out.add(mp); continue; }
-        if (!/\.xml/.test(mp) || /(image|author|tag|category|foro)/i.test(mp)) continue;
+        const ruta = new URL(mp).pathname;
+        if (!/\.xml/.test(ruta) || /(image|author|tag|category|\/foro|attachment)/i.test(ruta)) continue;
         try { const y = await traer(mp); for (const m of y.matchAll(/<loc>([^<]+)<\/loc>/g)) if (/foroatletismo\.com\/zapatillas\/[^/]+\/?$/.test(m[1])) out.add(m[1]); }
         catch (e) { errores.push(`${mp}: ${e.message}`); }
         await dormir(500);
       }
+      errores.push(`${idx}: ${mapas.length} mapas, ${out.size} páginas de zapatillas`);
       if (out.size) break;
     } catch (e) { errores.push(`${idx}: ${e.message}`); }
   }
@@ -71,7 +73,11 @@ const { urls, errores } = await urlsZapatillas();
 console.log(`${urls.length} páginas de zapatillas en Foroatletismo`);
 const salida = { fecha: new Date().toISOString(), paginas: urls.length, errores, modelos: {} };
 for (const m of cat.modelos) {
-  const u = elegir(m, urls);
+  let u = elegir(m, urls);
+  if (!u) for (const cand of [m.slug, m.slug.replace(/^new-balance-fresh-foam-x-(\d+)-v(\d+)$/, "new-balance-$1-v$2"), m.slug.replace(/-gel-/, "-")]) {
+    try { await traer(`${BASE}/zapatillas/${cand}/`); u = `${BASE}/zapatillas/${cand}/`; break; } catch {}
+    await dormir(600);
+  }
   if (!u) { salida.modelos[m.slug] = null; console.log(`· ${m.slug}: sin análisis`); continue; }
   try { salida.modelos[m.slug] = { url: u, ...extraer(await traer(u)) }; console.log(`✓ ${m.slug} <- ${u}`); }
   catch (e) { salida.modelos[m.slug] = { url: u, error: e.message }; console.warn(`✗ ${m.slug}: ${e.message}`); }

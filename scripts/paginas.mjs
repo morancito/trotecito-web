@@ -4,7 +4,7 @@
 // Como corre en cada compilación, los precios de estas páginas se renuevan con cada pasada del robot.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 
-const SITIO = (process.env.SITIO_URL || "https://trotecito-web.facundomoran2001.workers.dev").replace(/\/$/, "");
+const SITIO = (process.env.SITIO_URL || "https://trotecito.com.ar").replace(/\/$/, "");
 const BASE = (process.env.BASE_PATH || "/").replace(/\/?$/, "/");
 const DIST = new URL("../dist/", import.meta.url);
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));

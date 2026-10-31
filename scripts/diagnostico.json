@@ -1,0 +1,69 @@
+{
+ "fecha": "2026-10-31T23:38:18.673Z",
+ "resultados": [
+  {
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-mujer-wnh-1vjlg/",
+   "estado": 200,
+   "urlFinal": "https://todotrail.com.ar/productos/zapatilla-hoka-mach-6-mujer-wnh-1vjlg/",
+   "largo": 1406327,
+   "titulo": "Zapatilla Hoka Mach 6 Mujer - WNH - TodoTrail ⛰️",
+   "variantes": true,
+   "tiendanube": true,
+   "desafio": true,
+   "jsonld": 10,
+   "precioMeta": null,
+   "muestra": " Zapatilla Hoka Mach 6 Mujer - WNH - TodoTrail ⛰️ 💳 CYBER RUN · HASTA 12 CUOTAS SIN INTERÉS + HASTA 30% OFF 🏁 💸 15% OFF EXTRA PAGANDO POR TRANSFERENCIA ⏱️ SE CORTA EL MIÉRCOLES 23:59 · 🛵 ENVÍO GRATIS +$250.000 ¡Hola! Iniciá sesión O podés registrarte 0 ( ) x ¡Agregado al carrito! Inicio Indumentaria Hombre Rompevientos Remeras y Musculosas Short y Calzas Buzos y Polar Pantalones Mujer Rompevientos Remeras, Musculosas y Tops Short y Calzas Buzos y Polar Pantalones Remeras TodoTrail Carreras Primera Piel Segunda Capa Zapatillas Hombre Calle Trail Trekking Mixtas Mujer Calle Trail Trekking Mi",
+   "leido": {
+    "precio": 215999,
+    "antes": 269999,
+    "cuotas": 12,
+    "talles": [
+     "8.5"
+    ],
+    "sistema": "US"
+   }
+  },
+  {
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-hombre-blanca-1fwpu/",
+   "estado": 404,
+   "urlFinal": "https://todotrail.com.ar/productos/zapatilla-saucony-surge-3-hombre-blanca-1fwpu/",
+   "largo": 634683,
+   "titulo": "",
+   "variantes": true,
+   "tiendanube": true,
+   "desafio": true,
+   "jsonld": 6,
+   "precioMeta": null,
+   "muestra": " 💳 CYBER RUN · HASTA 12 CUOTAS SIN INTERÉS + HASTA 30% OFF 🏁 💸 15% OFF EXTRA PAGANDO POR TRANSFERENCIA ⏱️ SE CORTA EL MIÉRCOLES 23:59 · 🛵 ENVÍO GRATIS +$250.000 ¡Hola! Iniciá sesión O podés registrarte 0 ( ) x ¡Agregado al carrito! Inicio Indumentaria Hombre Rompevientos Remeras y Musculosas Short y Calzas Buzos y Polar Pantalones Mujer Rompevientos Remeras, Musculosas y Tops Short y Calzas Buzos y Polar Pantalones Remeras TodoTrail Carreras Primera Piel Segunda Capa Zapatillas Hombre Calle Trail Trekking Mixtas Mujer Calle Trail Trekking Mixtas Trail Calle Trekking Sandalias Recuperacion ",
+   "leerError": "HTTP 404"
+  },
+  {
+   "url": "https://todotrail.com.ar/",
+   "estado": 200,
+   "urlFinal": "https://todotrail.com.ar/",
+   "largo": 7299786,
+   "titulo": "TodoTrail ⛰️",
+   "variantes": true,
+   "tiendanube": true,
+   "desafio": true,
+   "jsonld": 72,
+   "precioMeta": null,
+   "muestra": " TodoTrail ⛰️ 💳 CYBER RUN · HASTA 12 CUOTAS SIN INTERÉS + HASTA 30% OFF 🏁 💸 15% OFF EXTRA PAGANDO POR TRANSFERENCIA ⏱️ SE CORTA EL MIÉRCOLES 23:59 · 🛵 ENVÍO GRATIS +$250.000 TodoTrail ⛰️ ¡Hola! Iniciá sesión O podés registrarte 0 ( ) x ¡Agregado al carrito! Inicio Indumentaria Hombre Rompevientos Remeras y Musculosas Short y Calzas Buzos y Polar Pantalones Mujer Rompevientos Remeras, Musculosas y Tops Short y Calzas Buzos y Polar Pantalones Remeras TodoTrail Carreras Primera Piel Segunda Capa Zapatillas Hombre Calle Trail Trekking Mixtas Mujer Calle Trail Trekking Mixtas Trail Calle Trekki",
+   "leido": {
+    "precio": 215999,
+    "antes": 269999,
+    "cuotas": 12,
+    "talles": [
+     "6",
+     "6.5",
+     "7",
+     "7.5",
+     "8",
+     "8.5",
+     "9"
+    ],
+    "sistema": "US"
+   }
+  }
+ ]
+}

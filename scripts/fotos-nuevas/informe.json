@@ -34,7 +34,11 @@
   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-gaviota-6-hombre-azul-noche-1u4ra/",
   "fotos": 5
  },
- "hoka-rincon-4": null,
+ "hoka-rincon-4": {
+  "tienda": "Sporting",
+  "url": "https://www.sporting.com.ar/zapatillas-running-hoka-rincon-4-de-hombre-1155130bwht-000/p",
+  "fotos": 2
+ },
  "hoka-skyflow": {
   "tienda": "Gostore",
   "url": "https://gostore.com.ar/hot000023551-m-skyflow-1155111-bwht.html",
@@ -110,5 +114,20 @@
   "tienda": "TodoTrail",
   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-xodus-ultra-4-mujer-aloe-barley-cupny/",
   "fotos": 5
- }
+ },
+ "_errores": [
+  "https://sporting.vteximg.com.br/arquivos/ids/3317370/1155130BWHT-000-1.jpg?v=639265745632470000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3317371/1155130BWHT-000-2.jpg?v=639265745638930000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3317374/1155130BWHT-000-5.jpg?v=639265745652300000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/2289450/17478837-000-1.jpg?v=639003875451400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/2289446/17478837-000-1.jpg?v=639003875416000000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/2289453/17478837-000-2.jpg?v=639003875456800000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/2289456/17478837-000-3.jpg?v=639003875461470000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/2289460/17478837-000-4.jpg?v=639003875467730000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3069434/17478835-000-1.jpg?v=639205117547270000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3069435/17478835-000-2.jpg?v=639205117556370000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3069436/17478835-000-3.jpg?v=639205117564830000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3069437/17478835-000-4.jpg?v=639205117570470000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3069438/17478835-000-5.jpg?v=639205117574700000: HTTP 429 text/plain; charset=utf-8 17 bytes"
+ ]
 }

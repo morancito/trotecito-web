@@ -1,0 +1,38 @@
+name: Buscar colores
+
+# Busca en las tiendas todas las variantes de color de cada modelo, baja la foto de cada una y la procesa.
+# Deja scripts/colores.json, scripts/colores-final.json y public/fotos/<modelo>/c<n>.webp para revisar.
+on:
+  workflow_dispatch:
+    inputs:
+      modelos:
+        description: "Slugs separados por espacio (vacío = todos)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  colores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Buscar variantes
+        env:
+          MODELOS: ${{ inputs.modelos }}
+        run: node scripts/colores.mjs $MODELOS
+      - name: Procesar fotos
+        run: |
+          pip install --quiet pillow
+          python3 scripts/colores-fotos.py
+      - name: Guardar
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/colores.json scripts/colores-final.json public/fotos
+          git diff --cached --quiet || (git commit -m "Colores de cada modelo para revisar" && git pull --rebase && git push)

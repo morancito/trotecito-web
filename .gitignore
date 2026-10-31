@@ -5,3 +5,4 @@ dist
 # fotos crudas que baja el workflow "Preparar modelos nuevos" (se procesan a public/fotos)
 scripts/fotos-nuevas/*/
 scripts/videos/
+scripts/colores-fotos/

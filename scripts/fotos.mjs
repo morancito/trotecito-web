@@ -11,7 +11,7 @@ const slugs = new Set(cat.modelos.map(m => m.slug));
 for (const m of cat.modelos) {
   const dir = new URL(`fotos/${m.slug}/`, raiz);
   m.fotos = existsSync(dir)
-    ? readdirSync(dir).filter(f => IMG.test(f)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })).map(f => `fotos/${m.slug}/${f}`)
+    ? readdirSync(dir).filter(f => IMG.test(f) && !/^c\d+\./.test(f)).sort((a, b) => a.localeCompare(b, undefined, { numeric: true })).map(f => `fotos/${m.slug}/${f}`)
     : [];
   total += m.fotos.length;
 }

@@ -61,20 +61,16 @@
   "fotos": 5
  },
  "salomon-genesis-2": {
-  "tienda": "Sporting",
-  "url": "https://www.sporting.com.ar/zapatillas-salomon-genesis-2-de-hombre-17492998-000/p",
-  "fotos": 1
+  "tienda": "TodoTrail",
+  "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-negro-gris-1s1wk/",
+  "fotos": 5
  },
  "salomon-ultra-glide-4": {
   "tienda": "Gostore",
   "url": "https://gostore.com.ar/smt000004335-ultra-glide-4-m.html",
   "fotos": 5
  },
- "salomon-ultra-flow-2": {
-  "tienda": "Sporting",
-  "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-flow-2-de-hombre-17478835-000/p",
-  "fotos": 1
- },
+ "salomon-ultra-flow-2": null,
  "salomon-slab-pulsar-4": {
   "tienda": "TodoTrail",
   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-s-lab-pulsar-4-unisex-roja-12cl1/",
@@ -111,8 +107,8 @@
   "fotos": 5
  },
  "saucony-xodus-ultra-4": {
-  "tienda": "Sporting",
-  "url": "https://www.sporting.com.ar/zapatillas-saucony-xodus-ultra-4-de-hombre-s1016171009-000/p",
-  "fotos": 1
+  "tienda": "TodoTrail",
+  "url": "https://todotrail.com.ar/productos/zapatilla-saucony-xodus-ultra-4-mujer-aloe-barley-cupny/",
+  "fotos": 5
  }
 }

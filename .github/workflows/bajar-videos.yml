@@ -1,7 +1,7 @@
 name: Bajar videos de fondo
 
-# Baja videos de stock con licencia libre (Mixkit) para elegir el fondo de la portada.
-# No los guarda en el repo (pesan mucho): quedan como artefacto de la corrida, para bajarlos con `gh run download`.
+# Baja videos de stock con licencia libre (Mixkit) para armar el fondo de la portada.
+# Los crudos pesan mucho: se recortan a 12 s en 1280 px y se suben a la rama "videos-tmp" (no a main) para procesarlos.
 on:
   workflow_dispatch:
     inputs:
@@ -10,28 +10,33 @@ on:
         required: true
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   bajar:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Bajar
+      - name: Bajar y recortar
         env:
           IDS: ${{ inputs.ids }}
         run: |
-          mkdir -p scripts/videos
+          sudo apt-get -qq update && sudo apt-get -qq install -y ffmpeg > /dev/null
+          mkdir -p crudos videos
           for id in $IDS; do
             case "$id" in (*[!0-9]*) echo "id inválido: $id"; continue;; esac
-            for q in 1080 720 360; do
-              if curl -fsSL -A "Mozilla/5.0 (compatible; TrotecitoBot/1.0)" -o "scripts/videos/$id.mp4" "https://assets.mixkit.co/videos/$id/$id-$q.mp4"; then echo "$id: $q ok"; break; fi
+            for q in 1080 720; do
+              if curl -fsSL -A "Mozilla/5.0 (compatible; TrotecitoBot/1.0)" -o "crudos/$id.mp4" "https://assets.mixkit.co/videos/$id/$id-$q.mp4"; then echo "$id: $q ok"; break; fi
             done
-            curl -fsSL -o "scripts/videos/$id.jpg" "https://assets.mixkit.co/videos/$id/$id-thumb-720-0.jpg" || true
+            [ -f "crudos/$id.mp4" ] && ffmpeg -v error -y -i "crudos/$id.mp4" -t 12 -an -vf "scale='if(gt(iw,ih),1280,-2)':'if(gt(iw,ih),-2,1280)',fps=25" -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p -movflags +faststart "videos/$id.mp4"
           done
-          ls -la scripts/videos
-      - uses: actions/upload-artifact@v4
-        with:
-          name: videos
-          path: scripts/videos
-          retention-days: 7
+          ls -la videos
+      - name: Subir a la rama videos-tmp
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd videos
+          git init -q -b videos-tmp
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add . && git commit -qm "Videos recortados para elegir"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" videos-tmp

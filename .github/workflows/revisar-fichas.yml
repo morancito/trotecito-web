@@ -1,0 +1,27 @@
+name: Revisar fichas
+
+# Junta lo que dicen sitios de referencia (Foroatletismo) sobre cada modelo, para compararlo con nuestras fichas.
+# No toca el catálogo: deja los datos en scripts/ para revisarlos.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Foroatletismo
+        run: node scripts/foro-atletismo.mjs
+      - name: Guardar
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/foro-atletismo.json
+          git diff --cached --quiet || (git commit -m "Revisión de fichas: datos de Foroatletismo" && git pull --rebase && git push)

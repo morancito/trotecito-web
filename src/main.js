@@ -207,7 +207,13 @@ pMax.oninput = () => { st.pmax = Math.max(+pMax.value, st.pmin + PASO); render()
 [pMin, pMax].forEach(x => x.addEventListener("change", () => medir("filtro", { k: "precio", v: `${st.pmin}-${st.pmax}`, terreno: st.terreno })));
 fp.querySelector(".atajos-p").onclick = e => { const b = e.target.closest("button"); if (!b) return; medir("filtro", { k: "precio", v: b.textContent, terreno: st.terreno });
   st.pmin = Math.max(P_MIN, +b.dataset.pa); st.pmax = +b.dataset.pb || P_MAX; render(); };
-$("#fpLimpiar").onclick = () => { Object.assign(st, VACIO()); render(); };
+/* limpia todos los filtros, incluidos los de talle (que quedan guardados entre visitas) y la búsqueda */
+function limpiarTodo() {
+  Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
+  GEN = ""; TALLE = ""; guardar("trotecito-gen", null); guardar("trotecito-talle", null);
+  aplicarGenero(); pintarOfertas(); render();
+}
+$("#fpLimpiar").onclick = () => { medir("filtro", { k: "limpiar", v: "panel" }); limpiarTodo(); };
 const abrirF = v => { fp.classList.toggle("open", v); document.body.classList.toggle("fp-on", v); };
 $("#fpCerrar").onclick = $("#fpVer").onclick = () => abrirF(false);
 $("#fAbrir").onclick = () => abrirF(true);
@@ -253,9 +259,9 @@ function chipsActivos() {
   return c;
 }
 $("#activos").onclick = e => { const b = e.target.closest("button[data-x]"); if (!b) return; const [k, v] = b.dataset.x.split(":");
+  if (k === "todo") { medir("filtro", { k: "limpiar", v: "chips" }); limpiarTodo(); return; }
   if (k === "precio") { st.pmin = P_MIN; st.pmax = P_MAX; } else if (k === "uso" || k === "am") st[k].delete(v); else if (k === "marca") st.marcas.delete(v);
   else if (k === "pis") st.pis = ""; else if (k === "kg") st.kg = 0; else if (k === "gen") { setGen(""); return; } else if (k === "talle") { setTalle(""); return; } else st[k] = false;
-  if (k === "todo") Object.assign(st, VACIO());
   render(); };
 
 function precioTarjeta(d) {

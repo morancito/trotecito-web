@@ -1,10 +1,10 @@
 {
- "fecha": "2026-11-01T02:24:46.825Z",
+ "fecha": "2026-11-01T02:59:11.337Z",
  "resultados": [
   {
-   "url": "https://www.nike.com.ar/",
+   "url": "https://www.nike.com.ar/api/catalog_system/pub/products/search?ft=pegasus&_from=0&_to=9",
    "estado": 403,
-   "urlFinal": "https://www.nike.com.ar/",
+   "urlFinal": "https://www.nike.com.ar/api/catalog_system/pub/products/search?ft=pegasus&_from=0&_to=9",
    "largo": 4546,
    "titulo": "Attention Required! | Cloudflare",
    "variantes": false,
@@ -12,8 +12,33 @@
    "desafio": true,
    "jsonld": 0,
    "precioMeta": null,
-   "muestra": " Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access nike.com.ar Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare R",
-   "leerError": "HTTP 403"
+   "muestra": " Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access nike.com.ar Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare R"
+  },
+  {
+   "url": "https://www.nike.com.ar/api/catalog_system/pub/products/search/nike-pegasus-42-ib1881-602/p",
+   "estado": 403,
+   "urlFinal": "https://www.nike.com.ar/api/catalog_system/pub/products/search/nike-pegasus-42-ib1881-602/p",
+   "largo": 4546,
+   "titulo": "Attention Required! | Cloudflare",
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": true,
+   "jsonld": 0,
+   "precioMeta": null,
+   "muestra": " Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access nike.com.ar Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare R"
+  },
+  {
+   "url": "https://www.nike.com.ar/nike-pegasus-42-ib1881-602/p",
+   "estado": 403,
+   "urlFinal": "https://www.nike.com.ar/nike-pegasus-42-ib1881-602/p",
+   "largo": 4546,
+   "titulo": "Attention Required! | Cloudflare",
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": true,
+   "jsonld": 0,
+   "precioMeta": null,
+   "muestra": " Attention Required! | Cloudflare Please enable cookies. Sorry, you have been blocked You are unable to access nike.com.ar Why have I been blocked? This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data. What can I do to resolve this? You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare R"
   }
  ]
 }

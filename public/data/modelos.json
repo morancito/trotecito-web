@@ -7938,33 +7938,7 @@
    "m": "Nike",
    "mod": "Vomero Premium",
    "ver": "",
-   "tiendas": [
-    {
-     "tienda": "Moov",
-     "precio": 349999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.moov.com.ar/zapatillas-nike-zoom-vomero%C2%A05-premium-hombre/NIIH1344-300.html",
-     "fecha": "01/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "39",
-      "39.5",
-      "40",
-      "40.5",
-      "41",
-      "41.5",
-      "42",
-      "42.5",
-      "43",
-      "43.5",
-      "44",
-      "44.5",
-      "45",
-      "45.5"
-     ],
-     "sistema": "AR"
-    }
-   ],
+   "tiendas": [],
    "id": 107,
    "slug": "nike-vomero-premium",
    "ar": true,

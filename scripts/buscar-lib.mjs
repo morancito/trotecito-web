@@ -22,7 +22,7 @@ const NO_ZAPA = /\b(buzo|remera|media|medias|short|gorra|gorro|visera|mochila|bo
 export const generoDe = s => { const t = ` ${norm(s)} `; return / (mujer|women|womens|wmns|w|dama) /.test(t) ? "Mujer" : / (hombre|men|mens|m|caballero) /.test(t) ? "Hombre" : / unisex /.test(t) ? "Unisex" : ""; };
 
 export function coincide(m, nombre, url) {
-  const t = ` ${norm(nombre + " " + decodeURIComponent(new URL(url).pathname))} `;
+  const t = ` ${norm(nombre + " " + decodeURIComponent(new URL(url).pathname))} `.replace(/ gore tex /g, " gtx ");
   if (NO_ZAPA.test(t)) return false;
   const marca = norm(m.m);
   if (MARCAS.some(b => b !== marca && t.includes(` ${b} `)) && !t.includes(` ${marca} `)) return false;
@@ -31,7 +31,9 @@ export function coincide(m, nombre, url) {
     if (/^\d+(\.\d)?$/.test(k)) { if (!new RegExp(`[^0-9.]${k.replace(".", "\\.")}[^0-9]`).test(t)) return false; }
     else if (!t.includes(` ${k} `)) return false;
   }
-  if (VARIANTES.some(v => !tokens.includes(v) && t.includes(` ${v} `) && !norm(m.mod).split(" ").includes(v))) return false;
+  if (VARIANTES.some(v => !tokens.includes(v) && t.includes(` ${v} `) && !norm(m.mod).split(" ").includes(v) && !(v === "trail" && m.terreno === "Trail"))) return false;
+  /* modelo sin número (Vomero Premium, Structure Plus): si la tienda le pone número a la línea, es otro ("Zoom Vomero 5 Premium") */
+  if (!tokens.some(x => /^\d/.test(x)) && tokens.some(k => new RegExp(` ${k} \\d{1,2} `).test(t))) return false;
   /* otro número de versión pegado al nombre (ej. Pegasus 40 cuando buscamos 41) */
   const ult = tokens.filter(x => !/^\d/.test(x)).pop();
   if (ult) { const mm = t.match(new RegExp(` ${ult} (v ?)?(\\d+)\\b`)); const ver = tokens.find(x => /^\d+$/.test(x)); if (mm && ver && mm[2] !== ver && !tokens.includes(mm[2])) return false; }

@@ -7,6 +7,10 @@ on:
       urls:
         description: "URLs separadas por espacio"
         required: true
+      solo_ver:
+        description: "Solo ver qué responde cada URL (sin la lectura completa)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,6 +26,7 @@ jobs:
       - name: Diagnosticar
         env:
           URLS: ${{ inputs.urls }}
+          SOLO_VER: ${{ inputs.solo_ver && '1' || '' }}
         run: node scripts/diagnostico.mjs $URLS
       - name: Guardar
         run: |

@@ -9,7 +9,8 @@
     "validar": "node scripts/validar-datos.mjs",
     "build": "node scripts/fotos.mjs && node scripts/validar-datos.mjs && vite build && node scripts/paginas.mjs",
     "preview": "vite preview",
-    "bajar-fotos": "node scripts/bajar-fotos.mjs"
+    "bajar-fotos": "node scripts/bajar-fotos.mjs",
+    "precios:nike": "git pull --rebase --autostash && node scripts/actualizar-precios.mjs --tiendas=Nike && git add public/data && git commit -m \"Precios de Nike (desde mi compu)\" && git push"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "^5.1.1",

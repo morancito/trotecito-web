@@ -1,6 +1,7 @@
 // Actualiza los precios de cada tienda cargada en modelos.json y suma un punto por día al historial.
 // Lo corre GitHub Actions todos los días (ver .github/workflows/precios.yml). También se puede correr a mano:
 //   node scripts/actualizar-precios.mjs
+//   node scripts/actualizar-precios.mjs --tiendas=Nike     -> solo esas tiendas (para correr desde una compu donde la tienda sí responde)
 //
 // La lectura de cada tienda (precio, cuotas, stock y talles) está en tiendas.mjs.
 // Si una tienda no responde, se conserva el último precio y no se agrega punto ese día.
@@ -12,6 +13,8 @@ const RAIZ = new URL("../public/data/", import.meta.url);
 const cat = JSON.parse(readFileSync(new URL("modelos.json", RAIZ), "utf8"));
 const hist = JSON.parse(readFileSync(new URL("historial.json", RAIZ), "utf8"));
 const PAUSA_MS = 1500;
+const SOLO = (process.argv.find(a => a.startsWith("--tiendas=")) || "").slice(10).split(",").map(x => x.trim().toLowerCase()).filter(Boolean);
+const toca = t => !SOLO.length || SOLO.includes(t.tienda.toLowerCase());
 const MESES_HISTORIAL = 7;
 
 const hoyISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires" }).format(new Date());
@@ -45,7 +48,7 @@ async function procesar(m, t, ultimoIntento) {
 }
 for (const m of cat.modelos) {
   for (const t of m.tiendas || []) {
-    if (!t.url) continue;
+    if (!t.url || !toca(t)) continue;
     await procesar(m, t, false);
     await dormir(PAUSA_MS);
   }
@@ -65,6 +68,6 @@ cat.actualizado = hoyAR;
 writeFileSync(new URL("modelos.json", RAIZ), JSON.stringify(cat, null, 1) + "\n");
 writeFileSync(new URL("historial.json", RAIZ), JSON.stringify(hist) + "\n");
 const hora = new Intl.DateTimeFormat("es-AR", { timeZone: "America/Argentina/Buenos_Aires", hour: "2-digit", minute: "2-digit" }).format(new Date());
-writeFileSync(new URL("robot.json", RAIZ), JSON.stringify({ fecha: hoyAR, hora, leidos: ok, cambiaron: cambios, conTalles, fallaron: fallas, errores, sinStock: sinStockL }, null, 1) + "\n");
+if (!SOLO.length) writeFileSync(new URL("robot.json", RAIZ), JSON.stringify({ fecha: hoyAR, hora, leidos: ok, cambiaron: cambios, conTalles, fallaron: fallas, errores, sinStock: sinStockL }, null, 1) + "\n");
 console.log(`\n${ok} precios leídos (${cambios} cambiaron), ${fallas} con error. Fecha: ${hoyAR}.`);
 if (ok === 0) process.exit(1);

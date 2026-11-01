@@ -1231,7 +1231,17 @@
    "anchoPuntaDedos": null,
    "anchoMedio": 109.1,
    "calce": "Narrow",
-   "anchos": "Narrow Normal Wide X-Wide   Normal   Narrow Normal Wide X-Wi"
+   "anchos": "Narrow Normal Wide X-Wide   Normal   Narrow Normal Wide X-Wi",
+   "crudo": [
+    "Width / fit Narrow   -   Medium   Medium   Toebox width Medium   -   Narrow   Medium   Stiffness Flexible   Moderate   Moderate   Moderate   Torsional rigidity Moderate   ",
+    "Narrow Normal Wide X-Wide   Normal   Narrow Normal Wide X-Wide   Normal   Orthotic friendly &check; &check; &check; &check;   Season All seasons   Winter   All season",
+    "Toebox width - widest part  Brooks clearly understands that this shoe must accommodate a variety of feet. For our medium-to-wide feet, the fit was amazing.  However, the truly exceptional aspect of the ",
+    "narrow and medium to wide and extra-wide, their approach makes this one as the \"universal\" shoe. In fact, only a select few models in the market boast such a range of",
+    "Width / Fit  109.1 mm  Toebox width - big toe  We've noticed that the area for the big toe is somewhat wider compared to other shoes, which, in our view, is a positive asp",
+    "Toebox width  92.5 mm  Traction / Grip  Traction test  Adhering to the SATRA TM144 method, we recorded the Ghost 15's friction score at 0.48.  This indicates a solid forefoot grip for a road running sho",
+    "wide heel that we measured in the lab at 95.8 mm.  This further convinced us that the shoe designers in Seattle had heel-striking runners firmly in their thoughts w",
+    "Width / Fit (old method) 96.8 mm 98.7 mm   Toebox width (old method) 77.7 mm 78.6 mm   Traction / Grip   Forefoot traction 0.48 0.53   Flexibility / Stiffness   Flexibilit"
+   ]
   }
  },
  "brooks-glycerin-20": {
@@ -1630,7 +1640,17 @@
    "anchoPuntaDedos": null,
    "anchoMedio": 102.4,
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Normal Wide   Normal Wide   Normal Wide"
+   "anchos": "Normal Wide X-Wide   Normal Wide   Normal Wide   Normal Wide",
+   "crudo": [
+    "Width / fit Medium   Medium   Wide   Medium   Toebox width Medium   Medium   Medium   Medium   Stiffness Flexible   Moderate   Moderate   Flexible   Torsional rigidity Fle",
+    "Wide X-Wide   Normal Wide   Normal Wide   Normal Wide X-Wide   Orthotic friendly &check; &check; &check; &check;   Season All seasons   All seasons   All seasons   ",
+    "Width / Fit  The Pegasus series has often been regarded as the &ldquo;default&rdquo; daily trainer in the industry&mdash;a shoe designed to follow Pareto&rsquo;s principle",
+    "widest part of the shoe, we found it to be 94.6 mm. This measurement aligns with most average workhorse trainers but leans slightly toward a snug-fit profile, a con",
+    "Width / Fit  102.4 mm  Toebox width  We had hoped for a roomier fit in the toe area with this update, but Nike retained the same tapered shape seen in other Pegasus models",
+    "toebox width.  In our experience, this keeps the fit aligned with average daily trainers, although runners seeking more space for toe splay may feel limited and prefer the anatomic design of the Altra T",
+    "Toebox width  85.0 mm  Toebox height  The Peg 41 offers an average toebox width and matches that with its vertical room.  Your browser does not support the video tag.  Through our testing, we discovered",
+    "wider landing base suitable for every runner, regardless of their footstrike.  Your browser does not support the video tag.  In the forefoot, we measured 115.6 mm, "
+   ]
   }
  },
  "nike-quest-6": {
@@ -1749,7 +1769,17 @@
    "anchoPuntaDedos": null,
    "anchoMedio": 102.4,
    "calce": "Wide",
-   "anchos": "Normal   Normal Wide   Normal Wide   Normal Wide X-Wide   Or"
+   "anchos": "Normal   Normal Wide   Normal Wide   Normal Wide X-Wide   Or",
+   "crudo": [
+    "wide feet   Comparison  The most similar running shoes compared  Words (e.g. &quot;High&quot;)  Numbers (e.g. &quot;73%&quot;)  adidas Ultraboost 5   adidas Adizero",
+    "Width / fit Wide   Medium   Medium   Narrow   Toebox width Wide   Medium   Narrow   -   Stiffness Stiff   Flexible   Stiff   Moderate   Torsional rigidity Stiff   Stiff   ",
+    "Wide   Normal Wide   Normal Wide X-Wide   Orthotic friendly &check; &check; &check; &check;   Season Summer All seasons   Summer All seasons   Summer All seasons   ",
+    "Width / Fit  adidas tried both extremes with the shoe dimensions between the narrow Ultraboost 1.0 and the wide Ultraboost Light. That's why we weren&rsquo;t sure which di",
+    "wide and spacious, coming in at a generous 98.4 mm. We found that this is a true blessing for those with broader feet, although makes this one unsuitable for runner",
+    "narrow feet.  Test results  Ultraboost 5 98.4 mm   Average 95.2 mm   Compared to 366 running shoes  Number of shoes  88.5 mm  Width / Fit  102.4 mm  Toebox width  We ",
+    "Toebox width  85.0 mm  Toebox height  To complete the picture, the vertical height is on the more spacious side at 27.9 mm, which can improve after some weeks thanks to the stretchy material of the uppe",
+    "widest heel (94.3 mm) in its series to date.  We believe that this feature, combined with the Torsion System and large plastic clips on the sides of the heel, provi"
+   ]
   }
  },
  "adidas-adizero-takumi-sen-10": {

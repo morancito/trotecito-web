@@ -9,6 +9,10 @@ on:
         description: "foro, segunda o todo"
         required: false
         default: "todo"
+      modelos:
+        description: "Slugs (vacío = todos)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -27,7 +31,9 @@ jobs:
         run: node scripts/foro-atletismo.mjs
       - name: Segunda fuente y horma
         if: inputs.paso != 'foro'
-        run: node scripts/segunda-fuente.mjs
+        env:
+          MODELOS: ${{ inputs.modelos }}
+        run: node scripts/segunda-fuente.mjs $MODELOS
       - name: Guardar
         run: |
           git config user.name "trotecito-bot"

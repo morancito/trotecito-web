@@ -13,12 +13,26 @@ const MAX = 5;
 const tieneFotos = m => { const d = new URL(`../public/fotos/${m.slug}/`, import.meta.url); return existsSync(d) && readdirSync(d).some(f => /\.(webp|jpe?g|png|avif)$/i.test(f)); };
 
 const pedidos = process.argv.slice(2);
+/* fotos directas (URL de la imagen) para modelos cuya tienda no deja leer la página: scripts/imagenes-directas.json { modelo: [urls] } */
+let DIRECTAS = {}; try { DIRECTAS = JSON.parse(readFileSync(new URL("./imagenes-directas.json", import.meta.url), "utf8")); } catch {}
+async function bajarImg(src) {
+  let r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) });
+  for (let k = 1; r.status === 429 && k <= 3; k++) { await dormir(15000 * k); r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) }); }
+  const ct = r.headers.get("content-type") || "", buf = Buffer.from(await r.arrayBuffer());
+  if (r.ok && /^image\//.test(ct) && buf.length >= 8000) return [/webp/.test(ct) ? "webp" : /png/.test(ct) ? "png" : "jpg", buf];
+  errores.push(`${src}: HTTP ${r.status} ${ct} ${buf.length} bytes`); return null;
+}
 const informe = {};
-for (const m of cat.modelos.filter(m => m.tiendas?.length && (pedidos.length ? pedidos.includes(m.slug) : !tieneFotos(m)))) {
+for (const m of cat.modelos.filter(m => (m.tiendas?.length || DIRECTAS[m.slug]) && (pedidos.length ? pedidos.includes(m.slug) : !tieneFotos(m)))) {
   /* prueba las tiendas en orden y se queda con la que da más fotos (alcanza con 3) */
   const ts = [...m.tiendas].sort((a, b) => (PREFERIDAS.indexOf(a.tienda) + 1 || 99) - (PREFERIDAS.indexOf(b.tienda) + 1 || 99));
   let mejor = null;
-  for (const t of ts) {
+  if (DIRECTAS[m.slug]?.length) {
+    const fotos = [];
+    for (const src of DIRECTAS[m.slug].slice(0, MAX)) { try { const f = await bajarImg(src); if (f) fotos.push(f); } catch (e) { errores.push(`${src}: ${e.message}`); } await dormir(1500); }
+    if (fotos.length) mejor = { tienda: "directa", url: DIRECTAS[m.slug][0], fotos };
+  }
+  for (const t of mejor?.fotos.length >= 3 ? [] : ts) {
     try {
       const urls = (await imagenes(t.url)).slice(0, MAX), bajadas = [];
       for (const src of urls) {

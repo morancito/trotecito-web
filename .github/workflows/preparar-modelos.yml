@@ -16,6 +16,8 @@ permissions:
 jobs:
   preparar:
     runs-on: ubuntu-latest
+    env:
+      UA_ROBOT: "Mozilla/5.0 (compatible; TrotecitoBot/1.0; +https://trotecito.com.ar/)"
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4

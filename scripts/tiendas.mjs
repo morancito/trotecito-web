@@ -5,7 +5,8 @@
 // Tiendanube (TodoTrail...), Shopify y WooCommerce. Si no reconoce la plataforma, usa los datos estándar de
 // producto (JSON-LD) o las etiquetas de precio de la página.
 
-export const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
+/* UA_ROBOT (variable de entorno) lo reemplaza: los workflows de fichas, fotos y colores se identifican como TrotecitoBot */
+export const UA = process.env.UA_ROBOT || "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
 export const dormir = ms => new Promise(r => setTimeout(r, ms));
 
 export async function traer(url, json = false) {

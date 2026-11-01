@@ -7695,6 +7695,90 @@
     "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-xodus-ultra-4/"
    ],
    "horma": "normal"
+  },
+  {
+   "m": "Nike",
+   "mod": "Winflo",
+   "ver": "11",
+   "tiendas": [],
+   "id": 103,
+   "slug": "nike-winflo-11",
+   "ar": true,
+   "terreno": "Asfalto",
+   "borrador": true,
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "fotos": []
+  },
+  {
+   "m": "Nike",
+   "mod": "Winflo",
+   "ver": "12",
+   "tiendas": [],
+   "id": 104,
+   "slug": "nike-winflo-12",
+   "ar": true,
+   "terreno": "Asfalto",
+   "borrador": true,
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "fotos": []
+  },
+  {
+   "m": "Nike",
+   "mod": "Vaporfly",
+   "ver": "4",
+   "tiendas": [],
+   "id": 105,
+   "slug": "nike-vaporfly-4",
+   "ar": true,
+   "terreno": "Asfalto",
+   "borrador": true,
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "fotos": []
+  },
+  {
+   "m": "Nike",
+   "mod": "Structure Plus",
+   "ver": "",
+   "tiendas": [],
+   "id": 106,
+   "slug": "nike-structure-plus",
+   "ar": true,
+   "terreno": "Asfalto",
+   "borrador": true,
+   "tipo": "Estabilidad",
+   "uso": "Rodaje diario",
+   "fotos": []
+  },
+  {
+   "m": "Nike",
+   "mod": "Vomero Premium",
+   "ver": "",
+   "tiendas": [],
+   "id": 107,
+   "slug": "nike-vomero-premium",
+   "ar": true,
+   "terreno": "Asfalto",
+   "borrador": true,
+   "tipo": "Neutra",
+   "uso": "Rodaje largo",
+   "fotos": []
+  },
+  {
+   "m": "Nike",
+   "mod": "ACG Pegasus Trail",
+   "ver": "",
+   "tiendas": [],
+   "id": 108,
+   "slug": "nike-acg-pegasus-trail",
+   "ar": true,
+   "terreno": "Trail",
+   "borrador": true,
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "fotos": []
   }
  ]
 }

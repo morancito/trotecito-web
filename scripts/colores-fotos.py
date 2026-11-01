@@ -2,9 +2,9 @@
    - las cuadra en 600x600 (fondo del color del borde; en fondo blanco borra logos o carteles de arriba),
    - saca los dos colores dominantes de la zapatilla y les pone nombre (o usa el que dice la tienda),
    - descarta colores repetidos (mismo color en otra tienda: queda el más barato),
-   y deja public/fotos/<modelo>/c<n>.webp y scripts/colores-final.json.
+   y deja public/fotos/<modelo>/c-<hash>.webp y public/data/colores.json (lo lee la ficha).
    python3 scripts/colores-fotos.py"""
-import json, os, re, colorsys
+import json, os, re, colorsys, hashlib
 from PIL import Image, ImageStat, ImageDraw
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -84,11 +84,12 @@ def nombre_texto(t):
 def nombre_rgb(rgb):
     r, g, b = (x / 255 for x in rgb)
     h, l, s = colorsys.rgb_to_hls(r, g, b); h *= 360
-    if l < 0.16: return "Negro"
+    if l < 0.16 or (l < 0.3 and s < 0.12): return "Negro"
+    if l < 0.32 and s < 0.3 and 195 <= h < 260: return "Azul marino"
     if l > 0.88 and s < 0.35: return "Blanco"
     if s < 0.16: return "Gris" if l < 0.8 else "Blanco"
     if (h < 50 or h > 330) and l > 0.62 and s < 0.6 and 20 < h < 50: return "Beige"
-    if h < 12 or h >= 345: return "Bordó" if l < 0.3 else "Rosa" if l > 0.65 else "Rojo"
+    if h < 12 or h >= 345: return "Bordó" if l < 0.3 else "Rosa" if l > 0.6 else "Rojo"
     if h < 40: return "Marrón" if l < 0.35 else "Beige" if s < 0.45 and l > 0.6 else "Naranja"
     if h < 70: return "Amarillo" if l > 0.35 else "Verde"
     if h < 160: return "Verde"
@@ -98,11 +99,20 @@ def nombre_rgb(rgb):
     if h < 300: return "Violeta"
     return "Rosa"
 
+def nombre_final(texto, dom):
+    """el nombre de la tienda si lo da; si da un solo color, se completa con el segundo color de la foto"""
+    rgb = [nombre_rgb(c) for c, _ in dom]
+    t = nombre_texto(texto)
+    if not t: return nombre_de(dom)
+    if " y " in t: return t
+    otro = next((n for n in rgb if n.split()[0] != t.split()[0]), None)
+    return f"{t} y {otro.lower()}" if otro else t
+
 def nombre_de(dom):
     ns = []
     for rgb, _ in dom:
         n = nombre_rgb(rgb)
-        if n not in ns: ns.append(n)
+        if all(n.split()[0] != o.split()[0] for o in ns): ns.append(n)
     return ns[0] if len(ns) == 1 else f"{ns[0]} y {ns[1].lower()}"
 
 hexd = lambda rgb: "#%02X%02X%02X" % rgb
@@ -110,7 +120,9 @@ dist = lambda a, b: sum((a[i] - b[i]) ** 2 for i in range(3)) ** .5
 
 datos = json.load(open(f"{RAIZ}/scripts/colores.json"))
 # solo los modelos que se buscaron en esta corrida (las fotos crudas no se guardan); el resto queda como estaba
-try: final = json.load(open(f"{RAIZ}/scripts/colores-final.json"))
+FINAL = f"{RAIZ}/public/data/colores.json"
+HOY = __import__("datetime").date.today().strftime("%d/%m/%Y")
+try: final = json.load(open(FINAL))
 except Exception: final = {}
 try: hechos = set(x.strip() for x in open(f"{RAIZ}/scripts/colores-hechos.txt") if x.strip())
 except Exception: hechos = set(datos)
@@ -118,7 +130,7 @@ for slug, vs in datos.items():
     if slug not in hechos or not os.path.isdir(f"{SRC}/{slug}"): continue
     os.makedirs(f"{DST}/{slug}", exist_ok=True)
     for f in os.listdir(f"{DST}/{slug}"):
-        if re.match(r"c\d+\.webp$", f): os.remove(f"{DST}/{slug}/{f}")
+        if re.match(r"c(\d+|-[0-9a-f]{8})\.webp$", f): os.remove(f"{DST}/{slug}/{f}")
     elegidas = []
     for v in sorted(vs, key=lambda v: v["precio"]):
         ruta = f"{SRC}/{v['foto']}"
@@ -132,12 +144,13 @@ for slug, vs in datos.items():
         rep = next((e for e in elegidas if dist(e["_d"][0][0], dom[0][0]) < 48 and (len(dom) < 2 or len(e["_d"]) < 2 or dist(e["_d"][1][0], dom[1][0]) < 70)), None)
         if rep:
             rep["otras"].append({k: v[k] for k in ("tienda", "url", "precio", "nota")}); continue
-        n = len(elegidas) + 1
-        im.save(f"{DST}/{slug}/c{n}.webp", quality=80, method=6)
-        elegidas.append({"n": nombre_texto(v.get("color")) or nombre_de(dom), "hex": [hexd(c) for c, _ in dom], "foto": f"fotos/{slug}/c{n}.webp",
+        # el nombre sale de la URL: si la foto no cambia de una semana a otra, el archivo queda igual
+        n = "c-" + hashlib.md5(v["url"].encode()).hexdigest()[:8]
+        im.save(f"{DST}/{slug}/{n}.webp", quality=80, method=6)
+        elegidas.append({"n": nombre_final(v.get("color"), dom), "hex": [hexd(c) for c, _ in dom], "foto": f"fotos/{slug}/{n}.webp",
                          "tienda": v["tienda"], "url": v["url"], "precio": v["precio"], "antes": v.get("antes"), "nota": v.get("nota", ""),
-                         "talles": v.get("talles", []), "sistema": v.get("sistema"), "otras": [], "_d": dom, "_txt": v.get("color")})
+                         "talles": v.get("talles", []), "sistema": v.get("sistema"), "fecha": HOY, "otras": [], "_d": dom})
     for e in elegidas: e.pop("_d")
     final[slug] = elegidas
     print(slug, len(vs), "->", len(elegidas), [e["n"] for e in elegidas])
-json.dump(final, open(f"{RAIZ}/scripts/colores-final.json", "w"), ensure_ascii=False, indent=1)
+json.dump(final, open(FINAL, "w"), ensure_ascii=False, separators=(",", ":"))

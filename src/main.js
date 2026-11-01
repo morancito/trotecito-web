@@ -10,14 +10,14 @@ import { buscarModelo, reemplazos, sugerir } from "./reemplazo.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
-const [CAT, HIST] = await Promise.all(["modelos", "historial"].map(n => fetch(BASE + `data/${n}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : { series: {} })));
+const [CAT, HIST, COLORES] = await Promise.all(["modelos", "historial", "colores"].map(n => fetch(BASE + `data/${n}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : { series: {} })));
 //@@FIN
 
 /* ---------- datos ---------- */
 // Un precio que el robot no pudo actualizar en más de 7 días deja de mostrarse.
 const aMs = f => { const [d, mo, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, mo - 1, d) : 0; };
 const vigenteHasta = f => aMs(CAT.actualizado) - aMs(f) <= 7 * 864e5;
-const DATA = CAT.modelos.filter(d => !d.borrador).map(d => ({ ...d, fotos: d.fotos || [], todas: (d.tiendas || []).filter(t => !t.sinStock && vigenteHasta(t.fecha)).sort((a, b) => a.precio - b.precio) }));
+const DATA = CAT.modelos.filter(d => !d.borrador).map(d => ({ ...d, fotos: d.fotos || [], variantes: Array.isArray(COLORES[d.slug]) ? COLORES[d.slug] : [], todas: (d.tiendas || []).filter(t => !t.sinStock && vigenteHasta(t.fecha)).sort((a, b) => a.precio - b.precio) }));
 /* talles: hombre, mujer o todos. Cambia qué precios se ven en todo el sitio. */
 const guardado = k => { try { return localStorage.getItem(k); } catch { return null; } };
 const guardar = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
@@ -265,12 +265,19 @@ function precioTarjeta(d) {
     return `<span class="bib-p">${meta ? `<small>${meta}</small>` : ""}<span class="bib-pp"><i>desde</i>${fmt(d.min)}</span></span>`; }
   return d.otro ? `<span class="pronto">Solo talles de ${d.otro.gen.toLowerCase()}</span>` : `<span class="pronto">Pronto</span>`;
 }
+/* colores en stock: los del género elegido; con talle elegido, primero los que lo tienen */
+const coloresDe = d => d.variantes.filter(v => paraGen(v)).sort((a, b) => (estadoTalle(b) === true) - (estadoTalle(a) === true) || (estadoTalle(a) === false) - (estadoTalle(b) === false) || a.precio - b.precio);
+const muestra = v => `<i class="sw" style="--c1:${esc(v.hex[0])};--c2:${esc(v.hex[1] || v.hex[0])}"></i>`;
+function puntos(d) {
+  const vs = coloresDe(d); if (vs.length < 2) return "";
+  return `<span class="bib-cols" title="${vs.length} colores">${vs.slice(0, 4).map(muestra).join("")}${vs.length > 4 ? `<b>+${vs.length - 4}</b>` : ""}</span>`;
+}
 function tarjeta(d) {
   const on = st.cmp.includes(d.id), dc = desc(d);
   const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
   return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="${zurl(d)}">
     <div class="bib-band">${sello(d.m)}<span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
-    <div class="bib-img">${img}${dc >= 0.05 ? `<span class="off">−${Math.round(dc * 100)}%</span>` : ""}</div>
+    <div class="bib-img">${img}${puntos(d)}${dc >= 0.05 ? `<span class="off">−${Math.round(dc * 100)}%</span>` : ""}</div>
     <div class="bib-body"><h3 class="cond">${esc(nombre(d))}</h3>${d.corredor ? `<p class="bib-perfil">${d.tipo === "Estabilidad" ? "Pronador" : "Neutra"} · ${esc(kgCorto(d))}</p>` : ""}
       <div class="bib-foot"><span class="bib-uso">${d.var != null && d.var <= -0.05 ? `<span class="baja">▼ ${Math.round(-d.var * 100)}%</span>` : esc(d.uso)}</span>${precioTarjeta(d)}</div></div>
     <button class="cmp" aria-pressed="${on}" aria-label="Comparar ${esc(nombre(d))}" data-c="${d.id}">${on ? "✓" : "+"}</button></a>`;
@@ -351,6 +358,21 @@ function media(d) {
     <div class="media-box" id="mfotos"><img class="main" id="fotoMain" src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}"></div>${stage}
     ${d.fotos.length > 1 ? `<div class="thumbs">${d.fotos.map((s, i) => `<button data-foto="${i}" aria-pressed="${i === 0}" aria-label="Foto ${i + 1}"><img src="${esc(src(s))}" alt="" loading="lazy"></button>`).join("")}</div>` : ""}`;
 }
+function bloqueColores(d) {
+  const vs = coloresDe(d); if (!vs.length) return "";
+  return `<div class="colores"><p class="col-h">${vs.length === 1 ? "1 color en stock" : `${vs.length} colores en stock`}${GEN ? ` <span>talles de ${GEN.toLowerCase()}</span>` : ""}</p>
+    <div class="col-row">${vs.map((v, i) => `<button class="col${estadoTalle(v) === false ? " sin" : ""}" data-col="${i}" aria-pressed="false" aria-label="${esc(v.n)}"><img src="${esc(src(v.foto))}" alt="" loading="lazy"><small>${muestra(v)}${esc(v.n)}</small></button>`).join("")}</div>
+    <div class="col-info" id="colInfo" hidden></div></div>`;
+}
+function infoColor(v) {
+  const vigente = aMs(CAT.actualizado) - aMs(v.fecha) <= 8 * 864e5, e = estadoTalle(v);
+  const talle = !TALLE ? "" : e ? `<span class="buy-t">✓ Hay talle ${TALLE}</span>` : e === false ? `<span class="buy-t no">No tiene tu talle ${TALLE}</span>` : `<span class="buy-t nd">Talle ${TALLE} sin confirmar</span>`;
+  const otras = (v.otras || []).filter(o => paraGen(o));
+  return `<p class="ci-n">${muestra(v)}<b>${esc(v.n)}</b>${v.nota ? `<span>talles de ${esc(v.nota.toLowerCase())}</span>` : ""}</p>
+    <p class="ci-p">${vigente ? `<b>${fmt(v.precio)}</b> en ${esc(v.tienda)}` : `En ${esc(v.tienda)} <small>(precio de hace más de una semana: chequealo en la tienda)</small>`}</p>${talle}
+    <a class="btn" href="${esc(v.url)}" target="_blank" rel="noopener">Ver este color en ${esc(v.tienda)} ↗</a>
+    ${otras.length ? `<p class="ci-o">También en ${otras.map(o => `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.tienda)}</a>${vigente ? ` (${fmt(o.precio)})` : ""}`).join(", ")}</p>` : ""}`;
+}
 const lineaTalle = t => { const e = estadoTalle(t); return !TALLE ? "" : e ? `<span class="buy-t">✓ Hay talle ${TALLE}</span>` : `<span class="buy-t nd">No pudimos confirmar el talle ${TALLE}: chequealo en la tienda</span>`; };
 const chips = t => t.talles?.length ? t.talles.map(x => `<i class="tc${t.sistema === "AR" && x === TALLE ? " on" : ""}">${t.sistema === "US" ? "US " : ""}${x}</i>`).join("") : `<span class="tc-nd">No pudimos chequear los talles: consultalos en la tienda</span>`;
 function bloqueTalles(d) {
@@ -381,6 +403,7 @@ function ficha(d) {
     <p class="kicker f-marca">${sello(d.m, "grande")}<span>N° ${pad(d.id)}</span></p>
     <h1 class="cond">${esc(nombre(d))}</h1>
     <div class="tags">${terr(d) === "Trail" ? `<span class="tag trail">Trail</span>` : ""}<span class="tag uso ${UCLS[d.uso] || ""}">${esc(d.uso)}</span>${pisada(d) ? `<span class="tag">${pisada(d)}</span>` : ""}${conPlaca(d) ? `<span class="tag">Con placa</span>` : ""}</div>
+    ${d.fotos.length ? bloqueColores(d) : ""}
     ${best ? `<div class="buy"><span class="kicker">Mejor precio</span><b class="buy-p">${fmt(best.precio)}</b>
       <span class="buy-s">en ${esc(best.tienda)}${best.cuotas && !/consultar/i.test(best.cuotas) ? " · " + esc(best.cuotas) : ""}</span>
       ${lineaTalle(best)}<a class="btn" href="${esc(best.url)}" target="_blank" rel="noopener">Comprar en ${esc(best.tienda)} ↗</a>
@@ -410,9 +433,18 @@ function montarFicha(d) {
   if (!d.fotos.length) { crear(); return; }
   $("#mtabs").onclick = e => { const b = e.target.closest("button"); if (!b) return; const tres = b.dataset.mt === "3d";
     $("#m3d").hidden = !tres; $("#mfotos").hidden = tres; document.querySelectorAll("#mtabs button").forEach(x => x.setAttribute("aria-pressed", x === b)); if (tres) crear(); };
+  const cols = document.querySelector(".col-row"), vs = coloresDe(d);
+  if (cols) cols.onclick = e => { const b = e.target.closest("button"); if (!b) return; const v = vs[+b.dataset.col];
+    const ya = b.getAttribute("aria-pressed") === "true";
+    cols.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", !ya && x === b));
+    document.querySelectorAll(".thumbs button").forEach((x, i) => x.setAttribute("aria-pressed", ya && i === 0));
+    $("#fotoMain").src = src(ya ? d.fotos[0] : v.foto); $("#m3d").hidden = true; $("#mfotos").hidden = false;
+    document.querySelectorAll("#mtabs button").forEach(x => x.setAttribute("aria-pressed", x.dataset.mt === "fotos"));
+    const info = $("#colInfo"); info.hidden = ya; if (!ya) { info.innerHTML = infoColor(v); medir("color", { slug: d.slug, c: v.n, t: v.tienda }); } };
   const th = document.querySelector(".thumbs");
   if (th) th.onclick = e => { const b = e.target.closest("button"); if (!b) return; $("#fotoMain").src = src(d.fotos[+b.dataset.foto]);
     th.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); $("#m3d").hidden = true; $("#mfotos").hidden = false;
+    document.querySelectorAll(".col-row button").forEach(x => x.setAttribute("aria-pressed", false)); const ci = $("#colInfo"); if (ci) ci.hidden = true;
     document.querySelectorAll("#mtabs button").forEach(x => x.setAttribute("aria-pressed", x.dataset.mt === "fotos")); };
 }
 

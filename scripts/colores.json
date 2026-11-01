@@ -61,6 +61,23 @@
     "43"
    ],
    "sistema": "AR"
+  },
+  {
+   "tienda": "Dash Deportes",
+   "url": "https://www.dashdeportes.com.ar/zapatillas-asics-gel-kayano-32-running-hombre-0612746/p",
+   "nombre": "Asics Gel-Kayano 32",
+   "nota": "",
+   "color": "Blanco",
+   "foto": "asics-gel-kayano-32/3.jpg",
+   "precio": 319999,
+   "antes": null,
+   "talles": [
+    "39",
+    "40",
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
   }
  ],
  "nike-pegasus-41": [
@@ -74,8 +91,7 @@
    "precio": 84999,
    "antes": 279999,
    "talles": [
-    "34.5",
-    "35"
+    "34.5"
    ],
    "sistema": "AR"
   },
@@ -143,7 +159,7 @@
    "nombre": "Hoka Clifton 10",
    "nota": "Mujer",
    "color": null,
-   "foto": "hoka-clifton-10/5.jpg",
+   "foto": "hoka-clifton-10/6.jpg",
    "precio": 276500,
    "antes": null,
    "talles": [
@@ -157,7 +173,7 @@
    "nombre": "Clifton 10 W",
    "nota": "Mujer",
    "color": null,
-   "foto": "hoka-clifton-10/8.jpg",
+   "foto": "hoka-clifton-10/9.jpg",
    "precio": 276500,
    "antes": null,
    "talles": [
@@ -172,7 +188,7 @@
    "nombre": "Hoka Clifton 10",
    "nota": "Hombre",
    "color": null,
-   "foto": "hoka-clifton-10/3.webp",
+   "foto": "hoka-clifton-10/1.webp",
    "precio": 299999,
    "antes": null,
    "talles": [
@@ -200,7 +216,7 @@
    "nombre": "Zapatilla Hoka Clifton 10 Mujer -Vainilla - VCH",
    "nota": "Mujer",
    "color": null,
-   "foto": "hoka-clifton-10/6.webp",
+   "foto": "hoka-clifton-10/5.webp",
    "precio": 299999,
    "antes": null,
    "talles": [
@@ -228,7 +244,7 @@
    "nombre": "Zapatilla Hoka Clifton 10 Hombre - Gris - PTYG",
    "nota": "Hombre",
    "color": null,
-   "foto": "hoka-clifton-10/9.webp",
+   "foto": "hoka-clifton-10/8.webp",
    "precio": 299999,
    "antes": null,
    "talles": [
@@ -293,25 +309,6 @@
     "7"
    ],
    "sistema": "US"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-speed-5-de-hombre-s1013681004-000/p",
-   "nombre": "Saucony Endorphin Speed 5",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "saucony-endorphin-speed-5/5.jpg",
-   "precio": 249999,
-   "antes": null,
-   "talles": [
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
   }
  ],
  "adidas-adizero-evo-sl": [
@@ -335,7 +332,7 @@
    "nombre": "zapatillas running adidas adizero evo sl mujer",
    "nota": "Mujer",
    "color": "Bordo Disciplina",
-   "foto": "adidas-adizero-evo-sl/6.jpg",
+   "foto": "adidas-adizero-evo-sl/5.jpg",
    "precio": 229999,
    "antes": 259999,
    "talles": [
@@ -403,17 +400,79 @@
    "sistema": "AR"
   },
   {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-evo-sl-de-mujer-6ki4795-000/p",
+   "nombre": "Zapatillas Running adidas Adizero EVO SL de Mujer",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "adidas-adizero-evo-sl/8.jpg",
+   "precio": 249999,
+   "antes": null,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
    "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-evo-sl-mujer/ADKK2052.html",
    "nombre": "zapatillas running adidas adizero evo sl mujer",
    "nota": "Mujer",
    "color": "Marron Disciplina",
-   "foto": "adidas-adizero-evo-sl/5.jpg",
+   "foto": "adidas-adizero-evo-sl/6.jpg",
    "precio": 279999,
    "antes": null,
    "talles": [
     "35.5",
     "36.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-evo-sl-de-hombre-6kk2048-000/p",
+   "nombre": "Zapatillas Running adidas Adizero Evo SL de Hombre",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "adidas-adizero-evo-sl/11.jpg",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-de-running-adizero-evo-sl-hombre-67130/p",
+   "nombre": "Zapatillas Running adidas Adizero EVO SL de Hombre",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "adidas-adizero-evo-sl/19.jpg",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "45"
    ],
    "sistema": "AR"
   }
@@ -570,23 +629,6 @@
     "40.5"
    ],
    "sistema": "AR"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-nike-vomero-18-de-mujer-hm6804004-000/p",
-   "nombre": "Nike Vomero 18",
-   "nota": "Mujer",
-   "color": null,
-   "foto": "nike-vomero-18/1.jpg",
-   "precio": 329999,
-   "antes": null,
-   "talles": [
-    "37",
-    "37.5",
-    "38",
-    "39.5"
-   ],
-   "sistema": "AR"
   }
  ],
  "nike-vomero-plus": [
@@ -629,11 +671,25 @@
  "nike-structure-26": [
   {
    "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-structure-26-hombre/NIHJ1102-001.html",
+   "nombre": "zapatillas running nike structure 26 hombre",
+   "nota": "Hombre",
+   "color": "Negro Disciplina",
+   "foto": "nike-structure-26/3.jpg",
+   "precio": 179999,
+   "antes": 299999,
+   "talles": [
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-running-nike-structure-26-mujer/NIHJ1101-601.html",
    "nombre": "zapatillas running nike structure 26 mujer",
    "nota": "Mujer",
    "color": "Rosa",
-   "foto": "nike-structure-26/3.jpg",
+   "foto": "nike-structure-26/4.jpg",
    "precio": 179999,
    "antes": 299999,
    "talles": [
@@ -651,7 +707,7 @@
    "nombre": "zapatillas running nike structure 26 hombre",
    "nota": "Hombre",
    "color": "Naranja Disciplina",
-   "foto": "nike-structure-26/4.jpg",
+   "foto": "nike-structure-26/5.jpg",
    "precio": 179999,
    "antes": 299999,
    "talles": [
@@ -667,26 +723,12 @@
    "nombre": "zapatillas running nike structure 26 mujer",
    "nota": "Mujer",
    "color": "Rosa",
-   "foto": "nike-structure-26/5.jpg",
+   "foto": "nike-structure-26/6.jpg",
    "precio": 179999,
    "antes": 299999,
    "talles": [
     "35",
     "35.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-nike-structure-26-hombre/NIHJ1102-001.html",
-   "nombre": "zapatillas running nike structure 26 hombre",
-   "nota": "Hombre",
-   "color": "Negro Disciplina",
-   "foto": "nike-structure-26/6.jpg",
-   "precio": 179999,
-   "antes": 299999,
-   "talles": [
-    "41"
    ],
    "sistema": "AR"
   },
@@ -791,18 +833,23 @@
  "adidas-adizero-sl-2": [
   {
    "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl-2-de-mujer-6ih8225-000/p",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl-2-de-mujer-6kj4151-000/p",
    "nombre": "Zapatillas Running adidas Duramo SL 2 de Mujer",
    "nota": "Mujer",
    "color": null,
-   "foto": "adidas-adizero-sl-2/9.jpg",
+   "foto": "adidas-adizero-sl-2/7.jpg",
    "precio": 129999,
    "antes": null,
    "talles": [
+    "34.5",
     "35.5",
     "36",
     "36.5",
-    "38.5"
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5"
    ],
    "sistema": "AR"
   },
@@ -813,7 +860,7 @@
    "nota": "Hombre",
    "color": null,
    "foto": "adidas-adizero-sl-2/12.jpg",
-   "precio": 129999,
+   "precio": 139999,
    "antes": null,
    "talles": [
     "38",
@@ -829,33 +876,6 @@
     "44",
     "45",
     "45.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl-2-de-hombre-6jp9208-000/p",
-   "nombre": "Zapatillas Running adidas Duramo SL 2 de Hombre",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "adidas-adizero-sl-2/14.jpg",
-   "precio": 129999,
-   "antes": null,
-   "talles": [
-    "38",
-    "38.5",
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45",
-    "45.5",
-    "46"
    ],
    "sistema": "AR"
   },
@@ -953,10 +973,28 @@
    "nombre": "Adidas Adizero Boston 13",
    "nota": "Mujer",
    "color": "Negro",
-   "foto": "adidas-adizero-boston-13/3.jpg",
+   "foto": "adidas-adizero-boston-13/2.jpg",
    "precio": 209999,
    "antes": 299999,
    "talles": [
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-boston-13-de-mujer-6jp9246-000/p",
+   "nombre": "Zapatillas Running adidas Adizero Boston 13 de Mujer",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "adidas-adizero-boston-13/6.jpg",
+   "precio": 209999,
+   "antes": 299999,
+   "talles": [
+    "36",
+    "36.5",
+    "37.5",
+    "38",
     "38.5"
    ],
    "sistema": "AR"
@@ -967,13 +1005,57 @@
    "nombre": "Adidas Adizero Boston 13",
    "nota": "Hombre",
    "color": "Azul Disciplina",
-   "foto": "adidas-adizero-boston-13/2.jpg",
+   "foto": "adidas-adizero-boston-13/3.jpg",
    "precio": 299999,
    "antes": null,
    "talles": [
     "40",
     "41",
     "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-boston-13-de-mujer-6kh8869-000/p",
+   "nombre": "Zapatillas Running adidas Adizero Boston 13 de Mujer",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "adidas-adizero-boston-13/5.jpg",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-boston-13-de-hombre-6js4938-000/p",
+   "nombre": "Zapatillas Running adidas Adizero Boston 13 de Hombre",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "adidas-adizero-boston-13/19.jpg",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
    ],
    "sistema": "AR"
   },
@@ -1057,43 +1139,51 @@
   },
   {
    "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6ki9227-000/p",
-   "nombre": "Zapatillas Running adidas Supernova Rise 3 de Hombre",
-   "nota": "Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-mujer-6kk1203-000/p",
+   "nombre": "Zapatillas Running adidas Supernova Rise 3 de Mujer",
+   "nota": "Mujer",
    "color": null,
-   "foto": "adidas-supernova-rise-3/11.jpg",
+   "foto": "adidas-supernova-rise-3/5.jpg",
    "precio": 249999,
    "antes": null,
    "talles": [
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5"
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40"
    ],
    "sistema": "AR"
   },
   {
    "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-adidas-de-running-supernova-rise-3-hombre-65847/p",
-   "nombre": "Zapatillas Running adidas Supernova Rise 3 de Hombre",
-   "nota": "Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-de-running-supernova-rise-3-mujer-67491/p",
+   "nombre": "Zapatillas Running adidas Supernova Rise 3 de Mujer",
+   "nota": "Mujer",
    "color": null,
-   "foto": "adidas-supernova-rise-3/16.jpg",
-   "precio": 249999,
+   "foto": "adidas-supernova-rise-3/9.jpg",
+   "precio": 279999,
    "antes": null,
    "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
+    "36.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-de-running-supernova-rise-3-mujer-64828/p",
+   "nombre": "Zapatillas Running adidas Supernova Rise 3 de Mujer",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "adidas-supernova-rise-3/17.jpg",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "35.5"
    ],
    "sistema": "AR"
   }
@@ -1139,6 +1229,24 @@
     "41"
    ],
    "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-adios-pro-5-de-hombre-6ki8294-000/p",
+   "nombre": "Adidas Adizero Adios Pro 5",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "adidas-adizero-adios-pro-5/1.jpg",
+   "precio": 479999,
+   "antes": null,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
   }
  ],
  "adidas-duramo-sl-2": [
@@ -1162,7 +1270,7 @@
    "nombre": "zapatillas adidas duramo sl2 running mujer",
    "nota": "Mujer",
    "color": "Azul Disciplina",
-   "foto": "adidas-duramo-sl-2/6.jpg",
+   "foto": "adidas-duramo-sl-2/5.jpg",
    "precio": 104999,
    "antes": 129999,
    "talles": [
@@ -1179,7 +1287,7 @@
    "nombre": "zapatillas adidas duramo sl2 hombre",
    "nota": "Hombre",
    "color": "Verde Disciplina",
-   "foto": "adidas-duramo-sl-2/7.jpg",
+   "foto": "adidas-duramo-sl-2/6.jpg",
    "precio": 104999,
    "antes": 129999,
    "talles": [
@@ -1308,7 +1416,7 @@
    "nombre": "zapatillas running adidas duramo sl 2 mujer",
    "nota": "Mujer",
    "color": "Verde Disciplina",
-   "foto": "adidas-duramo-sl-2/5.jpg",
+   "foto": "adidas-duramo-sl-2/7.jpg",
    "precio": 129999,
    "antes": null,
    "talles": [
@@ -1362,18 +1470,18 @@
   },
   {
    "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl-2-de-mujer-6ih8225-000/p",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-de-running-duramo-sl-2-mujer-65450/p",
    "nombre": "Zapatillas Running adidas Duramo SL 2 de Mujer",
    "nota": "Mujer",
    "color": null,
-   "foto": "adidas-duramo-sl-2/17.jpg",
-   "precio": 129999,
+   "foto": "adidas-duramo-sl-2/21.jpg",
+   "precio": 139999,
    "antes": null,
    "talles": [
+    "34.5",
     "35.5",
-    "36",
     "36.5",
-    "38.5"
+    "37.5"
    ],
    "sistema": "AR"
   }
@@ -1397,11 +1505,29 @@
   },
   {
    "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-tokio-hombre/AS1011C139500.html",
+   "nombre": "zapatillas running asics novablast 5 tokio hombre",
+   "nota": "Hombre",
+   "color": "Azul",
+   "foto": "asics-novablast-5/4.jpg",
+   "precio": 239999,
+   "antes": 319999,
+   "talles": [
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-hombre-malla/AS1011B974003.html",
    "nombre": "zapatillas running asics novablast 5 hombre malla",
    "nota": "Hombre",
    "color": "Negro Disciplina",
-   "foto": "asics-novablast-5/4.jpg",
+   "foto": "asics-novablast-5/5.jpg",
    "precio": 239999,
    "antes": 319999,
    "talles": [
@@ -1417,7 +1543,7 @@
    "nombre": "zapatillas running asics novablast 5 w mujer",
    "nota": "Mujer",
    "color": "Blanco Disciplina",
-   "foto": "asics-novablast-5/5.jpg",
+   "foto": "asics-novablast-5/6.jpg",
    "precio": 239999,
    "antes": 319999,
    "talles": [
@@ -1428,20 +1554,17 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-asics-novablast-5-tokio-hombre/AS1011C139500.html",
-   "nombre": "zapatillas running asics novablast 5 tokio hombre",
-   "nota": "Hombre",
-   "color": "Azul",
-   "foto": "asics-novablast-5/6.jpg",
-   "precio": 239999,
-   "antes": 319999,
+   "tienda": "Asics",
+   "url": "https://www.asics.com.ar/1012b765-402-zapatilla-asics-novablast-5-w-1/p",
+   "nombre": "Asics Novablast 5",
+   "nota": "Mujer",
+   "color": "Verde",
+   "foto": "asics-novablast-5/2.jpg",
+   "precio": 287910,
+   "antes": 319900,
    "talles": [
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43"
+    "35.5",
+    "36"
    ],
    "sistema": "AR"
   }
@@ -1495,21 +1618,6 @@
     "42.5",
     "43",
     "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-running-asics-gt-2000-14-m-de-hombre-1011c056400-000/p",
-   "nombre": "Zapatillas Running Asics Gt-2000 14 M de Hombre",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "asics-gt-2000-14/1.jpg",
-   "precio": 209999,
-   "antes": null,
-   "talles": [
-    "43",
     "45"
    ],
    "sistema": "AR"
@@ -1640,7 +1748,7 @@
    "nombre": "Asics Metaspeed Sky ",
    "nota": "Hombre",
    "color": null,
-   "foto": "asics-metaspeed-sky/2.jpg",
+   "foto": "asics-metaspeed-sky/3.jpg",
    "precio": 399000,
    "antes": null,
    "talles": [
@@ -1680,7 +1788,7 @@
    "nombre": "New Balance FuelCell Rebel v5",
    "nota": "Mujer",
    "color": null,
-   "foto": "new-balance-fuelcell-rebel-v5/1.jpg",
+   "foto": "new-balance-fuelcell-rebel-v5/2.jpg",
    "precio": 209999,
    "antes": null,
    "talles": [
@@ -1776,7 +1884,7 @@
    "nombre": "Saucony Endorphin Pro 5",
    "nota": "Mujer",
    "color": null,
-   "foto": "saucony-endorphin-pro-5/1.jpg",
+   "foto": "saucony-endorphin-pro-5/2.jpg",
    "precio": 299900,
    "antes": null,
    "talles": [
@@ -1799,23 +1907,6 @@
    "talles": [
     "41.5",
     "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-pro-5-de-mujer-s11064131-000/p",
-   "nombre": "Zapatillas Running Saucony Endorphin Pro 5 de Mujer",
-   "nota": "Mujer",
-   "color": null,
-   "foto": "saucony-endorphin-pro-5/4.jpg",
-   "precio": 299999,
-   "antes": null,
-   "talles": [
-    "37",
-    "37.5",
-    "38",
-    "39"
    ],
    "sistema": "AR"
   }
@@ -2050,10 +2141,28 @@
     "41",
     "41.5",
     "42",
-    "43",
     "43.5",
     "44",
     "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-puma-magmax-nitro-2-de-hombre-31212501-000/p",
+   "nombre": "Zapatillas Running Puma MagMax Nitro 2 de Hombre",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "puma-magmax-nitro-2/5.jpg",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
    ],
    "sistema": "AR"
   }
@@ -2138,11 +2247,26 @@
   },
   {
    "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-on-cloudmonster-3-mujer/ON3WG10035-256.html",
+   "nombre": "zapatillas on cloudmonster 3 mujer",
+   "nota": "Mujer",
+   "color": "Blanco",
+   "foto": "on-cloudmonster-3/6.jpg",
+   "precio": 339999,
+   "antes": null,
+   "talles": [
+    "38",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-on-cloudmonster-3-hombre/ON3MG10053-388.html",
    "nombre": "zapatillas on cloudmonster 3 hombre",
    "nota": "Hombre",
    "color": "Gris Adecuado para",
-   "foto": "on-cloudmonster-3/6.jpg",
+   "foto": "on-cloudmonster-3/7.jpg",
    "precio": 339999,
    "antes": null,
    "talles": [
@@ -2158,7 +2282,7 @@
    "nombre": "zapatillas on cloudmonster 3 mujer",
    "nota": "Mujer",
    "color": "Verde Disciplina",
-   "foto": "on-cloudmonster-3/7.jpg",
+   "foto": "on-cloudmonster-3/8.jpg",
    "precio": 339999,
    "antes": null,
    "talles": [
@@ -2174,7 +2298,7 @@
    "nombre": "zapatillas on cloudmonster 3 hombre",
    "nota": "Hombre",
    "color": "Azul Disciplina",
-   "foto": "on-cloudmonster-3/8.jpg",
+   "foto": "on-cloudmonster-3/9.jpg",
    "precio": 339999,
    "antes": null,
    "talles": [
@@ -2182,21 +2306,6 @@
     "42.5",
     "43",
     "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-on-cloudmonster-3-mujer/ON3WG10035-256.html",
-   "nombre": "zapatillas on cloudmonster 3 mujer",
-   "nota": "Mujer",
-   "color": "Blanco",
-   "foto": "on-cloudmonster-3/9.jpg",
-   "precio": 339999,
-   "antes": null,
-   "talles": [
-    "38",
-    "38.5"
    ],
    "sistema": "AR"
   }
@@ -2227,7 +2336,7 @@
    "nombre": "On Cloudsurfer Next ",
    "nota": "Hombre",
    "color": null,
-   "foto": "on-cloudsurfer-next/1.jpg",
+   "foto": "on-cloudsurfer-next/2.jpg",
    "precio": 269999,
    "antes": null,
    "talles": [
@@ -2248,48 +2357,16 @@
     "38"
    ],
    "sistema": "AR"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-on-cloudsurfer-next-de-hombre-3me30020106-000/p",
-   "nombre": "Zapatillas Running On Cloudsurfer Next de Hombre",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "on-cloudsurfer-next/2.jpg",
-   "precio": 269999,
-   "antes": null,
-   "talles": [
-    "42"
-   ],
-   "sistema": "AR"
   }
  ],
  "on-cloudrunner-3": [
-  {
-   "tienda": "Moov",
-   "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10054-723.html",
-   "nombre": "On Cloudrunner 3",
-   "nota": "Mujer",
-   "color": "Verde Disciplina",
-   "foto": "on-cloudrunner-3/3.jpg",
-   "precio": 279999,
-   "antes": null,
-   "talles": [
-    "36",
-    "37",
-    "38",
-    "38.5",
-    "39"
-   ],
-   "sistema": "AR"
-  },
   {
    "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-on-cloudrunner-3-hombre/ON3MG10071-043.html",
    "nombre": "On Cloudrunner 3",
    "nota": "Hombre",
    "color": "Negro Disciplina",
-   "foto": "on-cloudrunner-3/4.jpg",
+   "foto": "on-cloudrunner-3/3.jpg",
    "precio": 279999,
    "antes": null,
    "talles": [
@@ -2303,12 +2380,30 @@
    "sistema": "AR"
   },
   {
+   "tienda": "Moov",
+   "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10054-723.html",
+   "nombre": "On Cloudrunner 3",
+   "nota": "Mujer",
+   "color": "Verde Disciplina",
+   "foto": "on-cloudrunner-3/4.jpg",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
    "tienda": "Gostore",
    "url": "https://gostore.com.ar/zapatillas-on-cloudrunner-3-hombre-ont000180.html",
    "nombre": "On Cloudrunner 3",
    "nota": "Hombre",
    "color": null,
-   "foto": "on-cloudrunner-3/1.jpg",
+   "foto": "on-cloudrunner-3/2.jpg",
    "precio": 279999,
    "antes": null,
    "talles": [
@@ -2326,29 +2421,12 @@
    "nombre": "On Cloudrunner 3",
    "nota": "Mujer",
    "color": "Blanco Disciplina",
-   "foto": "on-cloudrunner-3/6.jpg",
+   "foto": "on-cloudrunner-3/5.jpg",
    "precio": 279999,
    "antes": null,
    "talles": [
     "38",
     "38.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Gostore",
-   "url": "https://gostore.com.ar/ont000185-cloudrunner-3-f.html",
-   "nombre": "On Cloudrunner 3",
-   "nota": "Mujer",
-   "color": null,
-   "foto": "on-cloudrunner-3/5.jpg",
-   "precio": 279999,
-   "antes": null,
-   "talles": [
-    "36.5",
-    "37",
-    "37.5",
-    "38"
    ],
    "sistema": "AR"
   },
@@ -2369,6 +2447,23 @@
     "43",
     "43.5",
     "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/ont000185-cloudrunner-3-f.html",
+   "nombre": "On Cloudrunner 3",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "on-cloudrunner-3/6.jpg",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38"
    ],
    "sistema": "AR"
   },
@@ -2422,6 +2517,40 @@
     "41",
     "42",
     "42.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-on-cloudrunner-3-de-hombre-3mg10071043-000/p",
+   "nombre": "Zapatillas Running On Cloudrunner 3 de Hombre",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "on-cloudrunner-3/1.jpg",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "40.5",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-on-cloudrunner-3-de-mujer-3wg10051043-000/p",
+   "nombre": "Zapatillas Running On Cloudrunner 3 de Mujer",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "on-cloudrunner-3/13.jpg",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "37.5"
    ],
    "sistema": "AR"
   }
@@ -2498,26 +2627,6 @@
     "38.5",
     "39",
     "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-running-on-cloudboom-max-de-hombre-3mf30310438-000/p",
-   "nombre": "Zapatillas Running On Cloudboom Max de Hombre",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "on-cloudboom-max/1.jpg",
-   "precio": 409999,
-   "antes": null,
-   "talles": [
-    "40.5",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "44",
-    "45"
    ],
    "sistema": "AR"
   }
@@ -2700,30 +2809,15 @@
  "brooks-glycerin-20": [
   {
    "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-brooks-glycerin-20-mujer/BRCRNFLIV0007BLCE.html",
-   "nombre": "Brooks Glycerin 20",
-   "nota": "Mujer",
-   "color": "celeste Disciplina",
-   "foto": "brooks-glycerin-20/2.jpg",
-   "precio": 69999,
-   "antes": 224999,
-   "talles": [
-    "36.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-running-brooks-glycerin-gts-20-mujer/BRCRNFLIV0008VECEBL.html",
    "nombre": "zapatillas running brooks glycerin gts 20 mujer",
    "nota": "Mujer",
    "color": "Verde",
-   "foto": "brooks-glycerin-20/4.jpg",
+   "foto": "brooks-glycerin-20/2.jpg",
    "precio": 69999,
    "antes": 224999,
    "talles": [
-    "35",
-    "36.5"
+    "35"
    ],
    "sistema": "AR"
   },
@@ -2782,7 +2876,7 @@
    "nombre": "Glycerin 20 M",
    "nota": "Hombre",
    "color": null,
-   "foto": "brooks-glycerin-20/5.jpg",
+   "foto": "brooks-glycerin-20/4.jpg",
    "precio": 219999,
    "antes": null,
    "talles": [
@@ -2803,7 +2897,7 @@
    "nombre": "Glycerin 20 M",
    "nota": "Hombre",
    "color": null,
-   "foto": "brooks-glycerin-20/6.jpg",
+   "foto": "brooks-glycerin-20/5.jpg",
    "precio": 219999,
    "antes": null,
    "talles": [
@@ -2822,7 +2916,7 @@
    "nombre": "Glycerin 20 M",
    "nota": "Hombre",
    "color": null,
-   "foto": "brooks-glycerin-20/7.jpg",
+   "foto": "brooks-glycerin-20/6.jpg",
    "precio": 219999,
    "antes": null,
    "talles": [
@@ -2840,7 +2934,7 @@
    "nombre": "Glycerin 20 M",
    "nota": "Hombre",
    "color": null,
-   "foto": "brooks-glycerin-20/8.jpg",
+   "foto": "brooks-glycerin-20/7.jpg",
    "precio": 219999,
    "antes": null,
    "talles": [
@@ -2858,7 +2952,7 @@
    "nombre": "Glycerin 20 W",
    "nota": "Mujer",
    "color": null,
-   "foto": "brooks-glycerin-20/9.jpg",
+   "foto": "brooks-glycerin-20/8.jpg",
    "precio": 219999,
    "antes": null,
    "talles": [
@@ -2875,7 +2969,7 @@
    "nombre": "Glycerin 20 W",
    "nota": "Mujer",
    "color": null,
-   "foto": "brooks-glycerin-20/10.jpg",
+   "foto": "brooks-glycerin-20/9.jpg",
    "precio": 219999,
    "antes": null,
    "talles": [
@@ -3084,26 +3178,6 @@
     "43",
     "43.5",
     "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Gostore",
-   "url": "https://gostore.com.ar/ua-u-velociti-elite-2-eis-uat000001.html",
-   "nombre": "Infinite Elite W",
-   "nota": "Mujer",
-   "color": null,
-   "foto": "under-armour-infinite-elite/3.jpg",
-   "precio": 249999,
-   "antes": null,
-   "talles": [
-    "34.5",
-    "35",
-    "35.5",
-    "36.5",
-    "37",
-    "37.5",
-    "38"
    ],
    "sistema": "AR"
   }
@@ -3340,7 +3414,7 @@
    "nombre": "Nike Quest 6",
    "nota": "Mujer",
    "color": "Blanco",
-   "foto": "nike-quest-6/3.jpg",
+   "foto": "nike-quest-6/2.jpg",
    "precio": 109999,
    "antes": 179999,
    "talles": [
@@ -3359,7 +3433,7 @@
    "nombre": "Nike Quest 6",
    "nota": "Hombre",
    "color": "Negro",
-   "foto": "nike-quest-6/2.jpg",
+   "foto": "nike-quest-6/3.jpg",
    "precio": 179999,
    "antes": null,
    "talles": [
@@ -3414,7 +3488,7 @@
    "nombre": "zapatillas nike revolution 8 mujer",
    "nota": "Mujer",
    "color": "Rosa",
-   "foto": "nike-revolution-8/9.jpg",
+   "foto": "nike-revolution-8/10.jpg",
    "precio": 84999,
    "antes": 139999,
    "talles": [
@@ -3497,33 +3571,11 @@
   },
   {
    "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-nike-revolution-8-running-hombre/NIHJ9198-003.html",
-   "nombre": "zapatillas nike revolution 8 running hombre",
-   "nota": "Hombre",
-   "color": "Negro",
-   "foto": "nike-revolution-8/5.jpg",
-   "precio": 139999,
-   "antes": null,
-   "talles": [
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "43.5",
-    "44",
-    "44.5",
-    "45",
-    "45.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-nike-revolution-8-mujer/NIHJ8485-002.html",
    "nombre": "zapatillas nike revolution 8 mujer",
    "nota": "Mujer",
    "color": "Negro Disciplina",
-   "foto": "nike-revolution-8/6.jpg",
+   "foto": "nike-revolution-8/5.jpg",
    "precio": 139999,
    "antes": null,
    "talles": [
@@ -3540,6 +3592,28 @@
     "40.5",
     "41",
     "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-nike-revolution-8-running-hombre/NIHJ9198-003.html",
+   "nombre": "zapatillas nike revolution 8 running hombre",
+   "nota": "Hombre",
+   "color": "Negro",
+   "foto": "nike-revolution-8/6.jpg",
+   "precio": 139999,
+   "antes": null,
+   "talles": [
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "43.5",
+    "44",
+    "44.5",
+    "45",
+    "45.5"
    ],
    "sistema": "AR"
   },
@@ -3565,37 +3639,11 @@
   },
   {
    "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-nike-revolution-8-mujer/NIHJ8485-500.html",
-   "nombre": "zapatillas running nike revolution 8 mujer",
-   "nota": "Mujer",
-   "color": "Violeta Disciplina",
-   "foto": "nike-revolution-8/8.jpg",
-   "precio": 139999,
-   "antes": null,
-   "talles": [
-    "35",
-    "35.5",
-    "36",
-    "36.5",
-    "37",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "39.5",
-    "40",
-    "40.5",
-    "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-running-nike-revolution-8-mujer-malla/NIHJ8485-006.html",
    "nombre": "zapatillas running nike revolution 8 mujer malla",
    "nota": "Mujer",
    "color": "Gris",
-   "foto": "nike-revolution-8/10.jpg",
+   "foto": "nike-revolution-8/8.jpg",
    "precio": 139999,
    "antes": null,
    "talles": [
@@ -3613,6 +3661,32 @@
     "40.5",
     "41",
     "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-revolution-8-mujer/NIHJ8485-500.html",
+   "nombre": "zapatillas running nike revolution 8 mujer",
+   "nota": "Mujer",
+   "color": "Violeta Disciplina",
+   "foto": "nike-revolution-8/9.jpg",
+   "precio": 139999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40",
+    "40.5",
+    "41"
    ],
    "sistema": "AR"
   },
@@ -3656,6 +3730,27 @@
     "39.5",
     "40",
     "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-nike-revolution-8-de-mujer-hj8485802-000/p",
+   "nombre": "Zapatillas Running Nike Revolution 8 de Mujer",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "nike-revolution-8/15.jpg",
+   "precio": 139999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5"
    ],
    "sistema": "AR"
   }
@@ -3721,16 +3816,14 @@
   },
   {
    "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-adidas-zapatilla-de-running-adistar-5-hombre-66259/p",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-adistar-5-de-hombre-6ih7178-000/p",
    "nombre": "Zapatillas Running adidas Adistar 5 de Hombre",
    "nota": "Hombre",
    "color": null,
-   "foto": "adidas-adistar-5/11.jpg",
-   "precio": 279999,
+   "foto": "adidas-adistar-5/9.jpg",
+   "precio": 229999,
    "antes": null,
    "talles": [
-    "38",
-    "38.5",
     "39",
     "39.5",
     "40",
@@ -3740,7 +3833,6 @@
     "43",
     "43.5",
     "44",
-    "45",
     "45.5"
    ],
    "sistema": "AR"
@@ -3790,7 +3882,6 @@
    "precio": 139999,
    "antes": 274999,
    "talles": [
-    "39.5",
     "43",
     "43.5",
     "44",
@@ -3927,6 +4018,20 @@
    "nota": "Mujer",
    "color": "Verde Disciplina",
    "foto": "nike-zegama-2/1.jpg",
+   "precio": 119999,
+   "antes": 399999,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-zegama-trail-2-mujer/NIFD5191-502.html",
+   "nombre": "zapatillas running nike zegama trail 2 mujer",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "nike-zegama-2/2.jpg",
    "precio": 119999,
    "antes": 399999,
    "talles": [
@@ -4085,7 +4190,7 @@
    "nombre": "On Cloudultra 3",
    "nota": "Hombre",
    "color": null,
-   "foto": "on-cloudultra-3/1.jpg",
+   "foto": "on-cloudultra-3/2.jpg",
    "precio": 339999,
    "antes": null,
    "talles": [
@@ -4105,7 +4210,7 @@
    "nombre": "On Cloudultra 3",
    "nota": "Mujer",
    "color": "Verde Adecuado para",
-   "foto": "on-cloudultra-3/4.jpg",
+   "foto": "on-cloudultra-3/5.jpg",
    "precio": 339999,
    "antes": null,
    "talles": [
@@ -4123,7 +4228,7 @@
    "nombre": "On Cloudultra 3",
    "nota": "Mujer",
    "color": null,
-   "foto": "on-cloudultra-3/5.jpg",
+   "foto": "on-cloudultra-3/4.jpg",
    "precio": 339999,
    "antes": null,
    "talles": [
@@ -4181,18 +4286,19 @@
   },
   {
    "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-bondi-9-de-mujer-1162012mblw-000/p",
-   "nombre": "Zapatillas Running Hoka Bondi 9 De Mujer",
-   "nota": "Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-bondi-9-de-hombre-1162011bblc-000/p",
+   "nombre": "Zapatillas Running Hoka Bondi 9 De Hombre",
+   "nota": "Hombre",
    "color": null,
-   "foto": "hoka-bondi-9/9.jpg",
+   "foto": "hoka-bondi-9/7.jpg",
    "precio": 321999,
    "antes": null,
    "talles": [
-    "37",
-    "39.5",
+    "40",
     "41",
-    "41.5"
+    "41.5",
+    "42",
+    "43.5"
    ],
    "sistema": "AR"
   }
@@ -4253,7 +4359,7 @@
    "nombre": "Hoka Mach 7",
    "nota": "Mujer",
    "color": null,
-   "foto": "hoka-mach-7/1.webp",
+   "foto": "hoka-mach-7/2.webp",
    "precio": 284999,
    "antes": null,
    "talles": [
@@ -4336,20 +4442,6 @@
     "8",
     "8.5",
     "9"
-   ],
-   "sistema": "US"
-  },
-  {
-   "tienda": "TodoTrail",
-   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-maxh-x3-hombre-neon-1e2bv/",
-   "nombre": "Zapatilla Hoka Mach X3 Hombre - Neon",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "hoka-mach-x-3/3.webp",
-   "precio": 399999,
-   "antes": null,
-   "talles": [
-    "9.5"
    ],
    "sistema": "US"
   }
@@ -4469,7 +4561,32 @@
    "sistema": "US"
   }
  ],
- "hoka-rincon-4": [],
+ "hoka-rincon-4": [
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-rincon-4-de-hombre-1155130bwht-000/p",
+   "nombre": "Hoka Rincon 4",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "hoka-rincon-4/1.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45",
+    "45.5",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  }
+ ],
  "hoka-skyflow": [
   {
    "tienda": "TodoTrail",
@@ -4477,7 +4594,7 @@
    "nombre": "Hoka Skyflow ",
    "nota": "Hombre",
    "color": null,
-   "foto": "hoka-skyflow/1.webp",
+   "foto": "hoka-skyflow/3.webp",
    "precio": 256499,
    "antes": 284999,
    "talles": [
@@ -4491,7 +4608,7 @@
    "nombre": "Hoka Skyflow ",
    "nota": "Hombre",
    "color": null,
-   "foto": "hoka-skyflow/3.jpg",
+   "foto": "hoka-skyflow/1.jpg",
    "precio": 263000,
    "antes": null,
    "talles": [
@@ -4501,36 +4618,66 @@
     "44.5"
    ],
    "sistema": "AR"
-  },
-  {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-running-hoka-skyflow-de-hombre-1155111bwht-000/p",
-   "nombre": "Hoka Skyflow ",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "hoka-skyflow/2.jpg",
-   "precio": 322999,
-   "antes": null,
-   "talles": [
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44"
-   ],
-   "sistema": "AR"
   }
  ],
  "hoka-speedgoat-6": [
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-speedgoat6-trail-hombre-ttt/",
+   "nombre": "Zapatilla Hoka SpeedGoat6 - Trail - Hombre - TTT",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "hoka-speedgoat-6/1.webp",
+   "precio": 227999,
+   "antes": 284999,
+   "talles": [
+    "8",
+    "9.5",
+    "11.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-speedgoat6-trail-hombre-bnrs-pt6vm/",
+   "nombre": "Zapatilla Hoka SpeedGoat6 - Trail - Hombre - BNRS",
+   "nota": "Hombre",
+   "color": "Rosa",
+   "foto": "hoka-speedgoat-6/4.webp",
+   "precio": 227999,
+   "antes": 284999,
+   "talles": [
+    "10",
+    "11",
+    "11.5",
+    "12",
+    "12.5",
+    "13",
+    "15"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-speedgoat6-trail-hombre-mplc-5auae/",
+   "nombre": "Zapatilla Hoka SpeedGoat6 - Trail - Hombre - MPLC",
+   "nota": "Hombre",
+   "color": "Rosa",
+   "foto": "hoka-speedgoat-6/5.webp",
+   "precio": 227999,
+   "antes": 284999,
+   "talles": [
+    "12"
+   ],
+   "sistema": "US"
+  },
   {
    "tienda": "Gostore",
    "url": "https://gostore.com.ar/m-speedgoat-6-hot000009.html",
    "nombre": "Hoka Speedgoat 6",
    "nota": "Hombre",
    "color": null,
-   "foto": "hoka-speedgoat-6/2.jpg",
+   "foto": "hoka-speedgoat-6/3.jpg",
    "precio": 251000,
    "antes": null,
    "talles": [
@@ -4549,7 +4696,7 @@
    "nombre": "Hoka Speedgoat 6",
    "nota": "Mujer",
    "color": null,
-   "foto": "hoka-speedgoat-6/3.jpg",
+   "foto": "hoka-speedgoat-6/6.jpg",
    "precio": 263000,
    "antes": null,
    "talles": [
@@ -4565,7 +4712,7 @@
    "nombre": "Speedgoat 6 W",
    "nota": "Mujer",
    "color": null,
-   "foto": "hoka-speedgoat-6/4.jpg",
+   "foto": "hoka-speedgoat-6/7.jpg",
    "precio": 263000,
    "antes": null,
    "talles": [
@@ -4625,6 +4772,34 @@
     "46"
    ],
    "sistema": "AR"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mafate-5-trail-gris-1g3r9/",
+   "nombre": "Zapatilla Hoka Mafate 5 - Trail - Gris",
+   "nota": "",
+   "color": "Blanco",
+   "foto": "hoka-mafate-5/3.webp",
+   "precio": 449999,
+   "antes": null,
+   "talles": [
+    "10"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mafate-5-trail-mujer-cstlb-5qivr/",
+   "nombre": "Zapatilla Hoka Mafate 5 - Trail - Mujer - CSTLB",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "hoka-mafate-5/4.webp",
+   "precio": 449999,
+   "antes": null,
+   "talles": [
+    "8"
+   ],
+   "sistema": "US"
   }
  ],
  "hoka-torrent-4": [
@@ -4647,28 +4822,37 @@
    "sistema": "US"
   },
   {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-torrent-4-de-hombre-1155115cyf-000/p",
-   "nombre": "Hoka Torrent 4",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "hoka-torrent-4/2.jpg",
-   "precio": 240999,
-   "antes": null,
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-torrent-4-trail-hyn/",
+   "nombre": "Zapatilla Hoka Torrent 4 - Trail - HYN",
+   "nota": "",
+   "color": "Rosa",
+   "foto": "hoka-torrent-4/3.webp",
+   "precio": 215999,
+   "antes": 269999,
    "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45",
-    "47"
+    "11"
    ],
-   "sistema": "AR"
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-torrent-4-trail-mtnr-1ewxi/",
+   "nombre": "Zapatilla Hoka Torrent 4 - Trail - MTNR",
+   "nota": "",
+   "color": "Rosa",
+   "foto": "hoka-torrent-4/4.webp",
+   "precio": 215999,
+   "antes": 269999,
+   "talles": [
+    "9",
+    "10",
+    "11.5",
+    "12",
+    "12.5",
+    "13"
+   ],
+   "sistema": "US"
   }
  ],
  "salomon-genesis-2": [
@@ -4678,7 +4862,7 @@
    "nombre": "Salomon Genesis 2",
    "nota": "",
    "color": "Blanco",
-   "foto": "salomon-genesis-2/1.webp",
+   "foto": "salomon-genesis-2/2.webp",
    "precio": 274999,
    "antes": null,
    "talles": [
@@ -4690,6 +4874,79 @@
     "10",
     "10.5",
     "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-trail-negro-naranja-49qds/",
+   "nombre": "Zapatilla Salomon Genesis 2 - Trail - Negro/Naranja",
+   "nota": "",
+   "color": "Blanco",
+   "foto": "salomon-genesis-2/3.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "8",
+    "9.5",
+    "10",
+    "13"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-trail-rojo-crema-1ic32/",
+   "nombre": "Zapatilla Salomon Genesis 2 - Trail - Rojo/Crema",
+   "nota": "",
+   "color": "Blanco",
+   "foto": "salomon-genesis-2/4.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-trail-negro-lila-1pjuh/",
+   "nombre": "Zapatilla Salomon Genesis 2 - Trail - Negro/Lila",
+   "nota": "",
+   "color": "Negro/Lila",
+   "foto": "salomon-genesis-2/5.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "6",
+    "6.5",
+    "9"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-2-trail-negro-rosa-q10z0/",
+   "nombre": "Zapatilla Salomon Genesis 2 - Trail - Negro/Rosa",
+   "nota": "",
+   "color": "Negro/Rosa",
+   "foto": "salomon-genesis-2/6.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "6",
+    "6.5",
+    "7",
+    "8",
+    "8.5",
+    "9",
+    "9.5"
    ],
    "sistema": "US"
   }
@@ -4722,7 +4979,7 @@
    "nombre": "Salomon Ultra Glide 4",
    "nota": "Mujer",
    "color": null,
-   "foto": "salomon-ultra-glide-4/3.jpg",
+   "foto": "salomon-ultra-glide-4/5.jpg",
    "precio": 239999,
    "antes": null,
    "talles": [
@@ -4740,7 +4997,7 @@
    "nombre": "Ultra Glide 4 W",
    "nota": "Mujer",
    "color": null,
-   "foto": "salomon-ultra-glide-4/4.jpg",
+   "foto": "salomon-ultra-glide-4/8.jpg",
    "precio": 239999,
    "antes": null,
    "talles": [
@@ -4753,28 +5010,160 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-glide-4-de-mujer-17491490-000/p",
-   "nombre": "Salomon Ultra Glide 4",
-   "nota": "Mujer",
-   "color": null,
-   "foto": "salomon-ultra-glide-4/1.jpg",
-   "precio": 249999,
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-glide-4-trail-red-1267a/",
+   "nombre": "Zapatilla Salomon Ultra Glide 4 - Trail - Red",
+   "nota": "",
+   "color": "Red",
+   "foto": "salomon-ultra-glide-4/3.webp",
+   "precio": 274999,
    "antes": null,
    "talles": [
-    "35.5",
-    "36",
-    "37",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "40.5"
+    "8.5",
+    "9.5",
+    "10",
+    "11",
+    "12"
    ],
-   "sistema": "AR"
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-glide-4-trail-blue-196s9/",
+   "nombre": "Zapatilla Salomon Ultra Glide 4 - Trail - Blue",
+   "nota": "",
+   "color": "Blue",
+   "foto": "salomon-ultra-glide-4/4.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "6",
+    "7",
+    "7.5",
+    "8.5",
+    "9",
+    "9.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-glide-4-trail-gris-t3nfj/",
+   "nombre": "Zapatilla Salomon Ultra Glide 4 - Trail - Gris",
+   "nota": "",
+   "color": "Gris",
+   "foto": "salomon-ultra-glide-4/6.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "8.5",
+    "9.5",
+    "10",
+    "11",
+    "11.5",
+    "12"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-glide-4-trail-black-white-140uc/",
+   "nombre": "Zapatilla Salomon Ultra Glide 4 - Trail - Black/White",
+   "nota": "",
+   "color": "Black/White",
+   "foto": "salomon-ultra-glide-4/7.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "7.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-glide-4-trail-negro-lila-1wcdl/",
+   "nombre": "Zapatilla Salomon Ultra Glide 4 - Trail - Negro/Lila",
+   "nota": "",
+   "color": "Naranja",
+   "foto": "salomon-ultra-glide-4/9.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "6.5",
+    "7.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-glide-4-trail-negro-gris-1mu5p/",
+   "nombre": "Zapatilla Salomon Ultra Glide 4 - Trail - Negro/Gris",
+   "nota": "",
+   "color": "Negro/Gris",
+   "foto": "salomon-ultra-glide-4/10.webp",
+   "precio": 274999,
+   "antes": null,
+   "talles": [
+    "8",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11.5"
+   ],
+   "sistema": "US"
   }
  ],
- "salomon-ultra-flow-2": [],
+ "salomon-ultra-flow-2": [
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-flow-2-trail-almond-cream-174zr/",
+   "nombre": "Zapatilla Salomon Ultra Flow 2- Trail - Almond Cream",
+   "nota": "",
+   "color": "Almond Cream",
+   "foto": "salomon-ultra-flow-2/2.webp",
+   "precio": 219999,
+   "antes": null,
+   "talles": [
+    "6",
+    "6.5",
+    "7",
+    "8",
+    "9"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-flow-2-trail-brunera-blue-f7ub0/",
+   "nombre": "Zapatilla Salomon Ultra Flow 2- Trail - Brunera Blue",
+   "nota": "",
+   "color": "Brunera Blue",
+   "foto": "salomon-ultra-flow-2/3.webp",
+   "precio": 219999,
+   "antes": null,
+   "talles": [
+    "8"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-ultra-flow-2-trail-black-green-9wqaf/",
+   "nombre": "Zapatilla Salomon Ultra Flow 2 - Trail - Black/Green",
+   "nota": "",
+   "color": "Black/Green",
+   "foto": "salomon-ultra-flow-2/4.webp",
+   "precio": 219999,
+   "antes": null,
+   "talles": [
+    "9",
+    "11",
+    "13"
+   ],
+   "sistema": "US"
+  }
+ ],
  "salomon-slab-pulsar-4": [
   {
    "tienda": "TodoTrail",
@@ -5005,7 +5394,7 @@
    "nombre": "Saucony Surge 3",
    "nota": "Mujer",
    "color": null,
-   "foto": "saucony-surge-3/2.webp",
+   "foto": "saucony-surge-3/3.webp",
    "precio": 104999,
    "antes": 149999,
    "talles": [
@@ -5019,7 +5408,7 @@
    "nombre": "Saucony Surge 3",
    "nota": "Hombre",
    "color": "Negro Disciplina",
-   "foto": "saucony-surge-3/3.jpg",
+   "foto": "saucony-surge-3/2.jpg",
    "precio": 149999,
    "antes": null,
    "talles": [
@@ -5056,7 +5445,7 @@
    "nombre": "Saucony Xodus Ultra 4",
    "nota": "Mujer",
    "color": null,
-   "foto": "saucony-xodus-ultra-4/1.webp",
+   "foto": "saucony-xodus-ultra-4/2.webp",
    "precio": 269999,
    "antes": null,
    "talles": [
@@ -5067,5 +5456,162 @@
    ],
    "sistema": "US"
   }
- ]
+ ],
+ "nike-winflo-11": [
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-hombre/NIFJ9509-402.html",
+   "nombre": "Nike Winflo 11",
+   "nota": "Hombre",
+   "color": "Azul Disciplina",
+   "foto": "nike-winflo-11/2.jpg",
+   "precio": 79999,
+   "antes": 199999,
+   "talles": [
+    "42",
+    "42.5",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-mujer/NIFJ9510-402.html",
+   "nombre": "Nike Winflo 11",
+   "nota": "Mujer",
+   "color": "Azul Disciplina",
+   "foto": "nike-winflo-11/3.jpg",
+   "precio": 79999,
+   "antes": 199999,
+   "talles": [
+    "35",
+    "35.5",
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-hombre/NIFJ9509-010.html",
+   "nombre": "zapatillas running nike air winflo 11 hombre",
+   "nota": "Hombre",
+   "color": "Negro",
+   "foto": "nike-winflo-11/4.jpg",
+   "precio": 179999,
+   "antes": 199999,
+   "talles": [
+    "37.5",
+    "39",
+    "39.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "45",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-nike-air-winflo-11-mujer/NIFJ9510-605.html",
+   "nombre": "zapatillas nike air winflo 11 mujer",
+   "nota": "Mujer",
+   "color": "Rojo Disciplina",
+   "foto": "nike-winflo-11/5.jpg",
+   "precio": 179999,
+   "antes": 199999,
+   "talles": [
+    "35",
+    "35.5",
+    "37",
+    "37.5",
+    "39",
+    "39.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-nike-air-winflo-11-de-hombre/NIFJ9509-001.html",
+   "nombre": "zapatillas nike air winflo 11 de hombre",
+   "nota": "Hombre",
+   "color": "Negro",
+   "foto": "nike-winflo-11/6.jpg",
+   "precio": 199999,
+   "antes": null,
+   "talles": [
+    "37.5",
+    "39.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "45",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-mujer/NIFJ9510-001.html",
+   "nombre": "zapatillas running nike air winflo 11 mujer",
+   "nota": "Mujer",
+   "color": "Negro",
+   "foto": "nike-winflo-11/7.jpg",
+   "precio": 199999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "41",
+    "42",
+    "42.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "nike-winflo-12": [
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo%C2%A012-hombre/NIHV9272-002.html",
+   "nombre": "Nike Winflo 12",
+   "nota": "Hombre",
+   "color": "Negro",
+   "foto": "nike-winflo-12/1.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "41.5",
+    "42",
+    "42.5",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo%C2%A012-mujer/NIHV9273-600.html",
+   "nombre": "Nike Winflo 12",
+   "nota": "Mujer",
+   "color": "Lila Disciplina",
+   "foto": "nike-winflo-12/2.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "37",
+    "38",
+    "38.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "nike-vaporfly-4": [],
+ "nike-structure-plus": [],
+ "nike-vomero-premium": [],
+ "nike-acg-pegasus-trail": []
 }

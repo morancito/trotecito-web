@@ -11,14 +11,6 @@
    "pl": "Sin placa",
    "tiendas": [
     {
-     "tienda": "adidas.com.ar",
-     "precio": 249999,
-     "fecha": "27/10/2026",
-     "cuotas": "Consultar en la tienda",
-     "nota": "Mujer",
-     "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KI6931.html"
-    },
-    {
      "tienda": "Dexter",
      "precio": 149999,
      "cuotas": "2 cuotas sin interés",
@@ -67,6 +59,22 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KJ8336.html",
+     "fecha": "01/11/2026"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KH9635.html",
+     "fecha": "01/11/2026"
     }
    ],
    "colores": [
@@ -943,6 +951,36 @@
    "pl": "Sin placa",
    "tiendas": [
     {
+     "tienda": "adidas.com.ar",
+     "precio": 129999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
+     "fecha": "01/11/2026"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 129999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8225.html",
+     "fecha": "01/11/2026"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 158899,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-sl2-de-mujer-6jq3124-000/p",
+     "fecha": "31/10/2026",
+     "antes": 219999,
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Dexter",
      "precio": 189999,
      "cuotas": "2 cuotas sin interés",
@@ -958,20 +996,6 @@
       "43.5",
       "44",
       "45"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Sporting",
-     "precio": 158899,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.sporting.com.ar/zapatillas-adidas-adizero-sl2-de-mujer-6jq3124-000/p",
-     "fecha": "31/10/2026",
-     "antes": 219999,
-     "nota": "Mujer",
-     "talles": [
-      "37.5",
-      "38"
      ],
      "sistema": "AR"
     },
@@ -1036,6 +1060,19 @@
    "tiendas": [
     {
      "tienda": "Dexter",
+     "precio": 209999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-adidas-adizero-boston-13-mujer/ADJP9247.html",
+     "fecha": "31/10/2026",
+     "nota": "Mujer",
+     "antes": 299999,
+     "talles": [
+      "38.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Dexter",
      "precio": 299999,
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-boston-13-hombre/ADKH8859.html",
@@ -1070,17 +1107,12 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Dexter",
-     "precio": 209999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.dexter.com.ar/zapatillas-adidas-adizero-boston-13-mujer/ADJP9247.html",
-     "fecha": "31/10/2026",
-     "nota": "Mujer",
-     "antes": 299999,
-     "talles": [
-      "38.5"
-     ],
-     "sistema": "AR"
+     "tienda": "adidas.com.ar",
+     "precio": 299999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-boston-13/KH8859.html",
+     "fecha": "01/11/2026"
     }
    ],
    "colores": [],
@@ -1175,6 +1207,14 @@
       "36"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-supernova-rise-3/KK1925.html",
+     "fecha": "01/11/2026"
     }
    ],
    "colores": [],
@@ -1270,6 +1310,22 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 479999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-adios-pro-5/KJ7040.html",
+     "fecha": "01/11/2026"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 479999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-adios-pro-5/KJ7042.html",
+     "fecha": "01/11/2026"
     }
    ],
    "colores": [],
@@ -1314,6 +1370,20 @@
    "pl": "Sin placa",
    "tiendas": [
     {
+     "tienda": "Sporting",
+     "precio": 90999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl2-de-hombre-6jq0606-000/p",
+     "fecha": "31/10/2026",
+     "antes": 129999,
+     "nota": "Hombre",
+     "talles": [
+      "38.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Dexter",
      "precio": 129999,
      "cuotas": "2 cuotas sin interés",
@@ -1329,20 +1399,6 @@
       "43.5",
       "44",
       "45"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Sporting",
-     "precio": 90999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.sporting.com.ar/zapatillas-adidas-duramo-sl2-de-hombre-6jq0606-000/p",
-     "fecha": "31/10/2026",
-     "antes": 129999,
-     "nota": "Hombre",
-     "talles": [
-      "38.5",
-      "44"
      ],
      "sistema": "AR"
     },
@@ -1365,6 +1421,22 @@
       "39.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 129999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
+     "fecha": "01/11/2026"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 129999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8225.html",
+     "fecha": "01/11/2026"
     }
    ],
    "colores": [],

@@ -1,5 +1,6 @@
 /* Recomendador: puntúa cada zapa según el perfil del corredor y elige tres, con el porqué.
    Es una función pura (no toca el DOM) para poder probarla con los datos reales. */
+import { dist, familia, versionDe } from "./reemplazo.js";
 
 export const PREGUNTAS = [
   { k: "gen", t: "¿Qué talles buscás?", ops: [["Hombre", "Hombre"], ["Mujer", "Mujer"]] },
@@ -10,6 +11,9 @@ export const PREGUNTAS = [
   { k: "ritmo", t: "¿A qué ritmo corrés normalmente?", ops: [["r1", "Más rápido que 5:00 min/km"], ["r2", "Entre 5:00 y 6:00 min/km"], ["r3", "Entre 6:00 y 7:00 min/km"], ["r4", "Más lento, o no sé"]] },
   { k: "kg", t: "¿Cuánto pesás?", ops: [[60, "Menos de 65 kg"], [70, "65 a 75 kg"], [82, "75 a 90 kg"], [95, "Más de 90 kg"]] },
   { k: "pis", t: "¿Cómo pisás?", ops: [["Neutra", "Neutra"], ["Pronadora", "Pronadora: el pie se va hacia adentro"], ["Supinadora", "Supinadora: el pie se va hacia afuera"], ["nose", "No sé"]] },
+  { k: "pie", t: "¿Cómo es tu pie?", ops: [["normal", "Normal"], ["ancho", "Ancho: las zapas suelen apretarme a los costados"], ["angosto", "Angosto: me suelen quedar flojas"], ["nose", "No sé"]] },
+  /* "slug|gusto|cómo la escribió": la zapa que usa hoy y qué le parece; vacío si no usa o no quiere decir */
+  { k: "actual", t: "¿Con qué zapas corrés hoy?", tipo: "modelo", ops: [] },
   { k: "tope", t: "¿Hasta cuánto querés gastar?", ops: [[150000, "Hasta $150 mil"], [250000, "Hasta $250 mil"], [350000, "Hasta $350 mil"], [0, "Sin límite"]] },
 ];
 
@@ -86,12 +90,38 @@ export function puntaje(d, r, usoBuscado = r.uso) {
   }
   if (r.uso === "Iniciación" && d.talon && d.talon < 32) add(-8, "Poca espuma para alguien que recién empieza");
   if (d.talon && !pros.some(p => /mm de espuma/.test(p[1])) && usoBuscado !== "Competencia" && usoBuscado !== "Ritmo") add(0, `${d.talon} mm de espuma en el talón (${d.talon >= 38 ? "mucha" : d.talon >= 33 ? "intermedia" : "poca"})`, 1);
+  /* horma */
+  if (r.pie === "ancho") { if (d.horma === "ancha") add(8, "Horma ancha: cómoda si tenés el pie ancho"); else if (d.horma === "angosta") add(-10, "Horma angosta: con pie ancho puede apretarte. Probala antes"); else if (d.horma === "punta") add(-7, "Punta angosta: con pie ancho puede apretarte los dedos. Probala antes"); }
+  if (r.pie === "angosto") { if (d.horma === "angosta") add(6, "Horma angosta: calza firme en un pie angosto"); else if (d.horma === "ancha") add(-6, "Horma ancha: con pie angosto puede quedarte floja"); }
+  /* las zapas que usa hoy */
+  const ref = r._ref, gusto = r._gusto, cual = r._cual || (ref && `${ref.mod}`);
+  if (ref && gusto) {
+    const misma = d.slug === ref.slug, linea = d.m === ref.m && familia(d).join() === familia(ref).join() && d.slug !== ref.slug;
+    const nueva = linea && versionDe(d) != null && versionDe(ref) != null && versionDe(d) > versionDe(ref);
+    const cerca = dist(d, ref);
+    if (gusto === "gusta") {
+      if (misma) add(12, r._vieja ? `Es la versión actual de tus ${cual}, que te gustan` : `Son tus ${cual}, que te gustan: acá está el mejor precio`);
+      else if (nueva) add(12, `Es la versión nueva de tus ${cual}, que te gustan`);
+      else if (cerca < 2.5) add(9, `Muy parecida a tus ${cual}, que te gustan`);
+      else if (cerca < 4.5) add(4, `Parecida a tus ${cual}`);
+    } else if (gusto === "no") {
+      if (misma || linea) add(-16, `Es de la misma línea que tus ${cual}, que no te convencen`);
+      else if (cerca < 2.5) add(-8, `Muy parecida a tus ${cual}, que no te convencen`);
+      else if (cerca > 5) add(3, `Distinta de tus ${cual}, que no te convencen`, 2);
+    } else if (gusto === "ok") {
+      if (misma || nueva) add(4, `Es la versión actual de las que ya usás`, 3);
+    }
+  }
   /* datos faltantes */
   if (!d.peso || !d.talon) add(-8, "La marca no publica peso ni altura de espuma");
   return { s, pros: pros.sort((a, b) => b[0] - a[0]).map(x => x[1]), contras: contras.sort((a, b) => b[0] - a[0]).map(x => x[1]) };
 }
 
-export function recomendar(DATA, r) {
+export function recomendar(DATA, r0) {
+  /* la zapa que usa hoy: "slug|gusto|cómo la escribió" */
+  const [slugAct, gusto, cual] = String(r0.actual || "").split("|");
+  const r = { ...r0, _ref: slugAct ? DATA.find(d => d.slug === slugAct) : null, _gusto: gusto || "", _cual: cual || "" };
+  r._vieja = !!(r._ref && cual && !new RegExp(`\\b${r._ref.ver || "§"}\\b`, "i").test(cual) && /\d/.test(cual));
   const tope = +r.tope || Infinity;
   const base = DATA.filter(d => (d.terreno || "Asfalto") === r.terreno).map(d => ({ d, t: precioPara(d, r.gen, r.talle) })).filter(x => x.t);
   const dentro = base.filter(x => x.t.precio <= tope);

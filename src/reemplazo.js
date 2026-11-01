@@ -12,8 +12,8 @@ const tokens = s => norm(s).split(" ").filter(t => t && !RELLENO.has(t));
 const esNum = t => /^\d+(\.\d+)?$/.test(t);
 
 /* las palabras del nombre del modelo (sin la versión): "Gel-Nimbus" -> [nimbus], "Fresh Foam X 1080" -> [1080] */
-const familia = d => tokens(d.mod);
-const versionDe = d => { const n = norm(d.ver).match(/\d+/); return n ? +n[0] : null; };
+export const familia = d => tokens(d.mod);
+export const versionDe = d => { const n = norm(d.ver).match(/\d+/); return n ? +n[0] : null; };
 
 /* Busca el modelo que escribió el usuario. Devuelve { d, tipo, version } o null:
    tipo "exacto" (está en el catálogo), "anterior" (escribió una versión vieja), "posterior" (una que todavía no llegó) */
@@ -51,7 +51,7 @@ export function buscarModelo(DATA, q) {
 }
 
 /* parecido entre dos zapas: cuanto más bajo, más parecidas */
-const dist = (a, b, ignorar = "") => {
+export const dist = (a, b, ignorar = "") => {
   let s = 0;
   if (ignorar !== "talon" && a.talon && b.talon) s += Math.abs(a.talon - b.talon) / 4;
   if (a.drop != null && b.drop != null) s += Math.abs(a.drop - b.drop) / 3;

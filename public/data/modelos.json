@@ -107,7 +107,8 @@
     "fotos/adidas-adizero-evo-sl/3.webp",
     "fotos/adidas-adizero-evo-sl/4.webp"
    ],
-   "terreno": "Asfalto"
+   "terreno": "Asfalto",
+   "horma": "normal"
   },
   {
    "m": "Nike",
@@ -209,7 +210,12 @@
     "fotos/nike-pegasus-42/3.webp",
     "fotos/nike-pegasus-42/4.webp"
    ],
-   "terreno": "Asfalto"
+   "terreno": "Asfalto",
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-pegasus-42/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Nike",
@@ -270,7 +276,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-pegasus-plus"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-pegasus-plus/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Nike",
@@ -369,7 +380,12 @@
     "fotos/nike-vomero-18/3.webp",
     "fotos/nike-vomero-18/4.webp"
    ],
-   "terreno": "Asfalto"
+   "terreno": "Asfalto",
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-vomero-18/"
+   ],
+   "horma": "punta"
   },
   {
    "m": "Nike",
@@ -460,7 +476,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-vomero-plus"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-vomero-plus/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Nike",
@@ -540,7 +561,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-structure-26"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-structure-26/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Nike",
@@ -600,7 +626,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-winflo-10"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "m": "Nike",
@@ -651,7 +678,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-zoom-x-invincible-run-flyknit-3"
-   ]
+   ],
+   "horma": "angosta"
   },
   {
    "m": "Nike",
@@ -761,7 +789,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/nike-zoom-x-vaporfly-next-3"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "m": "Adidas",
@@ -852,7 +881,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-sl2"
-   ]
+   ],
+   "horma": "ancha"
   },
   {
    "m": "Adidas",
@@ -937,7 +967,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-boston-13"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adizero-boston-13/"
+   ],
+   "horma": "punta"
   },
   {
    "m": "Adidas",
@@ -1026,7 +1061,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-supernova-rise-3"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-supernova-rise-3/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Adidas",
@@ -1116,7 +1156,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-adios-pro-5"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adizero-adios-pro-5/"
+   ],
+   "horma": "punta"
   },
   {
    "m": "Adidas",
@@ -1202,7 +1247,11 @@
     "peso": "Hasta 75 kg",
     "distancia": "Hasta 10K"
    },
-   "evitar": "hacés fondos largos o entrenamientos exigentes: tiene amortiguación básica."
+   "evitar": "hacés fondos largos o entrenamientos exigentes: tiene amortiguación básica.",
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-duramo-sl-2/"
+   ]
   },
   {
    "m": "Asics",
@@ -1283,7 +1332,12 @@
     "fotos/asics-novablast-5/3.webp",
     "fotos/asics-novablast-5/4.webp"
    ],
-   "terreno": "Asfalto"
+   "terreno": "Asfalto",
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-novablast-5/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Asics",
@@ -1365,7 +1419,12 @@
     "fotos/asics-gel-nimbus-27/3.webp",
     "fotos/asics-gel-nimbus-27/4.webp"
    ],
-   "terreno": "Asfalto"
+   "terreno": "Asfalto",
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-nimbus-27/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Asics",
@@ -1495,7 +1554,12 @@
     "fotos/asics-gel-kayano-32/3.webp",
     "fotos/asics-gel-kayano-32/4.webp"
    ],
-   "terreno": "Asfalto"
+   "terreno": "Asfalto",
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-gel-kayano-32/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Asics",
@@ -1579,7 +1643,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-gt-2000-14"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-gt-2000-14/"
+   ],
+   "horma": "punta"
   },
   {
    "m": "Asics",
@@ -1662,7 +1731,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-gel-cumulus-27"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-cumulus-27/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Asics",
@@ -1724,7 +1798,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-superblast-2"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-superblast-2/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Asics",
@@ -1777,7 +1856,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-magic-speed-4"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-magic-speed-4/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Asics",
@@ -1839,7 +1923,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-metaspeed-sky-plus"
-   ]
+   ],
+   "horma": "angosta"
   },
   {
    "m": "New Balance",
@@ -1913,7 +1998,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fresh-foam-x-1080-v14"
-   ]
+   ],
+   "horma": "punta"
   },
   {
    "m": "New Balance",
@@ -1971,7 +2057,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/new-balance-fresh-foam-x-880v15/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "New Balance",
@@ -2066,7 +2157,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fuel-cell-rebel-v-5"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/new-balance-fuelcell-rebel-v5/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "New Balance",
@@ -2111,11 +2207,16 @@
     "peso": "Hasta 80 kg",
     "distancia": "10K a maratón, día de carrera"
    },
-   "evitar": "la querés para entrenar todos los días o corrés lento.",
+   "evitar": "la querés para entrenar todos los días o corrés lento: está hecha para el día de carrera y calza ajustada.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/new-balance-fuelcell-sc-elite-v5/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Saucony",
@@ -2182,7 +2283,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-guide-18"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-guide-18/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Saucony",
@@ -2235,7 +2341,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-speed-4"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-endorphin-speed-4/"
+   ],
+   "horma": "punta"
   },
   {
    "m": "Saucony",
@@ -2314,7 +2425,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-pro-5"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-endorphin-pro-5/"
+   ],
+   "horma": "punta"
   },
   {
    "m": "Puma",
@@ -2364,7 +2480,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-velocity-nitro-4"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/puma-velocity-nitro-4/"
+   ],
+   "horma": "normal"
   },
   {
    "m": "Puma",
@@ -2457,7 +2578,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-deviate-nitro-4"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/puma-deviate-nitro-4/"
+   ],
+   "horma": "punta"
   },
   {
    "m": "Puma",
@@ -2549,7 +2675,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/puma-mag-max-nitro-2"
-   ]
+   ],
+   "horma": "punta"
   },
   {
    "id": 38,
@@ -2637,7 +2764,12 @@
     "fotos/on-cloudmonster-3/2.webp",
     "fotos/on-cloudmonster-3/3.webp",
     "fotos/on-cloudmonster-3/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/on-cloudmonster-3/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 39,
@@ -2691,7 +2823,7 @@
    "mod": "Cloudsurfer Next",
    "ver": "",
    "tipo": "Neutra",
-   "uso": "Iniciación",
+   "uso": "Rodaje diario",
    "terreno": "Asfalto",
    "pl": "Sin placa",
    "esp": "Helion + CloudTec",
@@ -2700,12 +2832,12 @@
    "talon": 37,
    "ante": 31,
    "corredor": {
-    "nivel": "Principiante",
-    "ritmo": "6:00 min/km o más lento",
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
     "peso": "Hasta 90 kg",
-    "distancia": "Hasta 10K"
+    "distancia": "Rodajes diarios y fondos medios"
    },
-   "evitar": "vas a ir rápido o hacer fondos de más de 20K.",
+   "evitar": "buscás una zapa blanda o la querés para ir a ritmo de carrera: la espuma es firme y no tiene placa.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/on-cloudsurfer-next"
@@ -2715,7 +2847,12 @@
     "fotos/on-cloudsurfer-next/2.webp",
     "fotos/on-cloudsurfer-next/3.webp",
     "fotos/on-cloudsurfer-next/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/on-cloudsurfer-next/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 40,
@@ -2829,7 +2966,12 @@
     "fotos/on-cloudrunner-3/2.webp",
     "fotos/on-cloudrunner-3/3.webp",
     "fotos/on-cloudrunner-3/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/on-cloudrunner-3/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 41,
@@ -2897,6 +3039,10 @@
     "fotos/on-cloudflyer-5/2.webp",
     "fotos/on-cloudflyer-5/3.webp",
     "fotos/on-cloudflyer-5/4.webp"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/on-cloudflyer-5/"
    ]
   },
   {
@@ -2967,7 +3113,12 @@
     "fotos/on-cloudboom-max/2.webp",
     "fotos/on-cloudboom-max/3.webp",
     "fotos/on-cloudboom-max/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/on-cloudboom-max/"
+   ],
+   "horma": "ancha"
   },
   {
    "id": 43,
@@ -3164,7 +3315,8 @@
     "fotos/brooks-glycerin-20/2.webp",
     "fotos/brooks-glycerin-20/3.webp",
     "fotos/brooks-glycerin-20/4.webp"
-   ]
+   ],
+   "horma": "angosta"
   },
   {
    "id": 45,
@@ -3233,7 +3385,8 @@
     "fotos/brooks-adrenaline-gts-23/2.webp",
     "fotos/brooks-adrenaline-gts-23/3.webp",
     "fotos/brooks-adrenaline-gts-23/4.webp"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 46,
@@ -3296,7 +3449,8 @@
     "fotos/brooks-launch-10/2.webp",
     "fotos/brooks-launch-10/3.webp",
     "fotos/brooks-launch-10/4.webp"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 47,
@@ -3350,7 +3504,8 @@
     "fotos/brooks-hyperion/2.webp",
     "fotos/brooks-hyperion/3.webp",
     "fotos/brooks-hyperion/4.webp"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 48,
@@ -3500,7 +3655,12 @@
     "fotos/under-armour-infinite-pro/2.webp",
     "fotos/under-armour-infinite-pro/3.webp",
     "fotos/under-armour-infinite-pro/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/under-armour-infinite-pro/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 50,
@@ -3574,7 +3734,12 @@
     "fotos/under-armour-infinite-elite/2.webp",
     "fotos/under-armour-infinite-elite/3.webp",
     "fotos/under-armour-infinite-elite/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/under-armour-infinite-elite/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 51,
@@ -3668,7 +3833,12 @@
     "fotos/saucony-triumph-22/2.webp",
     "fotos/saucony-triumph-22/3.webp",
     "fotos/saucony-triumph-22/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-triumph-22/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 52,
@@ -3732,7 +3902,8 @@
     "fotos/saucony-kinvara-14/2.webp",
     "fotos/saucony-kinvara-14/3.webp",
     "fotos/saucony-kinvara-14/4.webp"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 53,
@@ -3791,7 +3962,12 @@
     "fotos/saucony-endorphin-elite-2/2.webp",
     "fotos/saucony-endorphin-elite-2/3.webp",
     "fotos/saucony-endorphin-elite-2/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-endorphin-elite-2/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 54,
@@ -3843,7 +4019,12 @@
     "fotos/asics-gt-1000-14/2.webp",
     "fotos/asics-gt-1000-14/3.webp",
     "fotos/asics-gt-1000-14/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-gt-1000-14/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 55,
@@ -3895,7 +4076,12 @@
     "fotos/asics-gel-excite-11/2.webp",
     "fotos/asics-gel-excite-11/3.webp",
     "fotos/asics-gel-excite-11/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-gel-excite-11/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 56,
@@ -3941,7 +4127,7 @@
     "peso": "Hasta 90 kg",
     "distancia": "Rodajes de 5 a 15K"
    },
-   "evitar": "sos pronador marcado.",
+   "evitar": "sos pronador marcado o la querés para ir rápido: la espuma se cansa a ritmos exigentes.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/asics-dynablast-5"
@@ -3951,7 +4137,12 @@
     "fotos/asics-dynablast-5/2.webp",
     "fotos/asics-dynablast-5/3.webp",
     "fotos/asics-dynablast-5/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-dynablast-5/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 57,
@@ -4012,7 +4203,12 @@
     "fotos/nike-pegasus-premium/2.webp",
     "fotos/nike-pegasus-premium/3.webp",
     "fotos/nike-pegasus-premium/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-pegasus-premium/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 58,
@@ -4084,7 +4280,12 @@
     "fotos/nike-pegasus-41/2.webp",
     "fotos/nike-pegasus-41/3.webp",
     "fotos/nike-pegasus-41/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-pegasus-41/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 59,
@@ -4160,7 +4361,8 @@
     "fotos/nike-quest-6/2.webp",
     "fotos/nike-quest-6/3.webp",
     "fotos/nike-quest-6/4.webp"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 60,
@@ -4242,7 +4444,12 @@
     "fotos/nike-revolution-8/2.webp",
     "fotos/nike-revolution-8/3.webp",
     "fotos/nike-revolution-8/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-revolution-8/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 61,
@@ -4316,6 +4523,10 @@
     "fotos/adidas-adistar-5/2.webp",
     "fotos/adidas-adistar-5/3.webp",
     "fotos/adidas-adistar-5/4.webp"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adistar-5/"
    ]
   },
   {
@@ -4413,7 +4624,12 @@
     "fotos/adidas-ultraboost-5/2.webp",
     "fotos/adidas-ultraboost-5/3.webp",
     "fotos/adidas-ultraboost-5/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-ultraboost-5/"
+   ],
+   "horma": "ancha"
   },
   {
    "id": 64,
@@ -4483,7 +4699,12 @@
     "fotos/adidas-adizero-takumi-sen-10/2.webp",
     "fotos/adidas-adizero-takumi-sen-10/3.webp",
     "fotos/adidas-adizero-takumi-sen-10/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-adizero-takumi-sen-10/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 65,
@@ -4550,7 +4771,12 @@
     "fotos/puma-foreverrun-nitro-2/2.webp",
     "fotos/puma-foreverrun-nitro-2/3.webp",
     "fotos/puma-foreverrun-nitro-2/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/puma-foreverrun-nitro-2/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 66,
@@ -4606,7 +4832,12 @@
     "fotos/puma-velocity-nitro-5/2.webp",
     "fotos/puma-velocity-nitro-5/3.webp",
     "fotos/puma-velocity-nitro-5/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/puma-velocity-nitro-5/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 68,
@@ -4656,7 +4887,12 @@
     "fotos/nike-pegasus-trail-5-gtx/2.webp",
     "fotos/nike-pegasus-trail-5-gtx/3.webp",
     "fotos/nike-pegasus-trail-5-gtx/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-pegasus-trail-5-gtx/"
+   ],
+   "horma": "ancha"
   },
   {
    "id": 69,
@@ -4703,7 +4939,8 @@
     "fotos/nike-kiger-9/2.webp",
     "fotos/nike-kiger-9/3.webp",
     "fotos/nike-kiger-9/4.webp"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 70,
@@ -4753,7 +4990,8 @@
     "fotos/nike-zegama-2/2.webp",
     "fotos/nike-zegama-2/3.webp",
     "fotos/nike-zegama-2/4.webp"
-   ]
+   ],
+   "horma": "ancha"
   },
   {
    "id": 71,
@@ -4804,7 +5042,12 @@
     "fotos/asics-gel-trabuco-13/2.webp",
     "fotos/asics-gel-trabuco-13/3.webp",
     "fotos/asics-gel-trabuco-13/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/asics-gel-trabuco-13/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 72,
@@ -4848,7 +5091,7 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "Trote cómodo en sendero",
-    "peso": "Hasta 90 kg",
+    "peso": "Cualquier peso",
     "distancia": "Senderos y cerros, hasta 25K"
    },
    "evitar": "corrés en barro profundo o terreno muy técnico.",
@@ -4861,7 +5104,12 @@
     "fotos/adidas-terrex-agravic-4/2.webp",
     "fotos/adidas-terrex-agravic-4/3.webp",
     "fotos/adidas-terrex-agravic-4/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/adidas-terrex-agravic-4/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 73,
@@ -4944,7 +5192,12 @@
     "fotos/saucony-peregrine-15/2.webp",
     "fotos/saucony-peregrine-15/3.webp",
     "fotos/saucony-peregrine-15/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-peregrine-15/"
+   ],
+   "horma": "punta"
   },
   {
    "id": 74,
@@ -5045,7 +5298,12 @@
     "fotos/on-cloudultra-3/2.webp",
     "fotos/on-cloudultra-3/3.webp",
     "fotos/on-cloudultra-3/4.webp"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/on-cloudultra-3/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 75,
@@ -5166,7 +5424,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-clifton-10"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-clifton-10/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 76,
@@ -5246,7 +5509,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-bondi-9"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-bondi-9/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 77,
@@ -5313,7 +5581,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-mach-6"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-mach-6/"
+   ],
+   "horma": "punta"
   },
   {
    "id": 78,
@@ -5397,7 +5670,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-mach-7"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-mach-7/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 79,
@@ -5466,7 +5744,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-mach-x-3"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-mach-x-3/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 80,
@@ -5532,7 +5815,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-arahi-8"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-arahi-8/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 81,
@@ -5591,14 +5879,19 @@
    "corredor": {
     "nivel": "Todos los niveles",
     "ritmo": "6:00 min/km o más lento",
-    "peso": "Hasta 90 kg",
+    "peso": "Cualquier peso, ideal más de 75 kg",
     "distancia": "Rodajes diarios y fondos medios"
    },
    "evitar": "buscás algo liviano para ir rápido: es pesada y pensada para dar mucha contención.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-gaviota-6"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-gaviota-6/"
+   ],
+   "horma": "ancha"
   },
   {
    "id": 82,
@@ -5655,7 +5948,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-rincon-4"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-rincon-4/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 83,
@@ -5755,7 +6053,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-skyflow"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-skyflow/"
+   ],
+   "horma": "punta"
   },
   {
    "id": 85,
@@ -5841,7 +6144,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-speedgoat-6"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-speedgoat-6/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 87,
@@ -5895,7 +6203,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-challenger-8"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 88,
@@ -5972,7 +6281,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/hoka-mafate-5"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-mafate-5/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 89,
@@ -6066,6 +6380,10 @@
    "fuente": [
     "irunfar.com",
     "https://www.irunfar.com/hoka-torrent-4-review"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/hoka-torrent-4/"
    ]
   },
   {
@@ -6160,7 +6478,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/salomon-genesis-2"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/salomon-genesis-2/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 91,
@@ -6269,7 +6592,12 @@
    "fuente": [
     "doctorsofrunning.com",
     "https://www.doctorsofrunning.com/2026/02/salomon-ultra-glide-4-review-2026.html"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/salomon-ultra-glide-4/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 92,
@@ -6402,7 +6730,8 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/salomon-s-lab-pulsar-4"
-   ]
+   ],
+   "horma": "normal"
   },
   {
    "id": 96,
@@ -6466,7 +6795,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/la-sportiva-prodigio-pro"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/la-sportiva-prodigio-pro/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 97,
@@ -6520,7 +6854,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/la-sportiva-prodigio-max"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/la-sportiva-prodigio-max/"
+   ],
+   "horma": "angosta"
   },
   {
    "id": 98,
@@ -6637,7 +6976,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-speed-5"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-endorphin-speed-5/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 99,
@@ -6751,7 +7095,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-peregrine-16"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-peregrine-16/"
+   ],
+   "horma": "punta"
   },
   {
    "id": 100,
@@ -6801,7 +7150,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-hurricane-25"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-hurricane-25/"
+   ],
+   "horma": "normal"
   },
   {
    "id": 101,
@@ -6959,7 +7313,12 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-xodus-ultra-4"
-   ]
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/saucony-xodus-ultra-4/"
+   ],
+   "horma": "normal"
   }
  ]
 }

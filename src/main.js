@@ -396,13 +396,14 @@ function ficha(d) {
     ${c ? `<div class="bloque"><h2 class="cond">¿Para quién?</h2><dl class="para">
       <div><dt>Pisada</dt><dd>${pisadaPara(d)}</dd></div><div><dt>Tu peso</dt><dd>${esc(c.peso)}</dd></div>
       <div><dt>Ritmo</dt><dd>${esc(c.ritmo)}</dd></div><div><dt>Distancias</dt><dd>${esc(c.distancia)}</dd></div>
-      <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div></dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
+      <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div>${d.horma ? `<div><dt>Horma</dt><dd>${HORMA_TXT[d.horma]}</dd></div>` : ""}</dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
     ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2>${amort(d) ? `<div class="amort-box"><span class="amort-k">Amortiguación</span>${medidor(amort(d))}<p><b>${d.talon} mm</b> de espuma en el talón: ${amort(d).s}.</p><small>Mide cuánta espuma tiene, no si se siente blanda o dura ni cuánto rebota.</small></div>` : ""}<dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
     <div class="acciones"><button class="btn" data-c="${d.id}" aria-pressed="${st.cmp.includes(d.id)}">${st.cmp.includes(d.id) ? "✓ Comparando" : "+ Comparar"}</button>
       <a class="btn" href="#reemplazo/${d.slug}">¿Corrés con estas? Ver reemplazos</a>
-      ${d.fuente ? `<a class="review" href="${esc(d.fuente[1])}" target="_blank" rel="noopener">Review en ${esc(d.fuente[0])} ↗</a>` : ""}</div>
+      ${d.fuente ? `<span class="review">Reviews: ${[d.fuente, d.fuente2].filter(Boolean).map(f => `<a href="${esc(f[1])}" target="_blank" rel="noopener">${esc(f[0])} ↗</a>`).join(" · ")}</span>` : ""}</div>
   </div></div>`;
 }
+const HORMA_TXT = { ancha: "Ancha: buena para pie ancho", normal: "Normal", angosta: "Angosta: ajustada a los costados", punta: "Normal, con la punta angosta" };
 function montarFicha(d) {
   montarGrafico(document.getElementById("histBox"), d.hist);
   const crear = () => { if (!visor) visor = Viewer($("#dStage"), { H: d.talon || 36, F: d.ante || 28, plate: conPlaca(d), dims: !!(d.talon && d.ante), view: 0.3 }); };
@@ -459,19 +460,41 @@ const RESP_K = "trotecito-perfil";
 let resp = (() => { try { return JSON.parse(guardado(RESP_K)) || {}; } catch { return {}; } })();
 let paso = 0;
 const opsDe = q => q.k === "uso" && resp.terreno === "Trail" ? q.trail : q.ops;
+/* pregunta "¿con qué zapas corrés hoy?": buscador de modelo y, al elegirlo, qué le parecen */
+let actualTmp = null;   // { slug, label, nota } o { nada: texto }
+function preguntaModelo() {
+  const a = actualTmp, d = a?.slug && DATA.find(x => x.slug === a.slug);
+  return `<p class="rq-sub">Nos sirve para proponerte algo parecido, o justamente distinto.</p>
+    <div class="rq-modelo"><form class="hbusca" id="rqForm" role="search" autocomplete="off"><input type="search" id="rqQ" value="${esc(a?.label || a?.nada || "")}" placeholder="Ej.: Pegasus 40, Nimbus 25, Clifton 9…" aria-label="Modelo con el que corrés" aria-autocomplete="list" aria-controls="rqSug" aria-expanded="false"><button type="submit">Buscar</button></form>
+      <ul class="sug" id="rqSug" role="listbox" hidden></ul></div>
+    ${d ? `<p class="rq-elegida">${sello(d.m)} <b>${esc(a.label)}</b>${a.nota ? ` <span class="rq-nota">${esc(a.nota)}</span>` : ""}</p><p class="rq-sub"><b>¿Cómo te resultan?</b></p>
+      <div class="rq-ops">${[["gusta", "Me encantan: quiero algo parecido"], ["ok", "Están bien"], ["no", "No me convencen: quiero algo distinto"]].map(([g, t]) => `<button type="button" data-v="${esc(`${d.slug}|${g}|${a.label}`)}">${t}</button>`).join("")}</div>`
+    : a?.nada ? `<p class="rq-nada">No encontramos «${esc(a.nada)}» entre las que se venden acá. Probá con el nombre y el número, o seguí sin contarnos.</p>` : ""}
+    <div class="rq-ops"><button type="button" class="rq-saltar" data-v="">No corro con ninguna o prefiero no decir</button></div>`;
+}
+function montarPreguntaModelo() {
+  const s3 = sugerencias($("#rqQ"), $("#rqSug"), d => { actualTmp = { slug: d.slug, label: `${d.m} ${nombre(d)}` }; pintarReco(); });
+  $("#rqForm").onsubmit = e => { e.preventDefault(); s3.cerrar(); const v = $("#rqQ").value.trim(); if (!v) return;
+    const h = buscarModelo(DATA, v);
+    actualTmp = h ? { slug: h.d.slug, label: `${h.d.m} ${h.d.mod}${h.version != null ? " " + (/^v/i.test(h.d.ver) ? "v" : "") + h.version : h.d.ver ? " " + h.d.ver : ""}`, nota: h.tipo === "anterior" ? `La comparamos con la versión actual, la ${nombre(h.d)}` : h.tipo === "posterior" ? `Acá se consigue la ${nombre(h.d)}` : "" } : { nada: v };
+    pintarReco(); };
+}
 function recoPregunta() {
   const q = PREGUNTAS[paso], total = PREGUNTAS.length;
+  if (q.tipo === "modelo" && !actualTmp && resp.actual) { const [sl, , lab] = String(resp.actual).split("|"); if (sl) actualTmp = { slug: sl, label: lab }; }
   return `<a class="back" href="#">← Volver al inicio</a>
   <div class="rq"><div class="rq-top"><span class="kicker">Tu zapa · ${paso + 1} de ${total}</span><div class="rq-bar"><i style="width:${(paso + 1) / total * 100}%"></i></div></div>
     <h1 class="cond">${q.t}</h1>
-    <div class="rq-ops${q.grid ? " grid" : ""}">${opsDe(q).map(([v, t]) => `<button type="button" data-v="${esc(v)}" aria-pressed="${String(resp[q.k]) === String(v)}">${t}</button>`).join("")}</div>
+    ${q.tipo === "modelo" ? preguntaModelo() : `<div class="rq-ops${q.grid ? " grid" : ""}">${opsDe(q).map(([v, t]) => `<button type="button" data-v="${esc(v)}" aria-pressed="${String(resp[q.k]) === String(v)}">${t}</button>`).join("")}</div>`}
     ${paso > 0 ? `<button type="button" class="rq-atras" data-atras>← Pregunta anterior</button>` : ""}</div>`;
 }
 function porque(lista, cls) { return lista.length ? `<ul class="rr-${cls}">${lista.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""; }
 function recoResultado() {
   const { picks, sinPresupuesto } = recomendar(DATA, resp);
   const q = k => PREGUNTAS.find(x => x.k === k), txt = k => (opsDe(q(k)).find(([v]) => String(v) === String(resp[k])) || [])[1] || "";
-  const perfilTxt = [(resp.gen === "Mujer" ? "Talles de mujer" : "Talles de hombre") + (resp.talle ? ` · talle ${resp.talle}` : ""), txt("uso"), txt("ritmo"), txt("kg"), resp.pis === "nose" ? "Pisada: no sé" : "Pisada " + txt("pis").split(":")[0].toLowerCase(), txt("tope")].filter(Boolean);
+  const [, gustoAct, labAct] = String(resp.actual || "").split("|");
+  const perfilTxt = [(resp.gen === "Mujer" ? "Talles de mujer" : "Talles de hombre") + (resp.talle ? ` · talle ${resp.talle}` : ""), txt("uso"), txt("ritmo"), txt("kg"), resp.pis === "nose" ? "Pisada: no sé" : "Pisada " + txt("pis").split(":")[0].toLowerCase(),
+    resp.pie === "ancho" ? "Pie ancho" : resp.pie === "angosto" ? "Pie angosto" : "", labAct ? `Usás ${labAct} (${({ gusta: "te encantan", ok: "están bien", no: "no te convencen" })[gustoAct] || ""})` : "", txt("tope")].filter(Boolean);
   const card = (p, i) => { const d = p.d, t = p.t;
     return `<article class="rr ${i === 0 ? "top" : ""}">
       <div class="rr-et"><b>${esc(p.etiqueta)}</b><span>${esc(p.sub)}</span></div>
@@ -504,12 +527,13 @@ const utilHtml = k => { const r = utilLeer(k);
 function pintarReco() {
   const listo = PREGUNTAS.every(q => resp[q.k] !== undefined);
   $("#reco").innerHTML = listo && paso >= PREGUNTAS.length ? recoResultado() : recoPregunta();
+  if (!(listo && paso >= PREGUNTAS.length) && PREGUNTAS[paso].tipo === "modelo") montarPreguntaModelo();
   window.scrollTo(0, 0);
 }
 $("#reco").addEventListener("click", e => {
   const op = e.target.closest(".rq-ops button");
   if (op) { const q = PREGUNTAS[paso]; resp[q.k] = q.k !== "talle" && /^\d+$/.test(op.dataset.v) ? +op.dataset.v : op.dataset.v;
-    medir("reco_paso", { n: paso + 1, k: q.k, v: String(resp[q.k]) });
+    medir("reco_paso", { n: paso + 1, k: q.k, v: q.k === "actual" ? String(resp.actual).split("|").slice(0, 2).join("|") : String(resp[q.k]) });
     if (q.k === "terreno" && resp.uso && !opsDe(PREGUNTAS.find(x => x.k === "uso")).some(([v]) => v === resp.uso)) delete resp.uso;
     paso++; if (paso >= PREGUNTAS.length) { guardar(RESP_K, JSON.stringify(resp));
       medir("reco_fin", { ...resp, picks: recomendar(DATA, resp).picks.map(p => p.d.slug) }); if (resp.gen !== GEN || resp.talle !== TALLE) { GEN = resp.gen; TALLE = resp.talle || ""; guardar("trotecito-gen", GEN); guardar("trotecito-talle", TALLE || null); aplicarGenero(); pintarOfertas(); } }
@@ -521,7 +545,7 @@ $("#reco").addEventListener("click", e => {
     if (u.dataset.motivo) medir("reco_util", { v: "no", motivo: u.dataset.motivo, picks: sl });
     $("#util").innerHTML = utilHtml(k); return; }
   if (e.target.closest("[data-atras]")) { paso = Math.max(0, paso - 1); pintarReco(); return; }
-  if (e.target.closest("[data-rehacer]")) { paso = 0; medir("reco_inicio", { otra: true }); pintarReco(); return; }
+  if (e.target.closest("[data-rehacer]")) { paso = 0; actualTmp = null; medir("reco_inicio", { otra: true }); pintarReco(); return; }
   if (e.target.closest("[data-cmp3]")) { medir("reco_comparar"); st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); ir(BASE + "#comparar"); return; }
   if (e.target.closest("[data-vertodas]")) { e.preventDefault(); medir("reco_vertodas"); Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";
     st.uso.add(resp.uso); if (resp.pis === "Pronadora") st.pis = "Estabilidad"; else if (resp.pis === "Neutra" || resp.pis === "Supinadora") st.pis = "Neutra";
@@ -599,7 +623,7 @@ function route() {
   medir("vista", d ? { pag: "ficha", slug: d.slug } : h === "comparar" ? { pag: "comparar", slugs: st.cmp.map(id => DATA.find(x => x.id === id)?.slug) } : { pag: reco ? "tu-zapa" : reemp ? "reemplazo" : h || "inicio" });
   if (reco && !PREGUNTAS.every(q => resp[q.k] !== undefined)) medir("reco_inicio");
   if (d) { $("#detalle").innerHTML = ficha(d); montarFicha(d); document.title = `${d.m} ${nombre(d)}: precio en Argentina y ficha técnica · Trotecito`; window.scrollTo(0, 0); }
-  else if (reco) { paso = PREGUNTAS.every(q => resp[q.k] !== undefined) ? PREGUNTAS.length : 0; pintarReco(); document.title = "Tu zapa · Trotecito"; }
+  else if (reco) { const falta = PREGUNTAS.findIndex(q => resp[q.k] === undefined); paso = falta < 0 ? PREGUNTAS.length : falta; pintarReco(); document.title = "Tu zapa · Trotecito"; }
   else if (reemp) { const x = h.startsWith("reemplazo/") && DATA.find(z => z.slug === h.split("/")[1]);
     pintarReemplazo(); if (x) buscarReemplazo(`${x.m} ${nombre(x)}`); document.title = "Encontrá el reemplazo de tus zapas · Trotecito"; window.scrollTo(0, 0); }
   else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Trotecito"; window.scrollTo(0, 0); }

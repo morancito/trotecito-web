@@ -273,7 +273,8 @@ input[type="range"] { width: 100%; accent-color: var(--rojo); margin: 14px 0 4px
 .ficha dd { margin: 0; font-family: var(--display); font-stretch: 75%; font-weight: 900; font-size: 26px; line-height: 1.1; }
 .ficha dd.txt { font-family: var(--body); font-stretch: 100%; font-size: 15px; font-weight: 800; line-height: 1.6; }
 .acciones { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 28px; }
-.review { font-weight: 800; color: var(--rojo); }
+.review { font-weight: 600; color: var(--muted); font-size: .92em; }
+.review a { font-weight: 800; color: var(--rojo); }
 
 /* historial de precios */
 .hist { border: 2px solid var(--line); border-radius: 16px; padding: 16px; background: var(--surface); }
@@ -624,3 +625,13 @@ a.puerta:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--b
 .tiendas-box .tiendas { margin-top: 6px; }
 .tiendas-sub { margin: 14px 0 0; font-size: 13px; font-weight: 700; color: var(--muted); }
 .tiendas.apagadas .t-n, .tiendas.apagadas .t-p { color: var(--muted); }
+
+/* recomendador: pregunta por las zapas que usa hoy */
+.rq-sub { margin: 4px 0 14px; color: var(--muted); font-size: 16px; }
+.rq-modelo { position: relative; max-width: 620px; }
+.rq-modelo .hbusca { margin-top: 4px; }
+.rq-modelo .sug { left: 0; right: 0; }
+.rq-elegida { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 18px 0 6px; font-size: 18px; }
+.rq-elegida .rq-nota { width: 100%; font-size: 14px; color: var(--muted); }
+.rq-nada { margin: 14px 0 0; color: var(--muted); }
+.rq-saltar { margin-top: 18px; background: transparent !important; border-style: dashed !important; font-size: 15px !important; }

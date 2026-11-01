@@ -116,17 +116,23 @@
   "fotos": 5
  },
  "_errores": [
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1595189/FJ9509-010-A-1_PREM.jpg?v=638940086927770000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1839606/HV9272-002_A_PREM.jpg?v=639179038271400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
   "https://nikearprod.vteximg.com.br/arquivos/ids/1679178/IQ3418-399_A_1_PREM.jpg?v=639046841358400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://www.nike.com.ar/nike-vaporfly-4-hf6412-601/p: API HTTP 403",
+  "nike-vaporfly-4 Nike: HTTP 403",
   "https://nikearprod.vteximg.com.br/arquivos/ids/1875953/IR2170-300_A_PREM.jpg?v=639198943262570000: HTTP 429 text/plain; charset=utf-8 17 bytes",
   "https://sporting.vteximg.com.br/arquivos/ids/3250380/II7192100-000-1.jpg?v=639240422961330000: HTTP 429 text/plain; charset=utf-8 17 bytes",
   "https://sporting.vteximg.com.br/arquivos/ids/3250381/II7192100-000-2.jpg?v=639240422967030000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3250382/II7192100-000-3.jpg?v=639240422971400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3250383/II7192100-000-4.jpg?v=639240422974530000: HTTP 429 text/plain; charset=utf-8 17 bytes",
   "https://sporting.vteximg.com.br/arquivos/ids/3250384/II7192100-000-5.jpg?v=639240422977970000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1707468/HM5973_002_A_PREM.jpg?v=639071248207300000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1864039/HV8116-002_A_PREM.jpg?v=639191245945300000: HTTP 429 text/plain; charset=utf-8 17 bytes"
+  "https://www.nike.com.ar/nike-structure-plus-hq3049-502/p: API HTTP 403",
+  "nike-structure-plus Nike: HTTP 403",
+  "https://www.nike.com.ar/structure-plus-ir2170-300/p: API HTTP 403",
+  "nike-structure-plus Nike: HTTP 403",
+  "https://www.nike.com.ar/nike-vomero-premium-hm5973-002/p: API HTTP 403",
+  "nike-vomero-premium Nike: HTTP 403",
+  "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8116-002/p: API HTTP 403",
+  "nike-acg-pegasus-trail Nike: HTTP 403",
+  "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8121-003/p: API HTTP 403",
+  "nike-acg-pegasus-trail Nike: HTTP 403"
  ],
  "nike-winflo-11": {
   "tienda": "Dexter",
@@ -139,11 +145,19 @@
   "fotos": 5
  },
  "nike-vaporfly-4": null,
- "nike-structure-plus": null,
- "nike-vomero-premium": {
-  "tienda": "Moov",
-  "url": "https://www.moov.com.ar/zapatillas-nike-zoom-vomero%C2%A05-premium-hombre/NIIH1344-300.html",
-  "fotos": 5
+ "nike-structure-plus": {
+  "tienda": "Sporting",
+  "url": "https://www.sporting.com.ar/zapatillas-nike-structure-plus-de-hombre-ii7192100-000/p",
+  "fotos": 2
  },
- "nike-acg-pegasus-trail": null
+ "nike-vomero-premium": {
+  "tienda": "directa",
+  "url": "https://nikearprod.vteximg.com.br/arquivos/ids/1707468/HM5973_002_A_PREM.jpg?v=639071248207300000",
+  "fotos": 1
+ },
+ "nike-acg-pegasus-trail": {
+  "tienda": "directa",
+  "url": "https://nikearprod.vteximg.com.br/arquivos/ids/1864039/HV8116-002_A_PREM.jpg?v=639191245945300000",
+  "fotos": 1
+ }
 }

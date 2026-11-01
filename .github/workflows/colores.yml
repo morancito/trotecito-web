@@ -52,7 +52,7 @@ jobs:
           git status --short | head -20
           git add scripts/colores.json public/data/colores.json public/fotos
           git diff --cached --quiet || git commit -m "Colores de cada modelo"
-          for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 10; done
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && break; sleep 15; done
       - name: Seguir con los que faltan
         if: hashFiles('scripts/colores-faltan.txt') != ''
         env:

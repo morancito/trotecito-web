@@ -9,6 +9,7 @@
 // agregalas en scripts/fotos-urls.json:  { "nike-vomero-18": ["https://...jpg", "https://pagina-del-producto"] }
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, rmSync } from "node:fs";
+import { UA } from "./tiendas.mjs";
 
 const MAX_FOTOS = 4;
 const raiz = new URL("../public/", import.meta.url);
@@ -16,7 +17,7 @@ const cat = JSON.parse(readFileSync(new URL("data/modelos.json", raiz), "utf8"))
 const extraUrl = new URL("./fotos-urls.json", import.meta.url);
 const extra = existsSync(extraUrl) ? JSON.parse(readFileSync(extraUrl, "utf8")) : {};
 const soloUno = process.argv[2];
-const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
+// se identifica como TrotecitoBot, igual que el resto de los robots (no se hace pasar por un navegador)
 const esImagen = u => /\.(jpe?g|png|webp|avif)(\?|$)/i.test(u);
 
 async function traer(url, tipo = "text") {

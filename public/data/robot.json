@@ -1,9 +1,9 @@
 {
  "fecha": "31/10/2026",
- "hora": "08:48 p. m.",
+ "hora": "11:49 p. m.",
  "leidos": 216,
- "cambiaron": 5,
- "conTalles": 203,
+ "cambiaron": 0,
+ "conTalles": 201,
  "fallaron": 7,
  "errores": [
   "adidas-adizero-evo-sl · adidas.com.ar: HTTP 403",
@@ -17,9 +17,11 @@
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
   "nike-winflo-10 · Dexter",
+  "nike-winflo-10 · Dexter",
   "nike-vaporfly-3 · Dexter",
   "asics-novablast-5 · Dexter",
   "asics-gel-nimbus-27 · Dexter",
+  "asics-gel-cumulus-27 · Dexter",
   "brooks-ghost-15 · Dexter",
   "under-armour-velociti-3 · Dexter",
   "under-armour-infinite-pro · Dexter",

@@ -347,8 +347,6 @@
       "36.5",
       "37",
       "37.5",
-      "38",
-      "38.5",
       "40",
       "40.5"
      ],
@@ -598,7 +596,8 @@
      "talles": [
       "34.5"
      ],
-     "sistema": "AR"
+     "sistema": "AR",
+     "sinStock": true
     }
    ],
    "colores": [],
@@ -1670,7 +1669,8 @@
      "talles": [
       "42"
      ],
-     "sistema": "AR"
+     "sistema": "AR",
+     "sinStock": true
     },
     {
      "tienda": "Asics",

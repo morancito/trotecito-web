@@ -40,6 +40,7 @@ function horma(h) {
     anchoMedio: num(/Width\s*\/\s*fit\D{0,40}?(\d{2,3}(?:\.\d)?)\s*mm/i),
     calce: (t.match(/Width\s*\/\s*fit[^.]{0,80}?\b(Narrow|Medium|Wide|Very narrow|Very wide)\b/i) || [])[1] || null,
     anchos: (t.match(/Widths available:?\s*([A-Za-z ,-]{4,60})/i) || [])[1]?.trim() || null,
+    crudo: [...t.matchAll(/(Width \/ fit|Toebox width[^|]{0,30}|Wide|Narrow)[\s\S]{0,160}/gi)].slice(0, 8).map(m => m[0]),
   };
 }
 

@@ -534,7 +534,7 @@ function recoResultado() {
   const perfilTxt = [(resp.gen === "Mujer" ? "Talles de mujer" : "Talles de hombre") + (resp.talle ? ` · talle ${resp.talle}` : ""), txt("uso"), txt("ritmo"), txt("kg"), resp.pis === "nose" ? "Pisada: no sé" : "Pisada " + txt("pis").split(":")[0].toLowerCase(),
     resp.pie === "ancho" ? "Pie ancho" : resp.pie === "angosto" ? "Pie angosto" : "", labAct ? `Usás ${labAct} (${({ gusta: "te encantan", ok: "están bien", no: "no te convencen" })[gustoAct] || ""})` : "", txt("tope")].filter(Boolean);
   const card = (p, i) => { const d = p.d, t = p.t;
-    return `<article class="rr ${i === 0 ? "top" : ""}">
+    return `<article class="rr${i === 0 ? " mejor" : ""}">
       <div class="rr-et"><b>${esc(p.etiqueta)}</b><span>${esc(p.sub)}</span></div>
       <a class="rr-img" href="${zurl(d)}">${d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}">` : silueta(d)}</a>
       <div class="rr-body">${sello(d.m)}<h2 class="cond"><a href="${zurl(d)}">${esc(nombre(d))}</a></h2>

@@ -409,6 +409,10 @@ footer p { margin: 8px 0 0; color: #CFCFCF; font-size: 17px; }
 .rq-ops button:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--hard); }
 .rq-ops button[aria-pressed="true"] { background: var(--azul); color: #fff; box-shadow: 3px 3px 0 var(--bordo); }
 .rq-atras { margin-top: 18px; border: 0; background: none; color: var(--muted); font-weight: 700; cursor: pointer; padding: 6px 0; }
+.rq-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 18px; }
+.rq-nav .rq-atras { margin-top: 0; }
+.rq-reiniciar { border: 2px solid var(--hair); background: none; color: var(--ink); font-weight: 700; font-size: 14px; border-radius: 999px; padding: 7px 14px; cursor: pointer; }
+.rq-reiniciar:hover { border-color: var(--line); }
 .rr-head h1 { font-size: clamp(56px, 8vw, 96px); line-height: .9; margin: 4px 0 10px; }
 .rr-head h1 em { font-style: normal; color: var(--bordo); }
 .rr-perfil { color: var(--muted); font-size: 15px; margin: 0 0 8px; }

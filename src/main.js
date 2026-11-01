@@ -524,7 +524,7 @@ function recoPregunta() {
   <div class="rq"><div class="rq-top"><span class="kicker">Tu zapa · ${paso + 1} de ${total}</span><div class="rq-bar"><i style="width:${(paso + 1) / total * 100}%"></i></div></div>
     <h1 class="cond">${q.t}</h1>
     ${q.tipo === "modelo" ? preguntaModelo() : `<div class="rq-ops${q.grid ? " grid" : ""}">${opsDe(q).map(([v, t]) => `<button type="button" data-v="${esc(v)}" aria-pressed="${String(resp[q.k]) === String(v)}">${t}</button>`).join("")}</div>`}
-    ${paso > 0 ? `<button type="button" class="rq-atras" data-atras>← Pregunta anterior</button>` : ""}</div>`;
+    ${paso > 0 || Object.keys(resp).length ? `<div class="rq-nav">${paso > 0 ? `<button type="button" class="rq-atras" data-atras>← Pregunta anterior</button>` : "<span></span>"}<button type="button" class="rq-reiniciar" data-reiniciar>↺ Reiniciar</button></div>` : ""}</div>`;
 }
 function porque(lista, cls) { return lista.length ? `<ul class="rr-${cls}">${lista.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""; }
 function recoResultado() {
@@ -544,7 +544,7 @@ function recoResultado() {
         <div class="rr-acc"><a class="btn fuerte" href="${esc(t.url)}" target="_blank" rel="noopener">Ver en ${esc(t.tienda)} ↗</a><a class="btn" href="${zurl(d)}">Ficha completa</a></div></div></article>`; };
   return `<a class="back" href="#">← Volver al inicio</a>
   <div class="rr-head"><h1 class="cond">Tus <em>${picks.length}</em> zapas</h1>
-    <p class="rr-perfil">${perfilTxt.map(esc).join(" · ")} · <button type="button" data-rehacer>Cambiar respuestas</button></p>
+    <p class="rr-perfil">${perfilTxt.map(esc).join(" · ")} · <button type="button" data-rehacer>Cambiar respuestas</button> · <button type="button" data-reiniciar>Reiniciar</button></p>
     ${sinPresupuesto ? `<p class="rr-aviso">Con ese presupuesto encontramos pocas opciones para tu perfil, así que sumamos algunas que se pasan.</p>` : ""}
     ${resp.pis === "nose" ? `<p class="rr-aviso">¿No sabés cómo pisás? Mirá la suela de tus zapas viejas: si se gastan más del lado de adentro, probablemente pronás. Ante la duda, empezá por una neutra.</p>` : ""}</div>
   ${picks.length ? `<div class="rr-grid">${picks.map(card).join("")}</div>
@@ -583,6 +583,7 @@ $("#reco").addEventListener("click", e => {
     if (u.dataset.motivo) medir("reco_util", { v: "no", motivo: u.dataset.motivo, picks: sl });
     $("#util").innerHTML = utilHtml(k); return; }
   if (e.target.closest("[data-atras]")) { paso = Math.max(0, paso - 1); pintarReco(); return; }
+  if (e.target.closest("[data-reiniciar]")) { medir("reco_reiniciar", { paso: paso + 1 }); resp = {}; paso = 0; actualTmp = null; guardar(RESP_K, null); pintarReco(); return; }
   if (e.target.closest("[data-rehacer]")) { paso = 0; actualTmp = null; medir("reco_inicio", { otra: true }); pintarReco(); return; }
   if (e.target.closest("[data-cmp3]")) { medir("reco_comparar"); st.cmp = recomendar(DATA, resp).picks.map(p => p.d.id).slice(0, 3); ir(BASE + "#comparar"); return; }
   if (e.target.closest("[data-vertodas]")) { e.preventDefault(); medir("reco_vertodas"); Object.assign(st, VACIO(), { q: "" }); $("#q").value = "";

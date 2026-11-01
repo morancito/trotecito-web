@@ -7772,7 +7772,73 @@
    "m": "Nike",
    "mod": "Winflo",
    "ver": "11",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 79999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-hombre/NIFJ9509-402.html",
+     "fecha": "01/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "42.5",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 79999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-mujer/NIFJ9510-402.html",
+     "fecha": "01/11/2026",
+     "antes": 199999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37",
+      "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 161999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-hombre-fj9509001-000/p",
+     "fecha": "01/11/2026",
+     "antes": 229999,
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "39",
+      "39.5",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 144199,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-mujer-fj9510001-000/p",
+     "fecha": "01/11/2026",
+     "antes": 229999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "id": 103,
    "slug": "nike-winflo-11",
    "ar": true,
@@ -7786,7 +7852,38 @@
    "m": "Nike",
    "mod": "Winflo",
    "ver": "12",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 229999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo%C2%A012-hombre/NIHV9272-002.html",
+     "fecha": "01/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "41.5",
+      "42",
+      "42.5",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 229999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo%C2%A012-mujer/NIHV9273-600.html",
+     "fecha": "01/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "38.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "id": 104,
    "slug": "nike-winflo-12",
    "ar": true,
@@ -7814,7 +7911,20 @@
    "m": "Nike",
    "mod": "Structure Plus",
    "ver": "",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 349999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-structure-plus-de-hombre-ii7192100-000/p",
+     "fecha": "01/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "id": 106,
    "slug": "nike-structure-plus",
    "ar": true,
@@ -7828,7 +7938,33 @@
    "m": "Nike",
    "mod": "Vomero Premium",
    "ver": "",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Moov",
+     "precio": 349999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.moov.com.ar/zapatillas-nike-zoom-vomero%C2%A05-premium-hombre/NIIH1344-300.html",
+     "fecha": "01/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44",
+      "44.5",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "id": 107,
    "slug": "nike-vomero-premium",
    "ar": true,

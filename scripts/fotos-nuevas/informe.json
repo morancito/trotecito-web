@@ -116,18 +116,34 @@
   "fotos": 5
  },
  "_errores": [
-  "https://sporting.vteximg.com.br/arquivos/ids/3317370/1155130BWHT-000-1.jpg?v=639265745632470000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3317371/1155130BWHT-000-2.jpg?v=639265745638930000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3317374/1155130BWHT-000-5.jpg?v=639265745652300000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/2289450/17478837-000-1.jpg?v=639003875451400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/2289446/17478837-000-1.jpg?v=639003875416000000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/2289453/17478837-000-2.jpg?v=639003875456800000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/2289456/17478837-000-3.jpg?v=639003875461470000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/2289460/17478837-000-4.jpg?v=639003875467730000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3069434/17478835-000-1.jpg?v=639205117547270000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3069435/17478835-000-2.jpg?v=639205117556370000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3069436/17478835-000-3.jpg?v=639205117564830000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3069437/17478835-000-4.jpg?v=639205117570470000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3069438/17478835-000-5.jpg?v=639205117574700000: HTTP 429 text/plain; charset=utf-8 17 bytes"
- ]
+  "https://nikearprod.vteximg.com.br/arquivos/ids/1595189/FJ9509-010-A-1_PREM.jpg?v=638940086927770000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://nikearprod.vteximg.com.br/arquivos/ids/1839606/HV9272-002_A_PREM.jpg?v=639179038271400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://nikearprod.vteximg.com.br/arquivos/ids/1679178/IQ3418-399_A_1_PREM.jpg?v=639046841358400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://nikearprod.vteximg.com.br/arquivos/ids/1875953/IR2170-300_A_PREM.jpg?v=639198943262570000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3250380/II7192100-000-1.jpg?v=639240422961330000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3250381/II7192100-000-2.jpg?v=639240422967030000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3250382/II7192100-000-3.jpg?v=639240422971400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3250383/II7192100-000-4.jpg?v=639240422974530000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://sporting.vteximg.com.br/arquivos/ids/3250384/II7192100-000-5.jpg?v=639240422977970000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://nikearprod.vteximg.com.br/arquivos/ids/1707468/HM5973_002_A_PREM.jpg?v=639071248207300000: HTTP 429 text/plain; charset=utf-8 17 bytes",
+  "https://nikearprod.vteximg.com.br/arquivos/ids/1864039/HV8116-002_A_PREM.jpg?v=639191245945300000: HTTP 429 text/plain; charset=utf-8 17 bytes"
+ ],
+ "nike-winflo-11": {
+  "tienda": "Dexter",
+  "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-hombre/NIFJ9509-402.html",
+  "fotos": 5
+ },
+ "nike-winflo-12": {
+  "tienda": "Dexter",
+  "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo%C2%A012-hombre/NIHV9272-002.html",
+  "fotos": 5
+ },
+ "nike-vaporfly-4": null,
+ "nike-structure-plus": null,
+ "nike-vomero-premium": {
+  "tienda": "Moov",
+  "url": "https://www.moov.com.ar/zapatillas-nike-zoom-vomero%C2%A05-premium-hombre/NIIH1344-300.html",
+  "fotos": 5
+ },
+ "nike-acg-pegasus-trail": null
 }

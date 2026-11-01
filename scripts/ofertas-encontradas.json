@@ -1,39 +1,39 @@
 {
- "fecha": "2026-10-31T01:49:43.742Z",
+ "fecha": "2026-11-01T05:04:50.614Z",
  "tiendas": {
   "Dexter": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 28,
-   "encontrados": 1,
+   "buscados": 6,
+   "encontrados": 4,
    "errores": []
   },
   "Sporting": {
    "tipo": "vtex",
    "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sporting.vtexassets.com",
-   "buscados": 28,
-   "encontrados": 25,
+   "buscados": 6,
+   "encontrados": 3,
    "errores": []
   },
   "Moov": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 28,
-   "encontrados": 0,
+   "buscados": 6,
+   "encontrados": 1,
    "errores": []
   },
   "Gostore": {
    "tipo": "magento",
    "pista": "gostore.com.ar | static.cloudflareinsights.com",
-   "buscados": 28,
-   "encontrados": 12,
+   "buscados": 6,
+   "encontrados": 0,
    "errores": []
   },
   "TodoTrail": {
    "tipo": "tiendanube",
    "pista": "nsk-cdn-static.tiendanube.com | www.googletagmanager.com | static.cloudflareinsights.com",
-   "buscados": 28,
-   "encontrados": 33,
+   "buscados": 6,
+   "encontrados": 0,
    "errores": []
   },
   "Naka Outdoors": {
@@ -1857,6 +1857,163 @@
     "8.5"
    ],
    "sistema": "US"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running nike air winflo 11 hombre",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-hombre/NIFJ9509-402.html",
+   "nota": "Hombre",
+   "precio": 79999,
+   "antes": 199999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "42",
+    "42.5",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running nike air winflo 11 mujer",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-winflo-11-mujer/NIFJ9510-402.html",
+   "nota": "Mujer",
+   "precio": 79999,
+   "antes": 199999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "35",
+    "35.5",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-12",
+   "modelo": "Nike Winflo 12",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running nike winflo%C2%A012 hombre",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo%C2%A012-hombre/NIHV9272-002.html",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "39.5",
+    "41.5",
+    "42",
+    "42.5",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-12",
+   "modelo": "Nike Winflo 12",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running nike winflo%C2%A012 mujer",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-winflo%C2%A012-mujer/NIHV9273-600.html",
+   "nota": "Mujer",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "37",
+    "38",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Nike Winflo 11 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-hombre-fj9509001-000/p",
+   "nota": "Hombre",
+   "precio": 161999,
+   "antes": 229999,
+   "cuotas": 12,
+   "talles": [
+    "37.5",
+    "39",
+    "39.5",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Nike Winflo 11 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-mujer-fj9510001-000/p",
+   "nota": "Mujer",
+   "precio": 144199,
+   "antes": 229999,
+   "cuotas": 12,
+   "talles": [
+    "35",
+    "35.5",
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-plus",
+   "modelo": "Nike Structure Plus",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Nike Structure Plus de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-nike-structure-plus-de-hombre-ii7192100-000/p",
+   "nota": "Hombre",
+   "precio": 349999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-premium",
+   "modelo": "Nike Vomero Premium",
+   "tienda": "Moov",
+   "nombre": "zapatillas nike zoom vomero%C2%A05 premium hombre",
+   "url": "https://www.moov.com.ar/zapatillas-nike-zoom-vomero%C2%A05-premium-hombre/NIIH1344-300.html",
+   "nota": "Hombre",
+   "precio": 349999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "40.5",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "43.5",
+    "44",
+    "44.5",
+    "45",
+    "45.5"
+   ],
+   "sistema": "AR"
   }
  ]
 }

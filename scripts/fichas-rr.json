@@ -24,7 +24,7 @@
    "Type:": "For heavy runners | For big guys | Maximalist | Durable",
    "Widths available:": "Narrow , Normal , Wide , X-Wide",
    "Pace:": "Daily running",
-   "SKUs:": "AYNN , BBLC , BHLB , BWHT , LRMT , SBLF , SGNN , SLSSN , WWH , YDT"
+   "SKUs:": "ALF , AYNN , BBLC , BHLB , BWHT , LRMT , SBLF , SGNN , WWH , YDT"
   },
   "espumas": {
    "PEBA": 1,
@@ -59,7 +59,7 @@
    "Type:": "For heavy runners | For big guys | Maximalist | Durable",
    "Widths available:": "Narrow , Normal , Wide , X-Wide",
    "Pace:": "Daily running",
-   "SKUs:": "BBLC , BNNY , BWHT , GCTC , MVR , RRYM , VSF , WKP , WNG , WWH"
+   "SKUs:": "ATRM , BBLC , BWHT , GCTC , MVR , RRYM , VSF , WKP , WNG , WWH"
   },
   "espumas": {
    "Supercritical": 5,
@@ -91,7 +91,7 @@
    "Type:": "Breathable | For heavy runners | For big guys | Maximalist | Lightweight",
    "Widths available:": "Normal , Wide",
    "Pace:": "Daily running",
-   "SKUs:": "AFF , BBLC , BNGH , BWHT , FTRS , RSLT , SCCG , TNDR , WNCL , WNH"
+   "SKUs:": "AFF , BBLC , BNGH , BWHT , DHN , FTRS , RSLT , SCCG , TNDR , WNH"
   },
   "espumas": {
    "PEBA": 1,
@@ -254,7 +254,7 @@
    "Type:": "Breathable | Maximalist | Lightweight",
    "Widths available:": "Men: Normal , Wide | Women: Narrow , Normal , Wide",
    "Pace:": "Daily running",
-   "SKUs:": "BBLC , BWHT , FTRS , FYZ , JTL , OLTM , PTYG , SSTC , WFD , WWH"
+   "SKUs:": "BBLC , BWHT , FYZ , JTL , OLTM , PTYG , SSTC , VCH , WFD , WWH"
   },
   "espumas": {
    "Supercritical": 1,
@@ -494,7 +494,7 @@
    "Optifoam": 2,
    "EVA": 2
   },
-  "placa": "ed Difference in midsole softness in cold Small Small Small Small Plate &cross; Rock plate &cross; Rock plate Toebox durability Decent Very good Decent Decent Heel paddin"
+  "placa": "ft Difference in midsole softness in cold Small Small Small Small Plate &cross; Rock plate Rock plate &cross; Toebox durability Decent Decent Very good Decent Heel paddin"
  },
  "salomon-ultra-glide-4": {
   "rr": "salomon-ultra-glide-4",
@@ -521,7 +521,7 @@
    "EVA": 4,
    "TPU": 1
   },
-  "placa": "erence in midsole softness in cold Small Small Big Normal Plate &cross; &cross; Rock plate &cross; Toebox durability Good Decent Good Good Heel padding durability Decent "
+  "placa": "n midsole softness in cold Small Normal Small Big Plate &cross; &cross; &cross; Rock plate Toebox durability Good Good Decent Good Heel padding durability Decent Good Goo"
  },
  "salomon-ultra-flow-2": null,
  "salomon-slab-pulsar-4": {
@@ -621,7 +621,7 @@
    "TPU": 7,
    "Boost": 1
   },
-  "placa": " Difference in midsole softness in cold Normal Small Small Normal Plate &cross; Rock plate &cross; &cross; Toebox durability Good Decent Good Very bad Heel padding durabi"
+  "placa": "nce in midsole softness in cold Normal Small Small Normal Plate &cross; &cross; Rock plate &cross; Toebox durability Good Good Decent Very bad Heel padding durability Goo"
  },
  "saucony-endorphin-speed-5": {
   "rr": "saucony-endorphin-speed-5",
@@ -690,7 +690,7 @@
    "EVA": 1,
    "Boost": 1
   },
-  "placa": "d Balanced Difference in midsole softness in cold Small Small Small Small Plate Rock plate &cross; Rock plate Rock plate Toebox durability Bad Very bad Good Decent Heel p"
+  "placa": "anced Soft Difference in midsole softness in cold Small Small Small Small Plate Rock plate Rock plate Rock plate &cross; Toebox durability Bad Decent Good Decent Heel pad"
  },
  "saucony-hurricane-25": {
   "rr": "saucony-hurricane-25",
@@ -752,7 +752,7 @@
    "Widths available:": "Normal",
    "Race distance:": "Ultra",
    "Trail terrain:": "Gravel / Road-to-trail , Versatile / Moderate terrain",
-   "SKUs:": "S1016171007 , S1016171008 , S1016171009 , S1016171010 , S1016261005 , S1016261007 , S11032150 , S11032246 , S11032248 , S21032245"
+   "SKUs:": "S1016171007 , S1016171008 , S1016171009 , S1016171010 , S1016261005 , S1016261007 , S11032150 , S11032246 , S11032248 , S21032144"
   },
   "espumas": {
    "PEBA": 2,
@@ -764,5 +764,205 @@
    "Boost": 3
   },
   "placa": " Anyone racing ultras who dislikes the feel of a carbon plate but still wants a responsive ride when the legs start to give up"
+ },
+ "nike-winflo-11": {
+  "rr": "nike-winflo-11",
+  "titulo": "Cut in half: Nike Winflo 11 Review | RunRepeat",
+  "f": {
+   "Update:": "Nike Winflo 12",
+   "Terrain:": "Road",
+   "Arch support:": "Neutral",
+   "Heel height:": "35 mm",
+   "Forefoot height:": "25 mm",
+   "Collection:": "Nike Winflo",
+   "Weight:": "Men: 10 oz / 283g | Women: 9.2 oz / 262g",
+   "Drop:": "10 mm",
+   "Pronation:": "Neutral Pronation | Supination | Underpronation",
+   "Arch type:": "High arch",
+   "Use:": "Jogging | Treadmill | Walking | All-day wear | For beginners",
+   "Material:": "Mesh | Reflective",
+   "Features:": "Orthotic friendly | Cushioned | Removable insole",
+   "Strike Pattern:": "Heel strike",
+   "Season:": "All seasons",
+   "BRAND Brand:": "Nike",
+   "Type:": "Breathable | Maximalist",
+   "Widths available:": "Men: Normal , Wide , X-Wide | Women: Narrow , Normal , Wide , X-Wide",
+   "Pace:": "Daily running",
+   "SKUs:": "FJ9509001 , FJ9509002 , FJ9509102 , FJ9509111 , FJ9509112 , FJ9510100 , FJ9510112 , FJ9510113 , HQ7975100 , HQ7975400"
+  },
+  "espumas": {
+   "ZoomX": 1,
+   "ReactX": 1,
+   "EVA": 3,
+   "Boost": 1
+  },
+  "placa": ""
+ },
+ "nike-winflo-12": {
+  "rr": "nike-winflo-12",
+  "titulo": "Cut in half: Nike Winflo 12 Review (2026) | RunRepeat",
+  "f": {
+   "Terrain:": "Road",
+   "Arch support:": "Neutral",
+   "Heel height:": "40 mm",
+   "Forefoot height:": "30 mm",
+   "Collection:": "Nike Winflo",
+   "Weight:": "Men: 10.8 oz / 305g | Women: 9.8 oz / 277g",
+   "Drop:": "10 mm",
+   "Pronation:": "Neutral Pronation | Supination | Underpronation",
+   "Arch type:": "High arch",
+   "Use:": "Jogging | Treadmill | Walking | All-day wear | For beginners",
+   "Material:": "Mesh | Reflective",
+   "Features:": "Orthotic friendly | Cushioned | Removable insole",
+   "Strike Pattern:": "Heel strike",
+   "Season:": "All seasons",
+   "Release date:": "Mar 2026",
+   "BRAND Brand:": "Nike",
+   "Type:": "Breathable | Comfortable | Maximalist",
+   "Widths available:": "Men: Normal , Wide , X-Wide | Women: Normal , Wide",
+   "Pace:": "Daily running",
+   "SKUs:": "HV9272006 , HV9272007 , HV9272402 , HV9273001 , HV9273002 , HV9273103 , HV9273500 , HV9273601 , HV9273801 , IU6261100"
+  },
+  "espumas": {},
+  "placa": ""
+ },
+ "nike-vaporfly-4": {
+  "rr": "nike-vaporfly-4",
+  "titulo": "Cut in half: Nike Vaporfly 4 Review (2025) | RunRepeat",
+  "f": {
+   "Terrain:": "Road",
+   "Arch support:": "Neutral",
+   "Heel height:": "35 mm",
+   "Forefoot height:": "29 mm",
+   "Collection:": "Nike Zoomx",
+   "Weight:": "Men: 6.5 oz / 184g | Women: 5.8 oz / 164g",
+   "Drop:": "6 mm",
+   "Pronation:": "Neutral Pronation | Supination | Underpronation",
+   "Arch type:": "High arch",
+   "Use:": "Treadmill",
+   "Material:": "Mesh",
+   "Features:": "Orthotic friendly | Cushioned | Carbon plate | Removable insole",
+   "Strike Pattern:": "Forefoot/Midfoot strike",
+   "Season:": "All seasons",
+   "BRAND Brand:": "Nike",
+   "Type:": "Breathable | Lightweight | Super shoe",
+   "Widths available:": "Normal , Wide",
+   "Pace:": "Competition",
+   "Race distance:": "Marathon | 5K and 10K | Half marathon",
+   "SKUs:": "HF6412300 , HF6412503 , HF6414300 , HF6414800 , IM6366605 , IM8068999 , IM8203400 , IO9560400 , IR2311600 , IR7194001"
+  },
+  "espumas": {
+   "PEBA": 1,
+   "ZoomX": 6,
+   "Nitro Elite": 1,
+   "Nitro": 1,
+   "FuelCell": 2,
+   "TPU": 1,
+   "Boost": 2
+  },
+  "placa": "Stiff Moderate Heel counter stiffness Flexible Flexible Flexible Flexible Plate Carbon plate Carbon plate Carbon plate Carbon plate Rocker &cross; &check; &cross; &check; H"
+ },
+ "nike-structure-plus": {
+  "rr": "nike-structure-plus",
+  "titulo": "Cut in half: Nike Structure Plus Review (2026) | RunRepeat",
+  "f": {
+   "Terrain:": "Road",
+   "Arch support:": "Stability",
+   "Heel height:": "42 mm",
+   "Forefoot height:": "32 mm",
+   "Collection:": "Nike Structure , Nike Zoomx",
+   "Weight:": "Men: 10.9 oz / 309g | Women: 8.7 oz / 248g",
+   "Drop:": "10 mm",
+   "Pronation:": "Overpronation",
+   "Arch type:": "Low arch",
+   "Use:": "Jogging | Treadmill | Walking | All-day wear",
+   "Material:": "Mesh | Reflective",
+   "Features:": "Orthotic friendly | Cushioned | Removable insole",
+   "Strike Pattern:": "Heel strike",
+   "Condition:": "Flat feet",
+   "Season:": "All seasons",
+   "BRAND Brand:": "Nike",
+   "Type:": "Breathable | Comfortable | Maximalist",
+   "Widths available:": "Men: Narrow , Normal , Wide | Women: Normal , Wide",
+   "Pace:": "Daily running",
+   "SKUs:": "HQ3048001 , HQ3048004 , HQ3048111 , HQ3048400 , HQ3048501 , HQ3049003 , HQ3049004 , HQ3049100 , HQ3049600 , II7192100"
+  },
+  "espumas": {
+   "PEBA": 1,
+   "ZoomX": 11,
+   "ReactX": 1,
+   "EVA": 3
+  },
+  "placa": ""
+ },
+ "nike-vomero-premium": {
+  "rr": "nike-vomero-premium",
+  "titulo": "Cut in half: Nike Vomero Premium Review (2025) | RunRepeat",
+  "f": {
+   "Terrain:": "Road",
+   "Arch support:": "Neutral",
+   "Heel height:": "55 mm",
+   "Forefoot height:": "45 mm",
+   "Collection:": "Nike Vomero , Nike Zoomx",
+   "Weight:": "Men: 12.4 oz / 351g | Women: 9.8 oz / 278g",
+   "Drop:": "10 mm",
+   "Pronation:": "Neutral Pronation | Supination | Underpronation",
+   "Arch type:": "High arch",
+   "Use:": "Jogging | Walking",
+   "Material:": "Mesh | Reflective",
+   "Features:": "Orthotic friendly | Sockless wear | Cushioned | Removable insole | Rocker",
+   "Strike Pattern:": "Heel strike | Forefoot/Midfoot strike",
+   "Condition:": "Plantar fasciitis",
+   "Season:": "All seasons",
+   "BRAND Brand:": "Nike",
+   "Type:": "For heavy runners | For big guys | Maximalist",
+   "Widths available:": "Normal , Wide",
+   "Pace:": "Daily running",
+   "SKUs:": "HM5973103 , HM5973302 , HM5973600 , HM5973606 , HM5973801 , HQ2050002 , HQ2050003 , HQ2050600 , HQ2050702 , IQ6943001"
+  },
+  "espumas": {
+   "PEBA": 2,
+   "ZoomX": 7,
+   "ReactX": 1,
+   "Nitro": 1,
+   "Fresh Foam X": 1,
+   "EVA": 1,
+   "PEBA-based": 1
+  },
+  "placa": ""
+ },
+ "nike-acg-pegasus-trail": {
+  "rr": "nike-acg-pegasus-trail",
+  "titulo": "Cut in half: Nike ACG Pegasus Trail Review (2026) | RunRepeat",
+  "f": {
+   "Terrain:": "Trail",
+   "Arch support:": "Neutral",
+   "Heel height:": "35 mm",
+   "Forefoot height:": "27 mm",
+   "Collection:": "Nike Pegasus , Nike Pegasus Trail , Nike Acg",
+   "Weight:": "Men: 10.8 oz / 305g | Women: 9.5 oz / 269g",
+   "Drop:": "8 mm",
+   "Pronation:": "Neutral Pronation | Supination | Underpronation",
+   "Arch type:": "High arch",
+   "Use:": "Hiking",
+   "Material:": "Mesh",
+   "Features:": "Orthotic friendly | Cushioned | Removable insole",
+   "Strike Pattern:": "Heel strike | Forefoot/Midfoot strike",
+   "Season:": "All seasons",
+   "Release date:": "Apr 2026",
+   "BRAND Brand:": "Nike",
+   "Type:": "Comfortable",
+   "Widths available:": "Normal , Wide",
+   "Race distance:": "Ultra",
+   "Trail terrain:": "Gravel / Road-to-trail",
+   "SKUs:": "HV8116001 , HV8116002 , HV8116006 , HV8116202 , HV8116301 , HV8116400 , HV8121003 , HV8121103 , HV8121200 , HV8121310"
+  },
+  "espumas": {
+   "ZoomX": 1,
+   "ReactX": 6,
+   "Supercritical": 1,
+   "Boost": 1
+  },
+  "placa": "rence in midsole softness in cold Small Small Small Small Plate &cross; &cross; Rock plate &cross; Toebox durability Very bad Very bad Good Decent Heel padding durability"
  }
 }

@@ -48,7 +48,7 @@ function oferta(p) {
 
 let n = 0;
 for (const m of cat.modelos.filter(m => m.m === "Nike")) {
-  const ofs = productos.filter(p => coincide(m, p.productName, p.link)).map(oferta).filter(Boolean);
+  const ofs = productos.filter(p => coincide(m, p.productName.replace(/GORE-TEX/i, "GTX"), p.link.replace(/gore-tex/i, "gtx"))).map(oferta).filter(Boolean);
   if (!ofs.length) { console.log(`– ${m.slug}: no está en lo que pasaste (o sin stock)`); continue; }
   /* la más barata de cada género; las unisex valen para los dos */
   const elegidas = ["Hombre", "Mujer"].map(g => ofs.filter(o => o.nota === g || o.nota === "Unisex").sort((a, b) => a.precio - b.precio)[0]).filter(Boolean);

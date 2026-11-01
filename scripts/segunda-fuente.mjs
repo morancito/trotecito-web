@@ -30,17 +30,21 @@ function correrUnaMaraton(h) {
   return { datos, frases, titulo: texto((h.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "") };
 }
 
-/* RunRepeat: medidas de laboratorio del ancho (mm) */
+/* RunRepeat: medidas de laboratorio del ancho (mm) contra el promedio de las zapas que midieron,
+   y la palabra de su tabla comparativa (la primera columna es esta zapa) */
 function horma(h) {
-  const t = texto(h).replace(/\n/g, " ");
-  const num = rx => { const m = t.match(rx); return m ? +m[1] : null; };
+  const t = texto(h).replace(/\n/g, " ").replace(/\s+/g, " ");
+  const medidas = {};
+  for (const m of t.matchAll(/Test results .{0,70}? (\d{2,3}(?:\.\d)?) mm Average (\d{2,3}(?:\.\d)?) mm .{0,90}?Number of shoes [\d.]+ mm ([A-Za-z][A-Za-z \/()-]{2,40}?) [\d.]+ mm/g)) {
+    const k = m[3].trim().toLowerCase(); medidas[k] ??= { mm: +m[1], prom: +m[2] };
+  }
+  const palabra = rx => (t.match(rx) || [])[1] || null;
   return {
-    anchoPunta: num(/Toebox width\s*-\s*widest part\D{0,40}?(\d{2,3}(?:\.\d)?)\s*mm/i),
-    anchoPuntaDedos: num(/Toebox width\s*-\s*big toe\D{0,40}?(\d{2,3}(?:\.\d)?)\s*mm/i),
-    anchoMedio: num(/Width\s*\/\s*fit\D{0,40}?(\d{2,3}(?:\.\d)?)\s*mm/i),
-    calce: (t.match(/Width\s*\/\s*fit[^.]{0,80}?\b(Narrow|Medium|Wide|Very narrow|Very wide)\b/i) || [])[1] || null,
-    anchos: (t.match(/Widths available:?\s*([A-Za-z ,-]{4,60})/i) || [])[1]?.trim() || null,
-    crudo: [...t.matchAll(/(Width \/ fit|Toebox width[^|]{0,30}|Wide|Narrow)[\s\S]{0,160}/gi)].slice(0, 8).map(m => m[0]),
+    medio: medidas["width / fit"] || null,
+    punta: medidas["toebox width - widest part"] || medidas["toebox width"] || null,
+    calce: palabra(/Width \/ fit (Narrow|Medium|Wide|Very narrow|Very wide|-) /i),
+    calcePunta: palabra(/Toebox width (Narrow|Medium|Wide|Very narrow|Very wide|-) /i),
+    medidas,
   };
 }
 
@@ -54,7 +58,7 @@ for (const m of cat.modelos.filter(m => !pedidos.length || pedidos.includes(m.sl
   const rr = await primera([...(rrSlug ? [rrSlug] : []), ...variantes(m)].map(v => `https://runrepeat.com/${v}`));
   if (rr) x.runrepeat = { url: rr.u, ...horma(rr.h) };
   salida[m.slug] = x;
-  console.log(`${m.slug}: CUM ${cm ? "✓" : "–"} · RR ${rr ? `✓ punta ${x.runrepeat.anchoPunta ?? "?"} medio ${x.runrepeat.anchoMedio ?? "?"}` : "–"}`);
+  console.log(`${m.slug}: CUM ${cm ? "✓" : "–"} · RR ${rr ? `✓ ${x.runrepeat.calce ?? "?"} ${x.runrepeat.medio?.mm ?? "?"}/${x.runrepeat.medio?.prom ?? "?"} mm` : "–"}`);
   writeFileSync(ARCH, JSON.stringify(salida, null, 1) + "\n");
   await dormir(1200);
 }

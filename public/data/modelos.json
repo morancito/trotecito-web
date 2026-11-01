@@ -7805,6 +7805,34 @@
      "sistema": "AR"
     },
     {
+     "tienda": "Nike",
+     "precio": 92000,
+     "antes": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.nike.com.ar/nike-winflo-11-fj9510-304/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "5.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 144199,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-mujer-fj9510001-000/p",
+     "fecha": "01/11/2026",
+     "antes": 229999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Sporting",
      "precio": 161999,
      "cuotas": "12 cuotas sin interés",
@@ -7824,19 +7852,24 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Sporting",
-     "precio": 144199,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-mujer-fj9510001-000/p",
-     "fecha": "01/11/2026",
+     "tienda": "Nike",
+     "precio": 199999,
      "antes": 229999,
-     "nota": "Mujer",
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.nike.com.ar/nike-winflo-11-fj9509-010/p",
+     "fecha": "01/11/2026",
      "talles": [
-      "35",
-      "35.5",
-      "37"
+      "6",
+      "7",
+      "7.5",
+      "8.5",
+      "9.5",
+      "10",
+      "11",
+      "12"
      ],
-     "sistema": "AR"
+     "sistema": "US"
     }
    ],
    "id": 103,
@@ -7846,13 +7879,61 @@
    "borrador": true,
    "tipo": "Neutra",
    "uso": "Rodaje diario",
-   "fotos": []
+   "fotos": [],
+   "esp": "Cushlon 3.0",
+   "pl": "Sin placa",
+   "peso": 283,
+   "drop": 10,
+   "talon": 35,
+   "ante": 25,
+   "horma": "angosta",
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Hasta 80 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "buscás velocidad o hacés fondos largos: la amortiguación es básica.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-winflo-11"
+   ]
   },
   {
    "m": "Nike",
    "mod": "Winflo",
    "ver": "12",
    "tiendas": [
+    {
+     "tienda": "Nike",
+     "precio": 137999,
+     "antes": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.nike.com.ar/nike-winflo-12-hv9272-004/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "8.5",
+      "9",
+      "9.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 137999,
+     "antes": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.nike.com.ar/nike-winflo-12-hv9273-600/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "5",
+      "5.5",
+      "6"
+     ],
+     "sistema": "US"
+    },
     {
      "tienda": "Dexter",
      "precio": 229999,
@@ -7891,13 +7972,55 @@
    "borrador": true,
    "tipo": "Neutra",
    "uso": "Rodaje diario",
-   "fotos": []
+   "fotos": [],
+   "esp": "Cushlon 3.0 + Air",
+   "pl": "Sin placa",
+   "peso": 305,
+   "drop": 10,
+   "talon": 40,
+   "ante": 30,
+   "horma": "ancha",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes diarios y fondos tranquilos"
+   },
+   "evitar": "buscás algo liviano o vas a hacer series: pesa más de 300 g y no tiene chispa.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-winflo-12"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-winflo-12/"
+   ]
   },
   {
    "m": "Nike",
    "mod": "Vaporfly",
    "ver": "4",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Nike",
+     "precio": 324999,
+     "antes": 499999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.nike.com.ar/nike-vaporfly-4-hf6412-601/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "3.5",
+      "4.5",
+      "5",
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "8"
+     ],
+     "sistema": "US"
+    }
+   ],
    "id": 105,
    "slug": "nike-vaporfly-4",
    "ar": true,
@@ -7905,13 +8028,69 @@
    "borrador": true,
    "tipo": "Neutra",
    "uso": "Competencia",
-   "fotos": []
+   "fotos": [],
+   "esp": "ZoomX",
+   "pl": "Carbono",
+   "peso": 184,
+   "drop": 6,
+   "talon": 35,
+   "ante": 29,
+   "horma": "angosta",
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Hasta 80 kg",
+    "distancia": "5K a maratón, día de carrera"
+   },
+   "evitar": "la querés para entrenar todos los días o corrés a ritmo tranquilo: es firme y rinde a ritmos rápidos.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-vaporfly-4"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-vaporfly-4/"
+   ]
   },
   {
    "m": "Nike",
    "mod": "Structure Plus",
    "ver": "",
    "tiendas": [
+    {
+     "tienda": "Nike",
+     "precio": 174999,
+     "antes": 349999,
+     "cuotas": "9 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.nike.com.ar/nike-structure-plus-hq3049-502/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "5.5",
+      "6"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 339999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.nike.com.ar/structure-plus-ir2170-300/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "12"
+     ],
+     "sistema": "US"
+    },
     {
      "tienda": "Sporting",
      "precio": 349999,
@@ -7932,13 +8111,50 @@
    "borrador": true,
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
-   "fotos": []
+   "fotos": [],
+   "esp": "ZoomX",
+   "pl": "Sin placa",
+   "peso": 309,
+   "drop": 10,
+   "talon": 42,
+   "ante": 32,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 95 kg",
+    "distancia": "Rodajes diarios y fondos"
+   },
+   "evitar": "tu pisada es neutra y buscás algo ágil: es pesada y está pensada para dar soporte.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-structure-plus"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-structure-plus/"
+   ]
   },
   {
    "m": "Nike",
    "mod": "Vomero Premium",
    "ver": "",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Nike",
+     "precio": 281999,
+     "antes": 469999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.nike.com.ar/nike-vomero-premium-hm5973-002/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "5",
+      "7"
+     ],
+     "sistema": "US"
+    }
+   ],
    "id": 107,
    "slug": "nike-vomero-premium",
    "ar": true,
@@ -7946,13 +8162,81 @@
    "borrador": true,
    "tipo": "Neutra",
    "uso": "Rodaje largo",
-   "fotos": []
+   "fotos": [],
+   "esp": "ZoomX + ReactX con Air Zoom",
+   "pl": "Sin placa",
+   "peso": 351,
+   "drop": 10,
+   "talon": 55,
+   "ante": 45,
+   "horma": "punta",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Rodajes suaves y fondos tranquilos"
+   },
+   "evitar": "buscás algo liviano o vas a hacer series: pesa unos 350 g y es altísima.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-vomero-premium"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-vomero-premium/"
+   ]
   },
   {
    "m": "Nike",
    "mod": "ACG Pegasus Trail",
    "ver": "",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Nike",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8116-002/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8121-003/p",
+     "fecha": "01/11/2026",
+     "talles": [
+      "5",
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10"
+     ],
+     "sistema": "US"
+    }
+   ],
    "id": 108,
    "slug": "nike-acg-pegasus-trail",
    "ar": true,
@@ -7960,7 +8244,29 @@
    "borrador": true,
    "tipo": "Neutra",
    "uso": "Rodaje diario",
-   "fotos": []
+   "fotos": [],
+   "esp": "ReactX",
+   "pl": "Sin placa",
+   "peso": 305,
+   "drop": 8,
+   "talon": 35,
+   "ante": 27,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 90 kg",
+    "distancia": "Asfalto y sendero, 10 a 42K"
+   },
+   "evitar": "corrés en montaña técnica con barro o piedra suelta: está pensada para caminos mixtos de tierra y asfalto.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/nike-acg-pegasus-trail"
+   ],
+   "fuente2": [
+    "Correr una Maratón",
+    "https://www.correrunamaraton.com/comparar/zapatillas-running/nike-acg-pegasus-trail/"
+   ]
   }
  ]
 }

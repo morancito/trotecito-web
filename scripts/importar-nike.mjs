@@ -34,9 +34,10 @@ if (!archivos.length) { console.error("Uso: node scripts/importar-nike.mjs <arch
 const productos = [...new Map(archivos.flatMap(f => arrays(readFileSync(f, "utf8"))).map(p => [p.productId, p])).values()];
 console.log(`${productos.length} productos distintos en ${archivos.length} archivo(s).`);
 
-const generoDe = p => { const c = (p.categories || []).join(" "); return /\/Mujer\//i.test(c) ? "Mujer" : /\/Hombre\//i.test(c) ? "Hombre" : "Unisex"; };
+/* las unisex suelen estar también en las categorías de hombre y de mujer: si dice Unisex (o las dos), es unisex */
+const generoDe = p => { const c = (p.categories || []).join(" "), h = /\/Hombre\//i.test(c), w = /\/Mujer\//i.test(c); return /\/Unisex\//i.test(c) || (h && w) ? "Unisex" : w ? "Mujer" : h ? "Hombre" : "Unisex"; };
 /* talles: "9.5" (EE. UU.) o, en las unisex, "H 7 / M 8.5" (se toma el de hombre) */
-const talle = it => { const v = String((it.talle || it.Talle || [it.name])[0] || ""); const h = v.match(/H\s*(\d{1,2}(?:\.5)?)/i); return h ? h[1] : (v.match(/^\s*(\d{1,2}(?:\.5)?)\s*$/) || [])[1] || null; };
+const talle = it => { const v = String((it.talle || it.Talle || [String(it.name || "").replace(/^Talle:\s*/i, "").replace(/\s*Color:.*$/i, "")])[0] || ""); const h = v.match(/H\s*(\d{1,2}(?:\.5)?)/i); return h ? h[1] : (v.match(/^\s*(\d{1,2}(?:\.5)?)\s*$/) || [])[1] || null; };
 function oferta(p) {
   const its = p.items.filter(i => i.sellers.some(s => s.commertialOffer.AvailableQuantity > 0 && s.commertialOffer.Price > 0));
   if (!its.length) return null;

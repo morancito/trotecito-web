@@ -345,8 +345,11 @@ table.cmpt tr:last-child td, table.cmpt tr:last-child th { border-bottom: 0; }
 
 /* bandeja comparar */
 .tray { position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: var(--band); color: #fff; padding-bottom: env(safe-area-inset-bottom, 0px); border-top: 2px solid var(--celeste); }
+body:has(#tray:not([hidden])) { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
 .tray .wrap { display: flex; gap: 12px; align-items: center; justify-content: space-between; padding-block: 12px; }
 .tray b { font-family: var(--mono); font-weight: 500; }
+.tray .wrap > span { display: flex; align-items: center; gap: 6px; flex: none; }
+@media (max-width: 420px) { .tray b { font-size: 13px; } .tray button { padding: 8px 14px; } .tray .clear { padding-inline: 6px; } }
 .tray button { background: var(--celeste); color: #141A2E; border: 2px solid var(--celeste); border-radius: 999px; padding: 9px 18px; font-weight: 800; cursor: pointer; }
 .tray button:disabled { opacity: .45; cursor: not-allowed; }
 .tray .clear { background: transparent; color: #fff; border-color: transparent; text-decoration: underline; }

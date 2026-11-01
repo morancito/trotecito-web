@@ -33,11 +33,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-adizero-evo-sl",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal   Normal   Orthotic frien"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 36.1,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.1,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 272.6,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 97.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 87.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-pegasus-42": {
@@ -72,11 +111,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-pegasus-42",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 96.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.3,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Narrow Normal Wide X-Wide   Normal"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 36,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 22,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 271.7,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 96.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.3,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 112.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 88.1,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-pegasus-plus": {
@@ -111,11 +189,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-pegasus-plus",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.9,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Normal Wide   Normal Wide X-Wide   Orthoti"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 23.6,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 268.9,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 93.9,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.3,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.5,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 89.5,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-vomero-18": {
@@ -148,11 +265,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-vomero-18",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 69.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Narrow Normal Wide X-Wide   Norm"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.5,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.6,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 95.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 69.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 96.5,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-vomero-plus": {
@@ -187,11 +339,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-vomero-plus",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Normal   Normal Wide   Narrow No"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 32.7,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 94.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 99.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-structure-26": {
@@ -226,52 +413,200 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-structure-26",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.7,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.9,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Normal Wide   Normal Wide X-Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 36.1,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 93.7,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 25.7,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 114.4,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 92.4,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-winflo-10": {
   "runrepeat": {
    "url": "https://runrepeat.com/nike-winflo-10",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 109.1,
+   "medio": {
+    "mm": 101.9,
+    "prom": 98.7
+   },
+   "punta": {
+    "mm": 77.7,
+    "prom": 78.6
+   },
    "calce": "Medium",
-   "anchos": "Normal X-Wide   Normal Wide X-Wide   Normal X-Wide   Normal"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.5,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 23.8,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 267.5,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 101.9,
+     "prom": 98.7
+    },
+    "toebox width": {
+     "mm": 77.7,
+     "prom": 78.6
+    },
+    "midsole width - forefoot": {
+     "mm": 112.5,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 92.5,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-invincible-3": {
   "runrepeat": {
    "url": "https://runrepeat.com/nike-zoom-x-invincible-run-flyknit-3",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 97.7,
+   "medio": null,
+   "punta": null,
    "calce": "Narrow",
-   "anchos": "Normal Wide X-Wide   Normal Wide   Normal   Normal   Orthoti"
+   "calcePunta": "-",
+   "medidas": {}
   }
  },
  "nike-zoom-fly-5": {},
  "nike-vaporfly-3": {
   "runrepeat": {
    "url": "https://runrepeat.com/nike-zoom-x-vaporfly-next-3",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal   Normal Wide   Orthotic"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 37.1,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 266.3,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 94.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 32.5,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 107.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 76.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "adidas-adizero-sl-2": {
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-adizero-sl2",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 98.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.7,
+    "prom": 73.2
+   },
    "calce": "Wide",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide X-Wide   Narrow Norm"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 34.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.7,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 268,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 98.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.7,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 113,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 82.4,
+     "prom": 91.1
+    }
+   }
   }
  },
  "adidas-adizero-boston-13": {
@@ -307,11 +642,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-adizero-boston-13",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 70.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide   Normal Wide   Orth"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 34.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.3,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 97.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 70.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.3,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 121,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 83.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "adidas-supernova-rise-3": {
@@ -345,11 +715,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-supernova-rise-3",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 74.5,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal Wide   Orthotic"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 35,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 27.2,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 269.1,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 97.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 74.5,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.4,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 93.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "adidas-adizero-adios-pro-5": {
@@ -383,11 +792,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-adizero-adios-pro-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.4,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 69.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Normal   Normal Wide   Orthotic friendly"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 35.6,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 30,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 269.1,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 93.4,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 69.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 24.9,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.2,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 77.1,
+     "prom": 91.1
+    }
+   }
   }
  },
  "adidas-duramo-sl-2": {
@@ -439,11 +887,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-novablast-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 74.4,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide   Normal Wide X-Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 40.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 33.5,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 274.6,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 97.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 74.4,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 122.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-gel-nimbus-27": {
@@ -477,11 +964,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-gel-nimbus-27",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.8,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Narrow Normal Wide X-Wide   Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.7,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 34.4,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 97,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.8,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 119.5,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 99.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-gel-kayano-32": {
@@ -516,11 +1038,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-gel-kayano-32",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 96.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.9,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Narrow Normal Wide X-Wide   Narrow Norm"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 30.6,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 96.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.5,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 119.8,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-gt-2000-14": {
@@ -555,11 +1112,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-gt-2000-14",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 68.4,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Narrow Normal Wide X-Wide   Norm"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 36.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.2,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 94.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 68.4,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 24.9,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97.1,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-gel-cumulus-27": {
@@ -594,11 +1186,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-gel-cumulus-27",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.9,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Normal Wide X-Wide   Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 40.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 29.3,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 93.9,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.7,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 120.2,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 100.7,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-superblast-2": {
@@ -635,11 +1262,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-superblast-2",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.7,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.3,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal   Orthotic frien"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.8,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 34.6,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 270.4,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 94.7,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.3,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.7,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 118.8,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-magic-speed-4": {
@@ -672,31 +1338,105 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-magic-speed-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 74.3,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide   Normal Wide   Orth"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.5,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 32.9,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 263.3,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 93.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 74.3,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 109.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 87.4,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-metaspeed-sky": {
   "runrepeat": {
    "url": "https://runrepeat.com/asics-metaspeed-sky-plus",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 92.2,
+   "medio": null,
+   "punta": null,
    "calce": "Narrow",
-   "anchos": "Normal   Normal Wide   Normal Wide   Narrow Normal   Orthoti"
+   "calcePunta": "-",
+   "medidas": {}
   }
  },
  "new-balance-fresh-foam-x-1080-v14": {
   "runrepeat": {
    "url": "https://runrepeat.com/new-balance-fresh-foam-x-1080-v14",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.4,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 69.8,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Narrow Normal Wide X-Wide   Narr"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 37,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 32.8,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 95.4,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 69.8,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 118.8,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 94.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "new-balance-fresh-foam-x-880-v15": {
@@ -732,11 +1472,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 74.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Normal   Normal Wide   Narrow No"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.7,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 35.4,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 95,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 74.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.5,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 113.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 89.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "new-balance-fuelcell-rebel-v5": {
@@ -770,11 +1545,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/new-balance-fuel-cell-rebel-v-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 96.1,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 75,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Normal   Normal Wide X-Wide   Na"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.7,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 96.1,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 75,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.9,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 114.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 91.4,
+     "prom": 91.1
+    }
+   }
   }
  },
  "new-balance-fuelcell-sc-elite-v5": {
@@ -810,11 +1620,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.8,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 74.5,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal   Normal   Orthotic friendly"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.6,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 93.8,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 74.5,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 107,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 71.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "saucony-guide-18": {
@@ -851,11 +1696,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-guide-18",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 96.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Narrow Normal Wide X-Wide   Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 36,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 27.7,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 96.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 34.3,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 121.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 105,
+     "prom": 91.1
+    }
+   }
   }
  },
  "saucony-endorphin-speed-4": {
@@ -890,11 +1770,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-endorphin-speed-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 96.9,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 69.9,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal Wide   Normal Wide   Normal Wide   Orthotic"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 36.2,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 27.5,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 269.3,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 96.9,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 69.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.8,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 114.7,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 93.4,
+     "prom": 91.1
+    }
+   }
   }
  },
  "saucony-endorphin-pro-5": {
@@ -931,11 +1850,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-endorphin-pro-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.2,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 69.3,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal Wide   Orthotic"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 36.5,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 27.8,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 269.9,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 95.2,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 69.3,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.8,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 120.1,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 91.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "puma-velocity-nitro-4": {
@@ -966,15 +1924,50 @@
     "Perfil del corredor: Corredores neutros de nivel principiante a avanzado que buscan una zapatilla fiable para el día a día.",
     "Para entrenamientos de calidad: Puma Deviate Nitro 4 o adidas Adizero Boston 13 — placa y reactividad para los días de series y tempo"
    ],
-   "titulo": "Puma Velocity Nitro 4 desde 59,28 € (-54%) · Black Friday 2026"
+   "titulo": "Puma Velocity Nitro 4 desde 59,28 € (-54%) · Review Octubre 2026"
   },
   "runrepeat": {
    "url": "https://runrepeat.com/puma-velocity-nitro-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide X-Wide   Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.7,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 24,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 93,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 25.9,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 109.1,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 89.5,
+     "prom": 91.1
+    }
+   }
   }
  },
  "puma-deviate-nitro-4": {
@@ -1010,21 +2003,99 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/puma-deviate-nitro-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.8,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 70.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide X-Wide   Normal Wide   Or"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.6,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.6,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 268.8,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 93.8,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 70.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 112.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 85.4,
+     "prom": 91.1
+    }
+   }
   }
  },
  "puma-magmax-nitro-2": {
   "runrepeat": {
    "url": "https://runrepeat.com/puma-mag-max-nitro-2",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.4,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 70.4,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Narrow Normal   Narrow Normal Wide X-Wide   Normal"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 45.5,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 35,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 270.4,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 93.4,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 70.4,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.3,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 122.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 96.7,
+     "prom": 91.1
+    }
+   }
   }
  },
  "on-cloudmonster-3": {
@@ -1059,11 +2130,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/on-cloudmonster-3",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide   Normal Wide   Normal Wide   Normal   Or"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 38.6,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 32.2,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 270.3,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 94.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 25.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 113.7,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 90.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "on-cloudsurfer-next": {
@@ -1098,11 +2208,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/on-cloudsurfer-next",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.7,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.3,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal Wide   Orthotic"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.8,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 29.3,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 270.6,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 94.7,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.3,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.8,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 111.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 84.5,
+     "prom": 91.1
+    }
+   }
   }
  },
  "on-cloudrunner-3": {
@@ -1138,11 +2287,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/on-cloudrunner-3",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Narrow Normal Wide X-Wide   Narrow Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 36.8,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.7,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 272.6,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 95.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 25.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 118.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "on-cloudflyer-5": {
@@ -1178,11 +2366,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/on-cloudflyer-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 109.1,
+   "medio": {
+    "mm": 98.2,
+    "prom": 98.7
+   },
+   "punta": {
+    "mm": 78.4,
+    "prom": 78.6
+   },
    "calce": "Narrow",
-   "anchos": "Normal Wide   Narrow Normal Wide X-Wide   Normal Wide   Norm"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.2,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 25.3,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 270,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 98.2,
+     "prom": 98.7
+    },
+    "toebox width": {
+     "mm": 78.4,
+     "prom": 78.6
+    },
+    "midsole width - forefoot": {
+     "mm": 119,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 100.1,
+     "prom": 91.1
+    }
+   }
   }
  },
  "on-cloudboom-max": {
@@ -1217,71 +2440,264 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/on-cloudboom-max",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 76.9,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Narrow Normal Wide   Narrow Norm"
+   "calcePunta": "Wide",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.2,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 30,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 272,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 94.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 76.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.2,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 101.5,
+     "prom": 91.1
+    }
+   }
   }
  },
  "brooks-ghost-15": {
   "runrepeat": {
    "url": "https://runrepeat.com/brooks-ghost-15",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 109.1,
+   "medio": {
+    "mm": 96.8,
+    "prom": 98.7
+   },
+   "punta": {
+    "mm": 77.7,
+    "prom": 78.6
+   },
    "calce": "Narrow",
-   "anchos": "Narrow Normal Wide X-Wide   Normal   Narrow Normal Wide X-Wi",
-   "crudo": [
-    "Width / fit Narrow   -   Medium   Medium   Toebox width Medium   -   Narrow   Medium   Stiffness Flexible   Moderate   Moderate   Moderate   Torsional rigidity Moderate   ",
-    "Narrow Normal Wide X-Wide   Normal   Narrow Normal Wide X-Wide   Normal   Orthotic friendly &check; &check; &check; &check;   Season All seasons   Winter   All season",
-    "Toebox width - widest part  Brooks clearly understands that this shoe must accommodate a variety of feet. For our medium-to-wide feet, the fit was amazing.  However, the truly exceptional aspect of the ",
-    "narrow and medium to wide and extra-wide, their approach makes this one as the \"universal\" shoe. In fact, only a select few models in the market boast such a range of",
-    "Width / Fit  109.1 mm  Toebox width - big toe  We've noticed that the area for the big toe is somewhat wider compared to other shoes, which, in our view, is a positive asp",
-    "Toebox width  92.5 mm  Traction / Grip  Traction test  Adhering to the SATRA TM144 method, we recorded the Ghost 15's friction score at 0.48.  This indicates a solid forefoot grip for a road running sho",
-    "wide heel that we measured in the lab at 95.8 mm.  This further convinced us that the shoe designers in Seattle had heel-striking runners firmly in their thoughts w",
-    "Width / Fit (old method) 96.8 mm 98.7 mm   Toebox width (old method) 77.7 mm 78.6 mm   Traction / Grip   Forefoot traction 0.48 0.53   Flexibility / Stiffness   Flexibilit"
-   ]
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 36.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 23.1,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 96.8,
+     "prom": 98.7
+    },
+    "toebox width": {
+     "mm": 77.7,
+     "prom": 78.6
+    },
+    "midsole width - forefoot": {
+     "mm": 112.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 95.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "brooks-glycerin-20": {
   "runrepeat": {
    "url": "https://runrepeat.com/brooks-glycerin-20",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 109.1,
+   "medio": {
+    "mm": 95.9,
+    "prom": 98.7
+   },
+   "punta": null,
    "calce": "Narrow",
-   "anchos": "Normal   Normal Wide X-Wide   Normal   Normal   Orthotic fri"
+   "calcePunta": "-",
+   "medidas": {
+    "heel stack": {
+     "mm": 37.1,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 24.3,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 95.9,
+     "prom": 98.7
+    },
+    "midsole width - forefoot": {
+     "mm": 117.4,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 94.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "brooks-adrenaline-gts-23": {
   "runrepeat": {
    "url": "https://runrepeat.com/brooks-adrenaline-gts-23",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 109.1,
+   "medio": {
+    "mm": 99.9,
+    "prom": 98.7
+   },
+   "punta": {
+    "mm": 78.7,
+    "prom": 78.6
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Narrow Normal Wide X-Wide   Norm"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 34.1,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 21.5,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 271.5,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 99.9,
+     "prom": 98.7
+    },
+    "toebox width": {
+     "mm": 78.7,
+     "prom": 78.6
+    },
+    "midsole width - forefoot": {
+     "mm": 117.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 96.9,
+     "prom": 91.1
+    }
+   }
   }
  },
  "brooks-launch-10": {
   "runrepeat": {
    "url": "https://runrepeat.com/brooks-launch-10",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide X-Wide   Normal Wide   Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.8,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 23.8,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 267.4,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 97.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 25.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 113.8,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 83.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "brooks-hyperion": {
   "runrepeat": {
    "url": "https://runrepeat.com/brooks-hyperion",
-   "anchoPunta": 97.9,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 109.1,
+   "medio": {
+    "mm": 97.9,
+    "prom": 98.7
+   },
+   "punta": {
+    "mm": 80.3,
+    "prom": 78.6
+   },
    "calce": "Narrow",
-   "anchos": "Normal   Normal   Normal   Normal Wide   Orthotic friendly"
+   "calcePunta": "Wide",
+   "medidas": {
+    "heel stack": {
+     "mm": 30,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 17.7,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 267,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 97.9,
+     "prom": 98.7
+    },
+    "toebox width": {
+     "mm": 80.3,
+     "prom": 78.6
+    },
+    "midsole width - forefoot": {
+     "mm": 113.5,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 83.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "under-armour-velociti-3": {},
@@ -1317,11 +2733,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/under-armour-infinite-pro",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 93.6,
+   "medio": {
+    "mm": 93.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.4,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal Wide   Normal   Normal   Orthotic friendly"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 41.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 33,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 93.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.4,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 23.7,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 113.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "under-armour-infinite-elite": {
@@ -1354,11 +2805,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/under-armour-infinite-elite",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 96.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.5,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Narrow Normal Wide X-Wide   Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 31.8,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 96.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.5,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.7,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 118.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 103.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "saucony-triumph-22": {
@@ -1391,21 +2877,60 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-triumph-22",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal   Normal Wide   Orthotic"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 38.6,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.9,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 274.8,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 97.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.5,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 120.1,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 98.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "saucony-kinvara-14": {
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-kinvara-14",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 99.8,
+   "medio": null,
+   "punta": null,
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal Wide   Orthotic"
+   "calcePunta": "Narrow",
+   "medidas": {}
   }
  },
  "saucony-endorphin-elite-2": {
@@ -1439,11 +2964,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-endorphin-elite-2",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal Wide   Normal   Normal Wide   Orthotic frien"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 32.4,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 95.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.5,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.2,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 90.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-gt-1000-14": {
@@ -1477,11 +3037,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-gt-1000-14",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 74.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Normal Wide X-Wide   Narrow Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 35.4,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 25.8,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 97.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 74.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 113.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 94.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-gel-excite-11": {
@@ -1519,11 +3114,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-gel-excite-11",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 96.5,
+   "medio": {
+    "mm": 96.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.2,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Normal Wide X-Wide   Normal   Normal Wi"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 38.2,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 27.4,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 274.3,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 96.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.2,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.8,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.5,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 100.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "asics-dynablast-5": {
@@ -1558,11 +3192,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-dynablast-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.9,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Narrow Normal Wide   Normal Wide X-Wide   Normal"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.4,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 31.8,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 94.9,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 23.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 118.4,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 90.7,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-pegasus-premium": {
@@ -1597,11 +3266,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-pegasus-premium",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 91.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 70.3,
+    "prom": 73.2
+   },
    "calce": "Narrow",
-   "anchos": "Narrow Normal Wide   Narrow Normal Wide X-Wide   Normal Wide"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.8,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 31,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 91.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 70.3,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 108.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 90.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-pegasus-41": {
@@ -1636,31 +3340,95 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-pegasus-41",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.9,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Normal Wide   Normal Wide   Normal Wide",
-   "crudo": [
-    "Width / fit Medium   Medium   Wide   Medium   Toebox width Medium   Medium   Medium   Medium   Stiffness Flexible   Moderate   Moderate   Flexible   Torsional rigidity Fle",
-    "Wide X-Wide   Normal Wide   Normal Wide   Normal Wide X-Wide   Orthotic friendly &check; &check; &check; &check;   Season All seasons   All seasons   All seasons   ",
-    "Width / Fit  The Pegasus series has often been regarded as the &ldquo;default&rdquo; daily trainer in the industry&mdash;a shoe designed to follow Pareto&rsquo;s principle",
-    "widest part of the shoe, we found it to be 94.6 mm. This measurement aligns with most average workhorse trainers but leans slightly toward a snug-fit profile, a con",
-    "Width / Fit  102.4 mm  Toebox width  We had hoped for a roomier fit in the toe area with this update, but Nike retained the same tapered shape seen in other Pegasus models",
-    "toebox width.  In our experience, this keeps the fit aligned with average daily trainers, although runners seeking more space for toe splay may feel limited and prefer the anatomic design of the Altra T",
-    "Toebox width  85.0 mm  Toebox height  The Peg 41 offers an average toebox width and matches that with its vertical room.  Your browser does not support the video tag.  Through our testing, we discovered",
-    "wider landing base suitable for every runner, regardless of their footstrike.  Your browser does not support the video tag.  In the forefoot, we measured 115.6 mm, "
-   ]
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.6,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 22.2,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 273.9,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 94.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 115.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 89.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-quest-6": {
   "runrepeat": {
    "url": "https://runrepeat.com/nike-quest-6",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.1,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.7,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Normal Wide   Normal   Orthotic friendly"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 35.2,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 23.2,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 94.1,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.7,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.1,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 88.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-revolution-8": {
@@ -1693,11 +3461,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-revolution-8",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.1,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 71.3,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Normal Wide   Normal   Normal Wide X-Wi"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 31.8,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 23,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 93.1,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 71.3,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 23.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 112.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 90,
+     "prom": 91.1
+    }
+   }
   }
  },
  "adidas-adistar-5": {
@@ -1765,21 +3568,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-ultraboost-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 98.4,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 78.6,
+    "prom": 73.2
+   },
    "calce": "Wide",
-   "anchos": "Normal   Normal Wide   Normal Wide   Normal Wide X-Wide   Or",
-   "crudo": [
-    "wide feet   Comparison  The most similar running shoes compared  Words (e.g. &quot;High&quot;)  Numbers (e.g. &quot;73%&quot;)  adidas Ultraboost 5   adidas Adizero",
-    "Width / fit Wide   Medium   Medium   Narrow   Toebox width Wide   Medium   Narrow   -   Stiffness Stiff   Flexible   Stiff   Moderate   Torsional rigidity Stiff   Stiff   ",
-    "Wide   Normal Wide   Normal Wide X-Wide   Orthotic friendly &check; &check; &check; &check;   Season Summer All seasons   Summer All seasons   Summer All seasons   ",
-    "Width / Fit  adidas tried both extremes with the shoe dimensions between the narrow Ultraboost 1.0 and the wide Ultraboost Light. That's why we weren&rsquo;t sure which di",
-    "wide and spacious, coming in at a generous 98.4 mm. We found that this is a true blessing for those with broader feet, although makes this one unsuitable for runner",
-    "narrow feet.  Test results  Ultraboost 5 98.4 mm   Average 95.2 mm   Compared to 366 running shoes  Number of shoes  88.5 mm  Width / Fit  102.4 mm  Toebox width  We ",
-    "Toebox width  85.0 mm  Toebox height  To complete the picture, the vertical height is on the more spacious side at 27.9 mm, which can improve after some weeks thanks to the stretchy material of the uppe",
-    "widest heel (94.3 mm) in its series to date.  We believe that this feature, combined with the Torsion System and large plastic clips on the sides of the heel, provi"
-   ]
+   "calcePunta": "Wide",
+   "medidas": {
+    "heel stack": {
+     "mm": 35.2,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 24.6,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 269.8,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 98.4,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 78.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.9,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 115.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 94.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "adidas-adizero-takumi-sen-10": {
@@ -1813,11 +3645,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-adizero-takumi-sen-10",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 109.1,
+   "medio": {
+    "mm": 96.6,
+    "prom": 98.7
+   },
+   "punta": {
+    "mm": 75.2,
+    "prom": 78.6
+   },
    "calce": "Narrow",
-   "anchos": "Normal   Normal   Normal Wide   Normal Wide   Orthotic frien"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 30.6,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 22.8,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 269.4,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 96.6,
+     "prom": 98.7
+    },
+    "toebox width": {
+     "mm": 75.2,
+     "prom": 78.6
+    },
+    "midsole width - forefoot": {
+     "mm": 110.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 75.8,
+     "prom": 91.1
+    }
+   }
   }
  },
  "puma-foreverrun-nitro-2": {
@@ -1851,11 +3718,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/puma-foreverrun-nitro-2",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 92.9,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.1,
+    "prom": 73.2
+   },
    "calce": "Narrow",
-   "anchos": "Normal Wide   Normal Wide   Narrow Normal Wide X-Wide   Norm"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 35.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.5,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 92.9,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 121.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "puma-velocity-nitro-5": {
@@ -1890,11 +3792,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/puma-velocity-nitro-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 92.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.1,
+    "prom": 73.2
+   },
    "calce": "Narrow",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide   Normal   Orthotic"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 31.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.1,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 267.6,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 92.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 26.3,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 111,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 91.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "nike-pegasus-trail-5-gtx": {
@@ -1926,31 +3867,144 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/nike-pegasus-trail-5-gtx",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 96.7,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 76.5,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal   Normal   Normal Wide   Normal   Season Winte"
+   "calcePunta": "Wide",
+   "medidas": {
+    "heel stack": {
+     "mm": 32.1,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 23.8,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 270.6,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 96.7,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 76.5,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 26.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 110.4,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 86.1,
+     "prom": 90.4
+    }
+   }
   }
  },
  "nike-kiger-9": {
   "runrepeat": {
    "url": "https://runrepeat.com/nike-terra-kiger-9",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 104.9,
+   "medio": {
+    "mm": 103.1,
+    "prom": 99.2
+   },
+   "punta": {
+    "mm": 78.3,
+    "prom": 79.5
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Normal Wide   Normal   Season All seasons"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 30.1,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 25.7,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 268.2,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 103.1,
+     "prom": 99.2
+    },
+    "toebox width": {
+     "mm": 78.3,
+     "prom": 79.5
+    },
+    "midsole width - forefoot": {
+     "mm": 115.3,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 89.9,
+     "prom": 90.4
+    }
+   }
   }
  },
  "nike-zegama-2": {
   "runrepeat": {
    "url": "https://runrepeat.com/nike-zegama-2",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 97.5,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 76.4,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal   Normal   Season All sea"
+   "calcePunta": "Wide",
+   "medidas": {
+    "heel stack": {
+     "mm": 30.3,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 26.3,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 268.8,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 97.5,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 76.4,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 27.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 114.9,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 94.4,
+     "prom": 90.4
+    }
+   }
   }
  },
  "asics-gel-trabuco-13": {
@@ -1984,11 +4038,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/asics-gel-trabuco-13",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 97.8,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 72.6,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal   Narrow Normal Wide   Normal   Normal   Season All s"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 33.8,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 26.8,
+     "prom": 25.7
+    },
+    "width / fit": {
+     "mm": 97.8,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 72.6,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 26.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 115.2,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 96.3,
+     "prom": 90.4
+    }
+   }
   }
  },
  "adidas-terrex-agravic-4": {
@@ -2024,11 +4113,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/adidas-terrex-agravic-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 97.9,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 73,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Normal   Normal   Season Winter   All seas"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 32.6,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 23.5,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 275.1,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 97.9,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 73,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 25.9,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 119.4,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 87.7,
+     "prom": 90.4
+    }
+   }
   }
  },
  "saucony-peregrine-15": {
@@ -2060,11 +4188,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-peregrine-15",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 95.5,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 70.9,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal   Normal   For heavy runn"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 29.5,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 25.8,
+     "prom": 25.7
+    },
+    "width / fit": {
+     "mm": 95.5,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 70.9,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 28.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 90.5,
+     "prom": 90.4
+    }
+   }
   }
  },
  "on-cloudultra-3": {
@@ -2097,11 +4260,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/on-cloudultra-3",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 93.4,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 72.4,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal Wide   Normal Wide   Normal Wide   For heavy"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 32.1,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 26.7,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 269.1,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 93.4,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 72.4,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 29,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.9,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 92,
+     "prom": 90.4
+    }
+   }
   }
  },
  "hoka-clifton-10": {
@@ -2136,11 +4338,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-clifton-10",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.2,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Normal Wide X-Wide   Narrow Norm"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 44.4,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 32,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 97.2,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.3,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 94.5,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-bondi-9": {
@@ -2173,11 +4410,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-bondi-9",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.1,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.5,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide X-Wide   Normal Wide   Normal Wide X-Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 41.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 32.2,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 94.1,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.5,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.6,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 123.2,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 104.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-mach-6": {
@@ -2212,11 +4484,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-mach-6",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 70.1,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide   Normal Wide   Orth"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 36,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.4,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 264.3,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 95.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 70.1,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 30,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 113.9,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 93.7,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-mach-7": {
@@ -2252,11 +4563,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-mach-7",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 92.5,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.9,
+    "prom": 73.2
+   },
    "calce": "Narrow",
-   "anchos": "Normal Wide   Normal Wide   Narrow Normal Wide X-Wide   Narr"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 35.6,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.2,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 265.5,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 92.5,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 115.5,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 93.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-mach-x-3": {
@@ -2291,11 +4641,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-mach-x-3",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 91.6,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 70.8,
+    "prom": 73.2
+   },
    "calce": "Narrow",
-   "anchos": "Normal Wide   Normal Wide   Narrow Normal Wide X-Wide   Norm"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.9,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 33.4,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 91.6,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 70.8,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.5,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 115.4,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 89.1,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-arahi-8": {
@@ -2329,11 +4714,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-arahi-8",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 73.6,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Narrow Normal Wide X-Wide   Normal Wide"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.4,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.1,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 95.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 73.6,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.6,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.6,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 96.3,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-gaviota-6": {
@@ -2368,11 +4788,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-gaviota-6",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 97.2,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 76.7,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide X-Wide   Narrow Normal Wide   Normal Wide   Narr"
+   "calcePunta": "Wide",
+   "medidas": {
+    "heel stack": {
+     "mm": 36,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 28.7,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 266.8,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 97.2,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 76.7,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 120,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 105.6,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-rincon-4": {
@@ -2407,11 +4866,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-rincon-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 92.4,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 70.2,
+    "prom": 73.2
+   },
    "calce": "Narrow",
-   "anchos": "Normal Wide   Normal Wide X-Wide   Narrow Normal Wide X-Wide"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 36,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.6,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 268,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 92.4,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 70.2,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 25.2,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 97,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-skyflow": {
@@ -2444,11 +4942,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-skyflow",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 94.3,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 69.5,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal   Normal   Orthotic frien"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 39.3,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 30.6,
+     "prom": 27.1
+    },
+    "internal length": {
+     "mm": 269.6,
+     "prom": 269.3
+    },
+    "width / fit": {
+     "mm": 94.3,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 69.5,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 27.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.3,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 94.7,
+     "prom": 91.1
+    }
+   }
   }
  },
  "hoka-speedgoat-6": {
@@ -2484,21 +5021,95 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-speedgoat-6",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 95.6,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 73,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Narrow Normal Wide   Normal   Normal Wide   Fo"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 32.1,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 27.2,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 270.4,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 95.6,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 73,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 26.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.7,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 94.1,
+     "prom": 90.4
+    }
+   }
   }
  },
  "hoka-challenger-atr-8": {
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-challenger-8",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 96.5,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 72.8,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal   For heavy runn"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 40.2,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 30.1,
+     "prom": 25.7
+    },
+    "width / fit": {
+     "mm": 96.5,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 72.8,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 28.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 115.3,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 99.6,
+     "prom": 90.4
+    }
+   }
   }
  },
  "hoka-mafate-5": {
@@ -2535,11 +5146,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/hoka-mafate-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 95.5,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 74.2,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Normal Wide   Normal Wide   For heavy runn"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 42.9,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 33.9,
+     "prom": 25.7
+    },
+    "width / fit": {
+     "mm": 95.5,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 74.2,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 25.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 119.2,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 98.7,
+     "prom": 90.4
+    }
+   }
   }
  },
  "hoka-torrent-4": {
@@ -2587,11 +5233,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/salomon-genesis-2",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 94.5,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 71.6,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Narrow Normal Wide   Normal   Normal Wide   Normal   Season"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 32.7,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 24,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 272.7,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 94.5,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 71.6,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 25.7,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 109.5,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 89.7,
+     "prom": 90.4
+    }
+   }
   }
  },
  "salomon-ultra-glide-4": {
@@ -2621,22 +5306,96 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/salomon-ultra-glide-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 94,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 71.4,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal   Normal Wide   For heavy runn"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 38.6,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 31.1,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 272,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 94,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 71.4,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 28.8,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 112.9,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 93.8,
+     "prom": 90.4
+    }
+   }
   }
  },
  "salomon-ultra-flow-2": {},
  "salomon-slab-pulsar-4": {
   "runrepeat": {
    "url": "https://runrepeat.com/salomon-s-lab-pulsar-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 94.9,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 74,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Narrow Normal   Narrow Normal Wide   Normal"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 32.6,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 25.5,
+     "prom": 25.7
+    },
+    "width / fit": {
+     "mm": 94.9,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 74,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 31,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 106,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 84.1,
+     "prom": 90.4
+    }
+   }
   }
  },
  "la-sportiva-prodigio-pro": {
@@ -2672,11 +5431,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/la-sportiva-prodigio-pro",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 92,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 72.4,
+    "prom": 74.3
+   },
    "calce": "Narrow",
-   "anchos": "Normal   Normal   Normal   Normal   Season All seasons   All"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 29.4,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 25.3,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 263,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 92,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 72.4,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 23.9,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.1,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 86.1,
+     "prom": 90.4
+    }
+   }
   }
  },
  "la-sportiva-prodigio-max": {
@@ -2711,11 +5509,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/la-sportiva-prodigio-max",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 91.3,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 68.3,
+    "prom": 74.3
+   },
    "calce": "Narrow",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal Wide   Season Al"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 35.1,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 28,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 266.2,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 91.3,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 68.3,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 25.8,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 117.6,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 91.4,
+     "prom": 90.4
+    }
+   }
   }
  },
  "saucony-endorphin-speed-5": {
@@ -2750,11 +5587,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-endorphin-speed-5",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 93.8,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.9,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal   Normal Wide   Orthotic"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 37.4,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 26.8,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 93.8,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 29.3,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 118.1,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 95,
+     "prom": 91.1
+    }
+   }
   }
  },
  "saucony-peregrine-16": {
@@ -2787,11 +5659,50 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-peregrine-16",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 96.9,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 70.3,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal   Normal Wide   Normal   Season All sea"
+   "calcePunta": "Narrow",
+   "medidas": {
+    "heel stack": {
+     "mm": 31.7,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 26.9,
+     "prom": 25.7
+    },
+    "internal length": {
+     "mm": 270.6,
+     "prom": 269.2
+    },
+    "width / fit": {
+     "mm": 96.9,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 70.3,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 27.4,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 118.4,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 92.2,
+     "prom": 90.4
+    }
+   }
   }
  },
  "saucony-hurricane-25": {
@@ -2826,11 +5737,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-hurricane-25",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 102.4,
+   "medio": {
+    "mm": 95.1,
+    "prom": 95.2
+   },
+   "punta": {
+    "mm": 72.9,
+    "prom": 73.2
+   },
    "calce": "Medium",
-   "anchos": "Normal Wide   Normal Wide   Normal Wide X-Wide   Narrow Norm"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 40.2,
+     "prom": 35.6
+    },
+    "forefoot stack": {
+     "mm": 33.1,
+     "prom": 27.1
+    },
+    "width / fit": {
+     "mm": 95.1,
+     "prom": 95.2
+    },
+    "toebox width": {
+     "mm": 72.9,
+     "prom": 73.2
+    },
+    "toebox height": {
+     "mm": 28.1,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 124.4,
+     "prom": 115.1
+    },
+    "midsole width - heel": {
+     "mm": 102.2,
+     "prom": 91.1
+    }
+   }
   }
  },
  "saucony-surge-3": {},
@@ -2867,11 +5813,46 @@
   },
   "runrepeat": {
    "url": "https://runrepeat.com/saucony-xodus-ultra-4",
-   "anchoPunta": null,
-   "anchoPuntaDedos": null,
-   "anchoMedio": 100.5,
+   "medio": {
+    "mm": 96.6,
+    "prom": 95.7
+   },
+   "punta": {
+    "mm": 71.6,
+    "prom": 74.3
+   },
    "calce": "Medium",
-   "anchos": "Normal   Normal   Normal   Normal   For heavy runners"
+   "calcePunta": "Medium",
+   "medidas": {
+    "heel stack": {
+     "mm": 37.6,
+     "prom": 32.9
+    },
+    "forefoot stack": {
+     "mm": 31.1,
+     "prom": 25.7
+    },
+    "width / fit": {
+     "mm": 96.6,
+     "prom": 95.7
+    },
+    "toebox width": {
+     "mm": 71.6,
+     "prom": 74.3
+    },
+    "toebox height": {
+     "mm": 24.5,
+     "prom": 27
+    },
+    "midsole width - forefoot": {
+     "mm": 116.7,
+     "prom": 114.2
+    },
+    "midsole width - heel": {
+     "mm": 97.3,
+     "prom": 90.4
+    }
+   }
   }
  }
 }

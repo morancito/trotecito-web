@@ -1,0 +1,317 @@
+{
+ "asics-gel-kayano-32": [
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-kayano-32-hombre/AS1011C052101.html",
+   "nombre": "Asics Gel-Kayano 32",
+   "nota": "Hombre",
+   "color": "Blanco",
+   "foto": "asics-gel-kayano-32/5.jpg",
+   "precio": 189999,
+   "antes": 319999,
+   "talles": [
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-kayano-32-mujer/AS1012B838003.html",
+   "nombre": "Asics Gel-Kayano 32",
+   "nota": "Mujer",
+   "color": "Negro Disciplina",
+   "foto": "asics-gel-kayano-32/6.jpg",
+   "precio": 239999,
+   "antes": 319999,
+   "talles": [
+    "37",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-kayano-32-mujer/AS1012B838101.html",
+   "nombre": "zapatillas running asics gel kayano 32 mujer",
+   "nota": "Mujer",
+   "color": "Blanco Disciplina",
+   "foto": "asics-gel-kayano-32/7.jpg",
+   "precio": 239999,
+   "antes": 319999,
+   "talles": [
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Vanguard Deportes",
+   "url": "https://vanguarddeportes.com.ar/productos/zapatilla-asics-running-gel-kayano-32-hombre-azul-negro/",
+   "nombre": "Asics Gel-Kayano 32",
+   "nota": "",
+   "color": null,
+   "foto": "asics-gel-kayano-32/2.webp",
+   "precio": 299000,
+   "antes": null,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "nike-pegasus-41": [
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-air-zoom-pegasus-41-mujer/NIHF7362-900.html",
+   "nombre": "zapatillas running nike air zoom pegasus 41 mujer",
+   "nota": "Mujer",
+   "color": "Blanco Disciplina",
+   "foto": "nike-pegasus-41/4.jpg",
+   "precio": 84999,
+   "antes": 279999,
+   "talles": [
+    "34.5",
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-41-hombre/NIFD2722-401.html",
+   "nombre": "Nike Pegasus 41",
+   "nota": "Hombre",
+   "color": "Azul Disciplina",
+   "foto": "nike-pegasus-41/2.jpg",
+   "precio": 139999,
+   "antes": 279999,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "40.5",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-nike-pegasus-41-mujer/NIFD2723-605.html",
+   "nombre": "Nike Pegasus 41",
+   "nota": "Mujer",
+   "color": "Rosa Disciplina",
+   "foto": "nike-pegasus-41/3.jpg",
+   "precio": 159999,
+   "antes": 279999,
+   "talles": [
+    "35"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "hoka-clifton-10": [
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/m-clifton-101162030-bblc-hot000014015.html",
+   "nombre": "Hoka Clifton 10",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "hoka-clifton-10/2.jpg",
+   "precio": 276500,
+   "antes": null,
+   "talles": [
+    "40",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/w-clifton-101162031-grtm-hot000019185.html",
+   "nombre": "Hoka Clifton 10",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "hoka-clifton-10/5.jpg",
+   "precio": 276500,
+   "antes": null,
+   "talles": [
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/w-clifton-10-1162031-brgl-hot000019b57.html",
+   "nombre": "Clifton 10 W",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "hoka-clifton-10/8.jpg",
+   "precio": 276500,
+   "antes": null,
+   "talles": [
+    "36.5",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-hombre-oltm/",
+   "nombre": "Hoka Clifton 10",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "hoka-clifton-10/3.webp",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "9"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-mujer-gris-grtm-1515g/",
+   "nombre": "Hoka Clifton 10",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "hoka-clifton-10/4.webp",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "7"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-mujer-vainilla-vch-d4csm/",
+   "nombre": "Zapatilla Hoka Clifton 10 Mujer -Vainilla - VCH",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "hoka-clifton-10/6.webp",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "7"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-hombre-azul-y-blanca/",
+   "nombre": "Zapatilla Hoka Clifton 10 Hombre - Azul y Blanca",
+   "nota": "Hombre",
+   "color": "Azul y Blanca",
+   "foto": "hoka-clifton-10/7.webp",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "9"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-clifton-10-hombre-gris-ptyg-1j968/",
+   "nombre": "Zapatilla Hoka Clifton 10 Hombre - Gris - PTYG",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "hoka-clifton-10/9.webp",
+   "precio": 299999,
+   "antes": null,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "11",
+    "11.5",
+    "12"
+   ],
+   "sistema": "US"
+  }
+ ],
+ "saucony-endorphin-speed-5": [
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/sat000069804-endorphin-speed-5-m.html",
+   "nombre": "Saucony Endorphin Speed 5",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "saucony-endorphin-speed-5/2.jpg",
+   "precio": 249000,
+   "antes": null,
+   "talles": [
+    "41.5",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/sat000098185-endorphin-speed-5-w-coral-salm.html",
+   "nombre": "Saucony Endorphin Speed 5",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "saucony-endorphin-speed-5/4.jpg",
+   "precio": 249900,
+   "antes": null,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-endorphin-speed-5-mujer-blanca-rr8a6/",
+   "nombre": "Saucony Endorphin Speed 5",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "saucony-endorphin-speed-5/3.webp",
+   "precio": 249999,
+   "antes": null,
+   "talles": [
+    "7"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-speed-5-de-hombre-s1013681004-000/p",
+   "nombre": "Saucony Endorphin Speed 5",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "saucony-endorphin-speed-5/5.jpg",
+   "precio": 249999,
+   "antes": null,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  }
+ ]
+}

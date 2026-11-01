@@ -109,8 +109,13 @@ hexd = lambda rgb: "#%02X%02X%02X" % rgb
 dist = lambda a, b: sum((a[i] - b[i]) ** 2 for i in range(3)) ** .5
 
 datos = json.load(open(f"{RAIZ}/scripts/colores.json"))
-final = {}
+# solo los modelos que se buscaron en esta corrida (las fotos crudas no se guardan); el resto queda como estaba
+try: final = json.load(open(f"{RAIZ}/scripts/colores-final.json"))
+except Exception: final = {}
+try: hechos = set(x.strip() for x in open(f"{RAIZ}/scripts/colores-hechos.txt") if x.strip())
+except Exception: hechos = set(datos)
 for slug, vs in datos.items():
+    if slug not in hechos or not os.path.isdir(f"{SRC}/{slug}"): continue
     os.makedirs(f"{DST}/{slug}", exist_ok=True)
     for f in os.listdir(f"{DST}/{slug}"):
         if re.match(r"c\d+\.webp$", f): os.remove(f"{DST}/{slug}/{f}")
@@ -123,6 +128,7 @@ for slug, vs in datos.items():
         dom = dominantes(im)
         if not dom: continue
         # mismo color que uno ya elegido (otra tienda o el otro género): queda el más barato, que es el primero
+        if len(elegidas) >= 10: break
         rep = next((e for e in elegidas if dist(e["_d"][0][0], dom[0][0]) < 48 and (len(dom) < 2 or len(e["_d"]) < 2 or dist(e["_d"][1][0], dom[1][0]) < 70)), None)
         if rep:
             rep["otras"].append({k: v[k] for k in ("tienda", "url", "precio", "nota")}); continue

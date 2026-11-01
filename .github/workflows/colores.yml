@@ -1,7 +1,8 @@
 name: Buscar colores
 
 # Busca en las tiendas todas las variantes de color de cada modelo, baja la foto de cada una y la procesa.
-# Deja scripts/colores.json, scripts/colores-final.json y public/fotos/<modelo>/c<n>.webp para revisar.
+# Deja scripts/colores.json, scripts/colores-final.json y public/fotos/<modelo>/c<n>.webp.
+# Corre en tandas: si se le acaba el tiempo guarda lo hecho y se vuelve a lanzar sola con los modelos que faltan.
 on:
   workflow_dispatch:
     inputs:
@@ -9,14 +10,23 @@ on:
         description: "Slugs separados por espacio (vacío = todos)"
         required: false
         default: ""
+      faltantes:
+        description: "Saltar los modelos que ya tienen colores"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
+  actions: write
+
+concurrency:
+  group: colores
+  cancel-in-progress: false
 
 jobs:
   colores:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,6 +35,8 @@ jobs:
       - name: Buscar variantes
         env:
           MODELOS: ${{ inputs.modelos }}
+          FALTANTES: ${{ inputs.faltantes && '1' || '' }}
+          MINUTOS: "280"
         run: node scripts/colores.mjs $MODELOS
       - name: Procesar fotos
         run: |
@@ -34,5 +46,12 @@ jobs:
         run: |
           git config user.name "trotecito-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git status --short | head -20
           git add scripts/colores.json scripts/colores-final.json public/fotos
-          git diff --cached --quiet || (git commit -m "Colores de cada modelo para revisar" && git pull --rebase && git push)
+          git diff --cached --quiet || git commit -m "Colores de cada modelo"
+          for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 10; done
+      - name: Seguir con los que faltan
+        if: hashFiles('scripts/colores-faltan.txt') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run colores.yml --ref main -f faltantes=true

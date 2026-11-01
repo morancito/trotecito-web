@@ -6,3 +6,5 @@ dist
 scripts/fotos-nuevas/*/
 scripts/videos/
 scripts/colores-fotos/
+scripts/colores-hechos.txt
+scripts/colores-faltan.txt

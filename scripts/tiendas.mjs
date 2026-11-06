@@ -86,8 +86,14 @@ function magento(h, texto) {
 
 /* ---------- Tiendanube: variantes en data-variants ---------- */
 function tiendanube(h, texto) {
-  const m = h.match(/data-variants="([^"]+)"/) || h.match(/data-variants='([^']+)'/);
-  if (!m) return null;
+  /* la página trae también "compra rápida" de otros productos (recomendados, carrito): vale el bloque del producto principal */
+  const todos = [...h.matchAll(/data-variants=(?:"([^"]+)"|'([^']+)')/g)].map(x => {
+    const antes = h.slice(Math.max(0, x.index - 400), x.index), tag = antes.slice(antes.lastIndexOf("<"));
+    return { v: x[1] ?? x[2], principal: /single-product|js-product-detail/.test(tag), rapida: /quickshop/.test(tag) };
+  });
+  const elegido = todos.find(x => x.principal) || todos.find(x => !x.rapida) || todos[0];
+  if (!elegido) return null;
+  const m = [null, elegido.v];
   let vs; try { vs = JSON.parse(desescapar(m[1])); } catch { return null; }
   const disp = vs.filter(v => v.available !== false && (v.stock == null || v.stock > 0));
   if (!disp.length) return { sinStock: true };

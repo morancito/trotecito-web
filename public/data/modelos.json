@@ -1929,6 +1929,20 @@
      "sistema": "AR"
     },
     {
+     "tienda": "Stock Center",
+     "precio": 167999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADJP8689.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Sporting",
      "precio": 174999,
      "cuotas": "12 cuotas sin interés",
@@ -1947,6 +1961,23 @@
      "sistema": "AR"
     },
     {
+     "tienda": "NewSport",
+     "precio": 195999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-hombre-jp8680/p",
+     "fecha": "06/11/2026",
+     "antes": 280000,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Dexter",
      "precio": 251999,
      "cuotas": "2 cuotas sin interés",
@@ -1958,6 +1989,38 @@
       "35.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 251999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 279200,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-1cb37/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     },
     {
      "tienda": "adidas.com.ar",
@@ -2008,50 +2071,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Stock Center",
-     "precio": 167999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADJP8689.html",
-     "fecha": "06/11/2026",
-     "antes": 279999,
-     "nota": "Hombre",
-     "talles": [
-      "43",
-      "43.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Stock Center",
-     "precio": 251999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
-     "fecha": "06/11/2026",
-     "antes": 279999,
-     "nota": "Mujer",
-     "talles": [
-      "35.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "NewSport",
-     "precio": 195999,
-     "cuotas": "9 cuotas sin interés",
-     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-hombre-jp8680/p",
-     "fecha": "06/11/2026",
-     "antes": 280000,
-     "nota": "Hombre",
-     "talles": [
-      "39",
-      "39.5",
-      "40",
-      "41",
-      "41.5"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "NewSport",
      "precio": 279999,
      "cuotas": "9 cuotas sin interés",
@@ -2072,23 +2091,11 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Vorax Running",
-     "precio": 279200,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-1cb37/",
-     "fecha": "06/11/2026",
-     "talles": [
-      "7",
-      "7.5",
-      "8",
-      "8.5",
-      "9",
-      "9.5",
-      "10",
-      "10.5",
-      "11"
-     ],
-     "sistema": "US"
+     "tienda": "Digital Sport",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-supernova-rise-3-adidas-722050/",
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],
@@ -2481,6 +2488,13 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 139999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-duramo-sl2-adidas-722374/",
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],
@@ -6931,6 +6945,25 @@
      "sistema": "US"
     },
     {
+     "tienda": "NewSport",
+     "precio": 129999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-mujer-hj8485006/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Dexter",
      "precio": 139999,
      "cuotas": "2 cuotas sin interés",
@@ -7054,23 +7087,12 @@
      "sistema": "AR"
     },
     {
-     "tienda": "NewSport",
-     "precio": 129999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-mujer-hj8485006/p",
-     "fecha": "06/11/2026",
+     "tienda": "Digital Sport",
+     "precio": 139999,
+     "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
-     "talles": [
-      "35",
-      "35.5",
-      "36",
-      "37",
-      "37.5",
-      "38",
-      "39",
-      "41"
-     ],
-     "sistema": "AR"
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-w-nike-revolution-8-nike-729948/",
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],
@@ -11693,6 +11715,14 @@
    "ver": "",
    "tiendas": [
     {
+     "tienda": "Digital Sport",
+     "precio": 248999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-wmns-nike-structure-plus-nike-707280/",
+     "fecha": "06/11/2026"
+    },
+    {
      "tienda": "Sporting",
      "precio": 279999,
      "cuotas": "12 cuotas sin interés",
@@ -11726,6 +11756,23 @@
      "sistema": "US"
     },
     {
+     "tienda": "NewSport",
+     "precio": 339999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-hombre-hq3049500/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Nike",
      "precio": 349999,
      "cuotas": "12 cuotas sin interés",
@@ -11753,23 +11800,6 @@
       "35.5",
       "36",
       "37.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "NewSport",
-     "precio": 339999,
-     "cuotas": "9 cuotas sin interés",
-     "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-hombre-hq3049500/p",
-     "fecha": "06/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "37.5",
-      "38",
-      "39",
-      "39.5",
-      "40",
-      "41"
      ],
      "sistema": "AR"
     }

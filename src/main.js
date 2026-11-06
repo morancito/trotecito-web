@@ -524,7 +524,7 @@ function recoPregunta() {
   if (q.tipo === "modelo" && !actualTmp && resp.actual) { const [sl, , lab] = String(resp.actual).split("|"); if (sl) actualTmp = { slug: sl, label: lab }; }
   return `<a class="back" href="#">← Volver al inicio</a>
   <div class="rq"><div class="rq-top"><span class="kicker">Tu zapa · ${paso + 1} de ${total}</span><div class="rq-bar"><i style="width:${(paso + 1) / total * 100}%"></i></div></div>
-    <h1 class="cond">${q.t}</h1>
+    <h1 class="cond">${q.t}</h1>${q.sub ? `<p class="rq-sub">${q.sub}</p>` : ""}
     ${q.tipo === "modelo" ? preguntaModelo() : `<div class="rq-ops${q.grid ? " grid" : ""}">${opsDe(q).map(([v, t]) => `<button type="button" data-v="${esc(v)}" aria-pressed="${String(resp[q.k]) === String(v)}">${t}</button>`).join("")}</div>`}
     ${paso > 0 || Object.keys(resp).length ? `<div class="rq-nav">${paso > 0 ? `<button type="button" class="rq-atras" data-atras>← Pregunta anterior</button>` : "<span></span>"}<button type="button" class="rq-reiniciar" data-reiniciar>↺ Reiniciar</button></div>` : ""}</div>`;
 }
@@ -564,6 +564,25 @@ const utilHtml = k => { const r = utilLeer(k);
   if (r === "no?") return `<p><b>¿Qué faltó?</b></p><div class="util-ops">${MOTIVOS.map(m => `<button type="button" data-motivo="${esc(m)}">${esc(m)}</button>`).join("")}</div>`;
   if (r) return `<p class="util-ok">¡Gracias! Lo usamos para mejorar las recomendaciones.</p>`;
   return `<p><b>¿Estas recomendaciones te ayudan a decidir?</b></p><div class="util-ops"><button type="button" data-util="si">Sí</button><button type="button" data-util="no">No</button></div>`; };
+/* la pantalla de "analizando": cada paso es algo que el recomendador hace de verdad con tus respuestas */
+function pensando() {
+  const rapido = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const conPrecio = DATA.filter(d => d.todas.length), tiendas = new Set(DATA.flatMap(d => d.todas.map(t => t.tienda))).size;
+  const precios = DATA.reduce((a, d) => a + d.todas.length, 0), terreno = resp.terreno === "Trail" ? "de trail" : "de asfalto";
+  const pasos = [
+    `Leyendo tu perfil: ${[resp.uso?.toLowerCase(), resp.kg ? `${resp.kg} kg` : "", resp.pis === "Pronadora" ? "pisada pronadora" : resp.pis === "Supinadora" ? "pisada supinadora" : "pisada neutra"].filter(Boolean).join(", ")}`,
+    `Comparando ${conPrecio.filter(d => (d.terreno || "Asfalto") === resp.terreno).length} zapas ${terreno}: espuma, drop, peso y placa`,
+    `Cruzando con lo que dicen las reviews de RunRepeat, Foroatletismo y Correr una Maratón`,
+    resp.pie === "ancho" || resp.pie === "angosto" ? `Filtrando por horma para pie ${resp.pie}` : `Midiendo la horma de cada modelo`,
+    `Revisando ${precios.toLocaleString("es-AR")} precios en ${tiendas} tiendas${resp.talle ? ` y quién tiene el ${resp.talle}` : ""}`,
+    `Eligiendo tus 3`];
+  $("#reco").innerHTML = `<div class="pensando" role="status" aria-live="polite"><div class="pz-ico" aria-hidden="true"><span>✦</span></div>
+    <h1 class="cond">Analizando <em>tu perfil</em></h1><ol class="pz-pasos">${pasos.map(p => `<li>${esc(p)}</li>`).join("")}</ol></div>`;
+  window.scrollTo(0, 0);
+  const lis = [...document.querySelectorAll(".pz-pasos li")], t = rapido ? 120 : 620;
+  return new Promise(ok => { lis.forEach((li, i) => setTimeout(() => { lis[i - 1]?.classList.replace("on", "ok"); li.classList.add("on"); }, i * t));
+    setTimeout(ok, lis.length * t + (rapido ? 100 : 500)); });
+}
 function pintarReco() {
   const listo = PREGUNTAS.every(q => resp[q.k] !== undefined);
   $("#reco").innerHTML = listo && paso >= PREGUNTAS.length ? recoResultado() : recoPregunta();
@@ -576,7 +595,8 @@ $("#reco").addEventListener("click", e => {
     medir("reco_paso", { n: paso + 1, k: q.k, v: q.k === "actual" ? String(resp.actual).split("|").slice(0, 2).join("|") : String(resp[q.k]) });
     if (q.k === "terreno" && resp.uso && !opsDe(PREGUNTAS.find(x => x.k === "uso")).some(([v]) => v === resp.uso)) delete resp.uso;
     paso++; if (paso >= PREGUNTAS.length) { guardar(RESP_K, JSON.stringify(resp));
-      medir("reco_fin", { ...resp, picks: recomendar(DATA, resp).picks.map(p => p.d.slug) }); if (resp.gen !== GEN || resp.talle !== TALLE) { GEN = resp.gen; TALLE = resp.talle || ""; guardar("trotecito-gen", GEN); guardar("trotecito-talle", TALLE || null); aplicarGenero(); pintarOfertas(); } }
+      medir("reco_fin", { ...resp, picks: recomendar(DATA, resp).picks.map(p => p.d.slug) }); if (resp.gen !== GEN || resp.talle !== TALLE) { GEN = resp.gen; TALLE = resp.talle || ""; guardar("trotecito-gen", GEN); guardar("trotecito-talle", TALLE || null); aplicarGenero(); pintarOfertas(); }
+      pensando().then(pintarReco); return; }
     pintarReco(); return; }
   const u = e.target.closest("[data-util],[data-motivo]");
   if (u) { const picks = recomendar(DATA, resp).picks, k = utilClave(picks), sl = picks.map(p => p.d.slug);

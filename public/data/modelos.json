@@ -257,10 +257,10 @@
    "id": 1,
    "slug": "adidas-adizero-evo-sl",
    "fotos": [
-    "fotos/adidas-adizero-evo-sl/1.webp",
-    "fotos/adidas-adizero-evo-sl/2.webp",
-    "fotos/adidas-adizero-evo-sl/3.webp",
-    "fotos/adidas-adizero-evo-sl/4.webp"
+    "fotos/adidas-adizero-evo-sl/1.webp?v=d4126262",
+    "fotos/adidas-adizero-evo-sl/2.webp?v=67405cb0",
+    "fotos/adidas-adizero-evo-sl/3.webp?v=8c8f39da",
+    "fotos/adidas-adizero-evo-sl/4.webp?v=419c1bd2"
    ],
    "terreno": "Asfalto",
    "horma": "normal",
@@ -484,10 +484,10 @@
    "id": 2,
    "slug": "nike-pegasus-42",
    "fotos": [
-    "fotos/nike-pegasus-42/1.webp",
-    "fotos/nike-pegasus-42/2.webp",
-    "fotos/nike-pegasus-42/3.webp",
-    "fotos/nike-pegasus-42/4.webp"
+    "fotos/nike-pegasus-42/1.webp?v=648b66aa",
+    "fotos/nike-pegasus-42/2.webp?v=ddef3d51",
+    "fotos/nike-pegasus-42/3.webp?v=acddf869",
+    "fotos/nike-pegasus-42/4.webp?v=b9f86f35"
    ],
    "terreno": "Asfalto",
    "fuente2": [
@@ -615,10 +615,10 @@
    "id": 3,
    "slug": "nike-pegasus-plus",
    "fotos": [
-    "fotos/nike-pegasus-plus/1.webp",
-    "fotos/nike-pegasus-plus/2.webp",
-    "fotos/nike-pegasus-plus/3.webp",
-    "fotos/nike-pegasus-plus/4.webp"
+    "fotos/nike-pegasus-plus/1.webp?v=675428c5",
+    "fotos/nike-pegasus-plus/2.webp?v=bcc304c6",
+    "fotos/nike-pegasus-plus/3.webp?v=14eb900a",
+    "fotos/nike-pegasus-plus/4.webp?v=3d055da1"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -851,10 +851,10 @@
    "id": 4,
    "slug": "nike-vomero-18",
    "fotos": [
-    "fotos/nike-vomero-18/1.webp",
-    "fotos/nike-vomero-18/2.webp",
-    "fotos/nike-vomero-18/3.webp",
-    "fotos/nike-vomero-18/4.webp"
+    "fotos/nike-vomero-18/1.webp?v=a16d2238",
+    "fotos/nike-vomero-18/2.webp?v=bd5cd960",
+    "fotos/nike-vomero-18/3.webp?v=5f1a10c9",
+    "fotos/nike-vomero-18/4.webp?v=08a7fe97"
    ],
    "terreno": "Asfalto",
    "fuente2": [
@@ -990,10 +990,10 @@
    "id": 5,
    "slug": "nike-vomero-plus",
    "fotos": [
-    "fotos/nike-vomero-plus/1.webp",
-    "fotos/nike-vomero-plus/2.webp",
-    "fotos/nike-vomero-plus/3.webp",
-    "fotos/nike-vomero-plus/4.webp"
+    "fotos/nike-vomero-plus/1.webp?v=967a2cb7",
+    "fotos/nike-vomero-plus/2.webp?v=4d0bbe37",
+    "fotos/nike-vomero-plus/3.webp?v=a1322d26",
+    "fotos/nike-vomero-plus/4.webp?v=9a400e52"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -1194,10 +1194,10 @@
    "id": 6,
    "slug": "nike-structure-26",
    "fotos": [
-    "fotos/nike-structure-26/1.webp",
-    "fotos/nike-structure-26/2.webp",
-    "fotos/nike-structure-26/3.webp",
-    "fotos/nike-structure-26/4.webp"
+    "fotos/nike-structure-26/1.webp?v=275c1c1e",
+    "fotos/nike-structure-26/2.webp?v=d0be5dfe",
+    "fotos/nike-structure-26/3.webp?v=4ba07e71",
+    "fotos/nike-structure-26/4.webp?v=24071b39"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -1265,10 +1265,10 @@
    "id": 7,
    "slug": "nike-winflo-10",
    "fotos": [
-    "fotos/nike-winflo-10/1.webp",
-    "fotos/nike-winflo-10/2.webp",
-    "fotos/nike-winflo-10/3.webp",
-    "fotos/nike-winflo-10/4.webp"
+    "fotos/nike-winflo-10/1.webp?v=714c8411",
+    "fotos/nike-winflo-10/2.webp?v=e33e9b48",
+    "fotos/nike-winflo-10/3.webp?v=163ee690",
+    "fotos/nike-winflo-10/4.webp?v=ebf4155d"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -1360,10 +1360,10 @@
    "id": 8,
    "slug": "nike-invincible-3",
    "fotos": [
-    "fotos/nike-invincible-3/1.webp",
-    "fotos/nike-invincible-3/2.webp",
-    "fotos/nike-invincible-3/3.webp",
-    "fotos/nike-invincible-3/4.webp"
+    "fotos/nike-invincible-3/1.webp?v=1a6f7eac",
+    "fotos/nike-invincible-3/2.webp?v=05d48fe9",
+    "fotos/nike-invincible-3/3.webp?v=7ea53ccb",
+    "fotos/nike-invincible-3/4.webp?v=eec5e0da"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -1454,10 +1454,10 @@
    "id": 9,
    "slug": "nike-zoom-fly-5",
    "fotos": [
-    "fotos/nike-zoom-fly-5/1.webp",
-    "fotos/nike-zoom-fly-5/2.webp",
-    "fotos/nike-zoom-fly-5/3.webp",
-    "fotos/nike-zoom-fly-5/4.webp"
+    "fotos/nike-zoom-fly-5/1.webp?v=03f09421",
+    "fotos/nike-zoom-fly-5/2.webp?v=2f9e1d00",
+    "fotos/nike-zoom-fly-5/3.webp?v=3a9b1ab8",
+    "fotos/nike-zoom-fly-5/4.webp?v=42b378e6"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -1519,10 +1519,10 @@
    "id": 10,
    "slug": "nike-vaporfly-3",
    "fotos": [
-    "fotos/nike-vaporfly-3/1.webp",
-    "fotos/nike-vaporfly-3/2.webp",
-    "fotos/nike-vaporfly-3/3.webp",
-    "fotos/nike-vaporfly-3/4.webp"
+    "fotos/nike-vaporfly-3/1.webp?v=00ddb985",
+    "fotos/nike-vaporfly-3/2.webp?v=274cacf1",
+    "fotos/nike-vaporfly-3/3.webp?v=f02513fa",
+    "fotos/nike-vaporfly-3/4.webp?v=a3c48806"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -1710,10 +1710,10 @@
    "id": 11,
    "slug": "adidas-adizero-sl-2",
    "fotos": [
-    "fotos/adidas-adizero-sl-2/1.webp",
-    "fotos/adidas-adizero-sl-2/2.webp",
-    "fotos/adidas-adizero-sl-2/3.webp",
-    "fotos/adidas-adizero-sl-2/4.webp"
+    "fotos/adidas-adizero-sl-2/1.webp?v=a38cd917",
+    "fotos/adidas-adizero-sl-2/2.webp?v=ba985db4",
+    "fotos/adidas-adizero-sl-2/3.webp?v=67393ecc",
+    "fotos/adidas-adizero-sl-2/4.webp?v=100e4087"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -1873,10 +1873,10 @@
    "id": 12,
    "slug": "adidas-adizero-boston-13",
    "fotos": [
-    "fotos/adidas-adizero-boston-13/1.webp",
-    "fotos/adidas-adizero-boston-13/2.webp",
-    "fotos/adidas-adizero-boston-13/3.webp",
-    "fotos/adidas-adizero-boston-13/4.webp"
+    "fotos/adidas-adizero-boston-13/1.webp?v=6b8cbbfb",
+    "fotos/adidas-adizero-boston-13/2.webp?v=d95db4f2",
+    "fotos/adidas-adizero-boston-13/3.webp?v=07e43204",
+    "fotos/adidas-adizero-boston-13/4.webp?v=789ee901"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -2095,10 +2095,10 @@
    "id": 13,
    "slug": "adidas-supernova-rise-3",
    "fotos": [
-    "fotos/adidas-supernova-rise-3/1.webp",
-    "fotos/adidas-supernova-rise-3/2.webp",
-    "fotos/adidas-supernova-rise-3/3.webp",
-    "fotos/adidas-supernova-rise-3/4.webp"
+    "fotos/adidas-supernova-rise-3/1.webp?v=8457f62c",
+    "fotos/adidas-supernova-rise-3/2.webp?v=ba735f22",
+    "fotos/adidas-supernova-rise-3/3.webp?v=e6806b32",
+    "fotos/adidas-supernova-rise-3/4.webp?v=c0db8bc4"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -2274,10 +2274,10 @@
    "id": 14,
    "slug": "adidas-adizero-adios-pro-5",
    "fotos": [
-    "fotos/adidas-adizero-adios-pro-5/1.webp",
-    "fotos/adidas-adizero-adios-pro-5/2.webp",
-    "fotos/adidas-adizero-adios-pro-5/3.webp",
-    "fotos/adidas-adizero-adios-pro-5/4.webp"
+    "fotos/adidas-adizero-adios-pro-5/1.webp?v=da266d2d",
+    "fotos/adidas-adizero-adios-pro-5/2.webp?v=b9b77a5d",
+    "fotos/adidas-adizero-adios-pro-5/3.webp?v=7d692195",
+    "fotos/adidas-adizero-adios-pro-5/4.webp?v=7c99d8d9"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -2487,10 +2487,10 @@
    "id": 15,
    "slug": "adidas-duramo-sl-2",
    "fotos": [
-    "fotos/adidas-duramo-sl-2/1.webp",
-    "fotos/adidas-duramo-sl-2/2.webp",
-    "fotos/adidas-duramo-sl-2/3.webp",
-    "fotos/adidas-duramo-sl-2/4.webp"
+    "fotos/adidas-duramo-sl-2/1.webp?v=3adf2555",
+    "fotos/adidas-duramo-sl-2/2.webp?v=f275cc0c",
+    "fotos/adidas-duramo-sl-2/3.webp?v=562ae004",
+    "fotos/adidas-duramo-sl-2/4.webp?v=f8db56e7"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -2611,10 +2611,10 @@
    "id": 16,
    "slug": "asics-novablast-5",
    "fotos": [
-    "fotos/asics-novablast-5/1.webp",
-    "fotos/asics-novablast-5/2.webp",
-    "fotos/asics-novablast-5/3.webp",
-    "fotos/asics-novablast-5/4.webp"
+    "fotos/asics-novablast-5/1.webp?v=a6f689a7",
+    "fotos/asics-novablast-5/2.webp?v=e340493d",
+    "fotos/asics-novablast-5/3.webp?v=fdd5a486",
+    "fotos/asics-novablast-5/4.webp?v=d96d35c5"
    ],
    "terreno": "Asfalto",
    "fuente2": [
@@ -2702,10 +2702,10 @@
    "id": 17,
    "slug": "asics-gel-nimbus-27",
    "fotos": [
-    "fotos/asics-gel-nimbus-27/1.webp",
-    "fotos/asics-gel-nimbus-27/2.webp",
-    "fotos/asics-gel-nimbus-27/3.webp",
-    "fotos/asics-gel-nimbus-27/4.webp"
+    "fotos/asics-gel-nimbus-27/1.webp?v=2e968cd6",
+    "fotos/asics-gel-nimbus-27/2.webp?v=fd25e8f3",
+    "fotos/asics-gel-nimbus-27/3.webp?v=b8116516",
+    "fotos/asics-gel-nimbus-27/4.webp?v=e52077fc"
    ],
    "terreno": "Asfalto",
    "fuente2": [
@@ -2874,10 +2874,10 @@
    "id": 18,
    "slug": "asics-gel-kayano-32",
    "fotos": [
-    "fotos/asics-gel-kayano-32/1.webp",
-    "fotos/asics-gel-kayano-32/2.webp",
-    "fotos/asics-gel-kayano-32/3.webp",
-    "fotos/asics-gel-kayano-32/4.webp"
+    "fotos/asics-gel-kayano-32/1.webp?v=79525864",
+    "fotos/asics-gel-kayano-32/2.webp?v=e6c09c6e",
+    "fotos/asics-gel-kayano-32/3.webp?v=7a45df3c",
+    "fotos/asics-gel-kayano-32/4.webp?v=aa25d11f"
    ],
    "terreno": "Asfalto",
    "fuente2": [
@@ -2982,10 +2982,10 @@
    "id": 19,
    "slug": "asics-gt-2000-14",
    "fotos": [
-    "fotos/asics-gt-2000-14/1.webp",
-    "fotos/asics-gt-2000-14/2.webp",
-    "fotos/asics-gt-2000-14/3.webp",
-    "fotos/asics-gt-2000-14/4.webp"
+    "fotos/asics-gt-2000-14/1.webp?v=e8c152da",
+    "fotos/asics-gt-2000-14/2.webp?v=03d11483",
+    "fotos/asics-gt-2000-14/3.webp?v=a3977283",
+    "fotos/asics-gt-2000-14/4.webp?v=3f732a75"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3102,10 +3102,10 @@
    "id": 20,
    "slug": "asics-gel-cumulus-27",
    "fotos": [
-    "fotos/asics-gel-cumulus-27/1.webp",
-    "fotos/asics-gel-cumulus-27/2.webp",
-    "fotos/asics-gel-cumulus-27/3.webp",
-    "fotos/asics-gel-cumulus-27/4.webp"
+    "fotos/asics-gel-cumulus-27/1.webp?v=35ab49c4",
+    "fotos/asics-gel-cumulus-27/2.webp?v=506131e6",
+    "fotos/asics-gel-cumulus-27/3.webp?v=c00fb398",
+    "fotos/asics-gel-cumulus-27/4.webp?v=64ae77ec"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3176,10 +3176,10 @@
    "id": 21,
    "slug": "asics-superblast-2",
    "fotos": [
-    "fotos/asics-superblast-2/1.webp",
-    "fotos/asics-superblast-2/2.webp",
-    "fotos/asics-superblast-2/3.webp",
-    "fotos/asics-superblast-2/4.webp"
+    "fotos/asics-superblast-2/1.webp?v=7d16c7c9",
+    "fotos/asics-superblast-2/2.webp?v=38a37957",
+    "fotos/asics-superblast-2/3.webp?v=0eff2c9f",
+    "fotos/asics-superblast-2/4.webp?v=90bd83b7"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3237,10 +3237,10 @@
    "id": 22,
    "slug": "asics-magic-speed-4",
    "fotos": [
-    "fotos/asics-magic-speed-4/1.webp",
-    "fotos/asics-magic-speed-4/2.webp",
-    "fotos/asics-magic-speed-4/3.webp",
-    "fotos/asics-magic-speed-4/4.webp"
+    "fotos/asics-magic-speed-4/1.webp?v=cb975fe5",
+    "fotos/asics-magic-speed-4/2.webp?v=a3d3202b",
+    "fotos/asics-magic-speed-4/3.webp?v=2c3830be",
+    "fotos/asics-magic-speed-4/4.webp?v=963a27f9"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3307,10 +3307,10 @@
    "id": 23,
    "slug": "asics-metaspeed-sky",
    "fotos": [
-    "fotos/asics-metaspeed-sky/1.webp",
-    "fotos/asics-metaspeed-sky/2.webp",
-    "fotos/asics-metaspeed-sky/3.webp",
-    "fotos/asics-metaspeed-sky/4.webp"
+    "fotos/asics-metaspeed-sky/1.webp?v=daa2a5bd",
+    "fotos/asics-metaspeed-sky/2.webp?v=cee1ae96",
+    "fotos/asics-metaspeed-sky/3.webp?v=ba1e84aa",
+    "fotos/asics-metaspeed-sky/4.webp?v=c081696b"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3384,10 +3384,10 @@
    "id": 24,
    "slug": "new-balance-fresh-foam-x-1080-v14",
    "fotos": [
-    "fotos/new-balance-fresh-foam-x-1080-v14/1.webp",
-    "fotos/new-balance-fresh-foam-x-1080-v14/2.webp",
-    "fotos/new-balance-fresh-foam-x-1080-v14/3.webp",
-    "fotos/new-balance-fresh-foam-x-1080-v14/4.webp"
+    "fotos/new-balance-fresh-foam-x-1080-v14/1.webp?v=d622be5e",
+    "fotos/new-balance-fresh-foam-x-1080-v14/2.webp?v=dfff31ff",
+    "fotos/new-balance-fresh-foam-x-1080-v14/3.webp?v=c0f1d154",
+    "fotos/new-balance-fresh-foam-x-1080-v14/4.webp?v=7bbcfea1"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3447,10 +3447,10 @@
    "id": 25,
    "slug": "new-balance-fresh-foam-x-880-v15",
    "fotos": [
-    "fotos/new-balance-fresh-foam-x-880-v15/1.webp",
-    "fotos/new-balance-fresh-foam-x-880-v15/2.webp",
-    "fotos/new-balance-fresh-foam-x-880-v15/3.webp",
-    "fotos/new-balance-fresh-foam-x-880-v15/4.webp"
+    "fotos/new-balance-fresh-foam-x-880-v15/1.webp?v=d6d878c3",
+    "fotos/new-balance-fresh-foam-x-880-v15/2.webp?v=d809ecd3",
+    "fotos/new-balance-fresh-foam-x-880-v15/3.webp?v=c2ae66c2",
+    "fotos/new-balance-fresh-foam-x-880-v15/4.webp?v=a5f1da0c"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3551,10 +3551,10 @@
    "id": 26,
    "slug": "new-balance-fuelcell-rebel-v5",
    "fotos": [
-    "fotos/new-balance-fuelcell-rebel-v5/1.webp",
-    "fotos/new-balance-fuelcell-rebel-v5/2.webp",
-    "fotos/new-balance-fuelcell-rebel-v5/3.webp",
-    "fotos/new-balance-fuelcell-rebel-v5/4.webp"
+    "fotos/new-balance-fuelcell-rebel-v5/1.webp?v=3fbe8677",
+    "fotos/new-balance-fuelcell-rebel-v5/2.webp?v=5906ae03",
+    "fotos/new-balance-fuelcell-rebel-v5/3.webp?v=fec515ff",
+    "fotos/new-balance-fuelcell-rebel-v5/4.webp?v=3d715a05"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3610,9 +3610,9 @@
    "id": 27,
    "slug": "new-balance-fuelcell-sc-elite-v5",
    "fotos": [
-    "fotos/new-balance-fuelcell-sc-elite-v5/1.webp",
-    "fotos/new-balance-fuelcell-sc-elite-v5/2.webp",
-    "fotos/new-balance-fuelcell-sc-elite-v5/3.webp"
+    "fotos/new-balance-fuelcell-sc-elite-v5/1.webp?v=9e5eb567",
+    "fotos/new-balance-fuelcell-sc-elite-v5/2.webp?v=f7ea3dfe",
+    "fotos/new-balance-fuelcell-sc-elite-v5/3.webp?v=c85838b7"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3709,10 +3709,10 @@
    "id": 29,
    "slug": "saucony-guide-18",
    "fotos": [
-    "fotos/saucony-guide-18/1.webp",
-    "fotos/saucony-guide-18/2.webp",
-    "fotos/saucony-guide-18/3.webp",
-    "fotos/saucony-guide-18/4.webp"
+    "fotos/saucony-guide-18/1.webp?v=183ad6bd",
+    "fotos/saucony-guide-18/2.webp?v=bbc627a9",
+    "fotos/saucony-guide-18/3.webp?v=78fa1cb2",
+    "fotos/saucony-guide-18/4.webp?v=abd1214c"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3802,10 +3802,10 @@
    "id": 30,
    "slug": "saucony-endorphin-speed-4",
    "fotos": [
-    "fotos/saucony-endorphin-speed-4/1.webp",
-    "fotos/saucony-endorphin-speed-4/2.webp",
-    "fotos/saucony-endorphin-speed-4/3.webp",
-    "fotos/saucony-endorphin-speed-4/4.webp"
+    "fotos/saucony-endorphin-speed-4/1.webp?v=181fa29a",
+    "fotos/saucony-endorphin-speed-4/2.webp?v=acd474a2",
+    "fotos/saucony-endorphin-speed-4/3.webp?v=fe6a12d3",
+    "fotos/saucony-endorphin-speed-4/4.webp?v=89e6bb06"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -3943,10 +3943,10 @@
    "id": 31,
    "slug": "saucony-endorphin-pro-5",
    "fotos": [
-    "fotos/saucony-endorphin-pro-5/1.webp",
-    "fotos/saucony-endorphin-pro-5/2.webp",
-    "fotos/saucony-endorphin-pro-5/3.webp",
-    "fotos/saucony-endorphin-pro-5/4.webp"
+    "fotos/saucony-endorphin-pro-5/1.webp?v=8753d477",
+    "fotos/saucony-endorphin-pro-5/2.webp?v=07f0f84c",
+    "fotos/saucony-endorphin-pro-5/3.webp?v=63a96638",
+    "fotos/saucony-endorphin-pro-5/4.webp?v=553c8ed6"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -4035,10 +4035,10 @@
    "id": 32,
    "slug": "puma-velocity-nitro-4",
    "fotos": [
-    "fotos/puma-velocity-nitro-4/1.webp",
-    "fotos/puma-velocity-nitro-4/2.webp",
-    "fotos/puma-velocity-nitro-4/3.webp",
-    "fotos/puma-velocity-nitro-4/4.webp"
+    "fotos/puma-velocity-nitro-4/1.webp?v=02af2e1e",
+    "fotos/puma-velocity-nitro-4/2.webp?v=e83eada1",
+    "fotos/puma-velocity-nitro-4/3.webp?v=a25b348f",
+    "fotos/puma-velocity-nitro-4/4.webp?v=cd3a537d"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -4215,10 +4215,10 @@
    "id": 33,
    "slug": "puma-deviate-nitro-4",
    "fotos": [
-    "fotos/puma-deviate-nitro-4/1.webp",
-    "fotos/puma-deviate-nitro-4/2.webp",
-    "fotos/puma-deviate-nitro-4/3.webp",
-    "fotos/puma-deviate-nitro-4/4.webp"
+    "fotos/puma-deviate-nitro-4/1.webp?v=331cdc9c",
+    "fotos/puma-deviate-nitro-4/2.webp?v=8d9744fb",
+    "fotos/puma-deviate-nitro-4/3.webp?v=e2b961b7",
+    "fotos/puma-deviate-nitro-4/4.webp?v=a3dac9f8"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -4352,10 +4352,10 @@
    "id": 34,
    "slug": "puma-magmax-nitro-2",
    "fotos": [
-    "fotos/puma-magmax-nitro-2/1.webp",
-    "fotos/puma-magmax-nitro-2/2.webp",
-    "fotos/puma-magmax-nitro-2/3.webp",
-    "fotos/puma-magmax-nitro-2/4.webp"
+    "fotos/puma-magmax-nitro-2/1.webp?v=8227d25a",
+    "fotos/puma-magmax-nitro-2/2.webp?v=ce2017c9",
+    "fotos/puma-magmax-nitro-2/3.webp?v=2374dd28",
+    "fotos/puma-magmax-nitro-2/4.webp?v=20ef3c92"
    ],
    "ar": true,
    "terreno": "Asfalto",
@@ -4553,10 +4553,10 @@
     "https://runrepeat.com/on-cloudmonster-3"
    ],
    "fotos": [
-    "fotos/on-cloudmonster-3/1.webp",
-    "fotos/on-cloudmonster-3/2.webp",
-    "fotos/on-cloudmonster-3/3.webp",
-    "fotos/on-cloudmonster-3/4.webp"
+    "fotos/on-cloudmonster-3/1.webp?v=a541cc43",
+    "fotos/on-cloudmonster-3/2.webp?v=4ddfc08b",
+    "fotos/on-cloudmonster-3/3.webp?v=9d0eac5c",
+    "fotos/on-cloudmonster-3/4.webp?v=e5e4bed0"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -4696,10 +4696,10 @@
     "https://runrepeat.com/on-cloudsurfer-next"
    ],
    "fotos": [
-    "fotos/on-cloudsurfer-next/1.webp",
-    "fotos/on-cloudsurfer-next/2.webp",
-    "fotos/on-cloudsurfer-next/3.webp",
-    "fotos/on-cloudsurfer-next/4.webp"
+    "fotos/on-cloudsurfer-next/1.webp?v=ee70e374",
+    "fotos/on-cloudsurfer-next/2.webp?v=0f12b552",
+    "fotos/on-cloudsurfer-next/3.webp?v=940c5a57",
+    "fotos/on-cloudsurfer-next/4.webp?v=98b58709"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -4882,10 +4882,10 @@
     "https://runrepeat.com/on-cloudrunner-3"
    ],
    "fotos": [
-    "fotos/on-cloudrunner-3/1.webp",
-    "fotos/on-cloudrunner-3/2.webp",
-    "fotos/on-cloudrunner-3/3.webp",
-    "fotos/on-cloudrunner-3/4.webp"
+    "fotos/on-cloudrunner-3/1.webp?v=26a14650",
+    "fotos/on-cloudrunner-3/2.webp?v=5d94232c",
+    "fotos/on-cloudrunner-3/3.webp?v=c4039feb",
+    "fotos/on-cloudrunner-3/4.webp?v=2990a5af"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -4991,10 +4991,10 @@
     "https://runrepeat.com/on-cloudflyer-5"
    ],
    "fotos": [
-    "fotos/on-cloudflyer-5/1.webp",
-    "fotos/on-cloudflyer-5/2.webp",
-    "fotos/on-cloudflyer-5/3.webp",
-    "fotos/on-cloudflyer-5/4.webp"
+    "fotos/on-cloudflyer-5/1.webp?v=4fea9aa7",
+    "fotos/on-cloudflyer-5/2.webp?v=16ec11a5",
+    "fotos/on-cloudflyer-5/3.webp?v=9881e2d4",
+    "fotos/on-cloudflyer-5/4.webp?v=645dff66"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -5101,10 +5101,10 @@
     "https://runrepeat.com/on-cloudboom-max"
    ],
    "fotos": [
-    "fotos/on-cloudboom-max/1.webp",
-    "fotos/on-cloudboom-max/2.webp",
-    "fotos/on-cloudboom-max/3.webp",
-    "fotos/on-cloudboom-max/4.webp"
+    "fotos/on-cloudboom-max/1.webp?v=2eefef0a",
+    "fotos/on-cloudboom-max/2.webp?v=2bf4255c",
+    "fotos/on-cloudboom-max/3.webp?v=feeebf3a",
+    "fotos/on-cloudboom-max/4.webp?v=cb31ab17"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -5226,10 +5226,10 @@
     "https://runrepeat.com/brooks-ghost-15"
    ],
    "fotos": [
-    "fotos/brooks-ghost-15/1.webp",
-    "fotos/brooks-ghost-15/2.webp",
-    "fotos/brooks-ghost-15/3.webp",
-    "fotos/brooks-ghost-15/4.webp"
+    "fotos/brooks-ghost-15/1.webp?v=54281ca3",
+    "fotos/brooks-ghost-15/2.webp?v=2af9ec2a",
+    "fotos/brooks-ghost-15/3.webp?v=1cd47f8c",
+    "fotos/brooks-ghost-15/4.webp?v=c13f5e90"
    ],
    "usos": [
     "Rodaje diario",
@@ -5326,10 +5326,10 @@
     "https://runrepeat.com/brooks-glycerin-20"
    ],
    "fotos": [
-    "fotos/brooks-glycerin-20/1.webp",
-    "fotos/brooks-glycerin-20/2.webp",
-    "fotos/brooks-glycerin-20/3.webp",
-    "fotos/brooks-glycerin-20/4.webp"
+    "fotos/brooks-glycerin-20/1.webp?v=6d12e92d",
+    "fotos/brooks-glycerin-20/2.webp?v=747729cf",
+    "fotos/brooks-glycerin-20/3.webp?v=fc288711",
+    "fotos/brooks-glycerin-20/4.webp?v=0b3c6436"
    ],
    "horma": "angosta",
    "usos": [
@@ -5401,10 +5401,10 @@
     "https://runrepeat.com/brooks-adrenaline-gts-23"
    ],
    "fotos": [
-    "fotos/brooks-adrenaline-gts-23/1.webp",
-    "fotos/brooks-adrenaline-gts-23/2.webp",
-    "fotos/brooks-adrenaline-gts-23/3.webp",
-    "fotos/brooks-adrenaline-gts-23/4.webp"
+    "fotos/brooks-adrenaline-gts-23/1.webp?v=20275b25",
+    "fotos/brooks-adrenaline-gts-23/2.webp?v=d1051179",
+    "fotos/brooks-adrenaline-gts-23/3.webp?v=01e441c3",
+    "fotos/brooks-adrenaline-gts-23/4.webp?v=e1a1104f"
    ],
    "horma": "normal",
    "usos": [
@@ -5470,10 +5470,10 @@
     "https://runrepeat.com/brooks-launch-10"
    ],
    "fotos": [
-    "fotos/brooks-launch-10/1.webp",
-    "fotos/brooks-launch-10/2.webp",
-    "fotos/brooks-launch-10/3.webp",
-    "fotos/brooks-launch-10/4.webp"
+    "fotos/brooks-launch-10/1.webp?v=50629ea8",
+    "fotos/brooks-launch-10/2.webp?v=f0d61f00",
+    "fotos/brooks-launch-10/3.webp?v=7bbbcf13",
+    "fotos/brooks-launch-10/4.webp?v=9a8d82ed"
    ],
    "horma": "normal",
    "usos": [
@@ -5526,10 +5526,10 @@
     "https://runrepeat.com/brooks-hyperion"
    ],
    "fotos": [
-    "fotos/brooks-hyperion/1.webp",
-    "fotos/brooks-hyperion/2.webp",
-    "fotos/brooks-hyperion/3.webp",
-    "fotos/brooks-hyperion/4.webp"
+    "fotos/brooks-hyperion/1.webp?v=db0aae23",
+    "fotos/brooks-hyperion/2.webp?v=3b4aecc4",
+    "fotos/brooks-hyperion/3.webp?v=ef998de6",
+    "fotos/brooks-hyperion/4.webp?v=9fe94f86"
    ],
    "horma": "normal",
    "usos": [
@@ -5616,10 +5616,10 @@
    },
    "evitar": "hacés fondos largos y buscás mucha amortiguación.",
    "fotos": [
-    "fotos/under-armour-velociti-3/1.webp",
-    "fotos/under-armour-velociti-3/2.webp",
-    "fotos/under-armour-velociti-3/3.webp",
-    "fotos/under-armour-velociti-3/4.webp"
+    "fotos/under-armour-velociti-3/1.webp?v=1b94e843",
+    "fotos/under-armour-velociti-3/2.webp?v=166a55aa",
+    "fotos/under-armour-velociti-3/3.webp?v=78430462",
+    "fotos/under-armour-velociti-3/4.webp?v=33b1c7ce"
    ],
    "fuente": [
     "RunningShoesGuru",
@@ -5758,10 +5758,10 @@
     "https://runrepeat.com/under-armour-infinite-pro"
    ],
    "fotos": [
-    "fotos/under-armour-infinite-pro/1.webp",
-    "fotos/under-armour-infinite-pro/2.webp",
-    "fotos/under-armour-infinite-pro/3.webp",
-    "fotos/under-armour-infinite-pro/4.webp"
+    "fotos/under-armour-infinite-pro/1.webp?v=9a1afee8",
+    "fotos/under-armour-infinite-pro/2.webp?v=24514d3a",
+    "fotos/under-armour-infinite-pro/3.webp?v=5cd0e529",
+    "fotos/under-armour-infinite-pro/4.webp?v=f213ad27"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -5851,10 +5851,10 @@
     "https://runrepeat.com/under-armour-infinite-elite"
    ],
    "fotos": [
-    "fotos/under-armour-infinite-elite/1.webp",
-    "fotos/under-armour-infinite-elite/2.webp",
-    "fotos/under-armour-infinite-elite/3.webp",
-    "fotos/under-armour-infinite-elite/4.webp"
+    "fotos/under-armour-infinite-elite/1.webp?v=fd9f95cc",
+    "fotos/under-armour-infinite-elite/2.webp?v=f4699314",
+    "fotos/under-armour-infinite-elite/3.webp?v=c2662b8a",
+    "fotos/under-armour-infinite-elite/4.webp?v=7ee5ddff"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -5967,10 +5967,10 @@
     "https://runrepeat.com/saucony-triumph-22"
    ],
    "fotos": [
-    "fotos/saucony-triumph-22/1.webp",
-    "fotos/saucony-triumph-22/2.webp",
-    "fotos/saucony-triumph-22/3.webp",
-    "fotos/saucony-triumph-22/4.webp"
+    "fotos/saucony-triumph-22/1.webp?v=10e24e28",
+    "fotos/saucony-triumph-22/2.webp?v=eebfc270",
+    "fotos/saucony-triumph-22/3.webp?v=fc195f6b",
+    "fotos/saucony-triumph-22/4.webp?v=92acb11a"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -6045,10 +6045,10 @@
     "https://runrepeat.com/saucony-kinvara-14"
    ],
    "fotos": [
-    "fotos/saucony-kinvara-14/1.webp",
-    "fotos/saucony-kinvara-14/2.webp",
-    "fotos/saucony-kinvara-14/3.webp",
-    "fotos/saucony-kinvara-14/4.webp"
+    "fotos/saucony-kinvara-14/1.webp?v=6e1eb729",
+    "fotos/saucony-kinvara-14/2.webp?v=5997f545",
+    "fotos/saucony-kinvara-14/3.webp?v=4fd4f119",
+    "fotos/saucony-kinvara-14/4.webp?v=73d9ccaa"
    ],
    "horma": "normal",
    "usos": [
@@ -6143,10 +6143,10 @@
     "https://runrepeat.com/saucony-endorphin-elite-2"
    ],
    "fotos": [
-    "fotos/saucony-endorphin-elite-2/1.webp",
-    "fotos/saucony-endorphin-elite-2/2.webp",
-    "fotos/saucony-endorphin-elite-2/3.webp",
-    "fotos/saucony-endorphin-elite-2/4.webp"
+    "fotos/saucony-endorphin-elite-2/1.webp?v=99b2bb3d",
+    "fotos/saucony-endorphin-elite-2/2.webp?v=89d13cb5",
+    "fotos/saucony-endorphin-elite-2/3.webp?v=aee2bbdb",
+    "fotos/saucony-endorphin-elite-2/4.webp?v=6db73162"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -6202,10 +6202,10 @@
     "https://runrepeat.com/asics-gt-1000-14"
    ],
    "fotos": [
-    "fotos/asics-gt-1000-14/1.webp",
-    "fotos/asics-gt-1000-14/2.webp",
-    "fotos/asics-gt-1000-14/3.webp",
-    "fotos/asics-gt-1000-14/4.webp"
+    "fotos/asics-gt-1000-14/1.webp?v=cbdfb541",
+    "fotos/asics-gt-1000-14/2.webp?v=bf271bc8",
+    "fotos/asics-gt-1000-14/3.webp?v=23e1e531",
+    "fotos/asics-gt-1000-14/4.webp?v=2347db61"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -6279,10 +6279,10 @@
     "https://runrepeat.com/asics-gel-excite-11"
    ],
    "fotos": [
-    "fotos/asics-gel-excite-11/1.webp",
-    "fotos/asics-gel-excite-11/2.webp",
-    "fotos/asics-gel-excite-11/3.webp",
-    "fotos/asics-gel-excite-11/4.webp"
+    "fotos/asics-gel-excite-11/1.webp?v=0ed3cbae",
+    "fotos/asics-gel-excite-11/2.webp?v=9a5c6766",
+    "fotos/asics-gel-excite-11/3.webp?v=f2241172",
+    "fotos/asics-gel-excite-11/4.webp?v=2db02a4f"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -6361,10 +6361,10 @@
     "https://runrepeat.com/asics-dynablast-5"
    ],
    "fotos": [
-    "fotos/asics-dynablast-5/1.webp",
-    "fotos/asics-dynablast-5/2.webp",
-    "fotos/asics-dynablast-5/3.webp",
-    "fotos/asics-dynablast-5/4.webp"
+    "fotos/asics-dynablast-5/1.webp?v=02b098a9",
+    "fotos/asics-dynablast-5/2.webp?v=eaf0f2f5",
+    "fotos/asics-dynablast-5/3.webp?v=39052552",
+    "fotos/asics-dynablast-5/4.webp?v=b8ffade4"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -6534,10 +6534,10 @@
     "https://runrepeat.com/nike-pegasus-premium"
    ],
    "fotos": [
-    "fotos/nike-pegasus-premium/1.webp",
-    "fotos/nike-pegasus-premium/2.webp",
-    "fotos/nike-pegasus-premium/3.webp",
-    "fotos/nike-pegasus-premium/4.webp"
+    "fotos/nike-pegasus-premium/1.webp?v=ee81b19c",
+    "fotos/nike-pegasus-premium/2.webp?v=0c8c8801",
+    "fotos/nike-pegasus-premium/3.webp?v=2ef4a227",
+    "fotos/nike-pegasus-premium/4.webp?v=a704724e"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -6728,10 +6728,10 @@
     "https://runrepeat.com/nike-pegasus-41"
    ],
    "fotos": [
-    "fotos/nike-pegasus-41/1.webp",
-    "fotos/nike-pegasus-41/2.webp",
-    "fotos/nike-pegasus-41/3.webp",
-    "fotos/nike-pegasus-41/4.webp"
+    "fotos/nike-pegasus-41/1.webp?v=91fc4646",
+    "fotos/nike-pegasus-41/2.webp?v=12aa8190",
+    "fotos/nike-pegasus-41/3.webp?v=3548c182",
+    "fotos/nike-pegasus-41/4.webp?v=8a50561e"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -6896,10 +6896,10 @@
     "https://runrepeat.com/nike-quest-6"
    ],
    "fotos": [
-    "fotos/nike-quest-6/1.webp",
-    "fotos/nike-quest-6/2.webp",
-    "fotos/nike-quest-6/3.webp",
-    "fotos/nike-quest-6/4.webp"
+    "fotos/nike-quest-6/1.webp?v=e48f2a04",
+    "fotos/nike-quest-6/2.webp?v=4323d48b",
+    "fotos/nike-quest-6/3.webp?v=f1b9d295",
+    "fotos/nike-quest-6/4.webp?v=43750d66"
    ],
    "horma": "normal",
    "usos": [
@@ -7099,10 +7099,10 @@
     "https://runrepeat.com/nike-revolution-8"
    ],
    "fotos": [
-    "fotos/nike-revolution-8/1.webp",
-    "fotos/nike-revolution-8/2.webp",
-    "fotos/nike-revolution-8/3.webp",
-    "fotos/nike-revolution-8/4.webp"
+    "fotos/nike-revolution-8/1.webp?v=78fc7065",
+    "fotos/nike-revolution-8/2.webp?v=541d3a8f",
+    "fotos/nike-revolution-8/3.webp?v=2849d954",
+    "fotos/nike-revolution-8/4.webp?v=52b70e84"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -7302,10 +7302,10 @@
     "https://www.adidas.com.tr/en/adistar-5-running-shoes/KK4211.html"
    ],
    "fotos": [
-    "fotos/adidas-adistar-5/1.webp",
-    "fotos/adidas-adistar-5/2.webp",
-    "fotos/adidas-adistar-5/3.webp",
-    "fotos/adidas-adistar-5/4.webp"
+    "fotos/adidas-adistar-5/1.webp?v=77877228",
+    "fotos/adidas-adistar-5/2.webp?v=3f3b15fd",
+    "fotos/adidas-adistar-5/3.webp?v=0de166ef",
+    "fotos/adidas-adistar-5/4.webp?v=45e5a9e5"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -7366,10 +7366,10 @@
    },
    "evitar": "vas a ir rápido o competir.",
    "fotos": [
-    "fotos/adidas-supernova-stride-2/1.webp",
-    "fotos/adidas-supernova-stride-2/2.webp",
-    "fotos/adidas-supernova-stride-2/3.webp",
-    "fotos/adidas-supernova-stride-2/4.webp"
+    "fotos/adidas-supernova-stride-2/1.webp?v=779afe8f",
+    "fotos/adidas-supernova-stride-2/2.webp?v=7705618d",
+    "fotos/adidas-supernova-stride-2/3.webp?v=fd921c4c",
+    "fotos/adidas-supernova-stride-2/4.webp?v=b8157633"
    ],
    "fuente": [
     "i-run",
@@ -7488,10 +7488,10 @@
     "https://runrepeat.com/adidas-ultraboost-5"
    ],
    "fotos": [
-    "fotos/adidas-ultraboost-5/1.webp",
-    "fotos/adidas-ultraboost-5/2.webp",
-    "fotos/adidas-ultraboost-5/3.webp",
-    "fotos/adidas-ultraboost-5/4.webp"
+    "fotos/adidas-ultraboost-5/1.webp?v=df1c13f3",
+    "fotos/adidas-ultraboost-5/2.webp?v=2f4d77f3",
+    "fotos/adidas-ultraboost-5/3.webp?v=1f2022f5",
+    "fotos/adidas-ultraboost-5/4.webp?v=3451e137"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -7595,10 +7595,10 @@
     "https://runrepeat.com/adidas-adizero-takumi-sen-10"
    ],
    "fotos": [
-    "fotos/adidas-adizero-takumi-sen-10/1.webp",
-    "fotos/adidas-adizero-takumi-sen-10/2.webp",
-    "fotos/adidas-adizero-takumi-sen-10/3.webp",
-    "fotos/adidas-adizero-takumi-sen-10/4.webp"
+    "fotos/adidas-adizero-takumi-sen-10/1.webp?v=a57d7b98",
+    "fotos/adidas-adizero-takumi-sen-10/2.webp?v=cc44adae",
+    "fotos/adidas-adizero-takumi-sen-10/3.webp?v=ace7efe4",
+    "fotos/adidas-adizero-takumi-sen-10/4.webp?v=41a06679"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -7703,10 +7703,10 @@
     "https://runrepeat.com/puma-foreverrun-nitro-2"
    ],
    "fotos": [
-    "fotos/puma-foreverrun-nitro-2/1.webp",
-    "fotos/puma-foreverrun-nitro-2/2.webp",
-    "fotos/puma-foreverrun-nitro-2/3.webp",
-    "fotos/puma-foreverrun-nitro-2/4.webp"
+    "fotos/puma-foreverrun-nitro-2/1.webp?v=c54fb042",
+    "fotos/puma-foreverrun-nitro-2/2.webp?v=c8b606e1",
+    "fotos/puma-foreverrun-nitro-2/3.webp?v=73b3bb07",
+    "fotos/puma-foreverrun-nitro-2/4.webp?v=a8396270"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -7848,10 +7848,10 @@
     "https://runrepeat.com/puma-velocity-nitro-5"
    ],
    "fotos": [
-    "fotos/puma-velocity-nitro-5/1.webp",
-    "fotos/puma-velocity-nitro-5/2.webp",
-    "fotos/puma-velocity-nitro-5/3.webp",
-    "fotos/puma-velocity-nitro-5/4.webp"
+    "fotos/puma-velocity-nitro-5/1.webp?v=7efcb0bc",
+    "fotos/puma-velocity-nitro-5/2.webp?v=1e5d40aa",
+    "fotos/puma-velocity-nitro-5/3.webp?v=e025e49c",
+    "fotos/puma-velocity-nitro-5/4.webp?v=e2f93349"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -7978,10 +7978,10 @@
     "https://runrepeat.com/nike-pegasus-trail-5-gtx"
    ],
    "fotos": [
-    "fotos/nike-pegasus-trail-5-gtx/1.webp",
-    "fotos/nike-pegasus-trail-5-gtx/2.webp",
-    "fotos/nike-pegasus-trail-5-gtx/3.webp",
-    "fotos/nike-pegasus-trail-5-gtx/4.webp"
+    "fotos/nike-pegasus-trail-5-gtx/1.webp?v=333ca20e",
+    "fotos/nike-pegasus-trail-5-gtx/2.webp?v=c33c9c51",
+    "fotos/nike-pegasus-trail-5-gtx/3.webp?v=fc62b8ec",
+    "fotos/nike-pegasus-trail-5-gtx/4.webp?v=b6c76a51"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -8035,10 +8035,10 @@
     "https://runrepeat.com/nike-terra-kiger-9"
    ],
    "fotos": [
-    "fotos/nike-kiger-9/1.webp",
-    "fotos/nike-kiger-9/2.webp",
-    "fotos/nike-kiger-9/3.webp",
-    "fotos/nike-kiger-9/4.webp"
+    "fotos/nike-kiger-9/1.webp?v=348939a6",
+    "fotos/nike-kiger-9/2.webp?v=07d72bc3",
+    "fotos/nike-kiger-9/3.webp?v=8d37ab96",
+    "fotos/nike-kiger-9/4.webp?v=dd0bc917"
    ],
    "horma": "normal",
    "usos": [
@@ -8169,10 +8169,10 @@
     "https://runrepeat.com/nike-zegama-2"
    ],
    "fotos": [
-    "fotos/nike-zegama-2/1.webp",
-    "fotos/nike-zegama-2/2.webp",
-    "fotos/nike-zegama-2/3.webp",
-    "fotos/nike-zegama-2/4.webp"
+    "fotos/nike-zegama-2/1.webp?v=22966701",
+    "fotos/nike-zegama-2/2.webp?v=35849598",
+    "fotos/nike-zegama-2/3.webp?v=8f21be3e",
+    "fotos/nike-zegama-2/4.webp?v=d5a7c929"
    ],
    "horma": "ancha",
    "usos": [
@@ -8245,10 +8245,10 @@
     "https://runrepeat.com/asics-gel-trabuco-13"
    ],
    "fotos": [
-    "fotos/asics-gel-trabuco-13/1.webp",
-    "fotos/asics-gel-trabuco-13/2.webp",
-    "fotos/asics-gel-trabuco-13/3.webp",
-    "fotos/asics-gel-trabuco-13/4.webp"
+    "fotos/asics-gel-trabuco-13/1.webp?v=12fcaf56",
+    "fotos/asics-gel-trabuco-13/2.webp?v=18c78b63",
+    "fotos/asics-gel-trabuco-13/3.webp?v=56f35828",
+    "fotos/asics-gel-trabuco-13/4.webp?v=c10616e6"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -8373,10 +8373,10 @@
     "https://runrepeat.com/adidas-terrex-agravic-4"
    ],
    "fotos": [
-    "fotos/adidas-terrex-agravic-4/1.webp",
-    "fotos/adidas-terrex-agravic-4/2.webp",
-    "fotos/adidas-terrex-agravic-4/3.webp",
-    "fotos/adidas-terrex-agravic-4/4.webp"
+    "fotos/adidas-terrex-agravic-4/1.webp?v=606cc483",
+    "fotos/adidas-terrex-agravic-4/2.webp?v=b0759d72",
+    "fotos/adidas-terrex-agravic-4/3.webp?v=8ba58976",
+    "fotos/adidas-terrex-agravic-4/4.webp?v=f9677f18"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -8512,10 +8512,10 @@
     "https://runrepeat.com/saucony-peregrine-15"
    ],
    "fotos": [
-    "fotos/saucony-peregrine-15/1.webp",
-    "fotos/saucony-peregrine-15/2.webp",
-    "fotos/saucony-peregrine-15/3.webp",
-    "fotos/saucony-peregrine-15/4.webp"
+    "fotos/saucony-peregrine-15/1.webp?v=e7b4554b",
+    "fotos/saucony-peregrine-15/2.webp?v=b2d13159",
+    "fotos/saucony-peregrine-15/3.webp?v=a2c6033e",
+    "fotos/saucony-peregrine-15/4.webp?v=2119d382"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -8665,10 +8665,10 @@
     "https://runrepeat.com/on-cloudultra-3"
    ],
    "fotos": [
-    "fotos/on-cloudultra-3/1.webp",
-    "fotos/on-cloudultra-3/2.webp",
-    "fotos/on-cloudultra-3/3.webp",
-    "fotos/on-cloudultra-3/4.webp"
+    "fotos/on-cloudultra-3/1.webp?v=537c890b",
+    "fotos/on-cloudultra-3/2.webp?v=d968cd10",
+    "fotos/on-cloudultra-3/3.webp?v=939b368d",
+    "fotos/on-cloudultra-3/4.webp?v=32223dbe"
    ],
    "fuente2": [
     "Correr una Maratón",
@@ -8823,10 +8823,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-clifton-10/1.webp",
-    "fotos/hoka-clifton-10/2.webp",
-    "fotos/hoka-clifton-10/3.webp",
-    "fotos/hoka-clifton-10/4.webp"
+    "fotos/hoka-clifton-10/1.webp?v=88c4884d",
+    "fotos/hoka-clifton-10/2.webp?v=1333f112",
+    "fotos/hoka-clifton-10/3.webp?v=d72ccb5d",
+    "fotos/hoka-clifton-10/4.webp?v=523d3317"
    ],
    "peso": 277,
    "drop": 8,
@@ -8958,10 +8958,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-bondi-9/1.webp",
-    "fotos/hoka-bondi-9/2.webp",
-    "fotos/hoka-bondi-9/3.webp",
-    "fotos/hoka-bondi-9/4.webp"
+    "fotos/hoka-bondi-9/1.webp?v=1a29aab1",
+    "fotos/hoka-bondi-9/2.webp?v=a295d452",
+    "fotos/hoka-bondi-9/3.webp?v=2fb027c3",
+    "fotos/hoka-bondi-9/4.webp?v=1ef414bb"
    ],
    "peso": 297,
    "drop": 5,
@@ -9035,10 +9035,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-mach-6/1.webp",
-    "fotos/hoka-mach-6/2.webp",
-    "fotos/hoka-mach-6/3.webp",
-    "fotos/hoka-mach-6/4.webp"
+    "fotos/hoka-mach-6/1.webp?v=d460617b",
+    "fotos/hoka-mach-6/2.webp?v=62deefdb",
+    "fotos/hoka-mach-6/3.webp?v=9855879b",
+    "fotos/hoka-mach-6/4.webp?v=d9749918"
    ],
    "peso": 235,
    "drop": 5,
@@ -9129,10 +9129,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-mach-7/1.webp",
-    "fotos/hoka-mach-7/2.webp",
-    "fotos/hoka-mach-7/3.webp",
-    "fotos/hoka-mach-7/4.webp"
+    "fotos/hoka-mach-7/1.webp?v=267c5c22",
+    "fotos/hoka-mach-7/2.webp?v=1f20b81d",
+    "fotos/hoka-mach-7/3.webp?v=1136fe11",
+    "fotos/hoka-mach-7/4.webp?v=0af0fe03"
    ],
    "peso": 241,
    "drop": 5,
@@ -9209,10 +9209,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-mach-x-3/1.webp",
-    "fotos/hoka-mach-x-3/2.webp",
-    "fotos/hoka-mach-x-3/3.webp",
-    "fotos/hoka-mach-x-3/4.webp"
+    "fotos/hoka-mach-x-3/1.webp?v=c3838631",
+    "fotos/hoka-mach-x-3/2.webp?v=385c70b2",
+    "fotos/hoka-mach-x-3/3.webp?v=7c76d8be",
+    "fotos/hoka-mach-x-3/4.webp?v=946d8460"
    ],
    "peso": 252,
    "drop": 5,
@@ -9285,10 +9285,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-arahi-8/1.webp",
-    "fotos/hoka-arahi-8/2.webp",
-    "fotos/hoka-arahi-8/3.webp",
-    "fotos/hoka-arahi-8/4.webp"
+    "fotos/hoka-arahi-8/1.webp?v=002de993",
+    "fotos/hoka-arahi-8/2.webp?v=9fba97df",
+    "fotos/hoka-arahi-8/3.webp?v=92ab2088",
+    "fotos/hoka-arahi-8/4.webp?v=db0b281c"
    ],
    "peso": 256,
    "drop": 8,
@@ -9361,10 +9361,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-gaviota-6/1.webp",
-    "fotos/hoka-gaviota-6/2.webp",
-    "fotos/hoka-gaviota-6/3.webp",
-    "fotos/hoka-gaviota-6/4.webp"
+    "fotos/hoka-gaviota-6/1.webp?v=b6265b18",
+    "fotos/hoka-gaviota-6/2.webp?v=5d9524ae",
+    "fotos/hoka-gaviota-6/3.webp?v=8e9ea770",
+    "fotos/hoka-gaviota-6/4.webp?v=ae694046"
    ],
    "peso": 283,
    "drop": 6,
@@ -9430,9 +9430,9 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-rincon-4/1.webp",
-    "fotos/hoka-rincon-4/2.webp",
-    "fotos/hoka-rincon-4/3.webp"
+    "fotos/hoka-rincon-4/1.webp?v=a7bec134",
+    "fotos/hoka-rincon-4/2.webp?v=c7a23329",
+    "fotos/hoka-rincon-4/3.webp?v=59e25dfb"
    ],
    "peso": 228,
    "drop": 5,
@@ -9561,10 +9561,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-skyflow/1.webp",
-    "fotos/hoka-skyflow/2.webp",
-    "fotos/hoka-skyflow/3.webp",
-    "fotos/hoka-skyflow/4.webp"
+    "fotos/hoka-skyflow/1.webp?v=8deddcf7",
+    "fotos/hoka-skyflow/2.webp?v=4a0e7abb",
+    "fotos/hoka-skyflow/3.webp?v=f5057976",
+    "fotos/hoka-skyflow/4.webp?v=93954335"
    ],
    "peso": 283,
    "drop": 5,
@@ -9657,10 +9657,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-speedgoat-6/1.webp",
-    "fotos/hoka-speedgoat-6/2.webp",
-    "fotos/hoka-speedgoat-6/3.webp",
-    "fotos/hoka-speedgoat-6/4.webp"
+    "fotos/hoka-speedgoat-6/1.webp?v=68dee331",
+    "fotos/hoka-speedgoat-6/2.webp?v=d53f9c83",
+    "fotos/hoka-speedgoat-6/3.webp?v=5fa68281",
+    "fotos/hoka-speedgoat-6/4.webp?v=bcdeda7d"
    ],
    "peso": 277,
    "drop": 5,
@@ -9720,10 +9720,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-challenger-atr-8/1.webp",
-    "fotos/hoka-challenger-atr-8/2.webp",
-    "fotos/hoka-challenger-atr-8/3.webp",
-    "fotos/hoka-challenger-atr-8/4.webp"
+    "fotos/hoka-challenger-atr-8/1.webp?v=53995b20",
+    "fotos/hoka-challenger-atr-8/2.webp?v=40aa8dec",
+    "fotos/hoka-challenger-atr-8/3.webp?v=30388119",
+    "fotos/hoka-challenger-atr-8/4.webp?v=5a5aef50"
    ],
    "peso": 275,
    "drop": 8,
@@ -9820,10 +9820,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-mafate-5/1.webp",
-    "fotos/hoka-mafate-5/2.webp",
-    "fotos/hoka-mafate-5/3.webp",
-    "fotos/hoka-mafate-5/4.webp"
+    "fotos/hoka-mafate-5/1.webp?v=0943bd2a",
+    "fotos/hoka-mafate-5/2.webp?v=4357ffd7",
+    "fotos/hoka-mafate-5/3.webp?v=897b0a5d",
+    "fotos/hoka-mafate-5/4.webp?v=6f74f04a"
    ],
    "peso": 332,
    "drop": 8,
@@ -9922,10 +9922,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/hoka-torrent-4/1.webp",
-    "fotos/hoka-torrent-4/2.webp",
-    "fotos/hoka-torrent-4/3.webp",
-    "fotos/hoka-torrent-4/4.webp"
+    "fotos/hoka-torrent-4/1.webp?v=600c75c8",
+    "fotos/hoka-torrent-4/2.webp?v=68a2e274",
+    "fotos/hoka-torrent-4/3.webp?v=40f0be69",
+    "fotos/hoka-torrent-4/4.webp?v=ee10552c"
    ],
    "peso": 254,
    "drop": 5,
@@ -10058,10 +10058,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/salomon-genesis-2/1.webp",
-    "fotos/salomon-genesis-2/2.webp",
-    "fotos/salomon-genesis-2/3.webp",
-    "fotos/salomon-genesis-2/4.webp"
+    "fotos/salomon-genesis-2/1.webp?v=fdafc57f",
+    "fotos/salomon-genesis-2/2.webp?v=773c1366",
+    "fotos/salomon-genesis-2/3.webp?v=cf6530c1",
+    "fotos/salomon-genesis-2/4.webp?v=3c925d8b"
    ],
    "peso": 281,
    "drop": 8,
@@ -10193,10 +10193,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/salomon-ultra-glide-4/1.webp",
-    "fotos/salomon-ultra-glide-4/2.webp",
-    "fotos/salomon-ultra-glide-4/3.webp",
-    "fotos/salomon-ultra-glide-4/4.webp"
+    "fotos/salomon-ultra-glide-4/1.webp?v=438a5594",
+    "fotos/salomon-ultra-glide-4/2.webp?v=81f4faf7",
+    "fotos/salomon-ultra-glide-4/3.webp?v=e13caf70",
+    "fotos/salomon-ultra-glide-4/4.webp?v=ed22c5f6"
    ],
    "peso": 280,
    "drop": 6,
@@ -10311,7 +10311,7 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/salomon-ultra-flow-2/1.webp"
+    "fotos/salomon-ultra-flow-2/1.webp?v=514400ef"
    ],
    "peso": 260,
    "drop": 6,
@@ -10385,10 +10385,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/salomon-slab-pulsar-4/1.webp",
-    "fotos/salomon-slab-pulsar-4/2.webp",
-    "fotos/salomon-slab-pulsar-4/3.webp",
-    "fotos/salomon-slab-pulsar-4/4.webp"
+    "fotos/salomon-slab-pulsar-4/1.webp?v=febb5e3b",
+    "fotos/salomon-slab-pulsar-4/2.webp?v=fe3158b8",
+    "fotos/salomon-slab-pulsar-4/3.webp?v=f43bfa4d",
+    "fotos/salomon-slab-pulsar-4/4.webp?v=61b35388"
    ],
    "peso": 250,
    "drop": 6,
@@ -10454,10 +10454,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/la-sportiva-prodigio-pro/1.webp",
-    "fotos/la-sportiva-prodigio-pro/2.webp",
-    "fotos/la-sportiva-prodigio-pro/3.webp",
-    "fotos/la-sportiva-prodigio-pro/4.webp"
+    "fotos/la-sportiva-prodigio-pro/1.webp?v=aab02cc7",
+    "fotos/la-sportiva-prodigio-pro/2.webp?v=bf98a1d0",
+    "fotos/la-sportiva-prodigio-pro/3.webp?v=22f27740",
+    "fotos/la-sportiva-prodigio-pro/4.webp?v=c63cf32e"
    ],
    "peso": 255,
    "drop": 6,
@@ -10516,10 +10516,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/la-sportiva-prodigio-max/1.webp",
-    "fotos/la-sportiva-prodigio-max/2.webp",
-    "fotos/la-sportiva-prodigio-max/3.webp",
-    "fotos/la-sportiva-prodigio-max/4.webp"
+    "fotos/la-sportiva-prodigio-max/1.webp?v=1230ad5a",
+    "fotos/la-sportiva-prodigio-max/2.webp?v=8927079f",
+    "fotos/la-sportiva-prodigio-max/3.webp?v=0d220e26",
+    "fotos/la-sportiva-prodigio-max/4.webp?v=6330c943"
    ],
    "peso": 295,
    "drop": 6,
@@ -10698,10 +10698,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/saucony-endorphin-speed-5/1.webp",
-    "fotos/saucony-endorphin-speed-5/2.webp",
-    "fotos/saucony-endorphin-speed-5/3.webp",
-    "fotos/saucony-endorphin-speed-5/4.webp"
+    "fotos/saucony-endorphin-speed-5/1.webp?v=9b16df08",
+    "fotos/saucony-endorphin-speed-5/2.webp?v=1faa8d7f",
+    "fotos/saucony-endorphin-speed-5/3.webp?v=7f3b253b",
+    "fotos/saucony-endorphin-speed-5/4.webp?v=0ab65cd7"
    ],
    "peso": 238,
    "drop": 8,
@@ -10936,10 +10936,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/saucony-peregrine-16/1.webp",
-    "fotos/saucony-peregrine-16/2.webp",
-    "fotos/saucony-peregrine-16/3.webp",
-    "fotos/saucony-peregrine-16/4.webp"
+    "fotos/saucony-peregrine-16/1.webp?v=1cb26bf9",
+    "fotos/saucony-peregrine-16/2.webp?v=9b09c0dd",
+    "fotos/saucony-peregrine-16/3.webp?v=ee9fe459",
+    "fotos/saucony-peregrine-16/4.webp?v=173889d7"
    ],
    "peso": 271,
    "drop": 4,
@@ -11024,10 +11024,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/saucony-hurricane-25/1.webp",
-    "fotos/saucony-hurricane-25/2.webp",
-    "fotos/saucony-hurricane-25/3.webp",
-    "fotos/saucony-hurricane-25/4.webp"
+    "fotos/saucony-hurricane-25/1.webp?v=90f5732f",
+    "fotos/saucony-hurricane-25/2.webp?v=e9656358",
+    "fotos/saucony-hurricane-25/3.webp?v=ecca919a",
+    "fotos/saucony-hurricane-25/4.webp?v=c0111ad2"
    ],
    "peso": 283,
    "drop": 6,
@@ -11143,10 +11143,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/saucony-surge-3/1.webp",
-    "fotos/saucony-surge-3/2.webp",
-    "fotos/saucony-surge-3/3.webp",
-    "fotos/saucony-surge-3/4.webp"
+    "fotos/saucony-surge-3/1.webp?v=30edb096",
+    "fotos/saucony-surge-3/2.webp?v=8de216db",
+    "fotos/saucony-surge-3/3.webp?v=38bd55e0",
+    "fotos/saucony-surge-3/4.webp?v=459da055"
    ],
    "peso": 293,
    "drop": 10,
@@ -11268,10 +11268,10 @@
    "colores": [],
    "ar": true,
    "fotos": [
-    "fotos/saucony-xodus-ultra-4/1.webp",
-    "fotos/saucony-xodus-ultra-4/2.webp",
-    "fotos/saucony-xodus-ultra-4/3.webp",
-    "fotos/saucony-xodus-ultra-4/4.webp"
+    "fotos/saucony-xodus-ultra-4/1.webp?v=0bdc10a6",
+    "fotos/saucony-xodus-ultra-4/2.webp?v=ac3f42ca",
+    "fotos/saucony-xodus-ultra-4/3.webp?v=84c4a6c8",
+    "fotos/saucony-xodus-ultra-4/4.webp?v=60f28136"
    ],
    "peso": 309,
    "drop": 6,
@@ -11469,10 +11469,10 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "fotos": [
-    "fotos/nike-winflo-11/1.webp",
-    "fotos/nike-winflo-11/2.webp",
-    "fotos/nike-winflo-11/3.webp",
-    "fotos/nike-winflo-11/4.webp"
+    "fotos/nike-winflo-11/1.webp?v=57833853",
+    "fotos/nike-winflo-11/2.webp?v=2d7d2005",
+    "fotos/nike-winflo-11/3.webp?v=3ef1d815",
+    "fotos/nike-winflo-11/4.webp?v=bcf5d58a"
    ],
    "esp": "Cushlon 3.0",
    "pl": "Sin placa",
@@ -11595,10 +11595,10 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "fotos": [
-    "fotos/nike-winflo-12/1.webp",
-    "fotos/nike-winflo-12/2.webp",
-    "fotos/nike-winflo-12/3.webp",
-    "fotos/nike-winflo-12/4.webp"
+    "fotos/nike-winflo-12/1.webp?v=9a2c7a80",
+    "fotos/nike-winflo-12/2.webp?v=c5798e7f",
+    "fotos/nike-winflo-12/3.webp?v=2eb4329a",
+    "fotos/nike-winflo-12/4.webp?v=74badeda"
    ],
    "esp": "Cushlon 3.0 + Air",
    "pl": "Sin placa",
@@ -11655,10 +11655,10 @@
    "tipo": "Neutra",
    "uso": "Competencia",
    "fotos": [
-    "fotos/nike-vaporfly-4/1.webp",
-    "fotos/nike-vaporfly-4/2.webp",
-    "fotos/nike-vaporfly-4/3.webp",
-    "fotos/nike-vaporfly-4/4.webp"
+    "fotos/nike-vaporfly-4/1.webp?v=f17d2669",
+    "fotos/nike-vaporfly-4/2.webp?v=8b94f7c5",
+    "fotos/nike-vaporfly-4/3.webp?v=8c334a3b",
+    "fotos/nike-vaporfly-4/4.webp?v=f25f3ae0"
    ],
    "esp": "ZoomX",
    "pl": "Carbono",
@@ -11781,10 +11781,10 @@
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
    "fotos": [
-    "fotos/nike-structure-plus/1.webp",
-    "fotos/nike-structure-plus/2.webp",
-    "fotos/nike-structure-plus/3.webp",
-    "fotos/nike-structure-plus/4.webp"
+    "fotos/nike-structure-plus/1.webp?v=3d7fc584",
+    "fotos/nike-structure-plus/2.webp?v=a492de7a",
+    "fotos/nike-structure-plus/3.webp?v=f9842149",
+    "fotos/nike-structure-plus/4.webp?v=29cd2533"
    ],
    "esp": "ZoomX",
    "pl": "Sin placa",
@@ -11876,10 +11876,10 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "fotos": [
-    "fotos/nike-vomero-premium/1.webp",
-    "fotos/nike-vomero-premium/2.webp",
-    "fotos/nike-vomero-premium/3.webp",
-    "fotos/nike-vomero-premium/4.webp"
+    "fotos/nike-vomero-premium/1.webp?v=2ae7f85e",
+    "fotos/nike-vomero-premium/2.webp?v=96dadd32",
+    "fotos/nike-vomero-premium/3.webp?v=531a7da9",
+    "fotos/nike-vomero-premium/4.webp?v=e58e2ac9"
    ],
    "esp": "ZoomX + ReactX con Air Zoom",
    "pl": "Sin placa",
@@ -11984,10 +11984,10 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "fotos": [
-    "fotos/nike-acg-pegasus-trail/1.webp",
-    "fotos/nike-acg-pegasus-trail/2.webp",
-    "fotos/nike-acg-pegasus-trail/3.webp",
-    "fotos/nike-acg-pegasus-trail/4.webp"
+    "fotos/nike-acg-pegasus-trail/1.webp?v=00f51902",
+    "fotos/nike-acg-pegasus-trail/2.webp?v=e3db0dca",
+    "fotos/nike-acg-pegasus-trail/3.webp?v=d9c9d3d7",
+    "fotos/nike-acg-pegasus-trail/4.webp?v=c1e6fd1c"
    ],
    "esp": "ReactX",
    "pl": "Sin placa",

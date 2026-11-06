@@ -129,6 +129,99 @@
       "43"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Tienda Fuencarral",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.tiendafuencarral.com.ar/zapatillas-adidas-running-adizero-evo-sl-hombre-kk2048/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "38.5",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Tienda Fuencarral",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.tiendafuencarral.com.ar/zapatillas-adidas-running-adizero-evo-sl-mujer-ki9440/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36.5",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-evo-sl-hombre-ki4828/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-evo-sl-mujer-ki4794/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38",
+      "38.5",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 278700,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/adidas-adizero-evo-sl-solar-yellow-plum/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [
@@ -318,6 +411,57 @@
       "44"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 309999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-ib1873102/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 299999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-mujer-ib1881113/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 279500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-air-zoom-pegasus-42/",
+     "fecha": "06/11/2026",
+     "antes": 293500,
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -409,6 +553,62 @@
      ],
      "sistema": "AR",
      "antes": 359999
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 359999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-plus-hombre-fq7262012/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "41.5",
+      "42",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 244999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-plus-mujer-fq7261102/p",
+     "fecha": "06/11/2026",
+     "antes": 350000,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 289600,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-pegasus-plus-hegpy/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -575,6 +775,60 @@
       "42.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 329999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-18-hombre-hm6803301/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 329999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-18-mujer-hm6804012/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 273400,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-vomero-18/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -703,6 +957,31 @@
       "40",
       "40.5",
       "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 379999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-plus-hombre-hv8150002/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 379999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-plus-mujer-hv8154012/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "37.5"
      ],
      "sistema": "AR"
     }
@@ -871,6 +1150,44 @@
       "44"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 299999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-26-hombre-26-hj1102001/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "46.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 299999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-26-mujer-hj1101113/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "38",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -999,6 +1316,44 @@
       "37"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 307999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-invincible-3-mujer-dr2660006/p",
+     "fecha": "06/11/2026",
+     "antes": 385000,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 276400,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-zoomx-invincible-run-flyknit-3/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1069,6 +1424,30 @@
       "35.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 274900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-zoom-fly-5/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1282,6 +1661,49 @@
       "45"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 249999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-sl2-hombre-jq0354/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 249999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-sl2-mujer-ji2994/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1394,6 +1816,57 @@
       "41.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 299999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-boston-13-hombre-js4938/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 299999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-boston-13-mujer-jp9246/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36.5",
+      "37.5",
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 269920,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/adidas-adizero-boston-13/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1560,6 +2033,62 @@
       "35.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 195999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-hombre-jp8680/p",
+     "fecha": "06/11/2026",
+     "antes": 280000,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-mujer-ki1666/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 279200,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-1cb37/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1715,6 +2244,30 @@
       "45"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 300200,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/adidas-adizero-adios-pro-5-13krz/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -1894,6 +2447,38 @@
       "41.5",
       "43.5",
       "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-duramo-sl-2-mujer-ih8225/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "40",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-duramo-sl-2-hombre-ih8215/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "38.5",
+      "39",
+      "39.5",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "46"
      ],
      "sistema": "AR"
     }
@@ -2242,6 +2827,26 @@
       "35.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 295700,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/asics-gel-kayano-32-1tc7e/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [
@@ -3176,6 +3781,21 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 174999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-4-hombre-s20940100/p",
+     "fecha": "06/11/2026",
+     "antes": 250000,
+     "nota": "Hombre",
+     "talles": [
+      "43.5",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3295,6 +3915,28 @@
       "10.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 289500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/saucony-endorin-pro-5-i3y1r/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -3355,6 +3997,38 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 199999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-4-hombre-31114004/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 199999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-4-mujer-31114101/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3498,6 +4172,41 @@
       "43",
       "43.5",
       "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 202999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-puma-running-deviate-nitro-4-mujer-31212409/p",
+     "fecha": "06/11/2026",
+     "antes": 290000,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 202999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-puma-running-deviate-nitro-4-hombre-31212308/p",
+     "fecha": "06/11/2026",
+     "antes": 290000,
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41.5",
+      "43"
      ],
      "sistema": "AR"
     }
@@ -3759,6 +4468,63 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 339999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudmonster-3-hombre-3mg10053388/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 339999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudmonster-3-mujer-3wg10036028/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 305800,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/on-cloudmonster-3-gb7j3/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -3872,6 +4638,34 @@
      "nota": "Mujer",
      "talles": [
       "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 269999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudsurfer-next-hombre-3me30020106/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "42.5",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 269999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudsurfer-next-mujer-3we30051025/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38",
+      "38.5"
      ],
      "sistema": "AR"
     }
@@ -4027,6 +4821,37 @@
       "38",
       "38.5",
       "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudrunner-3-mujer-3wg10054674/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudrunner-3-hombre-3mg10071043/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
      ],
      "sistema": "AR"
     }
@@ -4754,6 +5579,19 @@
       "35"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 89999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-velociti-3-mujer-3026124002/p",
+     "fecha": "06/11/2026",
+     "antes": 180000,
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4826,6 +5664,56 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://gostore.com.ar/ua-infinite-pro-uat000004.html",
      "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "44.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 129999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-infinite-pro-mujer-3027200001/p",
+     "fecha": "06/11/2026",
+     "antes": 200000,
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 129999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-infinite-pro-hombre-3027190001/p",
+     "fecha": "06/11/2026",
+     "antes": 200000,
      "nota": "Hombre",
      "talles": [
       "39",
@@ -5557,6 +6445,67 @@
       "35"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Tienda Fuencarral",
+     "precio": 449999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.tiendafuencarral.com.ar/zapatillas-nike-running-pegasus-premium-sp-hombre-ir2166102/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 429999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-premium-mujer-hq2593602/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 449999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-premium-hombre-hq2592005/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 316500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-pegasus-premium/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -5695,6 +6644,62 @@
       "35"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 237999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-41-hombre-fd2722002/p",
+     "fecha": "06/11/2026",
+     "antes": 280000,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "41",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-41-mujer-fd2723002/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 276800,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-air-zoom-pegasus-41/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -5827,6 +6832,40 @@
       "44",
       "45",
       "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 161499,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-quest-6-mujer-ih6231601/p",
+     "fecha": "06/11/2026",
+     "antes": 190000,
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 161499,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-quest-6-hombre-fd6033011/p",
+     "fecha": "06/11/2026",
+     "antes": 190000,
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "39",
+      "39.5",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
      ],
      "sistema": "AR"
     }
@@ -5995,6 +7034,43 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-hombre-hj9198003/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "39",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 129999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-mujer-hj8485006/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6159,6 +7235,45 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adistar-5-hombre-ih7178/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adistar-5-mujer-kk4215/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37.5",
+      "38",
+      "38.5",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6215,6 +7330,18 @@
      "antes": 149999,
      "nota": "Mujer",
      "sinStock": true
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 149999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-stride-2-0-mujer-ih8656/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6306,6 +7433,31 @@
      "nota": "Mujer",
      "talles": [
       "36.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 224999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-ultraboost-5-hombre-id8817/p",
+     "fecha": "06/11/2026",
+     "antes": 300000,
+     "nota": "Hombre",
+     "talles": [
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 299999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-running-ultraboost-5-mujer-jq2914/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38"
      ],
      "sistema": "AR"
     }
@@ -6510,6 +7662,19 @@
       "44"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 114999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-puma-running-foreverrun-nitro-2-hombre-31010901/p",
+     "fecha": "06/11/2026",
+     "antes": 230000,
+     "nota": "Hombre",
+     "talles": [
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6615,6 +7780,46 @@
       "39.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 219999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-5-mujer-31294503/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 219999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-5-hombre-31294404/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6706,6 +7911,45 @@
       "6"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 258999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-trail-5-gtx-hombre-fq0908301/p",
+     "fecha": "06/11/2026",
+     "antes": 370000,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "46.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 359999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-trail-running-pegasus-trail-5-gtx-mujer-fq0912200/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6866,6 +8110,37 @@
       "34.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 399999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-outdoor-zegama-2-hombre-fd5190303/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 399999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-outdoor-zegama-2-mujer-fd5191008/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "39.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6922,6 +8197,26 @@
       "45"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 310600,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/asics-gel-trabuco-13-1k0uk/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -7027,6 +8322,26 @@
       "43",
       "43.5",
       "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 279999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-adidas-outdoor-terrex-agravic-4-trail-hombre-kj8870/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
       "45"
      ],
      "sistema": "AR"
@@ -7150,6 +8465,23 @@
       "43",
       "43.5",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 101694,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-15-hombre-s20990245/p",
+     "fecha": "06/11/2026",
+     "antes": 184900,
+     "nota": "Hombre",
+     "talles": [
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
      ],
      "sistema": "AR"
     }
@@ -7291,6 +8623,20 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 339999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-on-trail-running-cloudultra-3-hombre-3mf30231043/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -7423,6 +8769,55 @@
       "7"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 295700,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/hoka-one-one-clifton-10-10bys/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 295700,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/hoka-one-one-clifton-10-m0jxr/",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -7509,6 +8904,55 @@
       "38.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 304900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/hoka-one-one-bondi-9/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 304900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/hoka-one-one-bondi-9-r4m5p/",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -8090,6 +9534,28 @@
       "11.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 292800,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/hoka-skyflow-rukod/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -8330,6 +9796,25 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 312600,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/hoka-one-one-mafate-5-6tdbc/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -8532,6 +10017,42 @@
       "11"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 249999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-genesis-2-hombre-492998/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 249999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-genesis-2-mujer-454591/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8647,6 +10168,26 @@
       "40.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 320600,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/salomon-ultra-glide-4-1r7jy/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -8727,6 +10268,44 @@
       "44.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 189999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-flow-2-mujer-478837/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 189999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-flow-2-hombre-478835/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8784,6 +10363,23 @@
       "10.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 399999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-s-lab-pulsar-4-unisex-477703/p",
+     "fecha": "06/11/2026",
+     "nota": "Unisex",
+     "talles": [
+      "38",
+      "39",
+      "40",
+      "41.5",
+      "42.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9067,6 +10663,36 @@
       "7"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 249899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-5-hombre-s2100797/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 199919,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-5-mujer-s11007343/p",
+     "fecha": "06/11/2026",
+     "antes": 249900,
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9249,6 +10875,62 @@
       "12.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 209899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-mujer-s11066100/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 209899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-hombre-s1015551008/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 229899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-el-cruce-unisex-s1020741001/p",
+     "fecha": "06/11/2026",
+     "nota": "Unisex",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9323,6 +11005,20 @@
       "10.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 145139,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-25-hombre-s21026120/p",
+     "fecha": "06/11/2026",
+     "antes": 241900,
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9537,6 +11233,36 @@
       "12.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 249899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-xodus-ultra-4-mujer-s1016261005/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 249899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-xodus-ultra-4-hombre-s1016171009/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9701,6 +11427,39 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 195499,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-11-mujer-fj9510304/p",
+     "fecha": "06/11/2026",
+     "antes": 230000,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37",
+      "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 195499,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-11-hombre-fj9509405/p",
+     "fecha": "06/11/2026",
+     "antes": 230000,
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "39",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 103,
@@ -9793,6 +11552,38 @@
      "talles": [
       "39.5",
       "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-12-mujer-hv9273600/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-12-hombre-hv9272002/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "45"
      ],
      "sistema": "AR"
     }
@@ -9950,6 +11741,37 @@
       "7.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 349999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-mujer-hq3049001/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 339999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-hombre-hq3049500/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 106,
@@ -10017,6 +11839,34 @@
       "12"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Tienda Fuencarral",
+     "precio": 469999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.tiendafuencarral.com.ar/zapatillas-nike-running-vomero-premium-hombre-ir2168002/p",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 469999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-premium-mujer-hm5973606/p",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 107,
@@ -10103,6 +11953,26 @@
       "9",
       "9.5",
       "10"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 289600,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/nike-pegasus-acg-trail-n3gpa/",
+     "fecha": "06/11/2026",
+     "talles": [
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
      ],
      "sistema": "US"
     }

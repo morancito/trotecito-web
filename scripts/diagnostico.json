@@ -1,50 +1,31 @@
 {
- "fecha": "2026-11-06T15:14:17.612Z",
+ "fecha": "2026-11-06T15:16:28.095Z",
  "resultados": [
   {
-   "url": "https://saucony.com.ar/",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-speed-5-white-mutant/",
    "estado": 200,
-   "urlFinal": "https://saucony.com.ar/",
-   "largo": 4279356,
-   "titulo": "Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios",
-   "plataforma": "tiendanube",
-   "generador": null,
-   "variantes": true,
-   "tiendanube": true,
-   "desafio": true,
-   "jsonld": 55,
-   "precioMeta": null,
-   "muestra": " Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Cha"
-  },
-  {
-   "url": "https://saucony.com.ar/search?q=endorphin",
-   "estado": 200,
-   "urlFinal": "https://saucony.com.ar/search?q=endorphin",
-   "largo": 1195738,
-   "titulo": "endorphin - Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios",
+   "urlFinal": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-speed-5-white-mutant/",
+   "largo": 1453730,
+   "titulo": "Zapatilla Hombre Endorphin Speed 5 White/Mutant",
    "plataforma": "tiendanube",
    "generador": null,
    "variantes": true,
    "tiendanube": true,
    "desafio": false,
-   "jsonld": 15,
+   "jsonld": 11,
    "precioMeta": null,
-   "muestra": " endorphin - Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y "
-  },
-  {
-   "url": "https://saucony.com.ar/api/catalog_system/pub/products/search?ft=endorphin",
-   "estado": 404,
-   "urlFinal": "https://saucony.com.ar/api/catalog_system/pub/products/search?ft=endorphin",
-   "largo": 776353,
-   "titulo": "",
-   "plataforma": "tiendanube",
-   "generador": null,
-   "variantes": true,
-   "tiendanube": true,
-   "desafio": false,
-   "jsonld": 7,
-   "precioMeta": null,
-   "muestra": " 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidratación Gorras Guantes Mangas Medias Riñoneras y "
+   "muestra": " Zapatilla Hombre Endorphin Speed 5 White/Mutant 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidra",
+   "leido": {
+    "precio": 42900,
+    "antes": null,
+    "cuotas": 3,
+    "_muestra": [
+     "Verde / S",
+     "Verde / M",
+     "Verde / L",
+     "Verde / XL"
+    ]
+   }
   }
  ]
 }

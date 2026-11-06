@@ -4,7 +4,7 @@ import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
 import { Viewer, perfil, topY, RM } from "./shoe3d.js";
 import { grafico, montarGrafico, variacion } from "./precios.js";
-import { PREGUNTAS, recomendar, rangoKg } from "./recomendador.js";
+import { PREGUNTAS, recomendar, rangoKg, opTexto } from "./recomendador.js";
 import { medir, medirVisita } from "./medir.js";
 import { buscarModelo, reemplazos, sugerir } from "./reemplazo.js";
 import { Pisada } from "./pisada.js";
@@ -111,7 +111,7 @@ const LANES = [
       ${escala("stackE", [["20-29", "Menos de 30", "Firme y rápida"], ["30-39", "30 a 39", "Para todo"], ["40-48", "40 o más", "Fondos largos"]])}`,
     mount() { const r = $("#stackr"), u = () => { const h = +r.value; $("#stackv").textContent = h + " mm"; lab.set({ H: h, F: h - 8, plate: false, leg: false, tilt: 0, hl: "mid", dims: true }); marcar("stackE", h); }; r.oninput = u; u(); } },
   { k: "pisada", t: "Pisada", vista: "Atrás", plano: true,
-    html: `<h3 class="cond">Pisada</h3><p>Cómo rueda tu pie cuando apoya, mirado desde atrás. La línea roja es el eje de la pierna y el talón.</p>
+    html: `<h3 class="cond">Pisada</h3><p>Una pierna corriendo, vista desde atrás. <b>Mirá el tobillo cuando el pie apoya</b>: la línea roja va de la pantorrilla al talón y debería quedar derecha.</p>
       <div class="seg" id="pis"><button data-t="neutra" aria-pressed="true">Neutra</button><button data-t="pronadora" aria-pressed="false">Pronadora</button><button data-t="supinadora" aria-pressed="false">Supinadora</button></div>
       <div class="seg pz-zap" id="pisz" hidden><button data-z="neutra" aria-pressed="true">Con zapa neutra</button><button data-z="estable" aria-pressed="false">Con zapa de estabilidad</button></div>
       <p class="resultado" id="pist"></p>`,
@@ -545,7 +545,7 @@ function recoPregunta() {
 function porque(lista, cls) { return lista.length ? `<ul class="rr-${cls}">${lista.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""; }
 function recoResultado() {
   const { picks, sinPresupuesto } = recomendar(DATA, resp);
-  const q = k => PREGUNTAS.find(x => x.k === k), txt = k => (opsDe(q(k)).find(([v]) => String(v) === String(resp[k])) || [])[1] || "";
+  const q = k => PREGUNTAS.find(x => x.k === k), txt = k => opTexto((opsDe(q(k)).find(([v]) => String(v) === String(resp[k])) || [])[1] || "");
   const [, gustoAct, labAct] = String(resp.actual || "").split("|");
   const perfilTxt = [(resp.gen === "Mujer" ? "Talles de mujer" : "Talles de hombre") + (resp.talle ? ` · talle ${resp.talle}` : ""), txt("uso"), txt("ritmo"), txt("kg"), resp.pis === "nose" ? "Pisada: no sé" : "Pisada " + txt("pis").split(":")[0].toLowerCase(),
     resp.pie === "ancho" ? "Pie ancho" : resp.pie === "angosto" ? "Pie angosto" : "", labAct ? `Usás ${labAct} (${({ gusta: "te encantan", ok: "están bien", no: "no te convencen" })[gustoAct] || ""})` : "", txt("tope")].filter(Boolean);

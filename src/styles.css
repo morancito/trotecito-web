@@ -713,3 +713,14 @@ a.puerta:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--b
 .pz-svg[data-tipo="pronadora"].pz-carga .pz-gaste-in, .pz-svg[data-tipo="supinadora"].pz-carga .pz-gaste-out { opacity: 1; }
 .pz-zap { margin-top: 8px; }
 #pist { margin-top: 12px; }
+.rq-ops button b { display: block; font-weight: 800; }
+.rq-ops button small { display: block; margin-top: 3px; font-size: 14px; font-weight: 500; color: var(--muted); line-height: 1.35; }
+.rq-ops button[aria-pressed="true"] small { color: #DCE6F7; }
+.pz-lado { font-size: 10px; }
+.pz-nota { opacity: 0; transition: opacity .25s; }
+.pz-svg.pz-ve .pz-nota { opacity: 1; }
+.pz-nota rect { fill: #DDF3E7; } .pz-nota text { font: 800 11px var(--body); fill: #13603D; }
+.pz-nota.pz-mal rect { fill: #FBE1E6; } .pz-nota.pz-mal text { fill: #8E1F3F; }
+.pz-flecha { fill: none; stroke: #E05B3A; stroke-width: 3; stroke-linecap: round; opacity: 0; transition: opacity .25s; }
+.pz-punta { fill: #E05B3A; }
+.pz-svg[data-tipo="pronadora"].pz-ve .pz-flecha-in, .pz-svg[data-tipo="supinadora"].pz-ve .pz-flecha-out { opacity: 1; }

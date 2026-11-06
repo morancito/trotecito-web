@@ -5,7 +5,7 @@ import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
 import "./admin.css";
 import { SUPABASE_URL as URL_SB, SUPABASE_KEY as KEY } from "./medir.js";
-import { PREGUNTAS } from "./recomendador.js";
+import { PREGUNTAS, opTexto } from "./recomendador.js";
 
 const $ = s => document.querySelector(s);
 const app = $("#app");
@@ -112,7 +112,7 @@ function calcular() {
   const embudo = [["Visitas", ses.size], ["Miraron zapas", vieronZapas.size], ["Abrieron una ficha", new Set(fichas.map(e => e.sesion)).size], ["Fueron a una tienda", sesClic.size]];
   /* perfiles del recomendador (última respuesta de cada visita) */
   const ultimo = new Map(); for (const e of E) if (e.tipo === "reco_fin") ultimo.set(e.sesion, e.datos);
-  const perfiles = PREGUNTAS.map(q => [q.t, cuenta([...ultimo.values()], r => { const o = [...q.ops, ...(q.trail || [])].find(([v]) => String(v) === String(r[q.k])); return o ? o[1] : null; })]);
+  const perfiles = PREGUNTAS.map(q => [q.t, cuenta([...ultimo.values()], r => { const o = [...q.ops, ...(q.trail || [])].find(([v]) => String(v) === String(r[q.k])); return o ? opTexto(o[1]) : null; })]);
   const recomendadas = cuenta([...ultimo.values()].flatMap(r => r.picks || []), s => s);
   /* origen */
   const visitas = E.filter(e => e.tipo === "visita");

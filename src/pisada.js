@@ -13,9 +13,9 @@ const RM = typeof matchMedia !== "undefined" && matchMedia("(prefers-reduced-mot
 
 export function Pisada(host) {
   const PIE_IN = 64, PIE_OUT = 136, SUELO = 236, TOBILLO = 168;
-  host.innerHTML = `<svg viewBox="0 0 200 270" class="pz-svg" role="img" aria-label="Pierna derecha vista desde atrás mientras corre">
+  host.innerHTML = `<svg viewBox="0 0 200 292" class="pz-svg" role="img" aria-label="Pierna derecha vista desde atrás mientras corre">
     <defs><linearGradient id="pzPiel" x1="0" x2="1"><stop offset="0" stop-color="#E9B892"/><stop offset=".55" stop-color="#F3CBA8"/><stop offset="1" stop-color="#D99F79"/></linearGradient></defs>
-    <text x="8" y="16" class="pz-lado">ADENTRO</text><text x="192" y="16" class="pz-lado" text-anchor="end">AFUERA</text>
+    <text x="6" y="16" class="pz-lado">← ADENTRO</text><text x="194" y="16" class="pz-lado" text-anchor="end">AFUERA →</text>
     <line x1="100" y1="26" x2="100" y2="${SUELO}" class="pz-ref"/>
     <ellipse cx="100" cy="${SUELO + 4}" rx="44" ry="5" class="pz-sombra"/>
     <line x1="10" y1="${SUELO + 1}" x2="190" y2="${SUELO + 1}" class="pz-suelo"/>
@@ -34,21 +34,31 @@ export function Pisada(host) {
       <rect x="${PIE_OUT - 17}" y="227" width="16" height="7" rx="3" class="pz-gaste pz-gaste-out"/>
       <line x1="100" y1="${TOBILLO}" x2="100" y2="232" class="pz-eje"/>
     </g></g>
+    <path class="pz-flecha pz-flecha-in" d="M70 132 Q 54 150 58 172" marker-end="url(#pzPunta)"/>
+    <path class="pz-flecha pz-flecha-out" d="M130 132 Q 146 150 142 172" marker-end="url(#pzPunta)"/>
+    <defs><marker id="pzPunta" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="pz-punta"/></marker></defs>
+    <g class="pz-nota"><rect x="12" y="254" width="176" height="28" rx="14"/><text x="100" y="272.5" text-anchor="middle"></text></g>
   </svg>`;
   const $ = s => host.querySelector(s);
   const pie = $(".pz-pie"), zapa = $(".pz-zapa"), pierna = $(".pz-pierna"), sombra = $(".pz-sombra"), svg = $("svg");
   let tipo = "neutra", raf = 0, t0 = 0, visible = true;
+  const NOTA = { neutra: ["ok", "✓ El tobillo queda derecho"], pronadora: ["mal", "✗ El tobillo se vence hacia adentro"],
+    estable: ["ok", "✓ La zapa lo mantiene derecho"], supinadora: ["mal", "✗ Apoya sobre el borde de afuera"] };
+  const nota = $(".pz-nota"), notaT = $(".pz-nota text");
   const ease = x => x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
-  /* ciclo de 1,1 s: 0-.30 en el aire, .30-.40 apoya el talón (un poco hacia afuera, como todos),
-     .40-.65 rueda hasta el máximo, .65-.85 despega y vuelve, .85-1 sube */
+  /* ciclo de 2 s, lento para que se vea: 0-.20 en el aire, .20-.27 apoya el talón (un poco hacia afuera, como todos),
+     .27-.45 rueda, .45-.72 queda en el apoyo máximo (ahí aparece la explicación), .72-.86 despega, .86-1 sube */
   function pose(f) {
     const T = TIPOS[tipo];
     let alto = 0, ang = 0;
-    if (f < 0.3) { alto = Math.sin(f / 0.3 * Math.PI) * 26 + 4; ang = 3; }
-    else if (f < 0.4) { const k = (f - 0.3) / 0.1; alto = 4 * (1 - k); ang = 3; }
-    else if (f < 0.65) { ang = 3 + (T.zapa - 3) * ease((f - 0.4) / 0.25); }
-    else if (f < 0.85) { const k = (f - 0.65) / 0.2; ang = T.zapa + (3 - T.zapa) * ease(k); alto = 4 * k; }
+    if (f < 0.2) { alto = Math.sin(f / 0.2 * Math.PI) * 26 + 4; ang = 3; }
+    else if (f < 0.27) { const k = (f - 0.2) / 0.07; alto = 4 * (1 - k); ang = 3; }
+    else if (f < 0.45) { ang = 3 + (T.zapa - 3) * ease((f - 0.27) / 0.18); }
+    else if (f < 0.72) { ang = T.zapa; }
+    else if (f < 0.86) { const k = (f - 0.72) / 0.14; ang = T.zapa + (3 - T.zapa) * ease(k); alto = 4 * k; }
     else { ang = 3; alto = 4; }
+    const muestra = f >= 0.4 && f < 0.78;
+    svg.classList.toggle("pz-ve", muestra);
     const apoyo = alto < 1;
     const px = ang < 0 ? PIE_IN : PIE_OUT;
     pie.setAttribute("transform", `translate(0 ${-alto})`);
@@ -58,12 +68,13 @@ export function Pisada(host) {
     sombra.setAttribute("rx", 44 - alto * 0.6); sombra.setAttribute("opacity", 0.35 - alto * 0.008);
     svg.classList.toggle("pz-carga", apoyo && Math.abs(ang - 3) > 2);
   }
-  function loop(t) { if (!t0) t0 = t; pose(((t - t0) / 1100) % 1); raf = requestAnimationFrame(loop); }
+  function loop(t) { if (!t0) t0 = t; pose(((t - t0) / 2000) % 1); raf = requestAnimationFrame(loop); }
   const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; frenar(); if (visible && !RM) raf = requestAnimationFrame(loop); });
   function frenar() { cancelAnimationFrame(raf); raf = 0; }
   io.observe(host);
   return {
-    set(k) { tipo = TIPOS[k] ? k : "neutra"; svg.dataset.tipo = tipo; if (RM) pose(0.62); },
+    set(k) { tipo = TIPOS[k] ? k : "neutra"; svg.dataset.tipo = tipo; t0 = 0;
+      const [c, txt] = NOTA[tipo]; nota.setAttribute("class", `pz-nota pz-${c}`); notaT.textContent = txt; if (RM) pose(0.6); },
     destroy() { frenar(); io.disconnect(); },
   };
 }

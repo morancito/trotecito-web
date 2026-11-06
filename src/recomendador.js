@@ -6,8 +6,13 @@ export const PREGUNTAS = [
   { k: "gen", t: "¿Qué talles buscás?", ops: [["Hombre", "Hombre"], ["Mujer", "Mujer"]] },
   { k: "talle", t: "¿Qué talle usás?", sub: "El de tus zapatillas de correr, que suele ser medio o un número más que el de calle. Lo usamos para mostrarte solo tiendas con ese talle; no te recomendamos otro.", grid: true, ops: [...Array.from({ length: 27 }, (_, i) => String(34 + i / 2).replace(/\.0$/, "")).map(x => [x, x]), ["", "No sé, mostrame todo"]] },
   { k: "terreno", t: "¿Dónde corrés?", ops: [["Asfalto", "Calle, pista o cinta"], ["Trail", "Senderos y montaña"]] },
-  { k: "uso", t: "¿Para qué la vas a usar más?", ops: [["Iniciación", "Estoy empezando"], ["Rodaje diario", "Entrenar casi todos los días"], ["Rodaje largo", "Fondos largos"], ["Ritmo", "Series y ritmos rápidos"], ["Competencia", "Competir"]],
-    trail: [["Rodaje diario", "Salidas cortas y medias"], ["Rodaje largo", "Fondos largos y ultras"], ["Ritmo", "Carreras rápidas"]] },
+  { k: "uso", t: "¿Qué papel va a cumplir esta zapa?", sub: "Pensá en cómo la vas a usar la mayoría de las veces. Si va a ser tu única zapa, elegí \"Una para todo\".",
+    ops: [["Iniciación", "<b>Es mi primera zapa</b><small>Estoy empezando o vuelvo después de mucho tiempo</small>"],
+      ["Rodaje diario", "<b>Una para todo</b><small>Entreno varias veces por semana, con algún fondo o algún día más rápido</small>"],
+      ["Rodaje largo", "<b>Para los fondos</b><small>Ya tengo otra para el día a día y quiero una para salidas largas y suaves</small>"],
+      ["Ritmo", "<b>Para los días rápidos</b><small>Series, pasadas y ritmos; para los suaves uso otra</small>"],
+      ["Competencia", "<b>Para el día de la carrera</b><small>Quiero bajar mi marca en 10K, media o maratón</small>"]],
+    trail: [["Rodaje diario", "<b>Una para todo</b><small>Salidas cortas y medias por sendero y cerro</small>"], ["Rodaje largo", "<b>Para fondos y ultras</b><small>Muchas horas en la montaña</small>"], ["Ritmo", "<b>Para correr rápido</b><small>Carreras cortas y técnicas</small>"]] },
   { k: "ritmo", t: "¿A qué ritmo corrés normalmente?", ops: [["r1", "Más rápido que 5:00 min/km"], ["r2", "Entre 5:00 y 6:00 min/km"], ["r3", "Entre 6:00 y 7:00 min/km"], ["r4", "Más lento, o no sé"]] },
   { k: "kg", t: "¿Cuánto pesás?", ops: [[60, "Menos de 65 kg"], [70, "65 a 75 kg"], [82, "75 a 90 kg"], [95, "Más de 90 kg"]] },
   { k: "pis", t: "¿Cómo pisás?", ops: [["Neutra", "Neutra"], ["Pronadora", "Pronadora: el pie se va hacia adentro"], ["Supinadora", "Supinadora: el pie se va hacia afuera"], ["nose", "No sé"]] },
@@ -17,7 +22,9 @@ export const PREGUNTAS = [
   { k: "tope", t: "¿Hasta cuánto querés gastar?", ops: [[150000, "Hasta $150 mil"], [250000, "Hasta $250 mil"], [350000, "Hasta $350 mil"], [0, "Sin límite"]] },
 ];
 
-const USO_TXT = { "Iniciación": "empezar a correr", "Rodaje diario": "entrenar todos los días", "Rodaje largo": "fondos largos", "Ritmo": "series y ritmos rápidos", "Competencia": "competir" };
+/* texto corto de una opción (algunas traen título y aclaración en HTML) */
+export const opTexto = t => String(t || "").replace(/<small>[\s\S]*?<\/small>/g, "").replace(/<[^>]+>/g, "").trim();
+const USO_TXT = { "Iniciación": "empezar a correr", "Rodaje diario": "el día a día", "Rodaje largo": "fondos largos", "Ritmo": "series y ritmos rápidos", "Competencia": "competir" };
 /* afinidad entre lo que busca el corredor (fila) y para qué está hecha la zapa (columna) */
 const AF = {
   "Iniciación": { "Iniciación": 30, "Rodaje diario": 24, "Rodaje largo": 14, "Ritmo": 0, "Competencia": -30 },
@@ -65,6 +72,8 @@ export function puntaje(d, r, usoBuscado = r.uso) {
   else if (af >= 14) add(af, `También rinde para ${USO_TXT[usoBuscado]}`, af - 6);
   else if (af < 0) add(af, `Está hecha para ${USO_TXT[d.uso]}, no para ${USO_TXT[usoBuscado]}`);
   else add(af);
+  /* "una para todo": suma que también aguante el fondo de la semana */
+  if (usoBuscado === "Rodaje diario" && d.uso !== "Rodaje largo" && usos.includes("Rodaje largo")) add(3, "También te sirve para el fondo de la semana");
   /* pisada */
   const est = d.tipo === "Estabilidad";
   if (r.pis === "Pronadora") { if (est) add(22, "Tiene estabilidad para pronadores"); else add(d.talon >= 38 ? -10 : -18, "Es neutra: si pronás mucho, puede faltarte soporte"); }

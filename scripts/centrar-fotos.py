@@ -21,7 +21,7 @@ for slug in pedidos:
         bb = dif.getbbox()
         if not bb or bb[3] - bb[1] > h * 0.8: continue
         dy = round(h / 2 - (bb[1] + bb[3]) / 2)
-        if abs(dy) < h * 0.04: continue
+        if abs(dy) < h * 0.02: continue
         nuevo = Image.new("RGB", im.size, bg); nuevo.paste(im, (0, dy))
         # lo que entra desde el borde se rellena con el fondo (la foto se corrió)
         nuevo.save(ruta, quality=82, method=6); n += 1

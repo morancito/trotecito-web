@@ -54,19 +54,10 @@
     },
     {
      "tienda": "adidas.com.ar",
-     "precio": 249999,
+     "precio": 279999,
      "cuotas": "Consultar en la tienda",
-     "nota": "Hombre",
-     "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KJ8336.html",
-     "fecha": "01/11/2026"
-    },
-    {
-     "tienda": "adidas.com.ar",
-     "precio": 249999,
-     "cuotas": "Consultar en la tienda",
-     "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KH9635.html",
-     "fecha": "01/11/2026"
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [
@@ -966,22 +957,6 @@
    "pl": "Sin placa",
    "tiendas": [
     {
-     "tienda": "adidas.com.ar",
-     "precio": 129999,
-     "cuotas": "Consultar en la tienda",
-     "nota": "Hombre",
-     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
-     "fecha": "01/11/2026"
-    },
-    {
-     "tienda": "adidas.com.ar",
-     "precio": 129999,
-     "cuotas": "Consultar en la tienda",
-     "nota": "Mujer",
-     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8225.html",
-     "fecha": "01/11/2026"
-    },
-    {
      "tienda": "Sporting",
      "precio": 131999,
      "cuotas": "12 cuotas sin interés",
@@ -993,6 +968,13 @@
       "38"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 139999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
+     "fecha": "06/11/2026"
     },
     {
      "tienda": "Dexter",
@@ -1222,11 +1204,10 @@
     },
     {
      "tienda": "adidas.com.ar",
-     "precio": 249999,
+     "precio": 279999,
      "cuotas": "Consultar en la tienda",
-     "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-supernova-rise-3/KK1925.html",
-     "fecha": "01/11/2026"
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],
@@ -1443,19 +1424,10 @@
     },
     {
      "tienda": "adidas.com.ar",
-     "precio": 129999,
+     "precio": 139999,
      "cuotas": "Consultar en la tienda",
-     "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
-     "fecha": "01/11/2026"
-    },
-    {
-     "tienda": "adidas.com.ar",
-     "precio": 129999,
-     "cuotas": "Consultar en la tienda",
-     "nota": "Mujer",
-     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8225.html",
-     "fecha": "01/11/2026"
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],
@@ -5044,6 +5016,13 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatilla-de-running-adistar-5/IH7175.html",
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],
@@ -5155,6 +5134,13 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 299999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatillas-ultraboost-5/ID8848.html",
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],
@@ -5734,6 +5720,13 @@
       "45"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatillas-terrex-agravic-4-trail-running/KJ8872.html",
+     "fecha": "06/11/2026"
     }
    ],
    "colores": [],

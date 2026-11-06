@@ -35,7 +35,7 @@ function pintar(est) {
   <section class="ad-box hr-paso"><h2 class="cond">1 · Instalá el marcador <small>(una sola vez, en la compu)</small></h2>
     <p class="hr-aviso">Si ya lo tenías, <b>borralo y arrastralo de nuevo</b> cuando cambie la versión: el marcador guarda el código del día que lo instalaste. Versión actual: <b>${VERSION}</b>.</p>
     <p>Arrastrá este botón a la barra de favoritos de Chrome. Si no la ves, apretá <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (en Mac <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).</p>
-    <p class="hr-marc"><a class="btn" title="Trotecito v3" href="${esc(href)}" onclick="event.preventDefault()" title="Arrastralo a la barra de favoritos">⇣ Trotecito</a></p>
+    <p class="hr-marc"><a class="btn" title="Trotecito v${VERSION.split(" ")[0]}: arrastralo a la barra de favoritos" href="${esc(href)}" onclick="event.preventDefault()">⇣ Trotecito v${VERSION.split(" ")[0]}</a></p>
     <p class="ad-sub">No hace nada en esta página: funciona estando en nike.com.ar, adidas.com.ar o digitalsport.com.ar.</p></section>
   <section class="ad-box hr-paso"><h2 class="cond">2 · Cada semana: bajá los datos</h2>
     <ol><li>Abrí <a href="https://www.nike.com.ar/" target="_blank" rel="noopener">www.nike.com.ar</a> y tocá el marcador <b>⇣ Trotecito</b>. Aparece un cartel arriba a la derecha; en un minuto baja el archivo <code>nike-AAAA-MM-DD.json</code>.</li>

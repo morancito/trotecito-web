@@ -69,3 +69,14 @@
 .hr .pill { white-space: nowrap; display: inline-block; margin-top: 10px; }
 .hr-paso h2 small { display: block; margin-top: 4px; }
 @media (max-width: 600px) { .hr .kpi b { font-size: 26px; } }
+
+/* tablero de tiendas y fuentes */
+.ad-tb td, .ad-tb th { white-space: nowrap; font-size: 14px; }
+.ad-tb td small { color: var(--muted); }
+.tb-ok, .tb-ojo, .tb-mal { font-style: normal; font-weight: 800; font-size: 12px; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.tb-ok { background: #DDF3E7; color: #13603D; }
+.tb-ojo { background: #FFF1CC; color: #7A5600; }
+.tb-mal { background: #FBE1E6; color: #8E1F3F; }
+.tb-l { padding-left: 18px; line-height: 1.6; font-size: 14px; }
+.tb-l a, .ad-tb a { color: var(--azul2, #2F5DB8); font-weight: 700; }
+.tb-det { margin-top: 14px; } .tb-det summary { cursor: pointer; font-weight: 800; margin-bottom: 10px; }

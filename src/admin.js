@@ -68,11 +68,12 @@ async function cargar() {
   $("#salir").hidden = false; cargando = true; pintar();
   const desde = new Date(Date.now() - rango * 864e5).toISOString();
   try {
-    const [ev, cat, robot] = await Promise.all([traerEventos(desde),
+    const [ev, cat, robot, rev] = await Promise.all([traerEventos(desde),
       fetch("data/modelos.json", { cache: "no-cache" }).then(r => r.json()).catch(() => null),
-      fetch("data/robot.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null)]);
+      fetch("data/robot.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null),
+      fetch("data/revisiones.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null)]);
     eventos = ev; MOD = Object.fromEntries((cat?.modelos || []).map(m => [m.slug, m]));
-    window.__cat = cat; window.__robot = robot;
+    window.__cat = cat; window.__robot = robot; window.__rev = rev;
   } catch (e) { if (e.message === "401") return login("La sesión venció, entrá de nuevo."); app.innerHTML = `<p class="ad-err">No pude leer los datos (${esc(e.message)}).</p>`; return; }
   cargando = false; pintar();
 }
@@ -199,7 +200,7 @@ function pintar() {
 create policy "solo el admin lee" on public.eventos
   for select to authenticated
   using (lower(auth.jwt() ->> 'email') = '${esc(String(sesion.email || "").toLowerCase())}');</code></pre>
-    <p>Después tocá <b>Actualizar</b>.</p></section>`; return eventosCab(); }
+    <p>Después tocá <b>Actualizar</b>.</p></section>` + tablero(); return eventosCab(); }
   const c = calcular(), cat = window.__cat, rb = window.__robot;
   const precios = cat ? cat.modelos.reduce((a, m) => a + (m.tiendas?.length || 0), 0) : 0;
   app.innerHTML = cab + `
@@ -233,16 +234,51 @@ create policy "solo el admin lee" on public.eventos
     ${bloque("Las que más recomienda", barras(c.recomendadas, { fmtL: s => esc(nombre(s)) }), "Si siempre salen las mismas, conviene revisar los criterios.")}
     ${bloque("Más comparadas", barras(c.comparadas, { fmtL: s => esc(nombre(s)) }))}
     ${bloque("De dónde llegan", barras(c.origen) + `<h3>Dispositivo</h3>` + barras(c.disp))}
-    ${bloque("Estado del catálogo", `<dl class="ad-dl">
-      <div><dt>Modelos</dt><dd>${cat ? n0(cat.modelos.length) : "–"}</dd></div><div><dt>Precios cargados</dt><dd>${n0(precios)}</dd></div>
-      <div><dt>Última pasada del robot</dt><dd>${rb ? `${esc(rb.fecha)} ${esc(rb.hora || "")}` : "–"}</dd></div>
-      <div><dt>Leyó bien</dt><dd>${rb ? `${n0(rb.leidos)} (${n0(rb.cambiaron)} cambiaron)` : "–"}</dd></div></dl>
-      ${rb?.errores?.length ? `<h3>Fallaron (${rb.errores.length})</h3><ul class="ad-err-l">${rb.errores.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}`)}
   </div>
+  ${tablero()}
   ${bloque("Últimos eventos", `<div class="tblwrap"><table class="cmpt ad-ev"><thead><tr><th>Hora</th><th>Evento</th><th>Dónde</th><th>Detalle</th></tr></thead><tbody>
     ${eventos.slice(-40).reverse().map(e => `<tr><td>${new Date(e.ts).toLocaleString("es-AR", { timeZone: "America/Argentina/Buenos_Aires", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</td><td>${esc(e.tipo)}</td><td>${esc(e.ruta)}</td><td><code>${esc(JSON.stringify(Object.fromEntries(Object.entries(e.datos || {}).filter(([k]) => k !== "vis"))))}</code></td></tr>`).join("") || `<tr><td colspan="4">Todavía no hay eventos.</td></tr>`}
     </tbody></table></div>`, "Para chequear que la medición funciona.")}`;
   eventosCab(); montarSerie();
+}
+/* ---------- tablero: tiendas, precios y fuentes de las fichas ---------- */
+const MANUALES = { "Nike": "Marcador (tu navegador)", "adidas.com.ar": "Marcador (tu navegador)" };
+const fechaMs = f => { const [d, m, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, m - 1, d) : 0; };
+const hace = ms => { const d = Math.floor((Date.now() - ms) / 864e5); return d <= 0 ? "hoy" : d === 1 ? "ayer" : `hace ${d} días`; };
+function tablero() {
+  const cat = window.__cat, rb = window.__robot, rev = window.__rev;
+  if (!cat) return "";
+  const hoy = Date.now(), T = {};
+  for (const m of cat.modelos) for (const t of m.tiendas || []) {
+    const x = T[t.tienda] ??= { modelos: new Set(), precios: 0, aldia: 0, viejos: 0, vencidos: 0, sinStock: 0, ult: 0, prim: Infinity, fallas: 0 };
+    const ms = fechaMs(t.fecha), dias = (hoy - ms) / 864e5;
+    x.modelos.add(m.slug); x.precios++; x.ult = Math.max(x.ult, ms); x.prim = Math.min(x.prim, ms);
+    if (t.sinStock) x.sinStock++; else if (dias <= 2.5) x.aldia++; else if (dias <= 7.99) x.viejos++; else x.vencidos++;
+  }
+  for (const e of rb?.errores || []) { const k = (e.match(/ · ([^:]+):/) || [])[1]; if (k && T[k]) T[k].fallas++; }
+  const filas = Object.entries(T).sort((a, b) => b[1].precios - a[1].precios);
+  const tot = filas.reduce((a, [, x]) => ({ p: a.p + x.precios, d: a.d + x.aldia, v: a.v + x.vencidos }), { p: 0, d: 0, v: 0 });
+  const estado = x => x.vencidos ? `<em class="tb-mal">${x.vencidos} vencidos</em>` : x.viejos > x.aldia ? `<em class="tb-ojo">desactualizada</em>` : `<em class="tb-ok">al día</em>`;
+  const tiendas = `<div class="kpis">${kpi("Tiendas", n0(filas.length))}${kpi("Precios al día", pct(tot.d, tot.p), `${n0(tot.d)} de ${n0(tot.p)}, actualizados en los últimos 2 días`)}${kpi("Vencidos", n0(tot.v), "más de 7 días: no se muestran")}${kpi("Robot", rb ? esc(rb.fecha) : "–", rb ? `${n0(rb.leidos)} leídos · ${n0(rb.fallaron)} fallaron` : "")}</div>
+    <div class="tblwrap"><table class="cmpt ad-tb"><thead><tr><th>Tienda</th><th>Cómo se lee</th><th>Estado</th><th>Modelos</th><th>Precios</th><th>Al día</th><th>3 a 7 días</th><th>Sin stock</th><th>Última actualización</th><th>Fallaron hoy</th></tr></thead><tbody>
+    ${filas.map(([n, x]) => `<tr><td><b>${esc(n)}</b></td><td>${MANUALES[n] || "Robot diario"}</td><td>${estado(x)}</td><td>${x.modelos.size}</td><td>${x.precios}</td><td>${x.aldia}</td><td>${x.viejos || ""}</td><td>${x.sinStock || ""}</td><td>${x.ult ? `${new Date(x.ult).toLocaleDateString("es-AR", { timeZone: "UTC" })} <small>(${hace(x.ult)})</small>` : "–"}</td><td>${x.fallas ? `<em class="tb-mal">${x.fallas}</em>` : ""}</td></tr>`).join("")}
+    </tbody></table></div>`;
+  let fuentes = "";
+  if (rev?.modelos) {
+    const F = {}, M = Object.entries(rev.modelos);
+    for (const [, m] of M) for (const f of m.fuentes) { const x = F[f.n] ??= { ficha: 0, revision: 0, horma: 0, review: f.review }; x[f.uso === "ficha" ? "ficha" : f.uso === "horma" ? "horma" : "revision"]++; }
+    const pocas = M.filter(([, m]) => m.fuentes.filter(f => f.review).length < 2);
+    const link = f => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.n)}</a>${f.review ? "" : " <em class=\"tb-ojo\">no es review</em>"}`;
+    fuentes = `<div class="tblwrap"><table class="cmpt ad-tb"><thead><tr><th>Fuente</th><th>Tipo</th><th>En la ficha</th><th>Para revisar la ficha</th><th>Ancho de horma</th></tr></thead><tbody>
+      ${Object.entries(F).sort((a, b) => (b[1].ficha + b[1].revision + b[1].horma) - (a[1].ficha + a[1].revision + a[1].horma)).map(([n, x]) => `<tr><td><b>${esc(n)}</b></td><td>${x.review ? "Review" : "<em class=\"tb-ojo\">Tienda o marca</em>"}</td><td>${x.ficha || ""}</td><td>${x.revision || ""}</td><td>${x.horma || ""}</td></tr>`).join("")}
+      </tbody></table></div>
+      <h3>Con menos de dos reviews (${pocas.length})</h3>${pocas.length ? `<ul class="tb-l">${pocas.map(([s, m]) => `<li><b>${esc(m.nombre)}</b>: ${m.fuentes.map(link).join(" · ") || "<em class=\"tb-mal\">ninguna</em>"}</li>`).join("")}</ul>` : `<p class="ad-vacio">Todas tienen al menos dos.</p>`}
+      <details class="tb-det"><summary>Ver las fuentes de cada modelo (${M.length})</summary><div class="tblwrap"><table class="cmpt ad-tb"><thead><tr><th>Modelo</th><th>En la ficha</th><th>Para revisar</th><th>Horma</th></tr></thead><tbody>
+      ${M.sort((a, b) => a[1].nombre.localeCompare(b[1].nombre)).map(([, m]) => `<tr><td>${esc(m.nombre)}</td><td>${m.fuentes.filter(f => f.uso === "ficha").map(link).join(" · ")}</td><td>${m.fuentes.filter(f => f.uso === "revisión").map(link).join(" · ")}</td><td>${m.horma ? esc(m.horma) + " " + m.fuentes.filter(f => f.uso === "horma").map(link).join("") : ""}</td></tr>`).join("")}
+      </tbody></table></div></details>`;
+  }
+  return bloque("Tiendas y precios", tiendas, `Cada precio se muestra hasta 7 días después de su última actualización. "Al día" es de los últimos 2 días; el robot pasa una vez por día y Nike y adidas se cargan con el marcador (<a href="./herramientas.html">Herramientas</a>).`)
+    + (fuentes ? bloque("Fuentes de las fichas", fuentes, `Con qué reviews se armó y se revisó cada ficha.${rev.fechas?.foro ? ` Foroatletismo revisado el ${esc(rev.fechas.foro.split("-").reverse().join("/"))}.` : ""}`) : "");
 }
 function eventosCab() {
   $("#rango")?.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; rango = +b.dataset.d; cargar(); });

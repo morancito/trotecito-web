@@ -35,10 +35,10 @@ jobs:
         if: inputs.paso != 'foro'
         env:
           MODELOS: ${{ inputs.modelos }}
-        run: node scripts/segunda-fuente.mjs $MODELOS
+        run: node scripts/segunda-fuente.mjs $MODELOS && node scripts/revisiones.mjs
       - name: Guardar
         run: |
           git config user.name "trotecito-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts/foro-atletismo.json scripts/segunda-fuente.json
+          git add scripts/foro-atletismo.json scripts/segunda-fuente.json public/data/revisiones.json
           git diff --cached --quiet || (git commit -m "Revisión de fichas: datos de Foroatletismo" && for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && break; sleep 15; done)

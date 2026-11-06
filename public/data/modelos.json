@@ -98,6 +98,37 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adizero-evo-sl-mujer/ADKI4794.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adizero-evo-sl-hombre/ADKJ8336.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "43"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -243,6 +274,50 @@
       "12"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 309999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-pegasus-42-mujer/NIIB1881-101.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 309999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-air-zoom-pegasus-42-hombre/NIIB1873-001.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "39",
+      "39.5",
+      "40",
+      "40.5",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -464,6 +539,42 @@
       "7"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 329999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-vomero-18-mujer/NIHM6804-004.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "40",
+      "40.5",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 329999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-vomero-18-hombre/NIHM6803-404.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -579,6 +690,21 @@
       "11.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 379999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-vomero-plus-mujer/NIHV8154-002.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "40",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -701,6 +827,48 @@
       "39.5",
       "40",
       "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-nike-structure-26-mujer/NIHJ1101-003.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "39",
+      "39.5",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-structure-26-hombre/NIHJ1102-002.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
      ],
      "sistema": "AR"
     }
@@ -888,6 +1056,19 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 99999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-zoom-fly-5-mujer/NIDM8974-100.html",
+     "fecha": "06/11/2026",
+     "antes": 339999,
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1068,6 +1249,39 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 54999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adizero-sl2-mujer/ADIF6766.html",
+     "fecha": "06/11/2026",
+     "antes": 179999,
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 249999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-adidas-adizero-sl2-hombre/ADJQ0354.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1167,6 +1381,19 @@
      "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-boston-13/KH8859.html",
      "fecha": "01/11/2026"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adizero-boston-13-hombre/ADKH8859.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1306,6 +1533,33 @@
       "45.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 167999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADJP8689.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 251999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1422,6 +1676,45 @@
      "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-adios-pro-5/KJ7042.html",
      "fecha": "01/11/2026"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 479999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-mujer/ADKJ7041.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 479999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-hombre/ADKJ7039.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1567,6 +1860,42 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-adidas-duramo-sl2-mujer/ADIH8225.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-duramo-sl2-hombre/ADIH8218.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1639,6 +1968,33 @@
      "fecha": "06/11/2026",
      "nota": "Mujer",
      "antes": 319999,
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 239999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-novablast-5-tokio-hombre/AS1011C139500.html",
+     "fecha": "06/11/2026",
+     "antes": 319999,
+     "nota": "Hombre",
+     "talles": [
+      "42.5",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 239999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-novablast-5-mujer/AS1012B765701.html",
+     "fecha": "06/11/2026",
+     "antes": 319999,
+     "nota": "Mujer",
      "talles": [
       "35.5"
      ],
@@ -1873,6 +2229,19 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 239999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-kayano-32-mujer/AS1012B838101.html",
+     "fecha": "06/11/2026",
+     "antes": 319999,
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -1971,6 +2340,37 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 209999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gt-2000-14-mujer/AS1012B843300.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Mujer",
+     "talles": [
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 209999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gt-2000-14-hombre-malla/AS1011C056400.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "42.5",
+      "43"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2058,6 +2458,34 @@
       "37",
       "38",
       "38.5",
+      "39",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-cumulus-27-hombre/AS1011C186500.html",
+     "fecha": "06/11/2026",
+     "antes": 299999,
+     "nota": "Hombre",
+     "talles": [
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-cumulus-27-mujer/AS1012B772701.html",
+     "fecha": "06/11/2026",
+     "antes": 299999,
+     "nota": "Mujer",
+     "talles": [
       "39",
       "40.5",
       "41"
@@ -2656,6 +3084,20 @@
       "14"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 180999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5",
+      "45.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2708,6 +3150,22 @@
      "precio": 249999,
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-saucony-endorphin-speed-4-hombre/SAS20940-100.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "43",
+      "43.5",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 249999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-endorphin-speed-4-hombre/SAS20940-100.html",
      "fecha": "06/11/2026",
      "nota": "Hombre",
      "talles": [
@@ -3002,6 +3460,46 @@
       "38"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 289999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-puma-deviate-nitro-4-pwrplate-mujer/PU312124-01.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 289999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-puma-deviate-nitro-4-pwrplate-hombre/PU312123-01.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "38",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3102,6 +3600,43 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 319999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-puma-magmax-nitro-2-hombre/PU312125-01.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 319999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-puma-magmax-nitro-2-mujer/PU312126-01.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3191,6 +3726,39 @@
       "45"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 339999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudmonster-3-hombre-malla/ON3MG10054-887.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 339999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudmonster-3-mujer/ON3WG10034-888.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3276,6 +3844,34 @@
      "nota": "Hombre",
      "talles": [
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 269999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudsurfer-next-hombre/ON3ME30022-906.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "42.5",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 269999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudsurfer-next-mujer/ON3WE30054-292.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38"
      ],
      "sistema": "AR"
     }
@@ -3399,6 +3995,40 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudrunner-3-hombre-malla/ON3MG10071-430.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10054-723.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3477,6 +4107,37 @@
       "38.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 309999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudflyer-5-hombre/ON3ME30010-299.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 309999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudflyer-5-mujer/ON3WE30040-299.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "38.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3545,6 +4206,39 @@
      "precio": 409999,
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-on-cloudboom-max-mujer/ON3WF30180-438.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 409999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudboom-max-hombre/ON3MF30310-438.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 409999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudboom-max-mujer/ON3WF30180-438.html",
      "fecha": "06/11/2026",
      "nota": "Mujer",
      "talles": [
@@ -3664,6 +4358,19 @@
       "44",
       "44.5",
       "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 59999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-brooks-ghost-15-hombre/BRCRNMLIV0028AZNGVE.html",
+     "fecha": "06/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "43.5"
      ],
      "sistema": "AR"
     }
@@ -4034,6 +4741,19 @@
       "35"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 54999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-under-armour-velociti-3-mujer/UA3026124-603.html",
+     "fecha": "06/11/2026",
+     "antes": 179999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4201,6 +4921,20 @@
       "44"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 64999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-under-armour-infinite-elite-mujer/UA3027199-004.html",
+     "fecha": "06/11/2026",
+     "antes": 219999,
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4303,6 +5037,20 @@
       "8.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-triumph-22-hombre/SAS20964-135.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4458,6 +5206,27 @@
       "7"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 399999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-endorphin-elite-2/SAS30994-135.html",
+     "fecha": "06/11/2026",
+     "talles": [
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "43",
+      "43.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4581,6 +5350,19 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-excite-11-mujer/AS1012B861700.html",
+     "fecha": "06/11/2026",
+     "antes": 209999,
+     "nota": "Mujer",
+     "talles": [
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4633,6 +5415,24 @@
      "precio": 209999,
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-asics-dynablast-5-hombre/AS1011B983401.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 209999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-dynablast-5-hombre/AS1011B983401.html",
      "fecha": "06/11/2026",
      "antes": 279999,
      "nota": "Hombre",
@@ -4744,6 +5544,19 @@
      "antes": 449999,
      "nota": "Hombre",
      "sinStock": true
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 269999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-nike-pegasus-premium-mujer/NIHQ2593-602.html",
+     "fecha": "06/11/2026",
+     "antes": 449999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4853,6 +5666,35 @@
       "8.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-pegasus-41-hombre/NIFD2722-401.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 84999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-air-zoom-pegasus-41-mujer/NIHF7362-900.html",
+     "fecha": "06/11/2026",
+     "antes": 279999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4936,6 +5778,42 @@
      "precio": 179999,
      "cuotas": "2 cuotas sin interés",
      "url": "https://www.dexter.com.ar/zapatillas-running-nike-quest-6-hombre/NIFD6033-001.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "37.5",
+      "39",
+      "39.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 109999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-quest-6-mujer/NIFD6034-108.html",
+     "fecha": "06/11/2026",
+     "antes": 179999,
+     "nota": "Mujer",
+     "talles": [
+      "39.5",
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 179999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-quest-6-hombre/NIFD6033-001.html",
      "fecha": "06/11/2026",
      "nota": "Hombre",
      "talles": [
@@ -5072,6 +5950,51 @@
       "11.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-nike-revolution-8-hombre/NIHJ9198-403.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "43.5",
+      "44",
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-revolution-8-mujer/NIHJ8485-500.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5198,6 +6121,42 @@
       "39.5",
       "40",
       "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adistar-5-hombre/ADIH7178.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adistar-5-mujer/ADKI9523.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38.5",
+      "39"
      ],
      "sistema": "AR"
     }
@@ -5336,6 +6295,19 @@
       "45.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 89999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-ultraboost-5-mujer/ADID8845.html",
+     "fecha": "06/11/2026",
+     "antes": 299999,
+     "nota": "Mujer",
+     "talles": [
+      "36.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5407,6 +6379,37 @@
      "fecha": "06/11/2026",
      "nota": "Mujer",
      "antes": 269999,
+     "talles": [
+      "34.5",
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-adidas-adizero-takumi-sen-10-hombre/ADIF1211.html",
+     "fecha": "06/11/2026",
+     "antes": 274999,
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 269999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-adizero-takumi-sen-10-mujer/ADID3629.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
      "talles": [
       "34.5",
       "35.5"
@@ -5490,6 +6493,23 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 229999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-puma-foreverrun-nitro-2-hombre/PU310109-01.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "41",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5554,6 +6574,45 @@
       "43.5",
       "44",
       "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-puma-velocity-nitro-5/PU312944-04.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 219999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-puma-velocity-nitro-5-mujer/PU312945-01.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5"
      ],
      "sistema": "AR"
     }
@@ -5794,6 +6853,19 @@
       "7.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 119999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-zegama-trail-2-mujer/NIFD5191-502.html",
+     "fecha": "06/11/2026",
+     "antes": 399999,
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5939,6 +7011,25 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-terrex-agravic-4-trail-hombre/ADKJ8870.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6046,6 +7137,21 @@
       "11"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 184999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-entrenamiento-saucony-peregrine-15-hombre/SAS20990-162.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6153,6 +7259,36 @@
      "talles": [
       "37.5",
       "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 339999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudultra-3-hombre/ON3MF30231-043.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 339999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-on-cloudultra-3-mujer/ON3WF30114-882.html",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "38.5",
+      "39"
      ],
      "sistema": "AR"
     }
@@ -8293,6 +9429,19 @@
       "12"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-surge-3-hombre/SAS28215-3.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8518,6 +9667,40 @@
       "7.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 79999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-air-winflo-11-hombre/NIFJ9509-402.html",
+     "fecha": "06/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "42.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 179999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-nike-air-winflo-11-mujer/NIFJ9510-605.html",
+     "fecha": "06/11/2026",
+     "antes": 199999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37",
+      "37.5",
+      "39",
+      "39.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 103,
@@ -8599,6 +9782,19 @@
       "11"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 229999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-nike-winflo%C2%A012-hombre/NIHV9272-002.html",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 104,

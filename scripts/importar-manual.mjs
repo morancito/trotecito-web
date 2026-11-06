@@ -13,7 +13,8 @@ for (const f of archivos) {
   let tipo = null;
   try {
     const j = JSON.parse(readFileSync(ruta, "utf8"));
-    if (j.tienda === "nike" || (Array.isArray(j) && j[0]?.productId && j[0]?.items)) tipo = "nike";
+    if (j.plataforma === "vtex" || j.plataforma === "html") tipo = "tienda";
+    else if (j.tienda === "nike" || (Array.isArray(j) && j[0]?.productId && j[0]?.items)) tipo = "nike";
     else if (j.tienda === "adidas" || j.items || j.productos) tipo = "adidas";
   } catch (e) { console.warn(`✗ ${f}: no es un JSON válido (${e.message})`); }
   if (!tipo) { console.warn(`✗ ${f}: no reconozco de qué tienda es; lo dejo para revisar.`); continue; }

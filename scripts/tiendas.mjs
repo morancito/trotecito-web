@@ -156,12 +156,17 @@ function generico(h, texto) {
 
 export async function leer(url) {
   if (/\/p\/?$/.test(new URL(url).pathname)) { try { return await vtex(url); } catch (e) { if (!/404/.test(e.message)) throw e; } }
-  const h = await traer(url), texto = h.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+  const h = await traer(url);
   if (/cdn\.shopify\.com|Shopify\.theme/.test(h)) { try { return await shopify(url); } catch {} }
+  const r = leerHtml(h);
+  if (/demandware/i.test(h) && !r.sinStock) { Object.assign(r, await tallesSfcc(url, h)); if (r.talles && !r.talles.length) r.sinStock = true; }
+  return r;
+}
+/* lee precio, stock y talles de una página de producto ya bajada (la usa también el importador del marcador) */
+export function leerHtml(h) {
+  const texto = h.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
   if (/x-magento-init|Magento_/.test(h)) { const r = magento(h, texto); if (r) return r; }
   if (/data-variants=/.test(h)) { const r = tiendanube(h, texto); if (r) return r; }
   if (/data-product_variations=/.test(h)) { const r = woo(h, texto); if (r) return r; }
-  const r = generico(h, texto);
-  if (/demandware/i.test(h) && !r.sinStock) { Object.assign(r, await tallesSfcc(url, h)); if (r.talles && !r.talles.length) r.sinStock = true; }
-  return r;
+  return generico(h, texto);
 }

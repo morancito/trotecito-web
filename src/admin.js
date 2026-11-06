@@ -242,7 +242,7 @@ create policy "solo el admin lee" on public.eventos
   eventosCab(); montarSerie();
 }
 /* ---------- tablero: tiendas, precios y fuentes de las fichas ---------- */
-const MANUALES = { "Nike": "Marcador (tu navegador)", "adidas.com.ar": "Marcador (tu navegador)" };
+const MANUALES = { "Nike": "Marcador (tu navegador)", "adidas.com.ar": "Marcador (tu navegador)", "Digital Sport": "Marcador (tu navegador)" };
 const fechaMs = f => { const [d, m, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, m - 1, d) : 0; };
 const hace = ms => { const d = Math.floor((Date.now() - ms) / 864e5); return d <= 0 ? "hoy" : d === 1 ? "ayer" : `hace ${d} días`; };
 function tablero() {
@@ -277,7 +277,7 @@ function tablero() {
       ${M.sort((a, b) => a[1].nombre.localeCompare(b[1].nombre)).map(([, m]) => `<tr><td>${esc(m.nombre)}</td><td>${m.fuentes.filter(f => f.uso === "ficha").map(link).join(" · ")}</td><td>${m.fuentes.filter(f => f.uso === "revisión").map(link).join(" · ")}</td><td>${m.horma ? esc(m.horma) + " " + m.fuentes.filter(f => f.uso === "horma").map(link).join("") : ""}</td></tr>`).join("")}
       </tbody></table></div></details>`;
   }
-  return bloque("Tiendas y precios", tiendas, `Cada precio se muestra hasta 7 días después de su última actualización. "Al día" es de los últimos 2 días; el robot pasa una vez por día y Nike y adidas se cargan con el marcador (<a href="./herramientas.html">Herramientas</a>).`)
+  return bloque("Tiendas y precios", tiendas, `Cada precio se muestra hasta 7 días después de su última actualización. "Al día" es de los últimos 2 días; el robot pasa una vez por día y Nike, adidas y Digital Sport se cargan con el marcador (<a href="./herramientas.html">Herramientas</a>).`)
     + (fuentes ? bloque("Fuentes de las fichas", fuentes, `Con qué reviews se armó y se revisó cada ficha.${rev.fechas?.foro ? ` Foroatletismo revisado el ${esc(rev.fechas.foro.split("-").reverse().join("/"))}.` : ""}`) : "");
 }
 function eventosCab() {

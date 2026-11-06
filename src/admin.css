@@ -80,3 +80,4 @@
 .tb-l { padding-left: 18px; line-height: 1.6; font-size: 14px; }
 .tb-l a, .ad-tb a { color: var(--azul2, #2F5DB8); font-weight: 700; }
 .tb-det { margin-top: 14px; } .tb-det summary { cursor: pointer; font-weight: 800; margin-bottom: 10px; }
+.hr-aviso { background: #FFF1CC; border-radius: 10px; padding: 10px 12px; font-size: 14px; }

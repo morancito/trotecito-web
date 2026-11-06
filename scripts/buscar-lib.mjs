@@ -10,7 +10,7 @@ export const TIENDAS = [
   { nombre: "TodoTrail", url: "https://todotrail.com.ar" },
   { nombre: "Naka Outdoors", url: "https://www.nakaoutdoors.com.ar" },
   /* tiendas oficiales de una marca: solo se buscan los modelos de esa marca */
-  { nombre: "Saucony", url: "https://saucony.com.ar", marca: "Saucony" },
+  { nombre: "Saucony Argentina", url: "https://saucony.com.ar", marca: "Saucony" },
 ];
 export const vendeMarca = (ti, m) => !ti.marca || ti.marca === m.m;
 export const PAUSA = 800, PAUSA_LENTA = 2500;   // algunas tiendas frenan si se consulta rápido

@@ -10,7 +10,7 @@ const hist = JSON.parse(readFileSync(new URL("historial.json", RAIZ), "utf8"));
 const enc = JSON.parse(readFileSync(new URL("./ofertas-encontradas.json", import.meta.url), "utf8"));
 const guardar = process.argv.includes("--guardar");
 /* ofertas revisadas a mano que no corresponden al modelo (el nombre de la tienda no coincide con el producto) */
-const DESCARTAR = [/velociti-elite/];
+const DESCARTAR = [/velociti-elite/, /zoom-vomero/];
 const hoyISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires" }).format(new Date());
 const hoyAR = hoyISO.split("-").reverse().join("/");
 

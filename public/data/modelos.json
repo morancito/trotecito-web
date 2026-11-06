@@ -2426,6 +2426,19 @@
       "43.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 90450,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-guide-18-peel-navy/",
+     "fecha": "06/11/2026",
+     "antes": 180900,
+     "nota": "Hombre",
+     "talles": [
+      "14"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -2568,6 +2581,36 @@
       "44"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 299900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-endorphin-pro-5-black-shock/",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 299900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-pro-5-citron-black/",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -4090,6 +4133,19 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 279930,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-unisex-endorphin-elite-2-citron-black/",
+     "fecha": "06/11/2026",
+     "antes": 399900,
+     "nota": "Unisex",
+     "talles": [
+      "7"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -5530,6 +5586,21 @@
      "talles": [
       "9",
       "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 110940,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-peregrine-15-wine-kodiak/",
+     "fecha": "06/11/2026",
+     "antes": 184900,
+     "nota": "Hombre",
+     "talles": [
       "10",
       "10.5",
       "11"
@@ -7305,6 +7376,32 @@
       "7"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 249900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-speed-5-white-mutant/",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "12",
+      "12.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 249900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-endorphin-speed-5-coral-salmon/",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "6",
+      "7"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -7424,6 +7521,63 @@
       "8.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 229900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-unisex-peregrine-16-el-cruce-black-vizigold/",
+     "fecha": "06/11/2026",
+     "nota": "Unisex",
+     "talles": [
+      "4.5",
+      "5",
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 209900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-peregrine-16-black-carbon/",
+     "fecha": "06/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 209900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-peregrine-16-carbon-black/",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12",
+      "12.5"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -7477,6 +7631,22 @@
      "nota": "Mujer",
      "talles": [
       "7"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 169300,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-hurricane-25-shadow-black/",
+     "fecha": "06/11/2026",
+     "antes": 241900,
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5"
      ],
      "sistema": "US"
     }
@@ -7562,6 +7732,24 @@
       "6"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 89940,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-surge-3-white-lapis/",
+     "fecha": "06/11/2026",
+     "antes": 149900,
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "12"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -7635,6 +7823,22 @@
       "7",
       "7.5",
       "8"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 249900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-xodus-ultra-4-white-tumeric/",
+     "fecha": "06/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "12.5"
      ],
      "sistema": "US"
     }

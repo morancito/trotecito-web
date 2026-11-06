@@ -7,6 +7,7 @@ import { grafico, montarGrafico, variacion } from "./precios.js";
 import { PREGUNTAS, recomendar, rangoKg } from "./recomendador.js";
 import { medir, medirVisita } from "./medir.js";
 import { buscarModelo, reemplazos, sugerir } from "./reemplazo.js";
+import { Pisada } from "./pisada.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
@@ -97,6 +98,7 @@ function setVista(k) { lab.view(VISTAS[k], false); document.querySelectorAll("#l
 $("#labViews").onclick = e => { const b = e.target.closest("button"); if (b) setVista(b.dataset.v); };
 const escala = (id, items) => `<div class="escala" id="${id}">${items.map(([r, t, s]) => `<div data-r="${r}"><b>${t}</b><span>${s}</span></div>`).join("")}</div>`;
 const marcar = (id, v) => document.querySelectorAll(`#${id} div`).forEach(x => { const [a, b] = x.dataset.r.split("-").map(Number); x.classList.toggle("on", v >= a && v <= b); });
+let pz = null;
 const LANES = [
   { k: "drop", t: "Drop", vista: "Costado",
     html: `<h3 class="cond">Drop</h3><p>La diferencia de altura entre el talón y la punta.</p><div class="big" id="dropv">10 mm</div>
@@ -108,14 +110,24 @@ const LANES = [
       <input type="range" id="stackr" min="20" max="48" value="38" aria-label="Altura del talón en milímetros">
       ${escala("stackE", [["20-29", "Menos de 30", "Firme y rápida"], ["30-39", "30 a 39", "Para todo"], ["40-48", "40 o más", "Fondos largos"]])}`,
     mount() { const r = $("#stackr"), u = () => { const h = +r.value; $("#stackv").textContent = h + " mm"; lab.set({ H: h, F: h - 8, plate: false, leg: false, tilt: 0, hl: "mid", dims: true }); marcar("stackE", h); }; r.oninput = u; u(); } },
-  { k: "pisada", t: "Pisada", vista: "Atrás",
-    html: `<h3 class="cond">Pisada</h3><p>Cómo apoya tu pie, mirado desde atrás.</p>
-      <div class="seg" id="pis"><button data-t="0" aria-pressed="true">Neutra</button><button data-t="0.16" aria-pressed="false">Pronadora</button><button data-t="-0.16" aria-pressed="false">Supinadora</button></div>
+  { k: "pisada", t: "Pisada", vista: "Atrás", plano: true,
+    html: `<h3 class="cond">Pisada</h3><p>Cómo rueda tu pie cuando apoya, mirado desde atrás. La línea roja es el eje de la pierna y el talón.</p>
+      <div class="seg" id="pis"><button data-t="neutra" aria-pressed="true">Neutra</button><button data-t="pronadora" aria-pressed="false">Pronadora</button><button data-t="supinadora" aria-pressed="false">Supinadora</button></div>
+      <div class="seg pz-zap" id="pisz" hidden><button data-z="neutra" aria-pressed="true">Con zapa neutra</button><button data-z="estable" aria-pressed="false">Con zapa de estabilidad</button></div>
       <p class="resultado" id="pist"></p>`,
     mount() {
-      const T = { "0": "Talón alineado con la pierna. Te va cualquier zapa neutra.", "0.16": "El pie se vence hacia adentro. Buscá zapas de estabilidad.", "-0.16": "El pie se va hacia afuera. Te conviene una neutra bien amortiguada." };
-      const u = t => { lab.set({ H: 36, F: 28, plate: false, leg: true, tilt: +t, hl: null, dims: false }); $("#pist").textContent = T[t]; document.querySelectorAll("#pis button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === t)); };
-      $("#pis").onclick = e => { const b = e.target.closest("button"); if (b) u(b.dataset.t); }; u("0"); } },
+      const T = { neutra: "Apoya el talón, rueda apenas hacia adentro y el eje queda casi derecho: así amortigua el pie. Te va cualquier zapa neutra.",
+        pronadora: "Con una zapa neutra el tobillo se vence hacia adentro y el eje se quiebra. Se gasta el borde de adentro de la suela. Una zapa de estabilidad lo frena.",
+        estable: "La espuma más firme del lado de adentro (en violeta) frena el vencimiento: el eje queda casi derecho, como en una pisada neutra.",
+        supinadora: "El pie no llega a rodar: queda apoyado sobre el borde de afuera y absorbe menos el golpe. Se gasta el lado de afuera. Te conviene una neutra bien amortiguada, nunca de estabilidad." };
+      pz ??= Pisada($("#pzStage"));
+      let tipo = "neutra", zapa = "neutra";
+      const u = () => { const k = tipo === "pronadora" && zapa === "estable" ? "estable" : tipo; pz.set(k); $("#pist").textContent = T[k];
+        document.querySelectorAll("#pis button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === tipo));
+        document.querySelectorAll("#pisz button").forEach(x => x.setAttribute("aria-pressed", x.dataset.z === zapa)); $("#pisz").style.display = tipo === "pronadora" ? "" : "none"; };
+      $("#pis").onclick = e => { const b = e.target.closest("button"); if (b) { tipo = b.dataset.t; zapa = "neutra"; u(); } };
+      $("#pisz").onclick = e => { const b = e.target.closest("button"); if (b) { zapa = b.dataset.z; u(); } };
+      u(); } },
   { k: "placa", t: "Placa", vista: "3/4",
     html: `<h3 class="cond">Placa</h3><p>Una lámina rígida dentro de la espuma que te empuja hacia adelante. Rinde más cuanto más rápido corrés.</p>
       <div class="seg" id="pl"><button data-p="1" aria-pressed="true">Con placa</button><button data-p="0" aria-pressed="false">Sin placa</button></div>`,
@@ -131,6 +143,8 @@ function abrirLane(k) {
   const l = LANES.find(x => x.k === k) || LANES[0];
   document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.k === l.k));
   $("#labtext").innerHTML = l.html; l.mount(); setVista(l.vista);
+  /* la pisada se explica mejor en plano (animación 2D) que con la zapa 3D */
+  $("#pzStage").hidden = !l.plano; $("#labStage").style.visibility = l.plano ? "hidden" : ""; $("#labViews").style.display = l.plano ? "none" : "";
 }
 $("#lanes").onclick = e => { const b = e.target.closest(".tab"); if (b) abrirLane(b.dataset.k); };
 abrirLane("drop");

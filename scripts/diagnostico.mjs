@@ -12,6 +12,8 @@ for (const url of process.argv.slice(2)) {
     const r = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "es-AR,es;q=0.9", Accept: /\/api\//.test(url) ? "application/json" : "text/html" }, redirect: "follow", signal: AbortSignal.timeout(25000) });
     const h = await r.text();
     Object.assign(x, { estado: r.status, urlFinal: r.url, largo: h.length, titulo: (h.match(/<title>([^<]*)/) || [])[1]?.trim(),
+      plataforma: /demandware/i.test(h) ? "sfcc" : /x-magento-init|Magento_/.test(h) ? "magento" : /vteximg|vtexassets|vtex\.com/i.test(h) ? "vtex" : /cdn\.shopify\.com/i.test(h) ? "shopify" : /woocommerce/i.test(h) ? "woo" : /tiendanube|nuvemshop|LS\.store/i.test(h) ? "tiendanube" : null,
+      generador: (h.match(/<meta[^>]+name="generator"[^>]+content="([^"]+)"/i) || [])[1] || null,
       variantes: /data-variants=/.test(h), tiendanube: /tiendanube|nuvemshop|LS\.store/i.test(h), desafio: /captcha|challenge|cf-chl|Just a moment|Access denied/i.test(h),
       jsonld: (h.match(/ld\+json/g) || []).length, precioMeta: (h.match(/(?:product:price:amount|og:price:amount)["'][^>]*content=["']([\d.,]+)/i) || [])[1] || null,
       muestra: h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").slice(0, 600) });

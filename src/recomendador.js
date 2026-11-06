@@ -137,10 +137,10 @@ export function recomendar(DATA, r0) {
   const precios = pool.map(x => x.t.precio), pMin = Math.min(...precios), pMax = Math.max(...precios);
   const evalua = (x, uso) => {
     const p = puntaje(x.d, r, uso);
-    p.s += pMax > pMin ? 8 * (1 - (x.t.precio - pMin) / (pMax - pMin)) : 0;   // a igual calidad, mejor más barata
+    p.s += pMax > pMin ? 4 * (1 - (x.t.precio - pMin) / (pMax - pMin)) : 0;   // a igual calidad, mejor más barata (la barata tiene su propio lugar)
     if (r.talle && !tieneTalle(x.t, r.talle)) p.s -= 6;                         // preferimos las que confirmamos que tienen tu talle
     const off = x.t.antes > x.t.precio ? 1 - x.t.precio / x.t.antes : 0;
-    if (off >= 0.3) { p.s += 4; p.pros.push(`En oferta: −${Math.round(off * 100)}% en ${x.t.tienda}`); }
+    if (off >= 0.3) { p.s += 2; p.pros.push(`En oferta: −${Math.round(off * 100)}% en ${x.t.tienda}`); }
     return { ...x, ...p, off };
   };
   const rank = pool.map(x => evalua(x)).sort((a, b) => b.s - a.s);
@@ -149,7 +149,9 @@ export function recomendar(DATA, r0) {
   const tomar = (x, etiqueta, sub) => { usados.add(x.d.id); picks.push({ ...x, etiqueta, sub }); };
   const p1 = rank[0]; tomar(p1, "La mejor para vos", "La que mejor encaja con todo lo que respondiste.");
   /* más barata que cumple: buen puntaje y al menos 10% menos que la primera */
-  const p2 = rank.filter(x => !usados.has(x.d.id) && x.s >= p1.s - 14 && x.t.precio <= p1.t.precio * 0.9).sort((a, b) => a.t.precio - b.t.precio)[0];
+  /* tiene que servir para lo que busca (no vale una de entrenar barata para fondos largos) */
+  const sirve = x => (x.d.usos?.length ? x.d.usos : [x.d.uso]).includes(r.uso);
+  const p2 = rank.filter(x => !usados.has(x.d.id) && sirve(x) && x.s >= p1.s - 12 && x.t.precio <= p1.t.precio * 0.9).sort((a, b) => a.t.precio - b.t.precio)[0];
   if (p2) tomar(p2, "La que más conviene por precio", `Cumple con lo que buscás y sale ${fmt(p1.t.precio - p2.t.precio)} menos.`);
   /* paso siguiente */
   const [usoSig, etSig, subSig] = SIGUE[r.uso] || [];

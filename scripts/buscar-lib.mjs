@@ -9,6 +9,7 @@ export const TIENDAS = [
   { nombre: "Gostore", url: "https://gostore.com.ar" },
   { nombre: "TodoTrail", url: "https://todotrail.com.ar" },
   { nombre: "Naka Outdoors", url: "https://www.nakaoutdoors.com.ar" },
+  { nombre: "Stock Center", url: "https://www.stockcenter.com.ar" },
   /* tiendas oficiales de una marca: solo se buscan los modelos de esa marca */
   { nombre: "Saucony Argentina", url: "https://saucony.com.ar", marca: "Saucony" },
 ];

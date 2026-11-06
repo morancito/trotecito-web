@@ -28,10 +28,50 @@
     if (!cat?.modelos) { pinta(`No pude leer la lista de modelos de trotecito.com.ar. Probá de nuevo en un rato.${btn("Cerrar", 'id="tt-x"')}`); caja.querySelector("#tt-x").onclick = cerrar; return; }
     const qs = [...new Set(cat.modelos.filter(m => !m.borrador).map(m => `${m.m} ${m.mod} ${m.ver}`.replace(/\s+/g, " ").trim()))];
     const norm = x => String(x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
-    /* 1) si la tienda es VTEX, su API de catálogo */
+    const num = s => Number(String(s || "").replace(/\./g, "").replace(",", ".")) || 0;
+    /* 0) Digital Sport: su buscador arma los resultados con JavaScript, pero el listado de calzado de running (Sport 78)
+       viene en la página, de a 40 por página. De ahí salen los nuestros; de cada uno, el precio, el género ("PARA MUJER")
+       y los talles argentinos ("42 ARG") de su página. */
     let vtex = false;
-    try { const a = await json(`/api/catalog_system/pub/products/search?ft=pegasus&_from=0&_to=0`); vtex = Array.isArray(a); } catch {}
-    if (vtex) {
+    if (h === "digitalsport.com.ar") {
+      const claves = [...new Set(cat.modelos.filter(m => !m.borrador).map(m => norm(`${m.mod} ${m.ver || ""}`)))].map(k => k.split(" ").filter(Boolean));
+      const lista = new Map();
+      for (const [dis, nom] of [[12, "running"], [10, "trail"]]) for (let p = 1; p <= 40; p++) {
+        let html = ""; try { html = await (await fetch(`/sport78/prods/?category[1]=1&discipline=${dis}&page=${p}`, { credentials: "same-origin" })).text(); } catch {}
+        const d = new DOMParser().parseFromString(html, "text/html"); let nuevos = 0;
+        for (const a of d.querySelectorAll('a[href*="/prod/"]')) {
+          let u; try { u = new URL(a.getAttribute("href"), location.origin); } catch { continue; }
+          const k = u.origin + u.pathname, t = a.textContent.replace(/\s+/g, " ").trim();
+          if (!t) continue;
+          if (!lista.has(k)) nuevos++;
+          lista.set(k, ((lista.get(k) || "") + " " + t).trim());
+        }
+        estado(`${nom}, página ${p}: ${lista.size} zapas`);
+        if (!nuevos) break;
+        await espera(400);
+      }
+      const nuestros = [...lista].filter(([u, t]) => { const n = ` ${norm(t + " " + decodeURIComponent(u))} `; return claves.some(k => k.every(w => n.includes(` ${w} `))); });
+      const productos = []; let i = 0;
+      for (const [url, txt] of nuestros) {
+        try {
+          const d = new DOMParser().parseFromString(await (await fetch(url, { credentials: "same-origin" })).text(), "text/html");
+          const nombre = (d.querySelector("h1")?.textContent || txt).replace(/\s+/g, " ").trim();
+          const precio = num(d.querySelector(".price span")?.textContent) || num((txt.match(/\$\s*([\d.]+)/) || [])[1]);
+          const pr = txt.match(/\$\s*([\d.]+)\s*\|\s*\$\s*([\d.]+)/), antes = pr ? num(pr[2]) : 0;
+          const bc = (d.querySelector(".breadcrumb")?.textContent || "").replace(/\s+/g, " ").toUpperCase();
+          const talles = [...new Set([...d.querySelectorAll("input[name=size]")].filter(x => !x.disabled)
+            .map(x => (d.querySelector(`label[for="${x.id}"]`)?.textContent || "").match(/(\d{2}(?:[.,]5)?)\s*ARG/i)).filter(Boolean).map(m => m[1].replace(",", ".")))].sort((a, b) => a - b);
+          if (precio) productos.push({ nombre, url, precio, antes: antes > precio * 1.01 ? antes : null, cuotas: Number((txt.match(/(\d+)\s*CUOTAS/i) || [])[1]) || 0,
+            nota: /PARA MUJER/.test(bc) ? "Mujer" : /PARA HOMBRE/.test(bc) ? "Hombre" : /UNISEX/.test(bc) ? "Unisex" : "", talles, sistema: "AR" });
+        } catch {}
+        if (++i % 5 === 0) estado(`modelos nuestros: ${i} de ${nuestros.length}`);
+        await espera(500);
+      }
+      datos = { tienda: NOMBRE, plataforma: "lista", fecha: new Date().toISOString(), listado: lista.size, productos };
+    }
+    /* 1) si la tienda es VTEX, su API de catálogo */
+    if (!datos) try { const a = await json(`/api/catalog_system/pub/products/search?ft=pegasus&_from=0&_to=0`); vtex = Array.isArray(a); } catch {}
+    if (datos) {} else if (vtex) {
       const prods = new Map();
       for (const q of qs) {
         let a = []; try { a = await json(`/api/catalog_system/pub/products/search?ft=${encodeURIComponent(q.replace(/^\S+\s/, ""))}&_from=0&_to=29`); } catch {}

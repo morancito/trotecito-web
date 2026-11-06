@@ -13,7 +13,7 @@ for (const f of archivos) {
   let tipo = null;
   try {
     const j = JSON.parse(readFileSync(ruta, "utf8"));
-    if (j.plataforma === "vtex" || j.plataforma === "html") tipo = "tienda";
+    if (["vtex", "html", "lista"].includes(j.plataforma)) tipo = "tienda";
     else if (j.tienda === "nike" || (Array.isArray(j) && j[0]?.productId && j[0]?.items)) tipo = "nike";
     else if (j.tienda === "adidas" || j.items || j.productos) tipo = "adidas";
   } catch (e) { console.warn(`✗ ${f}: no es un JSON válido (${e.message})`); }

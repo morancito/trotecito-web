@@ -1,7 +1,8 @@
 // Carga los precios de una tienda que bloquea al robot (ej. Digital Sport) a partir del archivo que baja el marcador
-// desde el navegador. Dos formatos:
+// desde el navegador. Tres formatos:
 //   { tienda, plataforma: "vtex", productos }  -> respuesta de la API de catálogo VTEX
 //   { tienda, plataforma: "html", paginas: [{ url, nombre, html }] } -> páginas de producto, se leen como las lee el robot
+//   { tienda, plataforma: "lista", productos: [{ nombre, url, precio, antes, cuotas, nota, talles }] } -> ya leído en el navegador
 //   node scripts/importar-tienda.mjs archivo.json
 import { readFileSync, writeFileSync } from "node:fs";
 import { coincide, generoDe } from "./buscar-lib.mjs";
@@ -35,6 +36,9 @@ if (j.plataforma === "vtex") {
     if (!r || r.sinStock || !r.precio) continue;
     ofertas.push({ nombre: p.nombre, url: p.url, ...r, nota: generoDe(p.nombre + " " + p.url) });
   }
+} else if (j.plataforma === "lista") {
+  /* ya leído en el navegador (Digital Sport): nombre, url, precio, antes, cuotas, nota (género), talles AR */
+  for (const p of j.productos || []) if (p.precio > 0 && p.url) ofertas.push({ ...p, nota: p.nota || generoDe(p.nombre + " " + p.url), talles: p.talles || [], sistema: p.talles?.length ? "AR" : null });
 } else { console.error("Formato desconocido."); process.exit(1); }
 console.log(`${TIENDA}: ${ofertas.length} productos con stock.`);
 

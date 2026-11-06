@@ -11,7 +11,7 @@ const app = document.querySelector("#app");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const SUBIR = "https://github.com/morancito/trotecito-web/upload/main/datos-manuales";
 const ACCIONES = "https://github.com/morancito/trotecito-web/actions/workflows/importar-manual.yml";
-const VERSION = "3 · Digital Sport";
+const VERSION = "4 · Digital Sport completo";
 const href = "javascript:" + encodeURIComponent(codigo.replace(/^\/\*[\s\S]*?\*\/\s*/, ""));
 const aMs = f => { const [d, m, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, m - 1, d) : 0; };
 

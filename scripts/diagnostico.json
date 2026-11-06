@@ -1,31 +1,50 @@
 {
- "fecha": "2026-11-06T15:16:28.095Z",
+ "fecha": "2026-11-06T19:53:45.841Z",
  "resultados": [
   {
-   "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-speed-5-white-mutant/",
+   "url": "https://www.stockcenter.com.ar/",
    "estado": 200,
-   "urlFinal": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-speed-5-white-mutant/",
-   "largo": 1453730,
-   "titulo": "Zapatilla Hombre Endorphin Speed 5 White/Mutant",
-   "plataforma": "tiendanube",
+   "urlFinal": "https://www.stockcenter.com.ar/home",
+   "largo": 334639,
+   "titulo": "Stock Center | Zapatillas y ropa deportiva con descuento",
+   "plataforma": "sfcc",
    "generador": null,
-   "variantes": true,
-   "tiendanube": true,
-   "desafio": false,
-   "jsonld": 11,
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": true,
+   "jsonld": 0,
    "precioMeta": null,
-   "muestra": " Zapatilla Hombre Endorphin Speed 5 White/Mutant 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidra",
-   "leido": {
-    "precio": 42900,
-    "antes": null,
-    "cuotas": 3,
-    "_muestra": [
-     "Verde / S",
-     "Verde / M",
-     "Verde / L",
-     "Verde / XL"
-    ]
-   }
+   "muestra": " Stock Center | Zapatillas y ropa deportiva con descuento ⚠ AVISO ENTREGAS 6/11 al 13/11 – Visita del Papa León XIV&nbsp; ver más Productos OUTLET: cambios solo en sucursal Outlet o web* Sucursales Entregas Cambios M&eacute;todos de pago Preguntas frecuentes Ayuda &iexcl;Gan&aacute; puntos! Ver sucursales Lugar de entrega Capital Federal Te ubicamos en Capital Federal . Ingresá tu código postal y te mostraremos las mejores opciones de retiro y envío. Mi cuenta real (focuseable por Tab; el navegador muestra la URL en el preview). El JS cancela la navegación solo en elementos con data-js-minicar"
+  },
+  {
+   "url": "https://www.stockcenter.com.ar/buscar?q=pegasus",
+   "estado": 200,
+   "urlFinal": "https://www.stockcenter.com.ar/buscar?q=pegasus",
+   "largo": 333588,
+   "titulo": "Catalogo de StockCenter | StockCenter",
+   "plataforma": "sfcc",
+   "generador": null,
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": true,
+   "jsonld": 1,
+   "precioMeta": null,
+   "muestra": " Catalogo de StockCenter | StockCenter ⚠ AVISO ENTREGAS 6/11 al 13/11 – Visita del Papa León XIV&nbsp; ver más Productos OUTLET: cambios solo en sucursal Outlet o web* Sucursales Entregas Cambios M&eacute;todos de pago Preguntas frecuentes Ayuda &iexcl;Gan&aacute; puntos! Ver sucursales Lugar de entrega Capital Federal Te ubicamos en Capital Federal . Ingresá tu código postal y te mostraremos las mejores opciones de retiro y envío. Mi cuenta real (focuseable por Tab; el navegador muestra la URL en el preview). El JS cancela la navegación solo en elementos con data-js-minicart-no-nav, que exist"
+  },
+  {
+   "url": "https://www.stockcenter.com.ar/api/catalog_system/pub/products/search?ft=pegasus",
+   "estado": 404,
+   "urlFinal": "https://www.stockcenter.com.ar/api/catalog_system/pub/products/search?ft=pegasus",
+   "largo": 144354,
+   "titulo": "Sites-StockCenter-Site",
+   "plataforma": "sfcc",
+   "generador": null,
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": true,
+   "jsonld": 0,
+   "precioMeta": null,
+   "muestra": " Sites-StockCenter-Site ⚠ AVISO ENTREGAS 6/11 al 13/11 – Visita del Papa León XIV&nbsp; ver más Productos OUTLET: cambios solo en sucursal Outlet o web* Sucursales Entregas Cambios M&eacute;todos de pago Preguntas frecuentes Ayuda &iexcl;Gan&aacute; puntos! Ver sucursales Lugar de entrega Capital Federal Te ubicamos en Capital Federal . Ingresá tu código postal y te mostraremos las mejores opciones de retiro y envío. Mi cuenta real (focuseable por Tab; el navegador muestra la URL en el preview). El JS cancela la navegación solo en elementos con data-js-minicart-no-nav, que existe únicamente en"
   }
  ]
 }

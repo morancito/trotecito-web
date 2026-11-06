@@ -44,16 +44,21 @@ function oferta(p) {
   const o = its.flatMap(i => i.sellers.map(s => s.commertialOffer)).filter(o => o.AvailableQuantity > 0 && o.Price > 0).sort((a, b) => a.Price - b.Price)[0];
   const cuotas = Math.max(0, ...(o.Installments || []).filter(x => x.InterestRate === 0).map(x => x.NumberOfInstallments));
   const talles = [...new Set(its.map(talle).filter(Boolean))].sort((a, b) => a - b);
-  return { precio: Math.round(o.Price), antes: o.ListPrice > o.Price * 1.01 ? Math.round(o.ListPrice) : null, cuotas, talles, url: p.link, color: (p["Color PDP"] || [])[0] || "", nota: generoDe(p) };
+  return { precio: Math.round(o.Price), antes: o.ListPrice > o.Price * 1.01 ? Math.round(o.ListPrice) : null, cuotas, talles, url: p.link, color: (p["Color PDP"] || [])[0] || "", nota: generoDe(p), imagenes: p.imagenes || (p.imagen ? [p.imagen] : []) };
 }
 
 let n = 0;
+/* fotos de Nike de cada modelo (las del color con más talles), por si hace falta reemplazar las nuestras */
+const IMGS = new URL("./nike-imagenes.json", import.meta.url);
+let imagenes = {}; try { imagenes = JSON.parse(readFileSync(IMGS, "utf8")); } catch {}
 for (const m of cat.modelos.filter(m => m.m === "Nike")) {
   const ofs = productos.filter(p => coincide(m, p.productName.replace(/GORE-TEX/i, "GTX"), p.link.replace(/gore-tex/i, "gtx"))).map(oferta).filter(Boolean);
   if (!ofs.length) { console.log(`– ${m.slug}: no está en lo que pasaste (o sin stock)`); continue; }
   /* la más barata de cada género; las unisex valen para los dos */
   const elegidas = ["Hombre", "Mujer"].map(g => ofs.filter(o => o.nota === g || o.nota === "Unisex").sort((a, b) => a.precio - b.precio)[0]).filter(Boolean);
   const unicas = [...new Map(elegidas.map(o => [o.url, o])).values()];
+  const conFotos = [...ofs].sort((a, b) => b.imagenes.length - a.imagenes.length || b.talles.length - a.talles.length)[0];
+  if (conFotos?.imagenes.length) imagenes[m.slug] = conFotos.imagenes;
   m.tiendas = (m.tiendas || []).filter(t => t.tienda !== "Nike");
   for (const o of unicas) {
     const t = { tienda: "Nike", precio: o.precio, ...(o.antes ? { antes: o.antes } : {}), cuotas: o.cuotas ? `${o.cuotas} cuotas sin interés` : "Consultar en la tienda",
@@ -70,4 +75,5 @@ for (const m of cat.modelos.filter(m => m.m === "Nike")) {
 }
 writeFileSync(new URL("modelos.json", RAIZ), JSON.stringify(cat, null, 1) + "\n");
 writeFileSync(new URL("historial.json", RAIZ), JSON.stringify(hist) + "\n");
+writeFileSync(IMGS, JSON.stringify(imagenes, null, 1) + "\n");
 console.log(`\n${n} precios de Nike cargados con fecha ${hoyAR}.`);

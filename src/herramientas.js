@@ -5,6 +5,7 @@ import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
 import "./admin.css";
 import codigo from "./marcador.js?raw";
+import { SUPABASE_URL as URL_SB, SUPABASE_KEY as KEY } from "./medir.js";
 
 const app = document.querySelector("#app");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -45,5 +46,15 @@ function pintar(est) {
     <li><b>En "Ver si se importó" hay una cruz roja</b>: el archivo no se pudo cargar (los precios del sitio no se tocan). Avisale a Claude.</li>
     <li>Los datos son los mismos que ves en la tienda: el marcador solo lee precios, talles y links, no toca tu cuenta.</li></ul></section>`;
 }
-pintar([]);
-estado().then(pintar);
+/* solo con la sesión del panel: si no hay, a entrar (y vuelve acá) */
+async function acceso() {
+  let s = null; try { s = JSON.parse(sessionStorage.getItem("tt-admin")); } catch {}
+  const afuera = () => location.replace("./admin.html?volver=herramientas");
+  if (!s?.token || Date.now() > s.hasta) return afuera();
+  const r = await fetch(URL_SB + "/auth/v1/user", { headers: { apikey: KEY, Authorization: "Bearer " + s.token } }).catch(() => null);
+  if (!r?.ok) { try { sessionStorage.removeItem("tt-admin"); } catch {} return afuera(); }
+  pintar([]);
+  estado().then(pintar);
+}
+app.innerHTML = `<p class="ad-vacio">Verificando acceso…</p>`;
+acceso();

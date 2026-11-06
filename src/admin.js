@@ -63,6 +63,8 @@ async function traerEventos(desdeISO) {
 }
 async function cargar() {
   if (!sesion || Date.now() > sesion.hasta) return login(sesion ? "La sesión venció, entrá de nuevo." : "");
+  /* vino desde herramientas sin sesión: entró y vuelve */
+  if (new URLSearchParams(location.search).get("volver") === "herramientas") return location.replace("./herramientas.html");
   $("#salir").hidden = false; cargando = true; pintar();
   const desde = new Date(Date.now() - rango * 864e5).toISOString();
   try {

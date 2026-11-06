@@ -8667,7 +8667,9 @@
    "terreno": "Asfalto",
    "tipo": "Neutra",
    "uso": "Competencia",
-   "fotos": [],
+   "fotos": [
+    "fotos/nike-vaporfly-4/1.webp"
+   ],
    "esp": "ZoomX",
    "pl": "Carbono",
    "peso": 184,

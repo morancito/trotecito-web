@@ -29,7 +29,7 @@ for (const m of cat.modelos.filter(m => (m.tiendas?.length || DIRECTAS[m.slug]) 
   let mejor = null;
   if (DIRECTAS[m.slug]?.length) {
     const fotos = [];
-    for (const src of DIRECTAS[m.slug].slice(0, MAX)) { try { const f = await bajarImg(src); if (f) fotos.push(f); } catch (e) { errores.push(`${src}: ${e.message}`); } await dormir(1500); }
+    for (const src of DIRECTAS[m.slug].slice(0, MAX)) { try { const f = await bajarImg(src); if (f) fotos.push(f); } catch (e) { errores.push(`${src}: ${e.message}`); } await dormir(8000); }   // el servidor de imágenes de Nike corta si se le pide rápido
     if (fotos.length) mejor = { tienda: "directa", url: DIRECTAS[m.slug][0], fotos };
   }
   for (const t of mejor?.fotos.length >= 3 ? [] : ts) {

@@ -5,7 +5,7 @@
 // Lo corre a mano el workflow "Buscar ofertas" (pestaña Actions).
 import { readFileSync, writeFileSync } from "node:fs";
 import { leer, dormir } from "./tiendas.mjs";
-import { TIENDAS, pausaDe, conReintento, coincide, generoDe, plataforma, buscar, pista } from "./buscar-lib.mjs";
+import { TIENDAS, vendeMarca, pausaDe, conReintento, coincide, generoDe, plataforma, buscar, pista } from "./buscar-lib.mjs";
 
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));
 /* --borradores: busca solo los modelos nuevos (en borrador). Sin nombres de tienda: todas, salvo las que ya están cargadas a mano (Dexter, Sporting) */
@@ -27,7 +27,7 @@ for (const ti of corridas) {
   const pausa = pausaDe(ti.url);
   console.log(`\n== ${ti.nombre} (${tipo})`);
   if (tipo === "desconocida") continue;
-  for (const m of modelos) {
+  for (const m of modelos.filter(m => vendeMarca(ti, m))) {
     const q = `${m.mod} ${m.ver}`.replace(/^(Gel-|Fresh Foam X |FuelCell )/, "").trim();
     let cands = [];
     try { cands = await conReintento(() => buscar(tipo, ti.url, q)); salida.tiendas[ti.nombre].buscados++; }

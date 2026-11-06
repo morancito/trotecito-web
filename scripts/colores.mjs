@@ -6,7 +6,7 @@
 //   node scripts/colores.mjs slug1 slug2     -> solo esos
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { leer, traer, dormir, UA } from "./tiendas.mjs";
-import { TIENDAS, pausaDe, conReintento, coincide, generoDe, plataforma, buscar } from "./buscar-lib.mjs";
+import { TIENDAS, vendeMarca, pausaDe, conReintento, coincide, generoDe, plataforma, buscar } from "./buscar-lib.mjs";
 import { imagenes } from "./fotos-lib.mjs";
 
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));
@@ -68,7 +68,7 @@ for (const m of modelos) {
   /* candidatos: las URLs que ya tenemos cargadas y lo que devuelven los buscadores de cada tienda */
   const cands = new Map((m.tiendas || []).map(t => [t.url, { tienda: t.tienda, url: t.url, nombre: `${m.m} ${m.mod} ${m.ver}`, nota: t.nota || "" }]));
   const q = `${m.mod} ${m.ver}`.replace(/^(Gel-|Fresh Foam X |FuelCell )/, "").trim();
-  await Promise.all(TIENDAS.map(async ti => {
+  await Promise.all(TIENDAS.filter(ti => vendeMarca(ti, m)).map(async ti => {
     const tipo = tiposTienda[ti.nombre]; if (tipo === "desconocida") return;
     try {
       const res = await conReintento(() => buscar(tipo, ti.url, q));

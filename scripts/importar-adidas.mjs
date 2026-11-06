@@ -26,10 +26,16 @@ function ofertas(j) {
   if (Array.isArray(j.items)) return j.items.map(it => {
     const d = j.disp?.[it.productId], vars = d?.variation_list || [];
     const conStock = vars.filter(v => /IN_STOCK|LOW/i.test(v.availability_status || "") || v.availability > 0);
-    const talles = [...new Set(conStock.flatMap(v => talleAR(String(v.size || ""))))].sort((a, b) => a - b);
+    /* adidas nombra los talles "42 (UK 9.5)": el primer número es el talle argentino */
+    const tAR = v => { const x = String(v.size || "").match(/^\s*(\d{2}(?:[.,]5)?)\b/); return x ? [x[1].replace(",", ".")] : talleAR(String(v.size || "")); };
+    const talles = [...new Set(conStock.flatMap(tAR))].sort((a, b) => a - b);
+    /* sin género en el nombre: la curva de talles lo dice (las de hombre arrancan en 38, las de mujer terminan en 41/42; si va de 34 a 48 es unisex) */
+    const todos = vars.flatMap(tAR).map(Number);
+    const porTalles = !todos.length ? null : Math.min(...todos) >= 38 ? "Hombre" : Math.max(...todos) <= 42 ? "Mujer" : null;
     const precio = Math.round(it.salePrice || it.price), lista = Math.round(it.price || 0);
     const disponible = d ? (/IN_STOCK|LOW/i.test(d.availability_status || "") || conStock.length > 0) : true;
-    const g = it.gender ? ({ M: "Hombre", W: "Mujer", U: "Unisex", K: "Niño" }[String(it.gender).toUpperCase()] || genero(it.gender)) : genero(it.displayName);
+    let g = it.gender ? ({ M: "Hombre", W: "Mujer", U: "Unisex", K: "Niño" }[String(it.gender).toUpperCase()] || genero(it.gender)) : genero(it.displayName);
+    if (g === "Unisex" && porTalles) g = porTalles;
     return { nombre: it.displayName || it.name || "", url: abs(it.link), precio, antes: lista > precio * 1.01 ? lista : null, nota: g, talles, disponible };
   });
   /* resumen sin talles */

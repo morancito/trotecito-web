@@ -24,6 +24,7 @@ const VARIANTES = ["trail", "gtx", "gore", "plus", "premium", "max", "elite", "p
 const NO_ZAPA = /\b(buzo|remera|media|medias|short|gorra|gorro|visera|mochila|bolso|duffle|chaleco|bidon|rinonera|cinturon|guantes|polainas|campera|calza|musculosa|ojotas?|sandalia|bota|botin|kids|nino|nina|junior|jr|gs|ps|td|bebe)\b/;
 export const generoDe = s => { const t = ` ${norm(s)} `; return / (mujer|women|womens|wmns|w|dama) /.test(t) ? "Mujer" : / (hombre|men|mens|m|caballero) /.test(t) ? "Hombre" : / unisex /.test(t) ? "Unisex" : ""; };
 
+const OTRAS_LINEAS = ["duramo", "runfalcon", "galaxy", "response", "supernova", "adistar", "ultraboost", "questar", "solarglide", "dropset", "rapidmove"];
 export function coincide(m, nombre, url) {
   const t = ` ${norm(nombre + " " + decodeURIComponent(new URL(url).pathname))} `.replace(/ gore tex /g, " gtx ");
   if (NO_ZAPA.test(t)) return false;
@@ -34,6 +35,8 @@ export function coincide(m, nombre, url) {
     if (/^\d+(\.\d)?$/.test(k)) { if (!new RegExp(`[^0-9.]${k.replace(".", "\\.")}[^0-9]`).test(t)) return false; }
     else if (!t.includes(` ${k} `)) return false;
   }
+  /* otra línea de la marca en el nombre ("Duramo SL 2" no es la Adizero SL 2) */
+  if (OTRAS_LINEAS.some(l => t.includes(` ${l} `) && !norm(`${m.mod} ${m.ver}`).split(" ").includes(l))) return false;
   if (VARIANTES.some(v => !tokens.includes(v) && t.includes(` ${v} `) && !norm(m.mod).split(" ").includes(v) && !(v === "trail" && m.terreno === "Trail"))) return false;
   /* modelo sin número (Vomero Premium, Structure Plus): si la tienda le pone número a la línea, es otro ("Zoom Vomero 5 Premium") */
   if (!tokens.some(x => /^\d/.test(x)) && tokens.some(k => new RegExp(` ${k} \\d{1,2} `).test(t))) return false;

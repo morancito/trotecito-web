@@ -48,21 +48,32 @@
         price: +(o.price ?? o.pricing?.standard_price ?? o.pricing?.price ?? precio), salePrice: +(o.salePrice ?? o.pricing?.sale_price ?? o.pricing?.salePrice ?? precio), gender: o.gender || o.genderCode || null });
       for (const v of Object.values(o)) if (v && typeof v === "object") juntar(v, prof + 1);
     };
-    for (const q of qs) {
+    /* toda la categoría de running (462 productos en nov 2026), de a 48; después, por si falta alguno, las búsquedas */
+    const pagina = async (rutaApi, rutaHtml) => {
       const antes = items.size;
-      for (const u of [`/api/plp/content-engine/search?query=${encodeURIComponent(q)}&start=0`, `/api/plp/content-engine?query=${encodeURIComponent(q)}&start=0`]) {
-        try { juntar(await json(u)); if (items.size > antes) break; } catch {}
-      }
+      try { juntar(await json(rutaApi)); } catch {}
       if (items.size === antes) {
         try {
-          const html = await (await fetch(`/search?q=${encodeURIComponent(q)}`, { credentials: "same-origin" })).text();
+          const html = await (await fetch(rutaHtml, { credentials: "same-origin" })).text();
           const nd = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
           if (nd) juntar(JSON.parse(nd[1]));
         } catch {}
       }
-      estado(`${q}: ${items.size - antes} productos`);
-      await espera(1000);
+      return items.size - antes;
+    };
+    for (let start = 0; start < 960; start += 48) {
+      const nuevos = await pagina(`/api/plp/content-engine?query=calzado-zapatillas-running&start=${start}`, `/calzado-zapatillas-running?start=${start}`);
+      estado(`running ${start}: ${nuevos} productos`);
+      if (!nuevos) break;
+      await espera(900);
     }
+    for (const q of qs) {
+      const nuevos = await pagina(`/api/plp/content-engine/search?query=${encodeURIComponent(q)}&start=0`, `/search?q=${encodeURIComponent(q)}`);
+      estado(`${q}: ${nuevos} productos`);
+      await espera(800);
+    }
+    /* solo zapatillas (la búsqueda trae también ropa) */
+    for (const [id, it] of items) if (!/zapatilla|calzado|shoe/i.test(`${it.displayName} ${it.link}`)) items.delete(id);
     let n = 0;
     for (const id of items.keys()) {
       try { disp[id] = await json(`/api/products/${id}/availability`); } catch {}

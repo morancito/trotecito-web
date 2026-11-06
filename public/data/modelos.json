@@ -56,8 +56,48 @@
      "tienda": "adidas.com.ar",
      "precio": 279999,
      "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-evo-sl/KI1492.html",
+     "fecha": "06/11/2026",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-evo-sl/KH9635.html",
-     "fecha": "06/11/2026"
+     "fecha": "06/11/2026",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -970,13 +1010,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "adidas.com.ar",
-     "precio": 139999,
-     "cuotas": "Consultar en la tienda",
-     "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
-     "fecha": "06/11/2026"
-    },
-    {
      "tienda": "Dexter",
      "precio": 224999,
      "cuotas": "2 cuotas sin interés",
@@ -1009,6 +1042,30 @@
       "38.5",
       "39",
       "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-sl-2/JQ0354.html",
+     "fecha": "06/11/2026",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
      ],
      "sistema": "AR"
     }
@@ -1206,8 +1263,49 @@
      "tienda": "adidas.com.ar",
      "precio": 279999,
      "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-supernova-rise-3/KK1925.html",
-     "fecha": "06/11/2026"
+     "fecha": "06/11/2026",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-supernova-rise-3/JQ8502.html",
+     "fecha": "06/11/2026",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1426,8 +1524,49 @@
      "tienda": "adidas.com.ar",
      "precio": 139999,
      "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
-     "fecha": "06/11/2026"
+     "fecha": "06/11/2026",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 139999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatilla-duramo-sl-2-running/IH8218.html",
+     "fecha": "06/11/2026",
+     "talles": [
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5021,8 +5160,46 @@
      "tienda": "adidas.com.ar",
      "precio": 279999,
      "cuotas": "Consultar en la tienda",
+     "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatilla-de-running-adistar-5/IH7175.html",
-     "fecha": "06/11/2026"
+     "fecha": "06/11/2026",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-adistar-5/KK4216.html",
+     "fecha": "06/11/2026",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5139,8 +5316,26 @@
      "tienda": "adidas.com.ar",
      "precio": 299999,
      "cuotas": "Consultar en la tienda",
+     "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-ultraboost-5/ID8848.html",
-     "fecha": "06/11/2026"
+     "fecha": "06/11/2026",
+     "talles": [
+      "35.5",
+      "39",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "adidas.com.ar",
+     "precio": 339999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://www.adidas.com.ar/zapatillas-ultraboost-5-mercedes---amg-petronas-f1-team/KJ3673.html",
+     "fecha": "06/11/2026",
+     "talles": [
+      "45.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5726,7 +5921,24 @@
      "precio": 279999,
      "cuotas": "Consultar en la tienda",
      "url": "https://www.adidas.com.ar/zapatillas-terrex-agravic-4-trail-running/KJ8872.html",
-     "fecha": "06/11/2026"
+     "fecha": "06/11/2026",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],

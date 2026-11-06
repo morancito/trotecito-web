@@ -8761,7 +8761,9 @@
    "uso": "Rodaje diario",
    "fotos": [
     "fotos/nike-structure-plus/1.webp",
-    "fotos/nike-structure-plus/2.webp"
+    "fotos/nike-structure-plus/2.webp",
+    "fotos/nike-structure-plus/3.webp",
+    "fotos/nike-structure-plus/4.webp"
    ],
    "esp": "ZoomX",
    "pl": "Sin placa",
@@ -8825,7 +8827,10 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "fotos": [
-    "fotos/nike-vomero-premium/1.webp"
+    "fotos/nike-vomero-premium/1.webp",
+    "fotos/nike-vomero-premium/2.webp",
+    "fotos/nike-vomero-premium/3.webp",
+    "fotos/nike-vomero-premium/4.webp"
    ],
    "esp": "ZoomX + ReactX con Air Zoom",
    "pl": "Sin placa",
@@ -8910,7 +8915,10 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "fotos": [
-    "fotos/nike-acg-pegasus-trail/1.webp"
+    "fotos/nike-acg-pegasus-trail/1.webp",
+    "fotos/nike-acg-pegasus-trail/2.webp",
+    "fotos/nike-acg-pegasus-trail/3.webp",
+    "fotos/nike-acg-pegasus-trail/4.webp"
    ],
    "esp": "ReactX",
    "pl": "Sin placa",

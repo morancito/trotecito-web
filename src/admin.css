@@ -51,3 +51,21 @@
 .ad-b .tblwrap { border-width: 1px; }
 .ad-diag { max-width: 760px; } .ad-diag pre { background: var(--soft); border-radius: 10px; padding: 12px; overflow-x: auto; font-size: 13px; }
 .nav .ad-salir[hidden] { display: none; }
+
+/* herramientas */
+.hr .kpi.alerta { border-color: var(--rojo, #D0506E); }
+.hr .kpi.alerta b { color: var(--rojo, #D0506E); }
+.hr .kpi b { font-size: 32px; }
+.hr-paso h2 small { font-family: var(--sans, inherit); font-size: 14px; font-weight: 600; color: var(--muted); font-style: normal; }
+.hr-paso ol, .hr ul { padding-left: 20px; line-height: 1.55; }
+.hr-paso li + li, .hr ul li + li { margin-top: 8px; }
+.hr-marc { margin: 16px 0 8px; }
+.hr-marc .btn { font-size: 18px; padding: 12px 22px; cursor: grab; }
+.hr kbd { font-family: var(--mono); font-size: 12px; border: 1.5px solid var(--hair); border-bottom-width: 3px; border-radius: 6px; padding: 1px 6px; background: var(--surface); }
+.hr .ad-box + .ad-box { margin-top: 14px; }
+.hr .ad-box { max-width: 820px; margin-left: 0; margin-right: 0; padding-top: 18px; }
+.hr .ad-box h2 { margin-top: 0; }
+.hr .kpis { max-width: 820px; }
+.hr .pill { white-space: nowrap; display: inline-block; margin-top: 10px; }
+.hr-paso h2 small { display: block; margin-top: 4px; }
+@media (max-width: 600px) { .hr .kpi b { font-size: 26px; } }

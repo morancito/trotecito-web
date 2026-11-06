@@ -6,6 +6,6 @@ export default defineConfig({
   base: process.env.BASE_PATH || "/",
   build: {
     target: "es2022", chunkSizeWarningLimit: 800,
-    rollupOptions: { input: { main: resolve(__dirname, "index.html"), admin: resolve(__dirname, "admin.html") } },
+    rollupOptions: { input: { main: resolve(__dirname, "index.html"), admin: resolve(__dirname, "admin.html"), herramientas: resolve(__dirname, "herramientas.html") } },
   },
 });

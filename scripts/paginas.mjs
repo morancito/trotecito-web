@@ -97,5 +97,5 @@ writeFileSync(new URL("sitemap.xml", DIST), `<?xml version="1.0" encoding="UTF-8
 ${urls.map(u => `  <url><loc>${esc(u)}</loc></url>`).join("\n")}
 </urlset>
 `);
-writeFileSync(new URL("robots.txt", DIST), `User-agent: *\nAllow: /\nDisallow: ${BASE}admin.html\n\nSitemap: ${SITIO + BASE}sitemap.xml\n`);
+writeFileSync(new URL("robots.txt", DIST), `User-agent: *\nAllow: /\nDisallow: ${BASE}admin.html\nDisallow: ${BASE}herramientas.html\n\nSitemap: ${SITIO + BASE}sitemap.xml\n`);
 console.log(`Páginas: ${urls.length - 1} fichas + portada, sitemap y 404 (${SITIO}).`);

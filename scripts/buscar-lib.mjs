@@ -10,6 +10,10 @@ export const TIENDAS = [
   { nombre: "TodoTrail", url: "https://todotrail.com.ar" },
   { nombre: "Naka Outdoors", url: "https://www.nakaoutdoors.com.ar" },
   { nombre: "Stock Center", url: "https://www.stockcenter.com.ar" },
+  { nombre: "Tienda Fuencarral", url: "https://www.tiendafuencarral.com.ar" },
+  { nombre: "NewSport", url: "https://www.newsport.com.ar" },
+  { nombre: "Vorax Running", url: "https://www.voraxrunning.com.ar" },
+  /* Digital Sport (digitalsport.com.ar) bloquea al robot (403 de CloudFront): queda afuera hasta que lo habiliten */
   /* tiendas oficiales de una marca: solo se buscan los modelos de esa marca */
   { nombre: "Saucony Argentina", url: "https://saucony.com.ar", marca: "Saucony" },
 ];

@@ -6,7 +6,7 @@ export const PREGUNTAS = [
   { k: "gen", t: "¿Qué talles buscás?", ops: [["Hombre", "Hombre"], ["Mujer", "Mujer"]] },
   { k: "talle", t: "¿Qué talle usás?", grid: true, ops: [...Array.from({ length: 27 }, (_, i) => String(34 + i / 2).replace(/\.0$/, "")).map(x => [x, x]), ["", "No sé, mostrame todo"]] },
   { k: "terreno", t: "¿Dónde corrés?", ops: [["Asfalto", "Calle, pista o cinta"], ["Trail", "Senderos y montaña"]] },
-  { k: "uso", t: "¿Para qué la querés?", ops: [["Iniciación", "Estoy empezando"], ["Rodaje diario", "Entrenar casi todos los días"], ["Rodaje largo", "Fondos largos"], ["Ritmo", "Series y ritmos rápidos"], ["Competencia", "Competir"]],
+  { k: "uso", t: "¿Para qué la vas a usar más?", ops: [["Iniciación", "Estoy empezando"], ["Rodaje diario", "Entrenar casi todos los días"], ["Rodaje largo", "Fondos largos"], ["Ritmo", "Series y ritmos rápidos"], ["Competencia", "Competir"]],
     trail: [["Rodaje diario", "Salidas cortas y medias"], ["Rodaje largo", "Fondos largos y ultras"], ["Ritmo", "Carreras rápidas"]] },
   { k: "ritmo", t: "¿A qué ritmo corrés normalmente?", ops: [["r1", "Más rápido que 5:00 min/km"], ["r2", "Entre 5:00 y 6:00 min/km"], ["r3", "Entre 6:00 y 7:00 min/km"], ["r4", "Más lento, o no sé"]] },
   { k: "kg", t: "¿Cuánto pesás?", ops: [[60, "Menos de 65 kg"], [70, "65 a 75 kg"], [82, "75 a 90 kg"], [95, "Más de 90 kg"]] },
@@ -57,8 +57,11 @@ export function puntaje(d, r, usoBuscado = r.uso) {
   let s = 0; const pros = [], contras = [];
   const add = (v, txt, peso = Math.abs(v)) => { s += v; if (txt) (v >= 0 ? pros : contras).push([peso, txt]); };
   /* uso */
+  /* una zapa sirve para varias cosas (d.usos): el uso principal suma lo máximo y los otros casi lo mismo */
+  const usos = d.usos?.length ? d.usos : [d.uso];
   const af = AF[usoBuscado]?.[d.uso] ?? 0;
   if (d.uso === usoBuscado) add(af, `Está pensada para ${USO_TXT[usoBuscado]}`);
+  else if (usos.includes(usoBuscado)) add(27, `También va muy bien para ${USO_TXT[usoBuscado]}`, 21);
   else if (af >= 14) add(af, `También rinde para ${USO_TXT[usoBuscado]}`, af - 6);
   else if (af < 0) add(af, `Está hecha para ${USO_TXT[d.uso]}, no para ${USO_TXT[usoBuscado]}`);
   else add(af);
@@ -76,6 +79,11 @@ export function puntaje(d, r, usoBuscado = r.uso) {
   if (r.kg >= 90 && d.talon >= 40) add(10, `${d.talon} mm de espuma en el talón: protege más con tu peso`);
   else if (r.kg >= 90 && d.talon && d.talon < 34) add(-10, "Poca espuma para tu peso");
   if (r.kg <= 70 && d.peso && d.peso <= 240) add(6, `Liviana: ${d.peso} g`);
+  /* para entrenar y hacer fondos, a igualdad de lo demás, un poco más de espuma suma (más aún con más peso) */
+  if (d.talon && ["Rodaje diario", "Rodaje largo", "Iniciación"].includes(usoBuscado)) {
+    add(Math.max(-3, Math.min(4, (d.talon - 36) / 2)));
+    if (r.kg >= 78 && r.kg < 90 && d.talon >= 38) add(4, `${d.talon} mm de espuma: buena protección para tu peso`);
+  }
   /* ritmo */
   const lento = r.ritmo === "r3" || r.ritmo === "r4";
   if (r.ritmo === "r1") {
@@ -146,7 +154,8 @@ export function recomendar(DATA, r0) {
   /* paso siguiente */
   const [usoSig, etSig, subSig] = SIGUE[r.uso] || [];
   const sig = usoSig && pool.filter(x => !usados.has(x.d.id) && x.d.uso === usoSig).map(x => evalua(x, usoSig)).sort((a, b) => b.s - a.s)[0];
-  if (sig && !(r.uso === "Iniciación" && (r.ritmo === "r4") && usoSig === "Ritmo")) tomar(sig, etSig, subSig + ".");
+  /* solo si de verdad le sirve (ej. a un pronador no le sugerimos una de ritmo neutra): si no, va otra buena opción */
+  if (sig && sig.s >= p1.s - 22 && !(r.uso === "Iniciación" && (r.ritmo === "r4") && usoSig === "Ritmo")) tomar(sig, etSig, subSig + ".");
   /* completar con la siguiente mejor de otra marca */
   for (const x of rank) { if (picks.length >= 3) break; if (usados.has(x.d.id)) continue;
     if (picks.some(p => p.d.m === x.d.m) && rank.some(y => !usados.has(y.d.id) && !picks.some(p => p.d.m === y.d.m) && y.s >= x.s - 6)) continue;

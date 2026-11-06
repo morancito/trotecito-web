@@ -17,7 +17,7 @@ const [CAT, HIST, COLORES] = await Promise.all(["modelos", "historial", "colores
 // Un precio que el robot no pudo actualizar en más de 7 días deja de mostrarse.
 const aMs = f => { const [d, mo, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, mo - 1, d) : 0; };
 const vigenteHasta = f => aMs(CAT.actualizado) - aMs(f) <= 7 * 864e5;
-const DATA = CAT.modelos.filter(d => !d.borrador).map(d => ({ ...d, fotos: d.fotos || [], variantes: Array.isArray(COLORES[d.slug]) ? COLORES[d.slug] : [], todas: (d.tiendas || []).filter(t => !t.sinStock && vigenteHasta(t.fecha)).sort((a, b) => a.precio - b.precio) }));
+const DATA = CAT.modelos.filter(d => !d.borrador).map(d => ({ ...d, fotos: d.fotos || [], variantes: Array.isArray(COLORES[d.slug]) ? COLORES[d.slug] : [], usos: d.usos?.length ? d.usos : [d.uso], todas: (d.tiendas || []).filter(t => !t.sinStock && vigenteHasta(t.fecha)).sort((a, b) => a.precio - b.precio) }));
 /* talles: hombre, mujer o todos. Cambia qué precios se ven en todo el sitio. */
 const guardado = k => { try { return localStorage.getItem(k); } catch { return null; } };
 const guardar = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
@@ -173,7 +173,7 @@ $("#fpanel").innerHTML = `
       <input type="range" id="pMax" min="${P_MIN}" max="${P_MAX}" step="${PASO}" value="${P_MAX}" aria-label="Precio máximo"></div>
     <div class="atajos-p">${[[0, 100000, "Hasta $100 mil"], [100000, 200000, "$100 a 200 mil"], [200000, 300000, "$200 a 300 mil"], [300000, 0, "Más de $300 mil"]]
       .map(([a, b, t]) => `<button type="button" data-pa="${a}" data-pb="${b}">${t}</button>`).join("")}</div></div>`)}
-  ${grupo("¿Para qué la querés?", USOS.map(u => opc("uso", u, u, "checkbox", UCLS[u])).join(""))}
+  ${grupo("¿Para qué la vas a usar?", USOS.map(u => opc("uso", u, u, "checkbox", UCLS[u])).join(""))}
   ${grupo("¿Cómo pisás?", [["", "Me da igual"], ["Neutra", "Neutra o supinadora"], ["Estabilidad", "Pronador"]].map(([v, t]) => opc("pis", v, t, "radio")).join(""))}
   ${grupo("¿Cuánto pesás?", [[0, "No filtrar"], ...PESOS].map(([v, t]) => opc("kg", v, t, "radio")).join(""))}
   ${grupo("Amortiguación", AMS.map(a => opc("am", a, a)).join(""))}
@@ -232,7 +232,7 @@ function pintarPanel() {
   pintarRango();
 }
 const pasa = (d, sin) => (st.q ? `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}`.toLowerCase().includes(st.q) : terr(d) === st.terreno)
-  && (sin === "pis" || !st.pis || d.tipo === st.pis) && (sin === "uso" || !st.uso.size || st.uso.has(d.uso))
+  && (sin === "pis" || !st.pis || d.tipo === st.pis) && (sin === "uso" || !st.uso.size || d.usos.some(u => st.uso.has(u)))
   && (sin === "marca" || !st.marcas.size || st.marcas.has(d.m)) && (sin === "am" || !st.am.size || st.am.has(nivelAm(d)))
   && (sin === "kg" || !st.kg || pesoOk(d, st.kg)) && (sin === "desc" || !st.desc || desc(d) > 0.01) && (sin === "placa" || !st.placa || conPlaca(d))
   && (st.pmin <= P_MIN && st.pmax >= P_MAX || d.min && d.min >= st.pmin && (st.pmax >= P_MAX || d.min <= st.pmax));
@@ -240,7 +240,7 @@ const pasa = (d, sin) => (st.q ? `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}`.
 function contarOpciones() {
   fp.querySelectorAll("em[data-n]").forEach(em => {
     const [k, v] = em.dataset.n.split("|");
-    const f = { gen: d => d.todas.some(t => paraGen(t, v)), uso: d => d.uso === v, am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || pesoOk(d, +v), desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
+    const f = { gen: d => d.todas.some(t => paraGen(t, v)), uso: d => d.usos.includes(v), am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || pesoOk(d, +v), desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
     const n = DATA.filter(d => pasa(d, k) && f(d)).length;
     em.textContent = n; em.closest(".op").classList.toggle("cero", n === 0);
   });
@@ -425,13 +425,15 @@ function ficha(d) {
     ${c ? `<div class="bloque"><h2 class="cond">¿Para quién?</h2><dl class="para">
       <div><dt>Pisada</dt><dd>${pisadaPara(d)}</dd></div><div><dt>Tu peso</dt><dd>${esc(c.peso)}</dd></div>
       <div><dt>Ritmo</dt><dd>${esc(c.ritmo)}</dd></div><div><dt>Distancias</dt><dd>${esc(c.distancia)}</dd></div>
-      <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div>${d.horma ? `<div><dt>Horma</dt><dd>${HORMA_TXT[d.horma]}</dd></div>` : ""}</dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
+      <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div>${d.usos.length > 1 ? `<div><dt>También sirve para</dt><dd>${esc(cap(d.usos.slice(1).map(u => USO_FRASE[u] || u.toLowerCase()).join(", ")))}</dd></div>` : ""}${d.horma ? `<div><dt>Horma</dt><dd>${HORMA_TXT[d.horma]}</dd></div>` : ""}</dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
     ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2>${amort(d) ? `<div class="amort-box"><span class="amort-k">Amortiguación</span>${medidor(amort(d))}<p><b>${d.talon} mm</b> de espuma en el talón: ${amort(d).s}.</p><small>Mide cuánta espuma tiene, no si se siente blanda o dura ni cuánto rebota.</small></div>` : ""}<dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
     <div class="acciones"><button class="btn" data-c="${d.id}" aria-pressed="${st.cmp.includes(d.id)}">${st.cmp.includes(d.id) ? "✓ Comparando" : "+ Comparar"}</button>
       <a class="btn" href="#reemplazo/${d.slug}">¿Corrés con estas? Ver reemplazos</a>
       ${d.fuente ? `<span class="review">Reviews: ${[d.fuente, d.fuente2].filter(Boolean).map(f => `<a href="${esc(f[1])}" target="_blank" rel="noopener">${esc(f[0])} ↗</a>`).join(" · ")}</span>` : ""}</div>
   </div></div>`;
 }
+const USO_FRASE = { "Iniciación": "empezar a correr", "Rodaje diario": "entrenar todos los días", "Rodaje largo": "fondos largos", "Ritmo": "series y ritmos", "Competencia": "competir" };
+const cap = t => t.charAt(0).toUpperCase() + t.slice(1);
 const HORMA_TXT = { ancha: "Ancha: buena para pie ancho", normal: "Normal", angosta: "Angosta: ajustada a los costados", punta: "Normal, con la punta angosta" };
 function montarFicha(d) {
   montarGrafico(document.getElementById("histBox"), d.hist);
@@ -481,7 +483,7 @@ function comparar() {
       ["Tienda", d => d.tiendas[0] ? esc(d.tiendas[0].tienda) : ""]]],
     ["Para quién", [["Pisada", d => pisadaPara(d)], ["Tu peso", d => esc(d.corredor?.peso)], ["Ritmo", d => esc(d.corredor?.ritmo)],
       ["Distancias", d => esc(d.corredor?.distancia)], ["Nivel", d => esc(d.corredor?.nivel)], ["No te conviene si", d => esc(d.evitar)]]],
-    ["Ficha", [["Amortiguación", d => amort(d) ? medidor(amort(d)) : ""], ["Uso", d => esc(d.uso)], ["Terreno", d => ds.some(x => terr(x) !== terr(d)) ? terr(d) : ""],
+    ["Ficha", [["Amortiguación", d => amort(d) ? medidor(amort(d)) : ""], ["Uso", d => esc(d.usos.join(" · "))], ["Terreno", d => ds.some(x => terr(x) !== terr(d)) ? terr(d) : ""],
       ["Peso de la zapa", d => d.peso ? `<span class="${d.peso === minW ? "win" : ""}">${d.peso} g</span>` : ""],
       ["Drop", d => d.drop != null ? d.drop + " mm" : ""], ["Talón", d => d.talon ? d.talon + " mm" : ""], ["Antepié", d => d.ante ? d.ante + " mm" : ""],
       ["Espuma", d => esc(d.esp)], ["Placa", d => esc(placa(d))]]],

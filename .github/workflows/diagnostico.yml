@@ -27,10 +27,10 @@ jobs:
         env:
           URLS: ${{ inputs.urls }}
           SOLO_VER: ${{ inputs.solo_ver && '1' || '' }}
-        run: node scripts/diagnostico.mjs $URLS
+        run: rm -rf scripts/diag && node scripts/diagnostico.mjs $URLS
       - name: Guardar
         run: |
           git config user.name "trotecito-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts/diagnostico.json
+          git add -A scripts/diagnostico.json scripts/diag
           git diff --cached --quiet || (git commit -m "Diagnóstico de tiendas" && for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && break; sleep 15; done)

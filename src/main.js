@@ -625,7 +625,7 @@ function resumenPicks(picks) {
     : `La ${n(p)} no es para la carrera: es para entrenar.`).join(" ")}</p>`;
   const frases = [`La ${n(a)} es la que mejor encaja con lo que contaste.`];
   for (const p of picks.slice(1)) {
-    if (p.etiqueta === "Para entrenar") { frases.push(`La ${n(p)} no es para la carrera: es para entrenar el resto de la semana.`); continue; }
+    if (p.etiqueta === "Para entrenar") { frases.push(p.tambienCarrera ? `La ${n(p)} la proponemos como compañera para entrenar; para tu carrera priorizamos ${picks.filter(x => x.etiqueta !== "Para entrenar").length === 1 ? "la primera" : "las otras dos"}.` : `La ${n(p)} no es para la carrera: es para entrenar el resto de la semana.`); continue; }
     const d = p.d, r = a.d, dif = a.t.precio - p.t.precio;
     const gana = [], cede = [];
     if (dif >= 10000) gana.push(`sale ${fmt(dif)} menos`); else if (-dif >= 10000) cede.push(`cuesta ${fmt(-dif)} más`);

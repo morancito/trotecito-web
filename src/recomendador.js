@@ -203,6 +203,11 @@ export function recomendar(DATA, r0) {
   if (r.uso === "Competencia") completar(rank, "Para entrenar", "No es para competir: te sirve para entrenar el resto de la semana.");
   else completar(rank, "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo.");
   picks.sort((a, b) => (ORDEN.indexOf(a.etiqueta) + 1 || 9) - (ORDEN.indexOf(b.etiqueta) + 1 || 9));
+  /* la que va "para entrenar" pero también serviría para la carrera: no decimos que no sirve, decimos por qué va abajo */
+  for (const p of picks) if (p.etiqueta === "Para entrenar" && r.uso === "Competencia" && sirve(p)) {
+    p.tambienCarrera = true;
+    p.sub = `También sirve para ${conDist ? DIST_TXT[r.dist] : "competir"}, pero la proponemos como compañera para entrenar: para tu carrera priorizamos las otras.`;
+  }
   if (r.talle) for (const p of picks) {
     if (tieneTalle(p.t, r.talle)) p.pros.unshift(`Hay talle ${r.talle} en ${p.t.tienda}`);
     else p.contras.unshift(`No pudimos confirmar el talle ${r.talle} en ${p.t.tienda}: chequealo antes de comprar`);

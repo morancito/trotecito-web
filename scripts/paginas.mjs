@@ -8,16 +8,20 @@ const SITIO = (process.env.SITIO_URL || "https://trotecito.com.ar").replace(/\/$
 const BASE = (process.env.BASE_PATH || "/").replace(/\/?$/, "/");
 const DIST = new URL("../dist/", import.meta.url);
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));
-const plantilla = readFileSync(new URL("index.html", DIST), "utf8");
+/* índice de todas las zapas en el pie, en el HTML: así Google (y quien no tiene JavaScript) llega a cada ficha desde cualquier página */
+const marcas = [...new Set(cat.modelos.filter(m => !m.borrador).map(m => m.m))].sort((a, b) => a.localeCompare(b, "es"));
+const indice = `<details class="indice"><summary>Todas las zapas (${cat.modelos.filter(m => !m.borrador).length})</summary><div class="ind-cols">${marcas.map(mc => `<div><h3>${mc}</h3><ul>${cat.modelos.filter(m => !m.borrador && m.m === mc)
+  .sort((a, b) => `${a.mod} ${a.ver || ""}`.localeCompare(`${b.mod} ${b.ver || ""}`, "es", { numeric: true })).map(m => `<li><a href="${BASE}zapa/${m.slug}/">${m.mod}${m.ver ? " " + m.ver : ""}</a></li>`).join("")}</ul></div>`).join("")}</div></details>`;
+const plantilla = readFileSync(new URL("index.html", DIST), "utf8").replace("<!--indice-->", indice);
 
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
 const abs = p => SITIO + BASE + p.replace(/^\//, "");
 const nombre = m => `${m.mod}${m.ver ? " " + m.ver : ""}`;
 const USO = { "Iniciación": "para empezar a correr", "Rodaje diario": "para entrenar todos los días", "Rodaje largo": "para fondos largos", "Ritmo": "para series y ritmos rápidos", "Competencia": "para competir" };
-const hoyAR = cat.actualizado || "";
+const hoyAR = new Intl.DateTimeFormat("es-AR", { timeZone: "America/Argentina/Buenos_Aires", day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date());
 const aMs = f => { const [d, mo, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, mo - 1, d) : 0; };
-const vigentes = m => (m.tiendas || []).filter(t => !t.sinStock && aMs(cat.actualizado) - aMs(t.fecha) <= 7 * 864e5).sort((a, b) => a.precio - b.precio);
+const vigentes = m => (m.tiendas || []).filter(t => !t.sinStock && aMs(t.fecha) && aMs(hoyAR) - aMs(t.fecha) <= 7 * 864e5).sort((a, b) => a.precio - b.precio);
 
 function cabecera(html, { titulo, desc, url, img, ld }) {
   const meta = `
@@ -78,7 +82,7 @@ for (const m of cat.modelos.filter(x => !x.borrador)) {
   <p class="kicker">${esc(m.m)}</p><h1 class="cond">${esc(n)}</h1>
   ${m.fotos?.[0] ? `<img src="${BASE}${esc(m.fotos[0])}" alt="${esc(m.m + " " + n)}" width="800" height="800">` : ""}
   <p>${esc(desc)}</p>
-  ${t.length ? `<h2>Dónde comprarla</h2><ul>${t.map(x => `<li><a href="${esc(x.url)}" rel="nofollow noopener" target="_blank">${esc(x.tienda)}</a>${x.nota ? ` (${esc(x.nota.toLowerCase())})` : ""}: ${fmt(x.precio)}${x.talles?.length ? ` · talles con stock: ${x.sistema === "US" ? "US " : ""}${x.talles.join(", ")}` : ""}</li>`).join("")}</ul><p>Precios del ${esc(hoyAR)}.</p>` : ""}
+  ${t.length ? `<h2>Dónde comprarla</h2><ul>${t.map(x => `<li><a href="${esc(x.url)}" rel="nofollow noopener" target="_blank">${esc(x.tienda)}</a>${x.nota ? ` (${esc(x.nota.toLowerCase())})` : ""}: ${fmt(x.precio)}${x.talles?.length ? ` · talles con stock: ${x.sistema === "US" ? "US " : ""}${x.talles.join(", ")}` : ""} · chequeado el ${esc(x.fecha)}</li>`).join("")}</ul>` : ""}
   <h2>Ficha técnica</h2><ul>${[["Peso", m.peso && `${m.peso} g`], ["Drop", m.drop != null && `${m.drop} mm`], ["Talón", m.talon && `${m.talon} mm`], ["Antepié", m.ante && `${m.ante} mm`], ["Espuma", m.esp], ["Placa", m.pl && m.pl !== "Sin placa" ? m.pl : ""]].filter(([, v]) => v).map(([k, v]) => `<li>${k}: ${esc(v)}</li>`).join("")}</ul>
   ${c.peso ? `<h2>¿Para quién?</h2><ul><li>Pisada: ${m.tipo === "Estabilidad" ? "pronadora" : "neutra o supinadora"}</li><li>Tu peso: ${esc(c.peso)}</li><li>Ritmo: ${esc(c.ritmo)}</li><li>Distancias: ${esc(c.distancia)}</li></ul>` : ""}
   ${m.evitar ? `<p><b>No te conviene si</b> ${esc(m.evitar)}</p>` : ""}

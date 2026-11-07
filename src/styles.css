@@ -781,3 +781,31 @@ a.puerta:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--b
 .op-form select, .op-form input[name="nombre"], .op-form textarea { width: 100%; max-width: 100%; box-sizing: border-box; }
 #opBox { min-width: 0; }
 .op-form fieldset, .op-form-box { min-width: 0; min-inline-size: 0; }
+
+/* pie: índice de todas las zapas */
+.indice { margin-top: 22px; border-top: 1px solid rgba(255,255,255,.18); padding-top: 14px; }
+.indice > summary { cursor: pointer; font-weight: 800; color: #fff; font-size: 16px; min-height: 44px; display: flex; align-items: center; }
+.ind-cols { columns: 4 200px; column-gap: 28px; margin-top: 10px; }
+.ind-cols > div { break-inside: avoid; margin-bottom: 14px; }
+.ind-cols h3 { margin: 0 0 4px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #CFCFCF; }
+.ind-cols ul { list-style: none; margin: 0; padding: 0; }
+.ind-cols a { color: #fff; text-decoration: none; font-size: 15px; line-height: 1.9; }
+.ind-cols a:hover { text-decoration: underline; }
+
+/* portada: por qué confiar */
+.confianza { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.confianza li { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.14); color: #fff; font-size: 14px; font-weight: 700; backdrop-filter: blur(4px); }
+.confianza li::before { content: "✓"; color: var(--sol); font-weight: 900; }
+.confianza b { font-weight: 900; }
+@media (max-width: 520px) { .confianza { gap: 6px; } .confianza li { font-size: 13px; padding: 5px 10px; } }
+
+/* recomendador: resumen comparativo */
+.rr-resumen { margin: 0 0 22px; padding: 16px 18px; border: 2px solid var(--line); border-radius: 16px; background: var(--surface); font-size: 17px; line-height: 1.5; max-width: 900px; }
+.rr-resumen .kicker { display: block; margin-bottom: 6px; }
+
+/* fecha de cada precio */
+.fr { display: block; font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: 0; }
+.t-p .fr { text-align: right; }
+.tl-n .fr { display: inline; margin-left: 6px; }
+.buy-f { display: block; font-size: 13px; color: var(--muted); margin: 2px 0 6px; }
+.tiendas-fr { margin: 4px 0 8px; font-size: 13px; color: var(--muted); }

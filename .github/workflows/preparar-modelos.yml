@@ -35,6 +35,8 @@ jobs:
         if: inputs.fotos == ''
         run: node scripts/sumar-ofertas.mjs --guardar
       - name: Bajar fotos
+        timeout-minutes: 25
+        continue-on-error: true   # si una tienda se cuelga, se guarda igual lo que se consiguió
         env:
           FOTOS: ${{ inputs.fotos }}
         run: node scripts/bajar-fotos-tiendas.mjs $FOTOS

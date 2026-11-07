@@ -1,1 +1,2205 @@
-{}
+{
+ "adidas-adizero-evo-sl": {
+  "n": 94,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    92
+   ],
+   [
+    "Competencia",
+    85
+   ],
+   [
+    "Estabilidad",
+    77
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-adizero-evo-sl",
+  "fecha": "2026-11-06"
+ },
+ "nike-pegasus-42": {
+  "n": 80,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    44
+   ],
+   [
+    "Competencia",
+    21
+   ],
+   [
+    "Estabilidad",
+    84
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-pegasus-42",
+  "fecha": "2026-11-06"
+ },
+ "nike-pegasus-plus": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    87
+   ],
+   [
+    "Ritmo",
+    85
+   ],
+   [
+    "Competencia",
+    70
+   ],
+   [
+    "Estabilidad",
+    73
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-pegasus-plus",
+  "fecha": "2026-11-06"
+ },
+ "nike-vomero-18": {
+  "n": 90,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    91
+   ],
+   [
+    "Ritmo",
+    54
+   ],
+   [
+    "Competencia",
+    38
+   ],
+   [
+    "Estabilidad",
+    84
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-vomero-18",
+  "fecha": "2026-11-06"
+ },
+ "nike-vomero-plus": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    68
+   ],
+   [
+    "Competencia",
+    49
+   ],
+   [
+    "Estabilidad",
+    79
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-vomero-plus",
+  "fecha": "2026-11-06"
+ },
+ "nike-structure-26": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    51
+   ],
+   [
+    "Competencia",
+    36
+   ],
+   [
+    "Estabilidad",
+    90
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-structure-26",
+  "fecha": "2026-11-06"
+ },
+ "nike-winflo-10": {
+  "n": 78,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    82
+   ],
+   [
+    "Ritmo",
+    44
+   ],
+   [
+    "Competencia",
+    30
+   ],
+   [
+    "Estabilidad",
+    76
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-winflo-10",
+  "fecha": "2026-11-06"
+ },
+ "nike-invincible-3": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    67
+   ],
+   [
+    "Competencia",
+    33
+   ],
+   [
+    "Estabilidad",
+    74
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-zoom-x-invincible-run-flyknit-3",
+  "fecha": "2026-11-06"
+ },
+ "nike-vaporfly-3": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    43
+   ],
+   [
+    "Ritmo",
+    89
+   ],
+   [
+    "Competencia",
+    92
+   ],
+   [
+    "Estabilidad",
+    64
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-zoom-x-vaporfly-next-3",
+  "fecha": "2026-11-06"
+ },
+ "adidas-adizero-sl-2": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    79
+   ],
+   [
+    "Ritmo",
+    84
+   ],
+   [
+    "Competencia",
+    72
+   ],
+   [
+    "Estabilidad",
+    65
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-adizero-sl2",
+  "fecha": "2026-11-06"
+ },
+ "adidas-adizero-boston-13": {
+  "n": 88,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    84
+   ],
+   [
+    "Ritmo",
+    92
+   ],
+   [
+    "Competencia",
+    79
+   ],
+   [
+    "Estabilidad",
+    79
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-adizero-boston-13",
+  "fecha": "2026-11-06"
+ },
+ "adidas-supernova-rise-3": {
+  "n": 87,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    72
+   ],
+   [
+    "Competencia",
+    53
+   ],
+   [
+    "Estabilidad",
+    84
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-supernova-rise-3",
+  "fecha": "2026-11-06"
+ },
+ "adidas-adizero-adios-pro-5": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    40
+   ],
+   [
+    "Ritmo",
+    87
+   ],
+   [
+    "Competencia",
+    94
+   ],
+   [
+    "Estabilidad",
+    61
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-adizero-adios-pro-5",
+  "fecha": "2026-11-06"
+ },
+ "asics-novablast-5": {
+  "n": 93,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    85
+   ],
+   [
+    "Competencia",
+    72
+   ],
+   [
+    "Estabilidad",
+    87
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-novablast-5",
+  "fecha": "2026-11-06"
+ },
+ "asics-gel-nimbus-27": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    91
+   ],
+   [
+    "Ritmo",
+    44
+   ],
+   [
+    "Competencia",
+    32
+   ],
+   [
+    "Estabilidad",
+    85
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-gel-nimbus-27",
+  "fecha": "2026-11-06"
+ },
+ "asics-gel-kayano-32": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    40
+   ],
+   [
+    "Competencia",
+    28
+   ],
+   [
+    "Estabilidad",
+    97
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-gel-kayano-32",
+  "fecha": "2026-11-06"
+ },
+ "asics-gt-2000-14": {
+  "n": 87,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    58
+   ],
+   [
+    "Competencia",
+    40
+   ],
+   [
+    "Estabilidad",
+    95
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-gt-2000-14",
+  "fecha": "2026-11-06"
+ },
+ "asics-gel-cumulus-27": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    54
+   ],
+   [
+    "Competencia",
+    38
+   ],
+   [
+    "Estabilidad",
+    87
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-gel-cumulus-27",
+  "fecha": "2026-11-06"
+ },
+ "asics-superblast-2": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    93
+   ],
+   [
+    "Ritmo",
+    89
+   ],
+   [
+    "Competencia",
+    80
+   ],
+   [
+    "Estabilidad",
+    94
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-superblast-2",
+  "fecha": "2026-11-06"
+ },
+ "asics-magic-speed-4": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    71
+   ],
+   [
+    "Ritmo",
+    86
+   ],
+   [
+    "Competencia",
+    80
+   ],
+   [
+    "Estabilidad",
+    48
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-magic-speed-4",
+  "fecha": "2026-11-06"
+ },
+ "asics-metaspeed-sky": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    51
+   ],
+   [
+    "Ritmo",
+    83
+   ],
+   [
+    "Competencia",
+    88
+   ],
+   [
+    "Estabilidad",
+    71
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-metaspeed-sky-plus",
+  "fecha": "2026-11-06"
+ },
+ "new-balance-fresh-foam-x-1080-v14": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    51
+   ],
+   [
+    "Competencia",
+    36
+   ],
+   [
+    "Estabilidad",
+    72
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/new-balance-fresh-foam-x-1080-v14",
+  "fecha": "2026-11-06"
+ },
+ "new-balance-fresh-foam-x-880-v15": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    88
+   ],
+   [
+    "Ritmo",
+    49
+   ],
+   [
+    "Competencia",
+    34
+   ],
+   [
+    "Estabilidad",
+    87
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15",
+  "fecha": "2026-11-06"
+ },
+ "new-balance-fuelcell-rebel-v5": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    91
+   ],
+   [
+    "Competencia",
+    74
+   ],
+   [
+    "Estabilidad",
+    80
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/new-balance-fuel-cell-rebel-v-5",
+  "fecha": "2026-11-06"
+ },
+ "new-balance-fuelcell-sc-elite-v5": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    55
+   ],
+   [
+    "Ritmo",
+    86
+   ],
+   [
+    "Competencia",
+    91
+   ],
+   [
+    "Estabilidad",
+    58
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5",
+  "fecha": "2026-11-06"
+ },
+ "saucony-guide-18": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    86
+   ],
+   [
+    "Ritmo",
+    44
+   ],
+   [
+    "Competencia",
+    31
+   ],
+   [
+    "Estabilidad",
+    92
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-guide-18",
+  "fecha": "2026-11-06"
+ },
+ "saucony-endorphin-speed-4": {
+  "n": 89,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    78
+   ],
+   [
+    "Ritmo",
+    90
+   ],
+   [
+    "Competencia",
+    84
+   ],
+   [
+    "Estabilidad",
+    81
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-endorphin-speed-4",
+  "fecha": "2026-11-06"
+ },
+ "saucony-endorphin-pro-5": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    55
+   ],
+   [
+    "Ritmo",
+    87
+   ],
+   [
+    "Competencia",
+    92
+   ],
+   [
+    "Estabilidad",
+    82
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-endorphin-pro-5",
+  "fecha": "2026-11-06"
+ },
+ "puma-velocity-nitro-4": {
+  "n": 93,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    91
+   ],
+   [
+    "Competencia",
+    73
+   ],
+   [
+    "Estabilidad",
+    76
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/puma-velocity-nitro-4",
+  "fecha": "2026-11-06"
+ },
+ "puma-deviate-nitro-4": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    85
+   ],
+   [
+    "Ritmo",
+    86
+   ],
+   [
+    "Competencia",
+    74
+   ],
+   [
+    "Estabilidad",
+    73
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/puma-deviate-nitro-4",
+  "fecha": "2026-11-06"
+ },
+ "puma-magmax-nitro-2": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    38
+   ],
+   [
+    "Competencia",
+    27
+   ],
+   [
+    "Estabilidad",
+    88
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/puma-mag-max-nitro-2",
+  "fecha": "2026-11-06"
+ },
+ "on-cloudmonster-3": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    84
+   ],
+   [
+    "Ritmo",
+    42
+   ],
+   [
+    "Competencia",
+    29
+   ],
+   [
+    "Estabilidad",
+    82
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/on-cloudmonster-3",
+  "fecha": "2026-11-06"
+ },
+ "on-cloudsurfer-next": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    84
+   ],
+   [
+    "Ritmo",
+    70
+   ],
+   [
+    "Competencia",
+    51
+   ],
+   [
+    "Estabilidad",
+    88
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/on-cloudsurfer-next",
+  "fecha": "2026-11-06"
+ },
+ "on-cloudrunner-3": {
+  "n": 76,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    83
+   ],
+   [
+    "Ritmo",
+    30
+   ],
+   [
+    "Competencia",
+    21
+   ],
+   [
+    "Estabilidad",
+    91
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/on-cloudrunner-3",
+  "fecha": "2026-11-06"
+ },
+ "on-cloudflyer-5": {
+  "n": 78,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    83
+   ],
+   [
+    "Ritmo",
+    40
+   ],
+   [
+    "Competencia",
+    28
+   ],
+   [
+    "Estabilidad",
+    91
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/on-cloudflyer-5",
+  "fecha": "2026-11-06"
+ },
+ "on-cloudboom-max": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    82
+   ],
+   [
+    "Competencia",
+    66
+   ],
+   [
+    "Estabilidad",
+    94
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/on-cloudboom-max",
+  "fecha": "2026-11-06"
+ },
+ "brooks-ghost-15": {
+  "n": 81,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    85
+   ],
+   [
+    "Ritmo",
+    55
+   ],
+   [
+    "Competencia",
+    37
+   ],
+   [
+    "Estabilidad",
+    80
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/brooks-ghost-15",
+  "fecha": "2026-11-06"
+ },
+ "brooks-glycerin-20": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    64
+   ],
+   [
+    "Competencia",
+    45
+   ],
+   [
+    "Estabilidad",
+    81
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/brooks-glycerin-20",
+  "fecha": "2026-11-06"
+ },
+ "brooks-adrenaline-gts-23": {
+  "n": 81,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    84
+   ],
+   [
+    "Ritmo",
+    57
+   ],
+   [
+    "Competencia",
+    37
+   ],
+   [
+    "Estabilidad",
+    90
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/brooks-adrenaline-gts-23",
+  "fecha": "2026-11-06"
+ },
+ "brooks-launch-10": {
+  "n": 79,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    81
+   ],
+   [
+    "Ritmo",
+    73
+   ],
+   [
+    "Competencia",
+    55
+   ],
+   [
+    "Estabilidad",
+    75
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/brooks-launch-10",
+  "fecha": "2026-11-06"
+ },
+ "brooks-hyperion": {
+  "n": 79,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    71
+   ],
+   [
+    "Ritmo",
+    83
+   ],
+   [
+    "Competencia",
+    71
+   ],
+   [
+    "Estabilidad",
+    70
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/brooks-hyperion",
+  "fecha": "2026-11-06"
+ },
+ "under-armour-infinite-pro": {
+  "n": 81,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    86
+   ],
+   [
+    "Ritmo",
+    48
+   ],
+   [
+    "Competencia",
+    33
+   ],
+   [
+    "Estabilidad",
+    84
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/under-armour-infinite-pro",
+  "fecha": "2026-11-06"
+ },
+ "under-armour-infinite-elite": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    88
+   ],
+   [
+    "Ritmo",
+    50
+   ],
+   [
+    "Competencia",
+    36
+   ],
+   [
+    "Estabilidad",
+    86
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/under-armour-infinite-elite",
+  "fecha": "2026-11-06"
+ },
+ "saucony-triumph-22": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    54
+   ],
+   [
+    "Competencia",
+    38
+   ],
+   [
+    "Estabilidad",
+    86
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-triumph-22",
+  "fecha": "2026-11-06"
+ },
+ "saucony-kinvara-14": {
+  "n": 77,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    69
+   ],
+   [
+    "Ritmo",
+    81
+   ],
+   [
+    "Competencia",
+    67
+   ],
+   [
+    "Estabilidad",
+    69
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-kinvara-14",
+  "fecha": "2026-11-06"
+ },
+ "saucony-endorphin-elite-2": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    38
+   ],
+   [
+    "Ritmo",
+    83
+   ],
+   [
+    "Competencia",
+    96
+   ],
+   [
+    "Estabilidad",
+    20
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-endorphin-elite-2",
+  "fecha": "2026-11-06"
+ },
+ "asics-gt-1000-14": {
+  "n": 81,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    84
+   ],
+   [
+    "Ritmo",
+    42
+   ],
+   [
+    "Competencia",
+    29
+   ],
+   [
+    "Estabilidad",
+    92
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-gt-1000-14",
+  "fecha": "2026-11-06"
+ },
+ "asics-gel-excite-11": {
+  "n": 76,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    80
+   ],
+   [
+    "Ritmo",
+    38
+   ],
+   [
+    "Competencia",
+    26
+   ],
+   [
+    "Estabilidad",
+    85
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-gel-excite-11",
+  "fecha": "2026-11-06"
+ },
+ "asics-dynablast-5": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    63
+   ],
+   [
+    "Competencia",
+    45
+   ],
+   [
+    "Estabilidad",
+    80
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-dynablast-5",
+  "fecha": "2026-11-06"
+ },
+ "nike-pegasus-premium": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    79
+   ],
+   [
+    "Ritmo",
+    83
+   ],
+   [
+    "Competencia",
+    54
+   ],
+   [
+    "Estabilidad",
+    66
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-pegasus-premium",
+  "fecha": "2026-11-06"
+ },
+ "nike-pegasus-41": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    72
+   ],
+   [
+    "Competencia",
+    54
+   ],
+   [
+    "Estabilidad",
+    84
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-pegasus-41",
+  "fecha": "2026-11-06"
+ },
+ "nike-quest-6": {
+  "n": 78,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    82
+   ],
+   [
+    "Ritmo",
+    44
+   ],
+   [
+    "Competencia",
+    30
+   ],
+   [
+    "Estabilidad",
+    82
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-quest-6",
+  "fecha": "2026-11-06"
+ },
+ "nike-revolution-8": {
+  "n": 79,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    82
+   ],
+   [
+    "Ritmo",
+    52
+   ],
+   [
+    "Competencia",
+    36
+   ],
+   [
+    "Estabilidad",
+    78
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-revolution-8",
+  "fecha": "2026-11-06"
+ },
+ "adidas-ultraboost-5": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    85
+   ],
+   [
+    "Ritmo",
+    72
+   ],
+   [
+    "Competencia",
+    55
+   ],
+   [
+    "Estabilidad",
+    75
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-ultraboost-5",
+  "fecha": "2026-11-06"
+ },
+ "adidas-adizero-takumi-sen-10": {
+  "n": 80,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    41
+   ],
+   [
+    "Ritmo",
+    87
+   ],
+   [
+    "Competencia",
+    87
+   ],
+   [
+    "Estabilidad",
+    45
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-adizero-takumi-sen-10",
+  "fecha": "2026-11-06"
+ },
+ "puma-foreverrun-nitro-2": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    88
+   ],
+   [
+    "Ritmo",
+    55
+   ],
+   [
+    "Competencia",
+    38
+   ],
+   [
+    "Estabilidad",
+    93
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/puma-foreverrun-nitro-2",
+  "fecha": "2026-11-06"
+ },
+ "puma-velocity-nitro-5": {
+  "n": 89,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    93
+   ],
+   [
+    "Ritmo",
+    84
+   ],
+   [
+    "Competencia",
+    62
+   ],
+   [
+    "Estabilidad",
+    79
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/puma-velocity-nitro-5",
+  "fecha": "2026-11-06"
+ },
+ "nike-pegasus-trail-5-gtx": {
+  "n": 79,
+  "et": "Buena",
+  "usos": [
+   [
+    "Gravel",
+    82
+   ],
+   [
+    "Versatile",
+    78
+   ],
+   [
+    "Technical",
+    43
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-pegasus-trail-5-gtx",
+  "fecha": "2026-11-06"
+ },
+ "nike-kiger-9": {
+  "n": 77,
+  "et": "Buena",
+  "usos": [
+   [
+    "Gravel",
+    64
+   ],
+   [
+    "Versatile",
+    78
+   ],
+   [
+    "Technical",
+    70
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-terra-kiger-9",
+  "fecha": "2026-11-06"
+ },
+ "nike-zegama-2": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Gravel",
+    80
+   ],
+   [
+    "Versatile",
+    92
+   ],
+   [
+    "Technical",
+    64
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-zegama-2",
+  "fecha": "2026-11-06"
+ },
+ "asics-gel-trabuco-13": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    84
+   ],
+   [
+    "Versatile",
+    79
+   ],
+   [
+    "Technical",
+    52
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/asics-gel-trabuco-13",
+  "fecha": "2026-11-06"
+ },
+ "adidas-terrex-agravic-4": {
+  "n": 78,
+  "et": "Buena",
+  "usos": [
+   [
+    "Gravel",
+    87
+   ],
+   [
+    "Versatile",
+    63
+   ],
+   [
+    "Technical",
+    44
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/adidas-terrex-agravic-4",
+  "fecha": "2026-11-06"
+ },
+ "saucony-peregrine-15": {
+  "n": 87,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    78
+   ],
+   [
+    "Versatile",
+    91
+   ],
+   [
+    "Technical",
+    82
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-peregrine-15",
+  "fecha": "2026-11-06"
+ },
+ "on-cloudultra-3": {
+  "n": 81,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    87
+   ],
+   [
+    "Versatile",
+    65
+   ],
+   [
+    "Technical",
+    33
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/on-cloudultra-3",
+  "fecha": "2026-11-06"
+ },
+ "hoka-clifton-10": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    87
+   ],
+   [
+    "Ritmo",
+    48
+   ],
+   [
+    "Competencia",
+    34
+   ],
+   [
+    "Estabilidad",
+    90
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-clifton-10",
+  "fecha": "2026-11-06"
+ },
+ "hoka-bondi-9": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    93
+   ],
+   [
+    "Ritmo",
+    53
+   ],
+   [
+    "Competencia",
+    38
+   ],
+   [
+    "Estabilidad",
+    89
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-bondi-9",
+  "fecha": "2026-11-06"
+ },
+ "hoka-mach-6": {
+  "n": 87,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    91
+   ],
+   [
+    "Ritmo",
+    85
+   ],
+   [
+    "Competencia",
+    74
+   ],
+   [
+    "Estabilidad",
+    80
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-mach-6",
+  "fecha": "2026-11-06"
+ },
+ "hoka-mach-7": {
+  "n": 90,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    87
+   ],
+   [
+    "Competencia",
+    68
+   ],
+   [
+    "Estabilidad",
+    80
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-mach-7",
+  "fecha": "2026-11-06"
+ },
+ "hoka-mach-x-3": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    87
+   ],
+   [
+    "Ritmo",
+    88
+   ],
+   [
+    "Competencia",
+    73
+   ],
+   [
+    "Estabilidad",
+    74
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-mach-x-3",
+  "fecha": "2026-11-06"
+ },
+ "hoka-arahi-8": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    86
+   ],
+   [
+    "Ritmo",
+    46
+   ],
+   [
+    "Competencia",
+    32
+   ],
+   [
+    "Estabilidad",
+    93
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-arahi-8",
+  "fecha": "2026-11-06"
+ },
+ "hoka-gaviota-6": {
+  "n": 81,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    86
+   ],
+   [
+    "Ritmo",
+    36
+   ],
+   [
+    "Competencia",
+    26
+   ],
+   [
+    "Estabilidad",
+    97
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-gaviota-6",
+  "fecha": "2026-11-06"
+ },
+ "hoka-rincon-4": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    86
+   ],
+   [
+    "Ritmo",
+    78
+   ],
+   [
+    "Competencia",
+    60
+   ],
+   [
+    "Estabilidad",
+    86
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-rincon-4",
+  "fecha": "2026-11-06"
+ },
+ "hoka-skyflow": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    63
+   ],
+   [
+    "Competencia",
+    45
+   ],
+   [
+    "Estabilidad",
+    85
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-skyflow",
+  "fecha": "2026-11-06"
+ },
+ "hoka-speedgoat-6": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    69
+   ],
+   [
+    "Versatile",
+    85
+   ],
+   [
+    "Technical",
+    72
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-speedgoat-6",
+  "fecha": "2026-11-06"
+ },
+ "hoka-challenger-atr-8": {
+  "n": 83,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    87
+   ],
+   [
+    "Versatile",
+    76
+   ],
+   [
+    "Technical",
+    46
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-challenger-8",
+  "fecha": "2026-11-06"
+ },
+ "hoka-mafate-5": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    58
+   ],
+   [
+    "Versatile",
+    89
+   ],
+   [
+    "Technical",
+    76
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/hoka-mafate-5",
+  "fecha": "2026-11-06"
+ },
+ "salomon-genesis-2": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    68
+   ],
+   [
+    "Versatile",
+    89
+   ],
+   [
+    "Technical",
+    75
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-genesis-2",
+  "fecha": "2026-11-06"
+ },
+ "salomon-ultra-glide-4": {
+  "n": 79,
+  "et": "Buena",
+  "usos": [
+   [
+    "Gravel",
+    77
+   ],
+   [
+    "Versatile",
+    84
+   ],
+   [
+    "Technical",
+    60
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-ultra-glide-4",
+  "fecha": "2026-11-06"
+ },
+ "salomon-slab-pulsar-4": {
+  "n": 78,
+  "et": "Buena",
+  "usos": [
+   [
+    "Gravel",
+    86
+   ],
+   [
+    "Versatile",
+    62
+   ],
+   [
+    "Technical",
+    42
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-s-lab-pulsar-4",
+  "fecha": "2026-11-06"
+ },
+ "la-sportiva-prodigio-pro": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    84
+   ],
+   [
+    "Versatile",
+    90
+   ],
+   [
+    "Technical",
+    77
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/la-sportiva-prodigio-pro",
+  "fecha": "2026-11-06"
+ },
+ "la-sportiva-prodigio-max": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    40
+   ],
+   [
+    "Versatile",
+    82
+   ],
+   [
+    "Technical",
+    90
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/la-sportiva-prodigio-max",
+  "fecha": "2026-11-06"
+ },
+ "saucony-endorphin-speed-5": {
+  "n": 94,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    84
+   ],
+   [
+    "Ritmo",
+    94
+   ],
+   [
+    "Competencia",
+    89
+   ],
+   [
+    "Estabilidad",
+    81
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-endorphin-speed-5",
+  "fecha": "2026-11-06"
+ },
+ "saucony-peregrine-16": {
+  "n": 88,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Gravel",
+    94
+   ],
+   [
+    "Versatile",
+    81
+   ],
+   [
+    "Technical",
+    62
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-peregrine-16",
+  "fecha": "2026-11-06"
+ },
+ "saucony-hurricane-25": {
+  "n": 90,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    91
+   ],
+   [
+    "Ritmo",
+    70
+   ],
+   [
+    "Competencia",
+    50
+   ],
+   [
+    "Estabilidad",
+    96
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-hurricane-25",
+  "fecha": "2026-11-06"
+ },
+ "saucony-xodus-ultra-4": {
+  "n": 89,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Gravel",
+    83
+   ],
+   [
+    "Versatile",
+    89
+   ],
+   [
+    "Technical",
+    56
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-xodus-ultra-4",
+  "fecha": "2026-11-06"
+ },
+ "nike-winflo-11": {
+  "n": 80,
+  "et": "Buena",
+  "usos": [
+   [
+    "Día a día",
+    83
+   ],
+   [
+    "Ritmo",
+    42
+   ],
+   [
+    "Competencia",
+    29
+   ],
+   [
+    "Estabilidad",
+    70
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-winflo-11",
+  "fecha": "2026-11-06"
+ },
+ "nike-winflo-12": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    89
+   ],
+   [
+    "Ritmo",
+    50
+   ],
+   [
+    "Competencia",
+    34
+   ],
+   [
+    "Estabilidad",
+    86
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-winflo-12",
+  "fecha": "2026-11-06"
+ },
+ "nike-vaporfly-4": {
+  "n": 93,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    38
+   ],
+   [
+    "Ritmo",
+    91
+   ],
+   [
+    "Competencia",
+    94
+   ],
+   [
+    "Estabilidad",
+    59
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-vaporfly-4",
+  "fecha": "2026-11-06"
+ },
+ "nike-structure-plus": {
+  "n": 87,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    90
+   ],
+   [
+    "Ritmo",
+    46
+   ],
+   [
+    "Competencia",
+    32
+   ],
+   [
+    "Estabilidad",
+    91
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-structure-plus",
+  "fecha": "2026-11-06"
+ },
+ "nike-vomero-premium": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    91
+   ],
+   [
+    "Ritmo",
+    23
+   ],
+   [
+    "Competencia",
+    23
+   ],
+   [
+    "Estabilidad",
+    83
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-vomero-premium",
+  "fecha": "2026-11-06"
+ },
+ "nike-acg-pegasus-trail": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Gravel",
+    90
+   ],
+   [
+    "Versatile",
+    60
+   ],
+   [
+    "Technical",
+    44
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/nike-acg-pegasus-trail",
+  "fecha": "2026-11-06"
+ }
+}

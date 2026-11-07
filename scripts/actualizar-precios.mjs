@@ -16,7 +16,9 @@ const cat = JSON.parse(readFileSync(new URL("modelos.json", RAIZ), "utf8"));
 const hist = JSON.parse(readFileSync(new URL("historial.json", RAIZ), "utf8"));
 const PAUSA_MS = 1500;
 const SOLO = (process.argv.find(a => a.startsWith("--tiendas=")) || "").slice(10).split(",").map(x => x.trim().toLowerCase()).filter(Boolean);
-const toca = t => !SOLO.length || SOLO.includes(t.tienda.toLowerCase());
+/* estas tiendas bloquean al robot: sus precios los carga el marcador desde tu navegador (datos-manuales/) */
+const MANUALES = ["nike", "adidas.com.ar", "digital sport"];
+const toca = t => SOLO.length ? SOLO.includes(t.tienda.toLowerCase()) : !MANUALES.includes(t.tienda.toLowerCase());
 const MESES_HISTORIAL = 7;
 
 const hoyISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires" }).format(new Date());

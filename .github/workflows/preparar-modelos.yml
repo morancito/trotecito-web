@@ -40,7 +40,6 @@ jobs:
         env:
           FOTOS: ${{ inputs.fotos }}
         run: node scripts/bajar-fotos-tiendas.mjs $FOTOS
-        continue-on-error: true
       - name: Guardar
         run: |
           git config user.name "trotecito-bot"

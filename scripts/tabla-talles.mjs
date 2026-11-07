@@ -38,9 +38,11 @@ for (const m of cat.modelos.filter(m => !m.borrador)) {
     await dormir(1200);
   }
 }
-/* por cada talle US, el AR que más veces aparece */
+/* por cada talle US, el AR que más veces aparece. adidas y Puma guardan el talle UK (no el US) en el código: no sirven */
+const NO_US = ["Adidas", "Puma"];
 const tabla = {};
 for (const [marca, gs] of Object.entries(votos)) for (const [gen, uss] of Object.entries(gs)) {
+  if (NO_US.includes(marca)) continue;
   const fila = Object.fromEntries(Object.entries(uss).map(([us, ars]) => [us, Object.entries(ars).sort((a, b) => b[1] - a[1])[0][0]]).sort((a, b) => a[0] - b[0]));
   if (Object.keys(fila).length >= 3) (tabla[marca] ??= {})[gen] = fila;
 }

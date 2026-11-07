@@ -8,6 +8,26 @@ const SITIO = (process.env.SITIO_URL || "https://trotecito.com.ar").replace(/\/$
 const BASE = (process.env.BASE_PATH || "/").replace(/\/?$/, "/");
 const DIST = new URL("../dist/", import.meta.url);
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));
+
+/* talles: lo que una tienda publica en numeración de EE. UU. se pasa a argentina con la tabla de esa marca y género
+   (public/data/talles.json, armada con lo que publican Dexter y Stock Center). Se aplica a las copias de dist/data,
+   así vale para todo lo que llega en US (robot, marcador, colores). Si falta algún talle en la tabla, queda en US. */
+const TABLA = existsSync(new URL("../public/data/talles.json", import.meta.url)) ? JSON.parse(readFileSync(new URL("../public/data/talles.json", import.meta.url), "utf8")) : {};
+function aAR(marca, x) {
+  if (x?.sistema !== "US" || !x.talles?.length) return false;
+  const fila = TABLA[marca]?.[x.nota === "Mujer" ? "Mujer" : "Hombre"]; if (!fila) return false;
+  const ar = x.talles.map(t => fila[String(t)]);
+  if (ar.some(v => !v)) return false;
+  x.us = x.talles; x.talles = [...new Set(ar)].sort((a, b) => a - b); x.sistema = "AR"; return true;
+}
+let convertidos = 0;
+for (const m of cat.modelos) for (const t of m.tiendas || []) if (aAR(m.m, t)) convertidos++;
+writeFileSync(new URL("data/modelos.json", DIST), JSON.stringify(cat));
+const colArch = new URL("data/colores.json", DIST);
+if (existsSync(colArch)) { const col = JSON.parse(readFileSync(colArch, "utf8")); const marcaDe = Object.fromEntries(cat.modelos.map(m => [m.slug, m.m]));
+  for (const [slug, vs] of Object.entries(col)) if (Array.isArray(vs)) for (const v of vs) if (aAR(marcaDe[slug], v)) convertidos++;
+  writeFileSync(colArch, JSON.stringify(col)); }
+console.log(`Talles: ${convertidos} listas pasadas de US a numeración argentina.`);
 /* índice de todas las zapas en el pie, en el HTML: así Google (y quien no tiene JavaScript) llega a cada ficha desde cualquier página */
 const marcas = [...new Set(cat.modelos.filter(m => !m.borrador).map(m => m.m))].sort((a, b) => a.localeCompare(b, "es"));
 const indice = `<details class="indice"><summary>Todas las zapas (${cat.modelos.filter(m => !m.borrador).length})</summary><div class="ind-cols">${marcas.map(mc => `<div><h3>${mc}</h3><ul>${cat.modelos.filter(m => !m.borrador && m.m === mc)

@@ -1,89 +1,20 @@
 {
- "fecha": "2026-11-07T06:23:11.097Z",
+ "fecha": "2026-11-07T06:23:44.108Z",
  "resultados": [
   {
-   "url": "https://saucony.com.ar/running/page/2/",
-   "estado": 404,
-   "urlFinal": "https://saucony.com.ar/running/page/2/",
-   "largo": 776715,
-   "titulo": "",
-   "plataforma": "tiendanube",
-   "generador": null,
-   "variantes": true,
-   "tiendanube": true,
-   "desafio": false,
-   "jsonld": 7,
-   "precioMeta": null,
-   "muestra": " 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidratación Gorras Guantes Mangas Medias Riñoneras y ",
-   "leerError": "HTTP 404"
-  },
-  {
-   "url": "https://saucony.com.ar/running/?results_only=true&page=2",
-   "estado": 404,
-   "urlFinal": "https://saucony.com.ar/running/?results_only=true&page=2",
-   "largo": 776715,
-   "titulo": "",
-   "plataforma": "tiendanube",
-   "generador": null,
-   "variantes": true,
-   "tiendanube": true,
-   "desafio": false,
-   "jsonld": 7,
-   "precioMeta": null,
-   "muestra": " 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidratación Gorras Guantes Mangas Medias Riñoneras y ",
-   "leerError": "HTTP 404"
-  },
-  {
-   "url": "https://saucony.com.ar/search/?q=zapatilla",
+   "url": "https://saucony.com.ar/sitemap.xml",
    "estado": 200,
-   "urlFinal": "https://saucony.com.ar/search/?q=zapatilla",
-   "largo": 1326447,
-   "titulo": "zapatilla - Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios",
+   "urlFinal": "https://saucony.com.ar/sitemap.xml",
+   "largo": 604700,
    "plataforma": "tiendanube",
    "generador": null,
-   "variantes": true,
+   "variantes": false,
    "tiendanube": true,
    "desafio": false,
-   "jsonld": 15,
+   "jsonld": 0,
    "precioMeta": null,
-   "muestra": " zapatilla - Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y ",
-   "leido": {
-    "precio": 42900,
-    "antes": null,
-    "cuotas": 3,
-    "_muestra": [
-     "Verde / S",
-     "Verde / M",
-     "Verde / L",
-     "Verde / XL"
-    ]
-   }
-  },
-  {
-   "url": "https://saucony.com.ar/productos/",
-   "estado": 200,
-   "urlFinal": "https://saucony.com.ar/productos/",
-   "largo": 1176591,
-   "titulo": "Comprá online productos en Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios",
-   "plataforma": "tiendanube",
-   "generador": null,
-   "variantes": true,
-   "tiendanube": true,
-   "desafio": false,
-   "jsonld": 15,
-   "precioMeta": null,
-   "muestra": " Comprá online productos en Saucony Argentina ® | Zapatillas, ropa deportiva y accesorios 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Acces",
-   "leido": {
-    "precio": 42900,
-    "antes": null,
-    "cuotas": 3,
-    "_muestra": [
-     "Verde / S",
-     "Verde / M",
-     "Verde / L",
-     "Verde / XL"
-    ]
-   }
+   "muestra": " https://saucony.com.ar/ daily 1.0 https://saucony.com.ar/contacto/ weekly 0.3 https://saucony.com.ar/productos/ weekly 0.3 https://saucony.com.ar/sitemap_blog.xml/ weekly 0.3 https://saucony.com.ar/historia/ 2022-05-23T17:26:42Z weekly 0.5 https://saucony.com.ar/envios/ 2026-06-02T15:44:45Z weekly 0.5 https://saucony.com.ar/politicasprivacidad/ 2026-06-24T20:38:12Z weekly 0.5 https://saucony.com.ar/cambiosydevoluciones/ 2026-04-14T16:05:55Z weekly 0.5 https://saucony.com.ar/sorteo-zapatillas-kinvara-12-2021/ 2021-09-30T22:37:57Z weekly 0.5 https://saucony.com.ar/preguntas-frecuentes/ 2025-09-",
+   "leerError": "no encontré el precio en la página"
   }
  ]
 }

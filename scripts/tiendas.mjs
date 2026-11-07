@@ -108,7 +108,8 @@ function tiendanube(h, texto) {
   const o = disp.sort((a, b) => a.price_number - b.price_number)[0];
   const talle = v => [v.option0, v.option1, v.option2].find(x => x != null && (talleAR(x).length || talleUS(x).length)) || "";
   const antes = num(o.compare_at_price_number);
-  const tall = conTalles(disp.map(talle));
+  /* si la tienda no lleva stock por talle (todas las variantes sin número de stock) los "disponibles" son todos: no sirven */
+  const tall = disp.every(v => v.stock == null) && vs.length > 1 ? {} : conTalles(disp.map(talle));
   /* si no reconocemos los talles, dejamos una muestra de cómo los nombra la tienda (solo la usa el buscador para revisar) */
   if (!tall.talles) tall._muestra = disp.slice(0, 4).map(v => [v.option0, v.option1, v.option2].filter(x => x != null).join(" / "));
   return { precio: num(o.price_number), antes: antes > o.price_number * 1.01 ? antes : null, cuotas: cuotasDe(texto), ...tall };

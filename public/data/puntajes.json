@@ -2201,5 +2201,180 @@
   "fuente": "RunRepeat",
   "url": "https://runrepeat.com/nike-acg-pegasus-trail",
   "fecha": "2026-11-06"
+ },
+ "saucony-triumph-24": {
+  "n": 92,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    94
+   ],
+   [
+    "Ritmo",
+    83
+   ],
+   [
+    "Competencia",
+    68
+   ],
+   [
+    "Estabilidad",
+    80
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-triumph-24",
+  "fecha": "2026-11-07"
+ },
+ "saucony-triumph-23": {
+  "n": 88,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    74
+   ],
+   [
+    "Competencia",
+    52
+   ],
+   [
+    "Estabilidad",
+    89
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-triumph-23",
+  "fecha": "2026-11-07"
+ },
+ "saucony-hurricane-26": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    93
+   ],
+   [
+    "Ritmo",
+    78
+   ],
+   [
+    "Competencia",
+    54
+   ],
+   [
+    "Estabilidad",
+    88
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-hurricane-26",
+  "fecha": "2026-11-07"
+ },
+ "saucony-guide-19": {
+  "n": 84,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    88
+   ],
+   [
+    "Ritmo",
+    50
+   ],
+   [
+    "Competencia",
+    34
+   ],
+   [
+    "Estabilidad",
+    93
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-guide-19",
+  "fecha": "2026-11-07"
+ },
+ "saucony-endorphin-azura": {
+  "n": 91,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    92
+   ],
+   [
+    "Ritmo",
+    89
+   ],
+   [
+    "Competencia",
+    74
+   ],
+   [
+    "Estabilidad",
+    90
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-endorphin-azura",
+  "fecha": "2026-11-07"
+ },
+ "saucony-endorphin-elite-3": {
+  "n": 92,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    28
+   ],
+   [
+    "Ritmo",
+    81
+   ],
+   [
+    "Competencia",
+    95
+   ],
+   [
+    "Estabilidad",
+    33
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-endorphin-elite-3",
+  "fecha": "2026-11-07"
+ },
+ "saucony-endorphin-pro-4": {
+  "n": 90,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    73
+   ],
+   [
+    "Ritmo",
+    87
+   ],
+   [
+    "Competencia",
+    90
+   ],
+   [
+    "Estabilidad",
+    87
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/saucony-endorphin-pro-4",
+  "fecha": "2026-11-07"
  }
 }

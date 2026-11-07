@@ -22,27 +22,35 @@ async function api(ruta) {
 const pesos = n => n == null ? "—" : "$" + Math.round(n).toLocaleString("es-AR");
 const MODELOS = ["Nike Pegasus 41", "Hoka Clifton 10", "Asics Novablast 5", "Asics Gel Kayano 32", "Adidas Supernova Rise 3"];
 
+const norm = x => String(x || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
 for (const q of MODELOS) {
   console.log(`## ${q}`);
+  const pal = norm(q).split(" ").slice(1);
   const b = await api(`/sites/MLA/search?q=${encodeURIComponent(q)}&limit=3`);
-  console.log(`  buscador público: HTTP ${b.s}${b.s === 200 ? ` · ${b.j?.paging?.total} resultados` : ` · ${b.j?.message || b.j?.error || ""}`}`);
-  const c = await api(`/products/search?status=active&site_id=MLA&q=${encodeURIComponent(q)}&limit=10`);
-  const fichas = c.j?.results || [];
-  console.log(`  buscador de catálogo: HTTP ${c.s} · ${c.s === 200 ? `${c.j?.paging?.total ?? fichas.length} fichas` : c.j?.message || c.j?.error || ""}`);
-  for (const f of fichas.slice(0, 5)) console.log(`    - ${f.id} · ${f.name}${f.domain_id ? ` · ${f.domain_id}` : ""}`);
-  const f = fichas[0];
-  if (!f) { console.log(""); continue; }
-  const p = await api(`/products/${f.id}`);
-  const bb = p.j?.buy_box_winner;
-  console.log(`  ficha ${f.id}: HTTP ${p.s}${bb ? ` · gana ${pesos(bb.price)} (vendedor ${bb.seller_id}, tienda oficial ${bb.official_store_id ?? "no"})` : " · sin ganador"}${p.j?.children_ids?.length ? ` · ${p.j.children_ids.length} variantes` : ""}`);
-  const it = await api(`/products/${f.id}/items?limit=20`);
-  const pubs = it.j?.results || [];
-  console.log(`  publicaciones de la ficha: HTTP ${it.s} · ${it.s === 200 ? `${it.j?.paging?.total ?? pubs.length}` : it.j?.message || it.j?.error || ""}`);
-  for (const x of pubs.slice(0, 6)) console.log(`    - ${x.item_id || x.id} · ${pesos(x.price)}${x.original_price ? ` (antes ${pesos(x.original_price)})` : ""} · vendedor ${x.seller_id} · tienda oficial ${x.official_store_id ?? "no"} · ${x.condition || ""}`);
-  const uno = pubs[0]?.item_id || pubs[0]?.id;
-  if (uno) {
-    const i = await api(`/items/${uno}`);
-    console.log(`  publicación ${uno}: HTTP ${i.s}${i.s === 200 ? ` · ${i.j?.title} · ${pesos(i.j?.price)} · ${i.j?.variations?.length || 0} variaciones (talles)` : ` · ${i.j?.message || ""}`}`);
+  console.log(`  buscador público: HTTP ${b.s}`);
+  /* fichas del catálogo con el nombre exacto (todas las palabras, y sin "trail" si el modelo no lo es) */
+  const fichas = new Map();
+  for (let off = 0; off < 200; off += 50) {
+    const c = await api(`/products/search?status=active&site_id=MLA&domain_id=MLA-SNEAKERS&q=${encodeURIComponent(q)}&limit=50&offset=${off}`);
+    if (c.s !== 200) { console.log(`  catálogo: HTTP ${c.s} ${c.j?.message || ""}`); break; }
+    for (const f of c.j?.results || []) { const n = ` ${norm(f.name)} `; if (pal.every(w => n.includes(` ${w} `)) && !/ trail | gtx | ninos | nino | kids /.test(n)) fichas.set(f.id, f.name); }
+    if (!(c.j?.results || []).length) break;
   }
+  console.log(`  fichas del modelo exacto: ${fichas.size}`);
+  let conPrecio = 0, oficiales = 0; const precios = [];
+  for (const [id, nombre] of [...fichas].slice(0, 25)) {
+    const it = await api(`/products/${id}/items?limit=20`);
+    const pubs = it.s === 200 ? it.j?.results || [] : [];
+    if (!pubs.length) continue;
+    conPrecio++;
+    for (const x of pubs) { precios.push(x.price); if (x.official_store_id) oficiales++; }
+    if (conPrecio <= 4) {
+      console.log(`    ${id} · ${nombre}`);
+      for (const x of pubs.slice(0, 4)) console.log(`      ${pesos(x.price)}${x.original_price ? ` (antes ${pesos(x.original_price)})` : ""} · ${x.official_store_id ? "tienda oficial " + x.official_store_id : "vendedor " + x.seller_id} · ${x.condition || ""}${x.shipping?.free_shipping ? " · envío gratis" : ""}`);
+    }
+  }
+  console.log(`  revisadas ${Math.min(25, fichas.size)}: ${conPrecio} con publicaciones · ${precios.length} precios (${oficiales} de tiendas oficiales)${precios.length ? ` · de ${pesos(Math.min(...precios))} a ${pesos(Math.max(...precios))}` : ""}`);
+  const uno = [...fichas.keys()][0];
+  if (uno) { const p = await api(`/products/${uno}`); const a = Object.fromEntries((p.j?.attributes || []).map(x => [x.id, x.value_name])); console.log(`  ejemplo de ficha: talle ${a.SIZE || "—"} · género ${a.GENDER || "—"} · color ${a.COLOR || "—"}`); }
   console.log("");
 }

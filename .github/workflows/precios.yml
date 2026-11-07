@@ -1,19 +1,15 @@
 name: Actualizar precios
 
-# Dos veces por día el robot lee los precios de las tiendas, actualiza el punto del día en el historial y guarda
-# los cambios en el repo; Cloudflare ve el cambio en main y publica el sitio solo.
-# Quién lo lanza: el reloj de Cloudflare (worker/index.js), a las 08:07 y 12:07 de Argentina, porque es puntual.
-# Los horarios de abajo son de respaldo por si el reloj falla: GitHub suele atrasarlos horas, y si ya hubo una
-# corrida en las últimas 3 horas, la de respaldo no hace nada. También se puede correr a mano desde Actions.
+# Dos veces por día, 08:07 y 12:07 de Argentina (11:07 y 15:07 UTC), el robot lee los precios de las tiendas,
+# actualiza el punto del día en el historial y guarda los cambios en el repo; Cloudflare ve el cambio en main y
+# publica el sitio solo. Ojo: GitHub puede arrancar las corridas programadas con atraso (a veces horas). Si por el
+# atraso las dos quedan pegadas, la segunda no hace nada (hubo una actualización hace menos de 3 horas).
+# También se puede correr a mano desde la pestaña Actions.
 on:
   schedule:
     - cron: "7 11 * * *"
     - cron: "7 15 * * *"
   workflow_dispatch:
-    inputs:
-      origen:
-        description: "Quién la lanza (reloj, a mano)"
-        default: "a mano"
 
 permissions:
   contents: write
@@ -35,7 +31,7 @@ jobs:
         run: |
           ult=$(gh run list -R "$GITHUB_REPOSITORY" --workflow precios.yml --status success -L 1 --json createdAt -q '.[0].createdAt')
           if [ -n "$ult" ] && [ $(( $(date +%s) - $(date -d "$ult" +%s) )) -lt 10800 ]; then
-            echo "Ya hubo una actualización a las $ult (hace menos de 3 horas): esta corrida de respaldo no hace falta."
+            echo "Ya hubo una actualización a las $ult (hace menos de 3 horas): esta no hace falta."
             echo "saltar=1" >> "$GITHUB_OUTPUT"
           fi
 

@@ -1,0 +1,19 @@
+name: Probar Mercado Libre
+# Prueba qué deja consultar la API de Mercado Libre con la app de Trotecito. No cambia nada del sitio.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Probar la API
+        env:
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
+        run: node scripts/ml-prueba.mjs

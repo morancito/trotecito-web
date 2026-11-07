@@ -116,40 +116,27 @@
   "fotos": 5
  },
  "_errores": [
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1680483/IQ3418-399_B_2_PREM.jpg?v=639046845526100000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1681779/IQ3418-399_C_3_PREM.jpg?v=639046852534030000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1683070/IQ3418-399_D_4_PREM.jpg?v=639046856755330000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1684341/IQ3418-399_E_5_PREM.jpg?v=639046863666800000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://www.nike.com.ar/nike-vaporfly-4-hf6412-601/p: API HTTP 403",
-  "nike-vaporfly-4 Nike: HTTP 403",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1875953/IR2170-300_A_PREM.jpg?v=639198943262570000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1877985/IR2170-300_B_PREM.jpg?v=639198952013400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1880912/IR2170-300_C_PREM.jpg?v=639199070672800000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1882944/IR2170-300_D_PREM.jpg?v=639199147298130000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3250380/II7192100-000-1.jpg?v=639240422961330000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3250381/II7192100-000-2.jpg?v=639240422967030000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3250382/II7192100-000-3.jpg?v=639240422971400000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3250383/II7192100-000-4.jpg?v=639240422974530000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://sporting.vteximg.com.br/arquivos/ids/3250384/II7192100-000-5.jpg?v=639240422977970000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://www.nike.com.ar/structure-plus-ir2170-300/p: API HTTP 403",
-  "nike-structure-plus Nike: HTTP 403",
-  "https://www.nike.com.ar/nike-structure-plus-hq3049-001/p: API HTTP 403",
-  "nike-structure-plus Nike: HTTP 403",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1924487/HQ2050-002_A_PREM.jpg?v=639256711245030000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1929384/HQ2050-002_C_PREM.jpg?v=639256721311700000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1931781/HQ2050-002_D_PREM.jpg?v=639256739990230000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1934282/HQ2050-002_E_PREM.jpg?v=639256743817600000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://www.nike.com.ar/nike-vomero-premium-hq2050-002/p: API HTTP 403",
-  "nike-vomero-premium Nike: HTTP 403",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1825511/HV8116-310_A_PREM.jpg?v=639173165478730000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1826536/HV8116-310_B_PREM.jpg?v=639173168364170000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1827557/HV8116-310_C_PREM.jpg?v=639173174732200000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1828578/HV8116-310_D_PREM.jpg?v=639173178287030000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://nikearprod.vteximg.com.br/arquivos/ids/1829599/HV8116-310_E_PREM.jpg?v=639173183513170000: HTTP 429 text/plain; charset=utf-8 17 bytes",
-  "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8116-002/p: API HTTP 403",
-  "nike-acg-pegasus-trail Nike: HTTP 403",
-  "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8121-003/p: API HTTP 403",
-  "nike-acg-pegasus-trail Nike: HTTP 403"
+  "saucony-triumph-24 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-triumph-24 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-triumph-24 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-triumph-24 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-hurricane-26 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-hurricane-26 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-hurricane-26 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-hurricane-26 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-guide-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-guide-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-guide-19 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-guide-19 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-endorphin-elite-3 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-cohesion-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-cohesion-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-cohesion-19 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-excursion-tr-18 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-excursion-tr-18 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-excursion-tr-18 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-excursion-tr-18 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "saucony-guide-tr Sporting: la tienda frena las descargas (429), paso a la siguiente"
  ],
  "nike-winflo-11": {
   "tienda": "Dexter",
@@ -176,5 +163,55 @@
   "url": "https://nikearprod.vteximg.com.br/arquivos/ids/1924487/HQ2050-002_A_PREM.jpg?v=639256711245030000",
   "fotos": 1
  },
- "nike-acg-pegasus-trail": null
+ "nike-acg-pegasus-trail": null,
+ "saucony-triumph-24": {
+  "tienda": "Saucony Argentina",
+  "url": "https://saucony.com.ar/productos/zapatilla-hombre-triumph-24-fuego/",
+  "fotos": 5
+ },
+ "saucony-triumph-23": {
+  "tienda": "Gostore",
+  "url": "https://gostore.com.ar/sat000092767-triumph-23-m-citron.html",
+  "fotos": 5
+ },
+ "saucony-hurricane-26": {
+  "tienda": "Saucony Argentina",
+  "url": "https://saucony.com.ar/productos/zapatilla-hombre-hurricane-26-quartz-torte/",
+  "fotos": 5
+ },
+ "saucony-guide-19": {
+  "tienda": "Saucony Argentina",
+  "url": "https://saucony.com.ar/productos/zapatilla-hombre-guide-19-black-silver/",
+  "fotos": 5
+ },
+ "saucony-endorphin-azura": {
+  "tienda": "Gostore",
+  "url": "https://gostore.com.ar/sat000091399-endorphin-azura-m-white-navy.html",
+  "fotos": 5
+ },
+ "saucony-endorphin-elite-3": {
+  "tienda": "Saucony Argentina",
+  "url": "https://saucony.com.ar/productos/zapatilla-unisex-endorphin-elite-3-white-multi/",
+  "fotos": 5
+ },
+ "saucony-endorphin-pro-4": {
+  "tienda": "Gostore",
+  "url": "https://gostore.com.ar/sat000014900-endorphin-pro-4-w-magenta.html",
+  "fotos": 5
+ },
+ "saucony-cohesion-19": {
+  "tienda": "Saucony Argentina",
+  "url": "https://saucony.com.ar/productos/zapatilla-hombre-cohesion-19-cadet-black/",
+  "fotos": 5
+ },
+ "saucony-excursion-tr-18": {
+  "tienda": "Saucony Argentina",
+  "url": "https://saucony.com.ar/productos/zapatilla-mujer-excursion-tr18-black-quartz/",
+  "fotos": 5
+ },
+ "saucony-guide-tr": {
+  "tienda": "TodoTrail",
+  "url": "https://todotrail.com.ar/productos/zapatilla-saucony-guide-tr-mujer-skyward-blissful-kv82m/",
+  "fotos": 5
+ }
 }

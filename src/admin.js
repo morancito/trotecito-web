@@ -73,6 +73,7 @@ async function cargar() {
       fetch("data/robot.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/revisiones.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null)]);
     eventos = ev; MOD = Object.fromEntries((cat?.modelos || []).map(m => [m.slug, m]));
+    await cargarOpiniones();
     window.__cat = cat; window.__robot = robot; window.__rev = rev;
   } catch (e) { if (e.message === "401") return login("La sesión venció, entrá de nuevo."); app.innerHTML = `<p class="ad-err">No pude leer los datos (${esc(e.message)}).</p>`; return; }
   cargando = false; pintar();
@@ -200,7 +201,7 @@ function pintar() {
 create policy "solo el admin lee" on public.eventos
   for select to authenticated
   using (lower(auth.jwt() ->> 'email') = '${esc(String(sesion.email || "").toLowerCase())}');</code></pre>
-    <p>Después tocá <b>Actualizar</b>.</p></section>` + tablero(); return eventosCab(); }
+    <p>Después tocá <b>Actualizar</b>.</p></section>` + bloqueOpiniones() + tablero(); eventosCab(); return montarOpinionesAdmin(); }
   const c = calcular(), cat = window.__cat, rb = window.__robot;
   const precios = cat ? cat.modelos.reduce((a, m) => a + (m.tiendas?.length || 0), 0) : 0;
   app.innerHTML = cab + `
@@ -213,6 +214,7 @@ create policy "solo el admin lee" on public.eventos
     ${kpi("Del recomendador a la tienda", pct(c.recoClic.size, c.recoFin.size), `${n0(c.recoClic.size)} fueron a la tienda de una recomendada`)}
     ${kpi("Les sirvió la recomendación", c.util.size ? pct(c.utilSi, c.util.size) : "–", c.util.size ? `${n0(c.utilSi)} de ${n0(c.util.size)} que respondieron` : "Todavía nadie respondió")}
   </div>
+  ${bloqueOpiniones()}
   ${bloque("Visitas y clics por día", serieDiaria(c), "Una visita es cada vez que alguien abre el sitio. Pasá el mouse para ver cada día.")}
   <div class="ad-2">
     ${bloque("Embudo general", embudo(c.embudo), "De todas las visitas, cuántas llegan a una tienda.")}
@@ -239,7 +241,69 @@ create policy "solo el admin lee" on public.eventos
   ${bloque("Últimos eventos", `<div class="tblwrap"><table class="cmpt ad-ev"><thead><tr><th>Hora</th><th>Evento</th><th>Dónde</th><th>Detalle</th></tr></thead><tbody>
     ${eventos.slice(-40).reverse().map(e => `<tr><td>${new Date(e.ts).toLocaleString("es-AR", { timeZone: "America/Argentina/Buenos_Aires", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</td><td>${esc(e.tipo)}</td><td>${esc(e.ruta)}</td><td><code>${esc(JSON.stringify(Object.fromEntries(Object.entries(e.datos || {}).filter(([k]) => k !== "vis"))))}</code></td></tr>`).join("") || `<tr><td colspan="4">Todavía no hay eventos.</td></tr>`}
     </tbody></table></div>`, "Para chequear que la medición funciona.")}`;
-  eventosCab(); montarSerie();
+  eventosCab(); montarSerie(); montarOpinionesAdmin();
+}
+/* ---------- opiniones de corredores: moderación ---------- */
+let OPS = { estado: "", pend: [], aprob: 0 };
+async function cargarOpiniones() {
+  const h = { apikey: KEY, Authorization: "Bearer " + sesion.token };
+  try {
+    const r = await fetch(`${URL_SB}/rest/v1/opiniones?estado=eq.pendiente&select=id,ts,slug,puntaje,km,uso,talle,peso,texto,nombre&order=ts.asc&limit=100`, { headers: h });
+    if (r.status === 404) { OPS = { estado: "falta", pend: [], aprob: 0 }; return; }
+    if (!r.ok) { OPS = { estado: "error " + r.status, pend: [], aprob: 0 }; return; }
+    const pend = await r.json();
+    const a = await fetch(`${URL_SB}/rest/v1/opiniones?estado=eq.aprobada&select=id`, { headers: { ...h, Prefer: "count=exact", Range: "0-0" } });
+    OPS = { estado: "ok", pend, aprob: +((a.headers.get("content-range") || "").split("/")[1] || 0) };
+  } catch { OPS = { estado: "error", pend: [], aprob: 0 }; }
+}
+const SQL_OPINIONES = email => `create table public.opiniones (
+  id bigint generated always as identity primary key,
+  ts timestamptz not null default now(),
+  slug text not null check (slug ~ '^[a-z0-9-]{3,80}$'),
+  visitante text not null check (length(visitante) between 6 and 40),
+  puntaje smallint not null check (puntaje between 1 and 5),
+  km text check (km in ('menos de 100','100 a 300','300 a 600','más de 600')),
+  uso text check (length(uso) <= 30),
+  talle text check (talle in ('justo','grande','chico')),
+  peso text check (peso in ('menos de 60','60 a 75','75 a 90','más de 90')),
+  texto text check (length(texto) <= 600),
+  nombre text check (length(nombre) <= 30),
+  estado text not null default 'pendiente' check (estado in ('pendiente','aprobada','rechazada')),
+  unique (slug, visitante)
+);
+create index opiniones_slug on public.opiniones (slug, estado);
+alter table public.opiniones enable row level security;
+create policy "el sitio manda opiniones" on public.opiniones
+  for insert to anon with check (estado = 'pendiente');
+create policy "se ven las aprobadas" on public.opiniones
+  for select to anon using (estado = 'aprobada');
+create policy "el admin modera" on public.opiniones
+  for all to authenticated
+  using (lower(auth.jwt() ->> 'email') = '${email}')
+  with check (lower(auth.jwt() ->> 'email') = '${email}');
+revoke select, update, delete on public.opiniones from anon;
+grant select (id, ts, slug, puntaje, km, uso, talle, peso, texto, nombre) on public.opiniones to anon;`;
+function bloqueOpiniones() {
+  if (OPS.estado === "falta") return bloque("Opiniones de corredores", `<p>Falta crear la tabla en Supabase. Andá a <b>SQL Editor › New query</b>, pegá esto y tocá <b>Run</b>. Después tocá <b>Actualizar</b>.</p>
+    <pre><code>${esc(SQL_OPINIONES(String(sesion.email || "").toLowerCase()))}</code></pre>`, "", "ad-op");
+  if (OPS.estado !== "ok") return bloque("Opiniones de corredores", `<p class="ad-err">No pude leer las opiniones (${esc(OPS.estado)}).</p>`, "", "ad-op");
+  const fila = o => `<li class="ad-op-i" data-id="${o.id}"><div><b>${esc(nombre(o.slug))}</b> · ${"★".repeat(o.puntaje)}${"☆".repeat(5 - o.puntaje)} · ${esc(o.nombre || "sin nombre")} · ${new Date(o.ts).toLocaleDateString("es-AR")}</div>
+    <p>${o.texto ? esc(o.texto) : "<em>Sin texto</em>"}</p><small>${[o.uso, o.km && o.km + " km", o.talle && "talle " + o.talle, o.peso && o.peso + " kg"].filter(Boolean).map(esc).join(" · ")}</small>
+    <div class="ad-op-b"><button class="pill" data-op="aprobada" type="button">Aprobar</button><button class="pill" data-op="rechazada" type="button">Rechazar</button></div></li>`;
+  return bloque(`Opiniones para revisar${OPS.pend.length ? ` <em>${OPS.pend.length}</em>` : ""}`,
+    OPS.pend.length ? `<ul class="ad-op-l">${OPS.pend.map(fila).join("")}</ul>` : `<p class="ad-vacio">No hay opiniones pendientes.</p>`,
+    `${n0(OPS.aprob)} publicadas en el sitio. Solo se ven las que aprobás. Rechazá las que tengan publicidad, insultos, datos personales o que no hablen de la zapa.`, "ad-op");
+}
+function montarOpinionesAdmin() {
+  document.querySelectorAll(".ad-op-l").forEach(ul => ul.onclick = async e => {
+    const b = e.target.closest("[data-op]"); if (!b) return;
+    const li = b.closest("[data-id]"); li.querySelectorAll("button").forEach(x => x.disabled = true);
+    const r = await fetch(`${URL_SB}/rest/v1/opiniones?id=eq.${li.dataset.id}`, { method: "PATCH",
+      headers: { apikey: KEY, Authorization: "Bearer " + sesion.token, "Content-Type": "application/json", Prefer: "return=minimal" },
+      body: JSON.stringify({ estado: b.dataset.op }) }).catch(() => null);
+    if (r?.ok) { li.outerHTML = `<li class="ad-op-i ad-op-${b.dataset.op}">${b.dataset.op === "aprobada" ? "✓ Aprobada: ya se ve en la ficha." : "✗ Rechazada."}</li>`; OPS.pend = OPS.pend.filter(o => String(o.id) !== li.dataset.id); if (b.dataset.op === "aprobada") OPS.aprob++; }
+    else { li.querySelectorAll("button").forEach(x => x.disabled = false); alert("No se pudo guardar. Probá de nuevo."); }
+  });
 }
 /* ---------- tablero: tiendas, precios y fuentes de las fichas ---------- */
 const MANUALES = { "Nike": "Marcador (tu navegador)", "adidas.com.ar": "Marcador (tu navegador)", "Digital Sport": "Marcador (tu navegador)" };

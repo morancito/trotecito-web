@@ -17,7 +17,7 @@ const hoy = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buen
 const ETIQUETA = { Superb: "Excelente", Great: "Muy buena", Good: "Buena", Decent: "Correcta", Bad: "Floja" };
 const USO = { "Daily running": "Día a día", "Tempo": "Ritmo", "Race": "Competencia", "Stability": "Estabilidad", "Long distance": "Fondos largos",
   "Long run": "Fondos largos", "Recovery": "Recuperación", "Trail": "Trail", "Technical trail": "Trail técnico", "Light trail": "Trail liviano",
-  "Ultra": "Ultra", "Walking": "Caminar", "Speed": "Velocidad", "Treadmill": "Cinta", "Comfort": "Comodidad", "Durability": "Durabilidad" };
+  "Gravel": "Caminos de tierra", "Versatile": "Todo terreno", "Technical": "Trail técnico", "Ultra": "Ultra", "Walking": "Caminar", "Speed": "Velocidad", "Treadmill": "Cinta", "Comfort": "Comodidad", "Durability": "Durabilidad" };
 const dec = s => s.replace(/&amp;/g, "&").replace(/&#39;|&rsquo;/g, "'").replace(/<[^>]+>/g, "").trim();
 
 export function leerPuntaje(h) {

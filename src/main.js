@@ -8,10 +8,11 @@ import { PREGUNTAS, recomendar, rangoKg, opTexto } from "./recomendador.js";
 import { medir, medirVisita } from "./medir.js";
 import { buscarModelo, reemplazos, sugerir } from "./reemplazo.js";
 import { Pisada } from "./pisada.js";
+import { bloqueLab, montarOpiniones } from "./opiniones.js";
 
 //@@DATOS
 const BASE = import.meta.env.BASE_URL;
-const [CAT, HIST, COLORES] = await Promise.all(["modelos", "historial", "colores"].map(n => fetch(BASE + `data/${n}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : { series: {} })));
+const [CAT, HIST, COLORES, PUNT] = await Promise.all(["modelos", "historial", "colores", "puntajes"].map(n => fetch(BASE + `data/${n}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : { series: {} }).catch(() => ({ series: {} }))));
 //@@FIN
 
 /* ---------- datos ---------- */
@@ -440,7 +441,9 @@ function ficha(d) {
       <div><dt>Pisada</dt><dd>${pisadaPara(d)}</dd></div><div><dt>Tu peso</dt><dd>${esc(c.peso)}</dd></div>
       <div><dt>Ritmo</dt><dd>${esc(c.ritmo)}</dd></div><div><dt>Distancias</dt><dd>${esc(c.distancia)}</dd></div>
       <div><dt>Nivel</dt><dd>${esc(c.nivel)}</dd></div>${d.usos.length > 1 ? `<div><dt>También sirve para</dt><dd>${esc(cap(d.usos.slice(1).map(u => USO_FRASE[u] || u.toLowerCase()).join(", ")))}</dd></div>` : ""}${d.horma ? `<div><dt>Horma</dt><dd>${HORMA_TXT[d.horma]}</dd></div>` : ""}</dl>${d.evitar ? `<p class="evitar"><b>No te conviene si</b> ${esc(d.evitar)}</p>` : ""}</div>` : ""}
+    ${bloqueLab(PUNT[d.slug])}
     ${datos.length ? `<div class="bloque"><h2 class="cond">Ficha</h2>${amort(d) ? `<div class="amort-box"><span class="amort-k">Amortiguación</span>${medidor(amort(d))}<p><b>${d.talon} mm</b> de espuma en el talón: ${amort(d).s}.</p><small>Mide cuánta espuma tiene, no si se siente blanda o dura ni cuánto rebota.</small></div>` : ""}<dl class="ficha">${datos.map(([k, v, txt]) => `<div><dt>${k}</dt><dd${txt ? ' class="txt"' : ""}>${esc(v)}</dd></div>`).join("")}</dl></div>` : ""}
+    <div class="bloque opiniones" id="opBox"></div>
     <div class="acciones"><button class="btn" data-c="${d.id}" aria-pressed="${st.cmp.includes(d.id)}">${st.cmp.includes(d.id) ? "✓ Comparando" : "+ Comparar"}</button>
       <a class="btn" href="#reemplazo/${d.slug}">¿Corrés con estas? Ver reemplazos</a>
       ${d.fuente ? `<span class="review">Reviews: ${[d.fuente, d.fuente2].filter(Boolean).map(f => `<a href="${esc(f[1])}" target="_blank" rel="noopener">${esc(f[0])} ↗</a>`).join(" · ")}</span>` : ""}</div>
@@ -451,6 +454,7 @@ const cap = t => t.charAt(0).toUpperCase() + t.slice(1);
 const HORMA_TXT = { ancha: "Ancha: buena para pie ancho", normal: "Normal", angosta: "Angosta: ajustada a los costados", punta: "Normal, con la punta angosta" };
 function montarFicha(d) {
   montarGrafico(document.getElementById("histBox"), d.hist);
+  montarOpiniones(document.getElementById("opBox"), d);
   const crear = () => { if (!visor) visor = Viewer($("#dStage"), { H: d.talon || 36, F: d.ante || 28, plate: conPlaca(d), dims: !!(d.talon && d.ante), view: 0.3 }); };
   if (!d.fotos.length) { crear(); return; }
   $("#mtabs").onclick = e => { const b = e.target.closest("button"); if (!b) return; const tres = b.dataset.mt === "3d";

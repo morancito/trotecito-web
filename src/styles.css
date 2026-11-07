@@ -724,3 +724,60 @@ a.puerta:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--b
 .pz-flecha { fill: none; stroke: #E05B3A; stroke-width: 3; stroke-linecap: round; opacity: 0; transition: opacity .25s; }
 .pz-punta { fill: #E05B3A; }
 .pz-svg[data-tipo="pronadora"].pz-ve .pz-flecha-in, .pz-svg[data-tipo="supinadora"].pz-ve .pz-flecha-out { opacity: 1; }
+
+/* ---------- ficha: laboratorio y opiniones ---------- */
+.lab { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: center; padding: 14px 16px; border: 2px solid var(--line); border-radius: 14px; }
+.lab-total { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 104px; padding: 12px 10px; border-radius: 12px; background: var(--lc); color: var(--lt); }
+.lab-total b { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: 54px; line-height: .9; }
+.lab-total span { font-size: 12px; font-weight: 700; opacity: .85; }
+.lab-total em { font-style: normal; font-weight: 800; font-size: 14px; margin-top: 4px; }
+.lab-alto { --lc: #1F3F8F; --lt: #fff; } .lab-medio { --lc: #E7B13C; --lt: #141A2E; } .lab-bajo { --lc: #7E1A36; --lt: #fff; }
+.lab-usos { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.lab-usos li { display: grid; grid-template-columns: 112px minmax(0, 1fr) 30px; gap: 10px; align-items: center; font-size: 14px; }
+.lab-usos span { color: var(--muted); }
+.lab-usos i { height: 10px; border-radius: 99px; background: var(--hair); overflow: hidden; }
+.lab-usos s { display: block; height: 100%; border-radius: 99px; background: var(--lc); }
+.lab-usos b { text-align: right; }
+.lab-nota { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+.lab-nota a { color: inherit; font-weight: 700; }
+@media (max-width: 520px) { .lab { grid-template-columns: 1fr; } .lab-total { flex-direction: row; gap: 8px; align-items: baseline; justify-content: flex-start; padding: 10px 14px; } .lab-total b { font-size: 44px; } }
+
+.op-vacio { color: var(--muted); margin: 0 0 14px; }
+.op-res { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; padding: 12px 14px; border: 2px solid var(--line); border-radius: 14px; margin-bottom: 12px; }
+.op-prom { display: flex; align-items: center; gap: 10px; }
+.op-prom b { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: 44px; line-height: .9; }
+.op-prom > span:last-child { color: var(--muted); font-size: 14px; }
+.op-res ul { margin: 0; padding-left: 18px; font-size: 14px; font-weight: 600; }
+.op-est { color: var(--sol); letter-spacing: 1px; font-size: 16px; }
+.op-est span { color: var(--hair); }
+.op-lista { list-style: none; margin: 0 0 12px; padding: 0; }
+.op-item { padding: 12px 0; border-top: 1px solid var(--hair); }
+.op-item p { margin: 6px 0 0; }
+.op-cab { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.op-cab > span:last-child { color: var(--muted); font-size: 13px; }
+.op-datos { font-size: 13px; color: var(--muted); }
+.op-mas { margin-bottom: 14px; cursor: pointer; }
+.op-form-box > summary { list-style: none; cursor: pointer; }
+.op-form-box > summary::-webkit-details-marker { display: none; }
+.op-form { margin-top: 14px; padding: 16px; border: 2px solid var(--line); border-radius: 14px; display: grid; gap: 14px; }
+.op-form fieldset { border: 0; margin: 0; padding: 0; }
+.op-form legend { font-weight: 800; margin-bottom: 8px; padding: 0; }
+.op-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.op-pills label { position: relative; }
+.op-pills input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.op-pills span { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border: 2px solid var(--line); border-radius: 999px; font-weight: 700; font-size: 14px; background: var(--surface); }
+.op-pills input:checked + span { background: var(--ink); color: var(--bg); }
+.op-pills input:focus-visible + span { outline: 3px solid var(--azul2); outline-offset: 2px; }
+.op-fila { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.op-form label:not(.op-pills label) { display: grid; gap: 6px; font-weight: 800; font-size: 14px; }
+.op-form select, .op-form input[name="nombre"], .op-form textarea { font: inherit; font-weight: 500; padding: 10px 12px; border: 2px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); min-height: 44px; }
+.op-form textarea { resize: vertical; }
+.op-aviso { margin: 0; font-size: 13px; color: var(--muted); }
+.op-err { margin: 0; color: var(--bordo); font-weight: 700; }
+.op-ok { font-weight: 700; padding: 12px 14px; border-radius: 12px; background: var(--soft); margin: 0; }
+.op-form .btn { justify-self: start; }
+@media (max-width: 520px) { .op-fila { grid-template-columns: 1fr; } }
+.op-form, .op-fila > label, .op-txt { min-width: 0; }
+.op-form select, .op-form input[name="nombre"], .op-form textarea { width: 100%; max-width: 100%; box-sizing: border-box; }
+#opBox { min-width: 0; }
+.op-form fieldset, .op-form-box { min-width: 0; min-inline-size: 0; }

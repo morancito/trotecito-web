@@ -81,3 +81,21 @@
 .tb-l a, .ad-tb a { color: var(--azul2, #2F5DB8); font-weight: 700; }
 .tb-det { margin-top: 14px; } .tb-det summary { cursor: pointer; font-weight: 800; margin-bottom: 10px; }
 .hr-aviso { background: #FFF1CC; border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+
+/* opiniones para revisar */
+.ad-op h2 em { font-style: normal; display: inline-block; min-width: 1.4em; padding: 0 .3em; border-radius: 99px; background: var(--sol); color: #141A2E; text-align: center; }
+.ad-op pre { overflow-x: auto; background: var(--soft); padding: 12px; border-radius: 10px; font-size: 12px; }
+.ad-op-l { list-style: none; margin: 0; padding: 0; }
+.ad-op-i { padding: 12px 0; border-top: 1px solid var(--hair); }
+.ad-op-i p { margin: 6px 0; }
+.ad-op-i small { color: var(--muted); }
+.ad-op-b { display: flex; gap: 8px; margin-top: 8px; }
+.ad-op-b .pill { cursor: pointer; min-height: 40px; }
+.ad-op-aprobada { color: #14946A; font-weight: 700; }
+.ad-op-rechazada { color: var(--muted); }
+@media (max-width: 560px) {
+  .top { flex-wrap: wrap; row-gap: 8px; height: auto; }
+  .top .nav { gap: 6px; flex-wrap: wrap; }
+  .nav .ad-salir { padding: 5px 10px; font-size: 13px; }
+  .top .logo { --lg: 22px; }
+}

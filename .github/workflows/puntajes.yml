@@ -1,0 +1,40 @@
+name: Puntajes de laboratorio
+
+# Trae el puntaje de RunRepeat (general y por uso) de cada modelo y lo deja en public/data/puntajes.json.
+# Corre el primer domingo de cada mes y cuando lo lanzás a mano.
+on:
+  schedule:
+    - cron: "17 9 1-7 * 0"
+  workflow_dispatch:
+    inputs:
+      modelos:
+        description: "Slugs separados por espacio (vacío = todos)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  puntajes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      UA_ROBOT: "Mozilla/5.0 (compatible; TrotecitoBot/1.0; +https://trotecito.com.ar/)"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Traer puntajes
+        env:
+          MODELOS: ${{ inputs.modelos }}
+        run: node scripts/puntajes.mjs $MODELOS
+      - name: Guardar
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/puntajes.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Puntajes de laboratorio actualizados"
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && break; sleep 15; done

@@ -1,10 +1,16 @@
 // Cloudflare Workers: publica el sitio estático que arma `npm run build` en la carpeta dist.
-// Las rutas del sitio son con # (ej. /#catalogo), así que no hace falta redirigir nada al index.
+// worker/index.js sirve esos archivos y, a las horas de "crons", lanza la actualización de precios en GitHub
+// (08:07 y 12:07 de Argentina; Cloudflare usa hora UTC).
 {
   "name": "trotecito-web",
   "compatibility_date": "2026-10-01",
+  "main": "worker/index.js",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
+  },
+  "triggers": {
+    "crons": ["7 11 * * *", "7 15 * * *"]
   }
 }

@@ -1,75 +1,53 @@
 {
- "fecha": "2026-11-07T06:03:44.667Z",
+ "fecha": "2026-11-07T06:22:24.864Z",
  "resultados": [
   {
-   "url": "https://www.dexter.com.ar/zapatillas-running-saucony-triumph-22-hombre/SAS20964-135.html",
-   "estado": 200,
-   "urlFinal": "https://www.dexter.com.ar/zapatillas-running-saucony-triumph-22-hombre/SAS20964-135.html",
-   "largo": 277956,
-   "titulo": "Zapatillas Running Saucony Triumph 22 Hombre | Dexter",
-   "plataforma": "sfcc",
+   "url": "https://saucony.com.ar/running/",
+   "estado": 404,
+   "urlFinal": "https://saucony.com.ar/running/",
+   "largo": 776715,
+   "titulo": "",
+   "plataforma": "tiendanube",
    "generador": null,
-   "variantes": false,
-   "tiendanube": false,
-   "desafio": true,
-   "jsonld": 1,
-   "precioMeta": null,
-   "muestra": " Zapatillas Running Saucony Triumph 22 Hombre | Dexter ⚠ AVISO ENTREGAS 6/11 al 13/11 – Visita del Papa León XIV más info Sucursales Entregas Cambios M&eacute;todos de pago Preguntas frecuentes Ayuda &iexcl;Gan&aacute; puntos! Ver sucursales Lugar de entrega Capital Federal Te ubicamos en Capital Federal . Ingresá tu código postal y te mostraremos las mejores opciones de retiro y envío. Mi cuenta real (focuseable por Tab; el navegador muestra la URL en el preview). El JS cancela la navegación solo en elementos con data-js-minicart-no-nav, que existe únicamente en esta rama. --> Hasta 70% OFF H",
-   "leido": {
-    "precio": 219999,
-    "antes": null,
-    "cuotas": 2,
-    "sinStock": false,
-    "talles": [
-     "44",
-     "45",
-     "45.5"
-    ],
-    "sistema": "AR"
-   }
-  },
-  {
-   "url": "https://gostore.com.ar/sat000017090-triumph-22-m-white-citron.html",
-   "estado": 200,
-   "urlFinal": "https://gostore.com.ar/sat000017090-triumph-22-m-white-citron.html",
-   "largo": 445790,
-   "titulo": "Zapatillas Saucony Triumph 22 Para Hombre",
-   "plataforma": "magento",
-   "generador": null,
-   "variantes": false,
-   "tiendanube": false,
-   "desafio": true,
-   "jsonld": 0,
-   "precioMeta": "219900",
-   "muestra": " Zapatillas Saucony Triumph 22 Para Hombre The store will not work correctly when cookies are disabled. Parece que JavaScript está deshabilitado en su navegador. Para obtener la mejor experiencia en nuestro sitio, asegúrese de activar Javascript en su navegador. 6 cuotas sin interés a partir de $300.000 Envío gratis a todo el país desde $ 99.999,00 Ir al contenido Ingresar Crear una cuenta Visitá Go Run y preparate para salir a entrenar. Visitá Go Live y encontrá tu estilo. Toggle Nav &times; LIFESTYLE Calzado Zapatillas Sandalias Botas Ojotas Ver todo Indumentaria Camperas y buzos Pantalones ",
-   "leido": {
-    "precio": 219900,
-    "antes": null,
-    "cuotas": 6,
-    "talles": [
-     "42",
-     "43",
-     "43.5",
-     "44",
-     "46"
-    ],
-    "sistema": "AR"
-   }
-  },
-  {
-   "url": "https://www.sporting.com.ar/api/catalog_system/pub/products/search?ft=saucony%20triumph%2022",
-   "estado": 206,
-   "urlFinal": "https://www.sporting.com.ar/api/catalog_system/pub/products/search?ft=saucony%20triumph%2022",
-   "largo": 1340707,
-   "plataforma": "vtex",
-   "generador": null,
-   "variantes": false,
-   "tiendanube": false,
+   "variantes": true,
+   "tiendanube": true,
    "desafio": false,
-   "jsonld": 0,
+   "jsonld": 7,
    "precioMeta": null,
-   "muestra": "[{\"productId\":\"64415\",\"productName\":\"Buzo Saucony Triumph Brushed De Hombre\",\"brand\":\"SAUCONY\",\"brandId\":2000113,\"brandImageUrl\":\"https://sporting.vteximg.com.br/arquivos/ids/838447/logo-saucony.svg\",\"linkText\":\"buzo-saucony-triumph-brushed-de-hombre-371357s105-000\",\"productReference\":\"371357S105-000\",\"productReferenceCode\":\"371357S105-000\",\"categoryId\":\"463\",\"productTitle\":\"Buzo Saucony Triumph Brushed De Hombre\",\"metaTagDescription\":\"Buzo Saucony Triumph Brushed 1/2 Zip con tejido térmico reciclado e interior frizado. Ideal para running en clima frío con confort y movilidad.\",\"releaseDate\":\"",
-   "leerError": "no encontré el precio en la página"
+   "muestra": " 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidratación Gorras Guantes Mangas Medias Riñoneras y ",
+   "leerError": "HTTP 404"
+  },
+  {
+   "url": "https://saucony.com.ar/running/?page=2",
+   "estado": 404,
+   "urlFinal": "https://saucony.com.ar/running/?page=2",
+   "largo": 776715,
+   "titulo": "",
+   "plataforma": "tiendanube",
+   "generador": null,
+   "variantes": true,
+   "tiendanube": true,
+   "desafio": false,
+   "jsonld": 7,
+   "precioMeta": null,
+   "muestra": " 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidratación Gorras Guantes Mangas Medias Riñoneras y ",
+   "leerError": "HTTP 404"
+  },
+  {
+   "url": "https://saucony.com.ar/running/?page=3",
+   "estado": 404,
+   "urlFinal": "https://saucony.com.ar/running/?page=3",
+   "largo": 776715,
+   "titulo": "",
+   "plataforma": "tiendanube",
+   "generador": null,
+   "variantes": true,
+   "tiendanube": true,
+   "desafio": false,
+   "jsonld": 7,
+   "precioMeta": null,
+   "muestra": " 1 🔥OFERTAS QUE VUELAN🔥 🔥ESTAMOS DE CYBER🔥 3 cuotas SIN INTERÉS en todo el sitio 6 cuotas SIN INTERÉS y ENVÍO GRATIS a partir de $199.999 HOMBRE ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts NEW ARRIVALS Zapatillas Indumentaria GIFT CARD MUJER ZAPATILLAS Running Trail Lifestyle INDUMENTARIA Buzos Calzas Camperas y Chalecos Musculosas Pantalones Remeras Shorts Tops NEW ARRIVALS Zapatillas Indumentaria GIFT CARD ACCESORIOS Todo Accesorios Bolsos y Mochilas Chalecos de Hidratación Gorras Guantes Mangas Medias Riñoneras y ",
+   "leerError": "HTTP 404"
   }
  ]
 }

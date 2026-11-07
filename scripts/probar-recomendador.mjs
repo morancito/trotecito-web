@@ -18,10 +18,10 @@ const PERFILES = [
     malas: /competencia|kinvara|hyperion|takumi|adios-pro|vaporfly|metaspeed|sc-elite|endorphin-(pro|elite)/ },
   { n: "Empieza a correr, 95 kg, neutra", r: { gen: "Hombre", talle: "43", terreno: "Asfalto", uso: "Iniciación", ritmo: "r4", kg: 95, pis: "Neutra", tope: 350000 },
     buenas: ["hoka-bondi-9", "saucony-triumph-22", "asics-gel-nimbus-27", "nike-vomero-plus", "brooks-glycerin-20", "new-balance-fresh-foam-x-880-v15", "new-balance-fresh-foam-x-1080-v14", "adidas-supernova-rise-3", "nike-vomero-18", "hoka-clifton-10", "adidas-adistar-5", "puma-magmax-nitro-2"],
-    malas: /kinvara|hyperion|takumi|adios-pro|vaporfly|metaspeed|sc-elite|endorphin|revolution|duramo|launch/ },
+    malas: /kinvara|hyperion|takumi|adios-pro|vaporfly|metaspeed|sc-elite|endorphin-(speed|pro|elite)|revolution|duramo|launch/ },
   { n: "Pronador, 80 kg, entrena todos los días", r: { gen: "Hombre", talle: "42", terreno: "Asfalto", uso: "Rodaje diario", ritmo: "r2", kg: 80, pis: "Pronadora", tope: 400000 },
     buenas: ["brooks-adrenaline-gts-23", "asics-gt-2000-14", "nike-structure-26", "nike-structure-plus", "saucony-guide-18", "hoka-arahi-8", "asics-gel-kayano-32", "saucony-hurricane-25", "adidas-ultraboost-5", "hoka-gaviota-6", "puma-foreverrun-nitro-2", "on-cloudrunner-3"],
-    malas: /vaporfly|adios-pro|metaspeed|sc-elite|endorphin|takumi|kinvara|hyperion/ },
+    malas: /vaporfly|adios-pro|metaspeed|sc-elite|endorphin-(speed|pro|elite)|takumi|kinvara|hyperion/ },
   { n: "Neutra, 75 kg, entrena todos los días", r: { gen: "Hombre", talle: "42", terreno: "Asfalto", uso: "Rodaje diario", ritmo: "r2", kg: 75, pis: "Neutra", tope: 400000 },
     buenas: ["brooks-ghost-15", "nike-pegasus-41", "nike-pegasus-42", "asics-novablast-5", "asics-gel-cumulus-27", "hoka-clifton-10", "new-balance-fresh-foam-x-880-v15", "new-balance-fuelcell-rebel-v5", "hoka-mach-7", "nike-vomero-18", "nike-vomero-plus", "adidas-supernova-rise-3", "puma-velocity-nitro-5", "on-cloudsurfer-next", "saucony-triumph-22", "asics-gel-nimbus-27"],
     malas: /structure|kayano|adrenaline|gt-2000|guide|arahi|gaviota|hurricane|vaporfly|adios-pro|metaspeed|sc-elite/ },
@@ -36,7 +36,7 @@ const PERFILES = [
     malas: /bondi|kayano|glycerin|vomero|magmax|revolution|duramo|excite|quest|clifton|nimbus/ },
   { n: "Pronador, 95 kg, fondos tranquilos", r: { gen: "Hombre", talle: "44", terreno: "Asfalto", uso: "Rodaje largo", ritmo: "r3", kg: 95, pis: "Pronadora", tope: 450000 },
     buenas: ["asics-gel-kayano-32", "saucony-hurricane-25", "brooks-adrenaline-gts-23", "hoka-arahi-8", "hoka-gaviota-6", "nike-structure-plus", "adidas-ultraboost-5", "asics-gt-2000-14"],
-    malas: /vaporfly|adios-pro|metaspeed|sc-elite|endorphin|takumi|kinvara|hyperion|revolution|duramo/ },
+    malas: /vaporfly|adios-pro|metaspeed|sc-elite|endorphin-(speed|pro|elite)|takumi|kinvara|hyperion|revolution|duramo/ },
   { n: "Trail, empieza, 75 kg", r: { gen: "Hombre", talle: "42", terreno: "Trail", uso: "Iniciación", ritmo: "r3", kg: 75, pis: "Neutra", tope: 350000 },
     buenas: ["nike-pegasus-trail-5-gtx", "hoka-challenger-atr-8", "hoka-speedgoat-6", "saucony-peregrine-15", "saucony-peregrine-16", "asics-gel-trabuco-13", "salomon-ultra-glide-4", "salomon-genesis-2", "nike-acg-pegasus-trail", "hoka-torrent-4", "adidas-terrex-agravic-4"],
     malas: /slab-pulsar|prodigio-pro|kiger/ },
@@ -48,9 +48,12 @@ const PERFILES = [
     malas: /vaporfly|adios-pro|metaspeed|sc-elite|takumi|kinvara/ },
   { n: "Mujer, empieza, 60 kg, presupuesto ajustado", r: { gen: "Mujer", talle: "38", terreno: "Asfalto", uso: "Iniciación", ritmo: "r4", kg: 60, pis: "Neutra", tope: 160000 },
     buenas: ["nike-revolution-8", "adidas-duramo-sl-2", "nike-winflo-11", "nike-winflo-12", "asics-gel-excite-11", "nike-quest-6", "adidas-supernova-stride-2", "puma-velocity-nitro-4", "puma-velocity-nitro-5", "asics-gt-1000-14", "saucony-surge-3", "brooks-ghost-15", "nike-pegasus-41"],
-    malas: /vaporfly|adios-pro|metaspeed|sc-elite|takumi|endorphin|kinvara|hyperion/ },
+    malas: /vaporfly|adios-pro|metaspeed|sc-elite|takumi|endorphin-(speed|pro|elite)|kinvara|hyperion/ },
 ];
 
+/* versiones nuevas de modelos que las guías ya recomiendan cuentan igual */
+const VERSION = { "saucony-triumph-22": ["saucony-triumph-23", "saucony-triumph-24"], "saucony-hurricane-25": ["saucony-hurricane-26"], "saucony-guide-18": ["saucony-guide-19"], "saucony-endorphin-pro-5": ["saucony-endorphin-pro-4"], "saucony-endorphin-elite-2": ["saucony-endorphin-elite-3"] };
+for (const p of PERFILES) p.buenas = [...new Set(p.buenas.flatMap(b => [b, ...(VERSION[b] || [])]))];
 const marca = (p, s) => p.buenas.includes(s) ? "✓" : p.malas.test(s) ? "✗" : "·";
 let totTop = 0, okTop = 0, malasTop = 0, okPicks = 0, malasPicks = 0, totPicks = 0;
 for (const p of PERFILES) {

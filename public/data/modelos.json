@@ -12514,7 +12514,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "PWRRUN PB",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -12619,8 +12619,33 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-triumph-24/1.webp?v=8ff3611a",
+    "fotos/saucony-triumph-24/2.webp?v=8ff3611a",
+    "fotos/saucony-triumph-24/3.webp?v=5c28f982",
+    "fotos/saucony-triumph-24/4.webp?v=6c666764"
+   ],
+   "usos": [
+    "Rodaje largo",
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "peso": 250,
+   "drop": 10,
+   "talon": 43,
+   "ante": 33,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 7:00 min/km",
+    "peso": "Más de 70 kg",
+    "distancia": "Fondos largos y rodajes diarios"
+   },
+   "evitar": "buscás una zapa firme y ágil para series: es muy alta y blanda.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-triumph-24"
+   ]
   },
   {
    "id": 110,
@@ -12631,7 +12656,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "PWRRUN PB",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -12730,8 +12755,33 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-triumph-23/1.webp?v=6ffed8fb",
+    "fotos/saucony-triumph-23/2.webp?v=e9d93a30",
+    "fotos/saucony-triumph-23/3.webp?v=b7c13772",
+    "fotos/saucony-triumph-23/4.webp?v=71927d57"
+   ],
+   "usos": [
+    "Rodaje largo",
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "peso": 263,
+   "drop": 10,
+   "talon": 37,
+   "ante": 27,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:30 a 7:00 min/km",
+    "peso": "Más de 70 kg",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "vas a hacer series cortas o sos pronador marcado.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-triumph-23"
+   ]
   },
   {
    "id": 111,
@@ -12740,9 +12790,9 @@
    "mod": "Hurricane",
    "ver": "26",
    "tipo": "Estabilidad",
-   "uso": "Rodaje diario",
+   "uso": "Rodaje largo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "PWRRUN",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -12842,8 +12892,33 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-hurricane-26/1.webp?v=5abfa509",
+    "fotos/saucony-hurricane-26/2.webp?v=5abfa509",
+    "fotos/saucony-hurricane-26/3.webp?v=870896a3",
+    "fotos/saucony-hurricane-26/4.webp?v=5d5a274f"
+   ],
+   "usos": [
+    "Rodaje largo",
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "peso": 262,
+   "drop": 6,
+   "talon": 41,
+   "ante": 35,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 min/km o más lento",
+    "peso": "Más de 75 kg",
+    "distancia": "Fondos largos y regenerativos"
+   },
+   "evitar": "tenés pisada neutra o buscás algo liviano para ir rápido: es alta y con mucho soporte.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-hurricane-26"
+   ]
   },
   {
    "id": 112,
@@ -12854,7 +12929,7 @@
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "PWRRUN",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -12953,8 +13028,33 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-guide-19/1.webp?v=cf982c0b",
+    "fotos/saucony-guide-19/2.webp?v=cf982c0b",
+    "fotos/saucony-guide-19/3.webp?v=07f833ae",
+    "fotos/saucony-guide-19/4.webp?v=054724fc"
+   ],
+   "usos": [
+    "Rodaje diario",
+    "Iniciación",
+    "Rodaje largo"
+   ],
+   "peso": 275,
+   "drop": 6,
+   "talon": 35,
+   "ante": 29,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 7:00 min/km",
+    "peso": "Hasta 95 kg",
+    "distancia": "Rodajes diarios"
+   },
+   "evitar": "tu pisada es neutra y buscás algo liviano para ir rápido.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-guide-19"
+   ]
   },
   {
    "id": 113,
@@ -12982,7 +13082,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "PWRRUN PB",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13061,8 +13161,33 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-endorphin-azura/1.webp?v=57d69c21",
+    "fotos/saucony-endorphin-azura/2.webp?v=314a312b",
+    "fotos/saucony-endorphin-azura/3.webp?v=c7ae750d",
+    "fotos/saucony-endorphin-azura/4.webp?v=837ca327"
+   ],
+   "usos": [
+    "Rodaje diario",
+    "Ritmo",
+    "Rodaje largo"
+   ],
+   "peso": 240,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Intermedio",
+    "ritmo": "4:30 a 6:00 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes diarios y días de ritmo"
+   },
+   "evitar": "sos pronador marcado o buscás máxima amortiguación para correr lento.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-endorphin-azura"
+   ]
   },
   {
    "id": 115,
@@ -13073,8 +13198,8 @@
    "tipo": "Neutra",
    "uso": "Competencia",
    "terreno": "Asfalto",
-   "esp": "",
-   "pl": "Placa de carbono",
+   "esp": "PWRRUN HG",
+   "pl": "Carbono",
    "tiendas": [
     {
      "tienda": "Sporting",
@@ -13124,8 +13249,31 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-endorphin-elite-3/1.webp?v=47fba03b",
+    "fotos/saucony-endorphin-elite-3/2.webp?v=47fba03b",
+    "fotos/saucony-endorphin-elite-3/3.webp?v=2e578a72",
+    "fotos/saucony-endorphin-elite-3/4.webp?v=362c2443"
+   ],
+   "usos": [
+    "Competencia"
+   ],
+   "peso": 204,
+   "drop": 8,
+   "talon": 39.5,
+   "ante": 31.5,
+   "horma": "punta",
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 4:30 min/km",
+    "peso": "Hasta 80 kg",
+    "distancia": "5K a maratón, día de carrera"
+   },
+   "evitar": "la querés para entrenar todos los días o corrés lento.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-endorphin-elite-3"
+   ]
   },
   {
    "id": 116,
@@ -13136,8 +13284,8 @@
    "tipo": "Neutra",
    "uso": "Competencia",
    "terreno": "Asfalto",
-   "esp": "",
-   "pl": "Placa de carbono",
+   "esp": "PWRRUN HG + PWRRUN PB",
+   "pl": "Carbono",
    "tiendas": [
     {
      "tienda": "Gostore",
@@ -13164,8 +13312,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-endorphin-pro-4/1.webp?v=a95e4d6f",
+    "fotos/saucony-endorphin-pro-4/2.webp?v=794b5857",
+    "fotos/saucony-endorphin-pro-4/3.webp?v=b21ee18d",
+    "fotos/saucony-endorphin-pro-4/4.webp?v=9729ee12"
+   ],
+   "usos": [
+    "Competencia",
+    "Ritmo"
+   ],
+   "peso": 218,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "horma": "punta",
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "Menos de 5:00 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "10K a maratón, día de carrera"
+   },
+   "evitar": "la querés para entrenar todos los días o corrés lento.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/saucony-endorphin-pro-4"
+   ]
   },
   {
    "id": 117,
@@ -13176,7 +13348,7 @@
    "tipo": "Neutra",
    "uso": "Iniciación",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "VersaRun (EVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13255,8 +13427,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-cohesion-19/1.webp?v=f3a7e6c7",
+    "fotos/saucony-cohesion-19/2.webp?v=f3a7e6c7",
+    "fotos/saucony-cohesion-19/3.webp?v=174b7945",
+    "fotos/saucony-cohesion-19/4.webp?v=020a3c00"
+   ],
+   "usos": [
+    "Iniciación",
+    "Rodaje diario"
+   ],
+   "peso": 254,
+   "drop": 10,
+   "talon": 34,
+   "ante": 24,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "6:00 min/km o más lento",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes cortos y tranquilos"
+   },
+   "evitar": "vas a hacer fondos largos o ritmos rápidos: es básica y firme.",
+   "fuente": [
+    "RTINGS",
+    "https://www.rtings.com/running-shoes/reviews/saucony/cohesion-19"
+   ]
   },
   {
    "id": 118,
@@ -13267,7 +13463,7 @@
    "tipo": "Neutra",
    "uso": "Iniciación",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "VersaRun",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13372,8 +13568,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-excursion-tr-18/1.webp?v=8a0621ae",
+    "fotos/saucony-excursion-tr-18/2.webp?v=8a0621ae",
+    "fotos/saucony-excursion-tr-18/3.webp?v=b457708f",
+    "fotos/saucony-excursion-tr-18/4.webp?v=6ab783b5"
+   ],
+   "usos": [
+    "Iniciación",
+    "Rodaje diario"
+   ],
+   "peso": 271,
+   "drop": 8,
+   "talon": 32,
+   "ante": 24,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Ritmo tranquilo",
+    "peso": "Hasta 90 kg",
+    "distancia": "Senderos fáciles y caminatas"
+   },
+   "evitar": "vas a correr trail técnico o largo: tiene poca protección y agarre moderado.",
+   "fuente": [
+    "Ficha técnica (PRFO)",
+    "https://www.prfo.com/products/saucony-mens-excursion-tr18-shoes-wp"
+   ]
   },
   {
    "id": 119,
@@ -13384,7 +13604,7 @@
    "tipo": "Estabilidad",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "PWRRUN",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13487,8 +13707,31 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/saucony-guide-tr/1.webp?v=ee77f304",
+    "fotos/saucony-guide-tr/2.webp?v=c122b7b8",
+    "fotos/saucony-guide-tr/3.webp?v=a0f4937e"
+   ],
+   "usos": [
+    "Rodaje diario",
+    "Rodaje largo"
+   ],
+   "peso": 315,
+   "drop": 6,
+   "talon": 41,
+   "ante": 35,
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:30 a 7:30 min/km",
+    "peso": "Más de 70 kg",
+    "distancia": "Trail fácil y mixto calle-tierra"
+   },
+   "evitar": "buscás algo liviano o vas a terreno técnico: es pesada y está pensada para dar soporte.",
+   "fuente": [
+    "Bergfreunde",
+    "https://www.bergfreunde.eu/saucony-guide-tr-trail-running-shoes/"
+   ]
   }
  ]
 }

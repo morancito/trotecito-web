@@ -1,0 +1,32 @@
+name: Tabla de talles
+
+# Arma public/data/talles.json (equivalencias US -> AR por marca y género) a partir de Dexter y Stock Center.
+# Corre el día 1 de cada mes y cuando la lanzás a mano.
+on:
+  schedule:
+    - cron: "23 10 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  talles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      UA_ROBOT: "Mozilla/5.0 (compatible; TrotecitoBot/1.0; +https://trotecito.com.ar/)"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/tabla-talles.mjs
+      - name: Guardar
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/talles.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Tabla de talles actualizada"
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && break; sleep 15; done

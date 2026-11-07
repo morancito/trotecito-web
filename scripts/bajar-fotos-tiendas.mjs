@@ -27,18 +27,22 @@ for (const m of cat.modelos.filter(m => (m.tiendas?.length || DIRECTAS[m.slug]) 
   /* prueba las tiendas en orden y se queda con la que da más fotos (alcanza con 3) */
   const ts = [...m.tiendas].sort((a, b) => (PREFERIDAS.indexOf(a.tienda) + 1 || 99) - (PREFERIDAS.indexOf(b.tienda) + 1 || 99));
   let mejor = null;
+  const tope = Date.now() + 3 * 60e3;   // como mucho 3 minutos por modelo: si una tienda se cuelga, no traba al resto
+  console.log(`… ${m.slug}`);
   if (DIRECTAS[m.slug]?.length) {
     const fotos = [];
     for (const src of DIRECTAS[m.slug].slice(0, MAX)) { try { const f = await bajarImg(src); if (f) fotos.push(f); } catch (e) { errores.push(`${src}: ${e.message}`); } await dormir(8000); }   // el servidor de imágenes de Nike corta si se le pide rápido
     if (fotos.length) mejor = { tienda: "directa", url: DIRECTAS[m.slug][0], fotos };
   }
   for (const t of mejor?.fotos.length >= 3 ? [] : ts) {
+    if (Date.now() > tope) break;
     try {
       const urls = (await imagenes(t.url)).slice(0, MAX), bajadas = [];
       for (const src of urls) {
         try {
-          let r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) });
-          for (let k = 1; r.status === 429 && k <= 3; k++) { await dormir(15000 * k); r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(25000) }); }   // el CDN de VTEX frena si se piden muchas seguidas
+          if (Date.now() > tope) { errores.push(`${m.slug}: se cortó por tiempo (3 min por modelo)`); break; }
+          const r = await fetch(src, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(20000) });
+          if (r.status === 429) { errores.push(`${m.slug} ${t.tienda}: la tienda frena las descargas (429), paso a la siguiente`); break; }   // el CDN de VTEX frena si se piden muchas seguidas
           const ct = r.headers.get("content-type") || "", buf = Buffer.from(await r.arrayBuffer());
           if (r.ok && /^image\//.test(ct) && buf.length >= 8000) bajadas.push([/webp/.test(ct) ? "webp" : /png/.test(ct) ? "png" : "jpg", buf]);
           else errores.push(`${src}: HTTP ${r.status} ${ct} ${buf.length} bytes`);

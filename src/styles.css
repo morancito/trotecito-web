@@ -840,3 +840,4 @@ table.cmpt tr.grp th.gn i { display: inline-block; width: 8px; height: 8px; bord
 .cmp-acc { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 0 0 12px; font-size: 14px; color: var(--muted); }
 #tray.lleno { outline: 3px solid var(--bordo); }
 @media (max-width: 600px) { table.cmpt tbody th[scope="row"] { white-space: normal; min-width: 92px; max-width: 110px; } }
+.ficha-fuente { margin: 10px 0 0; font-size: 13px; color: var(--muted); }

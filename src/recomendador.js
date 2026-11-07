@@ -168,10 +168,25 @@ export function recomendar(DATA, r0) {
   if (!rank.length) return { picks: [], sinPresupuesto: false, total: 0 };
   const usados = new Set(), picks = [];
   const tomar = (x, etiqueta, sub) => { usados.add(x.d.id); picks.push({ ...x, etiqueta, sub }); };
-  const p1 = rank[0]; tomar(p1, "La mejor para vos", "La que mejor encaja con todo lo que respondiste.");
+  /* tiene que servir para lo que busca (no vale una de entrenar barata para fondos largos); para competir, además, la distancia */
+  const sirveUso = x => (x.d.usos?.length ? x.d.usos : [x.d.uso]).includes(r.uso);
+  const conDist = r.uso === "Competencia" && !!DIST_TXT[r.dist];
+  const sirve = x => sirveUso(x) && (!conDist || !x.d.dist?.length || x.d.dist.includes(r.dist));
+  /* competir a una distancia y no hay ninguna de carrera para esa distancia en el presupuesto: no inventamos una "mejor para vos" */
+  if (conDist && !rank.some(sirve)) {
+    const todas = base.map(x => evalua(x)).sort((a, b) => b.s - a.s);
+    const fuera = todas.filter(sirve), techo = fuera[0]?.s ?? 0;
+    const estirar = fuera.filter(x => x.s >= techo - 12).sort((a, b) => a.t.precio - b.t.precio)[0];
+    if (estirar) tomar(estirar, "Si estirás el presupuesto", `La más barata pensada para ${DIST_TXT[r.dist]}${tope < Infinity ? `: ${fmt(estirar.t.precio - tope)} más que tu tope` : ""}.`);
+    const otraDist = rank.find(x => !usados.has(x.d.id) && sirveUso(x));
+    if (otraDist) tomar(otraDist, `Si corrés ${otraDist.d.dist?.length ? otraDist.d.dist.map(x => DIST_TXT[x]).join(" o ") : "otra distancia"}`, `Es de carrera y entra en tu presupuesto, pero no es para ${DIST_TXT[r.dist]}.`);
+    const entrenar = rank.find(x => !usados.has(x.d.id) && !sirveUso(x));
+    if (entrenar) tomar(entrenar, "Para entrenar", "No es para la carrera: te sirve para entrenar el resto de la semana.");
+    for (const p of picks) if (r.talle) { if (tieneTalle(p.t, r.talle)) p.pros.unshift(`Hay talle ${r.talle} en ${p.t.tienda}`); else p.contras.unshift(`No pudimos confirmar el talle ${r.talle} en ${p.t.tienda}: chequealo antes de comprar`); }
+    return { picks, sinPresupuesto: tope < Infinity, total: 0, paraElUso: 0, sinCoincidencia: true };
+  }
+  const p1 = rank.find(sirve) || rank[0]; tomar(p1, "La mejor para vos", "La que mejor encaja con todo lo que respondiste.");
   /* más barata que cumple: buen puntaje y al menos 10% menos que la primera */
-  /* tiene que servir para lo que busca (no vale una de entrenar barata para fondos largos) */
-  const sirve = x => (x.d.usos?.length ? x.d.usos : [x.d.uso]).includes(r.uso);
   const p2 = rank.filter(x => !usados.has(x.d.id) && sirve(x) && x.s >= p1.s - 12 && x.t.precio <= p1.t.precio * 0.9).sort((a, b) => a.t.precio - b.t.precio)[0];
   if (p2) tomar(p2, "La que más conviene por precio", `Cumple con lo que buscás y sale ${fmt(p1.t.precio - p2.t.precio)} menos.`);
   /* paso siguiente */

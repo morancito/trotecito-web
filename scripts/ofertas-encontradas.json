@@ -1,39 +1,46 @@
 {
- "fecha": "2026-11-06T20:11:52.441Z",
+ "fecha": "2026-11-07T08:26:17.435Z",
  "tiendas": {
+  "Saucony": {
+   "tipo": "tiendanube",
+   "pista": "www.googletagmanager.com | static.cloudflareinsights.com",
+   "buscados": 12,
+   "encontrados": 13,
+   "errores": []
+  },
   "Dexter": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 6,
-   "encontrados": 4,
+   "buscados": 11,
+   "encontrados": 0,
    "errores": []
   },
   "Sporting": {
    "tipo": "vtex",
    "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sporting.vtexassets.com",
-   "buscados": 6,
-   "encontrados": 3,
+   "buscados": 11,
+   "encontrados": 13,
    "errores": []
   },
   "Moov": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 6,
-   "encontrados": 1,
+   "buscados": 11,
+   "encontrados": 0,
    "errores": []
   },
   "Gostore": {
    "tipo": "magento",
    "pista": "gostore.com.ar | static.cloudflareinsights.com",
-   "buscados": 6,
-   "encontrados": 0,
+   "buscados": 11,
+   "encontrados": 4,
    "errores": []
   },
   "TodoTrail": {
    "tipo": "tiendanube",
    "pista": "nsk-cdn-static.tiendanube.com | www.googletagmanager.com | static.cloudflareinsights.com",
-   "buscados": 6,
-   "encontrados": 0,
+   "buscados": 11,
+   "encontrados": 2,
    "errores": []
   },
   "Naka Outdoors": {
@@ -43,39 +50,39 @@
    "encontrados": 0,
    "errores": []
   },
-  "Saucony": {
-   "tipo": "tiendanube",
-   "pista": "www.googletagmanager.com | static.cloudflareinsights.com",
-   "buscados": 12,
-   "encontrados": 13,
-   "errores": []
-  },
   "Stock Center": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 99,
-   "encontrados": 73,
+   "buscados": 11,
+   "encontrados": 0,
    "errores": []
   },
   "Tienda Fuencarral": {
    "tipo": "vtex",
    "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | fuencarral.vtexassets.com",
-   "buscados": 99,
-   "encontrados": 4,
+   "buscados": 11,
+   "encontrados": 0,
    "errores": []
   },
   "NewSport": {
    "tipo": "vtex",
    "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | newsport.vtexassets.com",
-   "buscados": 99,
-   "encontrados": 79,
+   "buscados": 11,
+   "encontrados": 14,
    "errores": []
   },
   "Vorax Running": {
    "tipo": "tiendanube",
    "pista": "static.cloudflareinsights.com",
-   "buscados": 99,
-   "encontrados": 25,
+   "buscados": 11,
+   "encontrados": 1,
+   "errores": []
+  },
+  "Saucony Argentina": {
+   "tipo": "tiendanube",
+   "pista": "www.googletagmanager.com | static.cloudflareinsights.com",
+   "buscados": 11,
+   "encontrados": 16,
    "errores": []
   }
  },
@@ -6012,6 +6019,947 @@
     "10",
     "10.5",
     "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Triumph 24 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-triumph-24-de-mujer-s1009991016-000/p",
+   "nota": "Mujer",
+   "precio": 244999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Triumph 24 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-triumph-24-de-hombre-s1009971019-000/p",
+   "nota": "Hombre",
+   "precio": 244999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Triumph 23 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-triumph-23-de-mujer-s11023200-000/p",
+   "nota": "Mujer",
+   "precio": 137999,
+   "antes": 229899,
+   "cuotas": 12,
+   "talles": [
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Hurricane 26 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-hurricane-26-de-hombre-s1010981022-000/p",
+   "nota": "Hombre",
+   "precio": 241999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Hurricane 26 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-hurricane-26-de-mujer-s1011061016-000/p",
+   "nota": "Mujer",
+   "precio": 241999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Guide 19 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-19-de-mujer-s1014651015-000/p",
+   "nota": "Mujer",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Guide 19 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-19-de-hombre-s21058100-000/p",
+   "nota": "Hombre",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-elite-3",
+   "modelo": "Saucony Endorphin Elite 3",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Endorphin Elite 3 Unisex",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-elite-3-unisex-s1009811021-000/p",
+   "nota": "Unisex",
+   "precio": 429999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-cohesion-19",
+   "modelo": "Saucony Cohesion 19",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Cohesion 19 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-cohesion-19-de-mujer-s1019221001-000/p",
+   "nota": "Mujer",
+   "precio": 119999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-cohesion-19",
+   "modelo": "Saucony Cohesion 19",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Cohesion 19 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-cohesion-19-de-hombre-s1019211005-000/p",
+   "nota": "Hombre",
+   "precio": 119999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Excursion Tr18 de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-excursion-tr18-de-hombre-s1010061010-000/p",
+   "nota": "Hombre",
+   "precio": 134999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Trekking Saucony Excursion Tr18 de Mujer",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-excursion-tr18-de-mujer-s1010071003-000/p",
+   "nota": "Mujer",
+   "precio": 134999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "Sporting",
+   "nombre": "Zapatillas Running Saucony Guide Tr de Hombre",
+   "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-tr-de-hombre-s1010151011-000/p",
+   "nota": "Hombre",
+   "precio": 234999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "Gostore",
+   "nombre": "Triumph 23 M",
+   "url": "https://gostore.com.ar/sat000092767-triumph-23-m-citron.html",
+   "nota": "Hombre",
+   "precio": 229900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45",
+    "45.5",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "Gostore",
+   "nombre": "Triumph 23 W",
+   "url": "https://gostore.com.ar/sat000102183-triumph-23-w-cloud-coral.html",
+   "nota": "Mujer",
+   "precio": 229900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "Gostore",
+   "nombre": "Endorphin Azura M",
+   "url": "https://gostore.com.ar/sat000091399-endorphin-azura-m-white-navy.html",
+   "nota": "Hombre",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-4",
+   "modelo": "Saucony Endorphin Pro 4",
+   "tienda": "Gostore",
+   "nombre": "Endorphin Pro 4 W",
+   "url": "https://gostore.com.ar/sat000014900-endorphin-pro-4-w-magenta.html",
+   "nota": "Mujer",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Guide TR Mujer - SKYWARD/BLISSFUL",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-guide-tr-mujer-skyward-blissful-kv82m/",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "7",
+    "7.5",
+    "8",
+    "8.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "TodoTrail",
+   "nombre": "Zapatilla Saucony Guide TR Hombre - Quartz/Cyber",
+   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-guide-tr-hombre-quartz-cyber-1krc9/",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Triumph 24 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-mujer-s1009991016/p",
+   "nota": "Mujer",
+   "precio": 244899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Triumph 24 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-hombre-s1009971009/p",
+   "nota": "Hombre",
+   "precio": 244899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Triumph 23 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-23-hombre-s21023200/p",
+   "nota": "Hombre",
+   "precio": 160999,
+   "antes": 230000,
+   "cuotas": 6,
+   "talles": [
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Triumph 23 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-23-mujer-s11023210/p",
+   "nota": "Mujer",
+   "precio": 160929,
+   "antes": 229900,
+   "cuotas": 6,
+   "talles": [
+    "36.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Hurricane 26 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-mujer-s1011061016/p",
+   "nota": "Mujer",
+   "precio": 241989,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Hurricane 26 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-hombre-s1010981022/p",
+   "nota": "Hombre",
+   "precio": 241989,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Guide 19 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-hombre-s21058105/p",
+   "nota": "Hombre",
+   "precio": 189899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Guide 19 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-mujer-s1014651017/p",
+   "nota": "Mujer",
+   "precio": 189899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Endorphin Azura Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-mujer-s11070124/p",
+   "nota": "Mujer",
+   "precio": 234899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "36.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Endorphin Azura Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-hombre-s21070124/p",
+   "nota": "Hombre",
+   "precio": 234899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-cohesion-19",
+   "modelo": "Saucony Cohesion 19",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Cohesion 19 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-cohesion-19-mujer-s1019221001/p",
+   "nota": "Mujer",
+   "precio": 119899,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Excursion Tr18 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-mujer-s1010071003/p",
+   "nota": "Mujer",
+   "precio": 134899,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Excursion Tr18 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-hombre-s1010061009/p",
+   "nota": "Hombre",
+   "precio": 134899,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Guide Tr Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-tr-mujer-s1010941009/p",
+   "nota": "Mujer",
+   "precio": 235899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-4",
+   "modelo": "Saucony Endorphin Pro 4",
+   "tienda": "Vorax Running",
+   "nombre": "SAUCONY Endorphin Pro 4",
+   "url": "https://voraxrunning.com.ar/productos/saucony-endorphin-pro-4-qc26h/",
+   "nota": "",
+   "precio": 282500,
+   "antes": null,
+   "cuotas": 6,
+   "_muestra": [
+    "TALLES MUJER",
+    "US5.5 = EUR 36 = 22.5 CM",
+    "US6 = EUR 36.5 = 23.CM",
+    "US6.5 = EUR 37.5 = 23.5 CM"
+   ]
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE TRIUMPH 24 FUEGO",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-triumph-24-fuego/",
+   "nota": "Hombre",
+   "precio": 244900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA MUJER TRIUMPH 24 VIZIRED",
+   "url": "https://saucony.com.ar/productos/zapatilla-mujer-triumph-24-vizired/",
+   "nota": "Mujer",
+   "precio": 244900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "6",
+    "6.5",
+    "7",
+    "7.5",
+    "8",
+    "8.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE TRIUMPH 23 CITRON",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-triumph-23-citron/",
+   "nota": "Hombre",
+   "precio": 172400,
+   "antes": 229900,
+   "cuotas": 3,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "12",
+    "12.5",
+    "13"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE HURRICANE 26 QUARTZ/TORTE",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-hurricane-26-quartz-torte/",
+   "nota": "Hombre",
+   "precio": 241990,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA MUJER HURRICANE 26 SPA/NAVAL",
+   "url": "https://saucony.com.ar/productos/zapatilla-mujer-hurricane-26-spa-naval/",
+   "nota": "Mujer",
+   "precio": 241990,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "7",
+    "7.5",
+    "8",
+    "8.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE GUIDE 19 BLACK/SILVER",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-guide-19-black-silver/",
+   "nota": "Hombre",
+   "precio": 189900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA MUJER GUIDE 19 TORTE/AUREATE",
+   "url": "https://saucony.com.ar/productos/zapatilla-mujer-guide-19-torte-aureate/",
+   "nota": "Mujer",
+   "precio": 189900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "7",
+    "7.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA MUJER ENDORPHIN AZURA WHITE/SPLASH",
+   "url": "https://saucony.com.ar/productos/zapatilla-mujer-endorphin-azura-white-splash/",
+   "nota": "Mujer",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "7",
+    "8"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE ENDORPHIN AZURA WHITE/NAVY",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-azura-white-navy/",
+   "nota": "Hombre",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "12.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-endorphin-elite-3",
+   "modelo": "Saucony Endorphin Elite 3",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA UNISEX ENDORPHIN ELITE 3 WHITE/MULTI",
+   "url": "https://saucony.com.ar/productos/zapatilla-unisex-endorphin-elite-3-white-multi/",
+   "nota": "Unisex",
+   "precio": 429900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "4.5",
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "7",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-cohesion-19",
+   "modelo": "Saucony Cohesion 19",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE COHESION 19 CADET/BLACK",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-cohesion-19-cadet-black/",
+   "nota": "Hombre",
+   "precio": 119900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-cohesion-19",
+   "modelo": "Saucony Cohesion 19",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA MUJER COHESION 19 IVORY/AUREATE",
+   "url": "https://saucony.com.ar/productos/zapatilla-mujer-cohesion-19-ivory-aureate/",
+   "nota": "Mujer",
+   "precio": 119900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "7.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA MUJER EXCURSION TR18 BLACK/QUARTZ",
+   "url": "https://saucony.com.ar/productos/zapatilla-mujer-excursion-tr18-black-quartz/",
+   "nota": "Mujer",
+   "precio": 134900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "7",
+    "7.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE EXCURSION TR18 BLACK/CARBON",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-excursion-tr18-black-carbon/",
+   "nota": "Hombre",
+   "precio": 134900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5",
+    "12",
+    "12.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA MUJER GUIDE TR SKYWARD/BLISSFUL",
+   "url": "https://saucony.com.ar/productos/zapatilla-mujer-guide-tr-skyward-blissful/",
+   "nota": "Mujer",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "6",
+    "7",
+    "7.5",
+    "8",
+    "8.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "Saucony Argentina",
+   "nombre": "ZAPATILLA HOMBRE GUIDE TR QUARTZ/CYBER",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-guide-tr-quartz-cyber/",
+   "nota": "Hombre",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5"
    ],
    "sistema": "US"
   }

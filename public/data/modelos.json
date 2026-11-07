@@ -10262,6 +10262,19 @@
       "11"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 398999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-mafate-5-de-hombre-1168722cmntb-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "43"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -12221,6 +12234,18 @@
       "37.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 349999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-nike-structure-plus-de-hombre-ii7192100-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 106,
@@ -12491,7 +12516,107 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 244999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-triumph-24-de-mujer-s1009991016-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 244999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-triumph-24-de-hombre-s1009971019-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 244899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-mujer-s1009991016/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 244899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-hombre-s1009971009/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 244900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-triumph-24-fuego/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 244900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-triumph-24-vizired/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12508,7 +12633,101 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 137999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-triumph-23-de-mujer-s11023200-000/p",
+     "fecha": "07/11/2026",
+     "antes": 229899,
+     "nota": "Mujer",
+     "talles": [
+      "37"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 229900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/sat000092767-triumph-23-m-citron.html",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "45.5",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 229900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/sat000102183-triumph-23-w-cloud-coral.html",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 160999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-23-hombre-s21023200/p",
+     "fecha": "07/11/2026",
+     "antes": 230000,
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 160929,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-23-mujer-s11023210/p",
+     "fecha": "07/11/2026",
+     "antes": 229900,
+     "nota": "Mujer",
+     "talles": [
+      "36.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 172400,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-triumph-23-citron/",
+     "fecha": "07/11/2026",
+     "antes": 229900,
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "12",
+      "12.5",
+      "13"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12525,7 +12744,102 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 241999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-hurricane-26-de-hombre-s1010981022-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 241999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-hurricane-26-de-mujer-s1011061016-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 241989,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-mujer-s1011061016/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 241989,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-hombre-s1010981022/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 241990,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-hurricane-26-quartz-torte/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 241990,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-hurricane-26-spa-naval/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12542,7 +12856,101 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-19-de-mujer-s1014651015-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-19-de-hombre-s21058100-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 189899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-hombre-s21058105/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 189899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-mujer-s1014651017/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 189900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-guide-19-black-silver/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 189900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-guide-19-torte-aureate/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "7.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12576,7 +12984,81 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Gostore",
+     "precio": 234900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/sat000091399-endorphin-azura-m-white-navy.html",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 234899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-mujer-s11070124/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 234899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-hombre-s21070124/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 234900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-endorphin-azura-white-splash/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "8"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 234900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-azura-white-navy/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "12.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12593,7 +13075,53 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Placa de carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 429999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-endorphin-elite-3-unisex-s1009811021-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Unisex",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 429900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-unisex-endorphin-elite-3-white-multi/",
+     "fecha": "07/11/2026",
+     "nota": "Unisex",
+     "talles": [
+      "4.5",
+      "5",
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12610,7 +13138,30 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Placa de carbono",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Gostore",
+     "precio": 299900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/sat000014900-endorphin-pro-4-w-magenta.html",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 282500,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/saucony-endorphin-pro-4-qc26h/",
+     "fecha": "07/11/2026"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12627,7 +13178,81 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 119999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-cohesion-19-de-mujer-s1019221001-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 119999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-cohesion-19-de-hombre-s1019211005-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 119899,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-cohesion-19-mujer-s1019221001/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 119900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-cohesion-19-cadet-black/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 119900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-cohesion-19-ivory-aureate/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12644,7 +13269,107 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 134999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-excursion-tr18-de-hombre-s1010061010-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 134999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-excursion-tr18-de-mujer-s1010071003-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 134899,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-mujer-s1010071003/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 134899,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-hombre-s1010061009/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 134900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-excursion-tr18-black-quartz/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "7.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 134900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-excursion-tr18-black-carbon/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5",
+      "12",
+      "12.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -12661,7 +13386,105 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 234999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-saucony-guide-tr-de-hombre-s1010151011-000/p",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 249999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-guide-tr-mujer-skyward-blissful-kv82m/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 249999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-saucony-guide-tr-hombre-quartz-cyber-1krc9/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 235899,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-tr-mujer-s1010941009/p",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "37.5",
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 234900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-mujer-guide-tr-skyward-blissful/",
+     "fecha": "07/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "6",
+      "7",
+      "7.5",
+      "8",
+      "8.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Saucony Argentina",
+     "precio": 234900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://saucony.com.ar/productos/zapatilla-hombre-guide-tr-quartz-cyber/",
+     "fecha": "07/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "8.5",
+      "9",
+      "9.5",
+      "10",
+      "10.5",
+      "11",
+      "11.5"
+     ],
+     "sistema": "US"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,

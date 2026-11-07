@@ -21,7 +21,7 @@ const nombre = m => `${m.mod}${m.ver ? " " + m.ver : ""}`;
 const USO = { "Iniciación": "para empezar a correr", "Rodaje diario": "para entrenar todos los días", "Rodaje largo": "para fondos largos", "Ritmo": "para series y ritmos rápidos", "Competencia": "para competir" };
 const hoyAR = new Intl.DateTimeFormat("es-AR", { timeZone: "America/Argentina/Buenos_Aires", day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date());
 const aMs = f => { const [d, mo, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, mo - 1, d) : 0; };
-const vigentes = m => (m.tiendas || []).filter(t => !t.sinStock && aMs(t.fecha) && aMs(hoyAR) - aMs(t.fecha) <= 7 * 864e5).sort((a, b) => a.precio - b.precio);
+const vigentes = m => (m.tiendas || []).filter(t => !t.sinStock && aMs(t.fecha) && aMs(hoyAR) - aMs(t.fecha) <= 1 * 864e5).sort((a, b) => a.precio - b.precio);
 
 function cabecera(html, { titulo, desc, url, img, ld }) {
   const meta = `

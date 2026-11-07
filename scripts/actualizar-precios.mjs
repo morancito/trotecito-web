@@ -4,7 +4,9 @@
 //   node scripts/actualizar-precios.mjs --tiendas=Nike     -> solo esas tiendas (para correr desde una compu donde la tienda sí responde)
 //
 // La lectura de cada tienda (precio, cuotas, stock y talles) está en tiendas.mjs.
-// Si una tienda no responde, se conserva el último precio y no se agrega punto ese día.
+// Si una tienda no responde, se conserva el último precio con su fecha vieja (el sitio solo muestra los de hoy o ayer).
+// Si el producto ya no existe (404, la tienda redirige a otra página o dice que no existe), se borra de la ficha.
+// Una vez por día también rechequea precio, stock y talles de cada color (public/data/colores.json).
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { leer, dormir } from "./tiendas.mjs";
@@ -21,7 +23,8 @@ const hoyISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/B
 const hoyAR = hoyISO.split("-").reverse().join("/");
 
 let ok = 0, fallas = 0, cambios = 0, conTalles = 0;
-const errores = [], sinStockL = [], pendientes = [];
+const errores = [], sinStockL = [], pendientes = [], borrados = [];
+const muerto = e => /^HTTP (404|410)\b/.test(e.message);
 async function procesar(m, t, ultimoIntento) {
   try {
     const r = await leer(t.url);
@@ -42,7 +45,8 @@ async function procesar(m, t, ultimoIntento) {
     ok++;
   } catch (e) {
     /* las tiendas a veces frenan si se les pide mucho seguido: lo que falla se reintenta al final, más despacio */
-    if (!ultimoIntento && !/404/.test(e.message)) { pendientes.push([m, t]); return; }
+    if (muerto(e)) { t._borrar = true; borrados.push(`${m.slug} · ${t.tienda}${t.nota ? " " + t.nota : ""}: ${e.message}`); console.warn(`✗ ${m.slug} · ${t.tienda}: ya no existe (${e.message})`); return; }
+    if (!ultimoIntento) { pendientes.push([m, t]); return; }
     fallas++; errores.push(`${m.slug} · ${t.tienda}: ${e.message}`); console.warn(`✗ ${m.slug} · ${t.tienda}: ${e.message}`);
   }
 }
@@ -59,6 +63,40 @@ if (pendientes.length) {
   for (const [m, t] of pendientes) { await procesar(m, t, true); await dormir(PAUSA_MS * 3); }
 }
 
+/* fuera de la ficha: lo que ya no existe y lo que hace más de 2 semanas que no se puede chequear */
+const aMs = f => { const [d, mo, y] = String(f || "").split("/").map(Number); return y ? Date.UTC(y, mo - 1, d) : 0; };
+const HOY_MS = aMs(hoyAR);
+for (const m of cat.modelos) if (m.tiendas) m.tiendas = m.tiendas.filter(t => !t._borrar && !(t.fecha && HOY_MS - aMs(t.fecha) > 14 * 864e5 && !t.sinStock));
+
+/* colores: una vez por día se rechequea cada color (precio, stock, talles) y se borra el que ya no existe */
+const ARCH_COL = new URL("colores.json", RAIZ), ARCH_ROBOT = new URL("robot.json", RAIZ);
+let robotPrev = {}; try { robotPrev = JSON.parse(readFileSync(ARCH_ROBOT, "utf8")); } catch {}
+let col = { leidos: 0, borrados: 0, sinStock: 0, fallaron: 0 };
+if (!SOLO.length && robotPrev.coloresFecha !== hoyAR) {
+  const colores = JSON.parse(readFileSync(ARCH_COL, "utf8"));
+  console.log("\nColores:");
+  for (const [slug, vs] of Object.entries(colores)) {
+    if (!Array.isArray(vs)) continue;
+    for (const v of vs) {
+      if (!v.url) continue;
+      try {
+        const r = await leer(v.url);
+        if (r.sinStock) { v.sinStock = true; col.sinStock++; }
+        else { delete v.sinStock; v.precio = r.precio; v.fecha = hoyAR; if (r.antes) v.antes = r.antes; else delete v.antes;
+          if (r.talles?.length) { v.talles = r.talles; v.sistema = r.sistema; } else { delete v.talles; delete v.sistema; } col.leidos++; }
+      } catch (e) {
+        if (muerto(e)) { v._borrar = true; col.borrados++; console.warn(`✗ color ${slug} · ${v.n} · ${v.tienda}: ya no existe`); }
+        else { col.fallaron++; console.warn(`✗ color ${slug} · ${v.n} · ${v.tienda}: ${e.message}`); }
+      }
+      await dormir(PAUSA_MS);
+    }
+    colores[slug] = vs.filter(v => !v._borrar);
+  }
+  writeFileSync(ARCH_COL, JSON.stringify(colores, null, 1) + "\n");
+  col.fecha = hoyAR;
+  console.log(`Colores: ${col.leidos} al día, ${col.sinStock} sin stock, ${col.borrados} borrados, ${col.fallaron} con error.`);
+}
+
 // Recorta el historial a los últimos meses para que el archivo no crezca sin límite.
 const corte = new Date(hoyISO); corte.setMonth(corte.getMonth() - MESES_HISTORIAL);
 const corteISO = corte.toISOString().slice(0, 10);
@@ -68,6 +106,8 @@ cat.actualizado = hoyAR;
 writeFileSync(new URL("modelos.json", RAIZ), JSON.stringify(cat, null, 1) + "\n");
 writeFileSync(new URL("historial.json", RAIZ), JSON.stringify(hist) + "\n");
 const hora = new Intl.DateTimeFormat("es-AR", { timeZone: "America/Argentina/Buenos_Aires", hour: "2-digit", minute: "2-digit" }).format(new Date());
-if (!SOLO.length) writeFileSync(new URL("robot.json", RAIZ), JSON.stringify({ fecha: hoyAR, hora, leidos: ok, cambiaron: cambios, conTalles, fallaron: fallas, errores, sinStock: sinStockL }, null, 1) + "\n");
-console.log(`\n${ok} precios leídos (${cambios} cambiaron), ${fallas} con error. Fecha: ${hoyAR}.`);
+if (!SOLO.length) writeFileSync(ARCH_ROBOT, JSON.stringify({ fecha: hoyAR, hora, leidos: ok, cambiaron: cambios, conTalles, fallaron: fallas, borrados: borrados.length,
+  coloresFecha: col.fecha || robotPrev.coloresFecha || null, colores: col.fecha ? col : robotPrev.colores || null, errores, borradosL: borrados, sinStock: sinStockL }, null, 1) + "\n");
+console.log(`\n${ok} precios leídos (${cambios} cambiaron), ${fallas} con error, ${borrados.length} ya no existen y se borraron. Fecha: ${hoyAR}.`);
+if (borrados.length) console.log(borrados.map(x => "  " + x).join("\n"));
 if (ok === 0) process.exit(1);

@@ -9,9 +9,17 @@
 export const UA = process.env.UA_ROBOT || "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36";
 export const dormir = ms => new Promise(r => setTimeout(r, ms));
 
-export async function traer(url, json = false) {
+/* ruta "normalizada" para comparar: sin barra final, en minúsculas y sin el prefijo de idioma */
+const ruta = u => decodeURIComponent(new URL(u).pathname).toLowerCase().replace(/\/+$/, "").replace(/^\/(es|es-ar|ar)(?=\/)/, "");
+/* producto: si la tienda redirige a otra página (la portada, una búsqueda, la categoría), el producto ya no existe */
+export async function traer(url, json = false, producto = false) {
   const r = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "es-AR,es;q=0.9", Accept: json ? "application/json" : "text/html" },
     redirect: "follow", signal: AbortSignal.timeout(25000) });
+  /* redirige al mismo producto con otra dirección (cambia la categoría, el color, el idioma): sigue siendo él si conserva el código o el nombre */
+  const mismo = () => { const a = ruta(url), b = ruta(r.url); if (a === b) return true;
+    const clave = a.split("/").filter(Boolean).pop()?.replace(/\.html?$/, "") || ""; const cod = (clave.match(/[a-z0-9]*\d[a-z0-9]{4,}/gi) || []).pop();
+    return (clave.length > 6 && b.includes(clave)) || (!!cod && b.includes(cod.toLowerCase())); };
+  if (producto && r.redirected && !mismo()) throw new Error(`HTTP 404 · la tienda redirige a ${new URL(r.url).pathname} (el producto ya no está)`);
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return json ? r.json() : r.text();
 }
@@ -36,7 +44,7 @@ async function vtex(url) {
   const u = new URL(url);
   const prods = await traer(`${u.origin}/api/catalog_system/pub/products/search${u.pathname}`, true);
   const p = prods[0];
-  if (!p) throw new Error("producto no encontrado");
+  if (!p) throw new Error("HTTP 404 · producto no encontrado");
   const ofertas = p.items.flatMap(i => i.sellers.map(s => s.commertialOffer)).filter(o => o.AvailableQuantity > 0 && o.Price > 0);
   if (!ofertas.length) return { sinStock: true };
   const o = ofertas.sort((a, b) => a.Price - b.Price)[0];
@@ -155,8 +163,15 @@ function generico(h, texto) {
 }
 
 export async function leer(url) {
-  if (/\/p\/?$/.test(new URL(url).pathname)) { try { return await vtex(url); } catch (e) { if (!/404/.test(e.message)) throw e; } }
-  const h = await traer(url);
+  /* /p al final: VTEX. Si la API no existe (HTTP 404 a secas) no es VTEX y se lee la página; si dice que no está el producto, no está */
+  if (/\/p\/?$/.test(new URL(url).pathname)) { try { return await vtex(url); } catch (e) { if (e.message !== "HTTP 404") throw e; } }
+  const h = await traer(url, false, true);
+  /* páginas que responden bien pero dicen que el producto no existe (se borra) o que no está disponible (sin stock) */
+  const arriba = h.slice(0, 80000).replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<[^>]+>/g, " ");
+  const carrito = /agregar al carrito|añadir al carrito|comprar ahora|add to cart/i.test(h);
+  if (!carrito && /(producto|p[aá]gina)\s+(que buscás\s+)?(no\s+existe|no\s+(fue\s+)?encontrad[oa]|inexistente)|no\s+pudimos\s+encontrar\s+(el|este|la)\s+(producto|p[aá]gina)|error\s+404|404\s*[-–|]\s*(p[aá]gina|not found)/i.test(arriba))
+    throw new Error("HTTP 404 · la página dice que el producto no existe");
+  if (!carrito && /producto\s+(no\s+disponible|agotado|sin\s+stock)/i.test(arriba)) return { sinStock: true };
   if (/cdn\.shopify\.com|Shopify\.theme/.test(h)) { try { return await shopify(url); } catch {} }
   const r = leerHtml(h);
   if (/demandware/i.test(h) && !r.sinStock) { Object.assign(r, await tallesSfcc(url, h)); if (r.talles && !r.talles.length) r.sinStock = true; }

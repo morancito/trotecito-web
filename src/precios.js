@@ -13,10 +13,13 @@ const MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct
 /* Precio vigente de una serie en una fecha (el último observado hasta ese día). */
 function vigente(serie, ms) { let v = null; for (const [d, p] of serie) { if (t(d) <= ms) v = p; else break; } return v; }
 
-/* Elige hasta 4 tiendas (las de dato más reciente) y les asigna color en orden alfabético estable. */
+/* Elige hasta 4 tiendas: entre las que tienen dato reciente, las más baratas hoy (así el historial incluye el precio que
+   se muestra arriba de la ficha), y les asigna color en orden alfabético estable. */
 function preparar(series) {
   const todas = Object.entries(series || {}).filter(([, s]) => s.length);
-  const elegidas = todas.sort((a, b) => b[1][b[1].length - 1][0].localeCompare(a[1][a[1].length - 1][0])).slice(0, MAX_SERIES)
+  const ultima = ([, s]) => s[s.length - 1], reciente = todas.reduce((m, x) => ultima(x)[0] > m ? ultima(x)[0] : m, "");
+  const corte = reciente ? new Date(t(reciente) - 2 * DIA).toISOString().slice(0, 10) : "";
+  const elegidas = todas.sort((a, b) => (ultima(b)[0] >= corte) - (ultima(a)[0] >= corte) || ultima(a)[1] - ultima(b)[1]).slice(0, MAX_SERIES)
     .sort((a, b) => a[0].localeCompare(b[0]));
   const fechas = [...new Set(elegidas.flatMap(([, s]) => s.map(x => x[0])))].sort();
   return { elegidas, fechas };

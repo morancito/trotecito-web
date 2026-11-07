@@ -13,6 +13,9 @@ export const PREGUNTAS = [
       ["Ritmo", "<b>Para los días rápidos</b><small>Series, pasadas y ritmos; para los suaves uso otra</small>"],
       ["Competencia", "<b>Para el día de la carrera</b><small>Quiero bajar mi marca en 10K, media o maratón</small>"]],
     trail: [["Rodaje diario", "<b>Una para todo</b><small>Salidas cortas y medias por sendero y cerro</small>"], ["Rodaje largo", "<b>Para fondos y ultras</b><small>Muchas horas en la montaña</small>"], ["Ritmo", "<b>Para correr rápido</b><small>Carreras cortas y técnicas</small>"]] },
+  /* solo si es para competir: no es lo mismo un 10K que una maratón */
+  { k: "dist", t: "¿Para qué distancia?", sub: "La de la carrera que estás preparando. Si corrés varias, elegí la más importante para vos.", si: r => r.uso === "Competencia",
+    ops: [["corta", "<b>5K o 10K</b><small>Carreras cortas y rápidas</small>"], ["media", "<b>Media maratón</b><small>21K</small>"], ["maraton", "<b>Maratón</b><small>42K</small>"]] },
   { k: "ritmo", t: "¿A qué ritmo corrés normalmente?", ops: [["r1", "Más rápido que 5:00 min/km"], ["r2", "Entre 5:00 y 6:00 min/km"], ["r3", "Entre 6:00 y 7:00 min/km"], ["r4", "Más lento, o no sé"]] },
   { k: "kg", t: "¿Cuánto pesás?", ops: [[60, "Menos de 65 kg"], [70, "65 a 75 kg"], [82, "75 a 90 kg"], [95, "Más de 90 kg"]] },
   { k: "pis", t: "¿Cómo pisás?", ops: [["Neutra", "Neutra"], ["Pronadora", "Pronadora: el pie se va hacia adentro"], ["Supinadora", "Supinadora: el pie se va hacia afuera"], ["nose", "No sé"]] },
@@ -22,6 +25,9 @@ export const PREGUNTAS = [
   { k: "tope", t: "¿Hasta cuánto querés gastar?", ops: [[150000, "Hasta $150 mil"], [250000, "Hasta $250 mil"], [350000, "Hasta $350 mil"], [0, "Sin límite"]] },
 ];
 
+/* las preguntas que corresponden según lo que ya respondió (la de distancia, solo para competir) */
+export const aplica = (q, r) => !q.si || q.si(r);
+export const DIST_TXT = { corta: "5K y 10K", media: "media maratón", maraton: "maratón" };
 /* texto corto de una opción (algunas traen título y aclaración en HTML) */
 export const opTexto = t => String(t || "").replace(/<small>[\s\S]*?<\/small>/g, "").replace(/<[^>]+>/g, "").trim();
 const USO_TXT = { "Iniciación": "empezar a correr", "Rodaje diario": "el día a día", "Rodaje largo": "fondos largos", "Ritmo": "series y ritmos rápidos", "Competencia": "competir" };
@@ -37,7 +43,7 @@ const AF = {
 const SIGUE = { "Iniciación": ["Rodaje diario", "Para dar un paso más", "Para cuando corras más seguido"], "Rodaje diario": ["Ritmo", "Para dar un paso más", "Para sumar series y ritmos"],
   "Rodaje largo": ["Ritmo", "Para dar un paso más", "Para sumar ritmos en la semana"], "Ritmo": ["Competencia", "Para el día de la carrera", "Cuando quieras ir por tu mejor marca"],
   "Competencia": ["Ritmo", "Para entrenar", "La compañera para las series y los ritmos"] };
-const ORDEN = ["La mejor para vos", "La que más conviene por precio", "Otra muy buena opción"];
+const ORDEN = ["La mejor para vos", "La que más conviene por precio", "Otra muy buena opción", "Para entrenar"];
 
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
 /* rango de peso del corredor para el que se recomienda: "Hasta 85 kg", "Más de 70 kg", "Entre 70 y 100 kg", "Cualquier peso..." */
@@ -126,8 +132,14 @@ export function puntaje(d, r, usoBuscado = r.uso) {
       else if (cerca < 2.5) add(-8, `Muy parecida a tus ${cual}, que no te convencen`);
       else if (cerca > 5) add(3, `Distinta de tus ${cual}, que no te convencen`, 2);
     } else if (gusto === "ok") {
-      if (misma || nueva) add(4, `Es la versión actual de las que ya usás`, 3);
+      if (nueva) add(4, `Es la versión nueva de las que ya usás`, 3);
+      else if (misma) add(2, `Son las mismas que usás hoy, por si querés repetir`, 1);
     }
+  }
+  /* competir: la distancia importa (una de 5K-10K no es la mejor para una maratón) */
+  if (r.uso === "Competencia" && r.dist && d.dist?.length) {
+    if (d.dist.includes(r.dist)) add(6, `Va bien para ${DIST_TXT[r.dist]}`);
+    else add(-22, `Está pensada para ${d.dist.map(x => DIST_TXT[x]).join(" y ")}, no tanto para ${DIST_TXT[r.dist]}`);
   }
   /* datos faltantes */
   if (!d.peso || !d.talon) add(-8, "La marca no publica peso ni altura de espuma");
@@ -167,10 +179,14 @@ export function recomendar(DATA, r0) {
   const sig = usoSig && pool.filter(x => !usados.has(x.d.id) && x.d.uso === usoSig).map(x => evalua(x, usoSig)).sort((a, b) => b.s - a.s)[0];
   /* solo si de verdad le sirve (ej. a un pronador no le sugerimos una de ritmo neutra): si no, va otra buena opción */
   if (sig && sig.s >= p1.s - 22 && !(r.uso === "Iniciación" && (r.ritmo === "r4") && usoSig === "Ritmo")) tomar(sig, etSig, subSig + ".");
-  /* completar con la siguiente mejor de otra marca */
-  for (const x of rank) { if (picks.length >= 3) break; if (usados.has(x.d.id)) continue;
-    if (picks.some(p => p.d.m === x.d.m) && rank.some(y => !usados.has(y.d.id) && !picks.some(p => p.d.m === y.d.m) && y.s >= x.s - 6)) continue;
-    tomar(x, "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo."); }
+  /* completar con la siguiente mejor de otra marca; primero las que sirven para lo que busca */
+  const completar = (lista, et, sub) => { for (const x of lista) { if (picks.length >= 3) break; if (usados.has(x.d.id)) continue;
+    if (picks.some(p => p.d.m === x.d.m) && lista.some(y => !usados.has(y.d.id) && !picks.some(p => p.d.m === y.d.m) && y.s >= x.s - 6)) continue;
+    tomar(x, et, sub); } };
+  completar(rank.filter(sirve), "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo.");
+  /* si no hay más que sirvan (ej. para competir con poco presupuesto), lo que sigue se presenta como lo que es */
+  if (r.uso === "Competencia") completar(rank, "Para entrenar", "No es para competir: te sirve para entrenar el resto de la semana.");
+  else completar(rank, "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo.");
   picks.sort((a, b) => (ORDEN.indexOf(a.etiqueta) + 1 || 9) - (ORDEN.indexOf(b.etiqueta) + 1 || 9));
   if (r.talle) for (const p of picks) {
     if (tieneTalle(p.t, r.talle)) p.pros.unshift(`Hay talle ${r.talle} en ${p.t.tienda}`);
@@ -186,5 +202,6 @@ export function recomendar(DATA, r0) {
     if (placa(p.d) && !placa(ref.d)) dif.push(`A diferencia de la ${nRef}, tiene placa (${p.d.pl.toLowerCase()})`);
     p.pros = [...dif, ...p.pros.filter(x => !/^Va bien con tu peso|^Es neutra, como/.test(x))];
   }
-  return { picks, sinPresupuesto: dentro.length < 3 && tope < Infinity, total: rank.filter(x => x.s >= p1.s - 20).length };
+  const paraElUso = picks.filter(p => sirve(p) && p.etiqueta !== "Para entrenar").length;
+  return { picks, sinPresupuesto: dentro.length < 3 && tope < Infinity, total: rank.filter(x => x.s >= p1.s - 20).length, paraElUso };
 }

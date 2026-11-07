@@ -1484,6 +1484,10 @@
    "usos": [
     "Ritmo",
     "Competencia"
+   ],
+   "dist": [
+    "corta",
+    "media"
    ]
   },
   {
@@ -1550,6 +1554,11 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -1908,6 +1917,10 @@
    "usos": [
     "Ritmo",
     "Competencia"
+   ],
+   "dist": [
+    "corta",
+    "media"
    ]
   },
   {
@@ -2328,6 +2341,11 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -3281,6 +3299,11 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -3347,6 +3370,11 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -3678,6 +3706,10 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "media",
+    "maraton"
    ]
   },
   {
@@ -3859,6 +3891,10 @@
     "Ritmo",
     "Competencia",
     "Rodaje diario"
+   ],
+   "dist": [
+    "corta",
+    "media"
    ]
   },
   {
@@ -3984,6 +4020,11 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -4268,6 +4309,11 @@
    "usos": [
     "Ritmo",
     "Competencia"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -6236,6 +6282,11 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -7771,9 +7822,9 @@
     "nivel": "Avanzado",
     "ritmo": "Menos de 4:30 min/km",
     "peso": "Hasta 80 kg",
-    "distancia": "10K a maratón, día de carrera"
+    "distancia": "5K y 10K, día de carrera"
    },
-   "evitar": "hacés fondos largos o estás empezando: tiene poca espuma.",
+   "evitar": "preparás una media o una maratón: está hecha para carreras cortas y rápidas.",
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/adidas-adizero-takumi-sen-10"
@@ -7792,6 +7843,9 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta"
    ]
   },
   {
@@ -9391,6 +9445,10 @@
    "usos": [
     "Ritmo",
     "Competencia"
+   ],
+   "dist": [
+    "corta",
+    "media"
    ]
   },
   {
@@ -10828,6 +10886,10 @@
     "Ritmo",
     "Competencia",
     "Rodaje diario"
+   ],
+   "dist": [
+    "corta",
+    "media"
    ]
   },
   {
@@ -11788,6 +11850,11 @@
    "usos": [
     "Competencia",
     "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -12890,6 +12957,11 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-elite-3"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {
@@ -12954,6 +13026,11 @@
    "fuente": [
     "RunRepeat",
     "https://runrepeat.com/saucony-endorphin-pro-4"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
    ]
   },
   {

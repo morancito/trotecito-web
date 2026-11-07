@@ -2,6 +2,10 @@ name: Probar Mercado Libre
 # Prueba qué deja consultar la API de Mercado Libre con la app de Trotecito. No cambia nada del sitio.
 on:
   workflow_dispatch:
+    inputs:
+      script:
+        description: "ml-prueba (precios) o ml-opiniones"
+        default: ml-prueba
 permissions:
   contents: read
 jobs:
@@ -16,4 +20,6 @@ jobs:
         env:
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
           ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
-        run: node scripts/ml-prueba.mjs
+          SCRIPT: ${{ inputs.script }}
+        run: |
+          case "$SCRIPT" in ml-opiniones) node scripts/ml-opiniones.mjs ;; *) node scripts/ml-prueba.mjs ;; esac

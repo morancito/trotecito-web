@@ -1,28 +1,29 @@
 {
- "fecha": "08/11/2026",
- "hora": "02:22 p. m.",
- "leidos": 452,
- "cambiaron": 4,
- "conTalles": 389,
+ "fecha": "09/11/2026",
+ "hora": "06:51 p. m.",
+ "leidos": 448,
+ "cambiaron": 0,
+ "conTalles": 382,
  "fallaron": 0,
  "borrados": 4,
- "coloresFecha": "08/11/2026",
+ "coloresFecha": "09/11/2026",
  "colores": {
-  "leidos": 218,
+  "leidos": 332,
   "borrados": 0,
-  "sinStock": 30,
+  "sinStock": 6,
   "fallaron": 0,
-  "fecha": "08/11/2026"
+  "fecha": "09/11/2026"
  },
  "errores": [],
  "borradosL": [
-  "asics-gt-2000-14 · Asics Hombre: HTTP 404 · producto no encontrado",
-  "puma-foreverrun-nitro-2 · NewSport Hombre: HTTP 404 · producto no encontrado",
-  "saucony-triumph-23 · Sporting Mujer: HTTP 404 · producto no encontrado",
-  "saucony-triumph-23 · NewSport Mujer: HTTP 404 · producto no encontrado"
+  "asics-metaspeed-sky · Asics Hombre: HTTP 404 · producto no encontrado",
+  "salomon-ultra-flow-2 · Sporting Mujer: HTTP 404 · producto no encontrado",
+  "nike-winflo-11 · Sporting Mujer: HTTP 404 · producto no encontrado",
+  "nike-vomero-premium · NewSport Mujer: HTTP 404 · producto no encontrado"
  ],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
+  "nike-vomero-plus · Dexter",
   "nike-winflo-10 · Dexter",
   "nike-winflo-10 · Dexter",
   "nike-zoom-fly-5 · Dexter",
@@ -47,6 +48,7 @@
   "under-armour-infinite-pro · Dexter",
   "under-armour-infinite-pro · Dexter",
   "saucony-kinvara-14 · Dexter",
+  "asics-gel-excite-11 · Stock Center",
   "nike-pegasus-premium · Dexter",
   "nike-pegasus-41 · Stock Center",
   "nike-pegasus-41 · Dexter",
@@ -58,6 +60,7 @@
   "nike-kiger-9 · Dexter",
   "nike-zegama-2 · Dexter",
   "nike-zegama-2 · Stock Center",
+  "hoka-skyflow · TodoTrail",
   "nike-winflo-11 · Dexter",
   "nike-winflo-11 · Dexter",
   "nike-winflo-11 · Stock Center"

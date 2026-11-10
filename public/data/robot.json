@@ -1,31 +1,28 @@
 {
- "fecha": "09/11/2026",
- "hora": "06:51 p. m.",
- "leidos": 448,
- "cambiaron": 0,
- "conTalles": 382,
+ "fecha": "10/11/2026",
+ "hora": "04:02 p. m.",
+ "leidos": 447,
+ "cambiaron": 8,
+ "conTalles": 377,
  "fallaron": 0,
- "borrados": 4,
- "coloresFecha": "09/11/2026",
+ "borrados": 1,
+ "coloresFecha": "10/11/2026",
  "colores": {
-  "leidos": 332,
-  "borrados": 0,
-  "sinStock": 6,
+  "leidos": 325,
+  "borrados": 1,
+  "sinStock": 12,
   "fallaron": 0,
-  "fecha": "09/11/2026"
+  "fecha": "10/11/2026"
  },
  "errores": [],
  "borradosL": [
-  "asics-metaspeed-sky · Asics Hombre: HTTP 404 · producto no encontrado",
-  "salomon-ultra-flow-2 · Sporting Mujer: HTTP 404 · producto no encontrado",
-  "nike-winflo-11 · Sporting Mujer: HTTP 404 · producto no encontrado",
-  "nike-vomero-premium · NewSport Mujer: HTTP 404 · producto no encontrado"
+  "asics-gel-kayano-32 · Asics Hombre: HTTP 404 · producto no encontrado"
  ],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
   "nike-vomero-plus · Dexter",
   "nike-winflo-10 · Dexter",
-  "nike-winflo-10 · Dexter",
+  "nike-invincible-3 · Dexter",
   "nike-zoom-fly-5 · Dexter",
   "nike-zoom-fly-5 · Stock Center",
   "nike-vaporfly-3 · Dexter",
@@ -45,6 +42,8 @@
   "brooks-launch-10 · Dexter",
   "brooks-hyperion · Dexter",
   "under-armour-velociti-3 · Dexter",
+  "under-armour-velociti-3 · Dexter",
+  "under-armour-velociti-3 · Stock Center",
   "under-armour-infinite-pro · Dexter",
   "under-armour-infinite-pro · Dexter",
   "saucony-kinvara-14 · Dexter",
@@ -52,17 +51,19 @@
   "nike-pegasus-premium · Dexter",
   "nike-pegasus-41 · Stock Center",
   "nike-pegasus-41 · Dexter",
+  "nike-pegasus-41 · Dexter",
   "adidas-supernova-stride-2 · Dexter",
   "adidas-ultraboost-5 · Dexter",
+  "adidas-ultraboost-5 · Stock Center",
   "adidas-adizero-takumi-sen-10 · Dexter",
   "puma-foreverrun-nitro-2 · Dexter",
   "nike-pegasus-trail-5-gtx · Dexter",
   "nike-kiger-9 · Dexter",
   "nike-zegama-2 · Dexter",
   "nike-zegama-2 · Stock Center",
-  "hoka-skyflow · TodoTrail",
   "nike-winflo-11 · Dexter",
   "nike-winflo-11 · Dexter",
-  "nike-winflo-11 · Stock Center"
+  "nike-winflo-11 · Stock Center",
+  "nike-winflo-12 · Dexter"
  ]
 }

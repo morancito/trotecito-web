@@ -428,6 +428,21 @@ function pintarOfertas() {
       <span class="ho-n">${esc(nombre(d))}</span><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></a>`).join("")}</div>`;
   $("#hoTodas").onclick = e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas (arriba)" }); verOfertas(); };
 }
+/* la fila de ofertas de arriba avanza sola de a una, y vuelve al principio. Se frena mientras la tocás (y unos segundos
+   después), si no está a la vista o si el sistema pide menos movimiento. */
+(() => {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  let pausa = 0, visible = false;
+  const frenar = () => { pausa = Date.now() + 6000; };
+  for (const ev of ["touchstart", "pointerdown", "wheel", "focusin"]) $("#heroOf").addEventListener(ev, frenar, { passive: true });
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; }, { threshold: .6 }).observe($("#heroOf"));
+  setInterval(() => {
+    const fila = $("#heroOf .ho-row"), c = fila?.querySelector(".ho");
+    if (!c || !visible || document.hidden || Date.now() < pausa || fila.scrollWidth <= fila.clientWidth + 4) return;
+    const paso = c.getBoundingClientRect().width + parseFloat(getComputedStyle(fila).columnGap || 10), fin = fila.scrollLeft + fila.clientWidth >= fila.scrollWidth - 4;
+    fila.scrollTo({ left: fin ? 0 : fila.scrollLeft + paso, behavior: "smooth" });
+  }, 2800);
+})();
 document.addEventListener("click", e => { const a = e.target.closest(".ho, #ofertas .of"); if (a) medir("atajo", { t: a.classList.contains("ho") ? "Oferta de arriba" : "Oferta del inicio" }); });
 $("#ofTodas").addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); verOfertas(); });
 pintarOfertas();

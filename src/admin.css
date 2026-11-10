@@ -99,3 +99,16 @@
   .nav .ad-salir { padding: 5px 10px; font-size: 13px; }
   .top .logo { --lg: 22px; }
 }
+
+/* períodos: en pantallas angostas, "7d" en vez de "7 días" para que entren los siete */
+.ad-ctl .seg button { padding: 8px 12px; white-space: nowrap; }
+.ad-ctl .seg button i { display: none; font-style: normal; }
+@media (max-width: 900px) { .ad-ctl .seg { width: 100%; } .ad-ctl .seg button { flex: 1; padding: 8px 4px; } .ad-ctl .seg button span { display: none; } .ad-ctl .seg button i { display: inline; } }
+/* dónde mejorar */
+.ad-mej { border-color: var(--ink); box-shadow: 5px 5px 0 var(--hard); }
+.mej { list-style: none; counter-reset: mej; margin: 12px 0 0; padding: 0; display: grid; gap: 10px; }
+.mej li { counter-increment: mej; display: grid; gap: 4px; padding: 12px 12px 12px 46px; position: relative; background: var(--soft); border-radius: 12px; min-width: 0; }
+.mej li::before { content: counter(mej); position: absolute; left: 12px; top: 11px; width: 24px; height: 24px; border-radius: 50%; background: var(--ink); color: var(--bg); font-weight: 800; font-size: 14px; display: grid; place-items: center; }
+.mej b { font-size: 17px; line-height: 1.2; }
+.mej span { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+.mej em { font-style: normal; font-weight: 600; font-size: 15px; }

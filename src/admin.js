@@ -15,6 +15,11 @@ const pct = (a, b) => b ? Math.round(a / b * 100) + "%" : "–";
 const dia = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires" });
 const diaDe = ts => dia.format(new Date(ts));
 const ddmm = iso => iso.slice(8, 10) + "/" + iso.slice(5, 7);
+const horaAR = new Intl.DateTimeFormat("en-GB", { timeZone: "America/Argentina/Buenos_Aires", hour: "2-digit", hourCycle: "h23" });
+const horaDe = ts => horaAR.format(new Date(ts)).slice(0, 2);
+/* períodos: días de calendario de Argentina, contando hoy ("1" es hoy desde las 00:00) */
+const RANGOS = [1, 2, 3, 7, 14, 30, 90];
+const rangoTxt = () => rango === 1 ? "hoy" : `en los últimos ${rango} días`;
 const lee = (k, st = sessionStorage) => { try { return JSON.parse(st.getItem(k)); } catch { return null; } };
 const pone = (k, v, st = sessionStorage) => { try { v == null ? st.removeItem(k) : st.setItem(k, JSON.stringify(v)); } catch {} };
 
@@ -66,7 +71,7 @@ async function cargar() {
   /* vino desde herramientas sin sesión: entró y vuelve */
   if (new URLSearchParams(location.search).get("volver") === "herramientas") return location.replace("./herramientas.html");
   $("#salir").hidden = false; cargando = true; pintar();
-  const desde = new Date(Date.now() - rango * 864e5).toISOString();
+  const desde = new Date(diaDe(Date.now() - (rango - 1) * 864e5) + "T00:00:00-03:00").toISOString();
   try {
     const [ev, cat, robot, rev] = await Promise.all([traerEventos(desde),
       fetch("data/modelos.json", { cache: "no-cache" }).then(r => r.json()).catch(() => null),
@@ -99,11 +104,13 @@ function calcular() {
     if (c && !recoClic.has(r.sesion)) { recoClic.add(r.sesion); recoClicOrigen.push(c); }
   }
   /* por día */
-  const dias = []; for (let i = rango - 1; i >= 0; i--) dias.push(diaDe(Date.now() - i * 864e5));
-  const primerDia = new Map(); for (const e of E) if (!primerDia.has(e.sesion)) primerDia.set(e.sesion, diaDe(e.ts));
+  /* con un solo día, la serie va por hora */
+  const porHora = rango === 1, tramo = porHora ? horaDe : diaDe;
+  const dias = []; if (porHora) for (let h = 0; h <= +horaDe(Date.now()); h++) dias.push(String(h).padStart(2, "0")); else for (let i = rango - 1; i >= 0; i--) dias.push(diaDe(Date.now() - i * 864e5));
+  const primerDia = new Map(); for (const e of E) if (!primerDia.has(e.sesion)) primerDia.set(e.sesion, tramo(e.ts));
   const sesDia = Object.fromEntries(dias.map(d => [d, 0])), clicDia = Object.fromEntries(dias.map(d => [d, 0]));
   for (const d of primerDia.values()) if (d in sesDia) sesDia[d]++;
-  for (const e of clics) { const d = diaDe(e.ts); if (d in clicDia) clicDia[d]++; }
+  for (const e of clics) { const d = tramo(e.ts); if (d in clicDia) clicDia[d]++; }
   /* embudo del recomendador */
   const pasos = PREGUNTAS.map((q, i) => [`${i + 1}. ${q.t.replace(/^¿|\?$/g, "")}`, sesionesCon("reco_paso", e => e.datos?.n === i + 1).size]);
   const embudoReco = [["Entraron al recomendador", recoIni.size], ...pasos, ["Vieron sus 3 zapas", recoFin.size], ["Fueron a la tienda de una recomendada", recoClic.size]];
@@ -119,7 +126,9 @@ function calcular() {
   const visitas = E.filter(e => e.tipo === "visita");
   const origen = cuenta(visitas, e => e.datos?.utm || e.datos?.ref || "Directo o sin dato");
   const disp = cuenta(visitas, e => e.datos?.disp);
-  const nuevos = visitas.filter(e => e.datos?.nuevo).length;
+  /* personas, no eventos: un visitante es nuevo si su primera entrada cayó en el período. Antes se contaba cada
+     aviso de "primera vez" y podía dar más nuevos que visitantes. */
+  const nuevos = new Set(visitas.filter(e => e.datos?.nuevo && e.datos?.vis).map(e => e.datos.vis)).size;
   /* búsquedas: la última de cada visita con el mismo comienzo, para no contar cada letra */
   const busq = E.filter(e => e.tipo === "busqueda");
   const porQ = new Map(); for (const e of busq) { const q = (e.datos?.q || "").trim(); const x = porQ.get(q) || { n: 0, res: e.datos?.n ?? 0 }; x.n++; x.res = e.datos?.n ?? x.res; porQ.set(q, x); }
@@ -133,7 +142,7 @@ function calcular() {
   const reempBuscados = cuenta(reemp, e => e.datos?.ref ? e.datos.ref : `“${e.datos?.q || ""}” (no la tenemos)`);
   return {
     util, utilSi, utilMotivos, reempBuscados, reemp,
-    recoClicOrigen: cuenta(recoClicOrigen, e => ({ ficha: "Desde la ficha", recomendador: "Desde el resultado", comparar: "Desde el comparador" })[e.datos?.origen] || "Desde otro lado"), recoFicha, ses, vis, clics, sesClic, fichas, recoIni, recoFin, recoClic, dias, sesDia, clicDia, embudo, embudoReco, perfiles, recomendadas, origen, disp, nuevos, visitas, busquedas,
+    recoClicOrigen: cuenta(recoClicOrigen, e => ({ ficha: "Desde la ficha", recomendador: "Desde el resultado", comparar: "Desde el comparador" })[e.datos?.origen] || "Desde otro lado"), recoFicha, porHora, etq: porHora ? (h => h + " h") : ddmm, ses, vis, clics, sesClic, fichas, recoIni, recoFin, recoClic, dias, sesDia, clicDia, embudo, embudoReco, perfiles, recomendadas, origen, disp, nuevos, visitas, busquedas,
     topFichas: cuenta(fichas, e => e.datos?.slug), clicZapa: cuenta(clics, e => e.datos?.slug), clicTienda: cuenta(clics, e => e.datos?.tienda),
     clicOrigen: cuenta(clics, e => ({ ficha: "Ficha", recomendador: "Recomendador", comparar: "Comparador", otro: "Otro" })[e.datos?.origen] || "Otro"),
     filtros: cuenta(E.filter(e => e.tipo === "filtro"), e => `${({ gen: "Talles", uso: "Uso", pis: "Pisada", kg: "Peso", am: "Amortiguación", marca: "Marca", desc: "Con descuento", placa: "Con placa", precio: "Precio", talle: "Talle" })[e.datos?.k] || e.datos?.k}: ${e.datos?.k === "kg" ? ({ 74: "menos de 75", 89: "75 a 90", 91: "más de 90", 0: "no filtrar" })[e.datos?.v] || e.datos?.v : e.datos?.k === "desc" || e.datos?.k === "placa" ? "sí" : e.datos?.k === "precio" && /^\d+-\d+$/.test(e.datos?.v) ? e.datos.v.split("-").map(x => "$" + Math.round(x / 1000) + " mil").join(" a ") : e.datos?.v || "todos"}`),
@@ -162,17 +171,17 @@ function serieDiaria(c) {
   const ty = []; for (let v = 0; v <= top; v += paso) ty.push(v);
   const cada = Math.ceil(c.dias.length / 6);
   const lab = S.map(s => ({ ...s, y: Y(s.v[s.v.length - 1]) })).sort((a, b) => a.y - b.y); if (lab[1] && lab[1].y - lab[0].y < 16) lab[1].y = lab[0].y + 16;
-  return `<div class="hist ad-serie" data-dias='${JSON.stringify(c.dias)}' data-s='${JSON.stringify(S.map(s => [s.n, s.v, s.k]))}'>
+  return `<div class="hist ad-serie" data-dias='${JSON.stringify(c.dias.map(c.etq))}' data-s='${JSON.stringify(S.map(s => [s.n, s.v, s.k]))}'>
     <div class="hist-leg">${S.map(s => `<span><i style="background:var(--${s.k})"></i>${s.n}</span>`).join("")}</div>
-    <div class="hist-plot"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Visitas y clics a tiendas por día, últimos ${rango} días">
+    <div class="hist-plot"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Visitas y clics a tiendas ${c.porHora ? "por hora, hoy" : `por día, últimos ${rango} días`}">
       ${ty.map(v => `<line x1="${M.l}" x2="${W - M.r}" y1="${Y(v)}" y2="${Y(v)}" class="hg"/><text x="${M.l - 8}" y="${Y(v) + 4}" text-anchor="end" class="ht">${n0(v)}</text>`).join("")}
-      ${c.dias.map((d, i) => i % cada === 0 || i === c.dias.length - 1 ? `<text x="${X(i)}" y="${H - 6}" text-anchor="middle" class="ht">${ddmm(d)}</text>` : "").join("")}
+      ${c.dias.map((d, i) => i % cada === 0 || i === c.dias.length - 1 ? `<text x="${X(i)}" y="${H - 6}" text-anchor="middle" class="ht">${c.etq(d)}</text>` : "").join("")}
       ${S.map(s => `<polyline points="${s.v.map((v, i) => `${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ")}" fill="none" stroke="var(--${s.k})" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`).join("")}
       ${lab.map(s => `<text x="${W - M.r + 8}" y="${s.y + 4}" class="hl">${s.n}: ${n0(s.v[s.v.length - 1])}</text>`).join("")}
       <line class="hx" x1="0" x2="0" y1="${M.t}" y2="${M.t + ih}" visibility="hidden"/>
       <rect class="hit" x="${M.l}" y="${M.t}" width="${iw}" height="${ih}" fill="transparent"/></svg><div class="hist-tip" hidden></div></div>
-    <details class="hist-tabla"><summary>Ver como tabla</summary><div class="tblwrap"><table class="cmpt"><thead><tr><th>Día</th>${S.map(s => `<th>${s.n}</th>`).join("")}</tr></thead>
-      <tbody>${c.dias.slice().reverse().map((d, j) => { const i = c.dias.length - 1 - j; return `<tr><th>${ddmm(d)}</th>${S.map(s => `<td>${n0(s.v[i])}</td>`).join("")}</tr>`; }).join("")}</tbody></table></div></details></div>`;
+    <details class="hist-tabla"><summary>Ver como tabla</summary><div class="tblwrap"><table class="cmpt"><thead><tr><th>${c.porHora ? "Hora" : "Día"}</th>${S.map(s => `<th>${s.n}</th>`).join("")}</tr></thead>
+      <tbody>${c.dias.slice().reverse().map((d, j) => { const i = c.dias.length - 1 - j; return `<tr><th>${c.etq(d)}</th>${S.map(s => `<td>${n0(s.v[i])}</td>`).join("")}</tr>`; }).join("")}</tbody></table></div></details></div>`;
 }
 function montarSerie() {
   const box = $(".ad-serie"); if (!box) return;
@@ -181,7 +190,7 @@ function montarSerie() {
   const mover = e => { const r = svg.getBoundingClientRect(), vx = (e.clientX - r.left) / r.width * svg.viewBox.baseVal.width;
     const i = Math.round(Math.max(0, Math.min(1, (vx - x0) / w)) * (dias.length - 1)), px = x0 + (dias.length > 1 ? i / (dias.length - 1) * w : w / 2);
     hx.setAttribute("x1", px); hx.setAttribute("x2", px); hx.setAttribute("visibility", "visible");
-    tip.innerHTML = `<b>${ddmm(dias[i])}</b>` + S.map(([n, v, k]) => `<span><i style="background:var(--${k})"></i>${n}<em>${n0(v[i])}</em></span>`).join("");
+    tip.innerHTML = `<b>${dias[i]}</b>` + S.map(([n, v, k]) => `<span><i style="background:var(--${k})"></i>${n}<em>${n0(v[i])}</em></span>`).join("");
     tip.hidden = false; tip.style.left = Math.min(Math.max(px / svg.viewBox.baseVal.width * r.width, 70), r.width - 70) + "px"; };
   hit.addEventListener("pointermove", mover); hit.addEventListener("pointerdown", mover);
   hit.addEventListener("pointerleave", () => { hx.setAttribute("visibility", "hidden"); tip.hidden = true; });
@@ -190,12 +199,12 @@ const bloque = (t, html, sub = "", cls = "") => `<section class="ad-b ${cls}"><h
 
 /* ---------- pantalla ---------- */
 function pintar() {
-  const cab = `<div class="ad-head"><div><h1 class="cond">Cómo se usa <em>Trotecito</em></h1><p class="ad-sub">${sesion?.email ? esc(sesion.email) + " · " : ""}${cargando ? "Cargando…" : `${n0(eventos.length)} eventos en los últimos ${rango} días`}</p></div>
-    <div class="ad-ctl"><div class="seg" id="rango">${[7, 30, 90].map(d => `<button data-d="${d}" aria-pressed="${d === rango}">${d} días</button>`).join("")}</div>
+  const cab = `<div class="ad-head"><div><h1 class="cond">Cómo se usa <em>Trotecito</em></h1><p class="ad-sub">${sesion?.email ? esc(sesion.email) + " · " : ""}${cargando ? "Cargando…" : `${n0(eventos.length)} eventos ${rangoTxt()}`}</p></div>
+    <div class="ad-ctl"><div class="seg" id="rango">${RANGOS.map(d => `<button data-d="${d}" aria-pressed="${d === rango}" aria-label="${d === 1 ? "Hoy" : d + " días"}">${d === 1 ? "Hoy" : d + "<span> días</span><i>d</i>"}</button>`).join("")}</div>
     <button class="pill" id="recargar" type="button">Actualizar</button><button class="pill" id="csv" type="button">Bajar CSV</button></div></div>`;
   if (cargando) { app.innerHTML = cab + `<p class="ad-vacio">Leyendo los datos…</p>`; return eventosCab(); }
   if (!eventos.length) { app.innerHTML = cab + `<section class="ad-box ad-diag"><h2 class="cond">La base no te devuelve eventos</h2>
-    <p>Entraste bien como <b>${esc(sesion.email)}</b>, pero no llegó ningún evento de los últimos ${rango} días. Si en Supabase sí ves filas en la tabla <code>eventos</code>, es la regla de lectura: el email de la regla no coincide con el tuyo.</p>
+    <p>Entraste bien como <b>${esc(sesion.email)}</b>, pero no llegó ningún evento ${rangoTxt()}. Si en Supabase sí ves filas en la tabla <code>eventos</code>, es la regla de lectura: el email de la regla no coincide con el tuyo.</p>
     <p>En Supabase, andá a <b>SQL Editor</b>, pegá esto y tocá <b>Run</b>:</p>
     <pre><code>drop policy if exists "solo el admin lee" on public.eventos;
 create policy "solo el admin lee" on public.eventos
@@ -206,7 +215,7 @@ create policy "solo el admin lee" on public.eventos
   const precios = cat ? cat.modelos.reduce((a, m) => a + (m.tiendas?.length || 0), 0) : 0;
   app.innerHTML = cab + `
   <div class="kpis">
-    ${kpi("Visitantes", n0(c.vis.size), `${n0(c.nuevos)} nuevos`)}
+    ${kpi("Visitantes", n0(c.vis.size), `${n0(c.nuevos)} nuevos · ${n0(Math.max(0, c.vis.size - c.nuevos))} ya habían venido`)}
     ${kpi("Visitas", n0(c.ses.size), c.vis.size ? `${(c.ses.size / c.vis.size).toFixed(1)} por visitante` : "")}
     ${kpi("Fichas vistas", n0(c.fichas.length), c.ses.size ? `${(c.fichas.length / c.ses.size).toFixed(1)} por visita` : "")}
     ${kpi("Clics a tiendas", n0(c.clics.length), `${pct(c.sesClic.size, c.ses.size)} de las visitas`)}
@@ -215,7 +224,8 @@ create policy "solo el admin lee" on public.eventos
     ${kpi("Les sirvió la recomendación", c.util.size ? pct(c.utilSi, c.util.size) : "–", c.util.size ? `${n0(c.utilSi)} de ${n0(c.util.size)} que respondieron` : "Todavía nadie respondió")}
   </div>
   ${bloqueOpiniones()}
-  ${bloque("Visitas y clics por día", serieDiaria(c), "Una visita es cada vez que alguien abre el sitio. Pasá el mouse para ver cada día.")}
+  ${bloque("Dónde mejorar", mejoras(c), `Lo que más pesa según lo que hizo la gente ${rangoTxt()}, ordenado por cuántas visitas afecta. Se calcula solo con los datos del período.`, "ad-mej")}
+  ${bloque(c.porHora ? "Visitas y clics por hora" : "Visitas y clics por día", serieDiaria(c), `Una visita es cada vez que alguien abre el sitio; un visitante es una persona (puede hacer varias visitas). Pasá el mouse para ver cada ${c.porHora ? "hora" : "día"}.`)}
   <div class="ad-2">
     ${bloque("Embudo general", embudo(c.embudo), "De todas las visitas, cuántas llegan a una tienda.")}
     ${bloque("Embudo del recomendador", embudo(c.embudoReco) + `<h3>Cómo llegaron a la tienda</h3>` + barras(c.recoClicOrigen, { vacio: "Todavía nadie fue a la tienda de una recomendada." }),
@@ -243,6 +253,58 @@ create policy "solo el admin lee" on public.eventos
     </tbody></table></div>`, "Para chequear que la medición funciona.")}`;
   eventosCab(); montarSerie(); montarOpinionesAdmin();
 }
+/* ---------- dónde mejorar: lecturas automáticas de los datos del período ---------- */
+function mejoras(c) {
+  const E = eventos, S = c.ses.size, out = [];
+  const add = (peso, t, dato, accion) => out.push({ peso, t, dato, accion });
+  const porSes = new Map(); for (const e of E) (porSes.get(e.sesion) || porSes.set(e.sesion, []).get(e.sesion)).push(e);
+  if (S < 20) return `<p class="ad-vacio">Con ${n0(S)} visitas ${rangoTxt()} todavía es poco para sacar conclusiones: elegí un período más largo.</p>`;
+  /* 1) se van sin hacer nada: solo la entrada y, como mucho, una pantalla */
+  const pasivos = new Set(["visita", "vista"]);
+  const rebote = [...porSes].filter(([, ev]) => ev.every(e => pasivos.has(e.tipo)) && ev.filter(e => e.tipo === "vista").length <= 1);
+  if (rebote.length / S >= .35) {
+    const donde = cuenta(rebote, ([, ev]) => { const r = ev[0].ruta || "inicio"; return r.startsWith("zapa/") || r.startsWith("m-") ? "la ficha de una zapa" : r === "inicio" ? "el inicio" : r === "catalogo" ? "el catálogo" : r === "tu-zapa" ? "el recomendador" : r; });
+    const dispR = cuenta(rebote.map(([, ev]) => ev.find(e => e.tipo === "visita")).filter(Boolean), e => e.datos?.disp);
+    add(rebote.length, `${pct(rebote.length, S)} de las visitas se va sin tocar nada`, `${n0(rebote.length)} de ${n0(S)} visitas entraron, miraron una pantalla y se fueron. Entraron sobre todo por ${donde.slice(0, 2).map(([k, n]) => `${esc(k)} (${n0(n)})`).join(" y ")}${dispR[0] ? `; ${pct(dispR[0][1], rebote.length)} desde ${esc(String(dispR[0][0]).toLowerCase())}` : ""}.`,
+      donde[0]?.[0] === "el inicio" ? "La primera pantalla del inicio no los engancha: probá que lo primero que se vea sean ofertas reales con precio, o la primera pregunta del recomendador ya abierta." : "Fijate qué ve alguien que cae directo en esa pantalla sin conocer el sitio: tiene que quedar claro qué puede hacer ahí y adónde seguir.");
+  }
+  /* 2) el escalón más caro del embudo general */
+  const em = c.embudo; let peor = null;
+  for (let i = 1; i < em.length; i++) { const perd = em[i - 1][1] - em[i][1]; if (em[i - 1][1] >= 15 && (!peor || perd > peor.perd)) peor = { i, perd, de: em[i - 1], a: em[i] }; }
+  if (peor && peor.perd / peor.de[1] >= .5) add(peor.perd * .8, `El embudo se corta entre "${peor.de[0]}" y "${peor.a[0]}"`, `De ${n0(peor.de[1])} visitas solo ${n0(peor.a[1])} dan el paso (${pct(peor.a[1], peor.de[1])}).`,
+    ["", "Hacé más visible la entrada al catálogo y al recomendador desde donde aterrizan.", "En el catálogo, la tarjeta tiene que invitar a entrar: precio más bajo, tienda y descuento a la vista.", "En la ficha, el mejor precio y el botón a la tienda tienen que verse sin bajar, sobre todo en el celular."][peor.i]);
+  /* 3) fichas muy vistas que no mandan a nadie a la tienda */
+  const clicDe = new Map(c.clicZapa), frias = c.topFichas.filter(([s, n]) => n >= 8 && (clicDe.get(s) || 0) / n < .05).slice(0, 4);
+  if (frias.length) add(frias.reduce((a, [, n]) => a + n, 0) * .6, "Zapas que se miran mucho y no generan clics", frias.map(([s, n]) => `${esc(nombre(s))}: ${n0(n)} vistas, ${n0(clicDe.get(s) || 0)} clics`).join(" · ") + ".",
+    "Revisá en esas fichas si hay precio vigente, talles y una tienda confiable. Si el precio está fuera de mercado, la gente mira y se va.");
+  /* 4) búsquedas sin resultado y reemplazos que no tenemos */
+  const sinRes = c.busquedas.filter(([q, x]) => x.res === 0 && q.length >= 3);
+  const falt = c.reempBuscados.filter(([k]) => /no la tenemos/.test(k));
+  const nFalt = sinRes.reduce((a, [, x]) => a + x.n, 0) + falt.reduce((a, [, n]) => a + n, 0);
+  if (nFalt >= 3) add(nFalt * 2, "Buscan modelos que no están", [...sinRes.slice(0, 5).map(([q, x]) => `“${esc(q)}” (${n0(x.n)})`), ...falt.slice(0, 4).map(([k, n]) => `${esc(k.replace(/ \(no la tenemos\)/, ""))} (${n0(n)})`)].join(" · ") + ".",
+    "Sumá esos modelos al catálogo, o hacé que el buscador los entienda si ya están con otro nombre.");
+  /* 5) recomendador: dónde abandonan y si termina en la tienda */
+  const er = c.embudoReco; let corte = null;
+  for (let i = 1; i < er.length - 1; i++) { const perd = er[i - 1][1] - er[i][1]; if (er[i - 1][1] >= 10 && perd / er[i - 1][1] >= .25 && (!corte || perd > corte.perd)) corte = { perd, de: er[i - 1], a: er[i] }; }
+  if (corte) add(corte.perd, "El recomendador pierde gente en un paso", `Entre "${esc(corte.de[0])}" y "${esc(corte.a[0])}" se van ${n0(corte.perd)} de ${n0(corte.de[1])} (${pct(corte.perd, corte.de[1])}).`,
+    "Esa pregunta frena: simplificá el texto, agregá un \"no sé\" o movela más adelante.");
+  if (c.recoFin.size >= 10 && c.recoClic.size / c.recoFin.size < .15) add(c.recoFin.size * .5, "Terminan el recomendador pero no van a la tienda", `${n0(c.recoFin.size)} visitas vieron sus zapas y ${n0(c.recoClic.size)} hicieron clic a la tienda de una (${pct(c.recoClic.size, c.recoFin.size)}).`,
+    "En el resultado, cada zapa tiene que mostrar el mejor precio y un botón directo a la tienda, sin pasar por la ficha.");
+  if (c.util.size >= 5 && c.utilSi / c.util.size < .6) add(c.util.size, "A muchos no les sirve la recomendación", `${n0(c.util.size - c.utilSi)} de ${n0(c.util.size)} dijeron que no${c.utilMotivos[0] ? `; el motivo más elegido: "${esc(c.utilMotivos[0][0])}" (${n0(c.utilMotivos[0][1])})` : ""}.`, "Ajustá los criterios empezando por ese motivo.");
+  /* 6) celular contra compu, y de dónde llegan los que sí hacen clic */
+  const tasa = f => { const g = new Map(); for (const [s, ev] of porSes) { const v = ev.find(e => e.tipo === "visita"); const k = v && f(v); if (!k) continue; const x = g.get(k) || { n: 0, c: 0 }; x.n++; if (c.sesClic.has(s)) x.c++; g.set(k, x); } return g; };
+  const td = tasa(v => v.datos?.disp), cel = td.get("Celular"), pc = td.get("Compu");
+  if (cel && pc && cel.n >= 20 && pc.n >= 20) { const a = cel.c / cel.n, b = pc.c / pc.n;
+    if (Math.max(a, b) > 0 && Math.min(a, b) / Math.max(a, b) < .6) { const mal = a < b ? ["el celular", cel, "la compu", pc] : ["la compu", pc, "el celular", cel];
+      add(mal[1].n * .4, `En ${mal[0]} hacen muchos menos clics a tiendas`, `${pct(mal[1].c, mal[1].n)} de las visitas desde ${mal[0]} (${n0(mal[1].n)}) llega a una tienda, contra ${pct(mal[3].c, mal[3].n)} desde ${mal[2]} (${n0(mal[3].n)}).`, `Recorré una ficha completa en ${mal[0]}: el precio y el botón a la tienda tienen que estar a la vista sin bajar.`); } }
+  const to = [...tasa(v => v.datos?.utm || v.datos?.ref || "Directo o sin dato")].filter(([, x]) => x.n >= 10).sort((a, b) => b[1].c / b[1].n - a[1].c / a[1].n);
+  if (to.length >= 2) add(S * .15, "Qué origen trae visitas que sirven", to.map(([k, x]) => `${esc(k)}: ${pct(x.c, x.n)} llega a una tienda (${n0(x.n)} visitas)`).join(" · ") + ".", `Poné el esfuerzo en "${esc(to[0][0])}", que es de donde llega la gente que más clics hace.`);
+  /* 7) vuelven poco */
+  if (c.vis.size >= 30 && (c.vis.size - c.nuevos) / c.vis.size < .1 && rango >= 7) add(c.vis.size * .2, "Casi nadie vuelve", `${n0(c.vis.size - c.nuevos)} de ${n0(c.vis.size)} visitantes ya habían venido antes.`, "Dales un motivo para volver: avisos de baja de precio por modelo o un posteo semanal de ofertas en Instagram.");
+  if (!out.length) return `<p class="ad-vacio">Con estos datos no aparece ningún punto flojo claro.</p>`;
+  return `<ol class="mej">${out.sort((a, b) => b.peso - a.peso).slice(0, 7).map(m => `<li><b>${m.t}</b><span>${m.dato}</span><em>${esc(m.accion)}</em></li>`).join("")}</ol>`;
+}
+
 /* ---------- opiniones de corredores: moderación ---------- */
 let OPS = { estado: "", pend: [], aprob: 0 };
 async function cargarOpiniones() {
@@ -341,7 +403,7 @@ function tablero() {
       ${M.sort((a, b) => a[1].nombre.localeCompare(b[1].nombre)).map(([, m]) => `<tr><td>${esc(m.nombre)}</td><td>${m.fuentes.filter(f => f.uso === "ficha").map(link).join(" · ")}</td><td>${m.fuentes.filter(f => f.uso === "revisión").map(link).join(" · ")}</td><td>${m.horma ? esc(m.horma) + " " + m.fuentes.filter(f => f.uso === "horma").map(link).join("") : ""}</td></tr>`).join("")}
       </tbody></table></div></details>`;
   }
-  return bloque("Tiendas y precios", tiendas, `Cada precio se muestra hasta 7 días después de su última actualización. "Al día" es de los últimos 2 días; el robot pasa una vez por día y Nike, adidas y Digital Sport se cargan con el marcador (<a href="./herramientas.html">Herramientas</a>).`)
+  return bloque("Tiendas y precios", tiendas, `Cada precio se muestra solo si se chequeó hoy o ayer. "Al día" es de los últimos 2 días; el robot pasa dos veces por día y Nike, adidas y Digital Sport se cargan con el marcador (<a href="./herramientas.html">Herramientas</a>).`)
     + (fuentes ? bloque("Fuentes de las fichas", fuentes, `Con qué reviews se armó y se revisó cada ficha.${rev.fechas?.foro ? ` Foroatletismo revisado el ${esc(rev.fechas.foro.split("-").reverse().join("/"))}.` : ""}`) : "");
 }
 function eventosCab() {

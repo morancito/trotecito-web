@@ -421,7 +421,14 @@ function pintarOfertas() {
   $("#ofertas").innerHTML = ofertas.map(d => `<a class="of" href="${zurl(d)}"><span class="of-img"><img src="${esc(src(d.fotos[0]))}" alt="" loading="lazy"><em>−${Math.round(desc(d) * 100)}%</em></span>
     <span class="of-n">${sello(d.m)}<b>${esc(nombre(d))}</b></span>
     <span class="of-p"><b>${fmt(d.min)}</b><s>${fmt(d.tiendas[0].antes)}</s><small>en ${esc(d.tiendas[0].tienda)}</small></span></a>`).join("");
+  /* en el celular, las ofertas van arriba de todo: lo primero que se ve son zapas con precio */
+  const h = $("#heroOf"); h.hidden = !ofertas.length;
+  h.innerHTML = `<div class="ho-cab"><b>Ofertas de hoy</b><a href="#catalogo" id="hoTodas">Ver las ${todas.length} →</a></div>
+    <div class="ho-row">${todas.slice(0, 6).map(d => `<a class="ho" href="${zurl(d)}" data-slug="${esc(d.slug)}"><span class="ho-img"><img src="${esc(src(d.fotos[0]))}" alt="" width="150" height="150"><em>−${Math.round(desc(d) * 100)}%</em></span>
+      <span class="ho-n">${esc(nombre(d))}</span><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></a>`).join("")}</div>`;
+  $("#hoTodas").onclick = e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas (arriba)" }); verOfertas(); };
 }
+document.addEventListener("click", e => { const a = e.target.closest(".ho, #ofertas .of"); if (a) medir("atajo", { t: a.classList.contains("ho") ? "Oferta de arriba" : "Oferta del inicio" }); });
 $("#ofTodas").addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); verOfertas(); });
 pintarOfertas();
 

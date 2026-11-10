@@ -24,7 +24,7 @@ const lee = (k, st = sessionStorage) => { try { return JSON.parse(st.getItem(k))
 const pone = (k, v, st = sessionStorage) => { try { v == null ? st.removeItem(k) : st.setItem(k, JSON.stringify(v)); } catch {} };
 
 let sesion = lee("tt-admin");
-let rango = 30, eventos = [], MOD = {}, cargando = false;
+let rango = 30, eventos = [], MOD = {}, cargando = false, robots = 0;
 
 /* ---------- acceso ---------- */
 function sinConfigurar() {
@@ -77,6 +77,13 @@ async function cargar() {
       fetch("data/modelos.json", { cache: "no-cache" }).then(r => r.json()).catch(() => null),
       fetch("data/robot.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null),
       fetch("data/revisiones.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null)]);
+    /* robots: un navegador de verdad genera un número al azar distinto cada vez; los que indexan el sitio (Google)
+       repiten siempre el mismo comienzo. Si un comienzo aparece en 3 o más números distintos, es un robot. */
+    const com = new Map(), suma = (k, id) => { if (id) (com.get(k + id.slice(0, 8)) || com.set(k + id.slice(0, 8), new Set()).get(k + id.slice(0, 8))).add(id); };
+    for (const e of ev) { suma("s", e.sesion); suma("v", e.datos?.vis); }
+    const esRobot = e => (com.get("s" + String(e.sesion).slice(0, 8))?.size >= 3) || (e.datos?.vis && com.get("v" + e.datos.vis.slice(0, 8))?.size >= 3);
+    const limpio = ev.filter(e => !esRobot(e)); robots = new Set(ev.filter(esRobot).map(e => e.sesion)).size;
+    ev.length = 0; ev.push(...limpio);
     eventos = ev; MOD = Object.fromEntries((cat?.modelos || []).map(m => [m.slug, m]));
     await cargarOpiniones();
     window.__cat = cat; window.__robot = robot; window.__rev = rev;
@@ -199,7 +206,7 @@ const bloque = (t, html, sub = "", cls = "") => `<section class="ad-b ${cls}"><h
 
 /* ---------- pantalla ---------- */
 function pintar() {
-  const cab = `<div class="ad-head"><div><h1 class="cond">Cómo se usa <em>Trotecito</em></h1><p class="ad-sub">${sesion?.email ? esc(sesion.email) + " · " : ""}${cargando ? "Cargando…" : `${n0(eventos.length)} eventos ${rangoTxt()}`}</p></div>
+  const cab = `<div class="ad-head"><div><h1 class="cond">Cómo se usa <em>Trotecito</em></h1><p class="ad-sub">${sesion?.email ? esc(sesion.email) + " · " : ""}${cargando ? "Cargando…" : `${n0(eventos.length)} eventos ${rangoTxt()}${robots ? ` · ${n0(robots)} visitas de robots de buscadores sin contar` : ""}`}</p></div>
     <div class="ad-ctl"><div class="seg" id="rango">${RANGOS.map(d => `<button data-d="${d}" aria-pressed="${d === rango}" aria-label="${d === 1 ? "Hoy" : d + " días"}">${d === 1 ? "Hoy" : d + "<span> días</span><i>d</i>"}</button>`).join("")}</div>
     <button class="pill" id="recargar" type="button">Actualizar</button><button class="pill" id="csv" type="button">Bajar CSV</button></div></div>`;
   if (cargando) { app.innerHTML = cab + `<p class="ad-vacio">Leyendo los datos…</p>`; return eventosCab(); }

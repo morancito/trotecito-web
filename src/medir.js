@@ -10,7 +10,9 @@ const pone = (st, k, v) => { try { st.setItem(k, v); } catch {} };
 const azar = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
 
 const local = !import.meta.env.VITE_SB_TEST && /^(localhost|127\.|\[::1\])/.test(location.hostname) || location.protocol === "file:";
-export const activo = () => !!(SUPABASE_URL && SUPABASE_KEY) && !local && (import.meta.env.VITE_SB_TEST || !navigator.webdriver) && lee(localStorage, "trotecito-nomedir") !== "1";
+/* los buscadores que abren las páginas para indexarlas (Google y compañía) no son visitas */
+const robot = /bot|crawl|spider|slurp|lighthouse|headless|prerender|preview|inspection|facebookexternalhit/i.test(navigator.userAgent || "");
+export const activo = () => !!(SUPABASE_URL && SUPABASE_KEY) && !local && !robot && (import.meta.env.VITE_SB_TEST || !navigator.webdriver) && lee(localStorage, "trotecito-nomedir") !== "1";
 
 let vis = lee(localStorage, "tt-v"); const nuevo = !vis; if (!vis) { vis = azar(); pone(localStorage, "tt-v", vis); }
 let ses = lee(sessionStorage, "tt-s"); if (!ses) { ses = azar(); pone(sessionStorage, "tt-s", ses); }

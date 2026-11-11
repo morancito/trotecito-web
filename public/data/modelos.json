@@ -3334,12 +3334,10 @@
      "fecha": "11/11/2026",
      "nota": "Hombre",
      "talles": [
-      "8",
       "8.5",
       "9",
       "9.5",
-      "10",
-      "11.5"
+      "10"
      ],
      "sistema": "US"
     },
@@ -3354,8 +3352,7 @@
       "40.5",
       "41.5",
       "42",
-      "43",
-      "44.5"
+      "43"
      ],
      "sistema": "AR"
     }
@@ -3606,7 +3603,8 @@
      "talles": [
       "7",
       "7.5",
-      "9"
+      "9",
+      "12"
      ],
      "sistema": "US"
     }
@@ -8841,7 +8839,6 @@
      "fecha": "11/11/2026",
      "nota": "Hombre",
      "talles": [
-      "41.5",
       "42"
      ],
      "sistema": "AR"
@@ -11401,19 +11398,6 @@
      "sinStock": true
     },
     {
-     "tienda": "Sporting",
-     "precio": 150999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-hombre-fj9509001-000/p",
-     "fecha": "11/11/2026",
-     "antes": 229999,
-     "nota": "Hombre",
-     "talles": [
-      "44"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Stock Center",
      "precio": 199999,
      "cuotas": "2 cuotas sin interés",
@@ -12252,7 +12236,8 @@
      "nota": "Hombre",
      "talles": [
       "43",
-      "43.5"
+      "43.5",
+      "44"
      ],
      "sistema": "AR"
     },
@@ -12673,7 +12658,6 @@
      "talles": [
       "9",
       "9.5",
-      "10",
       "10.5",
       "12.5"
      ],

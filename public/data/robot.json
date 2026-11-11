@@ -1,22 +1,22 @@
 {
- "fecha": "10/11/2026",
- "hora": "04:02 p. m.",
- "leidos": 447,
- "cambiaron": 8,
- "conTalles": 377,
+ "fecha": "11/11/2026",
+ "hora": "04:00 p. m.",
+ "leidos": 446,
+ "cambiaron": 35,
+ "conTalles": 375,
  "fallaron": 0,
  "borrados": 1,
- "coloresFecha": "10/11/2026",
+ "coloresFecha": "11/11/2026",
  "colores": {
-  "leidos": 325,
-  "borrados": 1,
-  "sinStock": 12,
+  "leidos": 324,
+  "borrados": 2,
+  "sinStock": 11,
   "fallaron": 0,
-  "fecha": "10/11/2026"
+  "fecha": "11/11/2026"
  },
  "errores": [],
  "borradosL": [
-  "asics-gel-kayano-32 · Asics Hombre: HTTP 404 · producto no encontrado"
+  "asics-gel-cumulus-27 · Asics Hombre: HTTP 404 · producto no encontrado"
  ],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
@@ -29,6 +29,7 @@
   "nike-vaporfly-3 · Dexter",
   "adidas-adizero-sl-2 · Stock Center",
   "adidas-adizero-boston-13 · Dexter",
+  "adidas-supernova-rise-3 · Dexter",
   "asics-novablast-5 · Dexter",
   "asics-gel-nimbus-27 · Dexter",
   "asics-gel-kayano-32 · Dexter",

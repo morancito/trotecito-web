@@ -1,11 +1,11 @@
 {
  "fecha": "12/11/2026",
- "hora": "04:13 p. m.",
+ "hora": "07:04 p. m.",
  "leidos": 444,
  "cambiaron": 0,
  "conTalles": 372,
- "fallaron": 1,
- "borrados": 0,
+ "fallaron": 0,
+ "borrados": 1,
  "coloresFecha": "12/11/2026",
  "colores": {
   "leidos": 321,
@@ -14,10 +14,10 @@
   "fallaron": 0,
   "fecha": "12/11/2026"
  },
- "errores": [
-  "asics-gel-kayano-32 · Vanguard Deportes: fetch failed"
+ "errores": [],
+ "borradosL": [
+  "nike-pegasus-premium · NewSport Mujer: HTTP 404 · producto no encontrado"
  ],
- "borradosL": [],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
   "nike-vomero-plus · Dexter",

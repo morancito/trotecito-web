@@ -116,17 +116,30 @@
   "fotos": 5
  },
  "_errores": [
-  "salomon-aero-blaze-3 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-aero-blaze-3 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-speedcross-6-gtx NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-alphaglide Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-alphaglide Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-alphaglide NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-alphaglide NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-supercross-4 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/2_6a826c4a-4859-4229-afea-d748373663a6.png?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/1_f288a32c-ce16-44f4-a3f4-4d1eef04a36c.png?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/5_ab0ad795-f1b4-48ff-9680-ea44b7f25eeb.png?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/6_9aba37f1-f02a-47a2-a9c3-4b6fcd508835.png?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/3_0e0736eb-dbfc-4a24-9bf9-1010d4275a5c.png?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47807700__1.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47807700__6.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47742200__1.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47742200__6.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47742200__5.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47742200__2.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47742200__3.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
   "salomon-ultra-glide-3 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47602400_0.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47602400_6.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47602400_3.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47602400_4.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47602400_2.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
   "salomon-speedcross-peak NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "salomon-x-adventure NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47817800__1.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47817800__5.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47817800__2.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47817800__3.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
+  "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47817800__6.jpg?width=1200: HTTP 403 text/html; charset=UTF-8 6924 bytes",
   "salomon-xa-pro-3d-v9 NewSport: la tienda frena las descargas (429), paso a la siguiente",
   "salomon-xa-pro-3d-v9 NewSport: la tienda frena las descargas (429), paso a la siguiente"
  ],
@@ -207,69 +220,69 @@
   "fotos": 5
  },
  "salomon-aero-glide-4": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/aero-glide-4-w",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/15_19c06ce3-3492-4d35-b4fa-272f1ef4b0ed.png?width=1200",
+  "fotos": 5
  },
  "salomon-aero-glide-3": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/aero-glide-3-m",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47810600__1.jpg?width=1200",
+  "fotos": 5
  },
  "salomon-aero-blaze-4": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/aero-blaze-4",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L45395500_0_GHO_AEROBLAZE4_Black_White_Black.png?width=1200",
+  "fotos": 5
  },
  "salomon-aero-blaze-3": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/aero-blaze-3-w",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/16_42ed1f8d-8faf-4327-9a7e-db2b4b41c83a.png?width=1200",
+  "fotos": 5
  },
  "salomon-drx-bliss": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/drx-bliss-m",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47292500_0.jpg?width=1200",
+  "fotos": 5
  },
  "salomon-drx-defy": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/drx-defy-w",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47563400_0.jpg?width=1200",
+  "fotos": 5
  },
  "salomon-spectur-3": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/spectur-3-m",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/5_95f0c83d-f534-4619-bccd-b81f9c3f5a2e.png?width=1200",
+  "fotos": 5
  },
  "salomon-speedcross-6": {
-  "tienda": "Gostore",
-  "url": "https://gostore.com.ar/smt000002b63-speedcross-6-m.html",
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/1_aac3a2e9-1562-4bb7-b041-7a542ba90f09.png?width=1200",
   "fotos": 5
  },
  "salomon-speedcross-6-gtx": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/speedcross-6-gtx",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L41738600__1.jpg?width=1200",
+  "fotos": 5
  },
  "salomon-alphaglide": {
-  "tienda": "NewSport",
-  "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-hombre-479483/p",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L478010__1.jpg?width=1200",
+  "fotos": 5
  },
  "salomon-pulsar": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/pulsar-m",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/5_ca5b33ea-b42e-4521-81af-2cf1eb7be88a.png?width=1200",
+  "fotos": 5
  },
  "salomon-supercross-4": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/supercross-4-m",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L41736200__1.jpg?width=1200",
+  "fotos": 5
  },
  "salomon-ultra-flow": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/ultra-flow-m",
-  "fotos": 1
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47808300__1.jpg?width=1200",
+  "fotos": 5
  },
  "salomon-ultra-flow-2-gtx": {
   "tienda": "Salomon Argentina",
@@ -277,9 +290,9 @@
   "fotos": 1
  },
  "salomon-genesis": {
-  "tienda": "Dexter",
-  "url": "https://www.dexter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
-  "fotos": 5
+  "tienda": "directa",
+  "url": "https://cdn.shopify.com/s/files/1/0771/4062/3674/files/L47807700__1.jpg?width=1200",
+  "fotos": 3
  },
  "salomon-ultra-glide-3": {
   "tienda": "Salomon Argentina",
@@ -287,8 +300,8 @@
   "fotos": 1
  },
  "salomon-speedcross-peak": {
-  "tienda": "Salomon Argentina",
-  "url": "https://salomonstore.com.ar/products/speedcross-peak-m",
+  "tienda": "NewSport",
+  "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-peak-hombre-476024/p",
   "fotos": 1
  },
  "salomon-x-adventure": {

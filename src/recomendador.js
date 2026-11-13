@@ -43,7 +43,10 @@ const AF = {
 const SIGUE = { "Iniciación": ["Rodaje diario", "Para dar un paso más", "Para cuando corras más seguido"], "Rodaje diario": ["Ritmo", "Para dar un paso más", "Para sumar series y ritmos"],
   "Rodaje largo": ["Ritmo", "Para dar un paso más", "Para sumar ritmos en la semana"], "Ritmo": ["Competencia", "Para el día de la carrera", "Cuando quieras ir por tu mejor marca"],
   "Competencia": ["Ritmo", "Para entrenar", "La compañera para las series y los ritmos"] };
-const ORDEN = ["La mejor para vos", "La que más conviene por precio", "Otra muy buena opción", "Para entrenar"];
+const ORDEN = ["La mejor para vos", "La más cercana", "La que más conviene por precio", "Otra muy buena opción", "Para entrenar"];
+/* las que no cumplen todo van siempre al final y con su aclaración */
+const ET_ESTIRAR = "Si estirás el presupuesto", ET_RESERVA = "Con reservas";
+const lugar = et => et === ET_ESTIRAR ? 20 : et === ET_RESERVA ? 21 : ORDEN.indexOf(et) + 1 || 9;
 
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
 /* rango de peso del corredor para el que se recomienda: "Hasta 85 kg", "Más de 70 kg", "Entre 70 y 100 kg", "Cualquier peso..." */
@@ -55,7 +58,11 @@ export const rangoKg = d => {
   return { min: 0, max: n[0] };
 };
 export const capacidadKg = d => rangoKg(d).max;
-const placa = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
+/* placa de propulsión (la que ayuda a ir rápido). La antirrocas de trail es otra cosa: protege la planta, no impulsa */
+const antirrocas = d => /roca/i.test(d.pl || "");
+const placa = d => !!d.pl && !antirrocas(d) && /carbono|nylon|varilla|speedboard|pebax/i.test(d.pl);
+/* el peso del corredor entra en lo que la ficha recomienda para esa zapa (sin dato de peso, no opinamos) */
+export const pesoApto = (d, kg) => !kg || (kg <= rangoKg(d).max && !(kg >= 90 && d.talon && d.talon < 34));
 
 /* precio más bajo para el género pedido (Unisex y sin dato valen para los dos) */
 /* talle: true = la tienda lo tiene, false = no, null = no lo pudimos confirmar */
@@ -111,6 +118,7 @@ export function puntaje(d, r, usoBuscado = r.uso) {
     else if (placa(d)) add(-10, "La placa rinde a ritmos rápidos; a tu ritmo suma poco");
     if (d.talon >= 36) add(6, `${d.talon} mm de espuma: cómoda a ritmo tranquilo`);
   }
+  if (antirrocas(d)) add(0, "Tiene placa antirrocas: protege la planta en terreno con piedras", 2);
   if (r.uso === "Iniciación" && d.talon && d.talon < 32) add(-8, "Poca espuma para alguien que recién empieza");
   if (d.talon && !pros.some(p => /mm de espuma/.test(p[1])) && usoBuscado !== "Competencia" && usoBuscado !== "Ritmo") add(0, `${d.talon} mm de espuma en el talón (${d.talon >= 38 ? "mucha" : d.talon >= 33 ? "intermedia" : "poca"})`, 1);
   /* horma */
@@ -172,37 +180,69 @@ export function recomendar(DATA, r0) {
   const sirveUso = x => (x.d.usos?.length ? x.d.usos : [x.d.uso]).includes(r.uso);
   const conDist = r.uso === "Competencia" && !!DIST_TXT[r.dist];
   const sirve = x => sirveUso(x) && (!conDist || !x.d.dist?.length || x.d.dist.includes(r.dist));
+  const enTope = x => x.t.precio <= tope, pesoOk = x => pesoApto(x.d, r.kg);
   /* competir a una distancia y no hay ninguna de carrera para esa distancia en el presupuesto: no inventamos una "mejor para vos" */
   if (conDist && !rank.some(sirve)) {
     const todas = base.map(x => evalua(x)).sort((a, b) => b.s - a.s);
     const fuera = todas.filter(sirve), techo = fuera[0]?.s ?? 0;
-    const estirar = fuera.filter(x => x.s >= techo - 12).sort((a, b) => a.t.precio - b.t.precio)[0];
-    if (estirar) tomar(estirar, "Si estirás el presupuesto", `La más barata pensada para ${DIST_TXT[r.dist]}${tope < Infinity ? `: ${fmt(estirar.t.precio - tope)} más que tu tope` : ""}.`);
-    const otraDist = rank.find(x => !usados.has(x.d.id) && sirveUso(x));
-    if (otraDist) tomar(otraDist, `Si corrés ${otraDist.d.dist?.length ? otraDist.d.dist.map(x => DIST_TXT[x]).join(" o ") : "otra distancia"}`, `Es de carrera y entra en tu presupuesto, pero no es para ${DIST_TXT[r.dist]}.`);
-    const entrenar = rank.find(x => !usados.has(x.d.id) && !sirveUso(x));
+    /* primero las que la ficha recomienda para su peso; si no hay, se avisa en la tarjeta */
+    const porPeso = l => l.some(pesoOk) ? l.filter(pesoOk) : l, yPeso = x => pesoOk(x) ? "" : " Además, para tu peso le falta espuma.";
+    const estirar = porPeso(fuera.filter(x => x.s >= techo - 12)).sort((a, b) => a.t.precio - b.t.precio)[0];
+    if (estirar) tomar(estirar, "Si estirás el presupuesto", `La más barata pensada para ${DIST_TXT[r.dist]}${tope < Infinity ? `: ${fmt(estirar.t.precio - tope)} más que tu tope` : ""}.${yPeso(estirar)}`);
+    const otraDist = porPeso(rank.filter(x => !usados.has(x.d.id) && sirveUso(x)))[0];
+    if (otraDist) tomar(otraDist, `Si corrés ${otraDist.d.dist?.length ? otraDist.d.dist.map(x => DIST_TXT[x]).join(" o ") : "otra distancia"}`, `Es de carrera y entra en tu presupuesto, pero no es para ${DIST_TXT[r.dist]}.${yPeso(otraDist)}`);
+    const entrenar = rank.find(x => !usados.has(x.d.id) && !sirveUso(x) && pesoOk(x));
     if (entrenar) tomar(entrenar, "Para entrenar", "No es para la carrera: te sirve para entrenar el resto de la semana.");
     for (const p of picks) if (r.talle) { if (tieneTalle(p.t, r.talle)) p.pros.unshift(`Hay talle ${r.talle} en ${p.t.tienda}`); else p.contras.unshift(`No pudimos confirmar el talle ${r.talle} en ${p.t.tienda}: chequealo antes de comprar`); }
     return { picks, sinPresupuesto: tope < Infinity, total: 0, paraElUso: 0, sinCoincidencia: true };
   }
-  const p1 = rank.find(sirve) || rank[0]; tomar(p1, "La mejor para vos", "La que mejor encaja con todo lo que respondiste.");
-  /* más barata que cumple: buen puntaje y al menos 10% menos que la primera */
-  const p2 = rank.filter(x => !usados.has(x.d.id) && sirve(x) && x.s >= p1.s - 12 && x.t.precio <= p1.t.precio * 0.9).sort((a, b) => a.t.precio - b.t.precio)[0];
-  if (p2) tomar(p2, "La que más conviene por precio", `Cumple con lo que buscás y sale ${fmt(p1.t.precio - p2.t.precio)} menos.`);
-  /* paso siguiente */
-  const [usoSig, etSig, subSig] = SIGUE[r.uso] || [];
-  const sig = usoSig && pool.filter(x => !usados.has(x.d.id) && x.d.uso === usoSig).map(x => evalua(x, usoSig)).sort((a, b) => b.s - a.s)[0];
-  /* solo si de verdad le sirve (ej. a un pronador no le sugerimos una de ritmo neutra): si no, va otra buena opción */
-  if (sig && sig.s >= p1.s - 22 && !(r.uso === "Iniciación" && (r.ritmo === "r4") && usoSig === "Ritmo")) tomar(sig, etSig, subSig + ".");
-  /* completar con la siguiente mejor de otra marca; primero las que sirven para lo que busca */
-  const completar = (lista, et, sub) => { for (const x of lista) { if (picks.length >= 3) break; if (usados.has(x.d.id)) continue;
+  /* "La mejor", "la que conviene" y "otra muy buena" son solo para las que cumplen todo: sirven para lo que busca, la ficha
+     las recomienda para su peso y entran en el presupuesto. Las demás se muestran aparte, diciendo qué les falta. */
+  const cumple = x => sirve(x) && pesoOk(x), plena = x => cumple(x) && enTope(x);
+  const falta = x => [!sirveUso(x) ? `está pensada para ${USO_TXT[x.d.uso]}, no para ${USO_TXT[r.uso]}` : !sirve(x) ? `no es para ${DIST_TXT[r.dist]}` : "",
+    !pesoOk(x) ? `para tu peso le falta espuma (la recomendamos ${(x.d.corredor?.peso || "").toLowerCase()})` : "",
+    !enTope(x) ? `se pasa ${fmt(x.t.precio - tope)} de tu tope` : ""].filter(Boolean).join(" y ");
+  const estirar = x => { tomar(x, ET_ESTIRAR, `Cumple con lo que buscás, pero sale ${fmt(x.t.precio - tope)} más que tu tope.`); picks.at(-1).falta = falta(x); };
+  const reserva = (x, et = ET_RESERVA) => { tomar(x, et, `No cumple todo lo que pediste: ${falta(x)}.`); picks.at(-1).falta = falta(x); };
+  /* completar hasta 3 con la siguiente mejor de otra marca */
+  const completar = (lista, poner) => { for (const x of lista) { if (picks.length >= 3) break; if (usados.has(x.d.id)) continue;
     if (picks.some(p => p.d.m === x.d.m) && lista.some(y => !usados.has(y.d.id) && !picks.some(p => p.d.m === y.d.m) && y.s >= x.s - 6)) continue;
-    tomar(x, et, sub); } };
-  completar(rank.filter(sirve), "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo.");
-  /* si no hay más que sirvan (ej. para competir con poco presupuesto), lo que sigue se presenta como lo que es */
-  if (r.uso === "Competencia") completar(rank, "Para entrenar", "No es para competir: te sirve para entrenar el resto de la semana.");
-  else completar(rank, "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo.");
-  picks.sort((a, b) => (ORDEN.indexOf(a.etiqueta) + 1 || 9) - (ORDEN.indexOf(b.etiqueta) + 1 || 9));
+    poner(x); } };
+  /* "con reservas" solo si le falta una cosa y por poco: un uso emparentado, o hasta 10 kg por encima de lo que recomienda la ficha */
+  const casi = x => enTope(x) && (sirve(x) ? !pesoOk(x) && r.kg <= rangoKg(x.d).max + 10 && !(r.kg >= 90 && x.d.talon && x.d.talon < 34)
+    : pesoOk(x) && (AF[r.uso]?.[x.d.uso] ?? 0) >= 14 && (!conDist || sirveUso(x)));
+  /* de las que cumplen pero se pasan del tope, las de mejor puntaje, de la más barata a la más cara */
+  const pasadas = l => { const f = l.filter(x => cumple(x) && !enTope(x) && !usados.has(x.d.id)), techo = f[0]?.s ?? 0; return f.filter(x => x.s >= techo - 12).sort((a, b) => a.t.precio - b.t.precio); };
+  const otra = x => tomar(x, "Otra muy buena opción", "Muy cerca de la primera, de otra marca o con otro estilo.");
+  const p1 = rank.find(plena);
+  let sinPlena = false;
+  if (p1) {
+    tomar(p1, "La mejor para vos", "La que mejor encaja con todo lo que respondiste.");
+    /* más barata que cumple: buen puntaje y al menos 10% menos que la primera */
+    const p2 = rank.filter(x => !usados.has(x.d.id) && plena(x) && x.s >= p1.s - 12 && x.t.precio <= p1.t.precio * 0.9).sort((a, b) => a.t.precio - b.t.precio)[0];
+    if (p2) tomar(p2, "La que más conviene por precio", `Cumple con lo que buscás y sale ${fmt(p1.t.precio - p2.t.precio)} menos.`);
+    /* paso siguiente */
+    const [usoSig, etSig, subSig] = SIGUE[r.uso] || [];
+    const sig = usoSig && pool.filter(x => !usados.has(x.d.id) && x.d.uso === usoSig && pesoOk(x) && enTope(x)).map(x => evalua(x, usoSig)).sort((a, b) => b.s - a.s)[0];
+    /* solo si de verdad le sirve (ej. a un pronador no le sugerimos una de ritmo neutra): si no, va otra buena opción */
+    if (sig && sig.s >= p1.s - 22 && !(r.uso === "Iniciación" && (r.ritmo === "r4") && usoSig === "Ritmo")) tomar(sig, etSig, subSig + ".");
+    completar(rank.filter(plena), otra);
+    /* para competir con poco presupuesto, lo que sigue se presenta como lo que es: una para entrenar */
+    if (r.uso === "Competencia") completar(rank.filter(x => pesoOk(x) && enTope(x)), x => tomar(x, "Para entrenar", "No es para competir: te sirve para entrenar el resto de la semana."));
+    /* después, las que cumplen pero se pasan del tope, y recién al final las que tienen algún pero (nunca caras y con peros) */
+    completar(pasadas(rank), estirar);
+    completar(rank.filter(casi), reserva);
+  } else {
+    /* ninguna cumple todo: no hay "mejor para vos". Va la más barata de las que cumplen pasándose del tope y las más cercanas */
+    sinPlena = true;
+    const todas = pool === base ? rank : base.map(x => evalua(x)).sort((a, b) => b.s - a.s);
+    const e = pasadas(todas)[0];
+    if (e) estirar(e);
+    const cerca = rank.filter(casi), mas = cerca[0] || rank.find(enTope) || (!picks.length && rank[0]);
+    if (mas) reserva(mas, "La más cercana");
+    completar(cerca, reserva);
+  }
+  picks.sort((a, b) => lugar(a.etiqueta) - lugar(b.etiqueta) || (a.etiqueta === ET_ESTIRAR ? a.t.precio - b.t.precio : 0));
   /* la que va "para entrenar" pero también serviría para la carrera: no decimos que no sirve, decimos por qué va abajo */
   for (const p of picks) if (p.etiqueta === "Para entrenar" && r.uso === "Competencia" && sirve(p)) {
     p.tambienCarrera = true;
@@ -223,5 +263,5 @@ export function recomendar(DATA, r0) {
     p.pros = [...dif, ...p.pros.filter(x => !/^Va bien con tu peso|^Es neutra, como/.test(x))];
   }
   const paraElUso = picks.filter(p => sirve(p) && p.etiqueta !== "Para entrenar").length;
-  return { picks, sinPresupuesto: dentro.length < 3 && tope < Infinity, total: rank.filter(x => x.s >= p1.s - 20).length, paraElUso };
+  return { picks, sinPresupuesto: picks.some(p => !enTope(p)), sinPlena, total: rank.filter(x => x.s >= picks[0].s - 20).length, paraElUso };
 }

@@ -65,7 +65,7 @@ const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
 const pad = n => String(n).padStart(3, "0");
 const nombre = d => d.mod + (d.ver ? " " + d.ver : "");
 const pisada = d => d.tipo === "Estabilidad" ? "Pronadora" : d.tipo === "Neutra" ? "Neutra" : "";
-const conPlaca = d => !!d.pl && /carbono|nylon|varilla|speedboard/i.test(d.pl);
+const conPlaca = d => !!d.pl && !/roca/i.test(d.pl) && /carbono|nylon|varilla|speedboard|pebax/i.test(d.pl);
 const placa = d => d.pl && d.pl !== "Sin placa" ? d.pl : "";
 const terr = d => d.terreno || "Asfalto";
 const pisadaPara = d => d.tipo === "Estabilidad" ? "Pronadora" : "Neutra o supinadora";
@@ -641,22 +641,28 @@ function porque(lista, cls) { return lista.length ? `<ul class="rr-${cls}">${lis
 function resumenPicks(picks) {
   if (picks.length < 2) return "";
   const n = p => `<b>${esc(p.d.m)} ${esc(nombre(p.d))}</b>`, a = picks[0];
+  const la = p => (/^La /.test(p.d.m) ? "" : "La ") + n(p);   // "La Sportiva…" ya trae el artículo
+  /* ninguna cumple todo: de cada una, qué le falta */
+  if (!/^La mejor/.test(a.etiqueta) && picks.some(p => p.falta)) return `<p class="rr-resumen"><span class="kicker">En resumen</span>${picks.map(p =>
+    /^Si estirás/.test(p.etiqueta) ? `${la(p)} cumple con lo que pediste, pero ${esc(p.falta)}.` : `${la(p)} ${esc(p.falta)}.`).join(" ")}</p>`;
   if (!/^La mejor/.test(a.etiqueta)) return `<p class="rr-resumen"><span class="kicker">En resumen</span>${picks.map(p =>
-    /^Si estirás/.test(p.etiqueta) ? `La ${n(p)} es la más barata que sirve para ${esc(DIST_TXT[resp.dist] || "lo que buscás")}: ${fmt(p.t.precio)}.`
-    : /^Si corrés/.test(p.etiqueta) ? `La ${n(p)} entra en tu presupuesto, pero es para ${esc(p.d.dist?.map(x => DIST_TXT[x]).join(" y ") || "otra distancia")}.`
-    : `La ${n(p)} no es para la carrera: es para entrenar.`).join(" ")}</p>`;
-  const frases = [`La ${n(a)} es la que mejor encaja con lo que contaste.`];
+    /^Si estirás/.test(p.etiqueta) ? `${la(p)} es la más barata que sirve para ${esc(DIST_TXT[resp.dist] || "lo que buscás")}: ${fmt(p.t.precio)}.`
+    : /^Si corrés/.test(p.etiqueta) ? `${la(p)} entra en tu presupuesto, pero es para ${esc(p.d.dist?.map(x => DIST_TXT[x]).join(" y ") || "otra distancia")}.`
+    : `${la(p)} no es para la carrera: es para entrenar.`).join(" ")}</p>`;
+  const frases = [`${la(a)} es la que mejor encaja con lo que contaste.`];
   for (const p of picks.slice(1)) {
-    if (p.etiqueta === "Para entrenar") { frases.push(p.tambienCarrera ? `La ${n(p)} la proponemos como compañera para entrenar; para tu carrera priorizamos ${picks.filter(x => x.etiqueta !== "Para entrenar").length === 1 ? "la primera" : "las otras dos"}.` : `La ${n(p)} no es para la carrera: es para entrenar el resto de la semana.`); continue; }
+    if (p.etiqueta === "Para entrenar") { frases.push(p.tambienCarrera ? `${la(p)} la proponemos como compañera para entrenar; para tu carrera priorizamos ${picks.filter(x => x.etiqueta !== "Para entrenar").length === 1 ? "la primera" : "las otras dos"}.` : `${la(p)} no es para la carrera: es para entrenar el resto de la semana.`); continue; }
+    if (p.falta) { frases.push(/^Si estirás/.test(p.etiqueta) ? `${la(p)} también cumple, pero ${esc(p.falta)}.` : `${la(p)} va con reservas: ${esc(p.falta)}.`); continue; }
     const d = p.d, r = a.d, dif = a.t.precio - p.t.precio;
     const gana = [], cede = [];
     if (dif >= 10000) gana.push(`sale ${fmt(dif)} menos`); else if (-dif >= 10000) cede.push(`cuesta ${fmt(-dif)} más`);
     if (d.talon && r.talon && d.talon - r.talon >= 3) gana.push("tiene más espuma"); else if (d.talon && r.talon && r.talon - d.talon >= 3) cede.push("tiene menos espuma");
     if (d.peso && r.peso && r.peso - d.peso >= 15) gana.push("es más liviana"); else if (d.peso && r.peso && d.peso - r.peso >= 25) cede.push("es más pesada");
-    if (placa(d) && !placa(r)) gana.push("tiene placa, para ir más rápido");
+    if (conPlaca(d) && !conPlaca(r)) gana.push("tiene placa, para ir más rápido");
+    if (/roca/i.test(d.pl || "") && !/roca/i.test(r.pl || "")) gana.push("tiene placa antirrocas, que protege la planta en las piedras");
     if (d.tipo === "Estabilidad" && r.tipo !== "Estabilidad") gana.push("te da más estabilidad");
     if (p.s < a.s - 8 && !cede.length) cede.push("encaja un poco menos con tu perfil");
-    let f = `La ${n(p)} `;
+    let f = `${la(p)} `;
     if (gana.length) f += gana.join(" y ") + (cede.length ? `, aunque ${cede.join(" y ")}` : "");
     else if (cede.length) f += `es una alternativa ${d.m !== r.m ? "de otra marca " : ""}que ${cede.join(" y ")}`;
     else f += d.m !== r.m ? "es casi tan buena opción, de otra marca" : "es casi tan buena opción";
@@ -665,7 +671,8 @@ function resumenPicks(picks) {
   return `<p class="rr-resumen"><span class="kicker">En resumen</span>${frases.join(" ")}</p>`;
 }
 function recoResultado() {
-  const { picks, sinPresupuesto, paraElUso, sinCoincidencia } = recomendar(DATA, resp);
+  const { picks, sinPresupuesto, paraElUso, sinCoincidencia, sinPlena } = recomendar(DATA, resp);
+  const nEntrenar = picks.filter(p => p.etiqueta === "Para entrenar").length, nCarrera = picks.filter(p => p.etiqueta !== "Para entrenar" && !p.falta).length;
   const q = k => PREGUNTAS.find(x => x.k === k), txt = k => opTexto((opsDe(q(k)).find(([v]) => String(v) === String(resp[k])) || [])[1] || "");
   const [, gustoAct, labAct] = String(resp.actual || "").split("|");
   /* cada respuesta se puede cambiar sola, sin rehacer todo */
@@ -680,19 +687,20 @@ function recoResultado() {
       <a class="rr-img" href="${zurl(d)}">${d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}">` : silueta(d)}</a>
       <div class="rr-body">${sello(d.m)}<h2 class="cond"><a href="${zurl(d)}">${esc(nombre(d))}</a></h2>
         <div class="rr-p"><b>${fmt(t.precio)}</b><span>en ${esc(t.tienda)}${t.antes > t.precio ? ` · antes ${fmt(t.antes)}` : ""}</span></div>
-        <h3>Por qué te la recomendamos</h3>${porque(p.pros.slice(0, 4), "pro")}
+        <h3>${p.falta ? "Lo que tiene a favor" : "Por qué te la recomendamos"}</h3>${porque(p.pros.slice(0, 4), "pro")}
         ${p.contras.length ? `<h3>Tené en cuenta</h3>${porque(p.contras.slice(0, 2), "con")}` : ""}
         <div class="rr-acc"><a class="btn fuerte" href="${esc(t.url)}" target="_blank" rel="noopener">Ver en ${esc(t.tienda)} ↗</a><a class="btn" href="${zurl(d)}">Ficha completa</a></div></div></article>`; };
   return `<a class="back" href="#">← Volver al inicio</a>
-  <div class="rr-head"><h1 class="cond">${sinCoincidencia ? `Sin opción para tu <em>${esc(DIST_TXT[resp.dist])}</em>` : `Tus <em>${picks.length}</em> zapas`}</h1>
+  <div class="rr-head"><h1 class="cond">${sinCoincidencia ? `Sin opción para tu <em>${esc(DIST_TXT[resp.dist])}</em>` : sinPlena ? `Ninguna cumple <em>todo</em>` : picks.length === 1 ? `Tu <em>zapa</em>` : `Tus <em>${picks.length}</em> zapas`}</h1>
     <p class="rr-perfil">${perfil.map(([k, t]) => `<button type="button" class="rr-dato" data-editar="${k}" title="Cambiar esta respuesta">${esc(t)} <span aria-hidden="true">✎</span></button>`).join("")}<button type="button" class="rr-dato rr-reini" data-reiniciar>↺ Empezar de nuevo</button></p>
     <p class="rr-ayuda">Tocá cualquier respuesta para cambiarla sola.</p>
     ${sinCoincidencia ? `<p class="rr-aviso"><b>No encontramos zapas de carrera pensadas para ${esc(DIST_TXT[resp.dist])}${resp.tope ? " dentro de tu presupuesto" : ""}.</b> No te vamos a recomendar una que no sirve para eso: abajo tenés la más barata que sí sirve, una que entra en el presupuesto pero es para otra distancia y una para entrenar.</p>` : ""}
-    ${resp.uso === "Competencia" && !sinCoincidencia && paraElUso < picks.length ? `<p class="rr-aviso">${paraElUso === 1 ? "Encontramos una sola opción para competir" : `Encontramos ${paraElUso} opciones para competir`}${resp.tope ? " con ese presupuesto" : ""}; ${picks.length - paraElUso === 1 ? "la otra es para entrenar" : "las otras son para entrenar"}.</p>` : ""}
-    ${sinPresupuesto ? `<p class="rr-aviso">Con ese presupuesto encontramos pocas opciones para tu perfil, así que sumamos algunas que se pasan.</p>` : ""}
+    ${resp.uso === "Competencia" && !sinCoincidencia && !sinPlena && nEntrenar ? `<p class="rr-aviso">${nCarrera === 1 ? "Encontramos una sola opción para competir" : `Encontramos ${nCarrera} opciones para competir`}${resp.tope ? " con ese presupuesto" : ""}; ${nEntrenar === 1 ? "la otra es para entrenar" : "las otras son para entrenar"}.</p>` : ""}
+    ${sinPlena ? `<p class="rr-aviso"><b>No encontramos una zapa que cumpla todo lo que pediste${resp.tope ? " dentro de tu presupuesto" : ""}.</b> No te vamos a marcar una como la mejor: abajo están las más cercanas y, en cada una, qué le falta.</p>` : ""}
+    ${sinPresupuesto && !sinPlena && !sinCoincidencia ? `<p class="rr-aviso">Con ese presupuesto hay pocas opciones para tu perfil. Primero van las que entran; las que se pasan están marcadas con "Si estirás el presupuesto".</p>` : ""}
     ${resp.pis === "nose" ? `<p class="rr-aviso">¿No sabés cómo pisás? Mirá la suela de tus zapas viejas: si se gastan más del lado de adentro, probablemente pronás. Ante la duda, empezá por una neutra.</p>` : ""}</div>
   ${picks.length ? `${resumenPicks(picks)}<div class="rr-grid">${picks.map(card).join("")}</div>
-  <div class="rr-pie"><button class="btn" type="button" data-cmp3>Comparar las ${picks.length}</button><a class="btn" href="#catalogo" data-vertodas>Ver todas las que te sirven</a></div>
+  <div class="rr-pie">${picks.length > 1 ? `<button class="btn" type="button" data-cmp3>Comparar las ${picks.length}</button>` : ""}<a class="btn" href="#catalogo" data-vertodas>Ver todas las que te sirven</a></div>
   <p class="rr-nota">Las elegimos cruzando tus respuestas con la ficha de cada zapa y el precio de hoy. Ninguna tienda paga por aparecer acá.</p>
   <div class="util" id="util">${utilHtml(utilClave(picks))}</div>`
   : `<p class="empty">No encontramos zapas con precio para ese perfil. Probá con otro presupuesto o con otro tipo de terreno.</p>`}`;

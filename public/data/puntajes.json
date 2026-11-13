@@ -2376,5 +2376,160 @@
   "fuente": "RunRepeat",
   "url": "https://runrepeat.com/saucony-endorphin-pro-4",
   "fecha": "2026-11-08"
+ },
+ "salomon-aero-glide-4": {
+  "n": 92,
+  "et": "Excelente",
+  "usos": [
+   [
+    "Día a día",
+    91
+   ],
+   [
+    "Ritmo",
+    85
+   ],
+   [
+    "Competencia",
+    70
+   ],
+   [
+    "Estabilidad",
+    83
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-aero-glide-4",
+  "fecha": "2026-11-12"
+ },
+ "salomon-aero-glide-3": {
+  "n": 86,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Día a día",
+    87
+   ],
+   [
+    "Ritmo",
+    78
+   ],
+   [
+    "Competencia",
+    58
+   ],
+   [
+    "Estabilidad",
+    86
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-aero-glide-3",
+  "fecha": "2026-11-12"
+ },
+ "salomon-speedcross-6": {
+  "n": 85,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Caminos de tierra",
+    40
+   ],
+   [
+    "Todo terreno",
+    78
+   ],
+   [
+    "Trail técnico",
+    89
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-speedcross-6",
+  "fecha": "2026-11-12"
+ },
+ "salomon-speedcross-6-gtx": {
+  "n": 80,
+  "et": "Buena",
+  "usos": [
+   [
+    "Caminos de tierra",
+    35
+   ],
+   [
+    "Todo terreno",
+    75
+   ],
+   [
+    "Trail técnico",
+    87
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-speedcross-6-gtx",
+  "fecha": "2026-11-12"
+ },
+ "salomon-ultra-flow": {
+  "n": 81,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Caminos de tierra",
+    88
+   ],
+   [
+    "Todo terreno",
+    63
+   ],
+   [
+    "Trail técnico",
+    40
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-ultra-flow",
+  "fecha": "2026-11-12"
+ },
+ "salomon-genesis": {
+  "n": 82,
+  "et": "Muy buena",
+  "usos": [
+   [
+    "Caminos de tierra",
+    65
+   ],
+   [
+    "Todo terreno",
+    86
+   ],
+   [
+    "Trail técnico",
+    78
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-genesis",
+  "fecha": "2026-11-12"
+ },
+ "salomon-xa-pro-3d-v9": {
+  "n": 72,
+  "et": "Buena",
+  "usos": [
+   [
+    "Caminos de tierra",
+    78
+   ],
+   [
+    "Todo terreno",
+    59
+   ],
+   [
+    "Trail técnico",
+    41
+   ]
+  ],
+  "fuente": "RunRepeat",
+  "url": "https://runrepeat.com/salomon-xa-pro-3d-v9",
+  "fecha": "2026-11-12"
  }
 }

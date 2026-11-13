@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-07T08:26:17.435Z",
+ "fecha": "2026-11-13T02:26:08.694Z",
  "tiendas": {
   "Saucony": {
    "tipo": "tiendanube",
@@ -83,6 +83,13 @@
    "pista": "www.googletagmanager.com | static.cloudflareinsights.com",
    "buscados": 11,
    "encontrados": 16,
+   "errores": []
+  },
+  "Salomon Argentina": {
+   "tipo": "shopify",
+   "pista": "cdn.shopify.com | salomonstore.com.ar",
+   "buscados": 4,
+   "encontrados": 8,
    "errores": []
   }
  },
@@ -6962,6 +6969,192 @@
     "11.5"
    ],
    "sistema": "US"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "Salomon Argentina",
+   "nombre": "GENESIS 2",
+   "url": "https://salomonstore.com.ar/products/genesis-2?_pos=1&_psq=Genesis+2&_psid=e63031958&_ss=e",
+   "nota": "",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "39",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "Salomon Argentina",
+   "nombre": "GENESIS 2",
+   "url": "https://salomonstore.com.ar/products/genesis-2-w?_pos=2&_psq=Genesis+2&_psid=e63031958&_ss=e",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-glide-4",
+   "modelo": "Salomon Ultra Glide 4",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA GLIDE 4",
+   "url": "https://salomonstore.com.ar/products/ultra-glide-4-m?_pos=1&_psq=Ultra+Glide+4&_psid=f4b6d9366&_ss=e",
+   "nota": "Hombre",
+   "precio": 269999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "39.5",
+    "41",
+    "42",
+    "42.5",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-glide-4",
+   "modelo": "Salomon Ultra Glide 4",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA GLIDE 4",
+   "url": "https://salomonstore.com.ar/products/ultra-glide-4-w?_pos=2&_psq=Ultra+Glide+4&_psid=f4b6d9366&_ss=e",
+   "nota": "Mujer",
+   "precio": 269999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA FLOW 2",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-m?_pos=1&_psq=Ultra+Flow+2&_psid=d80f82310&_ss=e",
+   "nota": "Hombre",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA FLOW 2",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-w?_pos=2&_psq=Ultra+Flow+2&_psid=d80f82310&_ss=e",
+   "nota": "Mujer",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "35",
+    "35.5",
+    "37.5",
+    "38.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA FLOW 2",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-woman?_pos=3&_psq=Ultra+Flow+2&_psid=d80f82310&_ss=e",
+   "nota": "",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "35",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-slab-pulsar-4",
+   "modelo": "Salomon S/LAB Pulsar 4",
+   "tienda": "Salomon Argentina",
+   "nombre": "S/LAB PULSAR 4",
+   "url": "https://salomonstore.com.ar/products/s-lab-pulsar-4?_pos=1&_psq=S%2FLAB+Pulsar+4&_psid=419b58c59&_ss=e",
+   "nota": "",
+   "precio": 399999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5"
+   ],
+   "sistema": "AR"
   }
  ]
 }

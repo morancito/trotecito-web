@@ -116,27 +116,19 @@
   "fotos": 5
  },
  "_errores": [
-  "saucony-triumph-24 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-triumph-24 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-triumph-24 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-triumph-24 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-hurricane-26 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-hurricane-26 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-hurricane-26 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-hurricane-26 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-guide-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-guide-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-guide-19 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-guide-19 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-endorphin-elite-3 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-cohesion-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-cohesion-19 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-cohesion-19 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-excursion-tr-18 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-excursion-tr-18 Sporting: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-excursion-tr-18 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-excursion-tr-18 NewSport: la tienda frena las descargas (429), paso a la siguiente",
-  "saucony-guide-tr Sporting: la tienda frena las descargas (429), paso a la siguiente"
+  "salomon-aero-blaze-3 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-aero-blaze-3 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-speedcross-6-gtx NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-alphaglide Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-alphaglide Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-alphaglide NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-alphaglide NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-supercross-4 Sporting: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-ultra-glide-3 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-speedcross-peak NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-x-adventure NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-xa-pro-3d-v9 NewSport: la tienda frena las descargas (429), paso a la siguiente",
+  "salomon-xa-pro-3d-v9 NewSport: la tienda frena las descargas (429), paso a la siguiente"
  ],
  "nike-winflo-11": {
   "tienda": "Dexter",
@@ -213,5 +205,110 @@
   "tienda": "TodoTrail",
   "url": "https://todotrail.com.ar/productos/zapatilla-saucony-guide-tr-mujer-skyward-blissful-kv82m/",
   "fotos": 5
+ },
+ "salomon-aero-glide-4": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/aero-glide-4-w",
+  "fotos": 1
+ },
+ "salomon-aero-glide-3": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/aero-glide-3-m",
+  "fotos": 1
+ },
+ "salomon-aero-blaze-4": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/aero-blaze-4",
+  "fotos": 1
+ },
+ "salomon-aero-blaze-3": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/aero-blaze-3-w",
+  "fotos": 1
+ },
+ "salomon-drx-bliss": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/drx-bliss-m",
+  "fotos": 1
+ },
+ "salomon-drx-defy": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/drx-defy-w",
+  "fotos": 1
+ },
+ "salomon-spectur-3": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/spectur-3-m",
+  "fotos": 1
+ },
+ "salomon-speedcross-6": {
+  "tienda": "Gostore",
+  "url": "https://gostore.com.ar/smt000002b63-speedcross-6-m.html",
+  "fotos": 5
+ },
+ "salomon-speedcross-6-gtx": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/speedcross-6-gtx",
+  "fotos": 1
+ },
+ "salomon-alphaglide": {
+  "tienda": "NewSport",
+  "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-hombre-479483/p",
+  "fotos": 1
+ },
+ "salomon-pulsar": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/pulsar-m",
+  "fotos": 1
+ },
+ "salomon-supercross-4": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/supercross-4-m",
+  "fotos": 1
+ },
+ "salomon-ultra-flow": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/ultra-flow-m",
+  "fotos": 1
+ },
+ "salomon-ultra-flow-2-gtx": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-m",
+  "fotos": 1
+ },
+ "salomon-genesis": {
+  "tienda": "Dexter",
+  "url": "https://www.dexter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
+  "fotos": 5
+ },
+ "salomon-ultra-glide-3": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/ultra-glide-3-m",
+  "fotos": 1
+ },
+ "salomon-speedcross-peak": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/speedcross-peak-m",
+  "fotos": 1
+ },
+ "salomon-x-adventure": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/x-adventure-men",
+  "fotos": 1
+ },
+ "salomon-alphacross-5": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/alphacross-5-women",
+  "fotos": 1
+ },
+ "salomon-xa-pro-3d-v9": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9-m",
+  "fotos": 1
+ },
+ "salomon-thundercross": {
+  "tienda": "Salomon Argentina",
+  "url": "https://salomonstore.com.ar/products/thundercross-m",
+  "fotos": 1
  }
 }

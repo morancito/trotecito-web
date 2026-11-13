@@ -13464,7 +13464,52 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-glide-4-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-glide-4-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13481,7 +13526,52 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 172499,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-glide-3-m",
+     "fecha": "12/11/2026",
+     "antes": 229999,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 172499,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-glide-3-w",
+     "fecha": "12/11/2026",
+     "antes": 229999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13498,7 +13588,51 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 239999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-blaze-4",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 239999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-blaze-4-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13515,7 +13649,81 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "NewSport",
+     "precio": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-running-aero-blaze-3-hombre-478744/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 137999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-running-aero-blaze-3-mujer-478750/p",
+     "fecha": "12/11/2026",
+     "antes": 230000,
+     "nota": "Mujer",
+     "talles": [
+      "36"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 229999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-blaze-3-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 229999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/aero-blaze-3-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13532,7 +13740,47 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 149999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/drx-bliss-m",
+     "fecha": "12/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 149999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/drx-bliss-w",
+     "fecha": "12/11/2026",
+     "antes": 199999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13549,7 +13797,45 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 149999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/drx-defy-w",
+     "fecha": "12/11/2026",
+     "antes": 199999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "38.5",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 149999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/drx-defy-m",
+     "fecha": "12/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13566,7 +13852,52 @@
    "terreno": "Asfalto",
    "esp": "",
    "pl": "Fibra de vidrio",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 269999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/spectur-3-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 269999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/spectur-3-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13583,7 +13914,162 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 229999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-speedcross-6-de-hombre-17417379-000/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 229999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-trekking-salomon-speedcross-6-de-mujer-17417428-000/p",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/smt000002b63-speedcross-6-m.html",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Gostore",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://gostore.com.ar/smt000005-speedcross-6-w.html",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "38",
+      "38.5",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-mujer-491971/p",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "39",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 269999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-hombre-417386/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 229999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/speedcross-6-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 229999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/speedcross-6-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13600,7 +14086,61 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "NewSport",
+     "precio": 274999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-gore-tex-mujer-478801/p",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/speedcross-6-gtx",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 279999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/speedcross-6-gtx-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13617,7 +14157,130 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 159999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-alphaglide-de-mujer-17478015-000/p",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sporting",
+     "precio": 159999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-alphaglide-de-hombre-17479483-000/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "38.5",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 159999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-mujer-478018/p",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38.5",
+      "39",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 159999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-hombre-479483/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 169999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/alphaglide-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 169999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/alphaglide-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13634,7 +14297,53 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 269999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/pulsar-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 269999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/pulsar-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13651,7 +14360,65 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Sporting",
+     "precio": 179999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-salomon-supercross-4-de-hombre-17417362-000/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 179999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/supercross-4-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 179999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/supercross-4-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13668,7 +14435,46 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 143999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-flow-m",
+     "fecha": "12/11/2026",
+     "antes": 179999,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "42.5",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 143999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-flow-w",
+     "fecha": "12/11/2026",
+     "antes": 179999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13685,7 +14491,45 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 239999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 239999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13702,7 +14546,107 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 119999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
+     "fecha": "12/11/2026",
+     "antes": 200999,
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41.5",
+      "42"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "TodoTrail",
+     "precio": 207999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-trail-black-acid-lime-6n1ol/",
+     "fecha": "12/11/2026",
+     "antes": 259999,
+     "talles": [
+      "8.5",
+      "10.5",
+      "11",
+      "11.5",
+      "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 119999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
+     "fecha": "12/11/2026",
+     "antes": 200999,
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41.5",
+      "42"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 399999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-s-lab-genesis-unisex-491901/p",
+     "fecha": "12/11/2026",
+     "nota": "Unisex",
+     "talles": [
+      "39.5",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/genesis-women-1",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "39",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 187499,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/genesis-m",
+     "fecha": "12/11/2026",
+     "antes": 249999,
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13719,7 +14663,54 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "NewSport",
+     "precio": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-glide-3-hombre-477422/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 172499,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-glide-3-m",
+     "fecha": "12/11/2026",
+     "antes": 229999,
+     "nota": "Hombre",
+     "talles": [
+      "44.5",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 172499,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-glide-3-w",
+     "fecha": "12/11/2026",
+     "antes": 229999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13736,7 +14727,59 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "NewSport",
+     "precio": 179999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-peak-hombre-476024/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "44",
+      "45",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 134999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/speedcross-peak-m",
+     "fecha": "12/11/2026",
+     "antes": 179999,
+     "nota": "Hombre",
+     "talles": [
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 134999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/speedcross-peak-w",
+     "fecha": "12/11/2026",
+     "antes": 179999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13753,7 +14796,50 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "NewSport",
+     "precio": 125999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-x-adventure-unisex-473208/p",
+     "fecha": "12/11/2026",
+     "antes": 180000,
+     "nota": "Unisex",
+     "talles": [
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 134999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/x-adventure-men",
+     "fecha": "12/11/2026",
+     "antes": 179999,
+     "nota": "Hombre",
+     "talles": [
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 134999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/x-adventure-w",
+     "fecha": "12/11/2026",
+     "antes": 179999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "39",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13770,7 +14856,36 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 119999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/alphacross-5-women",
+     "fecha": "12/11/2026",
+     "antes": 159999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 159999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/alphacross-5-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13787,7 +14902,86 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "NewSport",
+     "precio": 229999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-xa-pro-3d-v9-hombre-472718/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "NewSport",
+     "precio": 219999,
+     "cuotas": "9 cuotas sin interés",
+     "url": "https://www.newsport.com.ar/zapatillas-salomon-trial-running-xa-pro-3d-v9-mujer-478828/p",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5",
+      "38.5",
+      "39",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 229999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 229999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -13804,7 +14998,22 @@
    "terreno": "Trail",
    "esp": "",
    "pl": "Sin placa",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 151999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/thundercross-m",
+     "fecha": "12/11/2026",
+     "antes": 189999,
+     "nota": "Hombre",
+     "talles": [
+      "45",
+      "47"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,

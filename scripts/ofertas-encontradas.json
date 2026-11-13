@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-13T02:31:40.876Z",
+ "fecha": "2026-11-13T03:15:44.034Z",
  "tiendas": {
   "Saucony": {
    "tipo": "tiendanube",
@@ -20,13 +20,6 @@
    "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sporting.vtexassets.com",
    "buscados": 22,
    "encontrados": 5,
-   "errores": []
-  },
-  "Moov": {
-   "tipo": "sfcc",
-   "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 22,
-   "encontrados": 0,
    "errores": []
   },
   "Gostore": {
@@ -64,13 +57,6 @@
    "encontrados": 0,
    "errores": []
   },
-  "NewSport": {
-   "tipo": "vtex",
-   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | newsport.vtexassets.com",
-   "buscados": 22,
-   "encontrados": 13,
-   "errores": []
-  },
   "Vorax Running": {
    "tipo": "tiendanube",
    "pista": "static.cloudflareinsights.com",
@@ -91,6 +77,74 @@
    "buscados": 21,
    "encontrados": 44,
    "errores": []
+  },
+  "Moov": {
+   "tipo": "sfcc",
+   "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
+   "buscados": 128,
+   "encontrados": 2,
+   "errores": []
+  },
+  "NewSport": {
+   "tipo": "vtex",
+   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | newsport.vtexassets.com",
+   "buscados": 128,
+   "encontrados": 100,
+   "errores": []
+  },
+  "Solo Deportes": {
+   "tipo": "magento",
+   "pista": "Powered by Slider Revolution 6.5.3.3 - responsive, Mobile-Friendly Slider Plugin with comfortable drag and drop interface. | www-cdn3.solodeportes.com.ar",
+   "buscados": 128,
+   "encontrados": 47,
+   "errores": []
+  },
+  "Open Sports": {
+   "tipo": "magento",
+   "pista": "www.opensports.com.ar",
+   "buscados": 128,
+   "encontrados": 63,
+   "errores": []
+  },
+  "Sportline": {
+   "tipo": "vtex",
+   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sportline.vtexassets.com",
+   "buscados": 128,
+   "encontrados": 30,
+   "errores": []
+  },
+  "Puma Argentina": {
+   "tipo": "sfcc",
+   "pista": "cdn.cookielaw.org | static.cloudflareinsights.com",
+   "buscados": 5,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Under Armour Argentina": {
+   "tipo": "vtex",
+   "pista": "io2.vtex.com",
+   "buscados": 3,
+   "encontrados": 4,
+   "errores": []
+  },
+  "Asics": {
+   "tipo": "vtex",
+   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | asicsar.vtexassets.com",
+   "buscados": 12,
+   "encontrados": 5,
+   "errores": []
+  },
+  "New Balance": {
+   "tipo": "sfcc",
+   "pista": "ajax.googleapis.com | www.newbalance.com.ar | cdn.cquotient.com | static.cloudflareinsights.com",
+   "buscados": 0,
+   "encontrados": 0,
+   "errores": [
+    "new-balance-fresh-foam-x-1080-v14: búsqueda HTTP 404",
+    "new-balance-fresh-foam-x-880-v15: búsqueda HTTP 404",
+    "new-balance-fuelcell-rebel-v5: búsqueda HTTP 404",
+    "new-balance-fuelcell-sc-elite-v5: búsqueda HTTP 404"
+   ]
   }
  },
  "resultados": [
@@ -567,26 +621,6 @@
    "talles": [
     "37.5",
     "38"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudrunner-3",
-   "modelo": "On Cloudrunner 3",
-   "tienda": "Moov",
-   "nombre": "zapatillas on cloudrunner 3 mujer",
-   "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10054-723.html",
-   "nota": "Mujer",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 2,
-   "sinStock": false,
-   "talles": [
-    "36",
-    "37",
-    "38",
-    "38.5",
-    "39"
    ],
    "sistema": "AR"
   },
@@ -3655,1457 +3689,6 @@
   {
    "slug": "adidas-adizero-evo-sl",
    "modelo": "Adidas Adizero EVO SL",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adizero Evo Sl Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-evo-sl-hombre-ki4828/p",
-   "nota": "Hombre",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43.5",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adizero-evo-sl",
-   "modelo": "Adidas Adizero EVO SL",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adizero Evo Sl Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-evo-sl-mujer-ki4794/p",
-   "nota": "Mujer",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "38",
-    "38.5",
-    "39.5",
-    "40"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-42",
-   "modelo": "Nike Pegasus 42",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus 42",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-ib1873102/p",
-   "nota": "",
-   "precio": 309999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41.5",
-    "42",
-    "43"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-42",
-   "modelo": "Nike Pegasus 42",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus 42 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-mujer-ib1881113/p",
-   "nota": "Mujer",
-   "precio": 299999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-plus",
-   "modelo": "Nike Pegasus Plus",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus Plus Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-plus-hombre-fq7262012/p",
-   "nota": "Hombre",
-   "precio": 359999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "41.5",
-    "42",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-plus",
-   "modelo": "Nike Pegasus Plus",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus Plus Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-plus-mujer-fq7261102/p",
-   "nota": "Mujer",
-   "precio": 244999,
-   "antes": 350000,
-   "cuotas": 9,
-   "talles": [
-    "35",
-    "35.5",
-    "36",
-    "37",
-    "37.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-vomero-18",
-   "modelo": "Nike Vomero 18",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Vomero 18 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-18-hombre-hm6803301/p",
-   "nota": "Hombre",
-   "precio": 329999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41",
-    "41.5",
-    "43.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-vomero-18",
-   "modelo": "Nike Vomero 18",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Vomero 18 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-18-mujer-hm6804012/p",
-   "nota": "Mujer",
-   "precio": 329999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "36",
-    "37",
-    "37.5",
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-vomero-plus",
-   "modelo": "Nike Vomero Plus",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Vomero Plus Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-plus-hombre-hv8150002/p",
-   "nota": "Hombre",
-   "precio": 379999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-vomero-plus",
-   "modelo": "Nike Vomero Plus",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Vomero Plus Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-plus-mujer-hv8154012/p",
-   "nota": "Mujer",
-   "precio": 379999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "37.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-structure-26",
-   "modelo": "Nike Structure 26",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Structure 26 Hombre 26",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-26-hombre-26-hj1102001/p",
-   "nota": "Hombre",
-   "precio": 299999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45",
-    "46.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-structure-26",
-   "modelo": "Nike Structure 26",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Structure 26 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-26-mujer-hj1101113/p",
-   "nota": "Mujer",
-   "precio": 299999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "36",
-    "38",
-    "39",
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-invincible-3",
-   "modelo": "Nike Invincible 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Invincible 3 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-invincible-3-mujer-dr2660006/p",
-   "nota": "Mujer",
-   "precio": 307999,
-   "antes": 385000,
-   "cuotas": 9,
-   "talles": [
-    "35",
-    "35.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adizero-sl-2",
-   "modelo": "Adidas Adizero SL 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adizero Sl2 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-sl2-hombre-jq0354/p",
-   "nota": "Hombre",
-   "precio": 249999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adizero-sl-2",
-   "modelo": "Adidas Adizero SL 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adizero Sl2 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-sl2-mujer-ji2994/p",
-   "nota": "Mujer",
-   "precio": 249999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "36",
-    "36.5",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adizero-boston-13",
-   "modelo": "Adidas Adizero Boston 13",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adizero Boston 13 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-boston-13-hombre-js4938/p",
-   "nota": "Hombre",
-   "precio": 299999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adizero-boston-13",
-   "modelo": "Adidas Adizero Boston 13",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adizero Boston 13 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-boston-13-mujer-jp9246/p",
-   "nota": "Mujer",
-   "precio": 299999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "36.5",
-    "37.5",
-    "38"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-supernova-rise-3",
-   "modelo": "Adidas Supernova Rise 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Supernova Rise 3 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-hombre-jp8680/p",
-   "nota": "Hombre",
-   "precio": 195999,
-   "antes": 280000,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-supernova-rise-3",
-   "modelo": "Adidas Supernova Rise 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Supernova Rise 3 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-mujer-ki1666/p",
-   "nota": "Mujer",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "36",
-    "36.5",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "39.5",
-    "40"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-duramo-sl-2",
-   "modelo": "Adidas Duramo SL 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Duramo Sl 2 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-duramo-sl-2-mujer-ih8225/p",
-   "nota": "Mujer",
-   "precio": 139999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "40",
-    "41.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-duramo-sl-2",
-   "modelo": "Adidas Duramo SL 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Duramo Sl 2 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-duramo-sl-2-hombre-ih8215/p",
-   "nota": "Hombre",
-   "precio": 139999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "38.5",
-    "39",
-    "39.5",
-    "43",
-    "43.5",
-    "44",
-    "45",
-    "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-endorphin-speed-4",
-   "modelo": "Saucony Endorphin Speed 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Endorphin Speed 4 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-4-hombre-s20940100/p",
-   "nota": "Hombre",
-   "precio": 174999,
-   "antes": 250000,
-   "cuotas": 6,
-   "talles": [
-    "43.5",
-    "45.5",
-    "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "puma-velocity-nitro-4",
-   "modelo": "Puma Velocity Nitro 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Puma Running Velocity Nitro 4 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-4-hombre-31114004/p",
-   "nota": "Hombre",
-   "precio": 199999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "puma-velocity-nitro-4",
-   "modelo": "Puma Velocity Nitro 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Puma Running Velocity Nitro 4 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-4-mujer-31114101/p",
-   "nota": "Mujer",
-   "precio": 199999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "puma-deviate-nitro-4",
-   "modelo": "Puma Deviate Nitro 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Puma Running Deviate Nitro 4 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-puma-running-deviate-nitro-4-mujer-31212409/p",
-   "nota": "Mujer",
-   "precio": 202999,
-   "antes": 290000,
-   "cuotas": 9,
-   "talles": [
-    "35",
-    "36",
-    "36.5",
-    "37",
-    "37.5",
-    "38",
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "puma-deviate-nitro-4",
-   "modelo": "Puma Deviate Nitro 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Puma Running Deviate Nitro 4 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-puma-running-deviate-nitro-4-hombre-31212308/p",
-   "nota": "Hombre",
-   "precio": 202999,
-   "antes": 290000,
-   "cuotas": 9,
-   "talles": [
-    "39.5",
-    "40",
-    "41.5",
-    "43"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudmonster-3",
-   "modelo": "On Cloudmonster 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas On Running Cloudmonster 3 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudmonster-3-hombre-3mg10053388/p",
-   "nota": "Hombre",
-   "precio": 339999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "43.5",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudmonster-3",
-   "modelo": "On Cloudmonster 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas On Running Cloudmonster 3 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudmonster-3-mujer-3wg10036028/p",
-   "nota": "Mujer",
-   "precio": 339999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "37",
-    "38",
-    "38.5",
-    "39"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudsurfer-next",
-   "modelo": "On Cloudsurfer Next",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas On Running Cloudsurfer Next Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudsurfer-next-hombre-3me30020106/p",
-   "nota": "Hombre",
-   "precio": 269999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41",
-    "42",
-    "42.5",
-    "43"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudsurfer-next",
-   "modelo": "On Cloudsurfer Next",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas On Running Cloudsurfer Next Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudsurfer-next-mujer-3we30051025/p",
-   "nota": "Mujer",
-   "precio": 269999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "38",
-    "38.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudrunner-3",
-   "modelo": "On Cloudrunner 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas On Running Cloudrunner 3 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudrunner-3-mujer-3wg10054674/p",
-   "nota": "Mujer",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "38.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudrunner-3",
-   "modelo": "On Cloudrunner 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas On Running Cloudrunner 3 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudrunner-3-hombre-3mg10071043/p",
-   "nota": "Hombre",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "40",
-    "40.5",
-    "41",
-    "42",
-    "42.5",
-    "43",
-    "43.5",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "under-armour-velociti-3",
-   "modelo": "Under Armour Velociti 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Under Armour Running Velociti 3 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-velociti-3-mujer-3026124002/p",
-   "nota": "Mujer",
-   "precio": 89999,
-   "antes": 180000,
-   "cuotas": 6,
-   "talles": [
-    "34.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "under-armour-infinite-pro",
-   "modelo": "Under Armour Infinite Pro",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Under Armour Running Infinite Pro Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-infinite-pro-mujer-3027200001/p",
-   "nota": "Mujer",
-   "precio": 129999,
-   "antes": 200000,
-   "cuotas": 6,
-   "talles": [
-    "34.5",
-    "35",
-    "35.5",
-    "36.5",
-    "37",
-    "37.5",
-    "38",
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "under-armour-infinite-pro",
-   "modelo": "Under Armour Infinite Pro",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Under Armour Running Infinite Pro Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-infinite-pro-hombre-3027190001/p",
-   "nota": "Hombre",
-   "precio": 129999,
-   "antes": 200000,
-   "cuotas": 6,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "44.5",
-    "45",
-    "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-premium",
-   "modelo": "Nike Pegasus Premium",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus Premium Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-premium-hombre-hq2592005/p",
-   "nota": "Hombre",
-   "precio": 449999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-41",
-   "modelo": "Nike Pegasus 41",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus 41 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-41-hombre-fd2722002/p",
-   "nota": "Hombre",
-   "precio": 237999,
-   "antes": 280000,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "41",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-41",
-   "modelo": "Nike Pegasus 41",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus 41 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-41-mujer-fd2723002/p",
-   "nota": "Mujer",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35",
-    "35.5",
-    "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-quest-6",
-   "modelo": "Nike Quest 6",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Quest 6 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-quest-6-mujer-ih6231601/p",
-   "nota": "Mujer",
-   "precio": 161499,
-   "antes": 190000,
-   "cuotas": 6,
-   "talles": [
-    "35.5",
-    "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-quest-6",
-   "modelo": "Nike Quest 6",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Quest 6 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-quest-6-hombre-fd6033011/p",
-   "nota": "Hombre",
-   "precio": 161499,
-   "antes": 190000,
-   "cuotas": 6,
-   "talles": [
-    "37.5",
-    "39",
-    "39.5",
-    "41",
-    "42",
-    "43",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-revolution-8",
-   "modelo": "Nike Revolution 8",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Revolution 8 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-hombre-hj9198003/p",
-   "nota": "Hombre",
-   "precio": 139999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "37.5",
-    "39",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-revolution-8",
-   "modelo": "Nike Revolution 8",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Revolution 8 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-mujer-hj8485006/p",
-   "nota": "Mujer",
-   "precio": 129999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "35",
-    "35.5",
-    "36",
-    "37",
-    "37.5",
-    "38",
-    "39",
-    "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adistar-5",
-   "modelo": "Adidas Adistar 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adistar 5 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adistar-5-hombre-ih7178/p",
-   "nota": "Hombre",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "38.5",
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "45",
-    "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adistar-5",
-   "modelo": "Adidas Adistar 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Adistar 5 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adistar-5-mujer-kk4215/p",
-   "nota": "Mujer",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "37.5",
-    "38",
-    "38.5",
-    "39.5",
-    "40"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-supernova-stride-2",
-   "modelo": "Adidas Supernova Stride 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Supernova Stride 2.0 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-stride-2-0-mujer-ih8656/p",
-   "nota": "Mujer",
-   "precio": 149999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "34.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-ultraboost-5",
-   "modelo": "Adidas Ultraboost 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Ultraboost 5 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-ultraboost-5-hombre-id8817/p",
-   "nota": "Hombre",
-   "precio": 224999,
-   "antes": 300000,
-   "cuotas": 9,
-   "talles": [
-    "39"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-ultraboost-5",
-   "modelo": "Adidas Ultraboost 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Running Ultraboost 5 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-ultraboost-5-mujer-jq2914/p",
-   "nota": "Mujer",
-   "precio": 299999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "38"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "puma-velocity-nitro-5",
-   "modelo": "Puma Velocity Nitro 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Puma Running Velocity Nitro 5 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-5-mujer-31294503/p",
-   "nota": "Mujer",
-   "precio": 219999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "34.5",
-    "35",
-    "36",
-    "36.5",
-    "37",
-    "37.5",
-    "38",
-    "39",
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "puma-velocity-nitro-5",
-   "modelo": "Puma Velocity Nitro 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Puma Running Velocity Nitro 5 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-5-hombre-31294404/p",
-   "nota": "Hombre",
-   "precio": 219999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-trail-5-gtx",
-   "modelo": "Nike Pegasus Trail 5 GTX",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Outdoor Pegasus Trail 5 Gtx Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-trail-5-gtx-hombre-fq0908301/p",
-   "nota": "Hombre",
-   "precio": 258999,
-   "antes": 370000,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "46.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-trail-5-gtx",
-   "modelo": "Nike Pegasus Trail 5 GTX",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Outdoor Pegasus 5 Gtx Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-trail-running-pegasus-trail-5-gtx-mujer-fq0912200/p",
-   "nota": "Mujer",
-   "precio": 359999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37",
-    "37.5",
-    "38",
-    "39",
-    "40",
-    "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-zegama-2",
-   "modelo": "Nike Zegama 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Outdoor Zegama 2 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-outdoor-zegama-2-hombre-fd5190303/p",
-   "nota": "Hombre",
-   "precio": 399999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "40",
-    "41",
-    "42",
-    "43",
-    "43.5",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-zegama-2",
-   "modelo": "Nike Zegama 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Outdoor Zegama 2 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-outdoor-zegama-2-mujer-fd5191008/p",
-   "nota": "Mujer",
-   "precio": 399999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "39.5",
-    "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-terrex-agravic-4",
-   "modelo": "Adidas Terrex Agravic 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Adidas Outdoor Terrex Agravic 4 Trail Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-outdoor-terrex-agravic-4-trail-hombre-kj8870/p",
-   "nota": "Hombre",
-   "precio": 279999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-peregrine-15",
-   "modelo": "Saucony Peregrine 15",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Outdoor Peregrine 15 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-15-hombre-s20990245/p",
-   "nota": "Hombre",
-   "precio": 101694,
-   "antes": 184900,
-   "cuotas": 6,
-   "talles": [
-    "43.5",
-    "44",
-    "45",
-    "45.5",
-    "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "on-cloudultra-3",
-   "modelo": "On Cloudultra 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas On Trail Running Cloudultra 3 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-on-trail-running-cloudultra-3-hombre-3mf30231043/p",
-   "nota": "Hombre",
-   "precio": 339999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41",
-    "42",
-    "42.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-genesis-2",
-   "modelo": "Salomon Genesis 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Genesis 2 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-genesis-2-hombre-492998/p",
-   "nota": "Hombre",
-   "precio": 249999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-genesis-2",
-   "modelo": "Salomon Genesis 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Trail Running Genesis 2 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-genesis-2-mujer-454591/p",
-   "nota": "Mujer",
-   "precio": 249999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "40"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-ultra-flow-2",
-   "modelo": "Salomon Ultra Flow 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Ultra Flow 2 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-flow-2-mujer-478837/p",
-   "nota": "Mujer",
-   "precio": 189999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "36",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "40",
-    "40.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-ultra-flow-2",
-   "modelo": "Salomon Ultra Flow 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Ultra Flow 2 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-flow-2-hombre-478835/p",
-   "nota": "Hombre",
-   "precio": 189999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-slab-pulsar-4",
-   "modelo": "Salomon S/LAB Pulsar 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor S/lab Pulsar 4 Unisex",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-s-lab-pulsar-4-unisex-477703/p",
-   "nota": "Unisex",
-   "precio": 399999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "38",
-    "39",
-    "40",
-    "41.5",
-    "42.5",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-endorphin-speed-5",
-   "modelo": "Saucony Endorphin Speed 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Endorphin Speed 5 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-5-hombre-s2100797/p",
-   "nota": "Hombre",
-   "precio": 249899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-endorphin-speed-5",
-   "modelo": "Saucony Endorphin Speed 5",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Endorphin Speed 5 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-5-mujer-s11007343/p",
-   "nota": "Mujer",
-   "precio": 199919,
-   "antes": 249900,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "36.5",
-    "37",
-    "37.5",
-    "38",
-    "39"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-peregrine-16",
-   "modelo": "Saucony Peregrine 16",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Outdoor Peregrine 16 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-mujer-s11066100/p",
-   "nota": "Mujer",
-   "precio": 209899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "36.5",
-    "37",
-    "37.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-peregrine-16",
-   "modelo": "Saucony Peregrine 16",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Outdoor Peregrine 16 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-hombre-s1015551008/p",
-   "nota": "Hombre",
-   "precio": 209899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-peregrine-16",
-   "modelo": "Saucony Peregrine 16",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Outdoor Peregrine 16 El Cruce Unisex",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-el-cruce-unisex-s1020741001/p",
-   "nota": "Unisex",
-   "precio": 229899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-hurricane-25",
-   "modelo": "Saucony Hurricane 25",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Hurricane 25 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-25-hombre-s21026120/p",
-   "nota": "Hombre",
-   "precio": 145139,
-   "antes": 241900,
-   "cuotas": 6,
-   "talles": [
-    "42",
-    "43.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-xodus-ultra-4",
-   "modelo": "Saucony Xodus Ultra 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Xodus Ultra 4 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-xodus-ultra-4-mujer-s1016261005/p",
-   "nota": "Mujer",
-   "precio": 249899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "37",
-    "38"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-xodus-ultra-4",
-   "modelo": "Saucony Xodus Ultra 4",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Outdoor Xodus Ultra 4 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-xodus-ultra-4-hombre-s1016171009/p",
-   "nota": "Hombre",
-   "precio": 249899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41.5",
-    "42",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-winflo-11",
-   "modelo": "Nike Winflo 11",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Winflo 11 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-11-mujer-fj9510304/p",
-   "nota": "Mujer",
-   "precio": 195499,
-   "antes": 230000,
-   "cuotas": 9,
-   "talles": [
-    "35",
-    "35.5",
-    "37",
-    "37.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-winflo-11",
-   "modelo": "Nike Winflo 11",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Winflo 11 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-11-hombre-fj9509405/p",
-   "nota": "Hombre",
-   "precio": 195499,
-   "antes": 230000,
-   "cuotas": 9,
-   "talles": [
-    "37.5",
-    "39",
-    "43",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-winflo-12",
-   "modelo": "Nike Winflo 12",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Winflo 12 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-12-mujer-hv9273600/p",
-   "nota": "Mujer",
-   "precio": 229999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35",
-    "35.5",
-    "36",
-    "37",
-    "37.5",
-    "38",
-    "39",
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-winflo-12",
-   "modelo": "Nike Winflo 12",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Winflo 12 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-12-hombre-hv9272002/p",
-   "nota": "Hombre",
-   "precio": 229999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37.5",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-structure-plus",
-   "modelo": "Nike Structure Plus",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Structure Plus Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-mujer-hq3049001/p",
-   "nota": "Mujer",
-   "precio": 349999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5",
-    "36",
-    "37.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-structure-plus",
-   "modelo": "Nike Structure Plus",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Structure Plus Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-hombre-hq3049500/p",
-   "nota": "Hombre",
-   "precio": 339999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37.5",
-    "38",
-    "39",
-    "39.5",
-    "40",
-    "41"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adizero-evo-sl",
-   "modelo": "Adidas Adizero EVO SL",
    "tienda": "Vorax Running",
    "nombre": "ADIDAS Adizero Evo SL",
    "url": "https://voraxrunning.com.ar/productos/adidas-adizero-evo-sl-solar-yellow-plum/",
@@ -6061,244 +4644,6 @@
    "sistema": "US"
   },
   {
-   "slug": "saucony-triumph-24",
-   "modelo": "Saucony Triumph 24",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Triumph 24 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-mujer-s1009991016/p",
-   "nota": "Mujer",
-   "precio": 244899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "37",
-    "37.5",
-    "38",
-    "39"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-triumph-24",
-   "modelo": "Saucony Triumph 24",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Triumph 24 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-hombre-s1009971009/p",
-   "nota": "Hombre",
-   "precio": 244899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-triumph-23",
-   "modelo": "Saucony Triumph 23",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Triumph 23 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-23-hombre-s21023200/p",
-   "nota": "Hombre",
-   "precio": 160999,
-   "antes": 230000,
-   "cuotas": 6,
-   "talles": [
-    "43",
-    "43.5",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-hurricane-26",
-   "modelo": "Saucony Hurricane 26",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Hurricane 26 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-mujer-s1011061016/p",
-   "nota": "Mujer",
-   "precio": 241989,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37.5",
-    "38"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-hurricane-26",
-   "modelo": "Saucony Hurricane 26",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Hurricane 26 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-hombre-s1010981022/p",
-   "nota": "Hombre",
-   "precio": 241989,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-guide-19",
-   "modelo": "Saucony Guide 19",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Guide 19 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-hombre-s21058105/p",
-   "nota": "Hombre",
-   "precio": 189899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-guide-19",
-   "modelo": "Saucony Guide 19",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Guide 19 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-mujer-s1014651017/p",
-   "nota": "Mujer",
-   "precio": 189899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37.5",
-    "38",
-    "39"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-endorphin-azura",
-   "modelo": "Saucony Endorphin Azura",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Endorphin Azura Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-mujer-s11070124/p",
-   "nota": "Mujer",
-   "precio": 234899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "36.5",
-    "38"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-endorphin-azura",
-   "modelo": "Saucony Endorphin Azura",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Endorphin Azura Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-hombre-s21070124/p",
-   "nota": "Hombre",
-   "precio": 234899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-cohesion-19",
-   "modelo": "Saucony Cohesion 19",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Cohesion 19 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-cohesion-19-mujer-s1019221001/p",
-   "nota": "Mujer",
-   "precio": 119899,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "37"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-excursion-tr-18",
-   "modelo": "Saucony Excursion TR 18",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Outdoor Excursion Tr18 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-mujer-s1010071003/p",
-   "nota": "Mujer",
-   "precio": 134899,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "36",
-    "37",
-    "37.5",
-    "38",
-    "39"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-excursion-tr-18",
-   "modelo": "Saucony Excursion TR 18",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Outdoor Excursion Tr18 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-hombre-s1010061009/p",
-   "nota": "Hombre",
-   "precio": 134899,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-guide-tr",
-   "modelo": "Saucony Guide TR",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Guide Tr Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-tr-mujer-s1010941009/p",
-   "nota": "Mujer",
-   "precio": 235899,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "37",
-    "37.5",
-    "38"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "saucony-endorphin-pro-4",
    "modelo": "Saucony Endorphin Pro 4",
    "tienda": "Vorax Running",
@@ -6973,180 +5318,6 @@
    "sistema": "US"
   },
   {
-   "slug": "salomon-aero-blaze-3",
-   "modelo": "Salomon Aero Blaze 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Running Aero Blaze 3 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-running-aero-blaze-3-hombre-478744/p",
-   "nota": "Hombre",
-   "precio": 229999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "40",
-    "41",
-    "42",
-    "45",
-    "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-aero-blaze-3",
-   "modelo": "Salomon Aero Blaze 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Running Aero Blaze 3 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-running-aero-blaze-3-mujer-478750/p",
-   "nota": "Mujer",
-   "precio": 137999,
-   "antes": 230000,
-   "cuotas": 6,
-   "talles": [
-    "36"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-speedcross-6",
-   "modelo": "Salomon Speedcross 6",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Speedcross 6 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-mujer-491971/p",
-   "nota": "Mujer",
-   "precio": 229999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "37",
-    "39",
-    "40"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-speedcross-6",
-   "modelo": "Salomon Speedcross 6",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Speedcross 6 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-hombre-417386/p",
-   "nota": "Hombre",
-   "precio": 269999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41.5",
-    "45",
-    "46",
-    "47"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-speedcross-6-gtx",
-   "modelo": "Salomon Speedcross 6 GTX",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Speedcross 6 Gore-tex Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-gore-tex-mujer-478801/p",
-   "nota": "Mujer",
-   "precio": 274999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "36",
-    "37",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "40"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-alphaglide",
-   "modelo": "Salomon Alphaglide",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Alphaglide Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-mujer-478018/p",
-   "nota": "Mujer",
-   "precio": 159999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "37",
-    "38.5",
-    "39",
-    "40.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-alphaglide",
-   "modelo": "Salomon Alphaglide",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Alphaglide Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-hombre-479483/p",
-   "nota": "Hombre",
-   "precio": 159999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "45",
-    "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-ultra-glide-3",
-   "modelo": "Salomon Ultra Glide 3",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Ultra Glide 3 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-glide-3-hombre-477422/p",
-   "nota": "Hombre",
-   "precio": 229999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-speedcross-peak",
-   "modelo": "Salomon Speedcross Peak",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Outdoor Speedcross Peak Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-peak-hombre-476024/p",
-   "nota": "Hombre",
-   "precio": 179999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "44",
-    "45",
-    "47"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "salomon-x-adventure",
    "modelo": "Salomon X-Adventure",
    "tienda": "NewSport",
@@ -7158,45 +5329,6 @@
    "cuotas": 6,
    "talles": [
     "44.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-xa-pro-3d-v9",
-   "modelo": "Salomon XA Pro 3D V9",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Trail Running Xa Pro 3d V9 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-xa-pro-3d-v9-hombre-472718/p",
-   "nota": "Hombre",
-   "precio": 229999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-xa-pro-3d-v9",
-   "modelo": "Salomon XA Pro 3D V9",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Trial Running Xa Pro 3d V9 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-trial-running-xa-pro-3d-v9-mujer-478828/p",
-   "nota": "Mujer",
-   "precio": 219999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "37.5",
-    "38.5",
-    "39",
-    "40"
    ],
    "sistema": "AR"
   },
@@ -8146,6 +6278,4619 @@
    "talles": [
     "45",
     "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "Moov",
+   "nombre": "zapatillas on cloudrunner 3 mujer",
+   "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-mujer/ON3WG10054-723.html",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "Moov",
+   "nombre": "zapatillas on cloudrunner 3 hombre",
+   "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-hombre/ON3MG10071-536.html",
+   "nota": "Hombre",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "41",
+    "42",
+    "42.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-evo-sl",
+   "modelo": "Adidas Adizero EVO SL",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adizero Evo Sl Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-evo-sl-hombre-ki4828/p",
+   "nota": "Hombre",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-evo-sl",
+   "modelo": "Adidas Adizero EVO SL",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adizero Evo Sl Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-evo-sl-mujer-ki4794/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-42",
+   "modelo": "Nike Pegasus 42",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus 42",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-ib1873102/p",
+   "nota": "",
+   "precio": 309999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-42",
+   "modelo": "Nike Pegasus 42",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus 42 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-mujer-ib1881113/p",
+   "nota": "Mujer",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-42",
+   "modelo": "Nike Pegasus 42",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus 42 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-hombre-ib1873702/p",
+   "nota": "Hombre",
+   "precio": 309999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39",
+    "40",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "44.5",
+    "46.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-plus",
+   "modelo": "Nike Pegasus Plus",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus Plus Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-plus-hombre-fq7262002/p",
+   "nota": "Hombre",
+   "precio": 251999,
+   "antes": 360000,
+   "cuotas": 9,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-plus",
+   "modelo": "Nike Pegasus Plus",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus Plus Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-plus-mujer-fq7261102/p",
+   "nota": "Mujer",
+   "precio": 244999,
+   "antes": 350000,
+   "cuotas": 9,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-18",
+   "modelo": "Nike Vomero 18",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Vomero 18 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-18-hombre-hm6803301/p",
+   "nota": "Hombre",
+   "precio": 329999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41",
+    "41.5",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-18",
+   "modelo": "Nike Vomero 18",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Vomero 18 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-18-mujer-hm6804012/p",
+   "nota": "Mujer",
+   "precio": 329999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-plus",
+   "modelo": "Nike Vomero Plus",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Vomero Plus Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-plus-hombre-hv8150002/p",
+   "nota": "Hombre",
+   "precio": 379999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-plus",
+   "modelo": "Nike Vomero Plus",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Vomero Plus Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-plus-mujer-hv8154012/p",
+   "nota": "Mujer",
+   "precio": 379999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-26",
+   "modelo": "Nike Structure 26",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Structure 26 Hombre 26",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-26-hombre-26-hj1102001/p",
+   "nota": "Hombre",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45",
+    "46.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-26",
+   "modelo": "Nike Structure 26",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Structure 26 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-26-mujer-hj1101113/p",
+   "nota": "Mujer",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "36",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-invincible-3",
+   "modelo": "Nike Invincible 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Invincible 3 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-invincible-3-mujer-dr2660006/p",
+   "nota": "Mujer",
+   "precio": 307999,
+   "antes": 385000,
+   "cuotas": 9,
+   "talles": [
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-sl-2",
+   "modelo": "Adidas Adizero SL 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adizero Sl2 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-sl2-hombre-jq0354/p",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-sl-2",
+   "modelo": "Adidas Adizero SL 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adizero Sl2 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-sl2-mujer-ji2994/p",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-boston-13",
+   "modelo": "Adidas Adizero Boston 13",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adizero Boston 13 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-boston-13-hombre-js4938/p",
+   "nota": "Hombre",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-boston-13",
+   "modelo": "Adidas Adizero Boston 13",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adizero Boston 13 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adizero-boston-13-mujer-js4958/p",
+   "nota": "Mujer",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-rise-3",
+   "modelo": "Adidas Supernova Rise 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Supernova Rise 3 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-hombre-jp8680/p",
+   "nota": "Hombre",
+   "precio": 195999,
+   "antes": 280000,
+   "cuotas": 9,
+   "talles": [
+    "39.5",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-rise-3",
+   "modelo": "Adidas Supernova Rise 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Supernova Rise 3 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-mujer-ki1666/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-duramo-sl-2",
+   "modelo": "Adidas Duramo SL 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Duramo Sl 2 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-duramo-sl-2-mujer-ih8225/p",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-duramo-sl-2",
+   "modelo": "Adidas Duramo SL 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Duramo Sl 2 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-duramo-sl-2-hombre-ih8215/p",
+   "nota": "Hombre",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-4",
+   "modelo": "Saucony Endorphin Speed 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Endorphin Speed 4 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-4-hombre-s20940100/p",
+   "nota": "Hombre",
+   "precio": 174999,
+   "antes": 250000,
+   "cuotas": 6,
+   "talles": [
+    "43.5",
+    "45.5",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-4",
+   "modelo": "Puma Velocity Nitro 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Puma Running Velocity Nitro 4 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-4-hombre-31114004/p",
+   "nota": "Hombre",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-4",
+   "modelo": "Puma Velocity Nitro 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Puma Running Velocity Nitro 4 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-4-mujer-31114101/p",
+   "nota": "Mujer",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Puma Running Deviate Nitro 4 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-puma-running-deviate-nitro-4-hombre-31212308/p",
+   "nota": "Hombre",
+   "precio": 202999,
+   "antes": 290000,
+   "cuotas": 9,
+   "talles": [
+    "39.5",
+    "40",
+    "41.5",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Puma Running Deviate Nitro 4 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-puma-running-deviate-nitro-4-mujer-31212409/p",
+   "nota": "Mujer",
+   "precio": 202999,
+   "antes": 290000,
+   "cuotas": 9,
+   "talles": [
+    "35",
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudmonster-3",
+   "modelo": "On Cloudmonster 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas On Running Cloudmonster 3 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudmonster-3-hombre-3mg10053388/p",
+   "nota": "Hombre",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudmonster-3",
+   "modelo": "On Cloudmonster 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas On Running Cloudmonster 3 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudmonster-3-mujer-3wg10036028/p",
+   "nota": "Mujer",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudsurfer-next",
+   "modelo": "On Cloudsurfer Next",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas On Running Cloudsurfer Next Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudsurfer-next-hombre-3me30020106/p",
+   "nota": "Hombre",
+   "precio": 269999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41",
+    "42",
+    "42.5",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudsurfer-next",
+   "modelo": "On Cloudsurfer Next",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas On Running Cloudsurfer Next Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudsurfer-next-mujer-3we30051025/p",
+   "nota": "Mujer",
+   "precio": 269999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "38",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas On Running Cloudrunner 3 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudrunner-3-mujer-3wg10054674/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas On Running Cloudrunner 3 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-on-running-cloudrunner-3-hombre-3mg10071043/p",
+   "nota": "Hombre",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-velociti-3",
+   "modelo": "Under Armour Velociti 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Under Armour Running Velociti 3 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-velociti-3-mujer-3026124002/p",
+   "nota": "Mujer",
+   "precio": 89999,
+   "antes": 180000,
+   "cuotas": 6,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-pro",
+   "modelo": "Under Armour Infinite Pro",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Under Armour Running Infinite Pro Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-infinite-pro-mujer-3027200001/p",
+   "nota": "Mujer",
+   "precio": 129999,
+   "antes": 200000,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-pro",
+   "modelo": "Under Armour Infinite Pro",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Under Armour Running Infinite Pro Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-under-armour-running-infinite-pro-hombre-3027190001/p",
+   "nota": "Hombre",
+   "precio": 129999,
+   "antes": 200000,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "44.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-premium",
+   "modelo": "Nike Pegasus Premium",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus Premium Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-premium-hombre-hq2592005/p",
+   "nota": "Hombre",
+   "precio": 449999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-41",
+   "modelo": "Nike Pegasus 41",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus 41 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-41-hombre-fd2722002/p",
+   "nota": "Hombre",
+   "precio": 237999,
+   "antes": 280000,
+   "cuotas": 9,
+   "talles": [
+    "39",
+    "41",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-41",
+   "modelo": "Nike Pegasus 41",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Pegasus 41 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-41-mujer-fd2723002/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35",
+    "35.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Quest 6 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-quest-6-hombre-fd6033003/p",
+   "nota": "Hombre",
+   "precio": 169992,
+   "antes": 190000,
+   "cuotas": 6,
+   "talles": [
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Quest 6 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-quest-6-mujer-ih6231601/p",
+   "nota": "Mujer",
+   "precio": 161499,
+   "antes": 190000,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-revolution-8",
+   "modelo": "Nike Revolution 8",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Revolution 8 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-mujer-hj8485006/p",
+   "nota": "Mujer",
+   "precio": 129999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "38",
+    "39",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-revolution-8",
+   "modelo": "Nike Revolution 8",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Revolution 8 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-revolution-8-hombre-hj9198403/p",
+   "nota": "Hombre",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45",
+    "46.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adistar-5",
+   "modelo": "Adidas Adistar 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adistar 5 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adistar-5-hombre-ih7178/p",
+   "nota": "Hombre",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "38.5",
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adistar-5",
+   "modelo": "Adidas Adistar 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Adistar 5 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-adistar-5-mujer-kk4215/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37.5",
+    "38",
+    "38.5",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-stride-2",
+   "modelo": "Adidas Supernova Stride 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Supernova Stride 2.0 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-stride-2-0-mujer-ih8656/p",
+   "nota": "Mujer",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-ultraboost-5",
+   "modelo": "Adidas Ultraboost 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Ultraboost 5 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-ultraboost-5-hombre-id8817/p",
+   "nota": "Hombre",
+   "precio": 224999,
+   "antes": 300000,
+   "cuotas": 9,
+   "talles": [
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-ultraboost-5",
+   "modelo": "Adidas Ultraboost 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Running Ultraboost 5 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-ultraboost-5-mujer-jq2914/p",
+   "nota": "Mujer",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-5",
+   "modelo": "Puma Velocity Nitro 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Puma Running Velocity Nitro 5 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-5-mujer-31294503/p",
+   "nota": "Mujer",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "34.5",
+    "35",
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-5",
+   "modelo": "Puma Velocity Nitro 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Puma Running Velocity Nitro 5 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-puma-running-velocity-nitro-5-hombre-31294404/p",
+   "nota": "Hombre",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-trail-5-gtx",
+   "modelo": "Nike Pegasus Trail 5 GTX",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Outdoor Pegasus Trail 5 Gtx Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-trail-5-gtx-hombre-fq0908301/p",
+   "nota": "Hombre",
+   "precio": 258999,
+   "antes": 370000,
+   "cuotas": 9,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "46.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-trail-5-gtx",
+   "modelo": "Nike Pegasus Trail 5 GTX",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Outdoor Pegasus 5 Gtx Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-trail-running-pegasus-trail-5-gtx-mujer-fq0912200/p",
+   "nota": "Mujer",
+   "precio": 359999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-zegama-2",
+   "modelo": "Nike Zegama 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Outdoor Zegama 2 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-outdoor-zegama-2-hombre-fd5190303/p",
+   "nota": "Hombre",
+   "precio": 399999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "40",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-zegama-2",
+   "modelo": "Nike Zegama 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Outdoor Zegama 2 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-outdoor-zegama-2-mujer-fd5191008/p",
+   "nota": "Mujer",
+   "precio": 399999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "39.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-terrex-agravic-4",
+   "modelo": "Adidas Terrex Agravic 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Adidas Outdoor Terrex Agravic 4 Trail Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-outdoor-terrex-agravic-4-trail-hombre-kj8870/p",
+   "nota": "Hombre",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-15",
+   "modelo": "Saucony Peregrine 15",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Peregrine 15 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-15-hombre-s20990245/p",
+   "nota": "Hombre",
+   "precio": 101694,
+   "antes": 184900,
+   "cuotas": 6,
+   "talles": [
+    "44",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudultra-3",
+   "modelo": "On Cloudultra 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas On Trail Running Cloudultra 3 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-on-trail-running-cloudultra-3-hombre-3mf30231043/p",
+   "nota": "Hombre",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41",
+    "42",
+    "42.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Genesis 2 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-genesis-2-hombre-492998/p",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Trail Running Genesis 2 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-genesis-2-mujer-454591/p",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Ultra Flow 2 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-flow-2-mujer-478837/p",
+   "nota": "Mujer",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "36",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Ultra Flow 2 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-flow-2-hombre-478835/p",
+   "nota": "Hombre",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-slab-pulsar-4",
+   "modelo": "Salomon S/LAB Pulsar 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor S/lab Pulsar 4 Unisex",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-s-lab-pulsar-4-unisex-477703/p",
+   "nota": "Unisex",
+   "precio": 399999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "38",
+    "39",
+    "40",
+    "41.5",
+    "42.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Endorphin Speed 5 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-5-hombre-s2100797/p",
+   "nota": "Hombre",
+   "precio": 249899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Endorphin Speed 5 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-speed-5-mujer-s11007343/p",
+   "nota": "Mujer",
+   "precio": 199919,
+   "antes": 249900,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Peregrine 16 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-mujer-s11066100/p",
+   "nota": "Mujer",
+   "precio": 209899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Peregrine 16 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-hombre-s1015551008/p",
+   "nota": "Hombre",
+   "precio": 209899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Peregrine 16 El Cruce Unisex",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-peregrine-16-el-cruce-unisex-s1020741001/p",
+   "nota": "Unisex",
+   "precio": 229899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-25",
+   "modelo": "Saucony Hurricane 25",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Hurricane 25 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-25-hombre-s21026120/p",
+   "nota": "Hombre",
+   "precio": 145139,
+   "antes": 241900,
+   "cuotas": 6,
+   "talles": [
+    "42",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Xodus Ultra 4 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-xodus-ultra-4-mujer-s1016261005/p",
+   "nota": "Mujer",
+   "precio": 249899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Xodus Ultra 4 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-xodus-ultra-4-hombre-s1016171009/p",
+   "nota": "Hombre",
+   "precio": 249899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Winflo 11 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-11-mujer-fj9510304/p",
+   "nota": "Mujer",
+   "precio": 195499,
+   "antes": 230000,
+   "cuotas": 9,
+   "talles": [
+    "35",
+    "35.5",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Winflo 11 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-11-hombre-fj9509405/p",
+   "nota": "Hombre",
+   "precio": 195499,
+   "antes": 230000,
+   "cuotas": 9,
+   "talles": [
+    "37.5",
+    "39",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-12",
+   "modelo": "Nike Winflo 12",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Winflo 12 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-12-mujer-hv9273600/p",
+   "nota": "Mujer",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-12",
+   "modelo": "Nike Winflo 12",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Winflo 12 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-winflo-12-hombre-hv9272002/p",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-plus",
+   "modelo": "Nike Structure Plus",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Structure Plus Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-mujer-hq3049001/p",
+   "nota": "Mujer",
+   "precio": 349999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "35.5",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-plus",
+   "modelo": "Nike Structure Plus",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Nike Running Structure Plus Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-nike-running-structure-plus-hombre-hq3049500/p",
+   "nota": "Hombre",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Triumph 24 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-mujer-s1009991016/p",
+   "nota": "Mujer",
+   "precio": 244899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Triumph 24 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-24-hombre-s1009971009/p",
+   "nota": "Hombre",
+   "precio": 244899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Triumph 23 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-23-hombre-s21023200/p",
+   "nota": "Hombre",
+   "precio": 160999,
+   "antes": 230000,
+   "cuotas": 6,
+   "talles": [
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Hurricane 26 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-mujer-s1011061016/p",
+   "nota": "Mujer",
+   "precio": 241989,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Hurricane 26 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-hurricane-26-hombre-s1010981022/p",
+   "nota": "Hombre",
+   "precio": 241989,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Guide 19 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-mujer-s1014651017/p",
+   "nota": "Mujer",
+   "precio": 189899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Guide 19 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-19-hombre-s21058105/p",
+   "nota": "Hombre",
+   "precio": 189899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Endorphin Azura Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-mujer-s11070124/p",
+   "nota": "Mujer",
+   "precio": 234899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "36.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Endorphin Azura Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-hombre-s21070124/p",
+   "nota": "Hombre",
+   "precio": 234899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-cohesion-19",
+   "modelo": "Saucony Cohesion 19",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Cohesion 19 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-cohesion-19-mujer-s1019221001/p",
+   "nota": "Mujer",
+   "precio": 119899,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Excursion Tr18 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-mujer-s1010071003/p",
+   "nota": "Mujer",
+   "precio": 134899,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Outdoor Excursion Tr18 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-outdoor-excursion-tr18-hombre-s1010061009/p",
+   "nota": "Hombre",
+   "precio": 134899,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Saucony Running Guide Tr Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-guide-tr-mujer-s1010941009/p",
+   "nota": "Mujer",
+   "precio": 235899,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-aero-blaze-3",
+   "modelo": "Salomon Aero Blaze 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Running Aero Blaze 3 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-running-aero-blaze-3-hombre-478744/p",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "40",
+    "41",
+    "42",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-aero-blaze-3",
+   "modelo": "Salomon Aero Blaze 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Running Aero Blaze 3 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-running-aero-blaze-3-mujer-478750/p",
+   "nota": "Mujer",
+   "precio": 137999,
+   "antes": 230000,
+   "cuotas": 6,
+   "talles": [
+    "36"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-6",
+   "modelo": "Salomon Speedcross 6",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Speedcross 6 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-mujer-491971/p",
+   "nota": "Mujer",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-6",
+   "modelo": "Salomon Speedcross 6",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Speedcross 6 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-hombre-417386/p",
+   "nota": "Hombre",
+   "precio": 269999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-6-gtx",
+   "modelo": "Salomon Speedcross 6 GTX",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Speedcross 6 Gore-tex Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-6-gore-tex-mujer-478801/p",
+   "nota": "Mujer",
+   "precio": 274999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-alphaglide",
+   "modelo": "Salomon Alphaglide",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Alphaglide Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-mujer-478018/p",
+   "nota": "Mujer",
+   "precio": 159999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "38.5",
+    "39",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-alphaglide",
+   "modelo": "Salomon Alphaglide",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Alphaglide Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-hombre-479483/p",
+   "nota": "Hombre",
+   "precio": 159999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-glide-3",
+   "modelo": "Salomon Ultra Glide 3",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Ultra Glide 3 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-ultra-glide-3-hombre-477422/p",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-peak",
+   "modelo": "Salomon Speedcross Peak",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Outdoor Speedcross Peak Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-speedcross-peak-hombre-476024/p",
+   "nota": "Hombre",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "44",
+    "45",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-xa-pro-3d-v9",
+   "modelo": "Salomon XA Pro 3D V9",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Trail Running Xa Pro 3d V9 Hombre",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-xa-pro-3d-v9-hombre-472718/p",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-xa-pro-3d-v9",
+   "modelo": "Salomon XA Pro 3D V9",
+   "tienda": "NewSport",
+   "nombre": "Zapatillas Salomon Trial Running Xa Pro 3d V9 Mujer",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-trial-running-xa-pro-3d-v9-mujer-478828/p",
+   "nota": "Mujer",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 9,
+   "talles": [
+    "37.5",
+    "38.5",
+    "39",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-18",
+   "modelo": "Nike Vomero 18",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Vomero 18 Verde",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-vomero-18-verde.html",
+   "nota": "",
+   "precio": 329999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-18",
+   "modelo": "Nike Vomero 18",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Vomero 18 Mujer Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-vomero-18-mujer-negra.html",
+   "nota": "Mujer",
+   "precio": 329999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-26",
+   "modelo": "Nike Structure 26",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Structure 26 Mujer Fucsia",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-structure-26-mujer-fucsia.html",
+   "nota": "Mujer",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-10",
+   "modelo": "Nike Winflo 10",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Air Winflo 10 Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-10-negra.html",
+   "nota": "",
+   "precio": 175999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-10",
+   "modelo": "Nike Winflo 10",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Air Winflo 10 Mujer Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-10-mujer-negra.html",
+   "nota": "Mujer",
+   "precio": 175999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-boston-13",
+   "modelo": "Adidas Adizero Boston 13",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Adizero Boston 13 Naranja",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-adizero-boston-13-naranja.html",
+   "nota": "",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "41.5",
+    "42",
+    "43",
+    "44",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-boston-13",
+   "modelo": "Adidas Adizero Boston 13",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Adizero Boston 13 Mujer Lila",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-adizero-boston-13-mujer-lila.html",
+   "nota": "Mujer",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-rise-3",
+   "modelo": "Adidas Supernova Rise 3",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Supernova Rise 3 Gris",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-gris.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-rise-3",
+   "modelo": "Adidas Supernova Rise 3",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Supernova Rise 3 Mujer Azulino",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-mujer-azulino.html",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-duramo-sl-2",
+   "modelo": "Adidas Duramo SL 2",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Duramo SL 2 Azul",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl-2-azul.html",
+   "nota": "",
+   "precio": 99999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-duramo-sl-2",
+   "modelo": "Adidas Duramo SL 2",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Duramo SL2 Mujer Celeste",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl2-mujer-celeste-1.html",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36",
+    "39.5",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-novablast-5",
+   "modelo": "Asics Novablast 5",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics Novablast 5 Azul",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-novablast-5-azul-1.html",
+   "nota": "",
+   "precio": 319900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gt-2000-14",
+   "modelo": "Asics GT-2000 14",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics GT-2000 14 Celeste",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-celeste.html",
+   "nota": "",
+   "precio": 279900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gt-2000-14",
+   "modelo": "Asics GT-2000 14",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics GT-2000 14 Mujer Verde",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-mujer-verde.html",
+   "nota": "Mujer",
+   "precio": 279900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "37",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-cumulus-27",
+   "modelo": "Asics Gel-Cumulus 27",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics Gel-Cumulus 27 Verde",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-cumulus-27-verde.html",
+   "nota": "",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-cumulus-27",
+   "modelo": "Asics Gel-Cumulus 27",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics Gel-Cumulus 27 Mujer Coral",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-cumulus-27-mujer.html",
+   "nota": "Mujer",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "38.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-4",
+   "modelo": "Puma Velocity Nitro 4",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma Velocity Nitro 4 Celeste",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-4-celeste.html",
+   "nota": "",
+   "precio": 159999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-4",
+   "modelo": "Puma Velocity Nitro 4",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma Velocity Nitro 4 Mujer Verde",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-mujer-verde.html",
+   "nota": "Mujer",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "36",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma Deviate Nitro 4 Celeste",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-deviate-nitro-4-celeste.html",
+   "nota": "",
+   "precio": 289999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma Deviate Nitro 4 Mujer Naranja",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-deviate-nitro-4-mujer-naranja.html",
+   "nota": "Mujer",
+   "precio": 289999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudsurfer-next",
+   "modelo": "On Cloudsurfer Next",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running On Cloudsurfer Next Multicolor",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-on-cloudsurfer-next-multicolor.html",
+   "nota": "",
+   "precio": 215999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40.5",
+    "41",
+    "41.5",
+    "42",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudsurfer-next",
+   "modelo": "On Cloudsurfer Next",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running ON Cloudsurfer Next Mujer Multicolor",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-on-cloudsurfer-next-mujer-multicolor.html",
+   "nota": "Mujer",
+   "precio": 215999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-velociti-3",
+   "modelo": "Under Armour Velociti 3",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Under Armour Velociti 3 Amarilla",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-velociti-3-amarilla.html",
+   "nota": "",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-velociti-3",
+   "modelo": "Under Armour Velociti 3",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Under Armour Velociti 3 Mujer Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-velociti-3-mujer-negra.html",
+   "nota": "Mujer",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-pro",
+   "modelo": "Under Armour Infinite Pro",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Infinite Pro We Run Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-infinite-pro-we-run-negra.html",
+   "nota": "",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "40",
+    "41",
+    "41.5",
+    "43",
+    "43.5",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-pro",
+   "modelo": "Under Armour Infinite Pro",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Under Armour Infinite Pro Mujer Lila",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-infinite-pro-mujer-lila.html",
+   "nota": "Mujer",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gt-1000-14",
+   "modelo": "Asics GT-1000 14",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics GT-1000 14 Roja",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-1000-14-roja.html",
+   "nota": "",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-excite-11",
+   "modelo": "Asics Gel-Excite 11",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics Gel-Excite 11 Gris",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-excite-11-gris.html",
+   "nota": "",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-excite-11",
+   "modelo": "Asics Gel-Excite 11",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics Gel-Excite 11 Mujer Coral",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-excite-11-mujer-coral.html",
+   "nota": "Mujer",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "40.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-dynablast-5",
+   "modelo": "Asics Dynablast 5",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics Dynablast 5 Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-dynablast-5-negra.html",
+   "nota": "",
+   "precio": 279900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42.5",
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-dynablast-5",
+   "modelo": "Asics Dynablast 5",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Asics Dynablast 5 Mujer Celeste",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-dynablast-5-mujer-celeste.html",
+   "nota": "Mujer",
+   "precio": 279900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-41",
+   "modelo": "Nike Pegasus 41",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Pegasus 41 Gris",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-pegasus-41-gris.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-41",
+   "modelo": "Nike Pegasus 41",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Air Zoom Pegasus 41 Mujer Fucsia",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-zoom-pegasus-41-mujer-fucsia.html",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "36",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas Nike Quest 6 Mujer Rosa",
+   "url": "https://www.solodeportes.com.ar/zapatillas-nike-quest-6-mujer-rosa.html",
+   "nota": "Mujer",
+   "precio": 169999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Quest 6 Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-quest-6-negra-1.html",
+   "nota": "",
+   "precio": 169999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-revolution-8",
+   "modelo": "Nike Revolution 8",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Revolution 8 Azul",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-revolution-8-azul.html",
+   "nota": "",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "39",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-revolution-8",
+   "modelo": "Nike Revolution 8",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Revolution 8 Mujer Crudo",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-revolution-8-mujer-crudo-1.html",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-stride-2",
+   "modelo": "Adidas Supernova Stride 2",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Supernova Stride 2 Verde",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-stride-2-verde.html",
+   "nota": "",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-stride-2",
+   "modelo": "Adidas Supernova Stride 2",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Supernova Stride 2 Mujer Lila",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-stride-2-mujer-lila.html",
+   "nota": "Mujer",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-ultraboost-5",
+   "modelo": "Adidas Ultraboost 5",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Ultraboost 5 Azul",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-ultraboost-5-azul.html",
+   "nota": "",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "38",
+    "38.5",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-ultraboost-5",
+   "modelo": "Adidas Ultraboost 5",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Adidas Ultraboost 5 Mujer Rosa",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-ultraboost-5-mujer-rosa-43691476.html",
+   "nota": "Mujer",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-foreverrun-nitro-2",
+   "modelo": "Puma ForeverRun Nitro 2",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma ForeverRun Nitro 2 Lila",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-foreverrun-nitro-2-lila.html",
+   "nota": "",
+   "precio": 175999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-foreverrun-nitro-2",
+   "modelo": "Puma ForeverRun Nitro 2",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma Foreverrun Nitro 2 Mujer Lila",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-foreverrun-nitro-2-mujer-lila.html",
+   "nota": "Mujer",
+   "precio": 175999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "36",
+    "36.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-5",
+   "modelo": "Puma Velocity Nitro 5",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma Velocity Nitro 5 Roja",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-5-roja.html",
+   "nota": "",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-5",
+   "modelo": "Puma Velocity Nitro 5",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Puma Velocity Nitro 5 Mujer Negra",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-5-mujer-negra.html",
+   "nota": "Mujer",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "36",
+    "36.5",
+    "37",
+    "38",
+    "39",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Air Winflo 11 Azul",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-11-azul.html",
+   "nota": "",
+   "precio": 183999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Solo Deportes",
+   "nombre": "Zapatillas De Running Nike Winflo 11 Mujer Celeste",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-winflo-11-mujer-celeste.html",
+   "nota": "Mujer",
+   "precio": 183999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "35.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-evo-sl",
+   "modelo": "Adidas Adizero EVO SL",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Adizero Evo SL",
+   "url": "https://www.opensports.com.ar/zapatillas-adizero-evo-sl-ki9945.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-42",
+   "modelo": "Nike Pegasus 42",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Air Zoom Pegasus 42",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-air-zoom-pegasus-42-ib1873-001.html",
+   "nota": "",
+   "precio": 309999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-plus",
+   "modelo": "Nike Pegasus Plus",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Pegasus Plus",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-plus-fq7261-002.html",
+   "nota": "",
+   "precio": 314999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35",
+    "36",
+    "37",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-18",
+   "modelo": "Nike Vomero 18",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Vomero 18",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-vomero-18-hm6803-402.html",
+   "nota": "",
+   "precio": 329999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vomero-plus",
+   "modelo": "Nike Vomero Plus",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Vomero Plus",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-vomero-plus-hv8154-002.html",
+   "nota": "",
+   "precio": 379999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-26",
+   "modelo": "Nike Structure 26",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Structure 26",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-structure-26-hj1102-002.html",
+   "nota": "",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-invincible-3",
+   "modelo": "Nike Invincible 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Invincible 3",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-invincible-3-dr2660-008.html",
+   "nota": "",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vaporfly-3",
+   "modelo": "Nike Vaporfly 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Vaporfly 3 Electric",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-vaporfly-3-electric-fn7674-900.html",
+   "nota": "",
+   "precio": 349999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-sl-2",
+   "modelo": "Adidas Adizero SL 2",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Adizero SL 2",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-sl-2-jq0814.html",
+   "nota": "",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-boston-13",
+   "modelo": "Adidas Adizero Boston 13",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Adizero Boston 13",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-boston-13-kk1046.html",
+   "nota": "",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "36"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-supernova-rise-3",
+   "modelo": "Adidas Supernova Rise 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Supernova Rise 3",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-supernova-rise-3-ki9227.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-adios-pro-5",
+   "modelo": "Adidas Adizero Adios Pro 5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Adizero Adios Pro 5",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-adios-pro-5-kj7042.html",
+   "nota": "",
+   "precio": 549999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-duramo-sl-2",
+   "modelo": "Adidas Duramo SL 2",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Duramo SL 2",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-duramo-sl-2-kj4144.html",
+   "nota": "",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-nimbus-27",
+   "modelo": "Asics Gel-Nimbus 27",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Asics Gel-Nimbus 27",
+   "url": "https://www.opensports.com.ar/zapatillas-asics-gel-nimbus-27-1012b753-401.html",
+   "nota": "",
+   "precio": 289999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-kayano-32",
+   "modelo": "Asics Gel-Kayano 32",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Asics Gel-Kayano 32",
+   "url": "https://www.opensports.com.ar/zapatillas-asics-gel-kayano-32-1011c052-101.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40.5",
+    "41",
+    "42",
+    "42.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-cumulus-27",
+   "modelo": "Asics Gel-Cumulus 27",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Asics Gel-Cumulus 27",
+   "url": "https://www.opensports.com.ar/zapatillas-asics-gel-cumulus-27-1012b772-250.html",
+   "nota": "",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "37",
+    "38.5",
+    "40.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "new-balance-fresh-foam-x-1080-v14",
+   "modelo": "New Balance Fresh Foam X 1080 v14",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas New Balance Fresh Foam X 1080 v14",
+   "url": "https://www.opensports.com.ar/zapatillas-new-balance-fresh-foam-x-1080-v14-w108014e.html",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "new-balance-fresh-foam-x-1080-v14",
+   "modelo": "New Balance Fresh Foam X 1080 v14",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas New Balance Fresh Foam X 1080 v14",
+   "url": "https://www.opensports.com.ar/zapatillas-new-balance-fresh-foam-x-1080-v14-m108014s.html",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "new-balance-fuelcell-rebel-v5",
+   "modelo": "New Balance FuelCell Rebel v5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas New Balance Fuelcell Rebel v5",
+   "url": "https://www.opensports.com.ar/zapatillas-new-balance-fuelcell-rebel-v5-mfcxlo5.html",
+   "nota": "",
+   "precio": 209999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39.5",
+    "40.5",
+    "41",
+    "41.5",
+    "43",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-5",
+   "modelo": "Saucony Endorphin Pro 5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Endorphin Pro 5",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-endorphin-pro-5-s11064-131.html",
+   "nota": "",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-4",
+   "modelo": "Puma Velocity Nitro 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Puma Velocity Nitro 4 Digitokyo",
+   "url": "https://www.opensports.com.ar/zapatillas-puma-velocity-nitro-4-digitokyo-31191301.html",
+   "nota": "",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Puma Deviate Nitro 4 Mujer",
+   "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212404.html",
+   "nota": "Mujer",
+   "precio": 215999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35",
+    "36",
+    "36.5",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Puma Deviate Nitro 4 Hombre",
+   "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212304.html",
+   "nota": "Hombre",
+   "precio": 289999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Puma Deviate Nitro 4",
+   "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212319.html",
+   "nota": "",
+   "precio": 289999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudmonster-3",
+   "modelo": "On Cloudmonster 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas On Cloudmonster 3",
+   "url": "https://www.opensports.com.ar/zapatillas-on-cloudmonster-3-3wg10034-859.html",
+   "nota": "",
+   "precio": 339999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas On Cloudrunner 3",
+   "url": "https://www.opensports.com.ar/zapatillas-on-cloudrunner-3-3mg10074-351.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40.5",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-22",
+   "modelo": "Saucony Triumph 22",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Triumph 22",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-triumph-22-s20964-135.html",
+   "nota": "",
+   "precio": 169999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-premium",
+   "modelo": "Nike Pegasus Premium",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Pegasus Premium",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-premium-hq2593-602.html",
+   "nota": "",
+   "precio": 349999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5",
+    "36",
+    "38",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-41",
+   "modelo": "Nike Pegasus 41",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Pegasus 41",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-41-hf7362-900.html",
+   "nota": "",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Quest 6",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-quest-6-fd6033-107.html",
+   "nota": "",
+   "precio": 159999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39",
+    "39.5",
+    "43",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-revolution-8",
+   "modelo": "Nike Revolution 8",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Revolution 8",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-revolution-8-hj9198-002.html",
+   "nota": "",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adistar-5",
+   "modelo": "Adidas Adistar 5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Adistar 5",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-adistar-5-kk4209.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-ultraboost-5",
+   "modelo": "Adidas Ultraboost 5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Ultraboost 5",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-ultraboost-5-id8847.html",
+   "nota": "",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-takumi-sen-10",
+   "modelo": "Adidas Adizero Takumi Sen 10",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Adizero Takumi Sen 10",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-takumi-sen-10-jq2819.html",
+   "nota": "",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-foreverrun-nitro-2",
+   "modelo": "Puma ForeverRun Nitro 2",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Puma Foreverrun Nitro 2",
+   "url": "https://www.opensports.com.ar/zapatillas-puma-foreverrun-nitro-2-31047104.html",
+   "nota": "",
+   "precio": 159999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-5",
+   "modelo": "Puma Velocity Nitro 5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Puma Velocity Nitro 5",
+   "url": "https://www.opensports.com.ar/zapatillas-puma-velocity-nitro-5-31294404.html",
+   "nota": "",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-trail-5-gtx",
+   "modelo": "Nike Pegasus Trail 5 GTX",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Pegasus Trail 5 Gtx",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-trail-5-gtx-fq0908-301.html",
+   "nota": "",
+   "precio": 305999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-kiger-9",
+   "modelo": "Nike Kiger 9",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Kiger 9",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-kiger-9-dr2693-600.html",
+   "nota": "",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-zegama-2",
+   "modelo": "Nike Zegama 2",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Zoomx Zegama 2",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-zoomx-zegama-2-fd5191-600.html",
+   "nota": "",
+   "precio": 319999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-trabuco-13",
+   "modelo": "Asics Gel-Trabuco 13",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Asics Gel-Trabuco 13",
+   "url": "https://www.opensports.com.ar/zapatillas-asics-gel-trabuco-13-1011b973-800.html",
+   "nota": "",
+   "precio": 319900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-terrex-agravic-4",
+   "modelo": "Adidas Terrex Agravic 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Adidas Terrex Agravic 4",
+   "url": "https://www.opensports.com.ar/zapatillas-adidas-terrex-agravic-4-kj8870.html",
+   "nota": "",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Hoka Clifton 10",
+   "url": "https://www.opensports.com.ar/zapatillas-hoka-clifton-10-1162031-grtm.html",
+   "nota": "",
+   "precio": 324500,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38.5",
+    "39",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-bondi-9",
+   "modelo": "Hoka Bondi 9",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Hoka Bondi 9",
+   "url": "https://www.opensports.com.ar/zapatillas-hoka-bondi-9-1162012-cyg.html",
+   "nota": "",
+   "precio": 292000,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-skyflow",
+   "modelo": "Hoka Skyflow",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Hoka Skyflow",
+   "url": "https://www.opensports.com.ar/zapatillas-hoka-skyflow-1155111-bwht.html",
+   "nota": "",
+   "precio": 350500,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-speedgoat-6",
+   "modelo": "Hoka Speedgoat 6",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Hoka Speedgoat 6",
+   "url": "https://www.opensports.com.ar/zapatillas-hoka-speedgoat-6-1147791-ttt.html",
+   "nota": "",
+   "precio": 267999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "42.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mafate-5",
+   "modelo": "Hoka Mafate 5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Hoka Mafate 5",
+   "url": "https://www.opensports.com.ar/zapatillas-hoka-mafate-5-1168722-tvm.html",
+   "nota": "",
+   "precio": 450500,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Endorphin Speed 5",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-endorphin-speed-5-s101391-1010.html",
+   "nota": "",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Peregrine 16",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-peregrine-16-s101555-1008.html",
+   "nota": "",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Xodus Ultra 4",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-xodus-ultra-4-s101617-1009.html",
+   "nota": "",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Winflo 11",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-winflo-11-fj9510-004.html",
+   "nota": "",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-vaporfly-4",
+   "modelo": "Nike Vaporfly 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Nike Vaporfly 4",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-vaporfly-4-hf6412-001.html",
+   "nota": "",
+   "precio": 379999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Triumph 24",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-triumph-24-s100999-1016.html",
+   "nota": "",
+   "precio": 244900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Triumph 23",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-triumph-23-s21023-200.html",
+   "nota": "",
+   "precio": 164900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "41.5",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Hurricane 26",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-hurricane-26-s101106-1016.html",
+   "nota": "",
+   "precio": 241990,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37",
+    "37.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Guide 19",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-guide-19-s21058-100.html",
+   "nota": "",
+   "precio": 189900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-elite-3",
+   "modelo": "Saucony Endorphin Elite 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Endorphin Elite 3",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-endorphin-elite-3-s100981-1021.html",
+   "nota": "",
+   "precio": 429900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "42",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Saucony Guide TR",
+   "url": "https://www.opensports.com.ar/zapatillas-saucony-guide-tr-s101094-1009.html",
+   "nota": "",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-aero-glide-3",
+   "modelo": "Salomon Aero Glide 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Salomon Aero Glide 3",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-aero-glide-3-479758.html",
+   "nota": "",
+   "precio": 159999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35",
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-6",
+   "modelo": "Salomon Speedcross 6",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Salomon Speedcross 6",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-6-475820.html",
+   "nota": "",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35",
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-alphaglide",
+   "modelo": "Salomon Alphaglide",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Salomon Alphaglide",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-alphaglide-478015.html",
+   "nota": "",
+   "precio": 169999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "35.5",
+    "37",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-pulsar",
+   "modelo": "Salomon Pulsar",
+   "tienda": "Open Sports",
+   "nombre": "Gafas Shimano Pulsar HC",
+   "url": "https://www.opensports.com.ar/gafas-shimano-pulsar-hc-eceplsr2hcg20.html",
+   "nota": "",
+   "precio": 110999,
+   "antes": null,
+   "cuotas": 12
+  },
+  {
+   "slug": "salomon-supercross-4",
+   "modelo": "Salomon Supercross 4",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Salomon Supercross 4",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-supercross-4-417362.html",
+   "nota": "",
+   "precio": 169999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-peak",
+   "modelo": "Salomon Speedcross Peak",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Salomon Speedcross Peak",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-peak-476033.html",
+   "nota": "",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "39.5",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-evo-sl",
+   "modelo": "Adidas Adizero EVO SL",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Adizero Evo Sl W Mujer",
+   "url": "https://www.sportline.com.ar/adizero-evo-sl-w-004020000kj8337/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36.5",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-evo-sl",
+   "modelo": "Adidas Adizero EVO SL",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Adizero Evo Sl Exo M Hombre",
+   "url": "https://www.sportline.com.ar/adizero-evo-sl-exo-m-004020000kj0430/p",
+   "nota": "Hombre",
+   "precio": 299999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-structure-26",
+   "modelo": "Nike Structure 26",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike W  Structure 26 Mujer",
+   "url": "https://www.sportline.com.ar/w-nike-structure-26-077020hj1101004/p",
+   "nota": "Mujer",
+   "precio": 254999,
+   "antes": 299999,
+   "cuotas": 6,
+   "talles": [
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-10",
+   "modelo": "Nike Winflo 10",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike Air Winflo 10 Hombre",
+   "url": "https://www.sportline.com.ar/air-winflo-10-077020dv4022008/p",
+   "nota": "Hombre",
+   "precio": 125999,
+   "antes": 189999,
+   "cuotas": 6,
+   "talles": [
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-10",
+   "modelo": "Nike Winflo 10",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike W  Winflo 10 Mujer",
+   "url": "https://www.sportline.com.ar/w-nike-winflo-10-077020dv4023005/p",
+   "nota": "Mujer",
+   "precio": 123499,
+   "antes": 189999,
+   "cuotas": 6,
+   "talles": [
+    "34.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-sl-2",
+   "modelo": "Adidas Adizero SL 2",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Adizero Sl2 Hombre",
+   "url": "https://www.sportline.com.ar/adizero-sl2-004020000jq0354/p",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-sl-2",
+   "modelo": "Adidas Adizero SL 2",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Adizero Sl2 W Mujer",
+   "url": "https://www.sportline.com.ar/adizero-sl2-w-004020000ji2994/p",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-duramo-sl-2",
+   "modelo": "Adidas Duramo SL 2",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Duramo Sl2 M Hombre",
+   "url": "https://www.sportline.com.ar/duramo-sl2-m-004020000ih8218/p",
+   "nota": "Hombre",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-duramo-sl-2",
+   "modelo": "Adidas Duramo SL 2",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Duramo Sl2 W Mujer",
+   "url": "https://www.sportline.com.ar/duramo-sl2-w-004020000ih8225/p",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-4",
+   "modelo": "Puma Velocity Nitro 4",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Puma Velocity Nitro 4 Wns Mujer",
+   "url": "https://www.sportline.com.ar/velocity-nitro-4-wns-480020031114110/p",
+   "nota": "Mujer",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36.5",
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Puma Deviate Nitro 4 Hombre",
+   "url": "https://www.sportline.com.ar/deviate-nitro-4-480020031212319/p",
+   "nota": "Hombre",
+   "precio": 289999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-deviate-nitro-4",
+   "modelo": "Puma Deviate Nitro 4",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Puma Deviate Nitro 4 Wns       Mujer",
+   "url": "https://www.sportline.com.ar/deviate-nitro-4-wns-480020031212409/p",
+   "nota": "Mujer",
+   "precio": 289999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-magmax-nitro-2",
+   "modelo": "Puma MagMax Nitro 2",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Puma Magmax Nitro 2 Hombre",
+   "url": "https://www.sportline.com.ar/magmax-nitro-2-480020031212524/p",
+   "nota": "Hombre",
+   "precio": 319999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-magmax-nitro-2",
+   "modelo": "Puma MagMax Nitro 2",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Puma Magmax Nitro 2 Wns Mujer",
+   "url": "https://www.sportline.com.ar/magmax-nitro-2-wns-480020031212601/p",
+   "nota": "Mujer",
+   "precio": 319999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas On Cloudrunner 3 Mujer",
+   "url": "https://www.sportline.com.ar/cloudrunner-3-053020g10054674/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "on-cloudrunner-3",
+   "modelo": "On Cloudrunner 3",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas On Cloudrunner 3 Hombre",
+   "url": "https://www.sportline.com.ar/cloudrunner-3-053020g10071430/p",
+   "nota": "Hombre",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-pro",
+   "modelo": "Under Armour Infinite Pro",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Under Armour Ua Infinite Pro Hombre",
+   "url": "https://www.sportline.com.ar/ua-infinite-pro-048020027190101/p",
+   "nota": "Hombre",
+   "precio": 153999,
+   "antes": 219999,
+   "cuotas": 6,
+   "talles": [
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-pro",
+   "modelo": "Under Armour Infinite Pro",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Under Armour Ua W Infinite Pro Mujer",
+   "url": "https://www.sportline.com.ar/ua-w-infinite-pro-048020027200501/p",
+   "nota": "Mujer",
+   "precio": 132999,
+   "antes": 219999,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "36",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-pegasus-41",
+   "modelo": "Nike Pegasus 41",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike W Air Zoom Pegasus 41 Mujer",
+   "url": "https://www.sportline.com.ar/w-air-zoom-pegasus-41-077020fd2723605/p",
+   "nota": "Mujer",
+   "precio": 195999,
+   "antes": 279999,
+   "cuotas": 6,
+   "talles": [
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike Quest 6 Hombre",
+   "url": "https://www.sportline.com.ar/quest-6-077020fd6033003/p",
+   "nota": "Hombre",
+   "precio": 169999,
+   "antes": 189999,
+   "cuotas": 6,
+   "talles": [
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike Wmns  Quest 6 Mujer",
+   "url": "https://www.sportline.com.ar/wmns-nike-quest-6-077020fd6034201/p",
+   "nota": "Mujer",
+   "precio": 169999,
+   "antes": 189999,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "35.5",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-revolution-8",
+   "modelo": "Nike Revolution 8",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike  Revolution 8 Hombre",
+   "url": "https://www.sportline.com.ar/nike-revolution-8-077020hj9198401/p",
+   "nota": "Hombre",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-revolution-8",
+   "modelo": "Nike Revolution 8",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike W  Revolution 8 Mujer",
+   "url": "https://www.sportline.com.ar/w-nike-revolution-8-077020hj8485006/p",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "35.5",
+    "36.5",
+    "37",
+    "37.5",
+    "38.5",
+    "39.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adistar-5",
+   "modelo": "Adidas Adistar 5",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Adistar 5 W Mujer",
+   "url": "https://www.sportline.com.ar/adistar-5-w-004020000ki9523/p",
+   "nota": "Mujer",
+   "precio": 279999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-ultraboost-5",
+   "modelo": "Adidas Ultraboost 5",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Ultraboost 5 Hombre",
+   "url": "https://www.sportline.com.ar/ultraboost-5-004020000id8819/p",
+   "nota": "Hombre",
+   "precio": 149999,
+   "antes": 249999,
+   "cuotas": 6,
+   "talles": [
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "adidas-adizero-takumi-sen-10",
+   "modelo": "Adidas Adizero Takumi Sen 10",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas adidas Adizero Takumi Sen 10 W Mujer",
+   "url": "https://www.sportline.com.ar/adizero-takumi-sen-10-w-004020000id3629/p",
+   "nota": "Mujer",
+   "precio": 161999,
+   "antes": 269999,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "36.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-5",
+   "modelo": "Puma Velocity Nitro 5",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Puma Velocity Nitro 5 Hombre",
+   "url": "https://www.sportline.com.ar/velocity-nitro-5-480020031294404/p",
+   "nota": "Hombre",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "puma-velocity-nitro-5",
+   "modelo": "Puma Velocity Nitro 5",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Puma Velocity Nitro 5 Wns Mujer",
+   "url": "https://www.sportline.com.ar/velocity-nitro-5-wns-480020031294501/p",
+   "nota": "Mujer",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "34.5",
+    "35",
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike  Air Winflo 11 Hombre",
+   "url": "https://www.sportline.com.ar/nike-air-winflo-11-077020fj9509402/p",
+   "nota": "Hombre",
+   "precio": 125999,
+   "antes": 199999,
+   "cuotas": 6,
+   "talles": [
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-winflo-11",
+   "modelo": "Nike Winflo 11",
+   "tienda": "Sportline",
+   "nombre": "Zapatillas Nike Wmns  Air Winflo 11 Mujer",
+   "url": "https://www.sportline.com.ar/wmns-nike-air-winflo-11-077020fj9510602/p",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": 199999,
+   "cuotas": 6,
+   "talles": [
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-velociti-3",
+   "modelo": "Under Armour Velociti 3",
+   "tienda": "Under Armour Argentina",
+   "nombre": "Zapatillas de Running Velociti 3 International Women’s Day para Mujer",
+   "url": "https://www.underarmour.com.ar/zapatillas-de-running-velociti-3-international-women-s-day-3027248/p",
+   "nota": "Mujer",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "35",
+    "35.5",
+    "36.5",
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-pro",
+   "modelo": "Under Armour Infinite Pro",
+   "tienda": "Under Armour Argentina",
+   "nombre": "Zapatillas de Running Infinite Pro Breeze para Mujer",
+   "url": "https://www.underarmour.com.ar/zapatillas-de-running-infinite-pro-breeze-para-mujer-3027197/p",
+   "nota": "Mujer",
+   "precio": 146999,
+   "antes": 209999,
+   "cuotas": 3,
+   "talles": [
+    "35.5",
+    "36.5",
+    "39.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-elite",
+   "modelo": "Under Armour Infinite Elite",
+   "tienda": "Under Armour Argentina",
+   "nombre": "Zapatillas de Running Infinite Elite para Mujer",
+   "url": "https://www.underarmour.com.ar/zapatillas-de-running-infinite-elite-para-mujer-3027199/p",
+   "nota": "Mujer",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "under-armour-infinite-elite",
+   "modelo": "Under Armour Infinite Elite",
+   "tienda": "Under Armour Argentina",
+   "nombre": "Zapatillas de Running Infinite Elite para Hombre",
+   "url": "https://www.underarmour.com.ar/zapatillas-de-running-infinite-elite-para-hombre-3027189/p",
+   "nota": "Hombre",
+   "precio": 209999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-novablast-5",
+   "modelo": "Asics Novablast 5",
+   "tienda": "Asics",
+   "nombre": "Zapatilla Asics Novablast 5 W",
+   "url": "https://www.asics.com.ar/1012b765-402-zapatilla-asics-novablast-5-w-1/p",
+   "nota": "Mujer",
+   "precio": 339900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "35.5",
+    "36"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gt-2000-14",
+   "modelo": "Asics GT-2000 14",
+   "tienda": "Asics",
+   "nombre": "Zapatilla Asics Gt-2000 14 W",
+   "url": "https://www.asics.com.ar/1012b843-600-zapatilla-asics-gt-2000-14-w-1/p",
+   "nota": "Mujer",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-magic-speed-4",
+   "modelo": "Asics Magic Speed 4",
+   "tienda": "Asics",
+   "nombre": "Zapatilla Asics Magic Speed 4 W",
+   "url": "https://www.asics.com.ar/1012b676-600-zapatilla-asics-magic-speed-4-w/p",
+   "nota": "Mujer",
+   "precio": 399900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "37",
+    "38.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-dynablast-5",
+   "modelo": "Asics Dynablast 5",
+   "tienda": "Asics",
+   "nombre": "Zapatilla Asics Dynablast 5 W",
+   "url": "https://www.asics.com.ar/1012b776-700-zapatilla-asics-dynablast-5-w-1/p",
+   "nota": "Mujer",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-trabuco-13",
+   "modelo": "Asics Gel-Trabuco 13",
+   "tienda": "Asics",
+   "nombre": "Zapatilla Asics Gel-Trabuco 13 W",
+   "url": "https://www.asics.com.ar/1012b768-002-zapatilla-asics-gel-trabuco-13-w-1/p",
+   "nota": "Mujer",
+   "precio": 339900,
+   "antes": null,
+   "cuotas": 3,
+   "talles": [
+    "35.5"
    ],
    "sistema": "AR"
   }

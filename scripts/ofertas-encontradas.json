@@ -482,27 +482,6 @@
    "sistema": "AR"
   },
   {
-   "slug": "under-armour-infinite-elite",
-   "modelo": "Under Armour Infinite Elite",
-   "tienda": "Gostore",
-   "nombre": "Infinite Elite W",
-   "url": "https://gostore.com.ar/ua-u-velociti-elite-2-eis-uat000001.html",
-   "nota": "Mujer",
-   "precio": 249999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "34.5",
-    "35",
-    "35.5",
-    "36.5",
-    "37",
-    "37.5",
-    "38"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "saucony-triumph-22",
    "modelo": "Saucony Triumph 22",
    "tienda": "Gostore",
@@ -846,22 +825,6 @@
    "slug": "hoka-mafate-5",
    "modelo": "Hoka Mafate 5",
    "tienda": "Sporting",
-   "nombre": "Zapatillas Trekking Hoka Mafate 5 De Hombre",
-   "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-mafate-5-de-hombre-1168722cmntb-000/p",
-   "nota": "Hombre",
-   "precio": 398999,
-   "antes": null,
-   "cuotas": 12,
-   "talles": [
-    "42",
-    "43"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "hoka-mafate-5",
-   "modelo": "Hoka Mafate 5",
-   "tienda": "Sporting",
    "nombre": "Zapatillas Trekking Hoka Mafate 5 De Mujer",
    "url": "https://www.sporting.com.ar/zapatillas-trekking-hoka-mafate-5-de-mujer-1168723abnt-000/p",
    "nota": "Mujer",
@@ -1007,29 +970,6 @@
     "42.5",
     "43",
     "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-ultra-flow-2",
-   "modelo": "Salomon Ultra Flow 2",
-   "tienda": "Sporting",
-   "nombre": "Zapatillas Trekking Salomon Ultra Flow 2 de Mujer",
-   "url": "https://www.sporting.com.ar/zapatillas-salomon-ultra-flow-2-de-mujer-17478837-000/p",
-   "nota": "Mujer",
-   "precio": 189999,
-   "antes": null,
-   "cuotas": 12,
-   "talles": [
-    "35.5",
-    "36",
-    "37",
-    "37.5",
-    "38",
-    "38.5",
-    "39",
-    "40",
-    "40.5"
    ],
    "sistema": "AR"
   },
@@ -1421,24 +1361,6 @@
    "sistema": "US"
   },
   {
-   "slug": "hoka-bondi-9",
-   "modelo": "Hoka Bondi 9",
-   "tienda": "TodoTrail",
-   "nombre": "Zapatilla Hoka Bondi 9 Hombre - Celeste",
-   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-bondi-9-hombre-celeste/",
-   "nota": "Hombre",
-   "sinStock": true
-  },
-  {
-   "slug": "hoka-bondi-9",
-   "modelo": "Hoka Bondi 9",
-   "tienda": "TodoTrail",
-   "nombre": "Zapatilla Hoka Bondi 9 Mujer - Negra",
-   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-bondi-9-mujer-negra/",
-   "nota": "Mujer",
-   "sinStock": true
-  },
-  {
    "slug": "hoka-mach-6",
    "modelo": "Hoka Mach 6",
    "tienda": "TodoTrail",
@@ -1618,15 +1540,6 @@
    "sistema": "US"
   },
   {
-   "slug": "hoka-rincon-4",
-   "modelo": "Hoka Rincon 4",
-   "tienda": "TodoTrail",
-   "nombre": "Zapatilla Hoka Rincon 4 - ECC",
-   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-rincon-4-ecc/",
-   "nota": "",
-   "sinStock": true
-  },
-  {
    "slug": "hoka-skyflow",
    "modelo": "Hoka Skyflow",
    "tienda": "TodoTrail",
@@ -1640,33 +1553,6 @@
     "11.5"
    ],
    "sistema": "US"
-  },
-  {
-   "slug": "hoka-skyflow",
-   "modelo": "Hoka Skyflow",
-   "tienda": "TodoTrail",
-   "nombre": "Rompeviento HOKA Skyflow Hombre",
-   "url": "https://todotrail.com.ar/productos/rompeviento-hoka-skyflow-hombre/",
-   "nota": "Hombre",
-   "sinStock": true
-  },
-  {
-   "slug": "hoka-skyflow",
-   "modelo": "Hoka Skyflow",
-   "tienda": "TodoTrail",
-   "nombre": "Rompeviento HOKA Skyflow Mujer - Negro",
-   "url": "https://todotrail.com.ar/productos/rompeviento-hoka-skyflow-mujer-negro/",
-   "nota": "Mujer",
-   "sinStock": true
-  },
-  {
-   "slug": "hoka-rocket-x-2",
-   "modelo": "Hoka Rocket X 2",
-   "tienda": "TodoTrail",
-   "nombre": "Zapatilla Hoka Rocket X2 - Unisex",
-   "url": "https://todotrail.com.ar/productos/zapatilla-hoka-rocket-x2-unisex/",
-   "nota": "Unisex",
-   "sinStock": true
   },
   {
    "slug": "hoka-challenger-atr-8",
@@ -1979,88 +1865,6 @@
     "37",
     "38",
     "38.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-winflo-11",
-   "modelo": "Nike Winflo 11",
-   "tienda": "Sporting",
-   "nombre": "Zapatillas Running Nike Winflo 11 de Hombre",
-   "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-hombre-fj9509001-000/p",
-   "nota": "Hombre",
-   "precio": 161999,
-   "antes": 229999,
-   "cuotas": 12,
-   "talles": [
-    "37.5",
-    "39",
-    "39.5",
-    "42",
-    "43",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-winflo-11",
-   "modelo": "Nike Winflo 11",
-   "tienda": "Sporting",
-   "nombre": "Zapatillas Running Nike Winflo 11 de Mujer",
-   "url": "https://www.sporting.com.ar/zapatillas-nike-winflo-11-de-mujer-fj9510001-000/p",
-   "nota": "Mujer",
-   "precio": 144199,
-   "antes": 229999,
-   "cuotas": 12,
-   "talles": [
-    "35",
-    "35.5",
-    "37"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-structure-plus",
-   "modelo": "Nike Structure Plus",
-   "tienda": "Sporting",
-   "nombre": "Zapatillas Running Nike Structure Plus de Hombre",
-   "url": "https://www.sporting.com.ar/zapatillas-nike-structure-plus-de-hombre-ii7192100-000/p",
-   "nota": "Hombre",
-   "precio": 349999,
-   "antes": null,
-   "cuotas": 12,
-   "talles": [
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-vomero-premium",
-   "modelo": "Nike Vomero Premium",
-   "tienda": "Moov",
-   "nombre": "zapatillas nike zoom vomero%C2%A05 premium hombre",
-   "url": "https://www.moov.com.ar/zapatillas-nike-zoom-vomero%C2%A05-premium-hombre/NIIH1344-300.html",
-   "nota": "Hombre",
-   "precio": 349999,
-   "antes": null,
-   "cuotas": 2,
-   "sinStock": false,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "40.5",
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "43.5",
-    "44",
-    "44.5",
-    "45",
-    "45.5"
    ],
    "sistema": "AR"
   },
@@ -3920,28 +3724,6 @@
    "sistema": "AR"
   },
   {
-   "slug": "nike-pegasus-42",
-   "modelo": "Nike Pegasus 42",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus 42 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-42-hombre-ib1873702/p",
-   "nota": "Hombre",
-   "precio": 309999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39",
-    "40",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "44.5",
-    "46.5"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "nike-pegasus-plus",
    "modelo": "Nike Pegasus Plus",
    "tienda": "NewSport",
@@ -4546,21 +4328,6 @@
    "slug": "nike-pegasus-premium",
    "modelo": "Nike Pegasus Premium",
    "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Pegasus Premium Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-premium-mujer-hq2593602/p",
-   "nota": "Mujer",
-   "precio": 429999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "nike-pegasus-premium",
-   "modelo": "Nike Pegasus Premium",
-   "tienda": "NewSport",
    "nombre": "Zapatillas Nike Running Pegasus Premium Hombre",
    "url": "https://www.newsport.com.ar/zapatillas-nike-running-pegasus-premium-hombre-hq2592005/p",
    "nota": "Hombre",
@@ -4777,21 +4544,6 @@
    "cuotas": 9,
    "talles": [
     "38"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "puma-foreverrun-nitro-2",
-   "modelo": "Puma ForeverRun Nitro 2",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Puma Running Foreverrun Nitro 2 Hombre",
-   "url": "https://www.newsport.com.ar/zapatillas-puma-running-foreverrun-nitro-2-hombre-31010901/p",
-   "nota": "Hombre",
-   "precio": 114999,
-   "antes": 230000,
-   "cuotas": 6,
-   "talles": [
-    "44"
    ],
    "sistema": "AR"
   },
@@ -5352,21 +5104,6 @@
    "sistema": "AR"
   },
   {
-   "slug": "nike-vomero-premium",
-   "modelo": "Nike Vomero Premium",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Nike Running Vomero Premium Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-nike-running-vomero-premium-mujer-hm5973606/p",
-   "nota": "Mujer",
-   "precio": 469999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "35.5"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "adidas-adizero-evo-sl",
    "modelo": "Adidas Adizero EVO SL",
    "tienda": "Vorax Running",
@@ -5458,34 +5195,6 @@
    "url": "https://voraxrunning.com.ar/productos/nike-vomero-18/",
    "nota": "",
    "precio": 273400,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "5.5",
-    "6",
-    "6.5",
-    "7",
-    "7.5",
-    "8",
-    "8.5",
-    "9",
-    "9.5",
-    "10",
-    "10.5",
-    "11",
-    "11.5",
-    "12"
-   ],
-   "sistema": "US"
-  },
-  {
-   "slug": "nike-vomero-plus",
-   "modelo": "Nike Vomero Plus",
-   "tienda": "Vorax Running",
-   "nombre": "Nike Zoom Vomero PLUS",
-   "url": "https://voraxrunning.com.ar/productos/nike-zoom-vomero-plus/",
-   "nota": "",
-   "precio": 314700,
    "antes": null,
    "cuotas": 6,
    "talles": [
@@ -5978,34 +5687,6 @@
    "sistema": "US"
   },
   {
-   "slug": "nike-vomero-premium",
-   "modelo": "Nike Vomero Premium",
-   "tienda": "Vorax Running",
-   "nombre": "Nike Zoom Vomero PREMIUM",
-   "url": "https://voraxrunning.com.ar/productos/nike-zoom-vomero-premiun6/",
-   "nota": "",
-   "precio": 325700,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "5.5",
-    "6",
-    "6.5",
-    "7",
-    "7.5",
-    "8",
-    "8.5",
-    "9",
-    "9.5",
-    "10",
-    "10.5",
-    "11",
-    "11.5",
-    "12"
-   ],
-   "sistema": "US"
-  },
-  {
    "slug": "nike-acg-pegasus-trail",
    "modelo": "Nike ACG Pegasus Trail",
    "tienda": "Vorax Running",
@@ -6065,21 +5746,6 @@
     "43.5",
     "44",
     "45"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-triumph-23",
-   "modelo": "Saucony Triumph 23",
-   "tienda": "Sporting",
-   "nombre": "Zapatillas Running Saucony Triumph 23 de Mujer",
-   "url": "https://www.sporting.com.ar/zapatillas-saucony-triumph-23-de-mujer-s11023200-000/p",
-   "nota": "Mujer",
-   "precio": 137999,
-   "antes": 229899,
-   "cuotas": 12,
-   "talles": [
-    "37"
    ],
    "sistema": "AR"
   },
@@ -6447,21 +6113,6 @@
     "43",
     "43.5",
     "44"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "saucony-triumph-23",
-   "modelo": "Saucony Triumph 23",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Saucony Running Triumph 23 Mujer",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-triumph-23-mujer-s11023210/p",
-   "nota": "Mujer",
-   "precio": 160929,
-   "antes": 229900,
-   "cuotas": 6,
-   "talles": [
-    "36.5"
    ],
    "sistema": "AR"
   },

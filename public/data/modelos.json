@@ -14548,22 +14548,6 @@
    "pl": "Sin placa",
    "tiendas": [
     {
-     "tienda": "Dexter",
-     "precio": 119999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.dexter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
-     "fecha": "12/11/2026",
-     "antes": 200999,
-     "talles": [
-      "39",
-      "39.5",
-      "40",
-      "41.5",
-      "42"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "TodoTrail",
      "precio": 207999,
      "cuotas": "6 cuotas sin interés",
@@ -14578,40 +14562,6 @@
       "12"
      ],
      "sistema": "US"
-    },
-    {
-     "tienda": "Stock Center",
-     "precio": 119999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.stockcenter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
-     "fecha": "12/11/2026",
-     "antes": 200999,
-     "talles": [
-      "39",
-      "39.5",
-      "40",
-      "41.5",
-      "42"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "NewSport",
-     "precio": 399999,
-     "cuotas": "9 cuotas sin interés",
-     "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-s-lab-genesis-unisex-491901/p",
-     "fecha": "12/11/2026",
-     "nota": "Unisex",
-     "talles": [
-      "39.5",
-      "41",
-      "41.5",
-      "42",
-      "42.5",
-      "43",
-      "44"
-     ],
-     "sistema": "AR"
     },
     {
      "tienda": "Salomon Argentina",
@@ -14786,112 +14736,6 @@
    "fotos": []
   },
   {
-   "id": 137,
-   "slug": "salomon-x-adventure",
-   "m": "Salomon",
-   "mod": "X-Adventure",
-   "ver": "",
-   "tipo": "Neutra",
-   "uso": "Iniciación",
-   "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [
-    {
-     "tienda": "NewSport",
-     "precio": 125999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-x-adventure-unisex-473208/p",
-     "fecha": "12/11/2026",
-     "antes": 180000,
-     "nota": "Unisex",
-     "talles": [
-      "44.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Salomon Argentina",
-     "precio": 134999,
-     "cuotas": "Consultar en la tienda",
-     "url": "https://salomonstore.com.ar/products/x-adventure-men",
-     "fecha": "12/11/2026",
-     "antes": 179999,
-     "nota": "Hombre",
-     "talles": [
-      "44.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Salomon Argentina",
-     "precio": 134999,
-     "cuotas": "Consultar en la tienda",
-     "url": "https://salomonstore.com.ar/products/x-adventure-w",
-     "fecha": "12/11/2026",
-     "antes": 179999,
-     "nota": "Mujer",
-     "talles": [
-      "35",
-      "35.5",
-      "39",
-      "40.5"
-     ],
-     "sistema": "AR"
-    }
-   ],
-   "colores": [],
-   "ar": true,
-   "borrador": true,
-   "fotos": []
-  },
-  {
-   "id": 138,
-   "slug": "salomon-alphacross-5",
-   "m": "Salomon",
-   "mod": "Alphacross",
-   "ver": "5",
-   "tipo": "Neutra",
-   "uso": "Iniciación",
-   "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [
-    {
-     "tienda": "Salomon Argentina",
-     "precio": 119999,
-     "cuotas": "Consultar en la tienda",
-     "url": "https://salomonstore.com.ar/products/alphacross-5-women",
-     "fecha": "12/11/2026",
-     "antes": 159999,
-     "nota": "Mujer",
-     "talles": [
-      "35"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Salomon Argentina",
-     "precio": 159999,
-     "cuotas": "Consultar en la tienda",
-     "url": "https://salomonstore.com.ar/products/alphacross-5-m",
-     "fecha": "12/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "44.5",
-      "45",
-      "46",
-      "47"
-     ],
-     "sistema": "AR"
-    }
-   ],
-   "colores": [],
-   "ar": true,
-   "borrador": true,
-   "fotos": []
-  },
-  {
    "id": 139,
    "slug": "salomon-xa-pro-3d-v9",
    "m": "Salomon",
@@ -14978,38 +14822,6 @@
       "39",
       "40",
       "40.5"
-     ],
-     "sistema": "AR"
-    }
-   ],
-   "colores": [],
-   "ar": true,
-   "borrador": true,
-   "fotos": []
-  },
-  {
-   "id": 140,
-   "slug": "salomon-thundercross",
-   "m": "Salomon",
-   "mod": "Thundercross",
-   "ver": "",
-   "tipo": "Neutra",
-   "uso": "Rodaje diario",
-   "terreno": "Trail",
-   "esp": "",
-   "pl": "Sin placa",
-   "tiendas": [
-    {
-     "tienda": "Salomon Argentina",
-     "precio": 151999,
-     "cuotas": "Consultar en la tienda",
-     "url": "https://salomonstore.com.ar/products/thundercross-m",
-     "fecha": "12/11/2026",
-     "antes": 189999,
-     "nota": "Hombre",
-     "talles": [
-      "45",
-      "47"
      ],
      "sistema": "AR"
     }

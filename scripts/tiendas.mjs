@@ -173,7 +173,7 @@ export async function leer(url) {
   if (!carrito && /(producto|p[aá]gina)\s+(que buscás\s+)?(no\s+existe|no\s+(fue\s+)?encontrad[oa]|inexistente)|no\s+pudimos\s+encontrar\s+(el|este|la)\s+(producto|p[aá]gina)|error\s+404|404\s*[-–|]\s*(p[aá]gina|not found)/i.test(arriba))
     throw new Error("HTTP 404 · la página dice que el producto no existe");
   if (!carrito && /producto\s+(no\s+disponible|agotado|sin\s+stock)/i.test(arriba)) return { sinStock: true };
-  if (/cdn\.shopify\.com|Shopify\.theme/.test(h)) { try { return await shopify(url); } catch {} }
+  if (/cdn\.shopify\.com|\/cdn\/shop\/|Shopify\.(theme|shop)|shopify-digital-wallet/.test(h)) { try { return await shopify(url); } catch {} }
   const r = leerHtml(h);
   if (/demandware/i.test(h) && !r.sinStock) { Object.assign(r, await tallesSfcc(url, h)); if (r.talles && !r.talles.length) r.sinStock = true; }
   return r;

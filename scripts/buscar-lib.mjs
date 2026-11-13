@@ -16,6 +16,7 @@ export const TIENDAS = [
   /* Digital Sport (digitalsport.com.ar) bloquea al robot (403 de CloudFront): queda afuera hasta que lo habiliten */
   /* tiendas oficiales de una marca: solo se buscan los modelos de esa marca */
   { nombre: "Saucony Argentina", url: "https://saucony.com.ar", marca: "Saucony" },
+  { nombre: "Salomon Argentina", url: "https://salomonstore.com.ar", marca: "Salomon" },
 ];
 export const vendeMarca = (ti, m) => !ti.marca || ti.marca === m.m;
 export const PAUSA = 800, PAUSA_LENTA = 2500;   // algunas tiendas frenan si se consulta rápido
@@ -60,7 +61,7 @@ export async function plataforma(base) {
   if (/x-magento-init|Magento_/.test(h)) return "magento";
   if (/tiendanube|nuvemshop|LS\.store/i.test(h)) return "tiendanube";
   if (/vteximg|vtexassets|vtex\.com/i.test(h)) return "vtex";
-  if (/cdn\.shopify\.com/i.test(h)) return "shopify";
+  if (/cdn\.shopify\.com|\/cdn\/shop\/|Shopify\.(theme|shop)|shopify-digital-wallet/i.test(h)) return "shopify";   // algunas sirven todo desde su propio dominio
   if (/woocommerce/i.test(h)) return "woo";
   return "desconocida";
 }

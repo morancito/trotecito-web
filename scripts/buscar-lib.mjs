@@ -13,10 +13,17 @@ export const TIENDAS = [
   { nombre: "Tienda Fuencarral", url: "https://www.tiendafuencarral.com.ar" },
   { nombre: "NewSport", url: "https://www.newsport.com.ar" },
   { nombre: "Vorax Running", url: "https://www.voraxrunning.com.ar" },
+  { nombre: "Solo Deportes", url: "https://www.solodeportes.com.ar" },
+  { nombre: "Open Sports", url: "https://www.opensports.com.ar" },
+  { nombre: "Sportline", url: "https://www.sportline.com.ar" },
   /* Digital Sport (digitalsport.com.ar) bloquea al robot (403 de CloudFront): queda afuera hasta que lo habiliten */
   /* tiendas oficiales de una marca: solo se buscan los modelos de esa marca */
   { nombre: "Saucony Argentina", url: "https://saucony.com.ar", marca: "Saucony" },
   { nombre: "Salomon Argentina", url: "https://salomonstore.com.ar", marca: "Salomon" },
+  { nombre: "Puma Argentina", url: "https://ar.puma.com", marca: "Puma" },
+  { nombre: "Under Armour Argentina", url: "https://www.underarmour.com.ar", marca: "Under Armour" },
+  { nombre: "Asics", url: "https://www.asics.com.ar", marca: "Asics" },
+  { nombre: "New Balance", url: "https://www.newbalance.com.ar", marca: "New Balance" },
 ];
 export const vendeMarca = (ti, m) => !ti.marca || ti.marca === m.m;
 export const PAUSA = 800, PAUSA_LENTA = 2500;   // algunas tiendas frenan si se consulta rápido

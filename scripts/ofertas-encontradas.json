@@ -10195,17 +10195,6 @@
    "sistema": "AR"
   },
   {
-   "slug": "salomon-pulsar",
-   "modelo": "Salomon Pulsar",
-   "tienda": "Open Sports",
-   "nombre": "Gafas Shimano Pulsar HC",
-   "url": "https://www.opensports.com.ar/gafas-shimano-pulsar-hc-eceplsr2hcg20.html",
-   "nota": "",
-   "precio": 110999,
-   "antes": null,
-   "cuotas": 12
-  },
-  {
    "slug": "salomon-supercross-4",
    "modelo": "Salomon Supercross 4",
    "tienda": "Open Sports",
@@ -10249,22 +10238,6 @@
    "talles": [
     "36.5",
     "38.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "adidas-adizero-evo-sl",
-   "modelo": "Adidas Adizero EVO SL",
-   "tienda": "Sportline",
-   "nombre": "Zapatillas adidas Adizero Evo Sl Exo M Hombre",
-   "url": "https://www.sportline.com.ar/adizero-evo-sl-exo-m-004020000kj0430/p",
-   "nota": "Hombre",
-   "precio": 299999,
-   "antes": null,
-   "cuotas": 6,
-   "talles": [
-    "41",
-    "41.5"
    ],
    "sistema": "AR"
   },
@@ -10765,23 +10738,6 @@
     "36.5",
     "37",
     "37.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "under-armour-infinite-pro",
-   "modelo": "Under Armour Infinite Pro",
-   "tienda": "Under Armour Argentina",
-   "nombre": "Zapatillas de Running Infinite Pro Breeze para Mujer",
-   "url": "https://www.underarmour.com.ar/zapatillas-de-running-infinite-pro-breeze-para-mujer-3027197/p",
-   "nota": "Mujer",
-   "precio": 146999,
-   "antes": 209999,
-   "cuotas": 3,
-   "talles": [
-    "35.5",
-    "36.5",
-    "39.5"
    ],
    "sistema": "AR"
   },

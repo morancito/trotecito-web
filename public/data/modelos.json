@@ -221,6 +221,36 @@
       "38"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adizero-evo-sl-ki9945.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/adizero-evo-sl-w-004020000kj8337/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36.5",
+      "38.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -482,6 +512,24 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 309999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-air-zoom-pegasus-42-ib1873-001.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -608,6 +656,21 @@
       "41.5",
       "42",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 314999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-plus-fq7261-002.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "37",
+      "39"
      ],
      "sistema": "AR"
     }
@@ -836,6 +899,41 @@
       "43"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 329999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-vomero-18-verde.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 329999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-vomero-18-mujer-negra.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 329999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-vomero-18-hm6803-402.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1006,6 +1104,20 @@
      "talles": [
       "39",
       "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 379999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-vomero-plus-hv8154-002.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "37"
      ],
      "sistema": "AR"
     }
@@ -1223,6 +1335,52 @@
       "43.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 299999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-structure-26-mujer-fucsia.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-structure-26-hj1102-002.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 254999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/w-nike-structure-26-077020hj1101004/p",
+     "fecha": "13/11/2026",
+     "antes": 299999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1294,6 +1452,59 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 175999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-10-negra.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 175999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-10-mujer-negra.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 125999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/air-winflo-10-077020dv4022008/p",
+     "fecha": "13/11/2026",
+     "antes": 189999,
+     "nota": "Hombre",
+     "talles": [
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 123499,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/w-nike-winflo-10-077020dv4023005/p",
+     "fecha": "13/11/2026",
+     "antes": 189999,
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1373,6 +1584,17 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://voraxrunning.com.ar/productos/nike-zoomx-invincible-run-flyknit-3/",
      "fecha": "12/11/2026"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 179999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-invincible-3-dr2660-008.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1520,6 +1742,20 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 349999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-vaporfly-3-electric-fn7674-900.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -1723,6 +1959,48 @@
       "40",
       "41",
       "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-sl-2-jq0814.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 249999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/adizero-sl2-004020000jq0354/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 249999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/adizero-sl2-w-004020000ji2994/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
      ],
      "sistema": "AR"
     }
@@ -1947,6 +2225,59 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 299999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-adizero-boston-13-naranja.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "41.5",
+      "42",
+      "43",
+      "44",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 299999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-adizero-boston-13-mujer-lila.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-boston-13-kk1046.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "36"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2165,6 +2496,57 @@
       "45.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-gris.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-mujer-azulino.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-supernova-rise-3-ki9227.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2368,6 +2750,23 @@
       "43",
       "43.5",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 549999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-adios-pro-5-kj7042.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39"
      ],
      "sistema": "AR"
     }
@@ -2596,6 +2995,89 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 99999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl-2-azul.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 139999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl2-mujer-celeste-1.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "39.5",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 139999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-duramo-sl-2-kj4144.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/duramo-sl2-m-004020000ih8218/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/duramo-sl2-w-004020000ih8225/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "39.5",
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -2696,6 +3178,17 @@
       "35.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 319900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-novablast-5-azul-1.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -2781,6 +3274,17 @@
      "talles": [
       "41",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 289999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-asics-gel-nimbus-27-1012b753-401.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35.5"
      ],
      "sistema": "AR"
     }
@@ -2903,6 +3407,20 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://voraxrunning.com.ar/productos/asics-gel-kayano-32-1tc7e/",
      "fecha": "12/11/2026"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-asics-gel-kayano-32-1011c052-101.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [
@@ -3028,6 +3546,51 @@
       "43"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-celeste.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-mujer-verde.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Asics",
+     "precio": 299900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1012b843-600-zapatilla-asics-gt-2000-14-w-1/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3141,6 +3704,52 @@
      "fecha": "12/11/2026",
      "nota": "Mujer",
      "talles": [
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 299900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-cumulus-27-verde.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 299900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-cumulus-27-mujer.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "38.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 299900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-asics-gel-cumulus-27-1012b772-250.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "36",
+      "37",
+      "38.5",
+      "40.5",
       "41"
      ],
      "sistema": "AR"
@@ -3413,6 +4022,30 @@
       "43"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-new-balance-fresh-foam-x-1080-v14-w108014e.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-new-balance-fresh-foam-x-1080-v14-m108014s.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -3605,6 +4238,22 @@
       "43.5",
       "44",
       "44.5",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 209999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-new-balance-fuelcell-rebel-v5-mfcxlo5.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "39.5",
+      "40.5",
+      "41",
+      "41.5",
+      "43",
       "45.5"
      ],
      "sistema": "AR"
@@ -3978,6 +4627,17 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://voraxrunning.com.ar/productos/saucony-endorin-pro-5-i3y1r/",
      "fecha": "12/11/2026"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 299900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-endorphin-pro-5-s11064-131.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "37"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4071,6 +4731,58 @@
      "nota": "Mujer",
      "talles": [
       "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 159999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-4-celeste.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 199999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-mujer-verde.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 199999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-puma-velocity-nitro-4-digitokyo-31191301.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 199999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/velocity-nitro-4-wns-480020031114110/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36.5",
+      "37.5",
+      "38"
      ],
      "sistema": "AR"
     }
@@ -4265,6 +4977,94 @@
       "45"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 289999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-deviate-nitro-4-celeste.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 289999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-deviate-nitro-4-mujer-naranja.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 215999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212404.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 289999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212304.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 289999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/deviate-nitro-4-480020031212319/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 289999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/deviate-nitro-4-wns-480020031212409/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4405,6 +5205,35 @@
       "37.5",
       "38",
       "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 319999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/magmax-nitro-2-480020031212524/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 319999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/magmax-nitro-2-wns-480020031212601/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5"
      ],
      "sistema": "AR"
     }
@@ -4600,6 +5429,17 @@
       "38"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 339999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-on-cloudmonster-3-3wg10034-859.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "38"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -4754,6 +5594,37 @@
      "talles": [
       "43",
       "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 215999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-on-cloudsurfer-next-multicolor.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 215999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-on-cloudsurfer-next-mujer-multicolor.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "37.5",
+      "38"
      ],
      "sistema": "AR"
     }
@@ -4953,6 +5824,65 @@
      "talles": [
       "37",
       "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Moov",
+     "precio": 279999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.moov.com.ar/zapatillas-on-cloudrunner-3-hombre/ON3MG10071-536.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "42",
+      "42.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-on-cloudrunner-3-3mg10074-351.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40.5",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/cloudrunner-3-053020g10054674/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/cloudrunner-3-053020g10071430/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43"
      ],
      "sistema": "AR"
     }
@@ -5728,6 +6658,53 @@
       "34.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 179999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-velociti-3-amarilla.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 179999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-velociti-3-mujer-negra.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Under Armour Argentina",
+     "precio": 179999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.underarmour.com.ar/zapatillas-de-running-velociti-3-international-women-s-day-3027248/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36.5",
+      "37",
+      "37.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5866,6 +6843,70 @@
       "46"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-infinite-pro-we-run-negra.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "41.5",
+      "43",
+      "43.5",
+      "44",
+      "44.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 189999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-infinite-pro-mujer-lila.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 153999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/ua-infinite-pro-048020027190101/p",
+     "fecha": "13/11/2026",
+     "antes": 219999,
+     "nota": "Hombre",
+     "talles": [
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 132999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/ua-w-infinite-pro-048020027200501/p",
+     "fecha": "13/11/2026",
+     "antes": 219999,
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5955,6 +6996,31 @@
      "nota": "Mujer",
      "talles": [
       "34.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Under Armour Argentina",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.underarmour.com.ar/zapatillas-de-running-infinite-elite-para-mujer-3027199/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Under Armour Argentina",
+     "precio": 209999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.underarmour.com.ar/zapatillas-de-running-infinite-elite-para-hombre-3027189/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44",
+      "45"
      ],
      "sistema": "AR"
     }
@@ -6071,6 +7137,17 @@
       "44",
       "45",
       "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 169999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-triumph-22-s20964-135.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "44"
      ],
      "sistema": "AR"
     }
@@ -6309,6 +7386,23 @@
       "35.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 249900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-1000-14-roja.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6398,6 +7492,37 @@
      ],
      "sistema": "AR",
      "sinStock": true
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 209900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-excite-11-gris.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 209900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-excite-11-mujer-coral.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -6476,6 +7601,48 @@
       "42.5",
       "43",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-dynablast-5-negra.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-dynablast-5-mujer-celeste.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Asics",
+     "precio": 299900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1012b776-700-zapatilla-asics-dynablast-5-w-1/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
      ],
      "sistema": "AR"
     }
@@ -6623,6 +7790,22 @@
      "nota": "Hombre",
      "talles": [
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 349999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-premium-hq2593-602.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "36",
+      "38",
+      "41"
      ],
      "sistema": "AR"
     }
@@ -6828,6 +8011,63 @@
       "46.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-pegasus-41-gris.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-zoom-pegasus-41-mujer-fucsia.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "36",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 179999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-41-hf7362-900.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 195999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/w-air-zoom-pegasus-41-077020fd2723605/p",
+     "fecha": "13/11/2026",
+     "antes": 279999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -7020,6 +8260,73 @@
       "41",
       "43",
       "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-nike-quest-6-mujer-rosa.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-quest-6-negra-1.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 159999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-quest-6-fd6033-107.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "39",
+      "39.5",
+      "43",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/quest-6-077020fd6033003/p",
+     "fecha": "13/11/2026",
+     "antes": 189999,
+     "nota": "Hombre",
+     "talles": [
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/wmns-nike-quest-6-077020fd6034201/p",
+     "fecha": "13/11/2026",
+     "antes": 189999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "41.5"
      ],
      "sistema": "AR"
     }
@@ -7249,6 +8556,86 @@
       "39",
       "40.5",
       "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 139999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-revolution-8-azul.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 139999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-revolution-8-mujer-crudo-1.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 139999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-revolution-8-hj9198-002.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/nike-revolution-8-077020hj9198401/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/w-nike-revolution-8-077020hj8485006/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36.5",
+      "37",
+      "37.5",
+      "38.5",
+      "39.5",
+      "40.5"
      ],
      "sistema": "AR"
     }
@@ -7483,6 +8870,41 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-adistar-5-kk4209.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 279999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/adistar-5-w-004020000ki9523/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "36.5",
+      "37.5",
+      "38",
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -7546,6 +8968,30 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-stride-2-0-mujer-ih8656/p",
      "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 149999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-stride-2-verde.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 149999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-stride-2-mujer-lila.html",
+     "fecha": "13/11/2026",
      "nota": "Mujer",
      "talles": [
       "34.5"
@@ -7659,6 +9105,57 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 299999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-ultraboost-5-azul.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "38",
+      "38.5",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 149999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-ultraboost-5-mujer-rosa-43691476.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-ultraboost-5-id8847.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 149999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/ultraboost-5-004020000id8819/p",
+     "fecha": "13/11/2026",
+     "antes": 249999,
+     "nota": "Hombre",
+     "talles": [
+      "38.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -7764,6 +9261,34 @@
       "35.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 179999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-takumi-sen-10-jq2819.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 161999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/adizero-takumi-sen-10-w-004020000id3629/p",
+     "fecha": "13/11/2026",
+     "antes": 269999,
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -7860,6 +9385,45 @@
       "43",
       "43.5",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 175999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-foreverrun-nitro-2-lila.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 175999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-foreverrun-nitro-2-mujer-lila.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "36",
+      "36.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 159999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-puma-foreverrun-nitro-2-31047104.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35"
      ],
      "sistema": "AR"
     }
@@ -8020,6 +9584,90 @@
       "38"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-5-roja.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-5-mujer-negra.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "38",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 219999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-puma-velocity-nitro-5-31294404.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/velocity-nitro-5-480020031294404/p",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41",
+      "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 219999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/velocity-nitro-5-wns-480020031294501/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8148,6 +9796,25 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 305999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-trail-5-gtx-fq0908-301.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8205,6 +9872,17 @@
      "antes": 299999,
      "nota": "Hombre",
      "sinStock": true
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-kiger-9-dr2693-600.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8337,6 +10015,19 @@
       "41"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 319999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-zoomx-zegama-2-fd5191-600.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35.5",
+      "41"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8399,6 +10090,34 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://voraxrunning.com.ar/productos/asics-gel-trabuco-13-1k0uk/",
      "fecha": "12/11/2026"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 319900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-asics-gel-trabuco-13-1011b973-800.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Asics",
+     "precio": 339900,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.asics.com.ar/1012b768-002-zapatilla-asics-gel-trabuco-13-w-1/p",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -8525,6 +10244,22 @@
       "43",
       "43.5",
       "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-terrex-agravic-4-kj8870.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "45.5"
      ],
      "sistema": "AR"
     }
@@ -8980,6 +10715,22 @@
       "7"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 324500,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-hoka-clifton-10-1162031-grtm.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "36.5",
+      "37",
+      "37.5",
+      "38.5",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9092,6 +10843,18 @@
      "talles": [
       "41.5",
       "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 292000,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-hoka-bondi-9-1162012-cyg.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35",
+      "35.5"
      ],
      "sistema": "AR"
     }
@@ -9713,6 +11476,23 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://voraxrunning.com.ar/productos/hoka-skyflow-rukod/",
      "fecha": "12/11/2026"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 350500,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-hoka-skyflow-1155111-bwht.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9806,6 +11586,17 @@
       "35",
       "35.5",
       "36.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 267999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-hoka-speedgoat-6-1147791-ttt.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "42.5"
      ],
      "sistema": "AR"
     }
@@ -9946,6 +11737,21 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://voraxrunning.com.ar/productos/hoka-one-one-mafate-5-6tdbc/",
      "fecha": "12/11/2026"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 450500,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-hoka-mafate-5-1168722-tvm.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -10955,6 +12761,20 @@
       "39"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 249900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-endorphin-speed-5-s101391-1010.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -11192,6 +13012,20 @@
       "43",
       "43.5",
       "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 209900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-peregrine-16-s101555-1008.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5",
+      "43",
+      "43.5",
       "45"
      ],
      "sistema": "AR"
@@ -11523,6 +13357,18 @@
       "45"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 249900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-xodus-ultra-4-s101617-1009.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -11694,6 +13540,72 @@
       "7.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 183999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-11-azul.html",
+     "fecha": "13/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 183999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-winflo-11-mujer-celeste.html",
+     "fecha": "13/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-winflo-11-fj9510-004.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 125999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/nike-air-winflo-11-077020fj9509402/p",
+     "fecha": "13/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 139999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/wmns-nike-air-winflo-11-077020fj9510602/p",
+     "fecha": "13/11/2026",
+     "antes": 199999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 103,
@@ -11878,6 +13790,23 @@
       "3.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 379999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-vaporfly-4-hf6412-001.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "34.5",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "39.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 105,
@@ -12360,6 +14289,20 @@
       "8.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 244900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-triumph-24-s100999-1016.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -12468,6 +14411,20 @@
       "12.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 164900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-triumph-23-s21023-200.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "41.5",
+      "43",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -12605,6 +14562,19 @@
       "8.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 241990,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-hurricane-26-s101106-1016.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "37",
+      "37.5",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -12739,6 +14709,19 @@
       "7"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 189900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-guide-19-s21058-100.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "42",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -12958,6 +14941,22 @@
       "11.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 429900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-endorphin-elite-3-s100981-1021.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "42",
+      "43.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -13423,6 +15422,22 @@
       "11.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 234900,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-saucony-guide-tr-s101094-1009.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38",
+      "39"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -13595,6 +15610,19 @@
       "38.5",
       "39",
       "40",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 159999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-salomon-aero-glide-3-479758.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35",
+      "35.5",
       "40.5"
      ],
      "sistema": "AR"
@@ -14242,6 +16270,19 @@
       "40.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 229999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-6-475820.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35",
+      "35.5",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -14496,6 +16537,19 @@
       "47"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 169999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-salomon-alphaglide-478015.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "35.5",
+      "37",
+      "40"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -14677,6 +16731,17 @@
       "38.5",
       "39",
       "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 169999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-salomon-supercross-4-417362.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "44.5"
      ],
      "sistema": "AR"
     }
@@ -15082,6 +17147,18 @@
      "nota": "Mujer",
      "talles": [
       "35"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 179999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-peak-476033.html",
+     "fecha": "13/11/2026",
+     "talles": [
+      "39.5",
+      "44.5"
      ],
      "sistema": "AR"
     }

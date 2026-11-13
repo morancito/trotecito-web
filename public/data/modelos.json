@@ -165,8 +165,8 @@
      "precio": 279999,
      "cuotas": "Consultar en la tienda",
      "nota": "Hombre",
-     "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-evo-sl/KI4263.html",
-     "fecha": "10/11/2026",
+     "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-evo-sl/LA3685.html",
+     "fecha": "12/11/2026",
      "talles": [
       "38",
       "38.5",
@@ -178,10 +178,7 @@
       "42",
       "43",
       "43.5",
-      "44",
-      "45",
-      "45.5",
-      "46"
+      "44"
      ],
      "sistema": "AR"
     },
@@ -191,7 +188,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-evo-sl/LB2672.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "35.5",
       "36",
@@ -1680,7 +1677,7 @@
      "precio": 249999,
      "cuotas": "Consultar en la tienda",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-sl-2/JQ0354.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "38",
       "38.5",
@@ -1704,8 +1701,8 @@
      "precio": 249999,
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
-     "url": "https://www.adidas.com.ar/zapatillas-adizero-sl2/JI2994.html",
-     "fecha": "10/11/2026",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-sl2/KI3246.html",
+     "fecha": "12/11/2026",
      "talles": [
       "34.5",
       "35.5",
@@ -1878,7 +1875,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-boston-13/KH8859.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "38",
       "38.5",
@@ -1903,8 +1900,8 @@
      "precio": 299999,
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
-     "url": "https://www.adidas.com.ar/zapatillas-adizero-boston-13/KH8869.html",
-     "fecha": "10/11/2026",
+     "url": "https://www.adidas.com.ar/zapatillas-adizero-boston-13/JS4958.html",
+     "fecha": "12/11/2026",
      "talles": [
       "34.5",
       "35.5",
@@ -2000,21 +1997,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Sporting",
-     "precio": 249999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6jq8502-000/p",
-     "fecha": "12/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "41.5",
-      "42",
-      "43",
-      "45.5"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Digital Sport",
      "precio": 174999,
      "antes": 280000,
@@ -2065,6 +2047,28 @@
      "sistema": "AR"
     },
     {
+     "tienda": "Sporting",
+     "precio": 249999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6jq8502-000/p",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41.5",
+      "42",
+      "43",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Vorax Running",
+     "precio": 279200,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-1cb37/",
+     "fecha": "12/11/2026"
+    },
+    {
      "tienda": "Dexter",
      "precio": 279999,
      "cuotas": "2 cuotas sin interés",
@@ -2087,13 +2091,6 @@
       "35.5"
      ],
      "sistema": "AR"
-    },
-    {
-     "tienda": "Vorax Running",
-     "precio": 279200,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-1cb37/",
-     "fecha": "12/11/2026"
     },
     {
      "tienda": "NewSport",
@@ -2120,7 +2117,7 @@
      "precio": 279999,
      "cuotas": "Consultar en la tienda",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-supernova-rise-3/JQ8502.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "38",
       "38.5",
@@ -2303,7 +2300,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-adios-pro-5/KJ7039.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "38",
       "38.5",
@@ -2317,8 +2314,7 @@
       "43.5",
       "44",
       "45",
-      "45.5",
-      "46"
+      "45.5"
      ],
      "sistema": "AR"
     },
@@ -2328,7 +2324,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-adizero-adios-pro-5/KJ7041.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "34.5",
       "35.5",
@@ -2526,7 +2522,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "38",
       "38.5",
@@ -2551,7 +2547,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/KJ4158.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "34.5",
       "35.5",
@@ -7393,7 +7389,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Hombre",
      "url": "https://www.adidas.com.ar/zapatilla-de-running-adistar-5/IH7175.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "38",
       "38.5",
@@ -7417,7 +7413,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-de-running-adistar-5/KK4216.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "34.5",
       "35.5",
@@ -7599,7 +7595,7 @@
      "cuotas": "Consultar en la tienda",
      "nota": "Mujer",
      "url": "https://www.adidas.com.ar/zapatillas-ultraboost-5/ID8848.html",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "35.5",
       "39",

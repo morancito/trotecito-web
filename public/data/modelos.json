@@ -13462,7 +13462,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "optiFOAM²",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13512,8 +13512,36 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-aero-glide-4/1.webp?v=f014ff34",
+    "fotos/salomon-aero-glide-4/2.webp?v=9e3f26ab",
+    "fotos/salomon-aero-glide-4/3.webp?v=fb5e32d5",
+    "fotos/salomon-aero-glide-4/4.webp?v=5e2d1bd2"
+   ],
+   "peso": 250,
+   "drop": 8,
+   "talon": 41,
+   "ante": 33,
+   "usos": [
+    "Rodaje largo",
+    "Rodaje diario"
+   ],
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Rodajes y fondos de 10 a 30K"
+   },
+   "evitar": "buscás una zapa firme para series en pista o curvas cerradas: es alta y blanda.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-aero-glide-4"
+   ],
+   "fuente2": [
+    "RoadTrailRun",
+    "https://www.roadtrailrun.com/2026/02/salomon-aero-glide-4-review.html"
+   ]
   },
   {
    "id": 121,
@@ -13524,7 +13552,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "Energy Foam Evo",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13574,8 +13602,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-aero-glide-3/1.webp?v=7200b994",
+    "fotos/salomon-aero-glide-3/2.webp?v=323676f5",
+    "fotos/salomon-aero-glide-3/3.webp?v=4fbfa267",
+    "fotos/salomon-aero-glide-3/4.webp?v=4858150f"
+   ],
+   "peso": 245,
+   "drop": 8,
+   "talon": 40,
+   "ante": 32,
+   "usos": [
+    "Rodaje largo",
+    "Rodaje diario"
+   ],
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Rodajes y fondos de 10 a 30K"
+   },
+   "evitar": "querés hacer series rápidas: es blanda y está pensada para rodar cómodo.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-aero-glide-3"
+   ]
   },
   {
    "id": 122,
@@ -13586,7 +13638,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "optiFOAM²",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13635,8 +13687,31 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-aero-blaze-4/1.webp?v=01945a0c",
+    "fotos/salomon-aero-blaze-4/2.webp?v=9825668f",
+    "fotos/salomon-aero-blaze-4/3.webp?v=7eca2be1",
+    "fotos/salomon-aero-blaze-4/4.webp?v=e7e11600"
+   ],
+   "peso": 232,
+   "drop": 8,
+   "talon": 39,
+   "ante": 31,
+   "usos": [
+    "Rodaje diario",
+    "Ritmo"
+   ],
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "4:30 a 6:00 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes diarios y días de ritmo"
+   },
+   "evitar": "sos pronador marcado: es neutra y liviana, sin soporte.",
+   "fuente": [
+    "Running Warehouse",
+    "https://www.runningwarehouse.com/Salomon_Aero_Blaze_4/descpage-SA4ABM2.html"
+   ]
   },
   {
    "id": 123,
@@ -13647,7 +13722,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "Energy Foam Evo",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13726,8 +13801,36 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-aero-blaze-3/1.webp?v=c508a668",
+    "fotos/salomon-aero-blaze-3/2.webp?v=210898c8",
+    "fotos/salomon-aero-blaze-3/3.webp?v=49d55c6c",
+    "fotos/salomon-aero-blaze-3/4.webp?v=11adcebc"
+   ],
+   "peso": 230,
+   "drop": 8,
+   "talon": 39,
+   "ante": 31,
+   "usos": [
+    "Rodaje diario",
+    "Ritmo"
+   ],
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "4:30 a 6:00 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes diarios y días de ritmo"
+   },
+   "evitar": "necesitás estabilidad: es muy neutra y el medio pie es angosto.",
+   "fuente": [
+    "Doctors of Running",
+    "https://www.doctorsofrunning.com/2025/07/salomon-aero-blaze-3-review-2025.html"
+   ],
+   "fuente2": [
+    "Running Warehouse",
+    "https://www.runningwarehouse.com/Salomon_Aero_Blaze_3/descpage-SA3ABW0.html"
+   ]
   },
   {
    "id": 124,
@@ -13735,10 +13838,10 @@
    "m": "Salomon",
    "mod": "DRX Bliss",
    "ver": "",
-   "tipo": "Neutra",
+   "tipo": "Estabilidad",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "Energy Foam",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13783,8 +13886,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-drx-bliss/1.webp?v=bfb9cee8",
+    "fotos/salomon-drx-bliss/2.webp?v=e6ddeeae",
+    "fotos/salomon-drx-bliss/3.webp?v=a31632f5",
+    "fotos/salomon-drx-bliss/4.webp?v=f8f35a9a"
+   ],
+   "peso": 266,
+   "drop": 8,
+   "talon": 34,
+   "ante": 26,
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "horma": "angosta",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes de 5 a 21K"
+   },
+   "evitar": "tenés el pie ancho o de mucho volumen: calza ajustada, sobre todo en el medio pie.",
+   "fuente": [
+    "Doctors of Running",
+    "https://www.doctorsofrunning.com/2023/08/salomon-drx-bliss-review-2023.html"
+   ]
   },
   {
    "id": 125,
@@ -13795,7 +13922,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "Energy Foam",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -13838,8 +13965,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-drx-defy/1.webp?v=6cf989d0",
+    "fotos/salomon-drx-defy/2.webp?v=6637325f",
+    "fotos/salomon-drx-defy/3.webp?v=6ddf4ce5",
+    "fotos/salomon-drx-defy/4.webp?v=da385531"
+   ],
+   "peso": 242,
+   "drop": 8,
+   "talon": 34,
+   "ante": 26,
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "horma": "ancha",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes de 5 a 15K"
+   },
+   "evitar": "sos pronador marcado o tenés el pie angosto: el talón sujeta poco.",
+   "fuente": [
+    "RoadTrailRun",
+    "https://www.roadtrailrun.com/2024/10/salomon-drx-defy-review-3-comparisons.html"
+   ]
   },
   {
    "id": 126,
@@ -13850,7 +14001,7 @@
    "tipo": "Neutra",
    "uso": "Ritmo",
    "terreno": "Asfalto",
-   "esp": "",
+   "esp": "optiFOAM²",
    "pl": "Fibra de vidrio",
    "tiendas": [
     {
@@ -13900,8 +14051,31 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-spectur-3/1.webp?v=ab0bf22e",
+    "fotos/salomon-spectur-3/2.webp?v=037d0870",
+    "fotos/salomon-spectur-3/3.webp?v=df8e78d2",
+    "fotos/salomon-spectur-3/4.webp?v=4dda171c"
+   ],
+   "peso": 265,
+   "drop": 8,
+   "talon": 38.5,
+   "ante": 30.5,
+   "usos": [
+    "Ritmo",
+    "Rodaje diario"
+   ],
+   "corredor": {
+    "nivel": "Intermedio",
+    "ritmo": "4:30 a 6:00 min/km",
+    "peso": "Hasta 90 kg",
+    "distancia": "Ritmos, tiradas rápidas y carreras de 10 a 42K"
+   },
+   "evitar": "corrés siempre a ritmo tranquilo: la placa se aprovecha yendo rápido.",
+   "fuente": [
+    "Salomon",
+    "https://www.salomon.com/en-gb/product/spectur-3-li8685"
+   ]
   },
   {
    "id": 127,
@@ -13912,7 +14086,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EnergyCell+ (EVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14072,8 +14246,29 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-speedcross-6/1.webp?v=8d706bf6",
+    "fotos/salomon-speedcross-6/2.webp?v=fc8e7f96",
+    "fotos/salomon-speedcross-6/3.webp?v=427b4ddb"
+   ],
+   "peso": 298,
+   "drop": 10,
+   "talon": 32,
+   "ante": 22,
+   "usos": [
+    "Rodaje diario"
+   ],
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 85 kg",
+    "distancia": "Barro y terreno blando, hasta 25K"
+   },
+   "evitar": "corrés en asfalto o en piedra dura: los tacos largos son para barro y terreno blando, y ahí se gastan rápido.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-speedcross-6"
+   ]
   },
   {
    "id": 128,
@@ -14084,7 +14279,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EnergyCell+ (EVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14143,8 +14338,30 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-speedcross-6-gtx/1.webp?v=7eaa01ba",
+    "fotos/salomon-speedcross-6-gtx/2.webp?v=eab510c3",
+    "fotos/salomon-speedcross-6-gtx/3.webp?v=ec6fdf2d",
+    "fotos/salomon-speedcross-6-gtx/4.webp?v=4470e617"
+   ],
+   "peso": 328,
+   "drop": 10,
+   "talon": 32,
+   "ante": 22,
+   "usos": [
+    "Rodaje diario"
+   ],
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 85 kg",
+    "distancia": "Barro, frío y lluvia, hasta 25K"
+   },
+   "evitar": "corrés con calor o en asfalto: la membrana impermeable abriga y los tacos largos se gastan rápido en el pavimento.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-speedcross-6-gtx"
+   ]
   },
   {
    "id": 129,
@@ -14155,7 +14372,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "fuzeFOAM (EVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14283,8 +14500,31 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-alphaglide/1.webp?v=a9e18f54",
+    "fotos/salomon-alphaglide/2.webp?v=6fca241a",
+    "fotos/salomon-alphaglide/3.webp?v=9e5a9bf8",
+    "fotos/salomon-alphaglide/4.webp?v=6e650755"
+   ],
+   "peso": 285,
+   "drop": 9,
+   "talon": 30,
+   "ante": 21,
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 85 kg",
+    "distancia": "Senderos y caminos, hasta 21K"
+   },
+   "evitar": "corrés montaña técnica o con mucho barro: los tacos de 3,5 mm son para senderos y caminos.",
+   "fuente": [
+    "Ficha técnica (Tradeinn)",
+    "https://www.tradeinn.com/runnerinn/en/salomon-alphaglide-trail-running-shoes/141627057/p"
+   ]
   },
   {
    "id": 130,
@@ -14295,7 +14535,7 @@
    "tipo": "Neutra",
    "uso": "Ritmo",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Energy Foam Evo",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14346,8 +14586,30 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-pulsar/1.webp?v=c3d99067",
+    "fotos/salomon-pulsar/2.webp?v=f0072c12",
+    "fotos/salomon-pulsar/3.webp?v=6efb586f"
+   ],
+   "peso": 289,
+   "drop": 6,
+   "talon": 30,
+   "ante": 24,
+   "usos": [
+    "Ritmo",
+    "Rodaje diario"
+   ],
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Rápido en sendero y bajadas",
+    "peso": "Hasta 80 kg",
+    "distancia": "Carreras de montaña, hasta 50K"
+   },
+   "evitar": "buscás mucha amortiguación para trotar suave muchas horas: es baja y de respuesta rápida.",
+   "fuente": [
+    "Running Warehouse",
+    "https://www.runningwarehouse.com/Salomon_Pulsar/descpage-SAPULM4.html"
+   ]
   },
   {
    "id": 131,
@@ -14358,7 +14620,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Fuze Surge (EVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14421,8 +14683,31 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-supercross-4/1.webp?v=1be6a019",
+    "fotos/salomon-supercross-4/2.webp?v=069e3dfe",
+    "fotos/salomon-supercross-4/3.webp?v=4e692ef3",
+    "fotos/salomon-supercross-4/4.webp?v=2caad37a"
+   ],
+   "peso": 303,
+   "drop": 11,
+   "talon": 32,
+   "ante": 21,
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 85 kg",
+    "distancia": "Barro y terreno blando, hasta 21K"
+   },
+   "evitar": "corrés en asfalto o terreno duro: los tacos de 6,5 mm son para barro.",
+   "fuente": [
+    "Ficha técnica (Alpinetrek)",
+    "https://www.alpinetrek.co.uk/salomon-supercross-4-trail-running-shoes/"
+   ]
   },
   {
    "id": 132,
@@ -14433,7 +14718,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Energy Foam",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14477,8 +14762,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-ultra-flow/1.webp?v=158eae25",
+    "fotos/salomon-ultra-flow/2.webp?v=cde112c2",
+    "fotos/salomon-ultra-flow/3.webp?v=b8c3eff8",
+    "fotos/salomon-ultra-flow/4.webp?v=f39b658d"
+   ],
+   "peso": 244,
+   "drop": 6,
+   "talon": 32,
+   "ante": 26,
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 85 kg",
+    "distancia": "Senderos y cerros, hasta 25K"
+   },
+   "evitar": "corrés en montaña muy técnica o con barro: está pensada para senderos y caminos de tierra.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-ultra-flow"
+   ]
   },
   {
    "id": 133,
@@ -14542,9 +14851,9 @@
    "mod": "Genesis",
    "ver": "",
    "tipo": "Neutra",
-   "uso": "Rodaje largo",
+   "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Energy Foam",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14599,8 +14908,30 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-genesis/1.webp?v=c885ad5e",
+    "fotos/salomon-genesis/2.webp?v=f971b3dc",
+    "fotos/salomon-genesis/3.webp?v=eab19936"
+   ],
+   "peso": 275,
+   "drop": 8,
+   "talon": 33,
+   "ante": 25,
+   "usos": [
+    "Rodaje diario"
+   ],
+   "horma": "normal",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote cómodo en sendero",
+    "peso": "Hasta 80 kg",
+    "distancia": "Senderos y cerros, hasta 42K"
+   },
+   "evitar": "buscás mucha amortiguación para ultras: es más baja que otras de montaña.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-genesis"
+   ]
   },
   {
    "id": 135,
@@ -14611,7 +14942,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje largo",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "Energy Foam",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14663,8 +14994,29 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-ultra-glide-3/1.webp?v=b24c0035"
+   ],
+   "peso": 290,
+   "drop": 6,
+   "talon": 41,
+   "ante": 35,
+   "usos": [
+    "Rodaje largo",
+    "Rodaje diario"
+   ],
+   "horma": "ancha",
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Trote suave, muchas horas",
+    "peso": "Cualquier peso, ideal más de 75 kg",
+    "distancia": "Montaña, 21K a ultra"
+   },
+   "evitar": "buscás una zapa ágil para carreras cortas y rápidas: es alta y está pensada para rodar muchas horas.",
+   "fuente": [
+    "Runner's Lab",
+    "https://runnerslab.com/salomon-ultra-glide-3-review/"
+   ]
   },
   {
    "id": 136,
@@ -14673,9 +15025,9 @@
    "mod": "Speedcross Peak",
    "ver": "",
    "tipo": "Neutra",
-   "uso": "Rodaje diario",
+   "uso": "Iniciación",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "fuzeFOAM (EVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14732,8 +15084,32 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-speedcross-peak/1.webp?v=75dec3cf"
+   ],
+   "peso": 319,
+   "drop": 10,
+   "talon": 28,
+   "ante": 18,
+   "usos": [
+    "Iniciación",
+    "Rodaje diario"
+   ],
+   "corredor": {
+    "nivel": "Principiante",
+    "ritmo": "Ritmo tranquilo",
+    "peso": "Hasta 80 kg",
+    "distancia": "Senderos con barro, salidas cortas"
+   },
+   "evitar": "vas a correr seguido o largo: es pesada y tiene poca espuma; está pensada para salidas ocasionales.",
+   "fuente": [
+    "Ficha técnica (Blacks)",
+    "https://www.blacks.co.uk/products/salomon-mens-speedcross-peak-black-786533"
+   ],
+   "fuente2": [
+    "Ficha técnica (MySport)",
+    "https://www.mysport.lv/en/salomon-speedcross-peak-trail-running-shoes-mens-475145.html"
+   ]
   },
   {
    "id": 139,
@@ -14744,7 +15120,7 @@
    "tipo": "Neutra",
    "uso": "Rodaje diario",
    "terreno": "Trail",
-   "esp": "",
+   "esp": "EnergyCell (EVA)",
    "pl": "Sin placa",
    "tiendas": [
     {
@@ -14828,8 +15204,28 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/salomon-xa-pro-3d-v9/1.webp?v=720cc3c4"
+   ],
+   "peso": 323,
+   "drop": 11,
+   "talon": 28,
+   "ante": 17,
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Ritmo tranquilo",
+    "peso": "Hasta 90 kg",
+    "distancia": "Terreno roto, trekking y trail tranquilo"
+   },
+   "evitar": "buscás correr rápido o liviano: pesa 323 g y es rígida; rinde más en terreno roto y caminando rápido que corriendo.",
+   "fuente": [
+    "RunRepeat",
+    "https://runrepeat.com/salomon-xa-pro-3d-v9"
+   ]
   }
  ]
 }

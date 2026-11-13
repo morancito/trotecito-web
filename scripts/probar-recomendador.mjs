@@ -52,7 +52,7 @@ const PERFILES = [
 ];
 
 /* versiones nuevas de modelos que las guías ya recomiendan cuentan igual */
-const VERSION = { "saucony-triumph-22": ["saucony-triumph-23", "saucony-triumph-24"], "saucony-hurricane-25": ["saucony-hurricane-26"], "saucony-guide-18": ["saucony-guide-19"], "saucony-endorphin-pro-5": ["saucony-endorphin-pro-4"], "saucony-endorphin-elite-2": ["saucony-endorphin-elite-3"] };
+const VERSION = { "saucony-triumph-22": ["saucony-triumph-23", "saucony-triumph-24"], "saucony-hurricane-25": ["saucony-hurricane-26"], "saucony-guide-18": ["saucony-guide-19"], "saucony-endorphin-pro-5": ["saucony-endorphin-pro-4"], "saucony-endorphin-elite-2": ["saucony-endorphin-elite-3"], "salomon-ultra-glide-4": ["salomon-ultra-glide-3"] };
 for (const p of PERFILES) p.buenas = [...new Set(p.buenas.flatMap(b => [b, ...(VERSION[b] || [])]))];
 const marca = (p, s) => p.buenas.includes(s) ? "✓" : p.malas.test(s) ? "✗" : "·";
 let totTop = 0, okTop = 0, malasTop = 0, okPicks = 0, malasPicks = 0, totPicks = 0;

@@ -1,20 +1,61 @@
 {
- "fecha": "2026-11-07T06:23:44.108Z",
+ "fecha": "2026-11-13T02:28:46.976Z",
  "resultados": [
   {
-   "url": "https://saucony.com.ar/sitemap.xml",
+   "url": "https://salomonstore.com.ar/collections/trail-running-calzado-hombre/products.json?limit=250",
    "estado": 200,
-   "urlFinal": "https://saucony.com.ar/sitemap.xml",
-   "largo": 604700,
-   "plataforma": "tiendanube",
+   "urlFinal": "https://salomonstore.com.ar/collections/trail-running-calzado-hombre/products.json?limit=250",
+   "largo": 1723673,
+   "plataforma": "shopify",
    "generador": null,
    "variantes": false,
-   "tiendanube": true,
+   "tiendanube": false,
    "desafio": false,
    "jsonld": 0,
    "precioMeta": null,
-   "muestra": " https://saucony.com.ar/ daily 1.0 https://saucony.com.ar/contacto/ weekly 0.3 https://saucony.com.ar/productos/ weekly 0.3 https://saucony.com.ar/sitemap_blog.xml/ weekly 0.3 https://saucony.com.ar/historia/ 2022-05-23T17:26:42Z weekly 0.5 https://saucony.com.ar/envios/ 2026-06-02T15:44:45Z weekly 0.5 https://saucony.com.ar/politicasprivacidad/ 2026-06-24T20:38:12Z weekly 0.5 https://saucony.com.ar/cambiosydevoluciones/ 2026-04-14T16:05:55Z weekly 0.5 https://saucony.com.ar/sorteo-zapatillas-kinvara-12-2021/ 2021-09-30T22:37:57Z weekly 0.5 https://saucony.com.ar/preguntas-frecuentes/ 2025-09-",
-   "leerError": "no encontré el precio en la página"
+   "muestra": "{\"products\":[{\"id\":10419926466874,\"title\":\"SPEEDCROSS 6 GORE-TEX 20 YEARS\",\"handle\":\"speedcross-6-gore-tex-20-years\",\"body_html\":\"\\u003cp\\u003eLas SPEEDCROSS 6 GORE-TEX 20 Years celebran el 20.º aniversario de la icónica serie Speedcross. Mantienen su ADN legendario con mayor ligereza, ajuste preciso y un agarre agresivo para terrenos técnicos.\\u003c\\/p\\u003e\\n\\u003cp\\u003eIncorporan membrana GORE-TEX® impermeable y transpirable, ideal para correr en barro y condiciones húmedas. La entresuela EnergyCell™+ brinda amortiguación y confort, mientras que la suela Mud Contagrip® con tacos de 5 mm of"
+  },
+  {
+   "url": "https://salomonstore.com.ar/collections/hombre-calzado-running/products.json?limit=250",
+   "estado": 200,
+   "urlFinal": "https://salomonstore.com.ar/collections/hombre-calzado-running/products.json?limit=250",
+   "largo": 472038,
+   "plataforma": "shopify",
+   "generador": null,
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": false,
+   "jsonld": 0,
+   "precioMeta": null,
+   "muestra": "{\"products\":[{\"id\":10264111710522,\"title\":\"S\\/LAB PHANTASM 3 L'ART DE L'AUTOMOBILE\",\"handle\":\"s-lab-phantasm-3-lart-de-lautomobile\",\"body_html\":\"\\u003cp\\u003eLa S\\/Lab Phantasm 3 L’ART combina velocidad y estilo en una colaboración única entre Salomon y L’Art de l’Automobile. Inspirada en la aerodinámica automotriz, este modelo lleva el rendimiento al límite, donde la ingeniería de vanguardia se cruza con una expresión creativa bien marcada. Más que una zapatilla de running, es una declaración de movimiento, fluidez y velocidad pura.\\u003c\\/p\\u003e\",\"published_at\":\"2026-04-08T10:19:52-03:00\",\""
+  },
+  {
+   "url": "https://salomonstore.com.ar/collections/trail-running-calzado-mujer/products.json?limit=250",
+   "estado": 200,
+   "urlFinal": "https://salomonstore.com.ar/collections/trail-running-calzado-mujer/products.json?limit=250",
+   "largo": 1149057,
+   "plataforma": "shopify",
+   "generador": null,
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": false,
+   "jsonld": 0,
+   "precioMeta": null,
+   "muestra": "{\"products\":[{\"id\":9938524078394,\"title\":\"SPEEDCROSS 6 GORE-TEX\",\"handle\":\"speedcross-6-gtx-w\",\"body_html\":\"\\u003cp\\u003e\\u003cspan\\u003eLa SPEEDCROSS 6 GORE-TEX no necesita presentación. Fiel a sus raíces legendarias y a su estado icónico sobre senderos, esta versión es más ligera incluso con una conexión más potente y adherente al terreno y una evacuación del barro más rápida. Cuenta con una membrana GORE-TEX impermeable y transpirable ideal para condiciones de humedad y barro, una pala renovada y el confort clásico de SPEEDCROSS.\\u003c\\/span\\u003e\\u003c\\/p\\u003e\",\"published_at\":\"2026-11-05T"
+  },
+  {
+   "url": "https://salomonstore.com.ar/collections/running-calzado-mujer/products.json?limit=250",
+   "estado": 200,
+   "urlFinal": "https://salomonstore.com.ar/collections/running-calzado-mujer/products.json?limit=250",
+   "largo": 317841,
+   "plataforma": "shopify",
+   "generador": null,
+   "variantes": false,
+   "tiendanube": false,
+   "desafio": false,
+   "jsonld": 0,
+   "precioMeta": null,
+   "muestra": "{\"products\":[{\"id\":10264111710522,\"title\":\"S\\/LAB PHANTASM 3 L'ART DE L'AUTOMOBILE\",\"handle\":\"s-lab-phantasm-3-lart-de-lautomobile\",\"body_html\":\"\\u003cp\\u003eLa S\\/Lab Phantasm 3 L’ART combina velocidad y estilo en una colaboración única entre Salomon y L’Art de l’Automobile. Inspirada en la aerodinámica automotriz, este modelo lleva el rendimiento al límite, donde la ingeniería de vanguardia se cruza con una expresión creativa bien marcada. Más que una zapatilla de running, es una declaración de movimiento, fluidez y velocidad pura.\\u003c\\/p\\u003e\",\"published_at\":\"2026-04-08T10:19:52-03:00\",\""
   }
  ]
 }

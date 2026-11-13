@@ -10178,6 +10178,50 @@
       "40"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/genesis-2",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 249999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/genesis-2-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -10300,6 +10344,47 @@
      "cuotas": "6 cuotas sin interés",
      "url": "https://voraxrunning.com.ar/productos/salomon-ultra-glide-4-1r7jy/",
      "fecha": "12/11/2026"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 269999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-glide-4-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39.5",
+      "41",
+      "42",
+      "42.5",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 269999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-glide-4-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "39",
+      "40",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -10420,6 +10505,46 @@
       "44"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 189999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-flow-2-m",
+     "fecha": "12/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 189999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/ultra-flow-2-w",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37.5",
+      "38.5",
+      "40.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -10494,6 +10619,30 @@
       "44"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Salomon Argentina",
+     "precio": 399999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://salomonstore.com.ar/products/s-lab-pulsar-4",
+     "fecha": "12/11/2026",
+     "talles": [
+      "37",
+      "37.5",
+      "38",
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "44.5"
+     ],
+     "sistema": "AR",
+     "nota": "Unisex"
     }
    ],
    "colores": [],

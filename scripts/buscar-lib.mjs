@@ -28,7 +28,7 @@ export const MARCAS = ["nike", "adidas", "asics", "new balance", "saucony", "pum
 /* palabras que indican otra versión del modelo: si aparecen en la tienda y no en nuestro modelo, no es el mismo */
 const VARIANTES = ["trail", "gtx", "gore", "plus", "premium", "max", "elite", "pro", "tr", "ultra", "mid", "speed", "sl", "lite", "flow", "next", "rise", "stride", "hyper", "prime", "se", "luxe", "boa", "evo", "x", "control", "tempo", "mary", "jane", "shield", "winter", "spike", "spikes", "atr"];
 const NO_ZAPA = /\b(buzo|remera|media|medias|short|gorra|gorro|visera|mochila|bolso|duffle|chaleco|bidon|rinonera|cinturon|guantes|polainas|campera|calza|musculosa|ojotas?|sandalia|bota|botin|kids|nino|nina|junior|jr|gs|ps|td|bebe)\b/;
-export const generoDe = s => { const t = ` ${norm(s)} `; return / (mujer|women|womens|wmns|w|dama) /.test(t) ? "Mujer" : / (hombre|men|mens|m|caballero) /.test(t) ? "Hombre" : / unisex /.test(t) ? "Unisex" : ""; };
+export const generoDe = s => { const t = ` ${norm(s)} `; return / (mujer|woman|women|womens|wmns|w|dama) /.test(t) ? "Mujer" : / (hombre|man|men|mens|m|caballero) /.test(t) ? "Hombre" : / unisex /.test(t) ? "Unisex" : ""; };
 
 const OTRAS_LINEAS = ["duramo", "runfalcon", "galaxy", "response", "supernova", "adistar", "ultraboost", "questar", "solarglide", "dropset", "rapidmove"];
 export function coincide(m, nombre, url) {
@@ -88,7 +88,7 @@ export async function buscar(tipo, base, q) {
   }
   if (tipo === "shopify") {
     const j = await traer(`${base}/search/suggest.json?q=${e}&resources[type]=product&resources[limit]=10`, true);
-    return (j.resources?.results?.products || []).map(p => ({ url: abs(base, p.url), nombre: p.title }));
+    return (j.resources?.results?.products || []).map(p => ({ url: abs(base, p.url).split("?")[0], nombre: p.title }));   // sin los parámetros de seguimiento del buscador
   }
   if (tipo === "woo") {
     const j = await traer(`${base}/wp-json/wc/store/v1/products?search=${e}&per_page=20`, true);

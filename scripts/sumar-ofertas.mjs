@@ -2,6 +2,7 @@
 // Solo agrega ofertas con stock que todavía no están (misma tienda y mismo talle de hombre/mujer); no toca las que ya hay.
 //   node scripts/sumar-ofertas.mjs            -> muestra qué agregaría
 //   node scripts/sumar-ofertas.mjs --guardar  -> lo agrega a modelos.json y al historial
+//   node scripts/sumar-ofertas.mjs --tienda=Salomon --guardar  -> solo las de esa tienda
 import { readFileSync, writeFileSync } from "node:fs";
 
 const RAIZ = new URL("../public/data/", import.meta.url);
@@ -9,6 +10,8 @@ const cat = JSON.parse(readFileSync(new URL("modelos.json", RAIZ), "utf8"));
 const hist = JSON.parse(readFileSync(new URL("historial.json", RAIZ), "utf8"));
 const enc = JSON.parse(readFileSync(new URL("./ofertas-encontradas.json", import.meta.url), "utf8"));
 const guardar = process.argv.includes("--guardar");
+/* --tienda=Salomon: solo las ofertas de las tiendas cuyo nombre empieza así */
+const soloTienda = (process.argv.find(x => x.startsWith("--tienda=")) || "").slice(9).toLowerCase();
 /* ofertas revisadas a mano que no corresponden al modelo (el nombre de la tienda no coincide con el producto) */
 const DESCARTAR = [/velociti-elite/, /zoom-vomero/];
 const hoyISO = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Argentina/Buenos_Aires" }).format(new Date());
@@ -21,7 +24,7 @@ for (const r of enc.resultados) if (!r.nota && enc.resultados.some(x => x.slug =
 let n = 0;
 for (const r of enc.resultados) {
   const m = porSlug[r.slug];
-  if (!m || r.sinStock || !r.precio || DESCARTAR.some(x => x.test(r.url))) continue;
+  if (!m || r.sinStock || !r.precio || DESCARTAR.some(x => x.test(r.url)) || (soloTienda && !r.tienda.toLowerCase().startsWith(soloTienda))) continue;
   const ya = m.tiendas.some(t => t.tienda === r.tienda && (t.nota || "") === (r.nota || "")) || m.tiendas.some(t => t.url === r.url);
   if (ya) continue;
   const t = { tienda: r.tienda, precio: r.precio, cuotas: r.cuotas ? `${r.cuotas} cuotas sin interés` : "Consultar en la tienda", url: r.url, fecha: hoyAR };

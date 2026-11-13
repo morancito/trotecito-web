@@ -6792,26 +6792,6 @@
    "sistema": "AR"
   },
   {
-   "slug": "salomon-genesis",
-   "modelo": "Salomon Genesis",
-   "tienda": "Dexter",
-   "nombre": "botines canterbury ccc phoenix genesis team fg",
-   "url": "https://www.dexter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
-   "nota": "",
-   "precio": 119999,
-   "antes": 200999,
-   "cuotas": 2,
-   "sinStock": false,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41.5",
-    "42"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "salomon-speedcross-6",
    "modelo": "Salomon Speedcross 6",
    "tienda": "Sporting",
@@ -6993,26 +6973,6 @@
    "sistema": "US"
   },
   {
-   "slug": "salomon-genesis",
-   "modelo": "Salomon Genesis",
-   "tienda": "Stock Center",
-   "nombre": "botines canterbury ccc phoenix genesis team fg",
-   "url": "https://www.stockcenter.com.ar/botines-canterbury-ccc-phoenix-genesis-team-fg/CBQB000137FKAP7.html",
-   "nota": "",
-   "precio": 119999,
-   "antes": 200999,
-   "cuotas": 2,
-   "sinStock": false,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41.5",
-    "42"
-   ],
-   "sistema": "AR"
-  },
-  {
    "slug": "salomon-aero-blaze-3",
    "modelo": "Salomon Aero Blaze 3",
    "tienda": "NewSport",
@@ -7141,27 +7101,6 @@
     "44",
     "45",
     "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-genesis",
-   "modelo": "Salomon Genesis",
-   "tienda": "NewSport",
-   "nombre": "Zapatillas Salomon Trail Running S/lab Genesis Unisex",
-   "url": "https://www.newsport.com.ar/zapatillas-salomon-trail-running-s-lab-genesis-unisex-491901/p",
-   "nota": "Unisex",
-   "precio": 399999,
-   "antes": null,
-   "cuotas": 9,
-   "talles": [
-    "39.5",
-    "41",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "44"
    ],
    "sistema": "AR"
   },

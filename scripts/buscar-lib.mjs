@@ -39,7 +39,8 @@ export const generoDe = s => { const t = ` ${norm(s)} `; return / (mujer|woman|w
 
 const OTRAS_LINEAS = ["duramo", "runfalcon", "galaxy", "response", "supernova", "adistar", "ultraboost", "questar", "solarglide", "dropset", "rapidmove"];
 export function coincide(m, nombre, url) {
-  const t = ` ${norm(nombre + " " + decodeURIComponent(new URL(url).pathname))} `.replace(/ gore tex /g, " gtx ");
+  let ruta = ""; try { ruta = new URL(url).pathname; ruta = decodeURIComponent(ruta); } catch {}   // hay tiendas con % sueltos en la dirección
+  const t = ` ${norm(nombre + " " + ruta)} `.replace(/ gore tex /g, " gtx ");
   if (NO_ZAPA.test(t)) return false;
   const marca = norm(m.m);
   if (MARCAS.some(b => b !== marca && t.includes(` ${b} `)) && !t.includes(` ${marca} `)) return false;

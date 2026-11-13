@@ -52,7 +52,9 @@ export function grafico(series) {
   const valores = visibles.flatMap(([, s]) => s.filter(([d]) => t(d) >= ini).map(x => x[1])).concat(visibles.map(([, s]) => vigente(s, ini)).filter(v => v != null));
   const vmin = Math.min(...valores), vmax = Math.max(...valores);
   const lo = Math.max(0, vmin - (vmax - vmin || vmax) * 0.15), hi = vmax + (vmax - vmin || vmax) * 0.1;
-  const W = 640, H = 230, M = { l: 62, r: 104, t: 14, b: 28 }, iw = W - M.l - M.r, ih = H - M.t - M.b;
+  /* en el celular el gráfico se dibuja más angosto, así la letra no queda a la mitad de tamaño */
+  const angosto = typeof matchMedia !== "undefined" && matchMedia("(max-width: 600px)").matches;
+  const W = angosto ? 380 : 640, H = angosto ? 250 : 230, M = { l: angosto ? 52 : 62, r: angosto ? 96 : 104, t: 14, b: 28 }, iw = W - M.l - M.r, ih = H - M.t - M.b;
   const X = ms => M.l + (fin === ini ? iw : (ms - ini) / (fin - ini) * iw), Y = v => M.t + ih - (v - lo) / (hi - lo) * ih;
   const ty = ticksY(lo, hi);
   const nx = Math.min(5, fechas.length), tx = [];

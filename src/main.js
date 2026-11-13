@@ -2,7 +2,7 @@ import "@fontsource-variable/archivo/wdth.css";
 import "@fontsource/kanit/900-italic.css";
 import "@fontsource/jetbrains-mono/500.css";
 import "./styles.css";
-import { Viewer, perfil, topY, RM } from "./shoe3d.js";
+import { perfil, topY, RM } from "./forma.js";
 import { grafico, montarGrafico, variacion } from "./precios.js";
 import { PREGUNTAS, recomendar, rangoKg, opTexto, aplica, DIST_TXT } from "./recomendador.js";
 import { medir, medirVisita } from "./medir.js";
@@ -101,7 +101,17 @@ requestAnimationFrame(() => { const w = $("#ticker .tk-run").scrollWidth; $("#ti
 
 /* ---------- aprendé ---------- */
 const VISTAS = { "Costado": 0, "3/4": 0.55, "Atrás": Math.PI / 2 };
-const lab = Viewer($("#labStage"), { H: 38, F: 28, auto: false, view: 0.35 });
+/* El visor 3D (three.js, lo más pesado del sitio) se baja recién cuando hace falta: al acercarse a "Aprendé" o al abrir
+   la pestaña 3D de una ficha. Mientras llega, guarda lo último que le pidieron y lo aplica al cargar. */
+function Viewer(host, init, cuando = Promise.resolve()) {
+  let v = null, roto = false, vista = null; const p = { ...init };
+  host.classList.add("cargando3d");
+  cuando.then(() => import("./shoe3d.js")).then(m => { host.classList.remove("cargando3d"); if (roto) return; v = m.Viewer(host, p); if (vista) v.view(...vista); })
+    .catch(() => { host.classList.remove("cargando3d"); host.insertAdjacentHTML("afterbegin", '<div class="no3d">No pudimos cargar el 3D. Recargá la página.</div>'); });
+  return { set(o) { Object.assign(p, o); v?.set(o); }, view(...a) { vista = a; v?.view(...a); }, destroy() { roto = true; v?.destroy(); } };
+}
+const cercaDeAprender = new Promise(ok => { const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); ok(); } }, { rootMargin: "150px" }); io.observe($("#aprender")); });
+const lab = Viewer($("#labStage"), { H: 38, F: 28, auto: false, view: 0.35 }, cercaDeAprender);
 $("#labViews").innerHTML = Object.keys(VISTAS).map(k => `<button data-v="${k}" aria-pressed="false">${k}</button>`).join("");
 function setVista(k) { lab.view(VISTAS[k], false); document.querySelectorAll("#labViews button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === k)); }
 $("#labViews").onclick = e => { const b = e.target.closest("button"); if (b) setVista(b.dataset.v); };
@@ -356,13 +366,21 @@ function filtrosDeUrl(qs) {
   if (p.has("talle") && p.get("talle") !== TALLE) { TALLE = p.get("talle"); guardar("trotecito-talle", TALLE || null); }
   aplicarGenero(); pintarOfertas();
 }
+let verClave = null, verN = 0;
 function render() {
   const l = lista(), act = chipsActivos();
   if (!esFicha() && (location.hash === "" || location.hash.startsWith("#catalogo"))) {
     const qs = filtrosAUrl(), nueva = BASE + (qs ? "#catalogo?" + qs : location.hash.startsWith("#catalogo") ? "#catalogo" : "");
-    if (nueva !== location.pathname + location.hash) history.replaceState(null, "", nueva);
+    if (nueva !== location.pathname + location.hash) history.replaceState(history.state, "", nueva);
   }
-  $("#grid").innerHTML = l.map(tarjeta).join(""); $("#empty").hidden = l.length > 0;
+  /* de a tandas: 109 tarjetas juntas son más de 40 pantallas en el celular. Lo que ya abrió se recuerda en la pestaña,
+     así al volver de una ficha encuentra la lista como la dejó. */
+  const clave = filtrosAUrl() + "|" + GEN + "|" + TALLE, LOTE = matchMedia("(max-width: 900px)").matches ? 12 : 24;
+  if (clave !== verClave) { verClave = clave; let g = 0; try { const [k, n] = JSON.parse(sessionStorage.getItem("tt-ver") || "[]"); if (k === clave) g = +n; } catch {} verN = Math.max(LOTE, g || 0); }
+  try { sessionStorage.setItem("tt-ver", JSON.stringify([clave, verN])); } catch {}
+  const quedan = Math.max(0, l.length - verN);
+  $("#grid").innerHTML = l.slice(0, verN).map(tarjeta).join(""); $("#empty").hidden = l.length > 0;
+  $("#verMas").hidden = !quedan; $("#verMas").textContent = `Ver ${Math.min(quedan, LOTE * 2)} zapas más (quedan ${quedan})`; $("#verMas").dataset.n = LOTE * 2;
   $("#cuenta").textContent = `${l.length} ${l.length === 1 ? "zapa" : "zapas"}`;
   $("#fpVer").textContent = `Ver ${l.length} ${l.length === 1 ? "zapa" : "zapas"}`;
   $("#fAbrir").innerHTML = `Filtros${act.length ? ` <i>${act.length}</i>` : ""}`;
@@ -444,6 +462,8 @@ function pintarOfertas() {
   }, 2800);
 })();
 document.addEventListener("click", e => { const a = e.target.closest(".ho, #ofertas .of"); if (a) medir("atajo", { t: a.classList.contains("ho") ? "Oferta de arriba" : "Oferta del inicio" }); });
+$("#verMas").addEventListener("click", e => { const antes = $("#grid").children.length; verN += +e.currentTarget.dataset.n || 24; medir("atajo", { t: "Catálogo: ver más" }); render();
+  $("#grid").children[antes]?.focus({ preventScroll: true }); });
 $("#ofTodas").addEventListener("click", e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas" }); verOfertas(); });
 pintarOfertas();
 
@@ -644,7 +664,7 @@ function resumenPicks(picks) {
   const la = p => (/^La /.test(p.d.m) ? "" : "La ") + n(p);   // "La Sportiva…" ya trae el artículo
   /* ninguna cumple todo: de cada una, qué le falta */
   if (!/^La mejor/.test(a.etiqueta) && picks.some(p => p.falta)) return `<p class="rr-resumen"><span class="kicker">En resumen</span>${picks.map(p =>
-    /^Si estirás/.test(p.etiqueta) ? `${la(p)} cumple con lo que pediste, pero ${esc(p.falta)}.` : `${la(p)} ${esc(p.falta)}.`).join(" ")}</p>`;
+    /^Si estirás/.test(p.etiqueta) ? `${la(p)} cumple con lo que pediste, pero ${esc(p.falta)}.` : /calce/.test(p.etiqueta) ? `${la(p)} sirve para lo que buscás, pero ${esc(p.falta)}.` : `${la(p)} ${esc(p.falta)}.`).join(" ")}</p>`;
   if (!/^La mejor/.test(a.etiqueta)) return `<p class="rr-resumen"><span class="kicker">En resumen</span>${picks.map(p =>
     /^Si estirás/.test(p.etiqueta) ? `${la(p)} es la más barata que sirve para ${esc(DIST_TXT[resp.dist] || "lo que buscás")}: ${fmt(p.t.precio)}.`
     : /^Si corrés/.test(p.etiqueta) ? `${la(p)} entra en tu presupuesto, pero es para ${esc(p.d.dist?.map(x => DIST_TXT[x]).join(" y ") || "otra distancia")}.`
@@ -652,7 +672,7 @@ function resumenPicks(picks) {
   const frases = [`${la(a)} es la que mejor encaja con lo que contaste.`];
   for (const p of picks.slice(1)) {
     if (p.etiqueta === "Para entrenar") { frases.push(p.tambienCarrera ? `${la(p)} la proponemos como compañera para entrenar; para tu carrera priorizamos ${picks.filter(x => x.etiqueta !== "Para entrenar").length === 1 ? "la primera" : "las otras dos"}.` : `${la(p)} no es para la carrera: es para entrenar el resto de la semana.`); continue; }
-    if (p.falta) { frases.push(/^Si estirás/.test(p.etiqueta) ? `${la(p)} también cumple, pero ${esc(p.falta)}.` : `${la(p)} va con reservas: ${esc(p.falta)}.`); continue; }
+    if (p.falta) { frases.push(/^Si estirás/.test(p.etiqueta) ? `${la(p)} también cumple, pero ${esc(p.falta)}.` : /calce/.test(p.etiqueta) ? `${la(p)} también sirve, pero ${esc(p.falta)}.` : `${la(p)} va con reservas: ${esc(p.falta)}.`); continue; }
     const d = p.d, r = a.d, dif = a.t.precio - p.t.precio;
     const gana = [], cede = [];
     if (dif >= 10000) gana.push(`sale ${fmt(dif)} menos`); else if (-dif >= 10000) cede.push(`cuesta ${fmt(-dif)} más`);
@@ -828,7 +848,9 @@ function rutaActual() {
   if (m) { const d = DATA.find(x => x.id === +m[1]); history.replaceState(null, "", d ? zurl(d) : BASE); return { d: d || null, h: "" }; }
   return { d: null, h };
 }
-function ir(url) { if (url !== location.pathname + location.hash) history.pushState(null, "", url); route(); }
+/* al salir de una pantalla se anota por dónde iba, para volver al mismo lugar con "atrás" (el navegador solo no acierta
+   porque la lista se vuelve a armar) */
+function ir(url) { if (url !== location.pathname + location.hash) { history.replaceState({ ...history.state, y: scrollY }, ""); history.pushState(null, "", url); } route(); }
 function route() {
   const { d, h } = rutaActual();
   if (visor) { visor.destroy(); visor = null; }
@@ -841,7 +863,7 @@ function route() {
   else if (reemp) { const x = h.startsWith("reemplazo/") && DATA.find(z => z.slug === h.split("/")[1]);
     pintarReemplazo(); if (x) buscarReemplazo(`${x.m} ${nombre(x)}`); document.title = "Encontrá el reemplazo de tus zapas · Trotecito"; window.scrollTo(0, 0); }
   else if (h === "comparar") { $("#comparar").innerHTML = comparar(); document.title = "Comparar · Trotecito"; window.scrollTo(0, 0); }
-  else { document.title = "Trotecito"; if (h === "catalogo" && location.hash.includes("?")) filtrosDeUrl(location.hash.split("?")[1]); render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
+  else { document.title = "Trotecito · Zapatillas de running en Argentina, comparadas"; if (h === "catalogo" && location.hash.includes("?")) filtrosDeUrl(location.hash.split("?")[1]); render(); if (h === "catalogo" || h === "aprender") requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView()); }
   bandeja();
 }
 const URL_TIENDA = new Map(DATA.flatMap(d => d.todas.map(t => [t.url, [d, t]])));
@@ -862,5 +884,11 @@ document.addEventListener("click", e => {
   if (!url.startsWith(BASE) || /^(data|fotos|assets)\/|admin\.html/.test(url.slice(BASE.length))) return;
   e.preventDefault(); ir(url);
 });
-addEventListener("popstate", route);
+/* el scroll lo manejamos nosotros: el navegador intenta restaurarlo antes de que la lista esté armada y cae en cualquier lado */
+try { history.scrollRestoration = "manual"; } catch {}
+addEventListener("popstate", e => { route(); const y = e.state?.y; if (y != null) requestAnimationFrame(() => scrollTo({ top: y, behavior: "instant" })); });
+addEventListener("pagehide", () => { try { sessionStorage.setItem("tt-y", JSON.stringify([location.href, scrollY])); } catch {} });
 route();
+/* al recargar o volver desde otro sitio, al mismo lugar donde estaba */
+try { const [u, y] = JSON.parse(sessionStorage.getItem("tt-y") || "[]"), tipo = performance.getEntriesByType("navigation")[0]?.type;
+  if (u === location.href && y > 0 && (tipo === "reload" || tipo === "back_forward")) requestAnimationFrame(() => scrollTo({ top: y, behavior: "instant" })); } catch {}

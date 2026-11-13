@@ -869,3 +869,12 @@ table.cmpt tr.grp th.gn i { display: inline-block; width: 8px; height: 8px; bord
   .hero-of:not([hidden]) ~ .puertas .p-of { display: none; }
   .hero:has(.hero-of:not([hidden])) ~ .of-sec { display: none; }
 }
+
+/* catálogo de a tandas */
+.ver-mas { display: block; margin: 28px auto 0; min-width: min(100%, 320px); }
+.ver-mas[hidden] { display: none; }
+/* la letra chica de la caja de compra, sobre bordó, tiene que leerse */
+.buy .buy-f { color: #F6E3E8; }
+/* mientras baja el visor 3D */
+.cargando3d { position: relative; }
+.cargando3d::before { content: "Cargando el 3D…"; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }

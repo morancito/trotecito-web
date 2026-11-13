@@ -3,10 +3,11 @@
 //   1) "La mejor", "La que más conviene", "Otra muy buena opción", el paso siguiente y "Para entrenar": dentro del peso que la ficha recomienda;
 //   2) esas mismas, dentro del presupuesto; las que se pasan solo como "Si estirás el presupuesto";
 //   3) si existe alguna que cumple todo dentro del tope, la primera es una de esas;
+//   6) ningún sello si la horma choca con el ancho de pie declarado (van como "Sujeta a probar el calce");
 //   4) las que no cumplen algo dicen qué les falta; 5) no se describe una placa antirrocas como placa para ir rápido.
 //   node scripts/barrer-recomendador.mjs
 import { readFileSync } from "node:fs";
-import { recomendar, PREGUNTAS, aplica, pesoApto, precioPara } from "../src/recomendador.js";
+import { recomendar, PREGUNTAS, aplica, pesoApto, calceDuda } from "../src/recomendador.js";
 const cat = JSON.parse(readFileSync(new URL("../public/data/modelos.json", import.meta.url), "utf8"));
 const DATA = cat.modelos.filter(d => !d.borrador).map(d => ({ ...d, todas: (d.tiendas || []).filter(t => !t.sinStock) }));
 const SELLOS = /^(La mejor para vos|La que más conviene por precio|Otra muy buena opción|Para dar un paso más|Para el día de la carrera|Para entrenar)$/;
@@ -18,10 +19,11 @@ const falla = (k, r, txt) => { fallas[k] = (fallas[k] || 0) + 1; ej[k] ??= JSON.
     n++; const res = recomendar(DATA, r), tope = +r.tope || Infinity;
     if (res.sinPlena) sinPlena++; if (res.picks.length < 3) menos3++;
     if (res.picks.some(p => p.etiqueta === "Si estirás el presupuesto")) conEstirar++;
-    if (res.picks.some(p => /reservas|cercana/.test(p.etiqueta))) conReserva++;
+    if (res.picks.some(p => /reservas|cercana|calce/.test(p.etiqueta))) conReserva++;
     for (const [j, p] of res.picks.entries()) {
       const sello = SELLOS.test(p.etiqueta), nom = `${p.etiqueta}: ${p.d.slug} ${p.t.precio}`;
       if (sello && !pesoApto(p.d, r.kg)) falla("1 sello con peso fuera de rango", r, nom);
+      if (sello && calceDuda(p.d, r.pie)) falla("6 sello con horma que choca con el pie", r, nom);
       if (sello && p.t.precio > tope) falla("2 sello fuera de presupuesto", r, nom);
       if (p.t.precio > tope && !/^Si /.test(p.etiqueta) && !res.sinPlena && !res.sinCoincidencia) falla("2b fuera de tope sin marcar", r, nom);
       if (!sello && !res.sinCoincidencia && !p.falta) falla("4 sin decir qué le falta", r, nom);

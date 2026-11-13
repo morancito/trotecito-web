@@ -278,19 +278,6 @@
    "pl": "Sin placa",
    "tiendas": [
     {
-     "tienda": "Nike",
-     "precio": 154999,
-     "antes": 309999,
-     "cuotas": "9 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.nike.com.ar/nike-pegasus-42-ib1881-602/p",
-     "fecha": "10/11/2026",
-     "talles": [
-      "6"
-     ],
-     "sistema": "US"
-    },
-    {
      "tienda": "Vorax Running",
      "precio": 279500,
      "cuotas": "6 cuotas sin interés",
@@ -454,7 +441,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-pegasus-42-ib1873-008/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "6.5",
       "7",
@@ -468,6 +455,27 @@
       "11",
       "11.5",
       "12"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 309999,
+     "cuotas": "9 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.nike.com.ar/nike-pegasus-42-ib1881-400/p",
+     "fecha": "12/11/2026",
+     "talles": [
+      "5",
+      "5.5",
+      "6",
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "10"
      ],
      "sistema": "US"
     }
@@ -525,7 +533,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-pegasus-plus-fq7261-002/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5"
      ],
@@ -555,7 +563,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-pegasus-plus-fq7262-002/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "7"
      ],
@@ -657,19 +665,6 @@
       "35"
      ],
      "sistema": "AR"
-    },
-    {
-     "tienda": "Nike",
-     "precio": 230999,
-     "antes": 329999,
-     "cuotas": "9 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.nike.com.ar/nike-vomero-18-hm6803-301/p",
-     "fecha": "10/11/2026",
-     "talles": [
-      "7.5"
-     ],
-     "sistema": "US"
     },
     {
      "tienda": "Vorax Running",
@@ -808,9 +803,28 @@
      "tienda": "Nike",
      "precio": 329999,
      "cuotas": "9 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.nike.com.ar/nike-vomero-18-hm6803-404/p",
+     "fecha": "12/11/2026",
+     "talles": [
+      "7",
+      "7.5",
+      "8",
+      "8.5",
+      "9",
+      "9.5",
+      "10.5",
+      "11"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "Nike",
+     "precio": 329999,
+     "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-vomero-18-hm6804-607/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5",
@@ -966,7 +980,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-vomero-plus-hv8150-002/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "8.5",
       "9",
@@ -980,14 +994,13 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-vomero-plus-hv8154-002/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5",
       "6.5",
       "7",
       "8",
-      "9.5",
       "10"
      ],
      "sistema": "US"
@@ -1046,7 +1059,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-structure-26-hj1102-800/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "7.5",
       "8.5",
@@ -1065,7 +1078,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-structure-26-hj1101-601/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "7",
@@ -6511,7 +6524,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-pegasus-premium-hq2592-009/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "7"
      ],
@@ -6524,11 +6537,10 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-pegasus-premium-hq2593-502/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
-      "5.5",
-      "7"
+      "5.5"
      ],
      "sistema": "US"
     },
@@ -6689,7 +6701,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-pegasus-41-fd2722-006/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "9"
      ],
@@ -6702,7 +6714,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-pegasus-41-fd2723-503/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5"
@@ -6912,7 +6924,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-quest-6-fd6033-003/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "10"
      ],
@@ -7025,7 +7037,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-revolution-8-hj8485-604/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5",
@@ -7174,7 +7186,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-revolution-8-hj9198-403/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "6.5",
       "8.5",
@@ -8024,7 +8036,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-pegasus-trail-5-gore-tex-fq0912-200/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5",
@@ -8061,10 +8073,9 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-pegasus-trail-5-gore-tex-fq0908-301/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
-      "9",
-      "10"
+      "9"
      ],
      "sistema": "US"
     },
@@ -8218,13 +8229,12 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-zegama-2-fd5190-303/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "9",
       "10",
       "10.5",
-      "11",
-      "11.5"
+      "11"
      ],
      "sistema": "US"
     },
@@ -8235,7 +8245,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-zegama-2-fd5191-200/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5",
@@ -11397,24 +11407,6 @@
      "sinStock": true
     },
     {
-     "tienda": "Stock Center",
-     "precio": 199999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.stockcenter.com.ar/zapatillas-nike-air-winflo-11-mujer/NIFJ9510-605.html",
-     "fecha": "12/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "35",
-      "35.5",
-      "37",
-      "37.5",
-      "39",
-      "39.5",
-      "41"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "NewSport",
      "precio": 195499,
      "cuotas": "9 cuotas sin interés",
@@ -11448,13 +11440,31 @@
      "sistema": "AR"
     },
     {
+     "tienda": "Stock Center",
+     "precio": 199999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-nike-air-winflo-11-mujer/NIFJ9510-605.html",
+     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "37",
+      "37.5",
+      "39",
+      "39.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Nike",
      "precio": 199999,
      "antes": 229999,
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-winflo-11-fj9509-010/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "6",
       "7",
@@ -11474,7 +11484,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-winflo-11-fj9510-001/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5.5",
       "6",
@@ -11602,7 +11612,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-winflo-12-hv9272-002/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "10.5",
       "11"
@@ -11661,10 +11671,9 @@
      "antes": 499999,
      "cuotas": "9 cuotas sin interés",
      "url": "https://www.nike.com.ar/nike-vaporfly-4-hf6412-601/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
-      "3.5",
-      "4.5"
+      "3.5"
      ],
      "sistema": "US"
     }
@@ -11725,10 +11734,9 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-structure-plus-hq3048-001/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
-      "9",
-      "9.5"
+      "9"
      ],
      "sistema": "US"
     },
@@ -11795,7 +11803,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-structure-plus-hq3049-500/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5",
@@ -11890,7 +11898,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-vomero-premium-ir2168-003/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "7.5",
       "8",
@@ -11962,7 +11970,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8116-002/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "6.5",
       "7",
@@ -11984,7 +11992,7 @@
      "cuotas": "9 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8121-003/p",
-     "fecha": "10/11/2026",
+     "fecha": "12/11/2026",
      "talles": [
       "5",
       "5.5",

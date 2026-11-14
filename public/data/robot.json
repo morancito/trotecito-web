@@ -1,29 +1,21 @@
 {
- "fecha": "13/11/2026",
- "hora": "04:04 p. m.",
+ "fecha": "14/11/2026",
+ "hora": "02:29 p. m.",
  "leidos": 643,
- "cambiaron": 5,
- "conTalles": 571,
+ "cambiaron": 2,
+ "conTalles": 569,
  "fallaron": 0,
- "borrados": 7,
- "coloresFecha": "13/11/2026",
+ "borrados": 0,
+ "coloresFecha": "14/11/2026",
  "colores": {
-  "leidos": 321,
+  "leidos": 317,
   "borrados": 0,
-  "sinStock": 13,
-  "fallaron": 0,
-  "fecha": "13/11/2026"
+  "sinStock": 16,
+  "fallaron": 1,
+  "fecha": "14/11/2026"
  },
  "errores": [],
- "borradosL": [
-  "asics-gel-trabuco-13 · Asics Mujer: HTTP 404 · producto no encontrado",
-  "salomon-ultra-glide-4 · Salomon Argentina Hombre: HTTP 404 · la tienda redirige a / (el producto ya no está)",
-  "salomon-ultra-glide-4 · Salomon Argentina Mujer: HTTP 404 · la tienda redirige a / (el producto ya no está)",
-  "saucony-xodus-ultra-4 · Sporting Mujer: HTTP 404 · producto no encontrado",
-  "salomon-speedcross-6-gtx · Salomon Argentina Hombre: HTTP 404 · la tienda redirige a / (el producto ya no está)",
-  "salomon-speedcross-6-gtx · Salomon Argentina Mujer: HTTP 404 · la tienda redirige a / (el producto ya no está)",
-  "salomon-supercross-4 · Salomon Argentina Hombre: HTTP 404 · la tienda redirige a / (el producto ya no está)"
- ],
+ "borradosL": [],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
   "nike-vomero-plus · Dexter",
@@ -55,6 +47,7 @@
   "under-armour-infinite-pro · Dexter",
   "under-armour-infinite-pro · Dexter",
   "saucony-kinvara-14 · Dexter",
+  "asics-gt-1000-14 · Dexter",
   "asics-gel-excite-11 · Stock Center",
   "nike-pegasus-41 · Stock Center",
   "nike-pegasus-41 · Dexter",

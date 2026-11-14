@@ -191,39 +191,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 279999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-evo-sl-adidas-722221/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "38.5",
-      "39",
-      "39.5",
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Digital Sport",
-     "precio": 279999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-evo-sl-adidas-721374/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "36",
-      "37.5",
-      "38"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Open Sports",
      "precio": 279999,
      "cuotas": "12 cuotas sin interés",
@@ -250,6 +217,35 @@
      "talles": [
       "36.5",
       "38.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-evo-sl-adidas-721378/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "41",
+      "41.5",
+      "43.5",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-evo-sl-adidas-721374/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "36",
+      "37.5",
+      "38"
      ],
      "sistema": "AR"
     }
@@ -477,44 +473,6 @@
      "sistema": "US"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 309999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-42-nike-719403/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "37.5",
-      "39",
-      "39.5",
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "43.5",
-      "44",
-      "44.5",
-      "45"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Digital Sport",
-     "precio": 309999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-42-nike-729933/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "35.5",
-      "36.5",
-      "37",
-      "37.5",
-      "39"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Open Sports",
      "precio": 309999,
      "cuotas": "12 cuotas sin interés",
@@ -528,6 +486,43 @@
       "43",
       "43.5",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 309999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-42-nike-729912/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45",
+      "46.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 309999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-42-nike-729933/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "35.5",
+      "36.5",
+      "37",
+      "37.5",
+      "39"
      ],
      "sistema": "AR"
     }
@@ -720,19 +715,6 @@
    "pl": "Sin placa",
    "tiendas": [
     {
-     "tienda": "Digital Sport",
-     "precio": 228999,
-     "antes": 330000,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-w-nike-vomero-18-nike-707284/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "35"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Vorax Running",
      "precio": 273400,
      "cuotas": "6 cuotas sin interés",
@@ -882,20 +864,6 @@
      "sistema": "US"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 329999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-18-nike-719417/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "41",
-      "41.5",
-      "42",
-      "43"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Solo Deportes",
      "precio": 329999,
      "cuotas": "6 cuotas sin interés",
@@ -927,6 +895,44 @@
      "fecha": "14/11/2026",
      "talles": [
       "41.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 329999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-18-nike-729911/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 329999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-18-nike-729930/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "35",
+      "35.5",
+      "36.5",
+      "37",
+      "37.5",
+      "38.5",
+      "39",
+      "39.5"
      ],
      "sistema": "AR"
     }
@@ -1094,19 +1100,6 @@
      "sistema": "US"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 379999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-plus-nike-719416/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "39",
-      "39.5"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Open Sports",
      "precio": 379999,
      "cuotas": "12 cuotas sin interés",
@@ -1117,6 +1110,19 @@
       "35",
       "35.5",
       "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 379999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-plus-nike-719416/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "39",
+      "39.5"
      ],
      "sistema": "AR"
     }
@@ -1200,6 +1206,19 @@
       "7.5"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 254999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/w-nike-structure-26-077020hj1101004/p",
+     "fecha": "14/11/2026",
+     "antes": 299999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -1320,22 +1339,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 299999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-structure-26-nike-697001/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "39",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "43.5"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Solo Deportes",
      "precio": 299999,
      "cuotas": "6 cuotas sin interés",
@@ -1369,15 +1372,34 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Sportline",
-     "precio": 254999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.sportline.com.ar/w-nike-structure-26-077020hj1101004/p",
+     "tienda": "Digital Sport",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-structure-26-nike-686657/",
      "fecha": "14/11/2026",
-     "antes": 299999,
-     "nota": "Mujer",
      "talles": [
-      "35"
+      "38",
+      "39.5",
+      "40.5",
+      "41",
+      "42.5",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-w-nike-structure-26-nike-696784/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "35",
+      "35.5",
+      "36.5",
+      "37"
      ],
      "sistema": "AR"
     }
@@ -2046,6 +2068,17 @@
    "pl": "Varillas de fibra de vidrio",
    "tiendas": [
     {
+     "tienda": "Open Sports",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-boston-13-kk1046.html",
+     "fecha": "14/11/2026",
+     "talles": [
+      "34.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Dexter",
      "precio": 209999,
      "cuotas": "2 cuotas sin interés",
@@ -2191,41 +2224,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 299999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-boston-13-adidas-722207/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "39",
-      "39.5",
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "43.5",
-      "44"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Digital Sport",
-     "precio": 299999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-boston-13-w-adidas-721332/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "36.5",
-      "38",
-      "38.5",
-      "39"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Solo Deportes",
      "precio": 299999,
      "cuotas": "6 cuotas sin interés",
@@ -2267,13 +2265,34 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Open Sports",
-     "precio": 189999,
+     "tienda": "Digital Sport",
+     "precio": 299999,
      "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-boston-13-kk1046.html",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-boston-13-adidas-721330/",
      "fecha": "14/11/2026",
      "talles": [
-      "34.5"
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "43",
+      "43.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 299999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-boston-13-w-adidas-721332/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "36.5",
+      "38",
+      "38.5",
+      "39"
      ],
      "sistema": "AR"
     }
@@ -2377,11 +2396,13 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-supernova-rise-3-m-adidas-722720/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
+      "39",
       "40",
       "41",
-      "41.5"
+      "41.5",
+      "43"
      ],
      "sistema": "AR"
     },
@@ -2392,9 +2413,10 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-supernova-rise-3-adidas-722052/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "35.5",
+      "36",
       "36.5",
       "37.5",
       "38",
@@ -2734,24 +2756,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 549999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-adios-pro-5-adidas-721517/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "43.5",
-      "44"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Open Sports",
      "precio": 549999,
      "cuotas": "12 cuotas sin interés",
@@ -2765,6 +2769,24 @@
       "38",
       "38.5",
       "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 549999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-adios-pro-5-adidas-721517/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
      ],
      "sistema": "AR"
     }
@@ -2820,13 +2842,25 @@
    "pl": "Sin placa",
    "tiendas": [
     {
+     "tienda": "Solo Deportes",
+     "precio": 99999,
+     "cuotas": "3 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl-2-azul.html",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Digital Sport",
      "precio": 118999,
      "antes": 140000,
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-duramo-sl-2-adidas-674466/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "39",
       "41",
@@ -2993,18 +3027,6 @@
       "39.5",
       "40",
       "41"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Solo Deportes",
-     "precio": 99999,
-     "cuotas": "3 cuotas sin interés",
-     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl-2-azul.html",
-     "fecha": "14/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "45.5"
      ],
      "sistema": "AR"
     },
@@ -3480,9 +3502,42 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-gt-2000-14-asics-704629/",
-     "fecha": "10/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-celeste.html",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "40.5",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 279900,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-mujer-verde.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38.5"
      ],
      "sistema": "AR"
     },
@@ -3542,39 +3597,6 @@
       "42",
       "42.5",
       "43"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Solo Deportes",
-     "precio": 279900,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-celeste.html",
-     "fecha": "14/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "40",
-      "40.5",
-      "41",
-      "42",
-      "42.5",
-      "43",
-      "44",
-      "45"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Solo Deportes",
-     "precio": 279900,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-mujer-verde.html",
-     "fecha": "14/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "36",
-      "37",
-      "38.5"
      ],
      "sistema": "AR"
     },
@@ -3644,7 +3666,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-gel-cumulus-27-asics-704641/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "40",
       "41"
@@ -3664,47 +3686,6 @@
      ],
      "sistema": "AR",
      "sinStock": true
-    },
-    {
-     "tienda": "Dexter",
-     "precio": 299999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-cumulus-27-mujer/AS1012B772701.html",
-     "fecha": "14/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "37",
-      "38",
-      "38.5",
-      "39",
-      "40.5",
-      "41"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Stock Center",
-     "precio": 299999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-cumulus-27-hombre/AS1011C186500.html",
-     "fecha": "14/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "41"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Stock Center",
-     "precio": 299999,
-     "cuotas": "2 cuotas sin interés",
-     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-cumulus-27-mujer/AS1012B772701.html",
-     "fecha": "14/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "41"
-     ],
-     "sistema": "AR"
     },
     {
      "tienda": "Solo Deportes",
@@ -3747,6 +3728,47 @@
       "37",
       "38.5",
       "40.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-asics-gel-cumulus-27-mujer/AS1012B772701.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "38.5",
+      "39",
+      "40.5",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-cumulus-27-hombre/AS1011C186500.html",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 299999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-asics-gel-cumulus-27-mujer/AS1012B772701.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
       "41"
      ],
      "sistema": "AR"
@@ -4087,6 +4109,21 @@
    "pl": "Sin placa",
    "tiendas": [
     {
+     "tienda": "Digital Sport",
+     "precio": 200000,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-fresh-foam-x-880-v15-new-balance-733742/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "39.5",
+      "40.5",
+      "41",
+      "42"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "New Balance",
      "precio": 219999,
      "cuotas": "12 cuotas sin interés",
@@ -4153,12 +4190,27 @@
    "pl": "Sin placa",
    "tiendas": [
     {
+     "tienda": "Open Sports",
+     "precio": 209999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-new-balance-fuelcell-rebel-v5-mfcxlo5.html",
+     "fecha": "14/11/2026",
+     "talles": [
+      "39.5",
+      "41",
+      "41.5",
+      "43",
+      "45.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Digital Sport",
      "precio": 210000,
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-fuelcell-rebel-v5-new-balance-733935/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "40.5",
       "41.5",
@@ -4175,7 +4227,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-fuelcell-rebel-v5-new-balance-733775/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "38"
      ],
@@ -4234,21 +4286,6 @@
       "43.5",
       "44",
       "44.5",
-      "45.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Open Sports",
-     "precio": 209999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-new-balance-fuelcell-rebel-v5-mfcxlo5.html",
-     "fecha": "14/11/2026",
-     "talles": [
-      "39.5",
-      "41",
-      "41.5",
-      "43",
       "45.5"
      ],
      "sistema": "AR"
@@ -4825,16 +4862,30 @@
    "tiendas": [
     {
      "tienda": "Digital Sport",
-     "precio": 134999,
+     "precio": 138999,
      "antes": 270000,
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-deviate-nitro-4-wns-puma-708823/",
-     "fecha": "12/11/2026",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-deviate-nitro-4-puma-729357/",
+     "fecha": "14/11/2026",
      "talles": [
-      "35"
+      "36",
+      "37"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 188999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/deviate-nitro-4-wns-480020031212409/p",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5"
+     ],
+     "sistema": "AR",
+     "antes": 289999
     },
     {
      "tienda": "Dexter",
@@ -4884,6 +4935,23 @@
       "39.5",
       "41.5",
       "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 215999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212404.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "36",
+      "36.5",
+      "37",
+      "37.5",
+      "38"
      ],
      "sistema": "AR"
     },
@@ -4999,23 +5067,6 @@
     },
     {
      "tienda": "Open Sports",
-     "precio": 215999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212404.html",
-     "fecha": "14/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "35",
-      "36",
-      "36.5",
-      "37",
-      "37.5",
-      "38"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Open Sports",
      "precio": 289999,
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.opensports.com.ar/zapatillas-puma-deviate-nitro-4-31212304.html",
@@ -5041,19 +5092,6 @@
       "42"
      ],
      "sistema": "AR"
-    },
-    {
-     "tienda": "Sportline",
-     "precio": 188999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.sportline.com.ar/deviate-nitro-4-wns-480020031212409/p",
-     "fecha": "14/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "37.5"
-     ],
-     "sistema": "AR",
-     "antes": 289999
     }
    ],
    "colores": [],
@@ -5391,14 +5429,24 @@
      "sistema": "AR"
     },
     {
+     "tienda": "Open Sports",
+     "precio": 339999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-on-cloudmonster-3-3wg10034-859.html",
+     "fecha": "14/11/2026",
+     "talles": [
+      "38"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Digital Sport",
      "precio": 339999,
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudmonster-3-on-running-741208/",
-     "fecha": "12/11/2026",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudmonster-3-on-running-741309/",
+     "fecha": "14/11/2026",
      "talles": [
-      "41.5",
       "42",
       "43",
       "43.5"
@@ -5411,21 +5459,10 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudmonster-3-on-running-741311/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "37",
       "37.5",
-      "38"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Open Sports",
-     "precio": 339999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-on-cloudmonster-3-3wg10034-859.html",
-     "fecha": "14/11/2026",
-     "talles": [
       "38"
      ],
      "sistema": "AR"
@@ -5664,6 +5701,19 @@
    "slug": "on-cloudrunner-3",
    "tiendas": [
     {
+     "tienda": "Sportline",
+     "precio": 195999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/cloudrunner-3-053020g10054674/p",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37.5"
+     ],
+     "sistema": "AR",
+     "antes": 279999
+    },
+    {
      "tienda": "Dexter",
      "precio": 279999,
      "cuotas": "2 cuotas sin interés",
@@ -5802,19 +5852,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 279999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudrunner-3-on-running-709450/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "37",
-      "37.5"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Moov",
      "precio": 279999,
      "cuotas": "2 cuotas sin interés",
@@ -5848,19 +5885,6 @@
     },
     {
      "tienda": "Sportline",
-     "precio": 195999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.sportline.com.ar/cloudrunner-3-053020g10054674/p",
-     "fecha": "14/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "37.5"
-     ],
-     "sistema": "AR",
-     "antes": 279999
-    },
-    {
-     "tienda": "Sportline",
      "precio": 279999,
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.sportline.com.ar/cloudrunner-3-053020g10071430/p",
@@ -5874,6 +5898,19 @@
       "43",
       "43.5",
       "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudrunner-3-on-running-709450/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "37",
+      "37.5"
      ],
      "sistema": "AR"
     }
@@ -5988,7 +6025,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudflyer-5-on-running-686160/",
-     "fecha": "06/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "41",
       "41.5",
@@ -6110,17 +6147,14 @@
      "tienda": "Digital Sport",
      "precio": 409999,
      "cuotas": "12 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudboom-max-on-running-741199/",
-     "fecha": "12/11/2026",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudboom-max-on-running-686125/",
+     "fecha": "14/11/2026",
      "talles": [
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "43.5",
-      "46"
+      "36.5",
+      "37",
+      "37.5",
+      "38"
      ],
      "sistema": "AR"
     }
@@ -7902,6 +7936,19 @@
      "sinStock": true
     },
     {
+     "tienda": "Open Sports",
+     "precio": 179999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-41-hf7362-900.html",
+     "fecha": "14/11/2026",
+     "talles": [
+      "34.5",
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Nike",
      "precio": 181999,
      "antes": 279999,
@@ -7935,10 +7982,25 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-w-air-zoom-pegasus-41-nike-696717/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "37",
-      "39"
+      "37.5",
+      "39",
+      "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 195999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/w-air-zoom-pegasus-41-077020fd2723605/p",
+     "fecha": "14/11/2026",
+     "antes": 279999,
+     "nota": "Mujer",
+     "talles": [
+      "35"
      ],
      "sistema": "AR"
     },
@@ -7982,26 +8044,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 279999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-41-nike-707077/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "39.5",
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "43.5",
-      "44",
-      "45",
-      "46.5"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Solo Deportes",
      "precio": 279999,
      "cuotas": "6 cuotas sin interés",
@@ -8033,28 +8075,18 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Open Sports",
-     "precio": 179999,
+     "tienda": "Digital Sport",
+     "precio": 279999,
      "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-nike-pegasus-41-hf7362-900.html",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-41-nike-697029/",
      "fecha": "14/11/2026",
      "talles": [
-      "34.5",
-      "35",
-      "35.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Sportline",
-     "precio": 195999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.sportline.com.ar/w-air-zoom-pegasus-41-077020fd2723605/p",
-     "fecha": "14/11/2026",
-     "antes": 279999,
-     "nota": "Mujer",
-     "talles": [
-      "35"
+      "39.5",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44"
      ],
      "sistema": "AR"
     }
@@ -8136,6 +8168,20 @@
      "sistema": "AR"
     },
     {
+     "tienda": "Open Sports",
+     "precio": 159999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-nike-quest-6-fd6033-107.html",
+     "fecha": "14/11/2026",
+     "talles": [
+      "39",
+      "39.5",
+      "43",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "NewSport",
      "precio": 161499,
      "cuotas": "6 cuotas sin interés",
@@ -8176,7 +8222,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-quest-6-nike-696696/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "39.5"
      ],
@@ -8194,6 +8240,59 @@
       "10"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-nike-quest-6-mujer-rosa.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "34.5",
+      "35"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Solo Deportes",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-quest-6-negra-1.html",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/quest-6-077020fd6033003/p",
+     "fecha": "14/11/2026",
+     "antes": 189999,
+     "nota": "Hombre",
+     "talles": [
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 169999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/wmns-nike-quest-6-077020fd6034201/p",
+     "fecha": "14/11/2026",
+     "antes": 189999,
+     "nota": "Mujer",
+     "talles": [
+      "35",
+      "35.5",
+      "41.5"
+     ],
+     "sistema": "AR"
     },
     {
      "tienda": "Dexter",
@@ -8241,81 +8340,15 @@
      "tienda": "Digital Sport",
      "precio": 179999,
      "cuotas": "12 cuotas sin interés",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-quest-6-nike-648634/",
-     "fecha": "12/11/2026",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-quest-6-nike-696874/",
+     "fecha": "14/11/2026",
      "talles": [
       "39",
       "39.5",
       "41",
+      "42",
       "43",
-      "45"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Solo Deportes",
-     "precio": 169999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.solodeportes.com.ar/zapatillas-nike-quest-6-mujer-rosa.html",
-     "fecha": "14/11/2026",
-     "nota": "Mujer",
-     "talles": [
-      "34.5",
-      "35"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Solo Deportes",
-     "precio": 169999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-quest-6-negra-1.html",
-     "fecha": "14/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "45"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Open Sports",
-     "precio": 159999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-nike-quest-6-fd6033-107.html",
-     "fecha": "14/11/2026",
-     "talles": [
-      "39",
-      "39.5",
-      "43",
-      "45"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Sportline",
-     "precio": 169999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.sportline.com.ar/quest-6-077020fd6033003/p",
-     "fecha": "14/11/2026",
-     "antes": 189999,
-     "nota": "Hombre",
-     "talles": [
       "44"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Sportline",
-     "precio": 169999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.sportline.com.ar/wmns-nike-quest-6-077020fd6034201/p",
-     "fecha": "14/11/2026",
-     "antes": 189999,
-     "nota": "Mujer",
-     "talles": [
-      "35",
-      "35.5",
-      "41.5"
      ],
      "sistema": "AR"
     }
@@ -8377,6 +8410,26 @@
       "10"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Sportline",
+     "precio": 118999,
+     "cuotas": "6 cuotas sin interés",
+     "url": "https://www.sportline.com.ar/nike-revolution-8-077020hj9198401/p",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "39.5",
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "44.5"
+     ],
+     "sistema": "AR",
+     "antes": 139999
     },
     {
      "tienda": "NewSport",
@@ -8516,42 +8569,6 @@
      "sistema": "US"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 139999,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-revolution-8-nike-719408/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "43.5",
-      "44.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Digital Sport",
-     "precio": 139999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-w-nike-revolution-8-nike-719452/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "35.5",
-      "36.5",
-      "37",
-      "37.5",
-      "38.5",
-      "39",
-      "40.5",
-      "41"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Solo Deportes",
      "precio": 139999,
      "cuotas": "3 cuotas sin interés",
@@ -8596,26 +8613,6 @@
     },
     {
      "tienda": "Sportline",
-     "precio": 118999,
-     "cuotas": "6 cuotas sin interés",
-     "url": "https://www.sportline.com.ar/nike-revolution-8-077020hj9198401/p",
-     "fecha": "14/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "39",
-      "39.5",
-      "40",
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "44.5"
-     ],
-     "sistema": "AR",
-     "antes": 139999
-    },
-    {
-     "tienda": "Sportline",
      "precio": 139999,
      "cuotas": "6 cuotas sin interés",
      "url": "https://www.sportline.com.ar/w-nike-revolution-8-077020hj8485006/p",
@@ -8630,6 +8627,42 @@
       "38.5",
       "39.5",
       "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 139999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-revolution-8-nike-719408/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "40",
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "43.5",
+      "44.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 139999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-w-nike-revolution-8-nike-729946/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "35.5",
+      "36.5",
+      "37",
+      "37.5",
+      "38.5",
+      "39",
+      "39.5",
+      "41"
      ],
      "sistema": "AR"
     }
@@ -8836,36 +8869,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 279999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adistar-5-adidas-721302/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "39.5",
-      "41",
-      "41.5",
-      "43",
-      "44"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Digital Sport",
-     "precio": 279999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adistar-5-w-adidas-721304/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "36.5",
-      "38.5",
-      "39"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Open Sports",
      "precio": 279999,
      "cuotas": "12 cuotas sin interés",
@@ -8897,6 +8900,35 @@
       "37.5",
       "38",
       "40"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adistar-5-adidas-721302/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "39.5",
+      "41",
+      "41.5",
+      "43",
+      "44"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 279999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adistar-5-w-adidas-721304/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "36.5",
+      "39"
      ],
      "sistema": "AR"
     }
@@ -10588,7 +10620,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-clifton-10-hoka-755539/",
-     "fecha": "12/11/2026"
+     "fecha": "14/11/2026"
     },
     {
      "tienda": "Digital Sport",
@@ -10596,7 +10628,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-clifton-10-hoka-761471/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "40.5",
       "41",
@@ -10672,6 +10704,22 @@
      "sistema": "AR"
     },
     {
+     "tienda": "Open Sports",
+     "precio": 324500,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-hoka-clifton-10-1162031-grtm.html",
+     "fecha": "14/11/2026",
+     "talles": [
+      "36.5",
+      "37",
+      "37.5",
+      "38.5",
+      "39",
+      "39.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "TodoTrail",
      "precio": 329999,
      "cuotas": "6 cuotas sin interés",
@@ -10694,22 +10742,6 @@
       "7"
      ],
      "sistema": "US"
-    },
-    {
-     "tienda": "Open Sports",
-     "precio": 324500,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-hoka-clifton-10-1162031-grtm.html",
-     "fecha": "14/11/2026",
-     "talles": [
-      "36.5",
-      "37",
-      "37.5",
-      "38.5",
-      "39",
-      "39.5"
-     ],
-     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -10759,6 +10791,18 @@
    "pl": "Sin placa",
    "tiendas": [
     {
+     "tienda": "Open Sports",
+     "precio": 292000,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-hoka-bondi-9-1162012-cyg.html",
+     "fecha": "14/11/2026",
+     "talles": [
+      "35",
+      "35.5"
+     ],
+     "sistema": "AR"
+    },
+    {
      "tienda": "Vorax Running",
      "precio": 304900,
      "cuotas": "6 cuotas sin interés",
@@ -10792,7 +10836,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-bondi-9-hoka-761502/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "39.5",
       "40"
@@ -10822,18 +10866,6 @@
      "talles": [
       "41.5",
       "43"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Open Sports",
-     "precio": 292000,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.opensports.com.ar/zapatillas-hoka-bondi-9-1162012-cyg.html",
-     "fecha": "14/11/2026",
-     "talles": [
-      "35",
-      "35.5"
      ],
      "sistema": "AR"
     }
@@ -10965,7 +10997,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-mach-7-hoka-761479/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "40.5",
       "41",
@@ -10982,7 +11014,7 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Mujer",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-mach-7-hoka-761512/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "37.5"
      ],
@@ -12232,22 +12264,6 @@
      "sistema": "AR"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 189999,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Hombre",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-ultra-flow-2-salomon-773649/",
-     "fecha": "10/11/2026",
-     "talles": [
-      "41",
-      "41.5",
-      "42",
-      "43",
-      "44"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "Salomon Argentina",
      "precio": 189999,
      "cuotas": "Consultar en la tienda",
@@ -12283,6 +12299,22 @@
       "35.5",
       "38.5",
       "40.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 189999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Hombre",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-ultra-flow-2-salomon-773649/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "41",
+      "41.5",
+      "42",
+      "43",
+      "44"
      ],
      "sistema": "AR"
     }
@@ -13792,33 +13824,6 @@
      "sistema": "US"
     },
     {
-     "tienda": "Digital Sport",
-     "precio": 248999,
-     "antes": 350000,
-     "cuotas": "12 cuotas sin interés",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-structure-plus-nike-707278/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "42",
-      "43",
-      "44.5"
-     ],
-     "sistema": "AR"
-    },
-    {
-     "tienda": "Digital Sport",
-     "precio": 248999,
-     "antes": 350000,
-     "cuotas": "12 cuotas sin interés",
-     "nota": "Mujer",
-     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-wmns-nike-structure-plus-nike-707280/",
-     "fecha": "12/11/2026",
-     "talles": [
-      "36.5"
-     ],
-     "sistema": "AR"
-    },
-    {
      "tienda": "NewSport",
      "precio": 339999,
      "cuotas": "9 cuotas sin interés",
@@ -13865,6 +13870,18 @@
       "10"
      ],
      "sistema": "US"
+    },
+    {
+     "tienda": "Digital Sport",
+     "precio": 349999,
+     "cuotas": "12 cuotas sin interés",
+     "nota": "Mujer",
+     "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-wmns-nike-structure-plus-nike-719460/",
+     "fecha": "14/11/2026",
+     "talles": [
+      "35.5"
+     ],
+     "sistema": "AR"
     }
    ],
    "id": 106,
@@ -13955,12 +13972,10 @@
      "cuotas": "12 cuotas sin interés",
      "nota": "Hombre",
      "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-premium-nike-719415/",
-     "fecha": "12/11/2026",
+     "fecha": "14/11/2026",
      "talles": [
       "41",
-      "41.5",
       "42.5",
-      "43",
       "43.5"
      ],
      "sistema": "AR"

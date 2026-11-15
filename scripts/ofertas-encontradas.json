@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-15T01:36:21.919Z",
+ "fecha": "2026-11-15T21:51:24.946Z",
  "tiendas": {
   "Saucony": {
    "tipo": "tiendanube",
@@ -140,6 +140,29 @@
    "buscados": 4,
    "encontrados": 6,
    "errores": []
+  },
+  "Universo Aventura": {
+   "tipo": "tiendanube",
+   "pista": "www.googletagmanager.com | static.cloudflareinsights.com",
+   "buscados": 130,
+   "encontrados": 56,
+   "errores": []
+  },
+  "Sumitate": {
+   "tipo": "desconocida",
+   "pista": "accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
+   "buscados": 0,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Mega Sports": {
+   "tipo": "vtex",
+   "pista": "io.vtex.com.br | megasports.vteximg.com.br | vtex.vtexassets.com | activity-flow.vtex.com | cdn.jsdelivr.net | cdn.embluemail.com",
+   "buscados": 129,
+   "encontrados": 1,
+   "errores": [
+    "kiprun-kipcore: búsqueda HTTP 400"
+   ]
   }
  },
  "resultados": [
@@ -10966,6 +10989,1013 @@
     "10.5"
    ],
    "sistema": "US"
+  },
+  {
+   "slug": "asics-novablast-5",
+   "modelo": "Asics Novablast 5",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Novablast 5 Tokyo Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-novablast-5-tokyo-mujer/",
+   "nota": "Mujer",
+   "precio": 255920,
+   "antes": 319900,
+   "cuotas": 6,
+   "talles": [
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-kayano-32",
+   "modelo": "Asics Gel-Kayano 32",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Gel Kayano 32 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-gel-kayano-32-hombre/",
+   "nota": "Hombre",
+   "precio": 319900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-cumulus-27",
+   "modelo": "Asics Gel-Cumulus 27",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Gel-Cumulus 27 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-gel-cumulus-27-hombre/",
+   "nota": "Hombre",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-cumulus-27",
+   "modelo": "Asics Gel-Cumulus 27",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Gel-Cumulus 27 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-gel-cumulus-27-mujer1/",
+   "nota": "Mujer",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "38",
+    "40",
+    "40.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-18",
+   "modelo": "Saucony Guide 18",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Guide 18 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-guide-18-hombre/",
+   "nota": "Hombre",
+   "precio": 126630,
+   "antes": 180900,
+   "cuotas": 6,
+   "talles": [
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-5",
+   "modelo": "Saucony Endorphin Pro 5",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Pro 5 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-pro-5-mujer/",
+   "nota": "Mujer",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-5",
+   "modelo": "Saucony Endorphin Pro 5",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Pro 5 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-pro-5-hombre/",
+   "nota": "Hombre",
+   "precio": 299900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-22",
+   "modelo": "Saucony Triumph 22",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Triumph 22 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-triumph-22-hombre1/",
+   "nota": "Hombre",
+   "precio": 164925,
+   "antes": 219900,
+   "cuotas": 6,
+   "talles": [
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-excite-11",
+   "modelo": "Asics Gel-Excite 11",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Gel Excite 11 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-gel-excite-11-mujer/",
+   "nota": "Mujer",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40.5",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-excite-11",
+   "modelo": "Asics Gel-Excite 11",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Gel Excite 11 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-gel-excite-11-hombre/",
+   "nota": "Hombre",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "40.5",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-trabuco-13",
+   "modelo": "Asics Gel-Trabuco 13",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Gel-Trabuco 13 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-gel-trabuco-13-hombre/",
+   "nota": "Hombre",
+   "precio": 319900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40.5",
+    "41",
+    "42",
+    "42.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "asics-gel-trabuco-13",
+   "modelo": "Asics Gel-Trabuco 13",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Asics Gel-Trabuco 13 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-asics-gel-trabuco-13-mujer1/",
+   "nota": "Mujer",
+   "precio": 319900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-15",
+   "modelo": "Saucony Peregrine 15",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Peregrine 15 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-peregrine-15-hombre/",
+   "nota": "Hombre",
+   "precio": 147920,
+   "antes": 184900,
+   "cuotas": 6,
+   "talles": [
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Clifton 10 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-clifton-10-mujer3/",
+   "nota": "Mujer",
+   "precio": 276500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mach-6",
+   "modelo": "Hoka Mach 6",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Mach 6 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-mach-6-mujer/",
+   "nota": "Mujer",
+   "precio": 265500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mach-6",
+   "modelo": "Hoka Mach 6",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Mach 6 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-mach-6-hombre/",
+   "nota": "Hombre",
+   "precio": 265500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mach-7",
+   "modelo": "Hoka Mach 7",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Mach 7 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-mach-7-running-training-hombre-frost-neon-yuzu-1171904-fyz/",
+   "nota": "Hombre",
+   "precio": 265000,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-arahi-8",
+   "modelo": "Hoka Arahi 8",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Arahi 8 Pronador Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-arahi-8-pronador-mujer/",
+   "nota": "Mujer",
+   "precio": 250200,
+   "antes": 278000,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "36.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-arahi-8",
+   "modelo": "Hoka Arahi 8",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Arahi 8 Pronador Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-arahi-8-pronador-hombre/",
+   "nota": "Hombre",
+   "precio": 250200,
+   "antes": 278000,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-rincon-4",
+   "modelo": "Hoka Rincon 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Rincon 4 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-rincon-4-hombre/",
+   "nota": "Hombre",
+   "precio": 229500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-speedgoat-6",
+   "modelo": "Hoka Speedgoat 6",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Speedgoat 6 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-speedgoat-6-hombre4/",
+   "nota": "Hombre",
+   "precio": 279000,
+   "antes": 310000,
+   "cuotas": 6,
+   "talles": [
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-mafate-5",
+   "modelo": "Hoka Mafate 5",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Mafate 5 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-mafate-5-hombre1/",
+   "nota": "Hombre",
+   "precio": 383500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-torrent-4",
+   "modelo": "Hoka Torrent 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Hoka Torrent 4 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-hoka-torrent-4-hombre/",
+   "nota": "Hombre",
+   "precio": 254500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "43.5",
+    "44",
+    "45",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Genesis 2 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-genesis-2-trail-running-mujer-huckleber-black-red-orange-493092/",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-genesis-2",
+   "modelo": "Salomon Genesis 2",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Genesis 2 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-genesis-2-trail-running-hombre-urban-chic-black-lime-cream-493091/",
+   "nota": "Hombre",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "42",
+    "42.5",
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Ultra Flow 2 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-ultra-flow-2-hombre/",
+   "nota": "Hombre",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39.5",
+    "40",
+    "41.5",
+    "42",
+    "42.5",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2",
+   "modelo": "Salomon Ultra Flow 2",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Ultra Flow 2 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-ultra-flow-2-mujer1/",
+   "nota": "Mujer",
+   "precio": 189999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Speed 5 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-speed-5-mujer/",
+   "nota": "Mujer",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36",
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-5",
+   "modelo": "Saucony Endorphin Speed 5",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Speed 5 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-speed-5-hombre/",
+   "nota": "Hombre",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "43",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Peregrine 16 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-peregrine-16-trail-running-mujer-plum-mulberry-s101577-1005/",
+   "nota": "Mujer",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-peregrine-16",
+   "modelo": "Saucony Peregrine 16",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Peregrine 16 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-peregrine-16-hombre/",
+   "nota": "Hombre",
+   "precio": 209900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "42",
+    "43.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Xodus Ultra 4 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-xodus-ultra-4-trail-running-hombre-black-rust-s101617-1009/",
+   "nota": "Hombre",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-xodus-ultra-4",
+   "modelo": "Saucony Xodus Ultra 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Xodus Ultra 4 Mujer Trail Running",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-xodus-ultra-4-mujer-trail-running-1hkcs/",
+   "nota": "Mujer",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Triumph 24 Running Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-triumph-24-running-mujer-black-silver-s100999-1016/",
+   "nota": "Mujer",
+   "precio": 244900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-24",
+   "modelo": "Saucony Triumph 24",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Triumph 24 Running Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-triumph-24-running-hombre-hombre-black-silver-s100997-1009/",
+   "nota": "Hombre",
+   "precio": 244900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39.5",
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Triumph 23 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-triumph-23-mujer1/",
+   "nota": "Mujer",
+   "precio": 183920,
+   "antes": 229900,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-triumph-23",
+   "modelo": "Saucony Triumph 23",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Triumph 23 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-triumph-23-hombre/",
+   "nota": "Hombre",
+   "precio": 183920,
+   "antes": 229900,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-hurricane-26",
+   "modelo": "Saucony Hurricane 26",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Hurricane 26 Running Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-hurricane-26-running-hombre-fatigue-black-s101098-1022/",
+   "nota": "Hombre",
+   "precio": 241900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-19",
+   "modelo": "Saucony Guide 19",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Guide 19 Running Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-guide-19-running-hombre-black-silver-s21058-100/",
+   "nota": "Hombre",
+   "precio": 189900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Azura Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-azura-mujer/",
+   "nota": "Mujer",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-azura",
+   "modelo": "Saucony Endorphin Azura",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Azura Running Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-azura-running-hombre-white-navy-s21070-124/",
+   "nota": "Hombre",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-4",
+   "modelo": "Saucony Endorphin Pro 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Pro 4 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-pro-4-hombre/",
+   "nota": "Hombre",
+   "precio": 239920,
+   "antes": 299900,
+   "cuotas": 6,
+   "talles": [
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-pro-4",
+   "modelo": "Saucony Endorphin Pro 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Endorphin Pro 4 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-pro-4-mujer1/",
+   "nota": "Mujer",
+   "precio": 239920,
+   "antes": 299900,
+   "cuotas": 6,
+   "talles": [
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-cohesion-19",
+   "modelo": "Saucony Cohesion 19",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Cohesion 19 Running Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-cohesion-19-running-mujer-black-white-s101922-1005/",
+   "nota": "Mujer",
+   "precio": 119900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Excursion TR18 Trail Running Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-excursion-tr18-trail-running-hombre-black-carbon-s101006-1009/",
+   "nota": "Hombre",
+   "precio": 134900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-excursion-tr-18",
+   "modelo": "Saucony Excursion TR 18",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Excursion TR18 Trail Running Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-excursio-tr18-trail-running-mujer-black-quartz-s101007-1009/",
+   "nota": "Mujer",
+   "precio": 134900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-tr",
+   "modelo": "Saucony Guide TR",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Saucony Guide TR Trail Running Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-guide-tr-trail-running-hombre-quartz-cyber-s101015-1011/",
+   "nota": "Hombre",
+   "precio": 234900,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-aero-glide-4",
+   "modelo": "Salomon Aero Glide 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Aero Glide 4 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-aero-glide-4-mujer/",
+   "nota": "Mujer",
+   "precio": 249999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-aero-glide-3",
+   "modelo": "Salomon Aero Glide 3",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Aero Glide 3 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-aero-glide-3-hombre/",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-aero-glide-3",
+   "modelo": "Salomon Aero Glide 3",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Aero Glide 3 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-aero-glide-3-mujer/",
+   "nota": "Mujer",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-6",
+   "modelo": "Salomon Speedcross 6",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Speedcross 6 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-speedcross-6-hombre/",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-6",
+   "modelo": "Salomon Speedcross 6",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Speedcross 6 Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-speedcross-6-mujer/",
+   "nota": "Mujer",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-alphaglide",
+   "modelo": "Salomon Alphaglide",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Alphaglide Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-alphaglide-hombre/",
+   "nota": "Hombre",
+   "precio": 169999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39.5",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-alphaglide",
+   "modelo": "Salomon Alphaglide",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Alphaglide Mujer",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-alphaglide-mujer/",
+   "nota": "Mujer",
+   "precio": 169999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-supercross-4",
+   "modelo": "Salomon Supercross 4",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Supercross 4 Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-supercross-4-hombre/",
+   "nota": "Hombre",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "43",
+    "44",
+    "44.5",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-speedcross-peak",
+   "modelo": "Salomon Speedcross Peak",
+   "tienda": "Universo Aventura",
+   "nombre": "Zapatillas Salomon Speedcross Peak Hombre",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-salomon-speedcross-peak-hombre1/",
+   "nota": "Hombre",
+   "precio": 179999,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "nike-quest-6",
+   "modelo": "Nike Quest 6",
+   "tienda": "Mega Sports",
+   "nombre": "nike zapatillas - FD6033-008 NIKE QUEST 6 BLACK",
+   "url": "https://www.megasports.com.ar/nike-zapatillas---fd6033-008-nike-quest-6-black/p",
+   "nota": "",
+   "sinStock": true
   }
  ]
 }

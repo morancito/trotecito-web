@@ -24,6 +24,37 @@ export async function traer(url, json = false, producto = false) {
   return json ? r.json() : r.text();
 }
 
+/* La página del producto tal como la abre una persona. Sirve para las tiendas que el robot lee por otro lado (la API de
+   VTEX, el archivo del marcador): ahí el precio puede estar bien y el link, roto. Devuelve { ok } o { ok: false, motivo }.
+   "dudoso" no alcanza para borrar: la tienda no respondió o bloquea, y eso no dice nada del producto. */
+const NO_EXISTE = /(producto|p[aá]gina|art[ií]culo)\s+(que\s+busc[aá]s\s+)?(no\s+existe|no\s+(fue\s+|est[aá]\s+)?(encontrad[oa]|disponible)|inexistente)|no\s+(pudimos\s+encontrar|encontramos)\s+(el|este|la|lo)\s+(producto|p[aá]gina|que)|error\s+404|404\s*[-–|]\s*(p[aá]gina|not found)|page not found|p[aá]gina no encontrada|oops|ups[,!]/i;
+const limpio = x => String(x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/&[a-z#0-9]+;/g, " ").replace(/([a-z])(\d)/g, "$1 $2").replace(/(\d)([a-z])/g, "$1 $2").replace(/[^a-z0-9]+/g, " ").trim();
+export async function verPagina(url, m) {
+  let r, h;
+  try {
+    r = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "es-AR,es;q=0.9", Accept: "text/html" }, redirect: "follow", signal: AbortSignal.timeout(25000) });
+    h = await r.text();
+  } catch (e) { return { ok: false, dudoso: true, motivo: `no respondió (${e.name === "TimeoutError" ? "tardó demasiado" : e.message})` }; }
+  if (r.status === 404 || r.status === 410) return { ok: false, motivo: `HTTP ${r.status}: la página no existe` };
+  if (!r.ok) return { ok: false, dudoso: true, motivo: `HTTP ${r.status}` };
+  const a = ruta(url), b = ruta(r.url);
+  if (r.redirected && a !== b) {
+    const clave = a.split("/").filter(Boolean).pop()?.replace(/\.html?$/, "") || "", cod = (clave.match(/[a-z0-9]*\d[a-z0-9]{4,}/gi) || []).pop();
+    if (!((clave.length > 6 && b.includes(clave)) || (cod && b.includes(cod.toLowerCase())))) return { ok: false, motivo: `la tienda manda a otra página (${new URL(r.url).pathname + new URL(r.url).search})` };
+  }
+  const titulo = ((h.match(/<meta[^>]+property="og:title"[^>]+content="([^"]*)"/i) || h.match(/<title[^>]*>([^<]*)<\/title>/i) || [])[1] || "").trim();
+  const arriba = h.slice(0, 120000).replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ");
+  const carrito = /agregar al carrito|añadir al carrito|comprar ahora|add to cart|agregar a la bolsa|"@type"\s*:\s*"Product"/i.test(h);
+  if (NO_EXISTE.test(titulo) || (!carrito && NO_EXISTE.test(arriba))) return { ok: false, motivo: "la página dice que el producto no existe", titulo };
+  /* ¿es el producto que decimos? El título tiene que nombrar el modelo (las palabras y el número de versión) */
+  if (m && titulo) {
+    const t = ` ${limpio(titulo + " " + decodeURIComponent(new URL(r.url).pathname))} `, pal = limpio(`${m.mod} ${m.ver || ""}`).replace(/\(.*?\)/g, " ").split(" ").filter(w => w && !["gtx", "v", "de", "la"].includes(w));
+    const faltan = pal.filter(w => !t.includes(` ${w} `));
+    if (pal.length && faltan.length === pal.length) return { ok: false, motivo: `la página muestra otra cosa: "${titulo.slice(0, 70)}"`, titulo };
+  }
+  return { ok: true, titulo };
+}
+
 /* Talles: se guardan solo los que tienen stock. "38-38.5" (Dexter) vale por los dos. AR = numeración argentina;
    US = numeración de EE. UU. (New Balance), que no se convierte porque la equivalencia cambia según la marca. */
 export const talleAR = v => String(v).trim().replace(",", ".").replace(/\s*(ar|arg)$/i, "").split(/\s*-\s*/).filter(x => /^\d{2}(\.5)?$/.test(x) && +x >= 30 && +x <= 50);

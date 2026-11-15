@@ -1,0 +1,31 @@
+name: Verificar links de tiendas
+
+# Abre cada link del catálogo como lo abriría una persona y deja en scripts/links.json los que no sirven.
+on:
+  workflow_dispatch:
+    inputs:
+      tiendas:
+        description: "Tiendas a revisar (vacío = todas)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verificar
+        run: node scripts/verificar-links.mjs ${{ inputs.tiendas }}
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "trotecito-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/links.json
+          git diff --cached --quiet || (git commit -m "Verificación de links" && for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && break; sleep 15; done)

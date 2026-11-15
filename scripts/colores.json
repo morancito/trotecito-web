@@ -4972,24 +4972,70 @@
  "new-balance-fuelcell-sc-elite-v5": [],
  "saucony-guide-18": [
   {
-   "tienda": "Saucony Argentina",
-   "url": "https://saucony.com.ar/productos/zapatilla-hombre-guide-18-peel-navy/",
+   "tienda": "Universo Aventura",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-guide-18-hombre/",
    "nombre": "Saucony Guide 18",
    "nota": "Hombre",
    "color": null,
    "foto": "saucony-guide-18/2.webp",
-   "precio": 42900,
-   "antes": null,
-   "talles": [],
-   "sistema": null
+   "precio": 126630,
+   "antes": 180900,
+   "talles": [
+    "43.5"
+   ],
+   "sistema": "AR"
   },
   {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
+   "tienda": "Universo Aventura",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-guide-18-hombre1/",
+   "nombre": "Zapatillas Saucony Guide 18 Hombre",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "saucony-guide-18/6.webp",
+   "precio": 126630,
+   "antes": 180900,
+   "talles": [
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Naka Outdoors",
+   "url": "https://www.nakaoutdoors.com.ar/12090-saucony-guide-18-zapatillas-running-mujer",
+   "nombre": "Saucony Guide 18",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "saucony-guide-18/3.webp",
+   "precio": 180900,
+   "antes": null,
+   "talles": [
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Naka Outdoors",
+   "url": "https://www.nakaoutdoors.com.ar/12089-saucony-guide-18-zapatillas-running",
+   "nombre": "Saucony Guide 18",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "saucony-guide-18/7.webp",
+   "precio": 180900,
+   "antes": null,
+   "talles": [
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Stock Center",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
    "nombre": "Saucony Guide 18",
    "nota": "Hombre",
    "color": "Gris",
-   "foto": "saucony-guide-18/3.jpg",
+   "foto": "saucony-guide-18/5.jpg",
    "precio": 180999,
    "antes": null,
    "talles": [
@@ -4999,8 +5045,8 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Stock Center",
-   "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
    "nombre": "Saucony Guide 18",
    "nota": "Hombre",
    "color": "Gris",
@@ -5014,12 +5060,12 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-saucony-guide-18-hombre/SAS20998-100.html",
+   "tienda": "Stock Center",
+   "url": "https://www.stockcenter.com.ar/zapatillas-saucony-guide-18-hombre/SAS20998-100.html",
    "nombre": "zapatillas saucony guide 18 hombre",
    "nota": "Hombre",
    "color": "Negro Disciplina",
-   "foto": "saucony-guide-18/5.jpg",
+   "foto": "saucony-guide-18/8.jpg",
    "precio": 180999,
    "antes": null,
    "talles": [
@@ -5029,12 +5075,12 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Stock Center",
-   "url": "https://www.stockcenter.com.ar/zapatillas-saucony-guide-18-hombre/SAS20998-100.html",
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-saucony-guide-18-hombre/SAS20998-100.html",
    "nombre": "zapatillas saucony guide 18 hombre",
    "nota": "Hombre",
    "color": "Negro Disciplina",
-   "foto": "saucony-guide-18/6.jpg",
+   "foto": "saucony-guide-18/9.jpg",
    "precio": 180999,
    "antes": null,
    "talles": [
@@ -7533,26 +7579,12 @@
  "saucony-kinvara-14": [],
  "saucony-endorphin-elite-2": [
   {
-   "tienda": "Saucony Argentina",
-   "url": "https://saucony.com.ar/productos/zapatilla-unisex-endorphin-elite-2-citron-black/",
-   "nombre": "Saucony Endorphin Elite 2",
-   "nota": "Unisex",
-   "color": null,
-   "foto": "saucony-endorphin-elite-2/1.webp",
-   "precio": 279930,
-   "antes": 399900,
-   "talles": [
-    "7"
-   ],
-   "sistema": "US"
-  },
-  {
    "tienda": "Dexter",
    "url": "https://www.dexter.com.ar/zapatillas-running-saucony-endorphin-elite-2/SAS30994-135.html",
    "nombre": "Saucony Endorphin Elite 2",
    "nota": "Unisex",
    "color": "Negro",
-   "foto": "saucony-endorphin-elite-2/3.jpg",
+   "foto": "saucony-endorphin-elite-2/2.jpg",
    "precio": 399999,
    "antes": null,
    "talles": [
@@ -7576,7 +7608,7 @@
    "nombre": "Saucony Endorphin Elite 2",
    "nota": "",
    "color": "Negro",
-   "foto": "saucony-endorphin-elite-2/2.jpg",
+   "foto": "saucony-endorphin-elite-2/1.jpg",
    "precio": 399999,
    "antes": null,
    "talles": [
@@ -13590,27 +13622,25 @@
  "saucony-ride-18": [],
  "saucony-endorphin-azura": [
   {
-   "tienda": "NewSport",
-   "url": "https://www.newsport.com.ar/zapatillas-saucony-running-endorphin-azura-hombre-s21070124/p",
+   "tienda": "Saucony Argentina",
+   "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-azura-white-navy/",
    "nombre": "Saucony Endorphin Azura ",
    "nota": "Hombre",
-   "color": "VARIOS",
-   "foto": "saucony-endorphin-azura/5.jpg",
-   "precio": 234899,
+   "color": null,
+   "foto": "saucony-endorphin-azura/2.webp",
+   "precio": 234900,
    "antes": null,
    "talles": [
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45"
+    "9",
+    "9.5",
+    "10.5",
+    "12.5"
    ],
-   "sistema": "AR"
+   "sistema": "US"
   },
   {
-   "tienda": "Saucony Argentina",
-   "url": "https://saucony.com.ar/productos/zapatilla-mujer-endorphin-azura-white-splash/",
+   "tienda": "Universo Aventura",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-azura-mujer/",
    "nombre": "Saucony Endorphin Azura ",
    "nota": "Mujer",
    "color": null,
@@ -13618,28 +13648,27 @@
    "precio": 234900,
    "antes": null,
    "talles": [
-    "7",
-    "8"
+    "37",
+    "37.5"
    ],
-   "sistema": "US"
+   "sistema": "AR"
   },
   {
-   "tienda": "Saucony Argentina",
-   "url": "https://saucony.com.ar/productos/zapatilla-hombre-endorphin-azura-white-navy/",
+   "tienda": "Universo Aventura",
+   "url": "https://www.universoaventura.com.ar/productos/zapatillas-saucony-endorphin-azura-running-hombre-white-navy-s21070-124/",
    "nombre": "Saucony Endorphin Azura ",
    "nota": "Hombre",
-   "color": null,
-   "foto": "saucony-endorphin-azura/4.webp",
+   "color": "White/Multi",
+   "foto": "saucony-endorphin-azura/5.webp",
    "precio": 234900,
    "antes": null,
    "talles": [
-    "9",
-    "9.5",
-    "10",
-    "10.5",
-    "12.5"
+    "41.5",
+    "42",
+    "43",
+    "43.5"
    ],
-   "sistema": "US"
+   "sistema": "AR"
   },
   {
    "tienda": "Gostore",
@@ -13647,7 +13676,7 @@
    "nombre": "Saucony Endorphin Azura ",
    "nota": "Hombre",
    "color": null,
-   "foto": "saucony-endorphin-azura/2.jpg",
+   "foto": "saucony-endorphin-azura/4.jpg",
    "precio": 234900,
    "antes": null,
    "talles": [

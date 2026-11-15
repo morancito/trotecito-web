@@ -1,0 +1,1041 @@
+{
+ "fecha": "2026-11-15T18:13:30.956Z",
+ "resumen": {
+  "Vorax Running": {
+   "total": 137,
+   "mal": 0
+  },
+  "Dexter": {
+   "total": 136,
+   "mal": 0
+  },
+  "Stock Center": {
+   "total": 110,
+   "mal": 0
+  },
+  "adidas.com.ar": {
+   "total": 15,
+   "mal": 15
+  },
+  "NewSport": {
+   "total": 117,
+   "mal": 0
+  },
+  "Open Sports": {
+   "total": 61,
+   "mal": 0
+  },
+  "Digital Sport": {
+   "total": 41,
+   "mal": 41
+  },
+  "Sportline": {
+   "total": 29,
+   "mal": 0
+  },
+  "Nike": {
+   "total": 30,
+   "mal": 30
+  },
+  "Solo Deportes": {
+   "total": 47,
+   "mal": 47
+  },
+  "Run & Bike": {
+   "total": 1,
+   "mal": 0
+  },
+  "Gostore": {
+   "total": 59,
+   "mal": 0
+  },
+  "Tienda Fuencarral": {
+   "total": 4,
+   "mal": 0
+  },
+  "New Balance": {
+   "total": 7,
+   "mal": 0
+  },
+  "Saucony Argentina": {
+   "total": 46,
+   "mal": 0
+  },
+  "Puma Argentina": {
+   "total": 7,
+   "mal": 0
+  },
+  "Under Armour Argentina": {
+   "total": 3,
+   "mal": 0
+  },
+  "Sporting": {
+   "total": 66,
+   "mal": 0
+  },
+  "TodoTrail": {
+   "total": 64,
+   "mal": 0
+  },
+  "Moov": {
+   "total": 2,
+   "mal": 0
+  },
+  "Salomon Argentina": {
+   "total": 36,
+   "mal": 0
+  },
+  "Decathlon": {
+   "total": 4,
+   "mal": 0
+  },
+  "Asics": {
+   "total": 5,
+   "mal": 0
+  },
+  "Vanguard Deportes": {
+   "total": 1,
+   "mal": 1
+  }
+ },
+ "malos": [
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-evo-sl",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-evo-sl/LA3685.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-adizero-evo-sl",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-evo-sl-adidas-721378/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-42",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-42-ib1873-008/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-vomero-18",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-vomero-18-verde.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-adizero-evo-sl",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-evo-sl-adidas-721374/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-42",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-42-ib1881-400/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-vomero-18",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-vomero-18-mujer-negra.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-pegasus-42",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-42-nike-729912/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-plus",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-plus-fq7261-002/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-structure-26",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-structure-26-mujer-fucsia.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-evo-sl",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-evo-sl/LB2672.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-pegasus-42",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-42-nike-729933/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-plus",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-plus-fq7262-002/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-winflo-10",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-10-negra.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-sl-2",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-de-running-adizero-sl-2/JQ0354.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-vomero-18",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-18-nike-729911/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-vomero-18",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-vomero-18-hm6803-404/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-winflo-10",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-10-mujer-negra.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-vomero-plus",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-plus-nike-719416/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-sl-2",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-adizero-sl2/KI3246.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-vomero-18",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-vomero-18-hm6804-607/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-adizero-boston-13",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-adizero-boston-13-naranja.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-structure-26",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-structure-26-nike-697001/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-boston-13",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-adizero-boston-13/KH8859.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-vomero-plus",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-vomero-plus-hv8150-002/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-adizero-boston-13",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-adizero-boston-13-mujer-lila.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-adizero-boston-13",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-boston-13-adidas-721330/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-boston-13",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-adizero-boston-13/JS4958.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-vomero-plus",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-vomero-plus-hv8154-002/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-supernova-rise-3",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-gris.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-adizero-boston-13",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-boston-13-w-adidas-721332/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-structure-26",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-structure-26-hj1102-800/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-supernova-rise-3",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-de-running-supernova-rise-3/JQ8502.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-supernova-rise-3",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-mujer-azulino.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-supernova-rise-3",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-supernova-rise-3-m-adidas-722720/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-structure-26",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-structure-26-hj1101-601/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-adios-pro-5",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-adizero-adios-pro-5/KJ7039.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-duramo-sl-2",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl-2-azul.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-supernova-rise-3",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-supernova-rise-3-adidas-722052/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-premium",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-premium-hq2592-009/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adizero-adios-pro-5",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-adizero-adios-pro-5/KJ7041.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-duramo-sl-2",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-duramo-sl2-mujer-celeste-1.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-adizero-adios-pro-5",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adizero-adios-pro-5-adidas-721517/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-premium",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-premium-hq2593-502/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-novablast-5",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-novablast-5-azul-1.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-duramo-sl-2",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/IH8215.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-duramo-sl-2",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-duramo-sl-2-adidas-674466/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-41",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-41-fd2722-006/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-gt-2000-14",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-celeste.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-duramo-sl-2",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-de-running-duramo-sl-2/KJ4158.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "asics-gt-2000-14",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-gt-2000-14-asics-704629/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-41",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-41-fd2723-503/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Vanguard Deportes",
+   "slug": "asics-gel-kayano-32",
+   "donde": "precio",
+   "url": "https://vanguarddeportes.com.ar/productos/zapatilla-asics-running-gel-kayano-32-hombre-azul-negro/",
+   "motivo": "no respondió (fetch failed)"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-gt-2000-14",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-2000-14-mujer-verde.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adistar-5",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatilla-de-running-adistar-5/IH7175.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "asics-gel-cumulus-27",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-gel-cumulus-27-asics-704641/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-quest-6",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-quest-6-fd6033-003/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-gel-cumulus-27",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-cumulus-27-verde.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "new-balance-fresh-foam-x-880-v15",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-fresh-foam-x-880-v15-new-balance-733742/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-adistar-5",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-de-running-adistar-5/KK4216.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-revolution-8",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-revolution-8-hj8485-604/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-gel-cumulus-27",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-cumulus-27-mujer.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "new-balance-fuelcell-rebel-v5",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-fuelcell-rebel-v5-new-balance-733935/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-ultraboost-5",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-ultraboost-5/ID8848.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-revolution-8",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-revolution-8-hj9198-403/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-velocity-nitro-4",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-4-celeste.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "new-balance-fuelcell-rebel-v5",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-fuelcell-rebel-v5-new-balance-733775/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-trail-5-gtx",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-trail-5-gore-tex-fq0912-200/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "adidas.com.ar",
+   "slug": "adidas-terrex-agravic-4",
+   "donde": "precio",
+   "url": "https://www.adidas.com.ar/zapatillas-terrex-agravic-4-trail-running/KJ8872.html",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-velocity-nitro-4",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-mujer-verde.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "puma-deviate-nitro-4",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-deviate-nitro-4-wns-puma-708823/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-pegasus-trail-5-gtx",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-pegasus-trail-5-gore-tex-fq0908-301/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-deviate-nitro-4",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-deviate-nitro-4-celeste.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "on-cloudmonster-3",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudmonster-3-on-running-741309/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-zegama-2",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-zegama-2-fd5190-303/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-deviate-nitro-4",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-deviate-nitro-4-mujer-naranja.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "on-cloudmonster-3",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudmonster-3-on-running-741311/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-zegama-2",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-zegama-2-fd5191-200/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "on-cloudsurfer-next",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-on-cloudsurfer-next-multicolor.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "on-cloudsurfer-next",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudsurfer-next-on-running-709440/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-winflo-11",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-winflo-11-fj9509-010/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "on-cloudsurfer-next",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-on-cloudsurfer-next-mujer-multicolor.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "on-cloudrunner-3",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudrunner-3-on-running-709450/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-winflo-11",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-winflo-11-fj9510-001/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "under-armour-velociti-3",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-velociti-3-amarilla.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "on-cloudflyer-5",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudflyer-5-on-running-686160/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-winflo-12",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-winflo-12-hv9272-002/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "under-armour-velociti-3",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-velociti-3-mujer-negra.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "on-cloudboom-max",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudboom-max-on-running-741199/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-vaporfly-4",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-vaporfly-4-hf6412-601/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "under-armour-infinite-pro",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-infinite-pro-we-run-negra.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "on-cloudboom-max",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-cloudboom-max-on-running-686125/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-structure-plus",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-structure-plus-hq3048-001/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "under-armour-infinite-pro",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-under-armour-infinite-pro-mujer-lila.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "asics-gel-excite-11",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-gel-excite-11-asics-704648/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-structure-plus",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-structure-plus-hq3049-500/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-gt-1000-14",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gt-1000-14-roja.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-pegasus-41",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-air-zoom-pegasus-41-nike-697029/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-vomero-premium",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-vomero-premium-ir2168-003/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-gel-excite-11",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-excite-11-gris.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-quest-6",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-quest-6-nike-696696/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-acg-pegasus-trail",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8116-002/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-gel-excite-11",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-gel-excite-11-mujer-coral.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-revolution-8",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-revolution-8-nike-686674/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Nike",
+   "slug": "nike-acg-pegasus-trail",
+   "donde": "precio",
+   "url": "https://www.nike.com.ar/nike-acg-pegasus-trail-hv8121-003/p",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-dynablast-5",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-dynablast-5-negra.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-revolution-8",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-revolution-8-nike-670286/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "asics-dynablast-5",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-asics-dynablast-5-mujer-celeste.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-adistar-5",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adistar-5-adidas-721302/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-pegasus-41",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-pegasus-41-gris.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "adidas-adistar-5",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-adistar-5-w-adidas-721304/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-pegasus-41",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-zoom-pegasus-41-mujer-fucsia.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "puma-velocity-nitro-5",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-velocity-nitro-5-wns-puma-729451/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-quest-6",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-nike-quest-6-mujer-rosa.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "hoka-clifton-10",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-clifton-10-hoka-755539/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-quest-6",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-quest-6-negra-1.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "hoka-clifton-10",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-clifton-10-hoka-761471/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-revolution-8",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-revolution-8-azul.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "hoka-bondi-9",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-bondi-9-hoka-761502/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-revolution-8",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-revolution-8-mujer-crudo-1.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "hoka-mach-7",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-mach-7-hoka-761479/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-supernova-stride-2",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-stride-2-verde.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "salomon-ultra-flow-2",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-ultra-flow-2-salomon-773649/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-supernova-stride-2",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-stride-2-mujer-lila.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-structure-plus",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-wmns-nike-structure-plus-nike-719460/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-ultraboost-5",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-ultraboost-5-azul.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Digital Sport",
+   "slug": "nike-vomero-premium",
+   "donde": "precio",
+   "url": "https://www.digitalsport.com.ar/sport78/prod/zapatillas-nike-vomero-premium-nike-719415/",
+   "motivo": "HTTP 403"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "adidas-ultraboost-5",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-ultraboost-5-mujer-rosa-43691476.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-foreverrun-nitro-2",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-foreverrun-nitro-2-lila.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-foreverrun-nitro-2",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-foreverrun-nitro-2-mujer-lila.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-velocity-nitro-5",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-5-roja.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "puma-velocity-nitro-5",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-puma-velocity-nitro-5-mujer-negra.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-winflo-11",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-air-winflo-11-azul.html",
+   "motivo": "HTTP 405"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "slug": "nike-winflo-11",
+   "donde": "precio",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-nike-winflo-11-mujer-celeste.html",
+   "motivo": "HTTP 405"
+  }
+ ]
+}

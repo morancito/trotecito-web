@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-15T21:51:24.946Z",
+ "fecha": "2026-11-15T22:01:11.932Z",
  "tiendas": {
   "Saucony": {
    "tipo": "tiendanube",
@@ -34,13 +34,6 @@
    "pista": "nsk-cdn-static.tiendanube.com | www.googletagmanager.com | static.cloudflareinsights.com",
    "buscados": 22,
    "encontrados": 1,
-   "errores": []
-  },
-  "Naka Outdoors": {
-   "tipo": "desconocida",
-   "pista": "www.googletagmanager.com | accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
-   "buscados": 0,
-   "encontrados": 0,
    "errores": []
   },
   "Stock Center": {
@@ -163,6 +156,13 @@
    "errores": [
     "kiprun-kipcore: búsqueda HTTP 400"
    ]
+  },
+  "Naka Outdoors": {
+   "tipo": "nubix",
+   "pista": "www.googletagmanager.com | accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
+   "buscados": 130,
+   "encontrados": 9,
+   "errores": []
   }
  },
  "resultados": [
@@ -11996,6 +11996,141 @@
    "url": "https://www.megasports.com.ar/nike-zapatillas---fd6033-008-nike-quest-6-black/p",
    "nota": "",
    "sinStock": true
+  },
+  {
+   "slug": "saucony-guide-18",
+   "modelo": "Saucony Guide 18",
+   "tienda": "Naka Outdoors",
+   "nombre": "saucony guide 18 zapatillas running mujer",
+   "url": "https://www.nakaoutdoors.com.ar/12090-saucony-guide-18-zapatillas-running-mujer",
+   "nota": "Mujer",
+   "precio": 180900,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-guide-18",
+   "modelo": "Saucony Guide 18",
+   "tienda": "Naka Outdoors",
+   "nombre": "saucony guide 18 zapatillas running",
+   "url": "https://www.nakaoutdoors.com.ar/12089-saucony-guide-18-zapatillas-running",
+   "nota": "",
+   "precio": 180900,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "43.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "saucony-endorphin-speed-4",
+   "modelo": "Saucony Endorphin Speed 4",
+   "tienda": "Naka Outdoors",
+   "nombre": "saucony endorphin speed 4 zapatillas running",
+   "url": "https://www.nakaoutdoors.com.ar/12087-saucony-endorphin-speed-4-zapatillas-running",
+   "nota": "",
+   "precio": 249900,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-clifton-10",
+   "modelo": "Hoka Clifton 10",
+   "tienda": "Naka Outdoors",
+   "nombre": "hoka clifton 10 zapatillas running mujer",
+   "url": "https://www.nakaoutdoors.com.ar/12382-hoka-clifton-10-zapatillas-running-mujer",
+   "nota": "Mujer",
+   "precio": 276500,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "39.5",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-arahi-8",
+   "modelo": "Hoka Arahi 8",
+   "tienda": "Naka Outdoors",
+   "nombre": "hoka arahi 8 zapatillas running",
+   "url": "https://www.nakaoutdoors.com.ar/13235-hoka-arahi-8-zapatillas-running",
+   "nota": "",
+   "precio": 297387,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "41.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-rincon-4",
+   "modelo": "Hoka Rincon 4",
+   "tienda": "Naka Outdoors",
+   "nombre": "hoka rincon 4 zapatillas running",
+   "url": "https://www.nakaoutdoors.com.ar/11517-hoka-rincon-4-zapatillas-running",
+   "nota": "",
+   "sinStock": true
+  },
+  {
+   "slug": "hoka-speedgoat-6",
+   "modelo": "Hoka Speedgoat 6",
+   "tienda": "Naka Outdoors",
+   "nombre": "hoka speedgoat 6 zapatillas trail running",
+   "url": "https://www.nakaoutdoors.com.ar/11650-hoka-speedgoat-6-zapatillas-trail-running",
+   "nota": "",
+   "precio": 298481,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "42.5",
+    "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-torrent-4",
+   "modelo": "Hoka Torrent 4",
+   "tienda": "Naka Outdoors",
+   "nombre": "hoka torrent 4 zapatillas trail running mujer",
+   "url": "https://www.nakaoutdoors.com.ar/12604-hoka-torrent-4-zapatillas-trail-running-mujer",
+   "nota": "Mujer",
+   "precio": 253211,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "37.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "hoka-torrent-4",
+   "modelo": "Hoka Torrent 4",
+   "tienda": "Naka Outdoors",
+   "nombre": "hoka torrent 4 zapatillas trail running",
+   "url": "https://www.nakaoutdoors.com.ar/12603-hoka-torrent-4-zapatillas-trail-running",
+   "nota": "",
+   "precio": 315997,
+   "antes": null,
+   "cuotas": 6,
+   "talles": [
+    "42",
+    "42.5",
+    "44"
+   ],
+   "sistema": "AR"
   }
  ]
 }

@@ -17418,8 +17418,9 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/kiprun-kipcore/1.webp?v=61119550"
+   ]
   },
   {
    "id": 141,
@@ -17495,8 +17496,9 @@
    ],
    "colores": [],
    "ar": true,
-   "borrador": true,
-   "fotos": []
+   "fotos": [
+    "fotos/kiprun-kipstorm-challenger/1.webp?v=263f9dba"
+   ]
   }
  ]
 }

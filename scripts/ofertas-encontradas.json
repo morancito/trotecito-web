@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-15T22:01:11.932Z",
+ "fecha": "2026-11-15T22:03:50.544Z",
  "tiendas": {
   "Saucony": {
    "tipo": "tiendanube",
@@ -141,13 +141,6 @@
    "encontrados": 56,
    "errores": []
   },
-  "Sumitate": {
-   "tipo": "desconocida",
-   "pista": "accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
-   "buscados": 0,
-   "encontrados": 0,
-   "errores": []
-  },
   "Mega Sports": {
    "tipo": "vtex",
    "pista": "io.vtex.com.br | megasports.vteximg.com.br | vtex.vtexassets.com | activity-flow.vtex.com | cdn.jsdelivr.net | cdn.embluemail.com",
@@ -162,6 +155,13 @@
    "pista": "www.googletagmanager.com | accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
    "buscados": 130,
    "encontrados": 9,
+   "errores": []
+  },
+  "Sumitate": {
+   "tipo": "nubix",
+   "pista": "accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
+   "buscados": 130,
+   "encontrados": 0,
    "errores": []
   }
  },

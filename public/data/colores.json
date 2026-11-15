@@ -4133,27 +4133,6 @@
  "new-balance-fuelcell-sc-elite-v5": [],
  "saucony-guide-18": [
   {
-   "n": "Beige y naranja",
-   "hex": [
-    "#CDB896",
-    "#9E7762"
-   ],
-   "foto": "fotos/saucony-guide-18/c-fb782642.webp",
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
-   "precio": 180999,
-   "nota": "Hombre",
-   "fecha": "15/11/2026",
-   "otras": [
-    {
-     "tienda": "Stock Center",
-     "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-guide-18-hombre/SAS20998-166.html",
-     "precio": 180999,
-     "nota": "Hombre"
-    }
-   ]
-  },
-  {
    "n": "Negro y blanco",
    "hex": [
     "#403F3F",
@@ -6345,29 +6324,7 @@
   }
  ],
  "saucony-kinvara-14": [],
- "saucony-endorphin-elite-2": [
-  {
-   "n": "Negro y amarillo",
-   "hex": [
-    "#232322",
-    "#D4D9B3"
-   ],
-   "foto": "fotos/saucony-endorphin-elite-2/c-0383c961.webp",
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-saucony-endorphin-elite-2/SAS30994-135.html",
-   "precio": 399999,
-   "nota": "Unisex",
-   "fecha": "15/11/2026",
-   "otras": [
-    {
-     "tienda": "Stock Center",
-     "url": "https://www.stockcenter.com.ar/zapatillas-running-saucony-endorphin-elite-2/SAS30994-135.html",
-     "precio": 399999,
-     "nota": ""
-    }
-   ]
-  }
- ],
+ "saucony-endorphin-elite-2": [],
  "asics-gt-1000-14": [
   {
    "n": "Rojo y gris",

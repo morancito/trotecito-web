@@ -52,13 +52,14 @@ async function procesar(m, t, ultimoIntento) {
     fallas++; errores.push(`${m.slug} · ${t.tienda}: ${e.message}`); console.warn(`✗ ${m.slug} · ${t.tienda}: ${e.message}`);
   }
 }
-for (const m of cat.modelos) {
-  for (const t of m.tiendas || []) {
-    if (!t.url || !toca(t)) continue;
-    await procesar(m, t, false);
-    await dormir(PAUSA_MS);
-  }
-}
+/* Todas las tiendas a la vez, pero cada una a su ritmo: a una misma tienda se le pide de a una página, con pausa.
+   Así la corrida entera tarda lo que tarda la tienda con más productos, no la suma de todas. */
+const porTienda = async (items, hacer) => {
+  const g = new Map();
+  for (const it of items) { let h = "?"; try { h = new URL(it.url).host; } catch {} (g.get(h) || g.set(h, []).get(h)).push(it); }
+  await Promise.all([...g.values()].map(async l => { for (const it of l) { await hacer(it); await dormir(PAUSA_MS); } }));
+};
+await porTienda(cat.modelos.flatMap(m => (m.tiendas || []).filter(t => t.url && toca(t)).map(t => ({ url: t.url, m, t }))), ({ m, t }) => procesar(m, t, false));
 if (pendientes.length) {
   console.log(`\nReintentando ${pendientes.length} que fallaron…`);
   await dormir(30000);
@@ -77,10 +78,7 @@ let col = { leidos: 0, borrados: 0, sinStock: 0, fallaron: 0 };
 if (!SOLO.length && robotPrev.coloresFecha !== hoyAR) {
   const colores = JSON.parse(readFileSync(ARCH_COL, "utf8"));
   console.log("\nColores:");
-  for (const [slug, vs] of Object.entries(colores)) {
-    if (!Array.isArray(vs)) continue;
-    for (const v of vs) {
-      if (!v.url) continue;
+  await porTienda(Object.entries(colores).flatMap(([slug, vs]) => Array.isArray(vs) ? vs.filter(v => v.url).map(v => ({ url: v.url, slug, v })) : []), async ({ slug, v }) => {
       try {
         const r = await leer(v.url);
         if (r.sinStock) { v.sinStock = true; col.sinStock++; }
@@ -90,10 +88,8 @@ if (!SOLO.length && robotPrev.coloresFecha !== hoyAR) {
         if (muerto(e)) { v._borrar = true; col.borrados++; console.warn(`✗ color ${slug} · ${v.n} · ${v.tienda}: ya no existe`); }
         else { col.fallaron++; console.warn(`✗ color ${slug} · ${v.n} · ${v.tienda}: ${e.message}`); }
       }
-      await dormir(PAUSA_MS);
-    }
-    colores[slug] = vs.filter(v => !v._borrar);
-  }
+  });
+  for (const [slug, vs] of Object.entries(colores)) if (Array.isArray(vs)) colores[slug] = vs.filter(v => !v._borrar);
   writeFileSync(ARCH_COL, JSON.stringify(colores, null, 1) + "\n");
   col.fecha = hoyAR;
   console.log(`Colores: ${col.leidos} al día, ${col.sinStock} sin stock, ${col.borrados} borrados, ${col.fallaron} con error.`);

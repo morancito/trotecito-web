@@ -1,14 +1,20 @@
 name: Actualizar precios
 
-# Dos veces por día, 08:07 y 12:07 de Argentina (11:07 y 15:07 UTC), el robot lee los precios de las tiendas,
-# actualiza el punto del día en el historial y guarda los cambios en el repo; Cloudflare ve el cambio en main y
-# publica el sitio solo. Ojo: GitHub puede arrancar las corridas programadas con atraso (a veces horas). Si por el
-# atraso las dos quedan pegadas, la segunda no hace nada (hubo una actualización hace menos de 3 horas).
+# El robot lee los precios de las tiendas, actualiza el punto del día en el historial y guarda los cambios en el repo;
+# Cloudflare ve el cambio en main y publica el sitio solo.
+# Arranca de dos maneras:
+#  - apenas termina "Importar precios manuales" (lo dispara el programa de la compu a las 08:30 y 12:30): es puntual;
+#  - por horario (08:07, 12:07 y 18:07 de Argentina), como respaldo. GitHub arranca las programadas con atraso, a veces
+#    de varias horas; si ya hubo una actualización hace menos de 3 horas, la programada no hace nada.
 # También se puede correr a mano desde la pestaña Actions.
 on:
   schedule:
     - cron: "7 11 * * *"
     - cron: "7 15 * * *"
+    - cron: "7 21 * * *"
+  workflow_run:
+    workflows: ["Importar precios manuales"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:

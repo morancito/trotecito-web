@@ -12860,7 +12860,41 @@
    "sistema": "AR"
   }
  ],
- "nike-vaporfly-4": [],
+ "nike-vaporfly-4": [
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-vaporfly-4-hf6412-001.html",
+   "nombre": "Nike Vaporfly 4",
+   "nota": "",
+   "color": null,
+   "foto": "nike-vaporfly-4/1.jpg",
+   "precio": 379999,
+   "antes": null,
+   "talles": [
+    "34.5",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-nike-vaporfly-4-hf6414-001.html",
+   "nombre": "Zapatillas Nike Vaporfly 4",
+   "nota": "",
+   "color": null,
+   "foto": "nike-vaporfly-4/2.jpg",
+   "precio": 429999,
+   "antes": null,
+   "talles": [
+    "37.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
  "nike-structure-plus": [
   {
    "tienda": "NewSport",
@@ -13919,6 +13953,1604 @@
     "11.5"
    ],
    "sistema": "US"
+  }
+ ],
+ "salomon-aero-glide-4": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-glide-4-w",
+   "nombre": "Salomon Aero Glide 4",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-aero-glide-4/1.png",
+   "precio": 249999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-glide-4-m",
+   "nombre": "Salomon Aero Glide 4",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-aero-glide-4/2.png",
+   "precio": 249999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-aero-glide-3": [
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-aero-glide-3-479758.html",
+   "nombre": "Salomon Aero Glide 3",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-aero-glide-3/1.jpg",
+   "precio": 159999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-aero-glide-3-478105.html",
+   "nombre": "Zapatillas Salomon Aero Glide 3",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-aero-glide-3/3.jpg",
+   "precio": 159999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-aero-glide-3-477567.html",
+   "nombre": "Zapatillas Salomon Aero Glide 3",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-aero-glide-3/4.jpg",
+   "precio": 159999,
+   "antes": null,
+   "talles": [
+    "42",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-aero-glide-3-477594.html",
+   "nombre": "Zapatillas Salomon Aero Glide 3",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-aero-glide-3/6.jpg",
+   "precio": 159999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-glide-3-m",
+   "nombre": "Salomon Aero Glide 3",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-aero-glide-3/2.jpg",
+   "precio": 172499,
+   "antes": 229999,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-glide-3-w",
+   "nombre": "Salomon Aero Glide 3",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-aero-glide-3/5.jpg",
+   "precio": 172499,
+   "antes": 229999,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-aero-blaze-4": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-blaze-4",
+   "nombre": "Salomon Aero Blaze 4",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-aero-blaze-4/1.png",
+   "precio": 239999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-blaze-4-w",
+   "nombre": "Salomon Aero Blaze 4",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-aero-blaze-4/2.png",
+   "precio": 239999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-aero-blaze-3": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-blaze-3-w",
+   "nombre": "Salomon Aero Blaze 3",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-aero-blaze-3/2.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/aero-blaze-3-m",
+   "nombre": "Salomon Aero Blaze 3",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-aero-blaze-3/3.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-drx-bliss": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/drx-bliss-m",
+   "nombre": "Salomon DRX Bliss ",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-drx-bliss/1.jpg",
+   "precio": 149999,
+   "antes": 199999,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/drx-bliss-w",
+   "nombre": "Salomon DRX Bliss ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-drx-bliss/2.jpg",
+   "precio": 149999,
+   "antes": 199999,
+   "talles": [
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-drx-defy": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/drx-defy-w",
+   "nombre": "Salomon DRX Defy ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-drx-defy/1.jpg",
+   "precio": 149999,
+   "antes": 199999,
+   "talles": [
+    "35",
+    "35.5",
+    "38.5",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/drx-defy-m",
+   "nombre": "Salomon DRX Defy ",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-drx-defy/2.jpg",
+   "precio": 149999,
+   "antes": 199999,
+   "talles": [
+    "41.5",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-spectur-3": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/spectur-3-m",
+   "nombre": "Salomon Spectur 3",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-spectur-3/1.png",
+   "precio": 269999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/spectur-3-w",
+   "nombre": "Salomon Spectur 3",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-spectur-3/2.png",
+   "precio": 269999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-speedcross-6": [
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/smt000002b63-speedcross-6-m.html",
+   "nombre": "Salomon Speedcross 6",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-6/4.jpg",
+   "precio": 219999,
+   "antes": null,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/smt000005-speedcross-6-w.html",
+   "nombre": "Salomon Speedcross 6",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-speedcross-6/9.jpg",
+   "precio": 219999,
+   "antes": null,
+   "talles": [
+    "38",
+    "38.5",
+    "39"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Gostore",
+   "url": "https://gostore.com.ar/smt000002b61-speedcross-6-m.html",
+   "nombre": "Speedcross 6 Para Hombre",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-6/12.jpg",
+   "precio": 219999,
+   "antes": null,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-6-475820.html",
+   "nombre": "Salomon Speedcross 6",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-6/1.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-m",
+   "nombre": "Salomon Speedcross 6",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-6/5.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-6-417380.html",
+   "nombre": "Zapatillas Salomon Speedcross 6",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-6/6.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "40.5",
+    "41.5",
+    "42.5",
+    "43",
+    "44",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-6-417379.html",
+   "nombre": "Zapatillas Salomon Speedcross 6",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-6/8.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "40.5",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-w",
+   "nombre": "Salomon Speedcross 6",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-speedcross-6/7.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-women",
+   "nombre": "SPEEDCROSS 6",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-speedcross-6/10.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-men",
+   "nombre": "SPEEDCROSS 6",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-6/11.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6m",
+   "nombre": "SPEEDCROSS 6",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-6/13.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "42.5",
+    "43",
+    "44.5",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-h",
+   "nombre": "SPEEDCROSS 6",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-6/14.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-forces-m",
+   "nombre": "SPEEDCROSS 6 FORCES",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-6/15.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-m-1",
+   "nombre": "SPEEDCROSS 6",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-6/16.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-20-years",
+   "nombre": "SPEEDCROSS 6 20 YEARS",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-6/17.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "38",
+    "38.5",
+    "39",
+    "40.5",
+    "42",
+    "42.5",
+    "44",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-speedcross-6-gtx": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-6-gore-tex",
+   "nombre": "SPEEDCROSS 6 GORE-TEX",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-6-gtx/2.png",
+   "precio": 279999,
+   "antes": null,
+   "talles": [
+    "39",
+    "41",
+    "44"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-alphaglide": [
+  {
+   "tienda": "NewSport",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-hombre-477243/p",
+   "nombre": "Zapatillas Salomon Outdoor Alphaglide Hombre",
+   "nota": "Hombre",
+   "color": "AZUL",
+   "foto": "salomon-alphaglide/18.jpg",
+   "precio": 127999,
+   "antes": 160000,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-alphaglide-478018.html",
+   "nombre": "Zapatillas Salomon Alphaglide",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-alphaglide/5.jpg",
+   "precio": 139999,
+   "antes": null,
+   "talles": [
+    "35",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-alphaglide-478010.html",
+   "nombre": "Zapatillas Salomon Alphaglide",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-alphaglide/6.jpg",
+   "precio": 149999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "40",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-salomon-alphaglide-de-mujer-17478015-000/p",
+   "nombre": "Salomon Alphaglide ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-alphaglide/3.jpg",
+   "precio": 159999,
+   "antes": null,
+   "talles": [
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "NewSport",
+   "url": "https://www.newsport.com.ar/zapatillas-salomon-outdoor-alphaglide-hombre-478010/p",
+   "nombre": "Zapatillas Salomon Outdoor Alphaglide Hombre",
+   "nota": "Hombre",
+   "color": "NEGRO",
+   "foto": "salomon-alphaglide/16.jpg",
+   "precio": 159999,
+   "antes": null,
+   "talles": [
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-alphaglide-478015.html",
+   "nombre": "Salomon Alphaglide ",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-alphaglide/1.jpg",
+   "precio": 169999,
+   "antes": null,
+   "talles": [
+    "35.5",
+    "37",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/alphaglide-w",
+   "nombre": "Salomon Alphaglide ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-alphaglide/4.png",
+   "precio": 169999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/alphaglide-m",
+   "nombre": "Salomon Alphaglide ",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-alphaglide/7.jpg",
+   "precio": 169999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/alphaglide-women",
+   "nombre": "ALPHAGLIDE",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-alphaglide/9.png",
+   "precio": 169999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-pulsar": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/pulsar-ls-tee-w",
+   "nombre": "PULSAR LS TEE W",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-pulsar/4.jpg",
+   "precio": 36999,
+   "antes": null,
+   "talles": [],
+   "sistema": null
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/pulsar-trail-m",
+   "nombre": "PULSAR TRAIL",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-pulsar/3.jpg",
+   "precio": 179999,
+   "antes": null,
+   "talles": [
+    "44.5",
+    "45",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/pulsar-m",
+   "nombre": "Salomon Pulsar ",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-pulsar/1.png",
+   "precio": 269999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/pulsar-w",
+   "nombre": "Salomon Pulsar ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-pulsar/2.png",
+   "precio": 269999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-supercross-4": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/supercross-4-men",
+   "nombre": "SUPERCROSS 4",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-supercross-4/5.jpg",
+   "precio": 134999,
+   "antes": 179999,
+   "talles": [
+    "44.5",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-supercross-4-417362.html",
+   "nombre": "Salomon Supercross 4",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-supercross-4/1.jpg",
+   "precio": 169999,
+   "antes": null,
+   "talles": [
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-supercross-4-471193.html",
+   "nombre": "Zapatillas Salomon Supercross 4",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-supercross-4/4.jpg",
+   "precio": 169999,
+   "antes": null,
+   "talles": [
+    "42.5",
+    "44",
+    "44.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/supercross-4-w",
+   "nombre": "Salomon Supercross 4",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-supercross-4/3.jpg",
+   "precio": 179999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/supercross-4",
+   "nombre": "SUPERCROSS 4",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-supercross-4/6.jpg",
+   "precio": 179999,
+   "antes": null,
+   "talles": [
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-ultra-flow": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-m",
+   "nombre": "Salomon Ultra Flow ",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-ultra-flow/1.jpg",
+   "precio": 143999,
+   "antes": 179999,
+   "talles": [
+    "39",
+    "39.5",
+    "42.5",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-w",
+   "nombre": "Salomon Ultra Flow ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-ultra-flow/2.jpg",
+   "precio": 143999,
+   "antes": 179999,
+   "talles": [
+    "35",
+    "35.5",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-ultra-flow-2-gtx": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-m",
+   "nombre": "Salomon Ultra Flow 2 GTX",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-ultra-flow-2-gtx/1.png",
+   "precio": 239999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-w",
+   "nombre": "Salomon Ultra Flow 2 GTX",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-ultra-flow-2-gtx/2.png",
+   "precio": 239999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gore-tex",
+   "nombre": "ULTRA FLOW 2 GORE-TEX",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-ultra-flow-2-gtx/3.png",
+   "precio": 239999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "40.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-genesis": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/genesis-m",
+   "nombre": "Salomon Genesis ",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-genesis/3.jpg",
+   "precio": 187499,
+   "antes": 249999,
+   "talles": [
+    "39",
+    "39.5",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/genesis-w",
+   "nombre": "GENESIS",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-genesis/4.png",
+   "precio": 187499,
+   "antes": 249999,
+   "talles": [
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "TodoTrail",
+   "url": "https://todotrail.com.ar/productos/zapatilla-salomon-genesis-trail-black-acid-lime-6n1ol/",
+   "nombre": "Salomon Genesis ",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-genesis/2.webp",
+   "precio": 207999,
+   "antes": 259999,
+   "talles": [
+    "8.5",
+    "10.5",
+    "11",
+    "11.5",
+    "12"
+   ],
+   "sistema": "US"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/genesis-women-1",
+   "nombre": "Salomon Genesis ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-genesis/1.png",
+   "precio": 249999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "39",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/genesis-men",
+   "nombre": "GENESIS",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-genesis/5.png",
+   "precio": 249999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "44",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-ultra-glide-3": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-glide-3-m",
+   "nombre": "Salomon Ultra Glide 3",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-ultra-glide-3/2.jpg",
+   "precio": 172499,
+   "antes": 229999,
+   "talles": [
+    "44.5",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-glide-3-w",
+   "nombre": "Salomon Ultra Glide 3",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-ultra-glide-3/3.jpg",
+   "precio": 172499,
+   "antes": 229999,
+   "talles": [
+    "35",
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/ultra-glide-3-men",
+   "nombre": "ULTRA GLIDE 3",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-ultra-glide-3/4.jpg",
+   "precio": 172499,
+   "antes": 229999,
+   "talles": [
+    "39",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-speedcross-peak": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-peak-m",
+   "nombre": "Salomon Speedcross Peak ",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-speedcross-peak/3.jpg",
+   "precio": 134999,
+   "antes": 179999,
+   "talles": [
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/speedcross-peak-w",
+   "nombre": "Salomon Speedcross Peak ",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-speedcross-peak/6.jpg",
+   "precio": 134999,
+   "antes": 179999,
+   "talles": [
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-peak-476032.html",
+   "nombre": "Zapatillas Salomon Speedcross Peak",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-peak/4.jpg",
+   "precio": 139999,
+   "antes": null,
+   "talles": [
+    "35"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-peak-476024.html",
+   "nombre": "Zapatillas Salomon Speedcross Peak",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-peak/5.jpg",
+   "precio": 169999,
+   "antes": null,
+   "talles": [
+    "40.5",
+    "41.5",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Open Sports",
+   "url": "https://www.opensports.com.ar/zapatillas-salomon-speedcross-peak-476033.html",
+   "nombre": "Salomon Speedcross Peak ",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-speedcross-peak/1.jpg",
+   "precio": 179999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "44.5"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "salomon-xa-pro-3d-v9": [
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9-m",
+   "nombre": "Salomon XA Pro 3D V9",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-xa-pro-3d-v9/2.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "41",
+    "41.5",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9-w",
+   "nombre": "Salomon XA Pro 3D V9",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "salomon-xa-pro-3d-v9/3.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "37.5",
+    "38",
+    "38.5",
+    "39",
+    "40",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9m",
+   "nombre": "XA PRO 3D V9",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-xa-pro-3d-v9/4.png",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "39",
+    "39.5",
+    "42.5",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/xa-pro-3d-vw",
+   "nombre": "XA PRO 3D V9",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-xa-pro-3d-v9/5.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "35",
+    "35.5",
+    "40.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9",
+   "nombre": "XA PRO 3D V9",
+   "nota": "",
+   "color": null,
+   "foto": "salomon-xa-pro-3d-v9/6.jpg",
+   "precio": 229999,
+   "antes": null,
+   "talles": [
+    "44.5",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Salomon Argentina",
+   "url": "https://salomonstore.com.ar/products/xa-pro-3d-v9-men",
+   "nombre": "XA PRO 3D V9",
+   "nota": "Hombre",
+   "color": null,
+   "foto": "salomon-xa-pro-3d-v9/7.png",
+   "precio": 269999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "41",
+    "42",
+    "42.5",
+    "44",
+    "45",
+    "46"
+   ],
+   "sistema": "AR"
+  }
+ ],
+ "kiprun-kipcore": [
+  {
+   "tienda": "Decathlon",
+   "url": "https://decathlon.com.ar/products/zapatillas-de-running-hombre-kiprun-cushion-500",
+   "nombre": "Kiprun Kipcore (Cushion 500) ",
+   "nota": "Hombre",
+   "color": "negro grafito negro grafit",
+   "foto": "kiprun-kipcore/1.jpg",
+   "precio": 139900,
+   "antes": null,
+   "talles": [
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "EU"
+  },
+  {
+   "tienda": "Decathlon",
+   "url": "https://decathlon.com.ar/products/zapatillas-running-mujer-cushion-500-lila-rosado",
+   "nombre": "Kiprun Kipcore (Cushion 500) ",
+   "nota": "Mujer",
+   "color": "Violeta oscuro negro ahuma",
+   "foto": "kiprun-kipcore/2.jpg",
+   "precio": 139900,
+   "antes": null,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sistema": "EU"
+  }
+ ],
+ "kiprun-kipstorm-challenger": [
+  {
+   "tienda": "Decathlon",
+   "url": "https://decathlon.com.ar/products/zapatillas-running-mujer-kiprun-kipstorm-challenger-con-placa-carbono",
+   "nombre": "Kiprun Kipstorm Challenger ",
+   "nota": "Mujer",
+   "color": "Gris niebla Gris niebla Gr",
+   "foto": "kiprun-kipstorm-challenger/1.jpg",
+   "precio": 311900,
+   "antes": null,
+   "talles": [
+    "38",
+    "39",
+    "40"
+   ],
+   "sistema": "EU"
   }
  ]
 }

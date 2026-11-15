@@ -4346,12 +4346,7 @@
      "cuotas": "12 cuotas sin interés",
      "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000320090010.html",
      "fecha": "15/11/2026",
-     "nota": "Hombre",
-     "talles": [
-      "7",
-      "12"
-     ],
-     "sistema": "US"
+     "nota": "Hombre"
     }
    ],
    "colores": [],
@@ -7396,16 +7391,11 @@
     },
     {
      "tienda": "Saucony Argentina",
-     "precio": 279930,
+     "precio": 42900,
      "cuotas": "3 cuotas sin interés",
      "url": "https://saucony.com.ar/productos/zapatilla-unisex-endorphin-elite-2-citron-black/",
      "fecha": "15/11/2026",
-     "antes": 399900,
-     "nota": "Unisex",
-     "talles": [
-      "7"
-     ],
-     "sistema": "US"
+     "nota": "Unisex"
     },
     {
      "tienda": "Stock Center",
@@ -11128,8 +11118,7 @@
      "fecha": "15/11/2026",
      "nota": "Mujer",
      "talles": [
-      "6",
-      "7.5"
+      "6"
      ],
      "sistema": "US"
     },

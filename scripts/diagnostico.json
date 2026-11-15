@@ -1,61 +1,35 @@
 {
- "fecha": "2026-11-15T01:46:27.713Z",
+ "fecha": "2026-11-15T21:51:34.845Z",
  "resultados": [
   {
-   "url": "https://decathlon.com.ar/collections/kiprun/products.json?limit=250",
+   "url": "https://www.nakaoutdoors.com.ar/marca-hoka",
    "estado": 200,
-   "urlFinal": "https://decathlon.com.ar/collections/kiprun/products.json?limit=250",
-   "largo": 2324036,
-   "plataforma": "shopify",
+   "urlFinal": "https://www.nakaoutdoors.com.ar/marca-hoka",
+   "largo": 211392,
+   "titulo": "Hoka Argentina | Zapatillas de Trail y Running | Naka Outdoors - Tienda Online de escalada y montaña",
+   "plataforma": null,
    "generador": null,
    "variantes": false,
    "tiendanube": false,
    "desafio": true,
    "jsonld": 0,
    "precioMeta": null,
-   "muestra": "{\"products\":[{\"id\":9884276031728,\"title\":\"Remera de Running 100 Mujer\",\"handle\":\"polera-de-running-transpirable-mujer-kiprun-run-100\",\"body_html\":\"\\u003cp\\u003eRemera de running básica para mujer, liviana y de secado rápido, con cuello redondo y corte holgado para correr cómoda a cualquier intensidad con calor.\\u003c\\/p\\u003e\\u003cp\\u003e\\u003c\\/p\\u003e\\u003ch4\\u003e¡El renacimiento de una buena prenda básica!\\u003c\\/h4\\u003e\\u003cp\\u003e¡El renacimiento de una buena prenda básica! Escuchamos las opiniones de nuestros clientes sobre el modelo anterior. Hoy presentamos la versión mejorada, que "
+   "muestra": " Hoka Argentina | Zapatillas de Trail y Running | Naka Outdoors - Tienda Online de escalada y montaña Elegí dónde recibir tus compras Podrás ver costos y tiempos de entrega precisos en todo lo que busques. Usar E-mail Cerrar Ingresar Registrarme &nbsp; Usuario ó E-mail Contraseña Ingresar E-mail Olvide mi contraseña E-mail Por favor, introduzca su dirección de correo electrónico válida. Contraseña Confirmar contraseña Registrarme E-mail Envíos GRATIS a todo el país para compras a partir de $160.000 Envíos GRATIS en MOTO a partir de $150.000 Hasta 6 cuotas SIN INTERES o hasta 12 cuotas fijas 5%"
   },
   {
-   "url": "https://decathlon.com.ar/collections/kiprun/products.json?limit=250&page=2",
+   "url": "https://www.nakaoutdoors.com.ar/",
    "estado": 200,
-   "urlFinal": "https://decathlon.com.ar/collections/kiprun/products.json?limit=250&page=2",
-   "largo": 15,
+   "urlFinal": "https://www.nakaoutdoors.com.ar/",
+   "largo": 336651,
+   "titulo": "Tienda Online de escalada y montaña",
    "plataforma": null,
    "generador": null,
    "variantes": false,
    "tiendanube": false,
-   "desafio": false,
+   "desafio": true,
    "jsonld": 0,
    "precioMeta": null,
-   "muestra": "{\"products\":[]}"
-  },
-  {
-   "url": "https://decathlon.com.ar/collections/kalenji/products.json?limit=250",
-   "estado": 200,
-   "urlFinal": "https://decathlon.com.ar/collections/kalenji/products.json?limit=250",
-   "largo": 15,
-   "plataforma": null,
-   "generador": null,
-   "variantes": false,
-   "tiendanube": false,
-   "desafio": false,
-   "jsonld": 0,
-   "precioMeta": null,
-   "muestra": "{\"products\":[]}"
-  },
-  {
-   "url": "https://decathlon.com.ar/collections/zapatillas-running/products.json?limit=250",
-   "estado": 200,
-   "urlFinal": "https://decathlon.com.ar/collections/zapatillas-running/products.json?limit=250",
-   "largo": 15,
-   "plataforma": null,
-   "generador": null,
-   "variantes": false,
-   "tiendanube": false,
-   "desafio": false,
-   "jsonld": 0,
-   "precioMeta": null,
-   "muestra": "{\"products\":[]}"
+   "muestra": " Tienda Online de escalada y montaña Elegí dónde recibir tus compras Podrás ver costos y tiempos de entrega precisos en todo lo que busques. Usar E-mail Cerrar Ingresar Registrarme &nbsp; Usuario ó E-mail Contraseña Ingresar E-mail Olvide mi contraseña E-mail Por favor, introduzca su dirección de correo electrónico válida. Contraseña Confirmar contraseña Registrarme E-mail Envíos GRATIS a todo el país para compras a partir de $160.000 Envíos GRATIS en MOTO a partir de $150.000 Hasta 6 cuotas SIN INTERES o hasta 12 cuotas fijas 5% de Descuento abonando con Transferencia Bancaria Donde está mi p"
   }
  ]
 }

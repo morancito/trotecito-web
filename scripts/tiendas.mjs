@@ -122,7 +122,10 @@ async function shopify(url) {
   if (!disp.length) return { sinStock: true };
   const o = disp.sort((a, b) => a.price - b.price)[0];
   const talle = v => [v.option1, v.option2, v.option3].find(x => x != null && talleAR(x).length) || "";
-  return { precio: Math.round(o.price / 100), antes: o.compare_at_price > o.price * 1.01 ? Math.round(o.compare_at_price / 100) : null, cuotas: 0, ...conTalles(disp.map(talle)) };
+  const r = { precio: Math.round(o.price / 100), antes: o.compare_at_price > o.price * 1.01 ? Math.round(o.compare_at_price / 100) : null, cuotas: 0, ...conTalles(disp.map(talle)) };
+  /* Decathlon vende con numeración europea, que no coincide con la argentina: se muestra como EU y no entra al filtro de talle */
+  if (/decathlon\./.test(url) && r.sistema === "AR") r.sistema = "EU";
+  return r;
 }
 
 /* ---------- WooCommerce: variaciones en data-product_variations ---------- */

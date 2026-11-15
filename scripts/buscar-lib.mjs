@@ -20,6 +20,7 @@ export const TIENDAS = [
   /* tiendas oficiales de una marca: solo se buscan los modelos de esa marca */
   { nombre: "Saucony Argentina", url: "https://saucony.com.ar", marca: "Saucony" },
   { nombre: "Salomon Argentina", url: "https://salomonstore.com.ar", marca: "Salomon" },
+  { nombre: "Decathlon", url: "https://decathlon.com.ar", marca: "Kiprun" },
   { nombre: "Puma Argentina", url: "https://ar.puma.com", marca: "Puma" },
   { nombre: "Under Armour Argentina", url: "https://www.underarmour.com.ar", marca: "Under Armour" },
   { nombre: "Asics", url: "https://www.asics.com.ar", marca: "Asics" },
@@ -31,7 +32,7 @@ export const pausaDe = url => /gostore/.test(url) ? PAUSA_LENTA : PAUSA;
 export async function conReintento(f) { try { return await f(); } catch (e) { if (!/429|503/.test(e.message)) throw e; await dormir(20000); return f(); } }
 
 export const norm = s => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/([a-z])(\d)/g, "$1 $2").replace(/(\d)([a-z])/g, "$1 $2").replace(/[^a-z0-9.]+/g, " ").trim();
-export const MARCAS = ["nike", "adidas", "asics", "new balance", "saucony", "puma", "brooks", "on", "hoka", "mizuno", "under armour", "salomon", "topper", "reebok", "fila", "diadora", "la sportiva", "nnormal", "dynafit", "merrell", "columbia", "altra"];
+export const MARCAS = ["kiprun", "nike", "adidas", "asics", "new balance", "saucony", "puma", "brooks", "on", "hoka", "mizuno", "under armour", "salomon", "topper", "reebok", "fila", "diadora", "la sportiva", "nnormal", "dynafit", "merrell", "columbia", "altra"];
 /* palabras que indican otra versión del modelo: si aparecen en la tienda y no en nuestro modelo, no es el mismo */
 const VARIANTES = ["exo", "breeze", "lab", "grvl", "gravel", "quiver", "equipe", "storm", "proto", "trail", "gtx", "gore", "plus", "premium", "max", "elite", "pro", "tr", "ultra", "mid", "speed", "sl", "lite", "flow", "next", "rise", "stride", "hyper", "prime", "se", "luxe", "boa", "evo", "x", "control", "tempo", "mary", "jane", "shield", "winter", "spike", "spikes", "atr"];
 const NO_ZAPA = /\b(buzo|remera|media|medias|short|gorra|gorro|visera|mochila|bolso|duffle|chaleco|bidon|rinonera|cinturon|guantes|polainas|campera|calza|musculosa|ojotas?|gafas|anteojos|sandalia|bota|botas|botin|botines|kids|nino|nina|junior|jr|gs|ps|td|bebe)\b/;

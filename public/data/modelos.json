@@ -17346,6 +17346,157 @@
     "RunRepeat",
     "https://runrepeat.com/salomon-xa-pro-3d-v9"
    ]
+  },
+  {
+   "id": 140,
+   "slug": "kiprun-kipcore",
+   "m": "Kiprun",
+   "mod": "Kipcore (Cushion 500)",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "terreno": "Asfalto",
+   "esp": "MFOAM",
+   "pl": "Sin placa",
+   "peso": 264,
+   "drop": 8,
+   "talon": 35,
+   "ante": 27,
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "5:00 a 6:30 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Rodajes de 5 a 21K"
+   },
+   "evitar": "buscás una zapa rápida para series o para competir: es de entrenamiento, cómoda y sencilla.",
+   "fuente": [
+    "Kiprun",
+    "https://www.kiprun.com/en-GB/product/kiprun-kipcore-men-s-running-shoes-yellow_353286--c346c292m8985695"
+   ],
+   "tiendas": [
+    {
+     "tienda": "Decathlon",
+     "precio": 139900,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://decathlon.com.ar/products/zapatillas-de-running-hombre-kiprun-cushion-500",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47"
+     ],
+     "sistema": "EU"
+    },
+    {
+     "tienda": "Decathlon",
+     "precio": 139900,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://decathlon.com.ar/products/zapatillas-running-mujer-cushion-500-lila-rosado",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ],
+     "sistema": "EU"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "borrador": true,
+   "fotos": []
+  },
+  {
+   "id": 141,
+   "slug": "kiprun-kipstorm-challenger",
+   "m": "Kiprun",
+   "mod": "Kipstorm Challenger",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "terreno": "Asfalto",
+   "esp": "VFOAM",
+   "pl": "Carbono",
+   "peso": 195,
+   "drop": 8,
+   "talon": 38.8,
+   "ante": 30.1,
+   "usos": [
+    "Competencia",
+    "Ritmo"
+   ],
+   "dist": [
+    "corta",
+    "media",
+    "maraton"
+   ],
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "Menos de 5:00 min/km",
+    "peso": "Hasta 80 kg",
+    "distancia": "Carreras de 5K a maratón"
+   },
+   "evitar": "buscás una zapa para todos los días: es de carrera y de ritmos rápidos.",
+   "fuente": [
+    "Kiprun",
+    "https://www.kiprun.com/en-GB/product/men-s-running-shoes-with-carbon-plate-kiprun-kd900x-2_358423--c143c385m8961365"
+   ],
+   "fuente2": [
+    "RTINGS",
+    "https://www.rtings.com/running-shoes/reviews/kiprun/kipstorm-challenger"
+   ],
+   "tiendas": [
+    {
+     "tienda": "Decathlon",
+     "precio": 305900,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://decathlon.com.ar/products/zapatillas-running-hombre-kiprun-kd900x-2-placa-de-carbono",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "EU"
+    },
+    {
+     "tienda": "Decathlon",
+     "precio": 311900,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://decathlon.com.ar/products/zapatillas-running-mujer-kiprun-kipstorm-challenger-con-placa-carbono",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ],
+     "sistema": "EU"
+    }
+   ],
+   "colores": [],
+   "ar": true,
+   "borrador": true,
+   "fotos": []
   }
  ]
 }

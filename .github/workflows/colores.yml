@@ -6,9 +6,7 @@ name: Buscar colores
 # Corre en tandas: si se le acaba el tiempo guarda lo hecho y se vuelve a lanzar sola con los modelos que faltan.
 on:
   schedule:
-    # una vez por mes (día 2): la corrida semanal de casi 5 horas se comía el cupo gratis de GitHub.
-    # El stock y el precio de cada color ya los rechequea el robot de precios todos los días.
-    - cron: "41 6 2 * *"
+    - cron: "41 6 * * 0"
   workflow_dispatch:
     inputs:
       modelos:
@@ -43,7 +41,7 @@ jobs:
         env:
           MODELOS: ${{ inputs.modelos }}
           FALTANTES: ${{ inputs.faltantes && '1' || '' }}
-          MINUTOS: "150"
+          MINUTOS: "280"
         run: node scripts/colores.mjs $MODELOS
       - name: Procesar fotos
         run: |
@@ -58,7 +56,7 @@ jobs:
           git diff --cached --quiet || git commit -m "Colores de cada modelo"
           for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && break; sleep 15; done
       - name: Seguir con los que faltan
-        if: hashFiles('scripts/colores-faltan.txt') != '' && github.event_name != 'schedule'
+        if: hashFiles('scripts/colores-faltan.txt') != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run colores.yml --ref main -f faltantes=true

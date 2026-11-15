@@ -482,14 +482,22 @@ function bloqueColores(d) {
     <div class="col-row">${vs.map((v, i) => `<button class="col${estadoTalle(v) === false ? " sin" : ""}" data-col="${i}" aria-pressed="false" aria-label="${esc(v.n)}"><img src="${esc(src(v.foto))}" alt="" loading="lazy"><small>${muestra(v)}${esc(v.n)}</small></button>`).join("")}</div>
     <div class="col-info" id="colInfo" hidden></div></div>`;
 }
-function infoColor(v) {
-  const vigente = vigenteHasta(v.fecha), e = estadoTalle(v);
+function infoColor(v0, d) {
+  /* el mismo color puede estar en varias tiendas: se muestra primero la más barata */
+  /* una fila por tienda (la más barata): la misma tienda suele publicar el color varias veces, una por género o talle */
+  const ops = [v0, ...(v0.otras || []).filter(o => paraGen(o) && o.precio)].sort((a, b) => a.precio - b.precio).filter((o, i, l) => l.findIndex(x => x.tienda === o.tienda) === i), m = ops[0];
+  const v = m === v0 ? v0 : { ...v0, tienda: m.tienda, url: m.url, precio: m.precio, nota: m.nota ?? v0.nota, talles: undefined, sistema: undefined, otras: ops.slice(1) };
+  /* tiendas que venden el modelo pero de las que no sabemos el color: no se pierden al elegir uno */
+  const conColor = new Set(d.variantes.flatMap(x => [x.url, ...(x.otras || []).map(o => o.url)]));
+  const sinColor = d.todas.filter(t => !conColor.has(t.url) && paraGen(t)), minSin = Math.min(...sinColor.map(t => t.precio));
+  const aviso = sinColor.length ? `<p class="ci-o ci-s">${sinColor.length === 1 ? "Hay 1 tienda más" : `Hay ${sinColor.length} tiendas más`} con este modelo${minSin < v.precio ? `, <b>desde ${fmt(minSin)}</b>,` : ""} donde no pudimos identificar el color: puede ser este u otro. <a href="#tiendasBox" data-ir-tiendas>Ver todas las tiendas ↓</a></p>` : "";
+  const vigente = vigenteHasta(v0.fecha), e = estadoTalle(v);
   const talle = !TALLE ? "" : e ? `<span class="buy-t">✓ Hay talle ${TALLE}</span>` : e === false ? `<span class="buy-t no">No tiene tu talle ${TALLE}</span>` : `<span class="buy-t nd">Talle ${TALLE} sin confirmar</span>`;
-  const otras = (v.otras || []).filter(o => paraGen(o));
+  const otras = ops.slice(1);
   return `<p class="ci-n">${muestra(v)}<b>${esc(v.n)}</b>${v.nota ? `<span>talles de ${esc(v.nota.toLowerCase())}</span>` : ""}</p>
     <p class="ci-p"><b>${fmt(v.precio)}</b> en ${esc(v.tienda)}${diasDe(v.fecha) >= 1 ? ` <small>(chequeado ayer)</small>` : ""}</p>${talle}
     <a class="btn" href="${esc(v.url)}" target="_blank" rel="noopener">Ver este color en ${esc(v.tienda)} ↗</a>
-    ${otras.length ? `<p class="ci-o">También en ${otras.map(o => `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.tienda)}</a>${vigente ? ` (${fmt(o.precio)})` : ""}`).join(", ")}</p>` : ""}`;
+    ${otras.length ? `<p class="ci-o">También en ${otras.map(o => `<a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.tienda)}</a>${vigente ? ` (${fmt(o.precio)})` : ""}`).join(", ")}</p>` : ""}${aviso}`;
 }
 const lineaTalle = t => { const e = estadoTalle(t); return !TALLE ? "" : e ? `<span class="buy-t">✓ Hay talle ${TALLE}</span>` : `<span class="buy-t nd">No pudimos confirmar el talle ${TALLE}: chequealo en la tienda</span>`; };
 const chips = t => t.talles?.length ? t.talles.map((x, i) => `<i class="tc${t.sistema === "AR" && x === TALLE ? " on" : ""}"${t.us ? ` title="En la tienda figura como US ${esc(t.us[i] ?? "")}"` : ""}>${t.sistema === "US" ? "US " : t.sistema === "EU" ? "EU " : ""}${x}</i>`).join("") + (t.us ? `<small class="tc-us">la tienda los publica en US (${esc(t.us.slice(0, 3).join(", "))}…)</small>` : "") : `<span class="tc-nd">No pudimos chequear los talles: consultalos en la tienda</span>`;
@@ -523,7 +531,7 @@ function ficha(d) {
     <h1 class="cond">${esc(nombre(d))}</h1>
     <div class="tags">${terr(d) === "Trail" ? `<span class="tag trail">Trail</span>` : ""}<span class="tag uso ${UCLS[d.uso] || ""}">${esc(d.uso)}</span>${pisada(d) ? `<span class="tag">${pisada(d)}</span>` : ""}${conPlaca(d) ? `<span class="tag">Con placa</span>` : ""}</div>
     ${d.fotos.length ? bloqueColores(d) : ""}
-    ${best ? `<div class="buy"><span class="kicker">Mejor precio</span><b class="buy-p">${fmt(best.precio)}</b>
+    ${best ? `<div class="buy"><span class="kicker">Mejor precio${d.variantes.length > 1 ? " · en cualquier color" : ""}</span><b class="buy-p">${fmt(best.precio)}</b>
       <span class="buy-s">en ${esc(best.tienda)}${!GEN && (best.nota === "Mujer" || best.nota === "Hombre") ? ` · <b>talles de ${best.nota.toLowerCase()}</b>` : ""}${best.cuotas && !/consultar/i.test(best.cuotas) ? " · " + esc(best.cuotas) : ""}</span>
       <span class="buy-f">Precio chequeado ${esc(hace(best.fecha))}. El stock de tu talle y la forma de entrega (envío o retiro en sucursal) confirmalos en la tienda.</span>
       ${lineaTalle(best)}<a class="btn" href="${esc(best.url)}" target="_blank" rel="noopener">Comprar en ${esc(best.tienda)} ↗</a>
@@ -566,7 +574,7 @@ function montarFicha(d) {
     document.querySelectorAll(".thumbs button").forEach((x, i) => x.setAttribute("aria-pressed", ya && i === 0));
     $("#fotoMain").src = src(ya ? d.fotos[0] : v.foto); $("#m3d").hidden = true; $("#mfotos").hidden = false;
     document.querySelectorAll("#mtabs button").forEach(x => x.setAttribute("aria-pressed", x.dataset.mt === "fotos"));
-    const info = $("#colInfo"); info.hidden = ya; if (!ya) { info.innerHTML = infoColor(v); medir("color", { slug: d.slug, c: v.n, t: v.tienda }); } };
+    const info = $("#colInfo"); info.hidden = ya; if (!ya) { info.innerHTML = infoColor(v, d); const ir = info.querySelector("[data-ir-tiendas]"); if (ir) ir.onclick = e => { e.preventDefault(); (document.querySelector(".tiendas-box") || document.querySelector(".buy")).scrollIntoView({ behavior: "smooth", block: "start" }); }; medir("color", { slug: d.slug, c: v.n, t: v.tienda }); } };
   const th = document.querySelector(".thumbs");
   if (th) th.onclick = e => { const b = e.target.closest("button"); if (!b) return; $("#fotoMain").src = src(d.fotos[+b.dataset.foto]);
     th.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); $("#m3d").hidden = true; $("#mfotos").hidden = false;

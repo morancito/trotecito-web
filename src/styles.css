@@ -878,3 +878,7 @@ table.cmpt tr.grp th.gn i { display: inline-block; width: 8px; height: 8px; bord
 /* mientras baja el visor 3D */
 .cargando3d { position: relative; }
 .cargando3d::before { content: "Cargando el 3D…"; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* color elegido: aviso de las tiendas sin color identificado */
+.ci-s { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line, #3a4160); }
+.ci-s a { font-weight: 700; white-space: nowrap; }

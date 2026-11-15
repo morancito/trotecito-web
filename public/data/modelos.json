@@ -4064,6 +4064,23 @@
       "41.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "New Balance",
+     "precio": 274999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.newbalance.com.ar/mujer-zapatillas-N1T000255.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "5",
+      "5.5",
+      "6",
+      "6.5",
+      "9.5",
+      "10.5"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],
@@ -4139,6 +4156,21 @@
       "10.5",
       "11",
       "11.5"
+     ],
+     "sistema": "US"
+    },
+    {
+     "tienda": "New Balance",
+     "precio": 219999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.newbalance.com.ar/mujer-zapatillas-N1T000254.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "5.5",
+      "6.5",
+      "9",
+      "9.5"
      ],
      "sistema": "US"
     }
@@ -4289,6 +4321,19 @@
       "45.5"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "New Balance",
+     "precio": 229999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.newbalance.com.ar/mujer-zapatillas-N1T000400.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "5.5",
+      "10.5"
+     ],
+     "sistema": "US"
     }
    ],
    "colores": [],

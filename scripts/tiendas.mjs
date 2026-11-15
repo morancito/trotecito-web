@@ -29,6 +29,10 @@ export async function traer(url, json = false, producto = false) {
    "dudoso" no alcanza para borrar: la tienda no respondió o bloquea, y eso no dice nada del producto. */
 const NO_EXISTE = /(producto|p[aá]gina|art[ií]culo)\s+(que\s+busc[aá]s\s+)?(no\s+existe|no\s+(fue\s+|est[aá]\s+)?(encontrad[oa]|disponible)|inexistente)|no\s+(pudimos\s+encontrar|encontramos)\s+(el|este|la|lo)\s+(producto|p[aá]gina|que)|error\s+404|404\s*[-–|]\s*(p[aá]gina|not found)|page not found|p[aá]gina no encontrada|oops|ups[,!]/i;
 const limpio = x => String(x || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/&[a-z#0-9]+;/g, " ").replace(/([a-z])(\d)/g, "$1 $2").replace(/(\d)([a-z])/g, "$1 $2").replace(/[^a-z0-9]+/g, " ").trim();
+/* Páginas de error que responden "200 OK" y abajo recomiendan otros productos (Tiendanube): el botón de compra y el precio
+   que se ven son de los recomendados. Estas frases mandan aunque haya botón de compra. */
+const ERROR_404 = /error\s*[-–:]?\s*404|404\s*[-–:]\s*(error|p[aá]gina|not found)|la\s+p[aá]gina\s+que\s+(est[aá]s\s+buscando|busc[aá]s)\s+no\s+existe|p[aá]gina\s+no\s+encontrada|page\s+not\s+found/i;
+export const esPagina404 = h => ERROR_404.test(String(h).replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " "));
 export async function verPagina(url, m) {
   let r, h;
   try {
@@ -45,7 +49,7 @@ export async function verPagina(url, m) {
   const titulo = ((h.match(/<meta[^>]+property="og:title"[^>]+content="([^"]*)"/i) || h.match(/<title[^>]*>([^<]*)<\/title>/i) || [])[1] || "").trim();
   const arriba = h.slice(0, 120000).replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ");
   const carrito = /agregar al carrito|añadir al carrito|comprar ahora|add to cart|agregar a la bolsa|"@type"\s*:\s*"Product"/i.test(h);
-  if (NO_EXISTE.test(titulo) || (!carrito && NO_EXISTE.test(arriba))) return { ok: false, motivo: "la página dice que el producto no existe", titulo };
+  if (esPagina404(h) || NO_EXISTE.test(titulo) || (!carrito && NO_EXISTE.test(arriba))) return { ok: false, motivo: "la página dice que el producto no existe", titulo };
   /* ¿es el producto que decimos? El título tiene que nombrar el modelo (las palabras y el número de versión) */
   if (m && titulo) {
     const t = ` ${limpio(titulo + " " + decodeURIComponent(new URL(r.url).pathname))} `, pal = limpio(`${m.mod} ${m.ver || ""}`).replace(/\(.*?\)/g, " ").split(" ").filter(w => w && !["gtx", "v", "de", "la"].includes(w));
@@ -236,6 +240,7 @@ export async function leer(url) {
   /* páginas que responden bien pero dicen que el producto no existe (se borra) o que no está disponible (sin stock) */
   const arriba = h.slice(0, 80000).replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<[^>]+>/g, " ");
   const carrito = /agregar al carrito|añadir al carrito|comprar ahora|add to cart/i.test(h);
+  if (esPagina404(h)) throw new Error("HTTP 404 · la página dice que no existe (y muestra otros productos)");
   if (!carrito && /(producto|p[aá]gina)\s+(que buscás\s+)?(no\s+existe|no\s+(fue\s+)?encontrad[oa]|inexistente)|no\s+pudimos\s+encontrar\s+(el|este|la)\s+(producto|p[aá]gina)|error\s+404|404\s*[-–|]\s*(p[aá]gina|not found)/i.test(arriba))
     throw new Error("HTTP 404 · la página dice que el producto no existe");
   if (!carrito && /producto\s+(no\s+disponible|agotado|sin\s+stock)/i.test(arriba)) return { sinStock: true };

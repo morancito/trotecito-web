@@ -75,11 +75,24 @@ export async function plataforma(base) {
   if (/vteximg|vtexassets|vtex\.com/i.test(h)) return "vtex";
   if (/cdn\.shopify\.com|\/cdn\/shop\/|Shopify\.(theme|shop)|shopify-digital-wallet/i.test(h)) return "shopify";   // algunas sirven todo desde su propio dominio
   if (/woocommerce/i.test(h)) return "woo";
+  if (/nubixstore/i.test(h)) return "nubix";
   return "desconocida";
 }
 const abs = (base, u) => new URL(u.replace(/&amp;/g, "&"), base).href;
-export async function buscar(tipo, base, q) {
+const listadoMarca = new Map();   // tienda + marca -> productos de ese listado
+export async function buscar(tipo, base, q, marca = "") {
   const e = encodeURIComponent(q);
+  if (tipo === "nubix") {
+    /* Naka Outdoors: no tiene un buscador que se pueda leer; se recorre el listado de la marca (/marca-hoka) */
+    const pal = norm(marca || q).split(" ");
+    for (const marca of [pal.slice(0, 2).join("-"), pal[0]]) {
+      const k = base + marca;
+      if (!listadoMarca.has(k)) { let h = ""; try { h = await traer(`${base}/marca-${marca}`); } catch {}
+        listadoMarca.set(k, [...new Set([...h.matchAll(/href="(\/\d{3,6}-[a-z0-9-]+)"/g)].map(x => x[1]))].map(u => ({ url: abs(base, u), nombre: u.replace(/^\/\d+-/, "").replace(/-/g, " ") }))); }
+      if (listadoMarca.get(k).length) return listadoMarca.get(k);
+    }
+    return [];
+  }
   if (tipo === "sfcc") {
     /* la dirección del buscador cambia según la tienda (/buscar en Dexter, /search en New Balance) */
     let h; try { h = await traer(`${base}/buscar?q=${e}`); } catch (err) { if (!/HTTP 404/.test(err.message)) throw err; h = await traer(`${base}/search?q=${e}`); }

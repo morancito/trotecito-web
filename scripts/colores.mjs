@@ -71,7 +71,7 @@ for (const m of modelos) {
   await Promise.all(TIENDAS.filter(ti => vendeMarca(ti, m)).map(async ti => {
     const tipo = tiposTienda[ti.nombre]; if (tipo === "desconocida") return;
     try {
-      const res = await conReintento(() => buscar(tipo, ti.url, q));
+      const res = await conReintento(() => buscar(tipo, ti.url, q, m.m));
       for (const c of res) if (coincide(m, c.nombre, c.url) && !cands.has(c.url)) cands.set(c.url, { tienda: ti.nombre, url: c.url, nombre: c.nombre, nota: generoDe(c.nombre + " " + c.url) });
     } catch (e) { console.warn(`· ${m.slug} ${ti.nombre}: ${e.message}`); }
     await dormir(pausaDe(ti.url));

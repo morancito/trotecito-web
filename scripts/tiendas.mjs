@@ -214,6 +214,21 @@ export function pwaKit(h) {
   return { precio: Math.round(o.price), antes: lista > o.price * 1.01 ? Math.round(lista) : null, cuotas: 0, ...conTalles(disp.map(v => nombres[v.variationValues?.size] || "")) };
 }
 
+/* Naka Outdoors (plataforma Nubix): el stock y el precio de cada talle y color vienen en una variable de la página,
+   y el nombre de cada talle ("42.5 ARG") en los botones. */
+export function nubix(h) {
+  const m = h.match(/var stock = (\{[\s\S]*?\});/);
+  if (!m) return null;
+  let st; try { st = JSON.parse(m[1]); } catch { return null; }
+  const nombres = Object.fromEntries([...h.matchAll(/id="ns-cart-curva-\d+-(\d+)"[^>]*title="([^"]+)"/g)].map(x => [x[1], x[2]]));
+  const n = x => Number(String(x || "").replace(/\./g, "").replace(",", ".")) || 0;
+  const disp = Object.entries(st).flatMap(([talle, cs]) => Object.values(cs).filter(c => c.stock > 0).map(c => ({ talle: nombres[talle] || "", precio: n(c.price_off) || n(c.price), lista: n(c.price) })));
+  if (!disp.length) return { sinStock: true };
+  const o = disp.slice().sort((a, b) => a.precio - b.precio)[0];
+  const cuotas = Number((h.match(/(\d+)\s+cuotas\s+<strong>sin inter[eé]s/i) || [])[1]) || 0;
+  return { precio: o.precio, antes: o.lista > o.precio * 1.01 ? o.lista : null, cuotas, ...conTalles(disp.map(d => d.talle)) };
+}
+
 export async function leer(url) {
   /* /p al final: VTEX. Si la API no existe (HTTP 404 a secas) no es VTEX y se lee la página; si dice que no está el producto, no está */
   if (/\/p\/?$/.test(new URL(url).pathname)) { try { return await vtex(url); } catch (e) { if (e.message !== "HTTP 404") throw e; } }
@@ -226,6 +241,7 @@ export async function leer(url) {
   if (!carrito && /producto\s+(no\s+disponible|agotado|sin\s+stock)/i.test(arriba)) return { sinStock: true };
   if (/cdn\.shopify\.com|\/cdn\/shop\/|Shopify\.(theme|shop)|shopify-digital-wallet/.test(h)) { try { return await shopify(url); } catch {} }
   if (/\/mobify\/bundle\//.test(h)) { const r = pwaKit(h); if (r) return r; }
+  if (/nubixstore/i.test(h)) { const r = nubix(h); if (r) return r; }
   const r = leerHtml(h);
   if (/demandware/i.test(h) && !r.sinStock) { Object.assign(r, await tallesSfcc(url, h)); if (r.talles && !r.talles.length) r.sinStock = true; }
   return r;

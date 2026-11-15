@@ -33,7 +33,7 @@ for (const ti of corridas) {
   for (const m of modelos.filter(m => vendeMarca(ti, m))) {
     const q = `${m.mod} ${m.ver}`.replace(/^(Gel-|Fresh Foam X |FuelCell )/, "").trim();
     let cands = [];
-    try { cands = await conReintento(() => buscar(tipo, ti.url, q)); salida.tiendas[ti.nombre].buscados++; }
+    try { cands = await conReintento(() => buscar(tipo, ti.url, q, m.m)); salida.tiendas[ti.nombre].buscados++; }
     catch (e) { salida.tiendas[ti.nombre].errores.push(`${m.slug}: búsqueda ${e.message}`); await dormir(pausa); continue; }
     await dormir(pausa);
     const porGenero = new Map();

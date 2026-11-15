@@ -14,6 +14,9 @@ export const TIENDAS = [
   { nombre: "NewSport", url: "https://www.newsport.com.ar" },
   { nombre: "Vorax Running", url: "https://www.voraxrunning.com.ar" },
   { nombre: "Solo Deportes", url: "https://www.solodeportes.com.ar" },
+  { nombre: "Universo Aventura", url: "https://www.universoaventura.com.ar" },
+  { nombre: "Sumitate", url: "https://www.sumitate.com.ar" },
+  { nombre: "Mega Sports", url: "https://www.megasports.com.ar" },
   { nombre: "Open Sports", url: "https://www.opensports.com.ar" },
   { nombre: "Sportline", url: "https://www.sportline.com.ar" },
   /* Digital Sport (digitalsport.com.ar) bloquea al robot (403 de CloudFront): queda afuera hasta que lo habiliten */

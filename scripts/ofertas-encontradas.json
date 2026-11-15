@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-13T03:15:44.034Z",
+ "fecha": "2026-11-15T01:36:21.919Z",
  "tiendas": {
   "Saucony": {
    "tipo": "tiendanube",
@@ -137,14 +137,9 @@
   "New Balance": {
    "tipo": "sfcc",
    "pista": "ajax.googleapis.com | www.newbalance.com.ar | cdn.cquotient.com | static.cloudflareinsights.com",
-   "buscados": 0,
-   "encontrados": 0,
-   "errores": [
-    "new-balance-fresh-foam-x-1080-v14: búsqueda HTTP 404",
-    "new-balance-fresh-foam-x-880-v15: búsqueda HTTP 404",
-    "new-balance-fuelcell-rebel-v5: búsqueda HTTP 404",
-    "new-balance-fuelcell-sc-elite-v5: búsqueda HTTP 404"
-   ]
+   "buscados": 4,
+   "encontrados": 6,
+   "errores": []
   }
  },
  "resultados": [
@@ -10849,6 +10844,128 @@
     "35.5"
    ],
    "sistema": "AR"
+  },
+  {
+   "slug": "new-balance-fresh-foam-x-1080-v14",
+   "modelo": "New Balance Fresh Foam X 1080 v14",
+   "tienda": "New Balance",
+   "nombre": "Fresh Foam X 1080 v14",
+   "url": "https://www.newbalance.com.ar/mujer-zapatillas-N1T000255.html",
+   "nota": "Mujer",
+   "precio": 274999,
+   "antes": null,
+   "cuotas": 12,
+   "sinStock": false,
+   "talles": [
+    "5",
+    "5.5",
+    "6",
+    "6.5",
+    "9.5",
+    "10.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "new-balance-fresh-foam-x-1080-v14",
+   "modelo": "New Balance Fresh Foam X 1080 v14",
+   "tienda": "New Balance",
+   "nombre": "Fresh Foam X 1080 v14",
+   "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000217.html",
+   "nota": "Hombre",
+   "precio": 274999,
+   "antes": null,
+   "cuotas": 12,
+   "sinStock": false,
+   "talles": [
+    "10"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "new-balance-fresh-foam-x-880-v15",
+   "modelo": "New Balance Fresh Foam X 880 v15",
+   "tienda": "New Balance",
+   "nombre": "Fresh Foam X 880 v15",
+   "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000257.html",
+   "nota": "Hombre",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 12,
+   "sinStock": false,
+   "talles": [
+    "7",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5",
+    "12"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "new-balance-fresh-foam-x-880-v15",
+   "modelo": "New Balance Fresh Foam X 880 v15",
+   "tienda": "New Balance",
+   "nombre": "Fresh Foam X 880v15 W",
+   "url": "https://www.newbalance.com.ar/mujer-zapatillas-N1T000254.html",
+   "nota": "Mujer",
+   "precio": 219999,
+   "antes": null,
+   "cuotas": 12,
+   "sinStock": false,
+   "talles": [
+    "5.5",
+    "6.5",
+    "9",
+    "9.5"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "new-balance-fuelcell-rebel-v5",
+   "modelo": "New Balance FuelCell Rebel v5",
+   "tienda": "New Balance",
+   "nombre": "FuelCell Rebel v5",
+   "url": "https://www.newbalance.com.ar/hombre-zapatillas-N1T000323.html",
+   "nota": "Hombre",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 12,
+   "sinStock": false,
+   "talles": [
+    "7",
+    "7.5",
+    "8",
+    "8.5",
+    "9",
+    "9.5",
+    "10",
+    "10.5",
+    "11",
+    "11.5",
+    "12"
+   ],
+   "sistema": "US"
+  },
+  {
+   "slug": "new-balance-fuelcell-rebel-v5",
+   "modelo": "New Balance FuelCell Rebel v5",
+   "tienda": "New Balance",
+   "nombre": "FuelCell Rebel v5 W",
+   "url": "https://www.newbalance.com.ar/mujer-zapatillas-N1T000400.html",
+   "nota": "Mujer",
+   "precio": 229999,
+   "antes": null,
+   "cuotas": 12,
+   "sinStock": false,
+   "talles": [
+    "5.5",
+    "10.5"
+   ],
+   "sistema": "US"
   }
  ]
 }

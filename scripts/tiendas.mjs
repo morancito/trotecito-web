@@ -163,6 +163,23 @@ function generico(h, texto) {
   throw new Error("no encontré el precio en la página");
 }
 
+/* Tiendas de Salesforce armadas como app (PWA Kit, ej. Puma): el producto viene entero dentro de la página, con el precio
+   y si se puede pedir cada talle. Los talles son los argentinos que muestra la tienda. */
+export function pwaKit(h) {
+  const i = h.indexOf('"variants":[');
+  if (i < 0) return null;
+  let j = i + 11, n = 0, fin = -1, enTexto = false;
+  for (; j < h.length; j++) { const c = h[j]; if (enTexto) { if (c === "\\") j++; else if (c === '"') enTexto = false; continue; }
+    if (c === '"') enTexto = true; else if (c === "[") n++; else if (c === "]" && --n === 0) { fin = j; break; } }
+  let vs; try { vs = JSON.parse(h.slice(i + 11, fin + 1)); } catch { return null; }
+  const nombres = Object.fromEntries([...h.matchAll(/\{"name":"([^"]+)",(?:"orderable":(?:true|false),)?"value":"(\d{3,4})"\}/g)].map(m => [m[2], m[1]]));
+  const disp = vs.filter(v => v.orderable && v.price > 0);
+  if (!disp.length) return { sinStock: true };
+  const o = disp.slice().sort((a, b) => a.price - b.price)[0];
+  const lista = Math.max(0, ...(o.tieredPrices || []).map(t => t.price));
+  return { precio: Math.round(o.price), antes: lista > o.price * 1.01 ? Math.round(lista) : null, cuotas: 0, ...conTalles(disp.map(v => nombres[v.variationValues?.size] || "")) };
+}
+
 export async function leer(url) {
   /* /p al final: VTEX. Si la API no existe (HTTP 404 a secas) no es VTEX y se lee la página; si dice que no está el producto, no está */
   if (/\/p\/?$/.test(new URL(url).pathname)) { try { return await vtex(url); } catch (e) { if (e.message !== "HTTP 404") throw e; } }
@@ -174,6 +191,7 @@ export async function leer(url) {
     throw new Error("HTTP 404 · la página dice que el producto no existe");
   if (!carrito && /producto\s+(no\s+disponible|agotado|sin\s+stock)/i.test(arriba)) return { sinStock: true };
   if (/cdn\.shopify\.com|\/cdn\/shop\/|Shopify\.(theme|shop)|shopify-digital-wallet/.test(h)) { try { return await shopify(url); } catch {} }
+  if (/\/mobify\/bundle\//.test(h)) { const r = pwaKit(h); if (r) return r; }
   const r = leerHtml(h);
   if (/demandware/i.test(h) && !r.sinStock) { Object.assign(r, await tallesSfcc(url, h)); if (r.talles && !r.talles.length) r.sinStock = true; }
   return r;

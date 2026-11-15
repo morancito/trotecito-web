@@ -5092,6 +5092,36 @@
       "42"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Puma Argentina",
+     "precio": 188999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://ar.puma.com/pd/zapatillas-de-running-deviate-nitrotm-4-para-mujer/312124.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Puma Argentina",
+     "precio": 289999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://ar.puma.com/pd/zapatillas-de-running-deviate-nitrotm-4-para-hombre/312123.html",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "42.5",
+      "43",
+      "45"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -5261,6 +5291,36 @@
       "36.5",
       "37",
       "37.5"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Puma Argentina",
+     "precio": 319999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://ar.puma.com/pd/zapatillas-de-running-magmax-nitrotm-2-para-hombre/312125.html",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "42.5",
+      "45",
+      "46"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Puma Argentina",
+     "precio": 319999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://ar.puma.com/pd/zapatillas-de-running-magmax-nitrotm-2-para-mujer/312126.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "37.5",
+      "38",
+      "38.5"
      ],
      "sistema": "AR"
     }
@@ -9453,6 +9513,19 @@
       "35"
      ],
      "sistema": "AR"
+    },
+    {
+     "tienda": "Puma Argentina",
+     "precio": 183999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://ar.puma.com/pd/zapatillas-de-running-foreverrun-nitrotm-2-para-mujer/310471.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37"
+     ],
+     "sistema": "AR"
     }
    ],
    "colores": [],
@@ -9692,6 +9765,41 @@
       "37",
       "37.5",
       "39"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Puma Argentina",
+     "precio": 219999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://ar.puma.com/pd/zapatillas-de-running-velocity-nitrotm-5-para-hombre/312944.html",
+     "fecha": "14/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40.5",
+      "42",
+      "42.5",
+      "44.5",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Puma Argentina",
+     "precio": 219999,
+     "cuotas": "Consultar en la tienda",
+     "url": "https://ar.puma.com/pd/zapatillas-de-running-velocity-nitrotm-5-para-mujer/312945.html",
+     "fecha": "14/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "35.5",
+      "36",
+      "37",
+      "37.5",
+      "38",
+      "38.5",
+      "40",
+      "40.5"
      ],
      "sistema": "AR"
     }

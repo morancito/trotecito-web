@@ -77,8 +77,14 @@ const abs = (base, u) => new URL(u.replace(/&amp;/g, "&"), base).href;
 export async function buscar(tipo, base, q) {
   const e = encodeURIComponent(q);
   if (tipo === "sfcc") {
-    const h = await traer(`${base}/buscar?q=${e}`);
-    return [...new Set([...h.matchAll(/href="(\/[^"]+\/[A-Z0-9][A-Z0-9-]+\.html)"/g)].map(x => x[1]))].map(u => ({ url: abs(base, u), nombre: u.split("/").slice(-2)[0].replace(/-/g, " ") }));
+    /* la dirección del buscador cambia según la tienda (/buscar en Dexter, /search en New Balance) */
+    let h; try { h = await traer(`${base}/buscar?q=${e}`); } catch (err) { if (!/HTTP 404/.test(err.message)) throw err; h = await traer(`${base}/search?q=${e}`); }
+    const lista = [...new Set([...h.matchAll(/href="(\/[^"]+\/[A-Z0-9][A-Z0-9-]+\.html)"/g)].map(x => x[1]))].map(u => ({ url: abs(base, u), nombre: u.split("/").slice(-2)[0].replace(/-/g, " ") }));
+    if (lista.length) return lista;
+    /* tiendas cuyas direcciones no traen el nombre (New Balance: /hombre-zapatillas-N1T000217.html): se toma del listado */
+    const vistos = new Map();
+    for (const [, u, n] of h.matchAll(/<a class="link" href="(\/[^"]+\.html)"[^>]*>([^<]+)<\/a>/g)) if (!vistos.has(u)) vistos.set(u, n.trim());
+    return [...vistos].map(([u, n]) => ({ url: abs(base, u), nombre: n }));
   }
   if (tipo === "magento") {
     const h = await traer(`${base}/catalogsearch/result/?q=${e}`);

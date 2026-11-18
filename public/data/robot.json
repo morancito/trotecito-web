@@ -1,31 +1,29 @@
 {
- "fecha": "17/11/2026",
- "hora": "04:52 p. m.",
+ "fecha": "18/11/2026",
+ "hora": "04:28 p. m.",
  "leidos": 712,
- "cambiaron": 5,
+ "cambiaron": 3,
  "conTalles": 644,
- "fallaron": 3,
+ "fallaron": 2,
  "borrados": 1,
- "coloresFecha": "17/11/2026",
+ "coloresFecha": "18/11/2026",
  "colores": {
-  "leidos": 510,
-  "borrados": 0,
-  "sinStock": 2,
+  "leidos": 507,
+  "borrados": 2,
+  "sinStock": 3,
   "fallaron": 4,
-  "fecha": "17/11/2026"
+  "fecha": "18/11/2026"
  },
  "errores": [
   "new-balance-fresh-foam-x-1080-v14 · New Balance: no encontré el precio en la página",
-  "saucony-endorphin-pro-5 · Open Sports: no encontré el precio en la página",
   "hoka-clifton-10 · Gostore: no encontré el precio en la página"
  ],
  "borradosL": [
-  "nike-pegasus-premium · NewSport Hombre: HTTP 404 · producto no encontrado"
+  "nike-winflo-11 · Sportline Hombre: HTTP 404 · producto no encontrado"
  ],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
   "kiprun-kipstorm-challenger · Decathlon",
-  "nike-vomero-plus · Dexter",
   "nike-zoom-fly-5 · Stock Center",
   "adidas-adizero-sl-2 · Stock Center",
   "nike-winflo-10 · Dexter",
@@ -59,6 +57,7 @@
   "under-armour-infinite-pro · Dexter",
   "saucony-kinvara-14 · Dexter",
   "asics-gt-1000-14 · Dexter",
+  "nike-pegasus-41 · Dexter",
   "adidas-supernova-stride-2 · Dexter",
   "adidas-ultraboost-5 · Dexter",
   "adidas-adizero-takumi-sen-10 · Dexter",

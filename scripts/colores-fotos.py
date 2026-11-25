@@ -5,6 +5,9 @@
    y deja public/fotos/<modelo>/c-<hash>.webp y public/data/colores.json (lo lee la ficha).
    python3 scripts/colores-fotos.py"""
 import json, os, re, colorsys, hashlib
+import sys; sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
+from colores_fusion import fusionar
+from colores_acento import con_acento
 from PIL import Image, ImageStat, ImageDraw
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -64,7 +67,7 @@ def dominantes(im):
 NOMBRES_ES = [("negr|black|core black|carbon", "Negro"), ("blanc|white|cloud", "Blanco"), ("gris|grey|gray|silver|plata|graphite|grafito", "Gris"),
     ("marino|navy|indigo", "Azul marino"), ("celeste|sky|light blue|cielo", "Celeste"), ("turquesa|aqua|teal|agua|mint|menta", "Verde agua"), ("azul|blue|cobalt|royal", "Azul"),
     ("bord|burgundy|maroon|vino", "Bordó"), ("rosa|pink|fucsia|fuchsia|magenta|coral", "Rosa"), ("roj|red", "Rojo"), ("naranja|orange", "Naranja"),
-    ("amarill|yellow|lima|lime|volt|fluo", "Amarillo"), ("verde|green|olive|oliva", "Verde"), ("violeta|lila|purple|lavand|morad|uva", "Violeta"),
+    ("lima|lime|volt", "Verde lima"), ("amarill|yellow|fluo", "Amarillo"), ("verde|green|olive|oliva", "Verde"), ("violeta|lila|purple|lavand|morad|uva", "Violeta"),
     ("beige|crema|cream|arena|sand|natural|hueso|off white|ivory|marfil", "Beige"), ("marr|brown|tierra|camel", "Marrón"), ("dorad|gold", "Dorado")]
 
 def nombre_texto(t):
@@ -91,6 +94,7 @@ def nombre_rgb(rgb):
     if (h < 50 or h > 330) and l > 0.62 and s < 0.6 and 20 < h < 50: return "Beige"
     if h < 12 or h >= 345: return "Bordó" if l < 0.3 else "Rosa" if l > 0.6 else "Rojo"
     if h < 40: return "Marrón" if l < 0.35 else "Beige" if s < 0.45 and l > 0.6 else "Naranja"
+    if 62 <= h < 100 and s > 0.55 and l > 0.45: return "Verde lima"   # el flúor de tantas suelas
     if h < 70: return "Amarillo" if l > 0.35 else "Verde"
     if h < 160: return "Verde"
     if h < 190: return "Verde agua"
@@ -147,10 +151,16 @@ for slug, vs in datos.items():
         # el nombre sale de la URL: si la foto no cambia de una semana a otra, el archivo queda igual
         n = "c-" + hashlib.md5(v["url"].encode()).hexdigest()[:8]
         im.save(f"{DST}/{slug}/{n}.webp", quality=80, method=6)
-        elegidas.append({"n": nombre_final(v.get("color"), dom), "hex": [hexd(c) for c, _ in dom], "foto": f"fotos/{slug}/{n}.webp",
+        n_, hx_ = con_acento(nombre_final(v.get("color"), dom), [hexd(c) for c, _ in dom], im, nombre_rgb)
+        elegidas.append({"n": n_, "hex": hx_, "foto": f"fotos/{slug}/{n}.webp",
                          "tienda": v["tienda"], "url": v["url"], "precio": v["precio"], "antes": v.get("antes"), "nota": v.get("nota", ""),
                          "talles": v.get("talles", []), "sistema": v.get("sistema"), "fecha": HOY, "otras": [], "_d": dom})
     for e in elegidas: e.pop("_d")
+    antes_f = {e["foto"] for e in elegidas}
+    elegidas = fusionar(elegidas)   # mismo código de color o mismo nombre: es un solo color
+    for f in antes_f - {e["foto"] for e in elegidas}:
+        try: os.remove(f"{RAIZ}/public/{f}")
+        except OSError: pass
     final[slug] = elegidas
     print(slug, len(vs), "->", len(elegidas), [e["n"] for e in elegidas])
 json.dump(final, open(FINAL, "w"), ensure_ascii=False, separators=(",", ":"))

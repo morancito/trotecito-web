@@ -179,7 +179,13 @@ const nivelAm = d => amort(d)?.t || "";
 const PASO = 10000;
 const P_MIN = Math.floor(Math.min(...DATA.filter(d => d.min).map(d => d.min)) / PASO) * PASO;
 const P_MAX = Math.ceil(Math.max(...DATA.filter(d => d.min).map(d => d.min)) / PASO) * PASO;
-const VACIO = () => ({ pis: "", uso: new Set(), marcas: new Set(), am: new Set(), kg: 0, pmin: P_MIN, pmax: P_MAX, desc: false, placa: false });
+const VACIO = () => ({ pis: "", uso: new Set(), marcas: new Set(), am: new Set(), drop: new Set(), gr: new Set(), horma: new Set(), kg: 0, pmin: P_MIN, pmax: P_MAX, desc: false, placa: false, stock: false });
+/* drop en tres franjas (las mismas que explica el laboratorio) y peso de la zapa en tres */
+const DROPS = [["0-4", "0 a 4 mm", "más natural", 0, 4.9], ["5-8", "5 a 8 mm", "el más común", 5, 8.9], ["9-12", "9 mm o más", "clásico, para talonar", 9, 99]];
+const GRAMOS = [["liv", "Menos de 240 g", "livianas", 0, 239], ["med", "240 a 290 g", "", 240, 290], ["pes", "Más de 290 g", "más pesadas", 291, 9999]];
+const HORMAS = [["ancha", "Ancha"], ["normal", "Normal"], ["punta", "Normal, punta angosta"], ["angosta", "Angosta"]];
+const enFranja = (x, lst, ks) => x != null && lst.some(([k, , , a, b]) => ks.has(k) && x >= a && x <= b);
+const dropDe = d => d.drop ?? (d.talon && d.ante ? +(d.talon - d.ante).toFixed(1) : null);
 const st = { q: "", terreno: "Asfalto", orden: "precio", cmp: [], ...VACIO() };
 const TERRENOS = [["Asfalto", "Calle, pista y cinta"], ["Trail", "Senderos y montaña"], ["Todos", "Asfalto y trail"]];
 const PESOS = [[74, "Menos de 75 kg"], [89, "75 a 90 kg"], [91, "Más de 90 kg"]];
@@ -210,8 +216,11 @@ $("#fpanel").innerHTML = `
   ${grupo("¿Cómo pisás?", [["", "Me da igual"], ["Neutra", "Neutra o supinadora"], ["Estabilidad", "Pronador"]].map(([v, t]) => opc("pis", v, t, "radio")).join(""))}
   ${grupo("¿Cuánto pesás?", [[0, "No filtrar"], ...PESOS].map(([v, t]) => opc("kg", v, t, "radio")).join(""))}
   ${grupo("Amortiguación", AMS.map(a => opc("am", a, a)).join(""))}
+  ${grupo("Drop", DROPS.map(([k, t, s]) => opc("drop", k, `${t}${s ? ` <small>${s}</small>` : ""}`)).join("") + `<p class="fg-nota">La diferencia de altura entre talón y punta. Si venís usando drop alto, bajalo de a poco.</p>`)}
+  ${grupo("Peso de la zapa", GRAMOS.map(([k, t, s]) => opc("gr", k, `${t}${s ? ` <small>${s}</small>` : ""}`)).join("") + `<p class="fg-nota">Según la marca, en talle de referencia de hombre.</p>`)}
+  ${grupo("Horma", HORMAS.map(([k, t]) => opc("horma", k, t)).join("") + `<p class="fg-nota">El ancho de la zapa. Solo los modelos con la horma medida por una review.</p>`)}
   ${grupo("Marca", MARCAS.map(m => opc("marca", m, sello(m))).join(""), ' id="fgMarca"')}
-  ${grupo("Más", opc("desc", "1", "Con descuento") + opc("placa", "1", "Con placa"))}
+  ${grupo("Más", opc("stock", "1", "Con precio hoy") + opc("desc", "1", "Con descuento") + opc("placa", "1", "Con placa"))}
   </div>
   <div class="fp-foot"><button type="button" class="fp-limpiar" id="fpLimpiar">Limpiar</button><button type="button" class="fp-ver" id="fpVer">Ver zapas</button></div>`;
 
@@ -219,13 +228,13 @@ const fp = $("#fpanel");
 fp.addEventListener("change", e => {
   const i = e.target, k = i.name; if (!k) return;
   if (i.checked || i.type === "radio" || i.tagName === "SELECT") medir("filtro", { k, v: i.value, terreno: st.terreno });
-  if (k === "uso" || k === "am") st[k][i.checked ? "add" : "delete"](i.value);
+  if (["uso", "am", "drop", "gr", "horma"].includes(k)) st[k][i.checked ? "add" : "delete"](i.value);
   else if (k === "marca") st.marcas[i.checked ? "add" : "delete"](i.value);
   else if (k === "gen") { setGen(i.value); return; }
   else if (k === "talle") { setTalle(i.value); return; }
   else if (k === "pis") st.pis = i.value;
   else if (k === "kg") st.kg = +i.value;
-  else if (k === "desc" || k === "placa") st[k] = i.checked;
+  else if (k === "desc" || k === "placa" || k === "stock") st[k] = i.checked;
   render();
 });
 const pMin = $("#pMin"), pMax = $("#pMax");
@@ -276,7 +285,7 @@ function pintarPanel() {
   $("#fTalle").value = TALLE;
   fp.querySelectorAll("input[name]").forEach(i => {
     const k = i.name, v = i.value;
-    i.checked = k === "gen" ? GEN === v : k === "uso" || k === "am" ? st[k].has(v) : k === "marca" ? st.marcas.has(v) : k === "pis" ? st.pis === v : k === "kg" ? st.kg === +v : k === "desc" || k === "placa" ? st[k] : false;
+    i.checked = k === "gen" ? GEN === v : ["uso", "am", "drop", "gr", "horma"].includes(k) ? st[k].has(v) : k === "marca" ? st.marcas.has(v) : k === "pis" ? st.pis === v : k === "kg" ? st.kg === +v : k === "desc" || k === "placa" || k === "stock" ? st[k] : false;
   });
   fp.querySelectorAll(".atajos-p button").forEach(b => b.setAttribute("aria-pressed", st.pmin === Math.max(P_MIN, +b.dataset.pa) && st.pmax === (+b.dataset.pb || P_MAX)));
   pintarRango();
@@ -285,12 +294,15 @@ const pasa = (d, sin) => (!st.q || `${d.m} ${d.mod} ${d.ver} ${d.esp} ${terr(d)}
   && (sin === "pis" || !st.pis || d.tipo === st.pis) && (sin === "uso" || !st.uso.size || d.usos.some(u => st.uso.has(u)))
   && (sin === "marca" || !st.marcas.size || st.marcas.has(d.m)) && (sin === "am" || !st.am.size || st.am.has(nivelAm(d)))
   && (sin === "kg" || !st.kg || pesoOk(d, st.kg)) && (sin === "desc" || !st.desc || desc(d) > 0.01) && (sin === "placa" || !st.placa || conPlaca(d))
+  && (sin === "drop" || !st.drop.size || enFranja(dropDe(d), DROPS, st.drop)) && (sin === "gr" || !st.gr.size || enFranja(d.peso, GRAMOS, st.gr))
+  && (sin === "horma" || !st.horma.size || st.horma.has(d.horma)) && (sin === "stock" || !st.stock || !!d.min)
   && (st.pmin <= P_MIN && st.pmax >= P_MAX || d.min && d.min >= st.pmin && (st.pmax >= P_MAX || d.min <= st.pmax));
 /* cuántas zapas quedarían al tocar cada opción */
 function contarOpciones() {
   fp.querySelectorAll("em[data-n]").forEach(em => {
     const [k, v] = em.dataset.n.split("|");
-    const f = { gen: d => d.todas.some(t => paraGen(t, v)), uso: d => d.usos.includes(v), am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || pesoOk(d, +v), desc: d => desc(d) > 0.01, placa: d => conPlaca(d) }[k];
+    const f = { gen: d => d.todas.some(t => paraGen(t, v)), uso: d => d.usos.includes(v), am: d => nivelAm(d) === v, marca: d => d.m === v, pis: d => !v || d.tipo === v, kg: d => !+v || pesoOk(d, +v), desc: d => desc(d) > 0.01, placa: d => conPlaca(d),
+      drop: d => enFranja(dropDe(d), DROPS, new Set([v])), gr: d => enFranja(d.peso, GRAMOS, new Set([v])), horma: d => d.horma === v, stock: d => !!d.min }[k];
     const n = DATA.filter(d => pasa(d, k) && f(d)).length;
     em.textContent = n; em.closest(".op").classList.toggle("cero", n === 0);
   });
@@ -304,13 +316,17 @@ function chipsActivos() {
   if (st.pis) c.push(["pis", st.pis === "Estabilidad" ? "Pronador" : "Neutra"]);
   if (st.kg) c.push(["kg", PESOS.find(p => p[0] === st.kg)[1]]);
   st.am.forEach(a => c.push(["am:" + a, "Amortiguación " + a.toLowerCase()]));
+  st.drop.forEach(x => c.push(["drop:" + x, "Drop " + DROPS.find(f => f[0] === x)[1]]));
+  st.gr.forEach(x => c.push(["gr:" + x, GRAMOS.find(f => f[0] === x)[1]]));
+  st.horma.forEach(x => c.push(["horma:" + x, "Horma " + HORMAS.find(f => f[0] === x)[1].toLowerCase()]));
   st.marcas.forEach(m => c.push(["marca:" + m, m]));
+  if (st.stock) c.push(["stock", "Con precio hoy"]);
   if (st.desc) c.push(["desc", "Con descuento"]); if (st.placa) c.push(["placa", "Con placa"]);
   return c;
 }
 $("#activos").onclick = e => { const b = e.target.closest("button[data-x]"); if (!b) return; const [k, v] = b.dataset.x.split(":");
   if (k === "todo") { medir("filtro", { k: "limpiar", v: "chips" }); limpiarTodo(); return; }
-  if (k === "precio") { st.pmin = P_MIN; st.pmax = P_MAX; } else if (k === "uso" || k === "am") st[k].delete(v); else if (k === "marca") st.marcas.delete(v);
+  if (k === "precio") { st.pmin = P_MIN; st.pmax = P_MAX; } else if (["uso", "am", "drop", "gr", "horma"].includes(k)) st[k].delete(v); else if (k === "marca") st.marcas.delete(v);
   else if (k === "pis") st.pis = ""; else if (k === "kg") st.kg = 0; else if (k === "gen") { setGen(""); return; } else if (k === "talle") { setTalle(""); return; } else st[k] = false;
   render(); };
 
@@ -342,6 +358,7 @@ function lista() {
   const l = DATA.filter(d => pasa(d));
   const X = 1e12, o = st.orden;
   return l.sort(o === "peso" ? (a, b) => (a.peso ?? X) - (b.peso ?? X) : o === "stack" ? (a, b) => (b.talon ?? -1) - (a.talon ?? -1)
+    : o === "drop" ? (a, b) => (dropDe(a) ?? X) - (dropDe(b) ?? X) || (a.min ?? X) - (b.min ?? X)
     : o === "desc" ? (a, b) => desc(b) - desc(a) : o === "az" ? (a, b) => a.m.localeCompare(b.m) || a.mod.localeCompare(b.mod) : (a, b) => (a.min ?? X) - (b.min ?? X) || a.id - b.id);
 }
 /* filtros en el link (#catalogo?q=…&uso=…): sobreviven a recargar y se pueden compartir */
@@ -351,14 +368,16 @@ function filtrosAUrl() {
   if (st.uso.size) p.set("uso", [...st.uso].join(",")); if (st.pis) p.set("pis", st.pis);
   if (st.marcas.size) p.set("m", [...st.marcas].join(",")); if (st.am.size) p.set("am", [...st.am].join(","));
   if (st.kg) p.set("kg", st.kg); if (st.pmin > P_MIN) p.set("pmin", st.pmin); if (st.pmax < P_MAX) p.set("pmax", st.pmax);
-  if (st.desc) p.set("desc", "1"); if (st.placa) p.set("placa", "1"); if (st.orden && st.orden !== "precio") p.set("o", st.orden);
+  ["drop", "gr", "horma"].forEach(k => st[k].size && p.set(k, [...st[k]].join(",")));
+  if (st.desc) p.set("desc", "1"); if (st.placa) p.set("placa", "1"); if (st.stock) p.set("stock", "1"); if (st.orden && st.orden !== "precio") p.set("o", st.orden);
   if (GEN) p.set("g", GEN); if (TALLE) p.set("talle", TALLE);
   return p.toString();
 }
 function filtrosDeUrl(qs) {
   const p = new URLSearchParams(qs), lst = k => new Set((p.get(k) || "").split(",").filter(Boolean));
   Object.assign(st, VACIO(), { q: (p.get("q") || "").toLowerCase(), uso: lst("uso"), marcas: lst("m"), am: lst("am"), pis: p.get("pis") || "",
-    kg: +p.get("kg") || 0, pmin: +p.get("pmin") || P_MIN, pmax: +p.get("pmax") || P_MAX, desc: p.get("desc") === "1", placa: p.get("placa") === "1" });
+    kg: +p.get("kg") || 0, pmin: +p.get("pmin") || P_MIN, pmax: +p.get("pmax") || P_MAX, desc: p.get("desc") === "1", placa: p.get("placa") === "1",
+    drop: lst("drop"), gr: lst("gr"), horma: lst("horma"), stock: p.get("stock") === "1" });
   st.orden = p.get("o") || "precio"; $("#fOrden").value = st.orden; $("#q").value = p.get("q") || ""; st._busco = !!st.q;
   const t = p.get("t"); st.terreno = TERRENOS.some(([x]) => x === t) ? t : "Asfalto";
   document.querySelectorAll("#terreno button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === st.terreno));

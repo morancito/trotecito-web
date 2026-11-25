@@ -1,18 +1,18 @@
 {
- "fecha": "24/11/2026",
- "hora": "06:12 p. m.",
+ "fecha": "25/11/2026",
+ "hora": "05:35 p. m.",
  "leidos": 691,
- "cambiaron": 20,
+ "cambiaron": 16,
  "conTalles": 619,
  "fallaron": 8,
- "borrados": 2,
- "coloresFecha": "24/11/2026",
+ "borrados": 0,
+ "coloresFecha": "25/11/2026",
  "colores": {
-  "leidos": 508,
+  "leidos": 469,
   "borrados": 0,
-  "sinStock": 5,
-  "fallaron": 4,
-  "fecha": "24/11/2026"
+  "sinStock": 7,
+  "fallaron": 2,
+  "fecha": "25/11/2026"
  },
  "errores": [
   "new-balance-fresh-foam-x-1080-v14 · New Balance: no encontré el precio en la página",
@@ -24,10 +24,7 @@
   "hoka-bondi-9 · Gostore: no encontré el precio en la página",
   "saucony-xodus-ultra-4 · Open Sports: no encontré el precio en la página"
  ],
- "borradosL": [
-  "salomon-ultra-glide-4 · Sporting Hombre: HTTP 404 · producto no encontrado",
-  "saucony-xodus-ultra-4 · Sporting Hombre: HTTP 404 · producto no encontrado"
- ],
+ "borradosL": [],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
   "kiprun-kipstorm-challenger · Decathlon",
@@ -38,8 +35,8 @@
   "nike-invincible-3 · Dexter",
   "nike-zoom-fly-5 · Dexter",
   "nike-vaporfly-3 · Dexter",
-  "nike-vaporfly-3 · Dexter",
   "asics-novablast-5 · Stock Center",
+  "nike-vaporfly-3 · Dexter",
   "saucony-xodus-ultra-4 · TodoTrail",
   "adidas-adizero-boston-13 · Dexter",
   "adidas-supernova-rise-3 · Dexter",
@@ -47,8 +44,8 @@
   "asics-gel-nimbus-27 · Dexter",
   "asics-gel-kayano-32 · Dexter",
   "asics-gel-kayano-32 · Dexter",
-  "asics-gel-cumulus-27 · Dexter",
   "brooks-ghost-15 · Stock Center",
+  "asics-gel-cumulus-27 · Dexter",
   "under-armour-velociti-3 · Stock Center",
   "asics-gel-excite-11 · Stock Center",
   "nike-pegasus-41 · Stock Center",

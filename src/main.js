@@ -189,7 +189,8 @@ const dropDe = d => d.drop ?? (d.talon && d.ante ? +(d.talon - d.ante).toFixed(1
 const st = { q: "", terreno: "Asfalto", orden: "precio", cmp: [], ...VACIO() };
 const TERRENOS = [["Asfalto", "Calle, pista y cinta"], ["Trail", "Senderos y montaña"], ["Todos", "Asfalto y trail"]];
 const PESOS = [[74, "Menos de 75 kg"], [89, "75 a 90 kg"], [91, "Más de 90 kg"]];
-const AMS = ["Baja", "Media", "Alta", "Máxima"];
+/* altura de la espuma en el talón: las mismas franjas que el medidor de amortiguación de cada ficha */
+const AMS = [["Mínima", "Chatitas", "menos de 28 mm"], ["Baja", "Bajas", "28 a 33 mm"], ["Media", "Medias", "33 a 38 mm"], ["Alta", "Altas", "38 a 42 mm"], ["Máxima", "Muy altas", "42 mm o más"]];
 const milK = n => n >= 1e6 ? "$" + (n / 1e6).toLocaleString("es-AR", { maximumFractionDigits: 2 }) + " M" : "$" + Math.round(n / 1000) + " mil";
 
 $("#terreno").innerHTML = TERRENOS.map(([t, s]) => `<button data-t="${t}" aria-pressed="${t === st.terreno}"><b class="cond">${t}</b><span>${s}</span><i>${DATA.filter(d => t === "Todos" || terr(d) === t).length}</i></button>`).join("");
@@ -215,7 +216,7 @@ $("#fpanel").innerHTML = `
   ${grupo("¿Para qué la vas a usar?", USOS.map(u => opc("uso", u, u, "checkbox", UCLS[u])).join(""))}
   ${grupo("¿Cómo pisás?", [["", "Me da igual"], ["Neutra", "Neutra o supinadora"], ["Estabilidad", "Pronador"]].map(([v, t]) => opc("pis", v, t, "radio")).join(""))}
   ${grupo("¿Cuánto pesás?", [[0, "No filtrar"], ...PESOS].map(([v, t]) => opc("kg", v, t, "radio")).join(""))}
-  ${grupo("Amortiguación", AMS.map(a => opc("am", a, a)).join(""))}
+  ${grupo("Altura de la espuma", AMS.map(([k, t, mm]) => opc("am", k, `${t} <small>${mm}</small>`)).join("") + `<p class="fg-nota">Medida en el talón. Más baja, sentís más el piso; más alta, más amortiguación.</p>`)}
   ${grupo("Drop", DROPS.map(([k, t, s]) => opc("drop", k, `${t}${s ? ` <small>${s}</small>` : ""}`)).join("") + `<p class="fg-nota">La diferencia de altura entre talón y punta. Si venís usando drop alto, bajalo de a poco.</p>`)}
   ${grupo("Peso de la zapa", GRAMOS.map(([k, t, s]) => opc("gr", k, `${t}${s ? ` <small>${s}</small>` : ""}`)).join("") + `<p class="fg-nota">Según la marca, en talle de referencia de hombre.</p>`)}
   ${grupo("Horma", HORMAS.map(([k, t]) => opc("horma", k, t)).join("") + `<p class="fg-nota">El ancho de la zapa. Solo los modelos con la horma medida por una review.</p>`)}
@@ -315,7 +316,7 @@ function chipsActivos() {
   st.uso.forEach(u => c.push(["uso:" + u, u]));
   if (st.pis) c.push(["pis", st.pis === "Estabilidad" ? "Pronador" : "Neutra"]);
   if (st.kg) c.push(["kg", PESOS.find(p => p[0] === st.kg)[1]]);
-  st.am.forEach(a => c.push(["am:" + a, "Amortiguación " + a.toLowerCase()]));
+  st.am.forEach(a => { const x = AMS.find(f => f[0] === a); if (x) c.push(["am:" + a, `${x[1]} (${x[2]})`]); });
   st.drop.forEach(x => c.push(["drop:" + x, "Drop " + DROPS.find(f => f[0] === x)[1]]));
   st.gr.forEach(x => c.push(["gr:" + x, GRAMOS.find(f => f[0] === x)[1]]));
   st.horma.forEach(x => c.push(["horma:" + x, "Horma " + HORMAS.find(f => f[0] === x)[1].toLowerCase()]));
@@ -358,6 +359,7 @@ function lista() {
   const l = DATA.filter(d => pasa(d));
   const X = 1e12, o = st.orden;
   return l.sort(o === "peso" ? (a, b) => (a.peso ?? X) - (b.peso ?? X) : o === "stack" ? (a, b) => (b.talon ?? -1) - (a.talon ?? -1)
+    : o === "chatas" ? (a, b) => (a.talon ?? X) - (b.talon ?? X) || (a.min ?? X) - (b.min ?? X)
     : o === "drop" ? (a, b) => (dropDe(a) ?? X) - (dropDe(b) ?? X) || (a.min ?? X) - (b.min ?? X)
     : o === "desc" ? (a, b) => desc(b) - desc(a) : o === "az" ? (a, b) => a.m.localeCompare(b.m) || a.mod.localeCompare(b.mod) : (a, b) => (a.min ?? X) - (b.min ?? X) || a.id - b.id);
 }

@@ -3576,7 +3576,7 @@
    "nombre": "Adidas Supernova Rise 3",
    "nota": "Hombre",
    "color": "Naranja",
-   "foto": "adidas-supernova-rise-3/5.jpg",
+   "foto": "adidas-supernova-rise-3/6.jpg",
    "precio": 167999,
    "antes": 279999,
    "talles": [
@@ -3586,32 +3586,57 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADJP8680.html",
-   "nombre": "zapatillas running adidas supernova rise 3 hombre",
+   "tienda": "Sportline",
+   "url": "https://www.sportline.com.ar/supernova-rise-3-m-004020000jp8680/p",
+   "nombre": "Zapatillas adidas Supernova Rise 3 M Hombre",
    "nota": "Hombre",
-   "color": "Blanco Disciplina",
-   "foto": "adidas-supernova-rise-3/16.jpg",
-   "precio": 167999,
-   "antes": 279999,
+   "color": "Blanco",
+   "foto": "adidas-supernova-rise-3/4.jpg",
+   "precio": 179999,
+   "antes": 249999,
    "talles": [
-    "43.5"
+    "39",
+    "39.5",
+    "40",
+    "41.5"
    ],
    "sistema": "AR"
   },
   {
-   "tienda": "Sporting",
-   "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6jq8502-000/p",
+   "tienda": "NewSport",
+   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-hombre-jp8680/p",
+   "nombre": "Adidas Supernova Rise 3",
+   "nota": "Hombre",
+   "color": "BLANCO",
+   "foto": "adidas-supernova-rise-3/2.jpg",
+   "precio": 195999,
+   "antes": 280000,
+   "talles": [
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-gris.html",
    "nombre": "Adidas Supernova Rise 3",
    "nota": "Hombre",
    "color": null,
-   "foto": "adidas-supernova-rise-3/3.jpg",
-   "precio": 249999,
+   "foto": "adidas-supernova-rise-3/7.jpg",
+   "precio": 223999,
    "antes": null,
    "talles": [
+    "38",
+    "38.5",
+    "39.5",
+    "40",
+    "41",
     "41.5",
-    "42",
     "43",
+    "43.5",
+    "44",
+    "45",
     "45.5"
    ],
    "sistema": "AR"
@@ -3638,34 +3663,8 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Solo Deportes",
-   "url": "https://www.solodeportes.com.ar/zapatillas-de-running-adidas-supernova-rise-3-gris.html",
-   "nombre": "Adidas Supernova Rise 3",
-   "nota": "Hombre",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/6.jpg",
-   "precio": 279999,
-   "antes": null,
-   "talles": [
-    "38",
-    "38.5",
-    "39",
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "45",
-    "45.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
+   "tienda": "Stock Center",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
    "nombre": "Adidas Supernova Rise 3",
    "nota": "Mujer",
    "color": "Negro Disciplina",
@@ -3678,12 +3677,12 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Stock Center",
-   "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-rise-3-mujer/ADKK1203.html",
    "nombre": "Adidas Supernova Rise 3",
    "nota": "Mujer",
    "color": "Negro Disciplina",
-   "foto": "adidas-supernova-rise-3/10.jpg",
+   "foto": "adidas-supernova-rise-3/9.jpg",
    "precio": 279999,
    "antes": null,
    "talles": [
@@ -3692,55 +3691,49 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADKK1920.html",
-   "nombre": "zapatillas running adidas supernova rise 3 hombre",
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-supernova-rise-3-de-hombre-6kk1925-000/p",
+   "nombre": "Zapatillas Running adidas Supernova Rise 3 de Hombre",
    "nota": "Hombre",
-   "color": "Azul Disciplina",
-   "foto": "adidas-supernova-rise-3/12.jpg",
+   "color": null,
+   "foto": "adidas-supernova-rise-3/10.jpg",
    "precio": 279999,
    "antes": null,
    "talles": [
+    "39",
+    "39.5",
     "40",
     "41",
     "41.5",
     "42",
-    "43"
+    "43",
+    "43.5",
+    "44",
+    "45.5"
    ],
    "sistema": "AR"
   },
   {
-   "tienda": "Stock Center",
-   "url": "https://www.stockcenter.com.ar/zapatillas-running-adidas-supernova-rise-3-hombre/ADKK1920.html",
-   "nombre": "zapatillas running adidas supernova rise 3 hombre",
-   "nota": "Hombre",
-   "color": "Azul Disciplina",
-   "foto": "adidas-supernova-rise-3/14.jpg",
-   "precio": 279999,
-   "antes": null,
-   "talles": [
-    "41.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "NewSport",
-   "url": "https://www.newsport.com.ar/zapatillas-adidas-running-supernova-rise-3-hombre-kk1203/p",
-   "nombre": "Zapatillas Adidas Running Supernova Rise 3 Mujer",
+   "tienda": "Sporting",
+   "url": "https://www.sporting.com.ar/zapatillas-adidas-de-running-supernova-rise-3-mujer-67297/p",
+   "nombre": "Zapatillas Running adidas Supernova Rise 3 de Mujer",
    "nota": "Mujer",
-   "color": "NEGRO",
-   "foto": "adidas-supernova-rise-3/21.jpg",
+   "color": null,
+   "foto": "adidas-supernova-rise-3/18.jpg",
    "precio": 279999,
    "antes": null,
    "talles": [
+    "34.5",
     "35.5",
     "36",
     "36.5",
     "37.5",
+    "38",
     "38.5",
     "39",
     "39.5",
-    "40"
+    "40",
+    "41"
    ],
    "sistema": "AR"
   },
@@ -3750,91 +3743,7 @@
    "nombre": "Adidas Supernova Rise 3",
    "nota": "",
    "color": null,
-   "foto": "adidas-supernova-rise-3/2.webp",
-   "precio": 286200,
-   "antes": null,
-   "talles": [],
-   "sistema": null
-  },
-  {
-   "tienda": "Vorax Running",
-   "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-bqtrv/",
-   "nombre": "ADIDAS Supernova Rise 3",
-   "nota": "",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/7.webp",
-   "precio": 286200,
-   "antes": null,
-   "talles": [],
-   "sistema": null
-  },
-  {
-   "tienda": "Vorax Running",
-   "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-1jubg/",
-   "nombre": "ADIDAS Supernova Rise 3",
-   "nota": "",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/9.webp",
-   "precio": 286200,
-   "antes": null,
-   "talles": [],
-   "sistema": null
-  },
-  {
-   "tienda": "Vorax Running",
-   "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-17fkx/",
-   "nombre": "ADIDAS Supernova Rise 3",
-   "nota": "",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/11.webp",
-   "precio": 286200,
-   "antes": null,
-   "talles": [],
-   "sistema": null
-  },
-  {
-   "tienda": "Vorax Running",
-   "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-gym63/",
-   "nombre": "ADIDAS Supernova Rise 3",
-   "nota": "",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/13.webp",
-   "precio": 286200,
-   "antes": null,
-   "talles": [],
-   "sistema": null
-  },
-  {
-   "tienda": "Vorax Running",
-   "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-o2qre/",
-   "nombre": "ADIDAS Supernova Rise 3",
-   "nota": "",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/15.webp",
-   "precio": 286200,
-   "antes": null,
-   "talles": [],
-   "sistema": null
-  },
-  {
-   "tienda": "Vorax Running",
-   "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-90cje/",
-   "nombre": "ADIDAS Supernova Rise 3",
-   "nota": "",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/17.webp",
-   "precio": 286200,
-   "antes": null,
-   "talles": [],
-   "sistema": null
-  },
-  {
-   "tienda": "Vorax Running",
-   "url": "https://voraxrunning.com.ar/productos/adidas-supernova-rise-3-l66f1/",
-   "nombre": "ADIDAS Supernova Rise 3",
-   "nota": "",
-   "color": null,
-   "foto": "adidas-supernova-rise-3/18.webp",
+   "foto": "adidas-supernova-rise-3/5.webp",
    "precio": 286200,
    "antes": null,
    "talles": [],
@@ -3860,7 +3769,7 @@
    "nombre": "Adidas Adizero Adios Pro 5",
    "nota": "",
    "color": null,
-   "foto": "adidas-adizero-adios-pro-5/7.webp",
+   "foto": "adidas-adizero-adios-pro-5/6.webp",
    "precio": 307200,
    "antes": null,
    "talles": [],
@@ -3872,7 +3781,7 @@
    "nombre": "Adidas Adizero Adios Pro 5",
    "nota": "",
    "color": null,
-   "foto": "adidas-adizero-adios-pro-5/9.webp",
+   "foto": "adidas-adizero-adios-pro-5/10.webp",
    "precio": 307200,
    "antes": null,
    "talles": [],
@@ -3884,7 +3793,7 @@
    "nombre": "Adidas Adizero Adios Pro 5",
    "nota": "",
    "color": null,
-   "foto": "adidas-adizero-adios-pro-5/12.webp",
+   "foto": "adidas-adizero-adios-pro-5/11.webp",
    "precio": 307200,
    "antes": null,
    "talles": [],
@@ -3908,7 +3817,7 @@
    "nombre": "Adidas Adizero Adios Pro 5",
    "nota": "",
    "color": null,
-   "foto": "adidas-adizero-adios-pro-5/16.webp",
+   "foto": "adidas-adizero-adios-pro-5/15.webp",
    "precio": 307200,
    "antes": null,
    "talles": [],
@@ -3932,7 +3841,7 @@
    "nombre": "Adidas Adizero Adios Pro 5",
    "nota": "",
    "color": null,
-   "foto": "adidas-adizero-adios-pro-5/20.webp",
+   "foto": "adidas-adizero-adios-pro-5/19.webp",
    "precio": 307200,
    "antes": null,
    "talles": [],
@@ -4022,36 +3931,33 @@
    "sistema": "AR"
   },
   {
-   "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-hombre/ADKJ7040.html",
-   "nombre": "Adidas Adizero Adios Pro 5",
-   "nota": "Hombre",
-   "color": "Azul Disciplina",
-   "foto": "adidas-adizero-adios-pro-5/6.jpg",
-   "precio": 549999,
-   "antes": null,
-   "talles": [
-    "39.5",
-    "40",
-    "41",
-    "41.5",
-    "43.5",
-    "44",
-    "45"
-   ],
-   "sistema": "AR"
-  },
-  {
    "tienda": "Open Sports",
    "url": "https://www.opensports.com.ar/zapatillas-adidas-adizero-adios-pro-5-ki8294.html",
    "nombre": "Zapatillas Adidas Adizero Adios Pro 5",
    "nota": "",
    "color": null,
-   "foto": "adidas-adizero-adios-pro-5/8.jpg",
+   "foto": "adidas-adizero-adios-pro-5/7.jpg",
    "precio": 549999,
    "antes": null,
    "talles": [
     "41.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Dexter",
+   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-hombre/ADKJ7040.html",
+   "nombre": "Adidas Adizero Adios Pro 5",
+   "nota": "Hombre",
+   "color": "Azul Disciplina",
+   "foto": "adidas-adizero-adios-pro-5/8.jpg",
+   "precio": 549999,
+   "antes": null,
+   "talles": [
+    "39.5",
+    "41",
+    "41.5",
+    "44"
    ],
    "sistema": "AR"
   },
@@ -4061,7 +3967,7 @@
    "nombre": "Adidas Adizero Adios Pro 5",
    "nota": "Hombre",
    "color": "Blanco Disciplina",
-   "foto": "adidas-adizero-adios-pro-5/10.jpg",
+   "foto": "adidas-adizero-adios-pro-5/9.jpg",
    "precio": 549999,
    "antes": null,
    "talles": [
@@ -4078,7 +3984,7 @@
    "nombre": "Adidas Adizero Adios Pro 5",
    "nota": "Mujer",
    "color": "Azul Disciplina",
-   "foto": "adidas-adizero-adios-pro-5/11.jpg",
+   "foto": "adidas-adizero-adios-pro-5/12.jpg",
    "precio": 549999,
    "antes": null,
    "talles": [
@@ -4116,18 +4022,22 @@
   },
   {
    "tienda": "Dexter",
-   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-hombre/ADKJ7039.html",
-   "nombre": "zapatillas running adidas adizero adios pro 5 hombre",
-   "nota": "Hombre",
+   "url": "https://www.dexter.com.ar/zapatillas-running-adidas-adizero-adios-pro-5-mujer/ADKJ7041.html",
+   "nombre": "zapatillas running adidas adizero adios pro 5 mujer",
+   "nota": "Mujer",
    "color": "Blanco Disciplina",
-   "foto": "adidas-adizero-adios-pro-5/15.jpg",
+   "foto": "adidas-adizero-adios-pro-5/16.jpg",
    "precio": 549999,
    "antes": null,
    "talles": [
+    "36",
+    "36.5",
+    "37.5",
+    "38",
+    "38.5",
     "39",
-    "41",
-    "42",
-    "43.5"
+    "40",
+    "41"
    ],
    "sistema": "AR"
   },
@@ -4142,12 +4052,9 @@
    "antes": null,
    "talles": [
     "39.5",
-    "40",
     "41",
     "41.5",
-    "43.5",
-    "44",
-    "45"
+    "44"
    ],
    "sistema": "AR"
   }
@@ -11845,12 +11752,54 @@
  ],
  "hoka-mafate-5": [
   {
+   "tienda": "Solo Deportes",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-trail-running-hoka-mafate-5-gris.html",
+   "nombre": "Zapatillas De Trail Running Hoka Mafate 5 Gris",
+   "nota": "",
+   "color": null,
+   "foto": "hoka-mafate-5/10.jpg",
+   "precio": 319200,
+   "antes": null,
+   "talles": [
+    "41.5",
+    "42",
+    "43",
+    "43.5",
+    "44",
+    "44.5",
+    "45",
+    "45.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "tienda": "Solo Deportes",
+   "url": "https://www.solodeportes.com.ar/zapatillas-de-trail-running-hoka-mujer-verde.html",
+   "nombre": "Zapatillas De Trail Running Hoka Mafate 5 Mujer Verde",
+   "nota": "Mujer",
+   "color": null,
+   "foto": "hoka-mafate-5/18.jpg",
+   "precio": 319200,
+   "antes": null,
+   "talles": [
+    "36.5",
+    "37",
+    "37.5",
+    "38",
+    "39",
+    "39.5",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
    "tienda": "Vorax Running",
    "url": "https://voraxrunning.com.ar/productos/hoka-one-one-mafate-5-6tdbc/",
    "nombre": "Hoka Mafate 5",
    "nota": "",
    "color": null,
-   "foto": "hoka-mafate-5/6.webp",
+   "foto": "hoka-mafate-5/4.webp",
    "precio": 319600,
    "antes": null,
    "talles": [],
@@ -11862,7 +11811,7 @@
    "nombre": "HOKA ONE ONE Mafate 5",
    "nota": "",
    "color": null,
-   "foto": "hoka-mafate-5/10.webp",
+   "foto": "hoka-mafate-5/9.webp",
    "precio": 319600,
    "antes": null,
    "talles": [],
@@ -11886,7 +11835,7 @@
    "nombre": "HOKA ONE ONE Mafate 5",
    "nota": "",
    "color": null,
-   "foto": "hoka-mafate-5/17.webp",
+   "foto": "hoka-mafate-5/16.webp",
    "precio": 319600,
    "antes": null,
    "talles": [],
@@ -11898,9 +11847,9 @@
    "nombre": "Hoka Mafate 5",
    "nota": "Hombre",
    "color": null,
-   "foto": "hoka-mafate-5/3.webp",
-   "precio": 383500,
-   "antes": null,
+   "foto": "hoka-mafate-5/6.webp",
+   "precio": 345150,
+   "antes": 383500,
    "talles": [
     "45.5"
    ],
@@ -11918,48 +11867,6 @@
    "talles": [
     "40",
     "46"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Solo Deportes",
-   "url": "https://www.solodeportes.com.ar/zapatillas-de-trail-running-hoka-mafate-5-gris.html",
-   "nombre": "Zapatillas De Trail Running Hoka Mafate 5 Gris",
-   "nota": "",
-   "color": null,
-   "foto": "hoka-mafate-5/7.jpg",
-   "precio": 399000,
-   "antes": null,
-   "talles": [
-    "41.5",
-    "42",
-    "43",
-    "43.5",
-    "44",
-    "44.5",
-    "45",
-    "45.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "tienda": "Solo Deportes",
-   "url": "https://www.solodeportes.com.ar/zapatillas-de-trail-running-hoka-mujer-verde.html",
-   "nombre": "Zapatillas De Trail Running Hoka Mafate 5 Mujer Verde",
-   "nota": "Mujer",
-   "color": null,
-   "foto": "hoka-mafate-5/15.jpg",
-   "precio": 399000,
-   "antes": null,
-   "talles": [
-    "36.5",
-    "37",
-    "37.5",
-    "38",
-    "39",
-    "39.5",
-    "40",
-    "41"
    ],
    "sistema": "AR"
   },
@@ -11987,7 +11894,7 @@
    "nombre": "Zapatillas Hoka Mafate 5",
    "nota": "",
    "color": null,
-   "foto": "hoka-mafate-5/9.jpg",
+   "foto": "hoka-mafate-5/7.jpg",
    "precio": 450500,
    "antes": null,
    "talles": [
@@ -12005,7 +11912,7 @@
    "nombre": "Zapatillas Hoka Mafate 5",
    "nota": "",
    "color": null,
-   "foto": "hoka-mafate-5/12.jpg",
+   "foto": "hoka-mafate-5/11.jpg",
    "precio": 450500,
    "antes": null,
    "talles": [
@@ -12039,7 +11946,7 @@
    "nombre": "Zapatillas Hoka Mafate 5",
    "nota": "",
    "color": null,
-   "foto": "hoka-mafate-5/18.jpg",
+   "foto": "hoka-mafate-5/17.jpg",
    "precio": 450500,
    "antes": null,
    "talles": [
@@ -12057,8 +11964,8 @@
    "url": "https://todotrail.com.ar/productos/zapatilla-hoka-mafate-5-trail-gris-1g3r9/",
    "nombre": "Zapatilla HOKA Mafate 5 Trail Hombre - Gris",
    "nota": "Hombre",
-   "color": "Negro Agregar al carrito",
-   "foto": "hoka-mafate-5/2.webp",
+   "color": "Gris",
+   "foto": "hoka-mafate-5/3.webp",
    "precio": 469999,
    "antes": null,
    "talles": [
@@ -12081,8 +11988,7 @@
     "8",
     "8.5",
     "10",
-    "11",
-    "11.5"
+    "11"
    ],
    "sistema": "US"
   },
@@ -12092,7 +11998,7 @@
    "nombre": "Zapatilla HOKA Mafate 5 Trail Mujer - Blanca",
    "nota": "Mujer",
    "color": "Blanca",
-   "foto": "hoka-mafate-5/11.webp",
+   "foto": "hoka-mafate-5/12.webp",
    "precio": 469999,
    "antes": null,
    "talles": [
@@ -12107,7 +12013,7 @@
    "nombre": "Zapatilla HOKA Mafate 5 Trail Mujer - Azul (CSTLB)",
    "nota": "Mujer",
    "color": "Azul (CSTLB)",
-   "foto": "hoka-mafate-5/16.webp",
+   "foto": "hoka-mafate-5/15.webp",
    "precio": 469999,
    "antes": null,
    "talles": [

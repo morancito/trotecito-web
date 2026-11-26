@@ -186,7 +186,21 @@ const GRAMOS = [["liv", "Menos de 240 g", "livianas", 0, 239], ["med", "240 a 29
 const HORMAS = [["ancha", "Ancha"], ["normal", "Normal"], ["punta", "Normal, punta angosta"], ["angosta", "Angosta"]];
 const enFranja = (x, lst, ks) => x != null && lst.some(([k, , , a, b]) => ks.has(k) && x >= a && x <= b);
 const dropDe = d => d.drop ?? (d.talon && d.ante ? +(d.talon - d.ante).toFixed(1) : null);
-const st = { q: "", terreno: "Asfalto", orden: "precio", cmp: [], ...VACIO() };
+const st = { q: "", terreno: "Asfalto", orden: "populares", cmp: [], ...VACIO() };
+/* orden "Populares" (el de entrada): primero los modelos más conocidos y vendidos, la versión nueva antes que la vieja;
+   dentro de cada grupo, los que están en más tiendas hoy (más fácil de conseguir) y con más colores. Sin precio, al final */
+const ICONOS = new Set(["Pegasus", "Vomero", "Novablast", "Gel-Nimbus", "Gel-Cumulus", "Gel-Kayano", "GT-2000", "Clifton", "Bondi", "Ghost",
+  "Adrenaline GTS", "Ultraboost", "Supernova Rise", "Adizero SL", "Adizero Boston", "Adizero Adios Pro", "Endorphin Speed", "Triumph", "Guide",
+  "Speedgoat", "Mach", "Fresh Foam X 1080", "Cloudmonster", "Deviate Nitro", "Vaporfly", "Speedcross", "Peregrine"]);
+const MASIVAS = new Set(["Winflo", "Revolution", "Quest", "Duramo SL", "Gel-Excite", "Kinvara", "Glycerin", "Fresh Foam X 880", "Velocity Nitro",
+  "Cloudsurfer Next", "Superblast", "Structure", "Gel-Trabuco", "Kiger", "Arahi", "Magic Speed", "Dynablast", "GT-1000", "Supernova Stride",
+  "Endorphin Pro", "Ultra Glide", "Hurricane", "Launch", "Rincon"]);
+/* las más buscadas de todas: van primero */
+const ESTRELLAS = new Set(["Pegasus", "Novablast", "Clifton", "Gel-Nimbus", "Gel-Cumulus", "Ghost", "Vomero", "Ultraboost", "Gel-Kayano", "Adizero SL", "Endorphin Speed", "Bondi", "Speedcross", "Speedgoat", "Peregrine"]);
+const numVer = d => parseFloat(String(d.ver || "").replace(/^v/i, "")) || 0;
+const ULTIMA = {}; for (const d of DATA) { const k = d.m + "|" + d.mod; ULTIMA[k] = Math.max(ULTIMA[k] || 0, numVer(d)); }
+const popular = d => (ESTRELLAS.has(d.mod) ? 60 : 0) + (ICONOS.has(d.mod) || ESTRELLAS.has(d.mod) ? 100 : MASIVAS.has(d.mod) ? 50 : 0) - (numVer(d) < ULTIMA[d.m + "|" + d.mod] ? 30 : 0)
+  + 2 * Math.min(d.todas.length, 10) + Math.min(d.variantes.length, 8) - (d.min ? 0 : 500);
 const TERRENOS = [["Asfalto", "Calle, pista y cinta"], ["Trail", "Senderos y montaña"], ["Todos", "Asfalto y trail"]];
 const PESOS = [[74, "Menos de 75 kg"], [89, "75 a 90 kg"], [91, "Más de 90 kg"]];
 /* altura de la espuma en el talón: las mismas franjas que el medidor de amortiguación de cada ficha */
@@ -365,6 +379,7 @@ function lista() {
   return l.sort(o === "peso" ? (a, b) => (a.peso ?? X) - (b.peso ?? X) : o === "stack" ? (a, b) => (b.talon ?? -1) - (a.talon ?? -1)
     : o === "chatas" ? (a, b) => (a.talon ?? X) - (b.talon ?? X) || (a.min ?? X) - (b.min ?? X)
     : o === "drop" ? (a, b) => (dropDe(a) ?? X) - (dropDe(b) ?? X) || (a.min ?? X) - (b.min ?? X)
+    : o === "populares" ? (a, b) => popular(b) - popular(a) || (a.min ?? X) - (b.min ?? X)
     : o === "desc" ? (a, b) => desc(b) - desc(a) : o === "az" ? (a, b) => a.m.localeCompare(b.m) || a.mod.localeCompare(b.mod) : (a, b) => (a.min ?? X) - (b.min ?? X) || a.id - b.id);
 }
 /* filtros en el link (#catalogo?q=…&uso=…): sobreviven a recargar y se pueden compartir */
@@ -375,7 +390,7 @@ function filtrosAUrl() {
   if (st.marcas.size) p.set("m", [...st.marcas].join(",")); if (st.am.size) p.set("am", [...st.am].join(","));
   if (st.kg) p.set("kg", st.kg); if (st.pmin > P_MIN) p.set("pmin", st.pmin); if (st.pmax < P_MAX) p.set("pmax", st.pmax);
   ["drop", "gr", "horma"].forEach(k => st[k].size && p.set(k, [...st[k]].join(",")));
-  if (st.desc) p.set("desc", "1"); if (st.placa) p.set("placa", "1"); if (st.stock) p.set("stock", "1"); if (st.orden && st.orden !== "precio") p.set("o", st.orden);
+  if (st.desc) p.set("desc", "1"); if (st.placa) p.set("placa", "1"); if (st.stock) p.set("stock", "1"); if (st.orden && st.orden !== "populares") p.set("o", st.orden);
   if (GEN) p.set("g", GEN); if (TALLE) p.set("talle", TALLE);
   return p.toString();
 }
@@ -384,7 +399,7 @@ function filtrosDeUrl(qs) {
   Object.assign(st, VACIO(), { q: (p.get("q") || "").toLowerCase(), uso: lst("uso"), marcas: lst("m"), am: lst("am"), pis: p.get("pis") || "",
     kg: +p.get("kg") || 0, pmin: +p.get("pmin") || P_MIN, pmax: +p.get("pmax") || P_MAX, desc: p.get("desc") === "1", placa: p.get("placa") === "1",
     drop: lst("drop"), gr: lst("gr"), horma: lst("horma"), stock: p.get("stock") === "1" });
-  st.orden = p.get("o") || "precio"; $("#fOrden").value = st.orden; $("#q").value = p.get("q") || ""; st._busco = !!st.q;
+  st.orden = p.get("o") || "populares"; $("#fOrden").value = st.orden; $("#q").value = p.get("q") || ""; st._busco = !!st.q;
   const t = p.get("t"); st.terreno = TERRENOS.some(([x]) => x === t) ? t : "Asfalto";
   document.querySelectorAll("#terreno button").forEach(x => x.setAttribute("aria-pressed", x.dataset.t === st.terreno));
   if (p.has("g") && p.get("g") !== GEN) { GEN = p.get("g"); guardar("trotecito-gen", GEN || null); }

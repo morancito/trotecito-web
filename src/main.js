@@ -259,9 +259,10 @@ function limpiarTodo() {
 $("#fpLimpiar").onclick = () => { medir("filtro", { k: "limpiar", v: "panel" }); limpiarTodo(); };
 /* en celu el panel ocupa toda la pantalla: es un diálogo. El foco entra, lo de atrás queda inactivo, Escape cierra
    y al cerrar el foco vuelve al botón "Filtros" */
-let fondoInerte = [];
+let fondoInerte = [], vigia = null;
 const abrirF = v => {
   fp.classList.toggle("open", v); document.body.classList.toggle("fp-on", v);
+  if (!v && vigia) { const w = vigia; vigia = null; w.destroy(); }
   const modal = v && getComputedStyle(fp).position === "fixed";
   fondoInerte.forEach(el => el.inert = false); fondoInerte = [];
   if (modal) {
@@ -269,6 +270,8 @@ const abrirF = v => {
     for (let n = fp; n && n !== document.body; n = n.parentElement)
       for (const h of n.parentElement.children) if (h !== n && !h.inert && h.tagName !== "SCRIPT") { h.inert = true; fondoInerte.push(h); }
     requestAnimationFrame(() => $("#fpCerrar").focus());
+    /* el gesto o botón "atrás" del celu cierra el panel en vez de irse de la página (Chrome en Android) */
+    if ("CloseWatcher" in window && !vigia) { try { vigia = new CloseWatcher(); vigia.onclose = () => { vigia = null; abrirF(false); }; } catch { vigia = null; } }
   } else { fp.removeAttribute("role"); fp.removeAttribute("aria-modal"); if (!v && document.activeElement && fp.contains(document.activeElement)) $("#fAbrir").focus(); }
 };
 document.addEventListener("keydown", e => { if (e.key === "Escape" && fp.classList.contains("open")) { abrirF(false); $("#fAbrir").focus(); } });
@@ -345,9 +348,10 @@ function puntos(d) {
   const vs = coloresDe(d); if (vs.length < 2) return "";
   return `<span class="bib-cols" title="${vs.length} colores">${vs.slice(0, 4).map(muestra).join("")}${vs.length > 4 ? `<b>+${vs.length - 4}</b>` : ""}</span>`;
 }
-function tarjeta(d) {
+function tarjeta(d, i = 9) {
   const on = st.cmp.includes(d.id), dc = desc(d);
-  const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" loading="lazy">` : silueta(d);
+  /* las dos primeras pueden estar a la vista al abrir el catálogo: no se demoran */
+  const img = d.fotos.length ? `<img src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}"${i < 2 ? "" : ' loading="lazy"'}>` : silueta(d);
   return `<a class="bib ${UCLS[d.uso] || "u-diario"}" href="${zurl(d)}">
     <div class="bib-band">${sello(d.m)}<span>${terr(d) === "Trail" ? "Trail · " : ""}N° ${pad(d.id)}</span></div>
     <div class="bib-img">${img}${puntos(d)}${dc >= 0.05 ? `<span class="off" title="${Math.round(dc * 100)}% menos que el precio de lista de la tienda">−${Math.round(dc * 100)}% <small>de lista</small></span>` : ""}</div>
@@ -396,11 +400,11 @@ function render() {
   }
   /* de a tandas: 109 tarjetas juntas son más de 40 pantallas en el celular. Lo que ya abrió se recuerda en la pestaña,
      así al volver de una ficha encuentra la lista como la dejó. */
-  const clave = filtrosAUrl() + "|" + GEN + "|" + TALLE, LOTE = matchMedia("(max-width: 900px)").matches ? 12 : 24;
+  const clave = filtrosAUrl() + "|" + GEN + "|" + TALLE, LOTE = matchMedia("(max-width: 56.25em)").matches ? 12 : 24;
   if (clave !== verClave) { verClave = clave; let g = 0; try { const [k, n] = JSON.parse(sessionStorage.getItem("tt-ver") || "[]"); if (k === clave) g = +n; } catch {} verN = Math.max(LOTE, g || 0); }
   try { sessionStorage.setItem("tt-ver", JSON.stringify([clave, verN])); } catch {}
   const quedan = Math.max(0, l.length - verN);
-  $("#grid").innerHTML = l.slice(0, verN).map(tarjeta).join(""); $("#empty").hidden = l.length > 0;
+  $("#grid").innerHTML = l.slice(0, verN).map((d, i) => tarjeta(d, i)).join(""); $("#empty").hidden = l.length > 0;
   $("#verMas").hidden = !quedan; $("#verMas").textContent = `Ver ${Math.min(quedan, LOTE * 2)} zapas más (quedan ${quedan})`; $("#verMas").dataset.n = LOTE * 2;
   $("#cuenta").textContent = `${l.length} ${l.length === 1 ? "zapa" : "zapas"}`;
   $("#fpVer").textContent = `Ver ${l.length} ${l.length === 1 ? "zapa" : "zapas"}`;
@@ -463,7 +467,7 @@ function pintarOfertas() {
   /* en el celular, las ofertas van arriba de todo: lo primero que se ve son zapas con precio */
   const h = $("#heroOf"); h.hidden = !ofertas.length;
   h.innerHTML = `<div class="ho-cab"><b>Ofertas de hoy</b><a href="#catalogo" id="hoTodas">Ver las ${todas.length} →</a></div>
-    <div class="ho-row">${todas.slice(0, 6).map(d => `<a class="ho" href="${zurl(d)}" data-slug="${esc(d.slug)}"><span class="ho-img"><img src="${esc(src(d.fotos[0]))}" alt="" width="150" height="150"><em>−${Math.round(desc(d) * 100)}%</em></span>
+    <div class="ho-row">${todas.slice(0, 6).map((d, i) => `<a class="ho" href="${zurl(d)}" data-slug="${esc(d.slug)}"><span class="ho-img"><img src="${esc(src(d.fotos[0]))}" alt="" width="150" height="150"${i < 2 ? "" : ' loading="lazy" fetchpriority="low"'}><em>−${Math.round(desc(d) * 100)}%</em></span>
       <span class="ho-n">${esc(nombre(d))}</span><b>${fmt(d.min)}</b><small>en ${esc(d.tiendas[0].tienda)}</small></a>`).join("")}</div>`;
   $("#hoTodas").onclick = e => { e.preventDefault(); medir("atajo", { t: "Ofertas: ver todas (arriba)" }); verOfertas(); };
 }
@@ -494,7 +498,7 @@ function media(d) {
   const stage = `<div class="media-box" id="m3d"${d.fotos.length ? " hidden" : ""}><div class="stage" id="dStage"><div class="lbls"></div></div></div>`;
   if (!d.fotos.length) return stage;
   return `<div><div class="seg" id="mtabs"><button data-mt="fotos" aria-pressed="true">Fotos</button><button data-mt="3d" aria-pressed="false">3D</button></div></div>
-    <div class="media-box" id="mfotos"><img class="main" id="fotoMain" src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}"></div>${stage}
+    <div class="media-box" id="mfotos"><img class="main" id="fotoMain" src="${esc(src(d.fotos[0]))}" alt="${esc(d.m + " " + nombre(d))}" fetchpriority="high"></div>${stage}
     ${d.fotos.length > 1 ? `<div class="thumbs">${d.fotos.map((s, i) => `<button data-foto="${i}" aria-pressed="${i === 0}" aria-label="Foto ${i + 1}"><img src="${esc(src(s))}" alt="" loading="lazy"></button>`).join("")}</div>` : ""}`;
 }
 function bloqueColores(d) {
@@ -557,10 +561,10 @@ function ficha(d) {
       <span class="buy-f">Precio chequeado ${esc(hace(best.fecha))}. El stock de tu talle y la forma de entrega (envío o retiro en sucursal) confirmalos en la tienda.</span>
       ${lineaTalle(best)}<a class="btn" href="${esc(best.url)}" target="_blank" rel="noopener">Comprar en ${esc(best.tienda)} ↗</a>
       ${ahorro > 0 ? `<p class="ahorro">Ahorrás ${fmt(ahorro)} contra la más cara.</p>` : ""}</div>` : d.sinTalle
-      ? `<div class="buy"><span class="kicker">Tu talle</span><b class="buy-p cond" style="font-size:40px">Sin talle ${TALLE}</b><span class="buy-s">Ninguna tienda que chequeamos tiene el ${TALLE} ahora. Abajo están los talles que sí hay.</span><button class="btn" type="button" data-talle="">Ver todos los talles</button></div>`
+      ? `<div class="buy"><span class="kicker">Tu talle</span><b class="buy-p cond" style="font-size:2.5rem">Sin talle ${TALLE}</b><span class="buy-s">Ninguna tienda que chequeamos tiene el ${TALLE} ahora. Abajo están los talles que sí hay.</span><button class="btn" type="button" data-talle="">Ver todos los talles</button></div>`
       : d.otro
-      ? `<div class="buy"><span class="kicker">Talles de ${GEN.toLowerCase()}</span><b class="buy-p cond" style="font-size:40px">No conseguimos</b><span class="buy-s">Solo la encontramos en talles de ${d.otro.gen.toLowerCase()}, desde ${fmt(d.otro.precio)}.</span><button class="btn" type="button" data-gen="">Ver todos los talles</button></div>`
-      : `<div class="buy"><b class="buy-p cond" style="font-size:48px">Precio pronto</b></div>`}
+      ? `<div class="buy"><span class="kicker">Talles de ${GEN.toLowerCase()}</span><b class="buy-p cond" style="font-size:2.5rem">No conseguimos</b><span class="buy-s">Solo la encontramos en talles de ${d.otro.gen.toLowerCase()}, desde ${fmt(d.otro.precio)}.</span><button class="btn" type="button" data-gen="">Ver todos los talles</button></div>`
+      : `<div class="buy"><b class="buy-p cond" style="font-size:3rem">Precio pronto</b></div>`}
     ${best && GEN && !d.otro ? `<p class="otro-gen">Mostrando precios de talles de ${GEN.toLowerCase()}.</p>` : ""}
     ${todasLasTiendas(d, resto)}
     ${bloqueTalles(d)}

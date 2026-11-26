@@ -68,6 +68,9 @@ def _distintos(a, b):
 
 
 def _juntar(rep, v):
+    # mismo color: si la foto del más barato es casera y la de la otra tienda es de estudio, queda la de estudio
+    if rep.get("limpia") is False and v.get("limpia"):
+        rep["foto"], rep["hex"], rep["limpia"] = v["foto"], v["hex"], True
     vistas = {rep.get("url")} | {o.get("url") for o in rep["otras"]}
     for o in [{k: v.get(k) for k in ("tienda", "url", "precio", "nota")}] + v.get("otras", []):
         if o.get("url") not in vistas: rep["otras"].append(o); vistas.add(o.get("url"))

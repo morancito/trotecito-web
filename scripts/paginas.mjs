@@ -32,7 +32,11 @@ console.log(`Talles: ${convertidos} listas pasadas de US a numeración argentina
 const marcas = [...new Set(cat.modelos.filter(m => !m.borrador).map(m => m.m))].sort((a, b) => a.localeCompare(b, "es"));
 const indice = `<details class="indice"><summary>Todas las zapas (${cat.modelos.filter(m => !m.borrador).length})</summary><div class="ind-cols">${marcas.map(mc => `<div><h3>${mc}</h3><ul>${cat.modelos.filter(m => !m.borrador && m.m === mc)
   .sort((a, b) => `${a.mod} ${a.ver || ""}`.localeCompare(`${b.mod} ${b.ver || ""}`, "es", { numeric: true })).map(m => `<li><a href="${BASE}zapa/${m.slug}/">${m.mod}${m.ver ? " " + m.ver : ""}</a></li>`).join("")}</ul></div>`).join("")}</div></details>`;
-const plantilla = readFileSync(new URL("index.html", DIST), "utf8").replace("<!--indice-->", indice);
+/* cuántas tiendas cargamos, para el HTML (el JavaScript después muestra las que tienen precio hoy) */
+const diaAR = new Date(Date.now() - 3 * 36e5); diaAR.setUTCHours(0, 0, 0, 0);
+const vigenteT = f => { const [d, mm, a] = (f || "").split("/").map(Number); return !!a && (diaAR - Date.UTC(a, mm - 1, d)) / 864e5 <= 1; };   // igual que la web: hoy o ayer
+const nTiendas = new Set(cat.modelos.filter(m => !m.borrador).flatMap(m => (m.tiendas || []).filter(t => !t.sinStock && vigenteT(t.fecha)).map(t => t.tienda))).size;
+const plantilla = readFileSync(new URL("index.html", DIST), "utf8").replace("<!--indice-->", indice).replace(/(<b id="nTiendas">)\d+(<\/b>)/, (x, a, b) => nTiendas ? a + nTiendas + b : x);
 
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");

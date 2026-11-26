@@ -8,6 +8,7 @@ import json, os, re, colorsys, hashlib
 import sys; sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
 from colores_fusion import fusionar
 from colores_acento import con_acento
+from encuadrar import encuadrar, fondo as fondo_de
 from PIL import Image, ImageStat, ImageDraw
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -45,7 +46,9 @@ def cuadrar(ruta, lado_final=600):
     if fondo(im) == (255, 255, 255): im = sin_logo(im)
     w, h = im.size; lado = max(w, h)
     c = Image.new("RGB", (lado, lado), fondo(im)); c.paste(im, ((lado - w) // 2, (lado - h) // 2))
-    return c.resize((lado_final, lado_final), Image.LANCZOS)
+    c = c.resize((lado_final, lado_final), Image.LANCZOS)
+    nuevo, _ = encuadrar(c)   # centrada y del mismo tamaño que el resto (en 4:3 no se corta)
+    return nuevo or c
 
 def dominantes(im):
     """los dos colores que más ocupan en la zapatilla (sin el fondo), con su proporción"""
@@ -143,24 +146,30 @@ for slug, vs in datos.items():
         except Exception as e: print("·", slug, v["url"], e); continue
         dom = dominantes(im)
         if not dom: continue
+        limpia = fondo_de(im)[1]   # foto de estudio (fondo liso) o casera (sobre la caja, un sillón atrás...)
         # mismo color que uno ya elegido (otra tienda o el otro género): queda el más barato, que es el primero
         if len(elegidas) >= 10: break
         rep = next((e for e in elegidas if dist(e["_d"][0][0], dom[0][0]) < 48 and (len(dom) < 2 or len(e["_d"]) < 2 or dist(e["_d"][1][0], dom[1][0]) < 70)), None)
         if rep:
-            rep["otras"].append({k: v[k] for k in ("tienda", "url", "precio", "nota")}); continue
+            rep["otras"].append({k: v[k] for k in ("tienda", "url", "precio", "nota")})
+            # el precio y el link siguen siendo los del más barato, pero si su foto es casera se usa la de estudio
+            if not rep["limpia"] and limpia:
+                im.save(f"{RAIZ}/public/{rep['foto']}", quality=80, method=6); rep.update(_d=dom, limpia=True, hex=[hexd(c) for c, _ in dom])
+            continue
         # el nombre sale de la URL: si la foto no cambia de una semana a otra, el archivo queda igual
         n = "c-" + hashlib.md5(v["url"].encode()).hexdigest()[:8]
         im.save(f"{DST}/{slug}/{n}.webp", quality=80, method=6)
         n_, hx_ = con_acento(nombre_final(v.get("color"), dom), [hexd(c) for c, _ in dom], im, nombre_rgb)
         elegidas.append({"n": n_, "hex": hx_, "foto": f"fotos/{slug}/{n}.webp",
                          "tienda": v["tienda"], "url": v["url"], "precio": v["precio"], "antes": v.get("antes"), "nota": v.get("nota", ""),
-                         "talles": v.get("talles", []), "sistema": v.get("sistema"), "fecha": HOY, "otras": [], "_d": dom})
+                         "talles": v.get("talles", []), "sistema": v.get("sistema"), "fecha": HOY, "otras": [], "_d": dom, "limpia": limpia})
     for e in elegidas: e.pop("_d")
     antes_f = {e["foto"] for e in elegidas}
     elegidas = fusionar(elegidas)   # mismo código de color o mismo nombre: es un solo color
     for f in antes_f - {e["foto"] for e in elegidas}:
         try: os.remove(f"{RAIZ}/public/{f}")
         except OSError: pass
+    for e in elegidas: e.pop("limpia", None)
     final[slug] = elegidas
     print(slug, len(vs), "->", len(elegidas), [e["n"] for e in elegidas])
 json.dump(final, open(FINAL, "w"), ensure_ascii=False, separators=(",", ":"))

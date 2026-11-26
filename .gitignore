@@ -8,3 +8,4 @@ scripts/videos/
 scripts/colores-fotos/
 scripts/colores-hechos.txt
 scripts/colores-faltan.txt
+__pycache__/

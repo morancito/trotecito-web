@@ -1,18 +1,18 @@
 {
- "fecha": "26/11/2026",
- "hora": "05:12 p. m.",
- "leidos": 686,
- "cambiaron": 26,
- "conTalles": 613,
- "fallaron": 11,
+ "fecha": "27/11/2026",
+ "hora": "05:02 p. m.",
+ "leidos": 696,
+ "cambiaron": 6,
+ "conTalles": 624,
+ "fallaron": 10,
  "borrados": 2,
- "coloresFecha": "26/11/2026",
+ "coloresFecha": "27/11/2026",
  "colores": {
-  "leidos": 472,
-  "borrados": 2,
+  "leidos": 471,
+  "borrados": 4,
   "sinStock": 4,
-  "fallaron": 1,
-  "fecha": "26/11/2026"
+  "fallaron": 5,
+  "fecha": "27/11/2026"
  },
  "errores": [
   "saucony-guide-18 · Naka Outdoors: no encontré el precio en la página",
@@ -24,12 +24,11 @@
   "adidas-duramo-sl-2 · Solo Deportes: no encontré el precio en la página",
   "hoka-clifton-10 · Gostore: no encontré el precio en la página",
   "hoka-bondi-9 · Gostore: no encontré el precio en la página",
-  "saucony-xodus-ultra-4 · Open Sports: no encontré el precio en la página",
-  "nike-revolution-8 · Solo Deportes: no encontré el precio en la página"
+  "saucony-xodus-ultra-4 · Open Sports: no encontré el precio en la página"
  ],
  "borradosL": [
-  "saucony-guide-18 · Universo Aventura Hombre: HTTP 404 · la página dice que no existe (y muestra otros productos)",
-  "saucony-hurricane-26 · NewSport Mujer: HTTP 404 · producto no encontrado"
+  "puma-deviate-nitro-4 · Sportline Mujer: HTTP 404 · producto no encontrado",
+  "under-armour-infinite-pro · Sportline Hombre: HTTP 404 · producto no encontrado"
  ],
  "sinStock": [
   "adidas-adizero-evo-sl · Dexter",
@@ -46,7 +45,6 @@
   "saucony-xodus-ultra-4 · TodoTrail",
   "adidas-adizero-boston-13 · Dexter",
   "adidas-supernova-rise-3 · Dexter",
-  "salomon-xa-pro-3d-v9 · Salomon Argentina",
   "asics-novablast-5 · Dexter",
   "asics-gel-nimbus-27 · Dexter",
   "asics-gel-kayano-32 · Dexter",
@@ -57,9 +55,9 @@
   "asics-gel-excite-11 · Stock Center",
   "nike-pegasus-41 · Stock Center",
   "adidas-ultraboost-5 · Stock Center",
-  "brooks-ghost-15 · Dexter",
-  "brooks-ghost-15 · Dexter",
   "nike-zegama-2 · Stock Center",
+  "brooks-ghost-15 · Dexter",
+  "brooks-ghost-15 · Dexter",
   "brooks-glycerin-20 · Dexter",
   "brooks-adrenaline-gts-23 · Dexter",
   "brooks-launch-10 · Dexter",

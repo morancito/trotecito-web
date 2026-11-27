@@ -18067,7 +18067,83 @@
     "https://www.foroatletismo.com/zapatillas/olympikus-corre-4/"
    ],
    "terreno": "Asfalto",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-olympikus-corre-4-running/OLK43720366ALGSOL.html",
+     "fecha": "26/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "36",
+      "37",
+      "41",
+      "42",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 119999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-4-mujer/OLK43720366AMLIML.html",
+     "fecha": "26/11/2026",
+     "antes": 149999,
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 119999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-4-mujer/OLK43720366AMLIML.html",
+     "fecha": "26/11/2026",
+     "antes": 149999,
+     "nota": "Mujer",
+     "talles": [
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 149999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-4-hombre/OLK43720366BCOMLT.html",
+     "fecha": "26/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -18103,7 +18179,72 @@
     "https://www.foroatletismo.com/zapatillas/olympikus-corre-max/"
    ],
    "terreno": "Asfalto",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-max-mujer/OLK43758365MIST.html",
+     "fecha": "26/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Dexter",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-max-hombre/OLK43758365MLT-PT.html",
+     "fecha": "26/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "43"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-max-mujer/OLK43758365MIST.html",
+     "fecha": "26/11/2026",
+     "nota": "Mujer",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 139999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-max-hombre/OLK43758365MLT-PT.html",
+     "fecha": "26/11/2026",
+     "nota": "Hombre",
+     "talles": [
+      "40",
+      "41",
+      "42",
+      "43"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,
@@ -18140,7 +18281,68 @@
     "https://www.foroatletismo.com/zapatillas/olympikus-corre-grafeno-3/"
    ],
    "terreno": "Asfalto",
-   "tiendas": [],
+   "tiendas": [
+    {
+     "tienda": "Dexter",
+     "precio": 159999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-grafeno-3-hombre/OLK43245330TQSAMULT.html",
+     "fecha": "26/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Stock Center",
+     "precio": 159999,
+     "cuotas": "2 cuotas sin interés",
+     "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-grafeno-3-hombre/OLK43245330TQSAMULT.html",
+     "fecha": "26/11/2026",
+     "antes": 199999,
+     "nota": "Hombre",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45"
+     ],
+     "sistema": "AR"
+    },
+    {
+     "tienda": "Open Sports",
+     "precio": 199999,
+     "cuotas": "12 cuotas sin interés",
+     "url": "https://www.opensports.com.ar/zapatillas-olympikus-corre-grafeno-3-43245330-rona.html",
+     "fecha": "26/11/2026",
+     "talles": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ],
+     "sistema": "AR"
+    }
+   ],
    "colores": [],
    "ar": true,
    "borrador": true,

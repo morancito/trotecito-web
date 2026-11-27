@@ -65,7 +65,7 @@ const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
 const pad = n => String(n).padStart(3, "0");
 const nombre = d => d.mod + (d.ver ? " " + d.ver : "");
 const pisada = d => d.tipo === "Estabilidad" ? "Pronadora" : d.tipo === "Neutra" ? "Neutra" : "";
-const conPlaca = d => !!d.pl && !/roca/i.test(d.pl) && /carbono|nylon|varilla|fibra|speedboard|pebax/i.test(d.pl);
+const conPlaca = d => !!d.pl && !/roca/i.test(d.pl) && /carbono|grafeno|nylon|varilla|fibra|speedboard|pebax/i.test(d.pl);
 const placa = d => d.pl && d.pl !== "Sin placa" ? d.pl : "";
 const terr = d => d.terreno || "Asfalto";
 const pisadaPara = d => d.tipo === "Estabilidad" ? "Pronadora" : "Neutra o supinadora";

@@ -17999,6 +17999,188 @@
    "fotos": [
     "fotos/kiprun-kipstorm-challenger/1.webp?v=263f9dba"
    ]
+  },
+  {
+   "id": 142,
+   "slug": "olympikus-corre-5",
+   "m": "Olympikus",
+   "mod": "Corre",
+   "ver": "5",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "usos": [
+    "Rodaje diario",
+    "Ritmo",
+    "Iniciación"
+   ],
+   "esp": "Py-Va (EVA + Pebax)",
+   "pl": "Sin placa",
+   "peso": 240,
+   "drop": 7,
+   "talon": 32,
+   "ante": 25,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "4:30 a 5:30 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Hasta maratón"
+   },
+   "evitar": "pesás más de 85 kg o buscás mucha espuma para fondos largos.",
+   "fuente": [
+    "foroatletismo.com",
+    "https://www.foroatletismo.com/zapatillas/olympikus-corre-5/"
+   ],
+   "terreno": "Asfalto",
+   "tiendas": [],
+   "colores": [],
+   "ar": true,
+   "borrador": true,
+   "fotos": []
+  },
+  {
+   "id": 143,
+   "slug": "olympikus-corre-4",
+   "m": "Olympikus",
+   "mod": "Corre",
+   "ver": "4",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "esp": "Eleva Pro 2.0",
+   "pl": "Sin placa",
+   "peso": 228,
+   "drop": 8,
+   "talon": 33,
+   "ante": 25,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Más lento que 3:50 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "Hasta 21K"
+   },
+   "evitar": "hacés fondos de más de 20 km: rinde mejor en tiradas más cortas.",
+   "fuente": [
+    "foroatletismo.com",
+    "https://www.foroatletismo.com/zapatillas/olympikus-corre-4/"
+   ],
+   "terreno": "Asfalto",
+   "tiendas": [],
+   "colores": [],
+   "ar": true,
+   "borrador": true,
+   "fotos": []
+  },
+  {
+   "id": 144,
+   "slug": "olympikus-corre-max",
+   "m": "Olympikus",
+   "mod": "Corre Max",
+   "ver": "",
+   "tipo": "Neutra",
+   "uso": "Rodaje diario",
+   "usos": [
+    "Rodaje diario",
+    "Iniciación"
+   ],
+   "esp": "Eleva Pro Max",
+   "pl": "Sin placa",
+   "peso": 315,
+   "drop": 8,
+   "talon": 45,
+   "ante": 37,
+   "corredor": {
+    "nivel": "Todos los niveles",
+    "ritmo": "Más lento que 4:30 min/km",
+    "peso": "Hasta 95 kg",
+    "distancia": "Hasta 20K"
+   },
+   "evitar": "pronás o buscás una zapa para ir rápido: es pesada y pensada para rodajes suaves.",
+   "fuente": [
+    "foroatletismo.com",
+    "https://www.foroatletismo.com/zapatillas/olympikus-corre-max/"
+   ],
+   "terreno": "Asfalto",
+   "tiendas": [],
+   "colores": [],
+   "ar": true,
+   "borrador": true,
+   "fotos": []
+  },
+  {
+   "id": 145,
+   "slug": "olympikus-corre-grafeno-3",
+   "m": "Olympikus",
+   "mod": "Corre Grafeno",
+   "ver": "3",
+   "tipo": "Neutra",
+   "uso": "Ritmo",
+   "usos": [
+    "Ritmo",
+    "Competencia",
+    "Rodaje diario"
+   ],
+   "esp": "NT-X + Eleva Pro 2.0",
+   "pl": "Grafeno",
+   "peso": 249,
+   "drop": 6,
+   "talon": 37.5,
+   "ante": 31.5,
+   "corredor": {
+    "nivel": "Intermedio a avanzado",
+    "ritmo": "3:20 a 5:00 min/km",
+    "peso": "Hasta 85 kg",
+    "distancia": "10K a maratón"
+   },
+   "evitar": "buscás una zapa blanda para rodajes lentos: tiene placa y está pensada para ir rápido.",
+   "fuente": [
+    "foroatletismo.com",
+    "https://www.foroatletismo.com/zapatillas/olympikus-corre-grafeno-3/"
+   ],
+   "terreno": "Asfalto",
+   "tiendas": [],
+   "colores": [],
+   "ar": true,
+   "borrador": true,
+   "fotos": []
+  },
+  {
+   "id": 146,
+   "slug": "olympikus-corre-supra-2",
+   "m": "Olympikus",
+   "mod": "Corre Supra",
+   "ver": "2",
+   "tipo": "Neutra",
+   "uso": "Competencia",
+   "usos": [
+    "Competencia",
+    "Ritmo"
+   ],
+   "esp": "NT-X Pro 2.0 (PEBA supercrítico)",
+   "pl": "Carbono",
+   "peso": 215,
+   "drop": 6,
+   "talon": 38,
+   "ante": 32,
+   "corredor": {
+    "nivel": "Avanzado",
+    "ritmo": "3:20 a 6:00 min/km",
+    "peso": "Hasta 100 kg",
+    "distancia": "10K a maratón"
+   },
+   "evitar": "buscás una zapa para rodar todos los días: es de competencia, con placa de carbono.",
+   "fuente": [
+    "foroatletismo.com",
+    "https://www.foroatletismo.com/zapatillas/olympikus-corre-supra-2/"
+   ],
+   "terreno": "Asfalto",
+   "tiendas": [],
+   "colores": [],
+   "ar": true,
+   "borrador": true,
+   "fotos": []
   }
  ]
 }

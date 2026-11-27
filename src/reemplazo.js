@@ -63,7 +63,7 @@ export const dist = (a, b, ignorar = "") => {
 };
 const fmt = n => "$" + Math.round(n).toLocaleString("es-AR");
 const nom = d => d.mod + (d.ver ? " " + d.ver : "");
-const conPlaca = d => /carbono|nylon|varilla|fibra|pebax/i.test(d.pl || "");
+const conPlaca = d => /carbono|grafeno|nylon|varilla|fibra|pebax/i.test(d.pl || "");
 
 /* qué cambia respecto de la tuya, en frases cortas */
 export function diferencias(d, ref) {

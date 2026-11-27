@@ -64,7 +64,7 @@ export const rangoKg = d => {
 export const capacidadKg = d => rangoKg(d).max;
 /* placa de propulsión (la que ayuda a ir rápido). La antirrocas de trail es otra cosa: protege la planta, no impulsa */
 const antirrocas = d => /roca/i.test(d.pl || "");
-const placa = d => !!d.pl && !antirrocas(d) && /carbono|nylon|varilla|fibra|speedboard|pebax/i.test(d.pl);
+const placa = d => !!d.pl && !antirrocas(d) && /carbono|grafeno|nylon|varilla|fibra|speedboard|pebax/i.test(d.pl);
 /* el peso del corredor entra en lo que la ficha recomienda para esa zapa (sin dato de peso, no opinamos) */
 export const pesoApto = (d, kg) => !kg || (kg <= rangoKg(d).max && !(kg >= 90 && d.talon && d.talon < 34));
 

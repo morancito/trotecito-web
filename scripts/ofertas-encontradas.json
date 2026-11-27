@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-15T22:03:50.544Z",
+ "fecha": "2026-11-27T02:27:50.708Z",
  "tiendas": {
   "Saucony": {
    "tipo": "tiendanube",
@@ -11,49 +11,112 @@
   "Dexter": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 22,
-   "encontrados": 1,
+   "buscados": 7,
+   "encontrados": 7,
    "errores": []
   },
   "Sporting": {
    "tipo": "vtex",
    "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sporting.vtexassets.com",
-   "buscados": 22,
-   "encontrados": 5,
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Moov": {
+   "tipo": "sfcc",
+   "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
+   "buscados": 7,
+   "encontrados": 0,
    "errores": []
   },
   "Gostore": {
    "tipo": "magento",
    "pista": "gostore.com.ar | static.cloudflareinsights.com",
-   "buscados": 22,
-   "encontrados": 2,
+   "buscados": 7,
+   "encontrados": 0,
    "errores": []
   },
   "TodoTrail": {
    "tipo": "tiendanube",
    "pista": "nsk-cdn-static.tiendanube.com | www.googletagmanager.com | static.cloudflareinsights.com",
-   "buscados": 22,
-   "encontrados": 1,
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Naka Outdoors": {
+   "tipo": "nubix",
+   "pista": "www.googletagmanager.com | accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
+   "buscados": 7,
+   "encontrados": 0,
    "errores": []
   },
   "Stock Center": {
    "tipo": "sfcc",
    "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 22,
-   "encontrados": 1,
+   "buscados": 7,
+   "encontrados": 7,
    "errores": []
   },
   "Tienda Fuencarral": {
    "tipo": "vtex",
    "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | fuencarral.vtexassets.com",
-   "buscados": 22,
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "NewSport": {
+   "tipo": "vtex",
+   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | newsport.vtexassets.com",
+   "buscados": 7,
    "encontrados": 0,
    "errores": []
   },
   "Vorax Running": {
    "tipo": "tiendanube",
    "pista": "static.cloudflareinsights.com",
-   "buscados": 22,
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Solo Deportes": {
+   "tipo": "magento",
+   "pista": "Powered by Slider Revolution 6.5.3.3 - responsive, Mobile-Friendly Slider Plugin with comfortable drag and drop interface. | www-cdn3.solodeportes.com.ar",
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Universo Aventura": {
+   "tipo": "tiendanube",
+   "pista": "www.googletagmanager.com | static.cloudflareinsights.com",
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Sumitate": {
+   "tipo": "nubix",
+   "pista": "accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Mega Sports": {
+   "tipo": "vtex",
+   "pista": "io.vtex.com.br | megasports.vteximg.com.br | vtex.vtexassets.com | activity-flow.vtex.com | cdn.jsdelivr.net | cdn.embluemail.com",
+   "buscados": 7,
+   "encontrados": 0,
+   "errores": []
+  },
+  "Open Sports": {
+   "tipo": "magento",
+   "pista": "www.opensports.com.ar",
+   "buscados": 7,
+   "encontrados": 1,
+   "errores": []
+  },
+  "Sportline": {
+   "tipo": "vtex",
+   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sportline.vtexassets.com",
+   "buscados": 7,
    "encontrados": 0,
    "errores": []
   },
@@ -67,100 +130,42 @@
   "Salomon Argentina": {
    "tipo": "shopify",
    "pista": "cdn.shopify.com | salomonstore.com.ar",
-   "buscados": 21,
-   "encontrados": 44,
+   "buscados": 1,
+   "encontrados": 3,
    "errores": []
   },
-  "Moov": {
-   "tipo": "sfcc",
-   "pista": "api.wcx.cloud | cdn.loadbee.com | maps.googleapis.com | www.google.com | cdn.cquotient.com",
-   "buscados": 128,
-   "encontrados": 2,
-   "errores": []
-  },
-  "NewSport": {
-   "tipo": "vtex",
-   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | newsport.vtexassets.com",
-   "buscados": 128,
-   "encontrados": 100,
-   "errores": []
-  },
-  "Solo Deportes": {
-   "tipo": "magento",
-   "pista": "Powered by Slider Revolution 6.5.3.3 - responsive, Mobile-Friendly Slider Plugin with comfortable drag and drop interface. | www-cdn3.solodeportes.com.ar",
-   "buscados": 128,
-   "encontrados": 47,
-   "errores": []
-  },
-  "Open Sports": {
-   "tipo": "magento",
-   "pista": "www.opensports.com.ar",
-   "buscados": 128,
-   "encontrados": 63,
-   "errores": []
-  },
-  "Sportline": {
-   "tipo": "vtex",
-   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | sportline.vtexassets.com",
-   "buscados": 128,
-   "encontrados": 30,
+  "Decathlon": {
+   "tipo": "shopify",
+   "pista": "cdn.shopify.com | decathlon.com.ar | cdnjs.cloudflare.com | backinstock.useamp.com",
+   "buscados": 0,
+   "encontrados": 0,
    "errores": []
   },
   "Puma Argentina": {
    "tipo": "sfcc",
    "pista": "cdn.cookielaw.org | static.cloudflareinsights.com",
-   "buscados": 5,
+   "buscados": 0,
    "encontrados": 0,
    "errores": []
   },
   "Under Armour Argentina": {
    "tipo": "vtex",
    "pista": "io2.vtex.com",
-   "buscados": 3,
-   "encontrados": 4,
+   "buscados": 0,
+   "encontrados": 0,
    "errores": []
   },
   "Asics": {
    "tipo": "vtex",
-   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | www.google.com | io.vtex.com.br | asicsar.vtexassets.com",
-   "buscados": 12,
-   "encontrados": 5,
+   "pista": "vtex.render-server@8.182.0 | capi-automation.s3.us-east-2.amazonaws.com | io.vtex.com.br | asicsar.vtexassets.com",
+   "buscados": 0,
+   "encontrados": 0,
    "errores": []
   },
   "New Balance": {
    "tipo": "sfcc",
    "pista": "ajax.googleapis.com | www.newbalance.com.ar | cdn.cquotient.com | static.cloudflareinsights.com",
-   "buscados": 4,
-   "encontrados": 6,
-   "errores": []
-  },
-  "Universo Aventura": {
-   "tipo": "tiendanube",
-   "pista": "www.googletagmanager.com | static.cloudflareinsights.com",
-   "buscados": 130,
-   "encontrados": 56,
-   "errores": []
-  },
-  "Mega Sports": {
-   "tipo": "vtex",
-   "pista": "io.vtex.com.br | megasports.vteximg.com.br | vtex.vtexassets.com | activity-flow.vtex.com | cdn.jsdelivr.net | cdn.embluemail.com",
-   "buscados": 129,
-   "encontrados": 1,
-   "errores": [
-    "kiprun-kipcore: búsqueda HTTP 400"
-   ]
-  },
-  "Naka Outdoors": {
-   "tipo": "nubix",
-   "pista": "www.googletagmanager.com | accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
-   "buscados": 130,
-   "encontrados": 9,
-   "errores": []
-  },
-  "Sumitate": {
-   "tipo": "nubix",
-   "pista": "accounts.google.com | cdn.jsdelivr.net | r2.nubixstore.ar",
-   "buscados": 130,
+   "buscados": 0,
    "encontrados": 0,
    "errores": []
   }
@@ -5977,67 +5982,6 @@
     "38.5",
     "39",
     "40",
-    "40.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-ultra-flow-2-gtx",
-   "modelo": "Salomon Ultra Flow 2 GTX",
-   "tienda": "Salomon Argentina",
-   "nombre": "ULTRA FLOW 2 GORE-TEX",
-   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-m",
-   "nota": "Hombre",
-   "precio": 239999,
-   "antes": null,
-   "cuotas": 0,
-   "talles": [
-    "39",
-    "39.5",
-    "40",
-    "41.5",
-    "42",
-    "42.5",
-    "43",
-    "44",
-    "44.5",
-    "45",
-    "46",
-    "47"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-ultra-flow-2-gtx",
-   "modelo": "Salomon Ultra Flow 2 GTX",
-   "tienda": "Salomon Argentina",
-   "nombre": "ULTRA FLOW 2 GORE-TEX",
-   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-w",
-   "nota": "Mujer",
-   "precio": 239999,
-   "antes": null,
-   "cuotas": 0,
-   "talles": [
-    "35",
-    "35.5",
-    "40.5"
-   ],
-   "sistema": "AR"
-  },
-  {
-   "slug": "salomon-ultra-flow-2-gtx",
-   "modelo": "Salomon Ultra Flow 2 GTX",
-   "tienda": "Salomon Argentina",
-   "nombre": "ULTRA FLOW 2 GORE-TEX",
-   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gore-tex",
-   "nota": "",
-   "precio": 239999,
-   "antes": null,
-   "cuotas": 0,
-   "talles": [
-    "35",
-    "35.5",
-    "36",
     "40.5"
    ],
    "sistema": "AR"
@@ -12129,6 +12073,387 @@
     "42",
     "42.5",
     "44"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-4",
+   "modelo": "Olympikus Corre 4",
+   "tienda": "Dexter",
+   "nombre": "zapatillas olympikus corre 4 running",
+   "url": "https://www.dexter.com.ar/zapatillas-olympikus-corre-4-running/OLK43720366ALGSOL.html",
+   "nota": "",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "41",
+    "42",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-4",
+   "modelo": "Olympikus Corre 4",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running olympikus corre 4 mujer",
+   "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-4-mujer/OLK43720366AMLIML.html",
+   "nota": "Mujer",
+   "precio": 119999,
+   "antes": 149999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-4",
+   "modelo": "Olympikus Corre 4",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running olympikus corre 4 hombre",
+   "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-4-hombre/OLK43720366BCOMLT.html",
+   "nota": "Hombre",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-max",
+   "modelo": "Olympikus Corre Max",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running olympikus corre max mujer",
+   "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-max-mujer/OLK43758365MIST.html",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-max",
+   "modelo": "Olympikus Corre Max",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running olympikus corre max hombre",
+   "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-max-hombre/OLK43758365MLT-PT.html",
+   "nota": "Hombre",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "40",
+    "41",
+    "42",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-grafeno-3",
+   "modelo": "Olympikus Corre Grafeno 3",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running olympikus corre grafeno 3",
+   "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-grafeno-3/OLK43245330RJ-NJ.html",
+   "nota": "",
+   "precio": 159999,
+   "antes": 199999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "37",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-grafeno-3",
+   "modelo": "Olympikus Corre Grafeno 3",
+   "tienda": "Dexter",
+   "nombre": "zapatillas running olympikus corre grafeno 3 hombre",
+   "url": "https://www.dexter.com.ar/zapatillas-running-olympikus-corre-grafeno-3-hombre/OLK43245330TQSAMULT.html",
+   "nota": "Hombre",
+   "precio": 159999,
+   "antes": 199999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-4",
+   "modelo": "Olympikus Corre 4",
+   "tienda": "Stock Center",
+   "nombre": "zapatillas running olympikus corre 4 mujer",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-4-mujer/OLK43720366AMLIML.html",
+   "nota": "Mujer",
+   "precio": 119999,
+   "antes": 149999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-4",
+   "modelo": "Olympikus Corre 4",
+   "tienda": "Stock Center",
+   "nombre": "zapatillas running olympikus corre 4 hombre",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-4-hombre/OLK43720366BCOMLT.html",
+   "nota": "Hombre",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-4",
+   "modelo": "Olympikus Corre 4",
+   "tienda": "Stock Center",
+   "nombre": "zapatillas cana baja olympikus corre 4",
+   "url": "https://www.stockcenter.com.ar/zapatillas-cana-baja-olympikus-corre-4/OLK43720366PALARE.html",
+   "nota": "",
+   "precio": 149999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-max",
+   "modelo": "Olympikus Corre Max",
+   "tienda": "Stock Center",
+   "nombre": "zapatillas running olympikus corre max mujer",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-max-mujer/OLK43758365MIST.html",
+   "nota": "Mujer",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-max",
+   "modelo": "Olympikus Corre Max",
+   "tienda": "Stock Center",
+   "nombre": "zapatillas running olympikus corre max hombre",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-max-hombre/OLK43758365MLT-PT.html",
+   "nota": "Hombre",
+   "precio": 139999,
+   "antes": null,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "40",
+    "41",
+    "42",
+    "43"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-grafeno-3",
+   "modelo": "Olympikus Corre Grafeno 3",
+   "tienda": "Stock Center",
+   "nombre": "zapatillas running olympikus corre grafeno 3 hombre",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-grafeno-3-hombre/OLK43245330TQSAMULT.html",
+   "nota": "Hombre",
+   "precio": 159999,
+   "antes": 199999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-grafeno-3",
+   "modelo": "Olympikus Corre Grafeno 3",
+   "tienda": "Stock Center",
+   "nombre": "zapatillas running olympikus corre grafeno 3",
+   "url": "https://www.stockcenter.com.ar/zapatillas-running-olympikus-corre-grafeno-3/OLK43245330RJ-NJ.html",
+   "nota": "",
+   "precio": 159999,
+   "antes": 199999,
+   "cuotas": 2,
+   "sinStock": false,
+   "talles": [
+    "37",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "olympikus-corre-grafeno-3",
+   "modelo": "Olympikus Corre Grafeno 3",
+   "tienda": "Open Sports",
+   "nombre": "Zapatillas Olympikus Corre Grafeno 3",
+   "url": "https://www.opensports.com.ar/zapatillas-olympikus-corre-grafeno-3-43245330-rona.html",
+   "nota": "",
+   "precio": 199999,
+   "antes": null,
+   "cuotas": 12,
+   "talles": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2-gtx",
+   "modelo": "Salomon Ultra Flow 2 GTX",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA FLOW 2 GORE-TEX",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-m",
+   "nota": "Hombre",
+   "precio": 179999,
+   "antes": 239999,
+   "cuotas": 0,
+   "talles": [
+    "39",
+    "39.5",
+    "40",
+    "43",
+    "44",
+    "44.5",
+    "45",
+    "46",
+    "47"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2-gtx",
+   "modelo": "Salomon Ultra Flow 2 GTX",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA FLOW 2 GORE-TEX",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gtx-w",
+   "nota": "Mujer",
+   "precio": 167999,
+   "antes": 239999,
+   "cuotas": 0,
+   "talles": [
+    "35",
+    "35.5"
+   ],
+   "sistema": "AR"
+  },
+  {
+   "slug": "salomon-ultra-flow-2-gtx",
+   "modelo": "Salomon Ultra Flow 2 GTX",
+   "tienda": "Salomon Argentina",
+   "nombre": "ULTRA FLOW 2 GORE-TEX",
+   "url": "https://salomonstore.com.ar/products/ultra-flow-2-gore-tex",
+   "nota": "",
+   "precio": 239999,
+   "antes": null,
+   "cuotas": 0,
+   "talles": [
+    "35",
+    "35.5",
+    "36",
+    "40.5"
    ],
    "sistema": "AR"
   }
